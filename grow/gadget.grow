@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>报价小工具</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/css/common.css" >
+    <script src="//grow.csc86.com/f=v5/js/sea.js,v5/js/seaconfig.js"></script>
+<!--    <script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>-->
+
+</head>
+
+<body>
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>黑客增长</p></div>
+<div class="warpbottom ifrm after qp">
+    <div class="left">
+        <div class="leftnk">
+        <ul>
+        </ul>
+        </div>
+    </div>
+    <a href="javascript:;" title="关闭/打开左栏" class="close-left disnone"></a>	<div class="right">
+
+    <div class="tkwk">
+
+    <div class="menu">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">上传报价单</a></li>
+            <li role="presentation"><a href="javascript:;">关键词匹配</a></li>
+        </ul>
+    </div>
+
+        <div class="gadgetcontent">
+            <div class="nk disshow">
+                <div class="scpz">
+                    <button type="button" class="btn btn-primary scbutton">请上传文件<input class="fileUploadBtn" type="file" name="files[]" multiple="" data-url="//hacking.csc86.com/uploadOffer"></button><span class="s2">文件格式为xls、xlsx，文件大小不得超过30M，否则将无法上传。</span><a class="xzmb" href="//grow.csc86.com/v5/excel/快速报价模板.xlsx">下载模板</a>
+                </div>
+            </div>
+
+            <div class="nk">
+                <div class="sswk">
+                    <form class="form-inline jsform" method="post">
+                        <div class="input-group">
+                            <input type="text" name="condition" class="form-control" placeholder="供应商名称、材料名称、品牌产地、规格型号">
+                            <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">搜索</button>
+          </span>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tablecontent">
+                    <table class="table table-hover table-bordered table-striped sstable disnone">
+                        <thead>
+                        <tr>
+                            <th>材料名称</th>
+                            <th>品牌/产地</th>
+                            <th>规格型号</th>
+                            <th>进价（元）</th>
+                            <th>税点</th>
+                            <th>发票类型</th>
+                            <th>供应商</th>
+                            <th>联系人</th>
+                            <th>电话</th>
+                            <th>交期</th>
+                            <th>付款方式</th>
+                            <th>交易专员</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <div class="ajax-page2"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+<script>seajs.use('//grow.csc86.com/v5/js/grow.js');</script>
+</body>
+</html>

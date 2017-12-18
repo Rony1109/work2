@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>商品搜索</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/css/common.css" >
+    <script src="//grow.csc86.com/f=v5/js/sea.js,v5/js/seaconfig.js"></script>
+
+</head>
+
+<body>
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>黑客增长</p></div>
+<div class="warpbottom ifrm  after qp">
+    <div class="left">
+        <div class="leftnk">
+        <ul>
+        </ul>
+        </div>
+    </div>
+    <a href="javascript:;" title="关闭/打开左栏" class="close-left disnone"></a>	<div class="right">
+
+    <div class="tkwk">
+
+    <div class="menu">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">商品搜索</a></li>
+            <!--<li role="presentation"><a href="javascript:;">历史记录</a></li>-->
+        </ul>
+    </div>
+
+        <div class="gadgetcontent">
+
+
+            <div class="nk disshow">
+                <div class="sswk">
+                    <form class="form-inline jsform2">
+                        <div class="input-group">
+                            <input type="text" name="condition" class="form-control" placeholder="产品名称、产品品牌、产品规格">
+                            <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">搜索</button>
+          </span>
+
+                        </div>
+                        <div class="chbwk"><label class="chb"><input type="checkbox" class="jsallbox">全部</label><label class="chb"><input type="checkbox" name="resource[]" value="hc360">慧聪</label><label class="chb" name="resource[]"><input type="checkbox" name="resource[]" value="alibaba">阿里巴巴</label><label class="chb"><input type="checkbox" name="resource[]" value="grainger">固安捷</label><label class="chb"><input type="checkbox" name="resource[]" value="ehsy">西域</label><label class="chb"><input type="checkbox" name="resource[]" value="toolmall">土猫</label><label class="chb"><input type="checkbox" name="resource[]" value="csc86">华南城网</label><label class="chb"><input type="checkbox" name="resource[]" value="import">上传报价</label></div>
+                    </form>
+                </div>
+
+                <div class="tablecontent">
+                    <table class="table table-hover table-bordered table-striped sstable disnone">
+                        <thead>
+                        <tr>
+                            <th>选择</th>
+                            <th>商品名称</th>
+                            <th>品牌</th>
+                            <th>规格（元）</th>
+                            <th>单位</th>
+                            <th>材质</th>
+                            <th>价格</th>
+                            <th>平台</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <div class="ajax-page2"></div>
+
+                <div class="yxz disnone">
+                    <div class="spbjtit"><span class="s1">商品比价:</span><button type="button" class="btn btn-success ckqs">查看趋势</button></div>
+                    <table class="table table-hover table-bordered table-striped sstable2">
+                        <thead>
+                        <tr>
+                            <th>商品名称</th>
+                            <th>品牌</th>
+                            <th>规格（元）</th>
+                            <th>单位</th>
+                            <th>材质</th>
+                            <th>价格</th>
+                            <th>平台</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="spbjan"></div>
+                </div>
+            </div>
+
+            <div class="nk">
+                <!--<div class="scpz">
+                    <button type="button" class="btn btn-info scbutton">请上传文件<input class="fileUploadBtn" type="file" name="files[]" multiple=""></button><span class="s2">文件格式为xls、xlsx，文件大小不得超过30M，否则将无法上传。</span> <a class="xzmb" href="//grow.csc86.com/v5/excel/快速报价测试表.xlsx">下载模板</a>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<script>seajs.use('//grow.csc86.com/v5/js/grow.js');</script>
+</body>
+</html>

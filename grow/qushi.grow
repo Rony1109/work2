@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>价格趋势</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/css/common.css" >
+    <link rel="stylesheet" href="//grow.csc86.com/v5/js/daterangepicker/daterangepicker.css">
+    <script type="text/javascript" src="//grow.csc86.com/f=v5/js/sea.js,v5/js/seaconfig.js"></script>
+
+</head>
+
+<body>
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>黑客增长</p></div>
+<div class="warpbottom ifrm  after qp">
+    <div class="left">
+        <div class="leftnk">
+        <ul>
+        </ul>
+        </div>
+    </div>
+    <a href="javascript:;" title="关闭/打开左栏" class="close-left disnone"></a>	<div class="right">
+
+    <div class="tkwk">
+
+        <div class="datetime">
+            <form class="form-inline" method="post">
+                <span class="title">选择日期范围：</span>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input type="text" readonly="true" style="width: 200px" name="datepicker" id="datepicker" class="form-control" value="">
+                            </div>
+
+
+
+                </form>
+        </div>
+    <div class="menu">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">价格趋势</a></li>
+            <!--<li role="presentation"><a href="javascript:;">历史记录</a></li>-->
+        </ul>
+    </div>
+
+        <div class="gadgetcontent">
+
+
+            <div class="nk disshow">
+                <div class="echart"></div>
+            </div>
+
+            <div class="nk">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<script>seajs.use('//grow.csc86.com/v5/js/grow.js');</script>
+</body>
+</html>

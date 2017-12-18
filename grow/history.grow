@@ -1,0 +1,391 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>黑客增长</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//grow.csc86.com/v5/css/common.css" >
+    <script src="//grow.csc86.com/f=v5/js/sea.js,v5/js/seaconfig.js"></script>
+    <script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+
+</head>
+
+<body>
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>黑客增长</p></div>
+<div class="warpbottom after">
+    <div class="left">
+        <ul>
+            <li><a href="logStatistic.html"><span class="glyphicon glyphicon-list"></span>列表一</a></li>
+            <li><a href="logStatistic.html"><span class="glyphicon glyphicon-list"></span>列表二</a></li>
+            <li><a href="logStatistic.html"><span class="glyphicon glyphicon-list"></span>列表三</a></li>
+            <li><a href="logStatistic.html"><span class="glyphicon glyphicon-list"></span>列表四</a></li>
+            <li><a href="logStatistic.html"><span class="glyphicon glyphicon-list"></span>列表五</a></li>
+        </ul>
+    </div>
+    <a href="javascript:;" title="关闭/打开左栏" class="close-left"></a>	<div class="right">
+
+    <div class="tkwk">
+
+    <div class="menu">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">历史记录</a></li>
+        </ul>
+    </div>
+
+        <div class="gadgetcontent">
+
+            <div class="nk disshow">
+                <div class="sswk">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="供应商名称、产品名称、品牌、规格型号">
+                            <span class="input-group-btn">
+            <button class="btn btn-default" type="button">搜索</button>
+          </span>
+                        </div>
+                    </form><!-- /input-group -->
+                </div>
+
+                <div class="tablecontent">
+                    <table class="table table-bordered table-striped sstable">
+                        <thead>
+                        <tr>
+                            <th>供应商名称</th>
+                            <th>产品名称</th>
+                            <th>品牌</th>
+                            <th>规格型号</th>
+                            <th>单位</th>
+                            <th>采购数量</th>
+                            <th>税率</th>
+                            <th>单价（元)</th>
+                            <th>小计（元）</th>
+                            <th>备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <div class="ajax-page2"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!--<form action="" method="get">
+            <table class="cwdztable" cellspacing="0" cellpadding="0">
+                <colgroup>
+                    <col width="440">
+                    <col width="310">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td class="tl tp1">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+                        <input type="text" value="2017-05-02" id="startTime" class="g-d-text" name="startTime" readonly="" onclick="WdatePicker({maxDate:'%y-%M-%d',el:'startTime'})">
+                        至
+                        <input type="text" value="2017-05-03" class="g-d-text" id="endTime" name="endTime" readonly="" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})">
+                    </td>
+                    <td class="tl">是否修复：
+                        <select id="repairStatus" name="repairStatus">
+                            <option value="">全部</option>
+                            <option value="N" >未修复</option>
+                            <option value="Y" >已修复</option>
+
+                        </select>
+                    </td>
+                    <td class="tl" colspan="2"><input type="submit" class="i3" value="查询"></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>-->
+        <!--<table class="cwmxtable" cellspacing="0" cellpadding="0">
+            <colgroup>
+                <col width="230">
+                <col width="80">
+                <col width="230">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="230">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+            </colgroup>
+            <thead>
+
+            <tr>
+                <th>接口名称</th>
+                <th>ip</th>
+                <th>当前页面</th>
+                <th>接口状态</th>
+                <th>错误信息</th>
+                <th>错误文本</th>
+                <th>请求方式</th>
+                <th>请求类型</th>
+                <th>浏览器报头</th>
+                <th>操作系统</th>
+                <th>web服务器</th>
+                <th>后端执行语言</th>
+                <th>时间</th>
+                <th>修复状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><div class="wdt">http://shop14689886.b2b.csc86.com/record/.html?callback=jQuery1102006555011449381709_1493773807138</div></td>
+                <td>123.160.246.142</td>
+                <td><div class="wdt">http://shop14689886.b2b.csc86.com/product/preview.html?time=1493773793873</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>POST</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-03 09:10:12</td>
+                <td><span class="repair" data-objid="9223370543113975807http://shop14689886.b2b.csc86.com/record/.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://shop14689886.b2b.csc86.com/comment/preview.html?page=1&callback=jQuery1102006555011449381709_1493773807139&_=1493773807140</div></td>
+                <td>123.160.246.142</td>
+                <td><div class="wdt">http://shop14689886.b2b.csc86.com/product/preview.html?time=1493773793873</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-03 09:10:12</td>
+                <td><span class="repair" data-objid="9223370543113975807http://shop14689886.b2b.csc86.com/comment/preview.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">/api.php?callback=jQuery1102034440928185358644_1493683200033&op=school_like&act=likes&catid[]=69&catid[]=69&catid[]=69&newid[]=79&newid[]=78&newid[]=77&_=1493683200034</div></td>
+                <td>203.208.60.231</td>
+                <td><div class="wdt">http://www.csc86.com/dsxy/list-s1-t1-66-4.html</div></td>
+                <td>404</td>
+                <td><div class="wdt"></div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36</div></td>
+                <td>Linux x86_64</td>
+                <td></td>
+                <td>java</td>
+                <td>2017-05-03 07:30:13</td>
+                <td><span class="repair" data-objid="9223370543113975807/api.php">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://nancable.b2b.csc86.com/comment/preview.html?page=1&callback=jQuery110208884651032276452_1493738691763&_=1493738691764</div></td>
+                <td>219.137.36.154</td>
+                <td><div class="wdt">http://nancable.b2b.csc86.com/product/preview.html?time=1493738868290</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 23:27:55</td>
+                <td><span class="repair" data-objid="9223370543200375807http://nancable.b2b.csc86.com/comment/preview.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://nancable.b2b.csc86.com/record/.html?callback=jQuery110208884651032276452_1493738691762</div></td>
+                <td>219.137.36.154</td>
+                <td><div class="wdt">http://nancable.b2b.csc86.com/product/preview.html?time=1493738868290</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>POST</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 23:27:55</td>
+                <td><span class="repair" data-objid="9223370543200375807http://nancable.b2b.csc86.com/record/.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">/api.php?callback=jQuery1102034440928185358644_1493596800036&op=school_like&act=islike&catid=69&newid=81&_=1493596800037</div></td>
+                <td>203.208.60.231</td>
+                <td><div class="wdt">http://www.csc86.com/dsxy/jyfx/2015/81.html</div></td>
+                <td>404</td>
+                <td><div class="wdt">Not Found</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36</div></td>
+                <td>Linux x86_64</td>
+                <td>nginx</td>
+                <td>java</td>
+                <td>2017-05-02 23:13:04</td>
+                <td><span class="repair" data-objid="9223370543200375807/api.php">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://szhaode.b2b.csc86.com/comment/preview.html?page=1&callback=jQuery1102005237713876326566_1493713248240&_=1493713248241</div></td>
+                <td>113.79.169.204</td>
+                <td><div class="wdt">http://szhaode.b2b.csc86.com/product/preview.html?time=1493713123455</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 16:18:50</td>
+                <td><span class="repair" data-objid="9223370543200375807http://szhaode.b2b.csc86.com/comment/preview.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://szhaode.b2b.csc86.com/record/.html?callback=jQuery1102005237713876326566_1493713248239</div></td>
+                <td>113.79.169.204</td>
+                <td><div class="wdt">http://szhaode.b2b.csc86.com/product/preview.html?time=1493713123455</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>POST</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 16:18:50</td>
+                <td><span class="repair" data-objid="9223370543200375807http://szhaode.b2b.csc86.com/record/.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://shop15219928.b2b.csc86.com/record/.html?callback=jQuery11020742974370537282_1493707351186</div></td>
+                <td>110.247.74.182</td>
+                <td><div class="wdt">http://shop15219928.b2b.csc86.com/product/preview.html?time=1493707343771</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>POST</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2595.400 QQBrowser/9.6.10872.400</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 14:42:32</td>
+                <td><span class="repair" data-objid="9223370543200375807http://shop15219928.b2b.csc86.com/record/.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://shop15219928.b2b.csc86.com/comment/preview.html?page=1&callback=jQuery11020742974370537282_1493707351187&_=1493707351188</div></td>
+                <td>110.247.74.182</td>
+                <td><div class="wdt">http://shop15219928.b2b.csc86.com/product/preview.html?time=1493707343771</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2595.400 QQBrowser/9.6.10872.400</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 14:42:31</td>
+                <td><span class="repair" data-objid="9223370543200375807http://shop15219928.b2b.csc86.com/comment/preview.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://tianzhu.b2b.csc86.com/comment/preview.html?page=1&callback=jQuery11020347025896422565_1493693350267&_=1493693350268</div></td>
+                <td>119.163.96.88</td>
+                <td><div class="wdt">http://tianzhu.b2b.csc86.com/product/preview.html?time=1493693347943</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>GET</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 10:49:13</td>
+                <td><span class="repair" data-objid="9223370543200375807http://tianzhu.b2b.csc86.com/comment/preview.html">未修复</span></td>
+            </tr>
+            <tr>
+                <td><div class="wdt">http://tianzhu.b2b.csc86.com/record/.html?callback=jQuery11020347025896422565_1493693350266</div></td>
+                <td>119.163.96.88</td>
+                <td><div class="wdt">http://tianzhu.b2b.csc86.com/product/preview.html?time=1493693347943</div></td>
+                <td>404</td>
+                <td><div class="wdt">CHttpException</div></td>
+                <td>error</td>
+                <td>POST</td>
+                <td>jsonp</td>
+                <td><div class="wdt">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36</div></td>
+                <td>Win32</td>
+                <td>nginx</td>
+                <td>PHP/5.3.9</td>
+                <td>2017-05-02 10:49:13</td>
+                <td><span class="repair" data-objid="9223370543200375807http://tianzhu.b2b.csc86.com/record/.html">未修复</span></td>
+            </tr>
+            </tbody>
+        </table>-->
+    </div>
+</div>
+
+</div>
+<script>seajs.use('//grow.csc86.com/v5/js/grow.js');</script>
+</body>
+</html>
