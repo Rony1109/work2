@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>审核管理</title>
+        <link rel="stylesheet" href="../../css/base-reset.css" />
+        <link rel="stylesheet" href="../../css/master.css" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/master.js"></script>
+        <script>var BASEURL = ""</script>
+        <script src="../../js/attestation.js"></script>
+        <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+        <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+        <script src="../../js/json2.js"></script>
+        <script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+        <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../../css/examinees.css" />
+        
+    </head>
+    <body>
+        <div class="m-nav">
+            <div class="m-n-tab">
+                <div class="m-loginbar">
+                    你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+                </div>
+                <ul>
+                    <li class="home">
+                        <a href="c/my-panel/my-panel.html">我的面板</a>
+                    </li>
+                    <li>
+                        <a href="c/upset/sidemenu.html">系统设置</a>
+                    </li>
+                    <li class="cur">
+                        <a href="c/examinees/sidemenu.html">审核管理</a>
+                    </li>
+                    <li>
+                        <a href="c/member/sidemenu.html">会员管理</a>
+                    </li>
+                    <li>
+                        <a href="c/information/sidemenu.html">资讯中心</a>
+                    </li>
+                    <li>
+                        <a href="c/product/sidemenu.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="c/apply/sidemenu.html">应用中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-nav" id="leftNav">
+                <h2 class="ln-hd">审核管理</h2>
+                <ul class="ln-2th">
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a>
+                        <ul class="ln-3th">
+                            <li>
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">实名认证</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">实体认证</a>
+                            </li>
+                            <li class="ln-3th-cur">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">诚信认证</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+            <div class="content" id="content">
+                <div class="sel-sub">
+                    <ul>
+                        <li>
+                            <a href="javascript:">待审核</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">预审通过</a>
+                        </li>
+                        <li class="cur">
+                            <a href="javascript:">未通过</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">已通过</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="tool-bar">认证搜索</h2>
+                <div class="g-c-f e-search">
+                    <div class="tb-do">
+                        <select id="searchType" name="searchType">
+                            <option value="0">企业名称</option>
+                            <option value="1">注册号</option>
+                        </select>
+                    </div>
+                    <div class="tb-search">
+                        <input type="text" onkeydown="secKeyDown(event,this,'2')" id="searchValue" name="searchValue" value="" placeholder="请输入查找关键字" class="tb-text">
+                        <input type="button" id="search" onclick="searchByPm(this,'2')" value="搜索" class="tb-btn">
+                    </div>
+                    <div class="tb-time">
+                        <select id="approveType" name="approveType" style="display:none;">
+                            <option value="2">企业实名认证</option>
+                        </select>
+                        提交时间从
+                        <input type="text" id="startTime" readonly="true" value="" name="startTime" class="g-d-text">
+                        <a class="g-data" href="javascript:" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+                        <input type="text" class="g-d-text" value="" readonly="true" id="endTime" name="endTime">
+                        <a class="g-data" href="javascript:" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+                        <input type="button" value="GO" onclick="GO(101,'2')" class="tb-btn">
+                    </div>
+                </div>
+                <h2 class="tool-bar op-title">诚信深商认证</h2>
+                <div class="operation op-bg">
+                    <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+                        <input type="text" id="setPage1" name="setPage1" size="8" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')" onkeydown="pageKeyDown(event,this,'2')">
+                        &nbsp;
+                        <input type="button" value="跳转" onclick="turnPage1(this,'2') ">
+                    </span>
+                </div>
+                <div class="g-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td width="13%" class="list-id">商家名称</td>
+                                <td width="14%">营业执照注册号</td>
+                                <td width="12%">会员账号</td>
+                                <td width="13%">提交时间</td>
+                                <td width="10%">拒绝时间</td>
+                                <td width="10%">拒绝理由</td>
+                                <td width="8%">操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="list-id" >深圳嘉禾纺织有限公司</td>
+                                <td>459018938869878</td>
+                                <td>18938869878</td>
+                                <td>2013-4-12 13:45:29</td>
+                                <td>2013-5-12 13:45:29</td>
+                                <td>企业名称有误</td>
+                                <td><a href="javascript:showApproce()" class="g-ico ic-su">查看</a></td>
+                            </tr>
+                            <tr>
+                                <td class="list-id" >深圳嘉禾纺织有限公司</td>
+                                <td>459018938869878</td>
+                                <td>18938869878</td>
+                                <td>2013-4-12 13:45:29</td>
+                                <td>2013-5-12 13:45:29</td>
+                                <td>企业名称有误</td>
+                                <td><a href="javascript:showApproce()" class="g-ico ic-su">查看</a></td>
+                            </tr>
+                            <tr>
+                                <td class="list-id" >深圳嘉禾纺织有限公司</td>
+                                <td>459018938869878</td>
+                                <td>18938869878</td>
+                                <td>2013-4-12 13:45:29</td>
+                                <td>2013-5-12 13:45:29</td>
+                                <td>企业名称有误</td>
+                                <td><a href="javascript:showApproce()" class="g-ico ic-su">查看</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="operation">
+                        <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong> 页&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+                            <input type="text" id="setPage2" name="setPage2" size="8" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')" onkeydown="pageKeyDown(event,this,'2')">
+                            &nbsp;
+                            <input type="button" value="跳转" onclick="turnPage1(this,'2')">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

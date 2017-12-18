@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>人工推荐话题</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">SNS审核</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">SNS审核</a>
+        <ul class="ln-3th">
+        	<li class="li-last" ><a href="nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">圈子推荐管理</a></li>
+          	<li class="li-last" ><a href="n-toptic.html" onClick="mlast('ln-3th-cur','li-last',this)">会员资料审查</a></li>
+          	<li class="li-last"><a href="mb-nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">会员推荐管理</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li><a href="nominate.html">人工推荐圈子</a></li>
+        <li class="cur"><a href="n-toptic.html">人工推荐话题</a></li>
+        <li><a href="n-activity.html">人工推荐活动</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">所有圈子搜索</h2>
+    <div class="g-c-f e-search">
+      <div class="tb-do">
+        话题名称关键字：
+      </div>
+      <div class="tb-search">
+        <input type="text" value="" placeholder="请输入话题名称关键字" class="tb-text" />
+        <input type="button" value="搜索" class="tb-btn" />
+      </div>
+      <div class="tb-time">共推荐话题数量：<strong class="tt-cl">31</strong>个 最后推荐话题日期：2012-11-1</div>
+    </div>
+    <h2 class="tool-bar op-title">所有话题管理</h2>
+    <div class="operation op-bg"><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+      <input type="text" size="8" />
+      &nbsp;
+      <input type="button" value="跳转" />
+      </span></div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td width="25%" class="list-id">圈子名称/类型</td>
+            <td width="24%">话题主题</td>
+            <td width="10%">发帖人</td>
+            <td width="10%">评论</td>
+            <td width="10%">发起时间</td>
+            <td width="10%">推荐时间</td>
+            <td width="10%">
+            <select>
+            	<option value="已推荐话题">已推荐话题</option>
+            	<option value="未推荐话题">未推荐话题</option>
+            	<option value="全部话题" selected="">全部话题</option>
+            </select>
+			</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" >深圳LED行业商盟圈 <span class="li-cl">（行业商圈）</span></td>
+            <td>深圳商友线下见面会 21日不见不散</td>
+            <td>元方</td>
+            <td>975</td>
+            <td>2012-10-26</td>
+            <td>2012-10-26</td>
+            <td><span class="last-font">推荐</span></td>
+          </tr>
+          <tr>
+            <td class="list-id" >深圳LED行业商盟圈 <span class="li-cl">（行业商圈）</span></td>
+            <td>深圳商友线下见面会 21日不见不散</td>
+            <td>元方</td>
+            <td>975</td>
+            <td>2012-10-26</td>
+            <td>2012-10-26</td>
+            <td><span class="last-font">推荐</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation">
+      <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong> 页&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" />
+        &nbsp;
+        <input type="button" value="跳转" />
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

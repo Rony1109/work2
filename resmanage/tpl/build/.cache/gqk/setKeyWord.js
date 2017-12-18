@@ -1,0 +1,2 @@
+/*TMODJS:{"version":44,"md5":"6516010a50e7290ccf425a3651bd5f13"}*/
+template('gqk/setKeyWord',' <div class="setKeyWord"> <table> <tr> <td width="80">企业名称：</td> <td id="keyCompanyName"></td> </tr> <tr> <td>会员组：</td> <td id="keyVipname"></td> </tr> <tr> <td valign="top">添加关键词：</td> <td> <p><input type="text" name="" class="setKeyWord_1" id="keywords"/></p> <p class="c-gray">（提示：最多可添加20个关键词，关键词之间以“，”隔开）</p> </td> </tr> </table> </div>');

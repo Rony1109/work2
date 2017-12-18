@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>圈子推荐管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">SNS审核</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">SNS审核</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">圈子推荐管理</a></li>
+					<li class="li-last" ><a href="n-toptic.html" onClick="mlast('ln-3th-cur','li-last',this)">会员资料审查</a></li>
+					<li class="li-last"><a href="mb-nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">会员推荐管理</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<link rel="stylesheet" href="http://resmanage.csc86.com/css/examinees.css" />
+	<div class="content" id="content"> 
+		<#assign tiles=JspTaglibs["http://tiles.apache.org/tags-tiles"]/> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/examinees/allproduct.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/SWFUpload/v2.2.0.1/swfupload.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/handlers.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/snsInfouploadimg.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/snsUploadimg.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/kindeditor/4.1.2/kindeditor.js"></script> 
+		<script src="http://${Session["bopsHtmlName"]?default("0")}/js/kindeditor/4.1.2/lang/zh_CN.js"></script> 
+		<h2 class="tool-bar">圈子活动审核详细信息</h2>
+		<form  name="form1" id="form1" method="POST">
+			<div id="hdexp_box">
+				<input type="hidden" id="indexpage" value="${listtest!""}"/>
+				<table class="act_show" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th width="80">活动主题：</th>
+						<td width="220"><input name="hd_title" type="text" value="${activity.activityTitle!""}" /></td>
+						<th width="80">状态：</th>
+						<td width="220"><#if (activity.activityState?exists)>
+							<#if activity.activityState=="WAITING"> <span>待审核</span> </#if>
+							<#if activity.activityState=="DISABLE"> <span style="color:#999">已中止</span> </#if>
+							<#if activity.activityState=="ENABLE"> <span style="color:#0F0">已审核</span> </#if>
+							<#if activity.activityState=="DELETE"> <span style="color:#F00">已删除</span> </#if>
+							<#if activity.activityState=="FAIL"> <span style="color:#F00">不通过</span> </#if>
+							</#if>
+						</td>
+						<td width="150" rowspan="6" style="text-align:center">
+							<img width="150" height="200" id="imgload0"  src="${market.marketLogoUrl!""}" />
+							<br>
+							<div class="g-t-c">
+								<input id="upload00" class="upd-img" type="button" value="图片上传" />
+								<input type="hidden" name="upDImg" id="upDImg" />
+							</div>
+						</td>
+					<!---->
+					</tr>
+					<tr>
+						<th>活动类型：</th>
+						<td>
+							<label><input name="hd_type" type="radio" checked value="0" > 线上活动</label>
+							<label><input name="hd_type" type="radio" value="1" > 线下活动</label>
+							${activity.activityType!""}
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>活动时间：</th>
+						<td>
+							<input id="msg_time1" name="time_begin" type="text" value="${activity.activityBeginDate}" />
+							<a class="g-data" href="javascript:;" onclick="WdatePicker({el:'msg_time1',dateFmt:'yyyy-M-d H:mm:ss'})" style="vertical-align:middle;"></a> 至 <input id="msg_time2" name="time_end" type="text" value="${activity.activityEndDate}" />
+							<a class="g-data" href="javascript:;" onclick="WdatePicker({el:'msg_time2',dateFmt:'yyyy-M-d H:mm:ss'})" style="vertical-align:middle;"></a>
+						</td>
+						<th>报名：</th>
+						<td>${activity.memberCount!""}</td>
+					</tr>
+					<tr>
+						<th>活动地点：</th>
+						<td>
+							<select name="province_name">
+								<option value="-1">==请选择省==</option>
+								<option value="">广东省</option>
+							</select>
+							<select name="city_name">
+								<option value="-1">==请选择市==</option>
+								<option value="">深圳市</option>
+							</select>
+							<select name="district_name">
+								<option value="-1">==请选择区==</option>
+								<option value="">龙岗区</option>
+							</select><br>
+							<input type="text" "add_exp" value="平湖华南城" />
+						</td>
+						<th>感兴趣：</th>
+						<td>${activity.favorCount!""}</td>
+					</tr>
+					<tr>
+						<th>发布用户：</th>
+						<td>${activity.publishUserName!""}</td>
+						<th>评论：</th>
+						<td>${activity.commentCount!""}</td>
+					</tr>
+					<tr>
+						<th>发布时间：</th>
+						<td>
+							<input id="time_add" name="time_add" type="text" value="${activity.activityUpdateTime!""}"  />
+							<a class="g-data" href="javascript:;" onclick="WdatePicker({el:'time_add',dateFmt:'yyyy-M-d H:mm:ss'})" style="vertical-align:middle;"></a>
+						</td>
+						<th>回复：</th>
+						<td>${activity.commentReplyCount!""}</td>
+					</tr>
+					<!--tr>
+						<th>活动形象图：
+							<input type="hidden" name="upDImg" id="upDImg" /></th>
+						<td>活动图片是什么？？？ <img height="110" id="imgload0" width="190" src="${market.marketLogoUrl!""}" />
+							<input id="upload00" class="upd-img" type="button" value="图片上传" /></td>
+					</tr-->
+				</table>
+				<h3>活动详情</h3>
+				<div style="line-height:1.5; padding:10px 20px;">
+					${activity.activityDescription!""}
+				</div>
+				<input type="hidden" name="activityId"  id="activityId" value="${activityId!""}"/>
+			</div>
+			<div class="wait-btn edit_a">
+				<input type="button" onclick="historygo();" value="取消">
+				<input type="button" id="save" value="保存" onclick="submitcheck('2');">
+				<input type="button" onclick="nextpage(${lastsize!""},'2');" value="下一条" class="next-page">
+			</div>
+		</form>
+		<div class="index-look"  style="display: none" >
+			<table  class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="20%">活动编号</td>
+					<td width="20%">活动属性编号</td>
+					<td width="20%">当前条数</td>
+				</tr>
+				<#if activitylist?exists>
+				<#if activitylist?size != 0>
+				<#list activitylist as list>
+				<tr>
+					<td width="20%">${list.activityId!""}</td>
+					<td width="20%">${list.activityConfId!""}</td>
+					<td width="20%">${list.memberCount!""}</td>
+				</tr>
+				</#list>
+				</#if>
+				</#if>
+				状态：<input type="text" name="activityState" value="${activityState!""}"/>
+				当前页：<input type="text" name="start" value="${cuurentPage!""}"/>
+				selectone:<input type="text" name="selectOne" value="${selectOne!""}"/>
+				活动名称：<input type="text" name="activityName" value="${activityName!""}"/>
+				开始时间：<input type="text" name="startTime" value="${startTime!""}"/>
+				结束时间：<input type="text" name="endTime" value="${endTime!""}"/>
+				总条数：<input type="text" value="${sumNamber!""}" name="sumNamber"/>
+				最初的页数：<input type="text" value="${onestart!""}" name="onestart"/>
+				当前是哪个页面：<input type="text" value="${all!""}" name="all"/>
+				时间类型：<input type="text" value="${selectThree!""}" name="selectThree"/>
+				add的值：<input type="text" name="add" value="2"/>
+			</table>
+		</div>
+		<script>
+    	function historygo()
+    	{
+    		//location.href="circleActivity.showCircleActivity?all=${all!""}&selectThree=${selectThree}&activityState=${activityState!""}&start=${onestart!""}&selectOne=${selectOne!""}&activityName=${activityName!""}&startTime=${startTime!""}&endTime=${endTime!""}";
+	   }
+	  //  function nextpage(textval,lastsize)
+	    //	{
+	   // 		//如果已经到了列表的最后
+	   // 		if(textval+1>lastsize)
+	   // 		{
+	   // 			location.href="marketCheckManage.showNewMarketCheckManage?applyState=${applyState!""}&start=${cuurentPage+1}&selectOne=${selectOne!""}&marketName=${marketName!""}&startTime=${startTime!""}&endTime=${endTime!""}&add=2";
+	   // 		}else{
+	   // 			alert("下一页");
+	   // 		}
+	  //  	}
+	    	//function changeMarketName()
+	    	//{
+	    	//	$(".text_con").css("display","none");
+	   		 //   $(".edit_text").css("display","block");
+	   		//    $(".ke-container").css({"width":"450px","height":"300"});
+	    	//    var marketNamechange=document.getElementById("marketNamechange");
+	    	//   marketNamechange.style.display="none";
+	    	//   var marketName=document.getElementById("marketName");
+	    	//   marketName.style.display="block";
+	    	//   var change=document.getElementById("change");
+	    	//   change.style.display="none";
+	    		
+	    	//	var save=document.getElementById("save");
+	    	//	save.style.display="inline-block";
+	    //	}
+    	
+    //	function submitcheck(tel)
+  //  	{
+  //  		var form1=document.getElementById("form1");
+ //   		$("#description").val(editor.html());
+ //   		//通过
+//    		if(tel=='1')
+//    		{
+//    			form1.action="marketCheckManage.updateNewMarketTwo";
+//    			form1.submit();
+//    			//保存
+//    		}else{
+ //   			var marketName=document.getElementById("marketName").value;
+//    			var description=document.getElementById("description").value;
+//    			var url=document.getElementById("upDImg").value;
+//    			var urltwo=document.getElementById("url2").value;
+//    			if(marketName=="")
+//    			{
+//    				alert("市场名称不能为空！");
+//    				return;
+//    			}
+//    			if(description=="")
+//    			{
+//    				alert("市场简介不能为空！");
+//    				return;
+//    			}
+ //   			if(url==""&&urltwo=="")
+ //   			{
+ //   				alert("您还没上传市场形象图！");
+ //   				return;
+ //   			}
+  //  			form1.action="marketCheckManage.updateMarketNews";
+ //   			form1.submit();
+ //   		}
+//    	}
+    </script> 
+	</div>
+</div>
+</body>
+</html>

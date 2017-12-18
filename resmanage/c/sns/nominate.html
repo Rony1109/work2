@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>圈子推荐管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">SNS审核</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">SNS审核</a>
+        <ul class="ln-3th">
+        	<li class="li-last" ><a href="nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">圈子推荐管理</a></li>
+          	<li class="li-last" ><a href="n-toptic.html" onClick="mlast('ln-3th-cur','li-last',this)">会员资料审查</a></li>
+          	<li class="li-last"><a href="mb-nominate.html" onClick="mlast('ln-3th-cur','li-last',this)">会员推荐管理</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li class="cur"><a href="nominate.html">人工推荐圈子</a></li>
+        <li><a href="n-toptic.html">人工推荐话题</a></li>
+        <li><a href="n-activity.html">人工推荐活动</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">所有圈子搜索</h2>
+    <div class="g-c-f e-search">
+      <div class="tb-do">
+         输入圈名称关键字：<select>
+        <option value="不选择圈子类型" selected="">不选择圈子类型</option>
+        <option value="地区商圈">地区商圈</option>
+        <option value="行业商圈">行业商圈</option>
+        <option value="组织商圈">组织商圈</option>
+        <option value="商友关系圈">商友关系圈</option>
+        <option value="兴趣爱好圈">兴趣爱好圈</option>
+        <option value="其它商圈">其它商圈</option>
+        </select>
+      </div>
+      <div class="tb-search">
+        <input type="text" value="" placeholder="请输入圈名称关键字" class="tb-text" />
+        <input type="button" value="搜索" class="tb-btn" />
+      </div>
+      <div class="tb-time">共推荐圈子数量：<strong class="tt-cl">31</strong>个 最后推荐圈子日期：2012-11-1</div>
+    </div>
+    <h2 class="tool-bar op-title">所有圈子管理</h2>
+    <div class="operation op-bg"><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+      <input type="text" size="8" />
+      &nbsp;
+      <input type="button" value="跳转" />
+      </span></div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td width="18%" class="list-id">圈子名称/类型</td>
+            <td width="10%">创建者</td>
+            <td width="8%">成员</td>
+            <td width="8%">话题<a class="p-bot" href="javascript:"></a><a class="p-top" href="javascript:"></a></td>
+            <td width="8%">活动</td>
+            <td width="11%">创建时间</td>
+            <td width="12%">推荐星级</td>
+            <td width="9%">推荐时间</td>
+            <td width="10%">
+            <select>
+            	<option value="已推荐圈子">已推荐圈子</option>
+            	<option value="未推荐圈子">未推荐圈子</option>
+            	<option selected="" value="全部圈子">全部圈子</option>
+            </select>
+			</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" >深圳LED行业商盟圈 <span class="li-cl">（行业商圈）</span></td>
+            <td>元方</td>
+            <td>1888</td>
+            <td>975</td>
+            <td>12</td>
+            <td>2012-10-26</td>
+            <td>
+                <select>
+                <option value="未选推荐星级" selected="">未选推荐星级</option>
+                <option value="☆">☆</option>
+                <option value="★">★</option>
+                <option value="★☆">★☆</option>
+                <option value="★★">★★</option>
+                <option value="★★☆">★★☆</option>
+                <option value="★★★">★★★</option>
+                <option value="★★★☆">★★★☆</option>
+                <option value="★★★★">★★★★</option>
+                <option value="★★★★☆">★★★★☆</option>
+                <option value="★★★★★">★★★★★</option>
+                </select>
+            </td>
+            <td>2012-10-26</td>
+            <td><span class="last-font">推荐</span></td>
+          </tr>
+          <tr>
+            <td class="list-id" >深圳LED行业商盟圈 <span class="li-cl">（行业商圈）</span></td>
+            <td>元方</td>
+            <td>1888</td>
+            <td>975</td>
+            <td>12</td>
+            <td>2012-10-26</td>
+            <td>
+                <select>
+                <option value="未选推荐星级" selected="">未选推荐星级</option>
+                <option value="☆">☆</option>
+                <option value="★">★</option>
+                <option value="★☆">★☆</option>
+                <option value="★★">★★</option>
+                <option value="★★☆">★★☆</option>
+                <option value="★★★">★★★</option>
+                <option value="★★★☆">★★★☆</option>
+                <option value="★★★★">★★★★</option>
+                <option value="★★★★☆">★★★★☆</option>
+                <option value="★★★★★">★★★★★</option>
+                </select>
+            </td>
+            <td>2012-10-26</td>
+            <td><span class="last-font">推荐</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation">
+      <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong> 页&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" />
+        &nbsp;
+        <input type="button" value="跳转" />
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

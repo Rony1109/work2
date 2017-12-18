@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>广告管理</title>
+        <link rel="stylesheet" href="../../css/base-reset.css" />
+        <link rel="stylesheet" href="../../css/master.css" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/master.js"></script>
+        <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+        <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+        <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+        <script src="../../js/adsAuction.js"></script>
+        <link rel="stylesheet" href="../../css/ads.css" />
+    </head>
+    <body>
+        <div class="m-nav">
+            <div class="m-n-tab">
+                <div class="m-loginbar">
+                    你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+                </div>
+                <ul>
+                    <li class="home">
+                        <a href="c/my-panel/my-panel.html">我的面板</a>
+                    </li>
+                    <li>
+                        <a href="c/upset/sidemenu.html">系统设置</a>
+                    </li>
+                    <li>
+                        <a href="c/examinees/sidemenu.html">审核管理</a>
+                    </li>
+                    <li>
+                        <a href="c/member/sidemenu.html">会员管理</a>
+                    </li>
+                    <li>
+                        <a href="c/information/sidemenu.html">资讯中心</a>
+                    </li>
+                    <li>
+                        <a href="c/product/sidemenu.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="c/apply/sidemenu.html">应用中心</a>
+                    </li>
+                    <li class="cur">
+                        <a href="c/product/sidemenu.html">广告管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-nav" id="leftNav">
+                <h2 class="ln-hd">广告管理</h2>
+                <ul class="ln-2th">
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">广告竞价管理</a>
+                        <ul class="ln-3th">
+                            <li class="li-last" >
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">页面管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">添加广告位</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告位管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">添加广告</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告审核</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告账户管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺模板管理</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+            <div class="content" id="content">
+    <h2 class="tool-bar">广告位搜索</h2>
+    <div class="g-c-f e-search">
+    <form action="auditArticl.waitArticlList">
+      <div class="tb-do">
+        <select  name="condition">
+               <option value="title">全部</option>
+               <option value="site">网站首页</option>
+               <option value="news">资讯首页</option>
+        </select>
+        <input type="text" placeholder="请输入查找关键字" class="tb-text" value="" id="keyword" name="keyWord">
+         <select  name="condition">
+               <option value="title">全部</option>
+               <option value="enabled">已启用</option>
+               <option value="disabled">未启用</option>
+        </select>
+         <input type="submit" value="搜 索" class="tb-btn" />
+      </div>
+       
+      </form>
+    </div>
+    <h2 class="tool-bar op-title"><a href="javascript:" class="add-btn">添加广告位</a>广告位管理</span></h2>
+    <div class="operation op-bg">
+          <span class="page-r">当前共有：<b class="rowNumber">7</b>条记录&nbsp;&nbsp;<b class="page">1</b>/<strong class="totalPage">1</strong> 页&nbsp;&nbsp;
+          上一页
+          &nbsp;&nbsp;下一页&nbsp;&nbsp;
+          <input type="text" size="8" class="goPage" id="goPage1" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')">
+          &nbsp;
+           &nbsp;
+          <input type="hidden" value="auditArticl.waitArticlList?startTime=&amp;endTime=&amp;keyWord=&amp;condition=">
+          <input type="button" value="跳转" id="jump">
+          </span>
+    </div>
+    <div class="g-list e-ads">
+      <table>
+        <thead>
+          <tr>
+            <td  class="list-id" width="25%">广告位名称</td>
+            <td width="10%">广告类型</td>
+            <td width="10%">最低广告费用</td>
+            <td width="10%">是否启用</td>
+            <td width="10%">是否开放</td>
+            <td width="15%">排序</td>
+            <td width="20%">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id">Flash切换展位</td>
+            <td>图片广告</td>
+            <td>50元/天</td>
+            <td>是</td>
+            <td>是</td>
+            <td><a href="javascript:" onclick="ad_up();">上移</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_down();">下移</a></td>
+            <td><a href="javascript:" onclick="codeCall();">调用代码</a>&nbsp;|&nbsp;<a href="javascript:">修改</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_delete(this);">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">Flash切换展位</td>
+            <td>图片广告</td>
+            <td>50元/天</td>
+            <td>是</td>
+            <td>是</td>
+            <td><a href="javascript:" onclick="ad_up();">上移</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_down();">下移</a></td>
+            <td><a href="javascript:" onclick="codeCall();">调用代码</a>&nbsp;|&nbsp;<a href="javascript:">修改</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_delete(this);">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">Flash切换展位</td>
+            <td>图片广告</td>
+            <td>50元/天</td>
+            <td>是</td>
+            <td>是</td>
+            <td><a href="javascript:" onclick="ad_up();">上移</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_down();">下移</a></td>
+            <td><a href="javascript:" onclick="codeCall();">调用代码</a>&nbsp;|&nbsp;<a href="javascript:">修改</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_delete(this);">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">Flash切换展位</td>
+            <td>图片广告</td>
+            <td>50元/天</td>
+            <td>是</td>
+            <td>是</td>
+            <td><a href="javascript:" onclick="ad_up();">上移</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_down();">下移</a></td>
+            <td><a href="javascript:" onclick="codeCall();">调用代码</a>&nbsp;|&nbsp;<a href="javascript:">修改</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_delete(this);">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">Flash切换展位</td>
+            <td>图片广告</td>
+            <td>50元/天</td>
+            <td>是</td>
+            <td>是</td>
+            <td><a href="javascript:" onclick="ad_up();">上移</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_down();">下移</a></td>
+            <td><a href="javascript:" onclick="codeCall();">调用代码</a>&nbsp;|&nbsp;<a href="javascript:">修改</a>&nbsp;|&nbsp;<a href="javascript:" onclick="ad_delete(this);">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation">
+          <span class="page-r">当前共有：<b class="rowNumber">7</b>条记录&nbsp;&nbsp;<b class="page">1</b>/<strong class="totalPage">1</strong> 页&nbsp;&nbsp;
+          上一页
+          &nbsp;&nbsp;下一页&nbsp;&nbsp;
+          <input type="text" size="8" class="goPage" id="goPage2" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')">
+          &nbsp;
+           &nbsp;
+          <input type="hidden" value="auditArticl.waitArticlList?startTime=&amp;endTime=&amp;keyWord=&amp;condition=">
+          <input type="button" value="跳转" id="jump2">
+          </span>
+    </div>
+    </div>
+            </div>
+        </div>
+    </body>
+</html>

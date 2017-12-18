@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>逛市场</title>
+    <link rel="stylesheet" href="../../css/base-reset.css" />
+    <link rel="stylesheet" href="../../css/master.css" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/master.js"></script>
+    <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+    <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+    <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+        <ul>
+            <li class="home">
+                <a href="c/my-panel/my-panel.html">我的面板</a>
+            </li>
+            <li>
+                <a href="c/upset/sidemenu.html">系统设置</a>
+            </li>
+            <li>
+                <a href="c/examinees/sidemenu.html">审核管理</a>
+            </li>
+            <li>
+                <a href="c/member/sidemenu.html">会员管理</a>
+            </li>
+            <li>
+                <a href="c/information/sidemenu.html">资讯中心</a>
+            </li>
+            <li>
+                <a href="c/product/sidemenu.html">产品中心</a>
+            </li>
+            <li>
+                <a href="c/apply/sidemenu.html">应用中心</a>
+            </li>
+            <li class="cur">
+                <a href="c/product/sidemenu.html">地图管理</a>
+            </li>
+        </ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+        <h2 class="ln-hd">地图管理</h2>
+        <ul class="ln-2th">
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地图管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" >
+                        <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">深圳华南城</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商铺管理</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">个体市场</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">办事求助</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">配套服务</a>
+            </li>
+        </ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/visit_market.css" />
+        <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+        <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+        <script src="http://resmanage.csc86.com/js/visit_market.js"></script>
+		<h2 class="tool-bar">顶级特卖</h2>
+        <div class="m_basic">
+            <form method="" action="">
+                <ul>
+                    <li class="nth1">
+                        <div class="g-f-l k">市场：</div>
+                        <div class="v">华盛奥特莱斯</div>
+                    </li>
+                    <li class="nth1">
+                        <div class="g-f-l k">顶级特卖：<input type="hidden" id="topSaleImg" /> </div>
+                        <div class="v">
+                            <ol>
+                                <li>
+                                    <span class="g-t-l">标题1</span><input type="text" class="txt"/><span class="g-t-r">价格</span><input type="text" class="txt t1"/>
+                                </li>
+                                <li>
+                                    <span class="g-t-l">推荐理由</span><input type="text" class="txt"/><span class="g-t-r">URL</span><input type="text" class="txt"/>
+                                </li>
+                                <li class="uppic">
+                                    <input type="text" id="picUpload0" />&nbsp;<em class="g-gray">请标准上传150*90图片</em>
+                                    <div class="mark-pic">
+                                        <img src="../../img/img.png" id="imgload0" width="150" height="90"/>
+                                        <input name="salePic[]" type="hidden" id="imgurl0" />
+                                    </div>
+                                    <div class="img-del"></div>
+                                    <script>
+                                        new SWFUpload(uploadSettings({
+                                            type:"topSaleImg",
+                                            button_placeholder_id:"picUpload0",
+                                            file_types: "*.jpg;*.jpeg;*.png;*.gif;*.swf;",
+                                            file_size_limit : "2MB",
+                                            file_upload_limit : 0,
+                                            button_text_left_padding:16,
+                                            button_text:"点击上传"
+                                        }));
+                                    </script>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li>
+                                    <span class="g-t-l">标题1</span><input type="text" class="txt"/><span class="g-t-r">价格</span><input type="text" class="txt t1"/>
+                                </li>
+                                <li>
+                                    <span class="g-t-l">推荐理由</span><input type="text" class="txt"/><span class="g-t-r">URL</span><input type="text" class="txt"/>
+                                </li>
+                                <li class="uppic">
+                                    <input type="text" id="picUpload1" />&nbsp;<em class="g-gray">请标准上传150*90图片</em>
+                                    <div class="mark-pic">
+                                        <img src="../../img/img.png" id="imgload1" width="150" height="90"/>
+                                        <input name="salePic[]" type="hidden" id="imgurl1" />
+                                    </div>
+                                    <div class="img-del"></div>
+                                    <script>
+                                        new SWFUpload(uploadSettings({
+                                            type:"topSaleImg",
+                                            button_placeholder_id:"picUpload1",
+                                            file_types: "*.jpg;*.jpeg;*.png;*.gif;*.swf;",
+                                            file_size_limit : "2MB",
+                                            file_upload_limit : 0,
+                                            button_text_left_padding:16,
+                                            button_text:"点击上传"
+                                        }));
+                                    </script>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li>
+                                    <span class="g-t-l">标题1</span><input type="text" class="txt"/><span class="g-t-r">价格</span><input type="text" class="txt t1"/>
+                                </li>
+                                <li>
+                                    <span class="g-t-l">推荐理由</span><input type="text" class="txt"/><span class="g-t-r">URL</span><input type="text" class="txt"/>
+                                </li>
+                                <li class="uppic">
+                                    <input type="text" id="picUpload2" />&nbsp;<em class="g-gray">请标准上传150*90图片</em>
+                                    <div class="mark-pic">
+                                        <img src="../../img/img.png" id="imgload2" width="150" height="90"/>
+                                        <input name="salePic[]" type="hidden" id="imgurl2" />
+                                    </div>
+                                    <div class="img-del"></div>
+                                    <script>
+                                        new SWFUpload(uploadSettings({
+                                            type:"topSaleImg",
+                                            button_placeholder_id:"picUpload2",
+                                            file_types: "*.jpg;*.jpeg;*.png;*.gif;*.swf;",
+                                            file_size_limit : "2MB",
+                                            file_upload_limit : 0,
+                                            button_text_left_padding:16,
+                                            button_text:"点击上传"
+                                        }));
+                                    </script>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="nth1" style="margin:25px 0 0;padding:0 0 30px 60px;">
+
+                        <div class="g-f-l k"></div>
+                        <div class="v"><input type="submit" class="confirm" value="保存" /> <a href="individual_market.html">返回市场列表</a> </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+	</div>
+</div>
+</body>
+</html>

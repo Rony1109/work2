@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>逛市场</title>
+    <link rel="stylesheet" href="../../css/base-reset.css" />
+    <link rel="stylesheet" href="../../css/master.css" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/master.js"></script>
+    <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+    <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+    <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+        <ul>
+            <li class="home">
+                <a href="c/my-panel/my-panel.html">我的面板</a>
+            </li>
+            <li>
+                <a href="c/upset/sidemenu.html">系统设置</a>
+            </li>
+            <li>
+                <a href="c/examinees/sidemenu.html">审核管理</a>
+            </li>
+            <li>
+                <a href="c/member/sidemenu.html">会员管理</a>
+            </li>
+            <li>
+                <a href="c/information/sidemenu.html">资讯中心</a>
+            </li>
+            <li>
+                <a href="c/product/sidemenu.html">产品中心</a>
+            </li>
+            <li>
+                <a href="c/apply/sidemenu.html">应用中心</a>
+            </li>
+            <li class="cur">
+                <a href="c/product/sidemenu.html">地图管理</a>
+            </li>
+        </ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+        <h2 class="ln-hd">地图管理</h2>
+        <ul class="ln-2th">
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地图管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" >
+                        <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">深圳华南城</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商铺管理</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">个体市场</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">办事求助</a>
+            </li>
+            <li class="ln-2th-item">
+                <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">配套服务</a>
+            </li>
+        </ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/visit_market.css" />
+        <script src="http://resmanage.csc86.com/js/visit_market.js"></script>
+        <div class="crumb">您当前的位置：地图管理 - <strong>深圳华南城</strong></div>
+        <div class="g-c-f e-search">
+            <form name="search" id="search" action="" method="get">
+                <div class="tb-do">
+                    <select name="mType" id="mType" style="color:red;">
+                        <option value="请选择">请选择</option>
+                        <option value="华盛奥特莱斯">华盛奥特莱斯</option>
+                        <option value="LED光园">LED光园</option>
+                        <option value="创业园">创业园</option>
+                        <option value="产业园">产业园</option>
+                        <option value="春天时尚购物中心">春天时尚购物中心</option>
+                        <option value="茶业交易中心">茶业交易中心</option>
+                        <option value="华利嘉电子市场">华利嘉电子市场</option>
+                        <option value="皮革">皮革</option>
+                        <option value="纺织">纺织</option>
+                        <option value="电子印刷包装">电子印刷包装</option>
+                        <option value="五金化工塑胶">五金化工塑胶</option>
+                    </select>
+                    <select name="sType" id="sType">
+                        <option value="商铺号">商铺号</option>
+                        <option value="企业名称">企业名称</option>
+                        <option value="会员账号">会员账号</option>
+                    </select>
+                </div>
+                <div class="tb-search">
+                    <input name="searchWord" id="searchWord" type="text" value="" placeholder="请输入查找关键字" class="tb-text">
+                    <input type="submit" value="查询" class="tb-btn">
+                </div>
+            </form>
+        </div>
+        <h2 class="tool-bar op-title">商家列表</h2>
+        <div class="operation op-bg">
+            <div class="g-f-l">
+                <a href="javascript:addMerchant();">添加</a>
+            </div>
+            <form action="" method="get" onsubmit="return goPage(this)">
+                <div class="page-r"> 当前共有：<b>35</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>4</strong>&nbsp;&nbsp;<a href="#" class="pg-cur">上一页</a>&nbsp;&nbsp;<a href="#" class="pg-cur">下一页</a>
+                    <input type="hidden" value="">
+                    <input type="text" name="inputpage" size="8" onkeyup="this.value=this.value.replace(/[^\d9]/g,'')">
+                    <input type="submit" value="跳转">
+                </div>
+            </form>
+        </div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="10%" class="list-id">商铺号</td>
+						<td width="20%" >企业名称</td>
+						<td width="20%" >会员账号</td>
+						<td width="15%" >所属市场</td>
+                        <td width="15%" >联系人</td>
+                        <td width="10%" >是否认领</td>
+						<td width="10%"  class="e-cent">操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+						<td>hnc@csc-ec.com</td>
+						<td>皮革</td>
+                        <td>华先生</td>
+                        <td>未认领</td>
+						<td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+					</tr>
+                    <tr>
+                        <td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+                        <td>hnc@csc-ec.com</td>
+                        <td>华盛奥特莱斯</td>
+                        <td>华先生</td>
+                        <td>未认领</td>
+                        <td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+                    </tr>
+                    <tr>
+                        <td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+                        <td>hnc@csc-ec.com</td>
+                        <td>皮革</td>
+                        <td>华先生</td>
+                        <td><span class="g-orange">已认领</span> </td>
+                        <td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+                    </tr>
+                    <tr>
+                        <td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+                        <td>hnc@csc-ec.com</td>
+                        <td>华盛奥特莱斯</td>
+                        <td>华先生</td>
+                        <td>未认领</td>
+                        <td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+                    </tr>
+                    <tr>
+                        <td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+                        <td>hnc@csc-ec.com</td>
+                        <td>皮革</td>
+                        <td>华先生</td>
+                        <td><span class="g-orange">已认领</span> </td>
+                        <td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+                    </tr>
+                    <tr>
+                        <td class="list-id">L01111001</td>
+                        <td>华南城电子商务有限公司</td>
+                        <td>hnc@csc-ec.com</td>
+                        <td>华盛奥特莱斯</td>
+                        <td>华先生</td>
+                        <td>未认领</td>
+                        <td class="e-cent"><a class="g-ico ico-edit" href="javascript:editMerchant(this);" title="修改">修改</a></td>
+                    </tr>
+				</tbody>
+			</table>
+			<div class="operation">
+                <form action="" method="get" onsubmit="return goPage(this)">
+                <div class="page-r"> 当前共有：<b>35</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>4</strong>&nbsp;&nbsp;<a href="#" class="pg-cur">上一页</a>&nbsp;&nbsp;<a href="#" class="pg-cur">下一页</a>
+                    <input type="hidden" value="">
+                    <input type="text" name="inputpage" size="8" onkeyup="this.value=this.value.replace(/[^\d9]/g,'')">
+                </div>
+                </form>
+            </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

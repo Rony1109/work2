@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/best/activity.css" />
+<script src="http://resmanage.csc86.com/js/best/activity.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">优质供求库</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">优质库</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质产品库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="seller.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质卖家库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="buyers.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质买家库</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<div class="crumb">您当前的位置：<a href="">优质卖家库</a> - <strong>活动列表</strong>
+		</div>
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="product.html">生意圈活动</a></li>
+				<li><a href="product-wait.html">线下录入活动</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar">活动搜索</h2>
+		<form action="" method="get" data-autocomplete="true"></form>
+		<div class="g-c-f e-search">
+			<div class="tb-do">
+				<div class="g-f-l">
+					活动名称：
+				</div>
+				<div class="tb-search">
+					<input type="text" name="title" class="tb-text" placeholder="请输入查找关键字"/>
+					<input type="submit" value="搜索" class="tb-btn"/>
+				</div>
+			</div>
+			<div class="tb-time"> 发布时间从：
+				<input type="text" id="startTime" class="g-d-text" />
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+				<input type="text"  class="g-d-text" id="endTime"/>
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+				<input type="submit" class="tb-btn" value=" GO ">
+			</div>
+		</div>
+		<h2 class="tool-bar">活动管理</h2>
+		<div class="operation op-bg">
+			<div class="g-f-l g-fw-b"><input type="button" class="add-activity-btn" value=" 添加活动 ">
+				参加活动会员账号：会员账号在这里</div>
+			<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+			<input type="text" size="8" />
+			&nbsp;
+			<input type="button" value="跳转" />
+			</span></div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="8%" class="list-id"><input name="" type="checkbox" value="">
+							&nbsp;选择</td>
+						<td width="4%">序号</td>
+						<td width="15%">活动名称</td>
+						<td width="15%">活动主题</td>
+						<td width="8%">活动时间</td>
+						<td width="8%">活动地址</td>
+						<td width="6%">状态</td>
+						<td width="6%">类型</td>
+						<td width="6%">操作者</td>
+						<td width="6%">所属圈子</td>
+						<td width="6%">管理操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td>2012-05-16 18:08:33</td>
+						<td>无动力铝合金自然通风</td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td><a href="javascript:" class="g-ico ico-edit">修改</a><br/><a href="javascript:" class="g-ico ico-del">删除</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td>2012-05-16 18:08:33</td>
+						<td>无动力铝合金自然通风</td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td><a href="javascript:" class="g-ico ico-edit">修改</a><br/><a href="javascript:" class="g-ico ico-del">删除</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td>2012-05-16 18:08:33</td>
+						<td>无动力铝合金自然通风</td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td><a href="javascript:" class="g-ico ico-edit">修改</a><br/><a href="javascript:" class="g-ico ico-del">删除</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td>2012-05-16 18:08:33</td>
+						<td>无动力铝合金自然通风</td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td><a href="javascript:" class="g-ico ico-edit">修改</a><br/><a href="javascript:" class="g-ico ico-del">删除</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td>2012-05-16 18:08:33</td>
+						<td>无动力铝合金自然通风</td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td>待审核</td>
+						<td><a href="javascript:" class="g-ico ico-edit">修改</a><br/><a href="javascript:" class="g-ico ico-del">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation"><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" />
+				&nbsp;
+				<input type="button" value="跳转" />
+				</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

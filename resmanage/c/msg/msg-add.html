@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">我的模块</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">我的面板</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">我的面板控制</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">消息发送</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">消息群发</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/msg.css">
+		<script src="http://resmanage.csc86.com/js/msg.js"></script>
+		<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/kindeditor-min.js"></script>
+		<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/lang/zh_CN.js"></script>
+		<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/WdatePicker.js"></script>
+		<h2 class="tool-bar">消息管理</h2>
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="../bops/verifymanage.findEnterprise">创建新消息</a></li>
+			</ul>
+		</div>
+		<div>
+			<div class="tool-bar">
+				<input type="button" class="but_comm" onclick="$('#form_add').submit();" value="发送">
+				<input type="button" class="but_comm" id="close_page" value="关闭">
+			</div>
+			<div class="g-c-f e-search" style="padding-top:15px;"> 
+				<div class="mgs_add_l"><form id="form_add" action="">
+					<table class="msg_add">
+						<tr>
+							<th style="width:100px">接收人：</th>
+							<td colspan="3">
+								<div class="msg_users_box_f">
+								<div id="msg_users_box" class="msg_users_box">
+									<b>1龙龙(why@163.com)</b><input type="text" value="" />
+									<b>2龙龙(why@163.com)</b><input type="text" value="" />
+									<b>3龙龙龙龙龙龙龙龙龙龙龙龙</b><input type="text" value="" />
+									<b>4龙龙(why@163.com)</b><input type="text" value="" />
+									<b>5龙龙(why@163.com)</b><input type="text" value="" />
+								</div>
+								</div>
+								<input id="msg_users" type="text" name="msg_users" value="" style="width:500px; display:none;" />
+							</td>
+						</tr>
+						<tr>
+							<th>消息类型：</th>
+							<td>
+								<select name="msg_type">
+									<option value="0">系统消息</option>
+									<option value="2">XX消息</option>
+								</select>
+							</td>
+							<th>是否定时发送：</th>
+							<td>
+								<div><label><input type="radio" name="msg_ds" checked value="0" /> 实时</label></div>
+								<div>
+									<label><input type="radio" name="msg_ds" value="1" /> 定时</label> 
+									待发送时间： <input id="msg_time" name="msg_time" type="text" disabled />
+									<a class="g-data" href="javascript:;" onclick="WdatePicker({el:'msg_time',dateFmt:'yyyy-M-d H:mm:ss'})" style="vertical-align:middle;"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>消息主题：</th>
+							<td colspan="3"><input type="text" name="msg_title" value="" style="width:500px;" /></td>
+						</tr>
+						<tr>
+							<th>消息内容：</th>
+							<td colspan="3">
+								<textarea id="msg_text" name="msg_title" style="width:500px; height:200px;"></textarea>
+								<div id="msg_text_err" class="">不超过200个字符。</div>
+							</td>
+						</tr>
+					</table>
+				</form></div>
+				<div class="mgs_add_r">
+					<div class="msg_cx_box"><form id="form_user" action="" onSubmit="">
+					<table style="width:100%">
+						<tr>
+							<td style="text-align:left;">
+								<select>
+									<option value="HY">按会员帐号</option>
+									<option value="SJ">按手机号码</option>
+									<option value="YX">按邮箱帐号</option>
+								</select>
+							</td>
+							<td style="text-align:right;">
+								<input id="text_field" type="text" value="" style="width:130px;" >
+								<input type="button" value="查询" class="tb-btn">
+							</td>
+						</tr>
+					</table>
+					</form></div>
+					<div class="msg_user_box">
+						<table class="msg_user_t">
+							<tbody>
+							<tr>
+								<th width="100">会员帐号</th>
+								<th align="center">会员名称</th>
+								<th width="60"></th>
+							</tr>
+							</tbody>
+						</table>
+						<div class="user_list">
+						<table class="msg_user">
+							<tbody>
+							<tr>
+								<td width="100">poiudr@163.com</td><td>王二</td><td width="60"><a href="javascript:;" onclick="add_sjr(this,'收件人标示','1')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','2')">添加</a></td>
+							</tr>
+							<tr>
+								<td>poiudr@163.com</td><td>王二</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','3')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','4')">添加</a></td>
+							</tr>
+							<tr>
+								<td>poiudr@163.com</td><td>王二</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','5')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','6')">添加</a></td>
+							</tr>
+							<tr>
+								<td>poiudr@163.com</td><td>王二</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示'),'7'">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','8')">添加</a></td>
+							</tr>
+							<tr>
+								<td>poiudr@163.com</td><td>王二</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','9')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','10')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','11')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','12')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','13')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class=x"msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','14')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','100')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','101')">添加</a></td>
+							</tr>
+							<tr>
+								<td>13988888888</td><td>张三</td><td><a class="msg_u_add" href="javascript:;" onclick="add_sjr(this,'收件人标示','102')">添加</a></td>
+							</tr>
+							<tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+				<div class="g-h-01"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

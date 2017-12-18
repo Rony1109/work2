@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL="http://resmanage.csc86.com/"</script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<body>
+<div class="m-nav"></div>
+<div class="main">
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li class="cur"> <a href="javascript:">充值</a> </li>
+        <li> <a href="javascript:">消费</a> </li>
+        <li> <a href="javascript:">余额</a> </li>
+      </ul>
+      <h2 class="tool-bar"> 会员充值总额：123456元 <span class="c-888">(所有支付成功的充值金额)</span> </h2>
+    </div>
+    <div class="g-c-f e-search">
+      <form action="" method="post">
+        <div class="g-c-f">
+          <div class="g-f-l username"> 帐户名：
+            <input type="text" class="input-medium"/>
+          </div>
+          <div class="g-f-l orderno"> 订单号：
+            <input type="text" class="input-medium"/>
+          </div>
+          <div class="g-f-l orderstatus"> 交易状态：
+            <select name="" id="" class="input-medium">
+              <option value="">全部</option>
+              <option value="">交易成功</option>
+              <option value="">交易失败</option>
+            </select>
+          </div>
+        </div>
+        <br/>
+        <div class="g-c-f">
+          <div class="g-f-l ordersum"> 充值金额：
+            <input type="text" class="input-small"/>
+            元 至
+            <input type="text" class="input-small"/>
+            元 </div>
+          <div class="g-f-l ordertime"> 交易时间：
+            <input type="text" class="input-medium" onclick="WdatePicker({dateFmt:'yyyy-M-d HH:mm:ss'})"/>
+            至
+            <input type="text" class="input-medium" onclick="WdatePicker({dateFmt:'yyyy-M-d HH:mm:ss'})"/>
+          </div>
+          <div class="tb-search">
+            <input type="submit" value="搜索" class="tb-btn"/>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="g-c-f operation"> <span class="page-r"> 当前共有： <b class="rowNumber">5</b> 条记录&nbsp;&nbsp; <b class="page">1</b> / <strong class="totalPage">1</strong> 页&nbsp;&nbsp; <a href="javascript:" onclick="backPage()">上一页</a> &nbsp;&nbsp; <a href="javascript:" onclick="nextPage()">下一页</a> &nbsp;&nbsp;
+      <input type="text" size="8" class="goPage" id="goPage1" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')">
+      &nbsp;
+      <input type="button" value="跳转" id="jump">
+      </span> </div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td width="2%"></td>
+            <td width="13%">订单号</td>
+            <td width="13%">财付通/支付宝订单号</td>
+            <td width="15%">账户名</td>
+            <td width="">公司及个人名称</td>
+            <td width="6%">金额</td>
+            <td width="13%">时间</td>
+            <td width="8%">交易内容</td>
+            <td width="8%">交易状态</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="2%"></td>
+            <td><a href="javascript:" target="_blank" class="dexis_icl" >20130801173056025</a></td>
+            <td>20130805102212</td>
+            <td><a href="javascript:" target="_blank" class="ueser_icl" >18938869208</a></td>
+            <td><a href="javascript:" target="_blank" class="compay_icl" >广州诚瑞科技有限公司</a></td>
+            <td>100.00元</td>
+            <td>2014-12-45 17:52:90</td>
+            <td>支付宝充值</td>
+            <td>支付成功</td>
+          </tr>
+          <tr>
+            <td width="2%"></td>
+           <td><a href="javascript:" target="_blank" class="dexis_icl" >20130801173056025</a></td>
+            <td>20130805102212</td>
+            <td><a href="javascript:" target="_blank" class="ueser_icl" >18938869208</a></td>
+            <td><a href="javascript:" target="_blank" class="compay_icl" >广州诚瑞科技有限公司</a></td>
+            <td>100.00元</td>
+            <td>2014-12-45 17:52:90</td>
+            <td>财付通充值</td>
+            <td>支付成功</td>
+          </tr>
+          <tr>
+            <td width="2%"></td>
+            <td><a href="javascript:" target="_blank" class="dexis_icl" >20130801173056025</a></td>
+            <td>20130805102212</td>
+            <td><a href="javascript:" target="_blank" class="ueser_icl" >18938869208</a></td>
+            <td><a href="javascript:" target="_blank" class="compay_icl" >广州诚瑞科技有限公司</a></td>
+            <td>100.00元</td>
+            <td>2014-12-45 17:52:90</td>
+            <td>支付宝充值</td>
+            <td>等待支付</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="g-c-f"> <span class="page-r"> 当前共有： <b class="rowNumber">5</b> 条记录&nbsp;&nbsp; <b class="page">1</b> / <strong class="totalPage">1</strong> 页&nbsp;&nbsp; <a href="javascript:" onclick="backPage()">上一页</a> &nbsp;&nbsp; <a href="javascript:" onclick="nextPage()">下一页</a> &nbsp;&nbsp;
+      <input type="text" size="8" class="goPage" id="goPage1" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')">
+      &nbsp;
+      <input type="button" value="跳转" id="jump">
+      </span> </div>
+  </div>
+</div>
+</body>
+</html>

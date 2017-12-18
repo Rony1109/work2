@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>1订单详情页</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+
+    <script src="./jquery.js"></script>
+    <script src="./bin/jsencrypt.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <label for="privkey">Private Key</label><br/>
+<textarea id="privkey" rows="15" cols="65">-----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQCvmhh2WBsiJw9HCcztO2NLH0BEVnqjRWY50azLPlQeIjOMsYso
+6Onvq4JuJ9lJD5w1daV220XmbhufPkui//owL7vn8IvSjWD44Nbfr7rqY9UM+34w
+C9cEq2UMFpX9IKsH3hgKimqk0Yelu3+CvxvUwmg9pRMNETVtkfArIXnk/QIDAQAB
+AoGAEyAzfeBGxEeA0Hnuyf/n5qy2sTrCDLpoUe/WZCSbwNR0zOQhhgkoQaRqhljs
+v5plpyTzKqjjSh+//m4ois5aj2qasz6IoPDMHiAP6O2TSKxPfj2fjs6T1KPzDCkZ
+BqIid1rTyRkGxW0qW3MEfC6HRItsKNAHbBTwOcdY8O+IsAECQQDp7j1h3dEqj6xB
+7wbRmxJH5oM4hjU6FPrxbnpOLTvKL6mkqf7Tsri5IpAWqaUSnv6nLblAL9B+SJtz
+Y1y8xqL9AkEAwCsiXzMnIswsaHZWMkEwa/mi5frDAnBd8aLJS7O4sFGRiSbAAsFy
+KJ0CzTiX6sSZLxJ77F/4D10M88YbfBjqAQJBAIZtxs5fptx7dbTqBBQdtfKlj9DC
+pwG6nr5xC02zhsFYhHdAzVSgRrD1ILI1SMwbnCE8EFHHaFu5o8M6XUeKKo0CQEFB
+pI9tgHm5mc7zeHviVT4lbKLqT7SRUeWPYQn7AtmlKWXIqeWFqW2PO/dSo4wOrPIm
+NbzkLgmRkKdre8PddgECQQCOJWgJ17M2qx0Nl9qktK2/r6Lqyo7vdHjr2IssGBNs
+N6sC1VnatTKfwaCzwJrz2sPuMCnQ3+tFvN6EsN4QpWB6
+-----END RSA PRIVATE KEY-----</textarea><br/>
+    <label for="pubkey">Public Key</label><br/>
+<textarea id="pubkey" rows="15" cols="65">-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvmhh2WBsiJw9HCcztO2NLH0BE
+VnqjRWY50azLPlQeIjOMsYso6Onvq4JuJ9lJD5w1daV220XmbhufPkui//owL7vn
+8IvSjWD44Nbfr7rqY9UM+34wC9cEq2UMFpX9IKsH3hgKimqk0Yelu3+CvxvUwmg9
+pRMNETVtkfArIXnk/QIDAQAB
+-----END PUBLIC KEY-----</textarea><br/>
+    <label for="input">Text to encrypt:</label><br/>
+    <textarea id="input" name="input" type="text" rows=4 cols=70>123</textarea><br/>
+    <input id="testme" type="button" value="Test Me!!!"/><br/>
+</div>
+
+
+<script type="text/javascript">
+    // Call this code when the page is done loading.
+    $(function () {
+
+        // Run a quick encryption/decryption when they click.
+        $('#testme').click(function () {
+
+            console.time("时间")
+            // Encrypt with the public key...
+            var encrypt = new JSEncrypt();
+            encrypt.setPublicKey($('#pubkey').val());
+            var encrypted = encrypt.encrypt($('#input').val());
+            console.log(encrypted)
+            console.timeEnd("时间")
+            // Decrypt with the private key...
+
+            console.timeEnd("时间2")
+            var decrypt = new JSEncrypt();
+            decrypt.setPrivateKey($('#privkey').val());
+            var uncrypted = decrypt.decrypt(encrypted);
+            console.log(uncrypted)
+            console.timeEnd("时间2")
+
+        });
+    });
+</script>
+<!-- 统计代码 end -->
+</body>
+</html>

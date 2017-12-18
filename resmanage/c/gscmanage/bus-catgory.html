@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>管理首页</title>
+	<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+	<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+	<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+	<link rel="stylesheet" href="../../css/app/app.css" />
+	<link rel="stylesheet" href="./css/gsc-manage.css">
+	<script>var BASEURL="http://192.168.1.241:8084/"</script>
+	<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+	<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+	<script src="http://resmanage.csc86.com/js/master.js"></script>
+	<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+	<div class="m-nav">
+		<div class="m-n-tab">
+			<div class="m-loginbar">
+				你好， <strong>超级管理员</strong>
+				<a href="javascript:">帐号设置</a>
+				|
+				<a href="loginOut">安全退出</a>
+				<a href="javascript:" class="g-d-ib b-btn">网站首页</a>
+				<a href="javascript:" class="g-d-ib b-btn">返回</a>
+			</div>
+			<ul>
+				<li>
+					<a href="../bops/appController.action?id=10001">我的面板</a>
+				</li>
+				<li>
+					<a href="../bops/userLists.action?id=10002">系统设置</a>
+				</li>
+				<li>
+					<a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a>
+				</li>
+				<li>
+					<a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="left-nav" id="leftNav">
+			<h2 class="ln-hd">逛市场管理</h2>
+			<ul class="ln-2th">
+				<li class="ln-2th-item" id="cur2">
+					<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+					<ul class="ln-3th  ln-3thshow">
+						<li class="li-last" >
+							<a href="pro-catgory.html" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">商品类目管理</a>
+						</li>
+						<li class="li-last" >
+							<a href="bus-catgory.html" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">商家类目管理</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+		<div class="content" id="content">			
+			<script type="text/javascript" src="../../js/app/app.js"></script>
+			<h2 class="tool-bar">商家管理</h2>
+			<form action="" method="post">
+				<input type="hidden" id="shopId">
+				<div class="wait-m">
+					<table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>
+								<div class="aff-key">
+									<span class="star">*</span>
+									旺铺网址：
+								</div>
+							</th>
+							<td>
+								<input class="cate-input-text" type="text" value="http://shop12930677.csc86.com">
+								<input class="cate-search-btn" type="button" value="查询">
+								<span class="g-fl g-dn">
+									<img src="http://res.csc86.com/v2/c/member/supply/images/loading.gif" alt=""></span>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="star">*</span>
+								店铺名称：</th>
+							<td id="shopName"></td>
+						</tr>
+						<tr>
+							<th><span class="star">*</span>
+								经营类目：</th>
+							<td>
+								<div class="aff-fr radiogroup" id="radiogroup">
+
+									<label>
+										<input type="radio" name="modeltype" id="77f968e1-2d54-11e2-bb1a-c8600070a4ae"><span>贸易型</span></label>
+									<label>
+										<input type="radio" name="modeltype" id="780ca41f-2d54-11e2-bb1a-c8600070a4ae"><span>生产型</span></label>
+									<label>
+										<input type="radio" name="modeltype" id="781a2409-2d54-11e2-bb1a-c8600070a4ae"><span>服务型</span></label>
+									<label>
+										<input type="radio" name="modeltype" id="7827d72c-2d54-11e2-bb1a-c8600070a4ae"><span>招商代理</span></label>
+									<label>
+										<input type="radio" name="modeltype" id="783563e3-2d54-11e2-bb1a-c8600070a4ae"><span>政府机构</span></label>
+									<label>
+										<input type="radio" name="modeltype" id="27b430d8-8d26-7b70-4bb1-c0ea5d2b8ee3"><span>其他</span></label>
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="star">*</span>
+								主营行业：</th>
+							<td>
+								<div class="hyinput-box">
+									<!-- <input class="cate-input-text hyinput" type="text">								
+									-->
+									<div class="hyselected"></div>
+									<input type="button" class="hybtn" value="选择" id="hycate-btn">								
+									<div class="cate-panel" id="cate-panel">
+										<ul class="g-cf hylist" id="hylist">
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="01">纺织、皮革</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="03">化工</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="04">橡塑</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="05">电子元器件</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="07">家装、建材</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="08">冶金矿产</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="09">能源</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="10">服饰配件、饰品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="11">箱包皮具</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="12">通信产品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="13">工艺品、礼品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="15">家居、酒店用品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="16">办公、文教</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="17">数码电脑</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="18">美妆日化</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="19">家用电器</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="20">食品、饮料</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="21">玩具</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="22">广电、传媒设备</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="23">运动户外</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="24">印刷</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="25">纸业</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="26">包装</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="27">五金、工具</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="28">电工电气</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="29">机械及行业设备</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="30">安全、防护</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="31">汽摩及配件</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="32">环保</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="33">交通运输</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="34">仪器仪表</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="35">商务服务</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="36">照明工业</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="37">绿色有机食品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="38">LED</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="39">机床</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="40">母婴用品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="41">男装</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="42">内衣</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="43">女装</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="44">汽车用品</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="45">日用百货</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="46">鞋</span>
+												</label>
+											</li>
+											<li>
+												<label for="">
+													<input type="checkbox">								
+													<span id="47">家纺家饰</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>一个输入框限填一种主营业务。主营产品参与匹配搜索，越准确，简洁，越容易被买家搜索到</div>
+							</td>
+						</tr>
+						<tr>
+							<th><div class="aff-key">
+								<span class="star">*</span>
+								主营产品/服务：
+							</div></th>
+							<td>
+								<div class="aff-fr">
+									<ul class="g-cf cpservice">
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+										<li>
+											<input type="text"></li>
+
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wait-btn">
+					<input type="submit" value="提交" />
+					<input type="button" value="返 回" onClick="history.back()" />
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<script type="text/javascript">seajs.use('./js/bus-cate.js');</script>
+</body>
+</html>

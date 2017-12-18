@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>用户管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li class="cur"><a href="c/upset/user.html">系统设置</a></li>
+      <li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/group.htmll">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">系统设置</h2>
+    <ul class="ln-2th">
+    	<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="user.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">用户管理</a></li>
+        <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="rloe.html"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">角色管理</a></li>
+         <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="journal.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">系统日志</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/upset.css" />
+  <div class="content" id="content">
+  	<h2 class="tool-bar">用户管理</h2>
+    <div class="g-c-f e-search">
+      <div class="tb-do"><a href="javascript:" class="g-ico u-add-user" onClick="newUser()">新建用户</a></div>
+      <div class="tb-do"><a href="javascript:" class="g-ico u-allot" onClick="allotRole()">分配角色</a></div>
+      <div class="tb-do"><a href="javascript:" class="g-ico u-browse" onClick="authority()">权限浏览</a></div>
+      <div class="tb-do"><a href="javascript:" class="g-ico u-revise" onClick="uRevise()">修改</a></div>
+      <div class="tb-do"><a href="javascript:" class="g-ico u-del" onClick="uDel()">删除</a></div>
+    </div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td width="12%" class="list-id">序号</td>
+            <td>用户ID</td>
+            <td>用户名称</td>
+            <td>状态</td>
+            <td>说明</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" >1</td>
+            <td>admin</td>
+            <td>管理员</td>
+            <td>正常</td>
+            <td class="list-do">技术主管</td>
+          </tr>
+          <tr>
+            <td class="list-id" >1</td>
+            <td>admin</td>
+            <td>管理员</td>
+            <td>正常</td>
+            <td class="list-do">技术主管</td>
+          </tr>
+          <tr>
+            <td class="list-id" >1</td>
+            <td>admin</td>
+            <td>管理员</td>
+            <td>正常</td>
+            <td class="list-do">技术主管</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation"> 
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+            <input type="text" size="8" />
+            &nbsp;
+            <input type="button" value="跳转" />
+            </span> 
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

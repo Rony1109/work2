@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+		<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>日志分析2</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="//resmanage.csc86.com/css/rizhi.css" >
+	<script src="http://res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+
+	<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+
+</head>
+
+<body>
+
+<div class="warptop"> <p>日志分析</p></div>
+<div class="warpbottom after">
+<div class="left">
+	<ul>
+		<li><a href="#">日志查询1</a></li>
+		<li><a href="#">日志查询2</a></li>
+		<li><a href="#">日志查询3</a></li>
+	</ul>
+</div>
+	<div class="right">
+		<div class="tkwk">
+			<form action="" method="get">
+			<table class="cwdztable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="480">
+					<col width="310">
+				</colgroup>
+				<tbody>
+				<tr>
+					<td class="tl tp1">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+						<input type="text" value="2016-10-31" id="startTime" class="g-d-text" name="startTime" readonly="" onclick="WdatePicker({maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd',el:'startTime'})">
+						至
+						<input type="text" value="2016-11-07" class="g-d-text" id="endTime" name="endTime" readonly="" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd',el:'endTime'})">
+					</td>
+					<td class="tl">是否修复：
+						<select id="orderStatus" name="orderStatus">
+							<option value="">全部</option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+					<td class="tl" colspan="2"><input type="submit" class="i3" value="查询"></td>
+				</tr>
+
+				</tbody>
+			</table>
+			</form>
+			<table class="cwmxtable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="80">
+					<col width="150">
+					<col width="150">
+					<col width="60">
+					<col width="60">
+					<col width="60">
+					<col width="60">
+					<col width="60">
+					<col width="380">
+					<col width="80">
+					<col width="80">
+					<col width="220">
+					<col width="220">
+				</colgroup>
+				<thead>
+
+				<tr>
+					<th>ID</th>
+					<th>接口名称</th>
+					<th>当前页面</th>
+					<th>接口状态</th>
+					<th>错误信息</th>
+					<th>错误文本</th>
+					<th>请求方式</th>
+					<th>请求类型</th>
+					<th>浏览器报头</th>
+					<th>操作系统</th>
+					<th>web服务器</th>
+					<th>后端执行语言</th>
+					<th>时间</th>
+					<th>修复状态</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>http://gzhuahao.b2b.csc86.com/getonline?callback=jQuery110209600402642440409_1480395770405</td>
+					<td>http://gzhuahao.b2b.csc86.com/</td>
+					<td>404</td>
+					<td>CHttpException</td>
+					<td>error</td>
+					<td>POST</td>
+					<td>jsonp</td>
+					<td>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36</td>
+					<td>Win32</td>
+					<td>nginx</td>
+					<td>PHP/5.3.9</td>
+					<td>2016-11-03 09:14</td>
+					<td>已修复</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+<script>seajs.use('//resmanage.csc86.com/c/member/js/resrizhi.js');</script>
+</body>
+</html>

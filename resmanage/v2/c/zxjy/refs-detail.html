@@ -1,0 +1,239 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+    <link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+	<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+	<link rel="stylesheet" href="http://resmanage.csc86.com/css/examinees.css" />
+	<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+	<script>var BASEURL="http://bops.csc86.com:80/"</script>
+	<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+	<script src="http://resmanage.csc86.com/js/master.js"></script>
+	<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+	<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+	<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+    <script src="http://resmanage.csc86.com/js/member-manage.js"></script>
+	
+</head>
+	
+<body>
+<div class="m-nav">
+<script type="text/javascript">
+var innerError= function (){
+	art.dialog({
+		title:'错误提示',
+		content: '系统内部服务出现错误，您可以尝试重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+var offLineMsg= function (){
+	art.dialog({
+		title:'下线提醒',
+		content: '您的账号在其他地方登录，被迫下线，是否重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+
+function offLine(){
+	$.ajax({ 
+		url: "loginOffline.action", 
+		data: { }, 
+		dataType: "json", 
+		error: function(XHR, textStatus, errorThrown){
+			clearInterval(checkRequest);
+			innerError();
+		},
+		success: function (data, textStatus, XHR) { 
+			if(XHR.status == 200 && data == true){
+				clearInterval(checkRequest);
+				offLineMsg();
+			}
+		},
+		complete: function (XHR, TS) { XHR = null }
+	}); 	
+}
+
+function loginOut(){
+	//清除当前域所有的cookie
+	var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+	if(keys){
+		for (var i = keys.length; i--;){
+			document.cookie=keys[i]+'=0;expires=' + new Date(0).toUTCString()+'; path=/';
+		}
+	}
+	//请求退出
+	location.href="loginOut";
+}
+
+var checkRequest;
+$(document).ready(function(){  
+ 	//checkRequest = setInterval("offLine()", 30*1000);
+});  
+</script>
+<div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>jwj</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+	    			<li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+	    			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+    		<li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+	    			<li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+	    			<li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+	    			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+	    			<li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+	    			<li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+	    			<li><a href="../bops/guang.listShop?id=10007">地图管理</a></li>
+	    			<li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+	    			<li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+	    			<li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="main">
+ 	<div class="left-nav" id="leftNav">
+	  <h2 class="ln-hd">审核管理</h2>
+
+<ul class="ln-2th">
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/verifymanage.findPersonal?" data-id="40010" onClick="mlast('ln-3th-cur','li-last',this)">个人会员</a></li>
+	        <li class="li-last" ><a href="../bops/verifymanage.findEnterprise?" data-id="40011" onClick="mlast('ln-3th-cur','li-last',this)">企业会员</a></li>
+	     </ul>
+    </li>
+			
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/productAudit.findProductByChecked?start=0&checked=N&" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">产品审核</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberPay.memberPaylist" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">在线交易审核</a></li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/person.list?" data-id="40014" onClick="mlast('ln-3th-cur','li-last',this)">个人实名认证</a></li>
+	        <li class="li-last" ><a href="../bops/approve.controllerRealNameFenye?approveType=2&rz_id=101&" data-id="40015" onClick="mlast('ln-3th-cur','li-last',this)">企业实名认证</a></li>
+	        <li class="li-last" ><a href="../bops/prove.list" data-id="40031" onClick="mlast('ln-3th-cur','li-last',this)">企业身份认证</a></li>
+	        <li class="li-last" ><a href="../bops/local.list" data-id="40035" onClick="mlast('ln-3th-cur','li-last',this)">企业实地认证</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">市场审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/marketCheckManage.showCommentCheckManage?" data-id="40016" onClick="mlast('ln-3th-cur','li-last',this)">批发市场评论审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageNews.showNewMarketCheckManage?applyState=&" data-id="40017" onClick="mlast('ln-3th-cur','li-last',this)">批发市场创建审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageSettled.showMarketCheckManage?" data-id="40018" onClick="mlast('ln-3th-cur','li-last',this)">批发市场入驻审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketAudit.findDynamicWait?" data-id="40019" onClick="mlast('ln-3th-cur','li-last',this)">批发市场动态审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageRec.listRecommendMarket?" data-id="40020" onClick="mlast('ln-3th-cur','li-last',this)">批发市场推荐管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">圈子审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/circleAuditRec.listRecommendCircle?" data-id="40021" onClick="mlast('ln-3th-cur','li-last',this)">圈子推荐管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleAuditTopic.showTopicCheckManage?topicState=NORMAL&" data-id="40022" onClick="mlast('ln-3th-cur','li-last',this)">圈子内容审查</a></li>
+	        <li class="li-last" ><a href="../bops/memberAudit.findAllRecommendMember?" data-id="40023" onClick="mlast('ln-3th-cur','li-last',this)">会员推荐管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleAudit.showCircleCheckManage?applyState=WAITING&" data-id="40024" onClick="mlast('ln-3th-cur','li-last',this)">圈子审核管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleActivity.showCircleActivity?activityState=WAITING&" data-id="40026" onClick="mlast('ln-3th-cur','li-last',this)">圈子活动管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleActivityTopic.listActivityTopic?" data-id="40027" onClick="mlast('ln-3th-cur','li-last',this)">活动评论审核</a></li>
+	        <li class="li-last" ><a href="../bops/cms.cmsList" data-id="40029" onClick="mlast('ln-3th-cur','li-last',this)">圈子碎片管理</a></li>
+	        <li class="li-last" ><a href="../bops/socialWall.listWall" data-id="40034" onClick="mlast('ln-3th-cur','li-last',this)">名片墙管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/shopBookAudit.findBooksByState?start=0&checked=C&actionType=byState&" data-id="40025" onClick="mlast('ln-3th-cur','li-last',this)">证书审核</a></li>
+	        <li class="li-last" ><a href="../bops/auditArticl.waitArticl?" data-id="40028" onClick="mlast('ln-3th-cur','li-last',this)">公司动态</a></li>
+	        <li class="li-last" ><a href="../bops/auditShop.adoptShops?" data-id="40032" onClick="mlast('ln-3th-cur','li-last',this)">旺铺审核</a></li>
+	        <li class="li-last" ><a href="../bops/submainVerify.waitList?" data-id="40033" onClick="mlast('ln-3th-cur','li-last',this)">域名转让审核</a></li>
+	        <li class="li-last" ><a href="../bops/shopkeepdomain.findkdDataList?" data-id="40039" onClick="mlast('ln-3th-cur','li-last',this)">设置保留域名</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/audinquiry.waitInquiry?" data-id="40012" onClick="mlast('ln-3th-cur','li-last',this)">询盘审核</a></li>
+	        <li class="li-last" ><a href="../bops/auditOrderItem.normalOrderItem?" data-id="40030" onClick="mlast('ln-3th-cur','li-last',this)">意向订单审核</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">融资审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/finance.findFinanceDataList?" data-id="40036" onClick="mlast('ln-3th-cur','li-last',this)">融资申请审核</a></li>
+	     </ul>
+    </li>
+</ul>
+
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <div class="content" id="content">
+    	<h2 class="tool-bar">企业审核</h2>
+    	<div class="wait-m">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="at-look">
+		  <tbody>
+		  <tr>
+			<th>企业名称：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>企业会员帐号：</th>
+			<td>asdasd</td>
+		  </tr>
+		  <tr>
+			<th>企业联系地址：</th>
+			<td>XXXXXXXXXXXXXX有限公司</td>
+		  </tr>
+		  <tr>
+			<th>企业旺铺地址：</th>
+			<td>平湖华南城ba la ba la ba la ba la ba la </td>
+		  </tr>
+		  <tr>
+			<th>企业网址：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>主营行业：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>主营产品：</th>
+			<td>0755-88888888</td>
+		  </tr>
+		  <tr>
+			<th>法人代表名称：</th>
+			<td>XXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>联系电话：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		   <tr>
+			<th>企业类型：</th>
+			<td>XXXXXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>经营模式：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		</tbody>
+		</table>
+    </div>
+    <div class="wait-btn">
+    	转移至
+		<input type="button" value="已通过" class="detail-pass" />
+		<input type="button" value="返回" class="detail-back" />
+		<input type="button" value="下一条" class="detail-next" />
+	</div>
+    </div>
+</div>   
+</body>
+ 
+</html>

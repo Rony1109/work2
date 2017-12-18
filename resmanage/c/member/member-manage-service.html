@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-服务管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/member-manage.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">服务管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <h2 class="tool-bar">服务管理</h2>
+    <div class="wait-m">
+    	<div class="mg-service b-b-1-do">
+        	<div class="f-l l-h-26"><strong>VIP会员服务</strong>：</div>
+            <div class="m-l-90 l-h-26 c-878787">
+            	未开通<span class="block m-t-15"><b class="o-btn" onClick="servOpen(123)">开通</b><b class="g-dis-btn m-l-10">续费</b></span>
+            </div>
+        </div>
+        <div class="mg-service"><input id="zz" name="" type="checkbox" value=""><label class="m-l-5" for="zz">种子用户</label></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

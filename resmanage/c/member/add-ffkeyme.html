@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/examinees.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="http://resmanage.csc86.com/css/advertising.css" rel="stylesheet" />
+<link href="http://resmanage.csc86.com/v2/c/member/keyword/css/style.css" rel="stylesheet" />
+<script>var BASEURL="http://bops.csc86.com:80/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="http://resmanage.csc86.com/js/advertising.js"></script>
+<script src="http://resmanage.csc86.com/js/member.js"></script>
+<script src="http://resmanage.csc86.com/js/member-manage.js"></script>
+<script src="http://resmanage.csc86.com/js/json2.js"></script>
+
+<!--<script src="../js/advertising.js"></script>-->
+
+</head>
+	
+<body>
+<div class="m-nav">
+<script type="text/javascript">
+var innerError= function (){
+	art.dialog({
+		title:'错误提示',
+		content: '系统内部服务出现错误，您可以尝试重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+var offLineMsg= function (){
+	art.dialog({
+		title:'下线提醒',
+		content: '您的账号在其他地方登录，被迫下线，是否重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+
+function offLine(){
+	$.ajax({ 
+		url: "loginOffline.action", 
+		data: { }, 
+		dataType: "json", 
+		error: function(XHR, textStatus, errorThrown){
+			clearInterval(checkRequest);
+			innerError();
+		},
+		success: function (data, textStatus, XHR) { 
+			if(XHR.status == 200 && data == true){
+				clearInterval(checkRequest);
+				offLineMsg();
+			}
+		},
+		complete: function (XHR, TS) { XHR = null }
+	}); 	
+}
+
+function loginOut(){
+	//清除当前域所有的cookie
+	var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+	if(keys){
+		for (var i = keys.length; i--;){
+			document.cookie=keys[i]+'=0;expires=' + new Date(0).toUTCString()+'; path=/';
+		}
+	}
+	//请求退出
+	location.href="loginOut";
+}
+
+var checkRequest;
+$(document).ready(function(){  
+ 	//checkRequest = setInterval("offLine()", 30*1000);
+});  
+</script>
+<div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>login</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+	    			<li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+	    			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+    		<li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+	    			<li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+	    			<li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+	    			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+	    			<li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+	    			<li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+	    			<li><a href="../bops/guang.listShop?id=10007">地图管理</a></li>
+	    			<li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+	    			<li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+	    			<li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+    </ul>
+</div>
+</div>
+<div class="main">
+ 	<div class="left-nav" id="leftNav">
+	  <h2 class="ln-hd">会员管理</h2>
+
+<ul class="ln-2th">
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberManagerPwd.getPasswod?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">初始密码设置</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberManager.getEnterpriseService?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/gradeManager.findMemberList?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员等级</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberType.findMemberEServe?type=G" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员类型管理</a></li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员等级管理</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/gradeManager.findGrade?" data-id="50012" onClick="mlast('ln-3th-cur','li-last',this)">普通会员分组管理</a></li>
+	        <li class="li-last" ><a href="../bops/gradeManager.findGroup?" data-id="50013" onClick="mlast('ln-3th-cur','li-last',this)">会员系统分组管理</a></li>
+	        <li class="li-last" ><a href="../bops/gradeManager.findAllGrowRule?" data-id="50015" onClick="mlast('ln-3th-cur','li-last',this)">会员成长值、积分管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/paykeywordManager.getUnderwayPayKeyWord?" data-id="50018" onClick="mlast('ln-3th-cur','li-last',this)">旭日排名管理</a></li>
+	        <li class="li-last" ><a href="../bops/paykeywordManager.getReservedWords?" data-id="50019" onClick="mlast('ln-3th-cur','li-last',this)">预留词库管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺统计报表</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/shopStatistics.list?type=y" data-id="50017" onClick="mlast('ln-3th-cur','li-last',this)">线上数据</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">运营数据统计</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsMainNagi?" data-id="50020" onClick="mlast('ln-3th-cur','li-last',this)">主导航数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsChannels?" data-id="50021" onClick="mlast('ln-3th-cur','li-last',this)">各频道数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsSpecial?" data-id="50022" onClick="mlast('ln-3th-cur','li-last',this)">专题活动数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop20?" data-id="50023" onClick="mlast('ln-3th-cur','li-last',this)">TOP20数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop30?" data-id="50024" onClick="mlast('ln-3th-cur','li-last',this)">TOP30数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop100?" data-id="50025" onClick="mlast('ln-3th-cur','li-last',this)">TOP100数据统计</a></li>
+	     </ul>
+    </li>
+</ul>
+
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <div class="content" id="content">
+    
+        <h2 class="tool-bar">设置旭日排名</h2>
+        
+        <ul class="g-c-f setXrpm-tab">
+        	<li><a href="bind-zskey.html">绑定关键词</a></li>
+            <li><a href="buy-ffkey.html">购买付费关键词</a></li>
+            <li class="cur"><a href="add-ffkeyme.html">添加付费关键词名额</a></li>
+        </ul>
+        
+<div class="g-c-f add-ffkeyme">
+	<div class="add-form">
+		<form action="paykeywordManager.addPayWordCount">
+			<input type="hidden" name="memberId" value="000106b1-661f-4b05-994b-e02394a6c00f"/>
+			<input type="hidden" name="id" value=""/>
+			<input type="hidden" name="residueCount" value="0"/>
+			<div class="g-c-f form-item">
+				<label class="item-key">会员账号：</label>
+				<div class="item-val">
+						szyb88
+				</div>
+			</div>
+			<div class="g-c-f form-item">
+				<label class="item-key">付费关键词名额：</label>
+				<div class="item-val">
+					<input type="text" name="allCount" value=""/>
+					个
+				</div>
+			</div>
+			<div class="g-c-f form-item">
+				<label class="item-key">价格：</label>
+				<div class="item-val">
+					<input type="text" name="charge" value=""/>
+					元/月
+				</div>
+			</div>
+			<div class="g-c-f form-item">
+				<label class="item-key">有效期：</label>
+				<div class="item-val">
+					<input type="text" name="months" value=""/>
+					个月，城商通到期时间为：<font color="red">2015-10-21</font>，建议有效期在<font color="red">12</font>月内
+				</div>
+			</div>
+			<div class="g-c-f form-item">
+				<div class="item-val">
+					<button type="submit">确定</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="g-f-l place-list">
+		<strong class="g-fs-14">付费关键词名额列表</strong>
+		<span class="g-fw-b">一共0个，已用0个</span>
+		<br/>
+		<br/>
+		<table>
+			<thead>
+				<tr>
+					<td>数量</td>
+					<td>剩余数量</td>
+					<td>价格</td>
+					<td>添加时间</td>
+					<td>有效期</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<br/><br/>
+	</div>
+</div>
+<script>seajs.use('v2/c/member/keyword/js/init');</script></div>
+</div>   
+</body>
+</html>
+

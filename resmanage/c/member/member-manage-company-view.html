@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-查看会员详情</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/member-manage.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">会员管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <link rel="stylesheet" href="../../css/advertising.css" />
+  <div class="content" id="content">
+    <h2 class="tool-bar">查看会员详情</h2>
+    <div class="wait-m">
+    	<div class="m-service">
+        	<b class="s_icon"></b>
+            <span class="block">会员等级：<b class="vip1">vip icon</b></span>
+            <span>开通时间：2013.06.30</span><span class="m-l-20">到期时间：2013.06.30</span>
+            <span class="block">服务记录：</span>
+            <ul class="s-list">
+            	<li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+                <li>2013.06.30 - 2013.06.30<span class="m-l-20">vip1</span></li>
+            </ul>
+        </div>
+        <div class="m-rank">
+        	<b class="s_icon"></b>
+            <div class="scrl g-c-f">
+                <div class="g-f-l">
+                	<span id="useWord" class="block"><strong>城商通赠送排名6个，已使用0个：</strong></span>
+                    <div id="giveList">
+                    <span class="block">关键词：蜡织发&nbsp;&nbsp;<b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></span>
+                    <span class="block">绑定产品ID：idididididididididid13216547</span>
+                    <span class="block">到期时间：2013-09-10</span>
+                    <span class="block g-h-05">&nbsp;</span>
+                    <span class="block">关键词：蜡织发&nbsp;&nbsp;<b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></span>
+                    <span class="block">绑定产品ID：idididididididididid13216547</span>
+                    <span class="block">到期时间：2013-09-10</span>
+                    <span class="g-h-10">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="g-f-r">
+                	<span class="block"><strong>付费排名6个：</strong></span>
+                    <span class="block">关键词：蜡织发&nbsp;&nbsp;300元</span>
+                    <span class="block">绑定产品ID：idididididididididid13216547</span>
+                    <span class="block">到期时间：2013-09-10</span>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+        <div class="serviced">
+			<strong>已开通服务：</strong>
+			<ul>
+				<li>种子用户</li>
+				<li>百大商家</li>
+			</ul>
+		</div>
+		<h3>企业会员</h3>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="at-look">
+		  <tbody>
+		  <tr>
+			<th>会员账号：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>企业LOGO：</th>
+			<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+		  </tr>
+		  <tr>
+			<th>企业名称：</th>
+			<td>XXXXXXXXXXXXXX有限公司</td>
+		  </tr>
+		  <tr>
+			<th>企业联系地址：</th>
+			<td>平湖华南城ba la ba la ba la ba la ba la </td>
+		  </tr>
+		  <tr>
+			<th>企业网址：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>企业旺铺地址：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>主营行业：</th>
+			<td>小卖部</td>
+		  </tr>
+		  <tr>
+			<th>主营产品：</th>
+			<td>ba la ba la ba la ba la ba la ba la ba la ba la ba la </td>
+		  </tr>
+		  <tr>
+			<th>法人代表名称：</th>
+			<td>ba la </td>
+		  </tr>
+		  <tr>
+			<th>企业类型：</th>
+			<td>民营</td>
+		  </tr>
+		  <tr>
+			<th>经营模式：</th>
+			<td>实体店铺</td>
+		  </tr>
+		  <tr>
+			<th>公司介绍内容：</th>
+			<td>XXXXXXXXXXXXXXXXXXXXXXXXXXXX ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la <br />XXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		</tbody></table>
+        </div>
+    </div>
+	<div class="wait-btn">
+		<input type="button" onclick="mresetPwd()" value="重置密码">
+		<input type="button" value="关闭">
+		<input type="button" onclick="history.back()" value="下一条">
+	</div>
+  </div>
+</div>
+</body>
+</html>

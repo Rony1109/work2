@@ -1,0 +1,15 @@
+@media all and (orientation : portrait){
+body{
+  background-color:blue;
+ }
+}
+/* 设备横屏时调用该段css代码 */
+@media all and (orientation : landscape){
+body {
+  background-color:#cccccc;
+ }
+}
+
+.author{color:red;font-size:10pt;}
+
+.blog{font-size:10pt;}

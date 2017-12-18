@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/examinees.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">审核管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员审核</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="personal-member.html" onClick="mlast('ln-3th-cur','li-last',this)">个人资料</a></li>
+          <li class="li-last ln-3th-cur"><a href="personal-company.html" onClick="mlast('ln-3th-cur','li-last',this)">企业资料</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="inquiry.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘审核</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="product.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">产品审核</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li class="cur"><a href="personal-company.html">所有个人会员</a></li>
+        <li><a href="personal-c-wait.html">待审核</a></li>
+        <li><a href="personal-c-adopt.html">已通过</a></li>
+        <li><a href="personal-c-not-adopt.html">未通过</a></li>
+        <li><a href="personal-c-del.html">已删除</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">个人会员搜索</h2>
+    <div class="g-c-f e-search">
+      <div class="tb-search">
+        <input type="text" value="" placeholder="请输入会员帐号" class="tb-text" />
+        <input type="button" value="搜索" class="tb-btn" />
+      </div>
+      <div class="tb-time"> 注册时间从：
+        <input type="text" id="startTime" class="g-d-text" />
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+        <input type="text"  class="g-d-text" id="endTime"/>
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+        <input type="button" value="GO" class="tb-btn" />
+      </div>
+    </div>
+    <h2 class="tool-bar op-title">个人资料审核</h2>
+    <div class="g-c-f e-search op-bg"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+      <input type="text" size="8" />
+      &nbsp;
+      <input type="button" value="跳转" />
+      </span></div>
+    <div class="g-list e-inquiry">
+      <table>
+        <thead>
+          <tr>
+            <td width="5%"><input name="" type="checkbox" value="">
+              &nbsp;选择</td>
+            <td width="11%">会员帐号</td>
+            <td width="12%">姓名</td>
+            <td width="12%">电子邮箱</td>
+            <td width="11%">手机号码</td>
+            <td width="11%">固定电话</td>
+            <td width="10%">会员状态</td>
+            <td width="12%">注册时间</td>
+            <td width="16%">管理操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>刘老三</td>
+            <td>889605336@qq.com</td>
+            <td>15930592012</td>
+            <td>0755-86389268</td>
+            <td class="e-cent">未审核</td>
+            <td class="e-cent">2012-05-16 18:08:33</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><a class="g-ico ico-del" href="javascript:">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>刘老三</td>
+            <td>889605336@qq.com</td>
+            <td>15930592012</td>
+            <td>0755-86389268</td>
+            <td class="e-cent">未审核</td>
+            <td class="e-cent">2012-05-16 18:08:33</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><a class="g-ico ico-del" href="javascript:">删除</a></td>
+          </tr>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>刘老三</td>
+            <td>889605336@qq.com</td>
+            <td>15930592012</td>
+            <td>0755-86389268</td>
+            <td class="e-cent">未审核</td>
+            <td class="e-cent">2012-05-16 18:08:33</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><a class="g-ico ico-del" href="javascript:">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" />
+        &nbsp;
+        <input type="button" value="跳转" />
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

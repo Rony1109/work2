@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/v2/l/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li class="cur"><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<!--
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>-->
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">产品中心</h2>
+		 <ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="javascript:">昨日</a></li>
+				<li><a href="javascript:">最近7天</a></li>
+				<li><a href="javascript:">最近30天</a></li>
+				<li><a href="javascript:">总计</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar">企业会员搜索</h2>
+		<div class="g-c-f e-search">
+			<form action="" method="get" data-autocomplete="true">
+			<div class="tb-do">
+				<select name="member">
+						<option value="询盘名称" selected="">会员账号</option>
+				</select>
+				<input type="text" name="q" placeholder="请输入搜索内容" class="g-d-text"/> &nbsp;
+				<select name="pv">
+						<option value="询盘名称" selected="">浏览量</option>
+				</select>
+				<input type="text" name="pv_value" placeholder="请输入搜索内容" class="g-d-text"/> &nbsp;
+				<select name="group">
+						<option value="询盘名称" selected="">会员组</option>
+				</select>
+			</div>
+			<div class="tb-time">
+				询盘时间从：
+				<input type="text" id="startTime" name="startTime" class="g-d-text" />
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+				<input type="text"  class="g-d-text"  name="endTime" id="endTime"/>
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+				<input type="submit" value="查询" class="tb-btn" />
+			</div></form>
+		</div>
+		<h2 class="tool-bar op-title">会员管理</h2>
+		<div class="operation op-bg">
+			<form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+				<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" name="page"/>
+				&nbsp;
+				<input type="submit" value="跳转" />
+				</span>
+			</form>
+		</div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="3%"></td>
+						<td width="20%">会员帐号</td>
+						<td width="20%">企业名称</td>
+						<td width="8%">提交时间</td>
+						<td width="5%">浏览量</td>
+						<td width="5%">访客(UV)</td>
+						<td width="5%">IP数</td>
+						<td width="5%">被询盘数</td>
+						<td width="5%">收藏数</td>
+						<td width="5%">产品数</td>
+						<td width="8%">会员组</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr>
+					<tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr><tr>
+						<td width="3%"></td>
+						<td>abc123@foxmail.com</td>
+						<td>供应福建NAK80钢板材料优质NAK80特</td>
+						<td>2014-05-13</td>
+						<td>111</td>
+						<td>222</td>
+						<td>14</td>
+						<td>100</td>
+						<td>123</td>
+						<td>14</td>
+						<td>会员组</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation">
+				<form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+					<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+					<input type="text" size="8" name="page"/>
+					&nbsp;
+					<input type="submit" value="跳转" />
+					</span>
+				</form>
+			</div>
+		</div>
+		<script>seajs.use('v2/c/shop/statistics/js/init');</script>
+	</div>
+</div>
+</body>
+</html>

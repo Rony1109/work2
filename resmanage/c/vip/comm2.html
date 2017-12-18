@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-个人会员</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">会员管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="http://resmanage.csc86.com/css/examinees.css" />
+  <script src="../../js/vip.js"></script>
+  <div class="content" id="content">
+  <br>
+    <div class="g-list e-inquiry" style="width:800px; margin:0 auto;">
+      <table>
+        <thead>
+          <tr>
+            <td width="20%">组ID</td>
+			<td>会员系统分组名称</td>
+            <td width="30%">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+		  <tr>
+            <td class="e-cent">1</td>
+            <td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<input type="text" value="" size="8" maxlength="10">
+					<a onclick="save_syszmc('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+				<a href="#">权限设置</a>
+			</td>
+          </tr>
+		  <tr>
+            <td class="e-cent">1</td>
+            <td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<input type="text" value="" size="8" maxlength="10">
+					<a onclick="save_syszmc('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+				<a href="#">权限设置</a>
+			</td>
+          </tr>
+		  <tr>
+            <td class="e-cent">1</td>
+            <td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<input type="text" value="" size="8" maxlength="10">
+					<a onclick="save_syszmc('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+				<a href="#">权限设置</a>
+			</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><br>
+	<h2 class="tool-bar">新增管理组</h2><br>
+	<form action="" onSubmit="return add_syshyz(this)">
+		管理组名:&nbsp;&nbsp;<input type="text" name="name" size="20" maxlength="10">&nbsp;&nbsp;&nbsp;
+		<input type="button" value="新增" style="height:25px; padding:0 20px;">
+	</form>
+	
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>列表页 - 首页轮播管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+
+<body>
+<!--头部 start-->
+<div class="m-nav">
+    <div class="m-n-tab">
+        <div class="m-loginbar">你好，<strong>pengle</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+        <ul>
+            <li><a href="../bops/audinquiry.waitInquiry?id=10004">审核管理</a></li>
+            <li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+            <li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+            <li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+            <li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+            <li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+            <li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+            <li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+            <li><a href="../bops/guang.listShop?cityId=1&id=10007">地图管理</a></li>
+            <li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+            <li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+            <li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 end-->
+
+<!--主体 start-->
+<div class="main">
+	<!--左侧 start-->
+    <div class="left-nav" id="leftNav">
+    	<h2 class="ln-hd">逛市场管理</h2>
+        <ul class="ln-2th">
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.couponsManage?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.enterpriseManage" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.uploadManage?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">下载页管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.activitiesManage?" data-id="90011" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+                    <li class="li-last" ><a href="../bops/app.specialManage?" data-id="90012" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.couponRecommendManage" data-id="90023" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.productCategoryManage?" data-id="90031" onClick="mlast('ln-3th-cur','li-last',this)">找货类目</a></li>
+                    <li class="li-last" ><a href="../bops/app.enterpriseCategoryManage" data-id="90032" onClick="mlast('ln-3th-cur','li-last',this)">商家类目</a></li>
+                    <li class="li-last" ><a href="../bops/app.couponCategoryManage" data-id="90033" onClick="mlast('ln-3th-cur','li-last',this)">特惠类目</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">广场管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=1" data-id="90081" onClick="mlast('ln-3th-cur','li-last',this)">深圳广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=2" data-id="90082" onClick="mlast('ln-3th-cur','li-last',this)">西安广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=3" data-id="90083" onClick="mlast('ln-3th-cur','li-last',this)">南宁广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=4" data-id="90084" onClick="mlast('ln-3th-cur','li-last',this)">南昌广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=5" data-id="90085" onClick="mlast('ln-3th-cur','li-last',this)">郑州广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=6" data-id="90086" onClick="mlast('ln-3th-cur','li-last',this)">哈尔滨广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=7" data-id="90087" onClick="mlast('ln-3th-cur','li-last',this)">合肥广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=8" data-id="90088" onClick="mlast('ln-3th-cur','li-last',this)">重庆广场</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">专业市场管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.professionMarketManage?" data-id="90091" onClick="mlast('ln-3th-cur','li-last',this)">深圳专业市场</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">新闻管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=1" data-id="90051" onClick="mlast('ln-3th-cur','li-last',this)">深圳新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=2" data-id="90052" onClick="mlast('ln-3th-cur','li-last',this)">西安新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=3" data-id="90053" onClick="mlast('ln-3th-cur','li-last',this)">南宁新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=4" data-id="90054" onClick="mlast('ln-3th-cur','li-last',this)">南昌新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=5" data-id="90055" onClick="mlast('ln-3th-cur','li-last',this)">郑州新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=6" data-id="90056" onClick="mlast('ln-3th-cur','li-last',this)">哈尔滨新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=7" data-id="90057" onClick="mlast('ln-3th-cur','li-last',this)">合肥新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=8" data-id="90058" onClick="mlast('ln-3th-cur','li-last',this)">重庆新闻</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">数据管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/orderDateList?" data-id="90092" onClick="mlast('ln-3th-cur','li-last',this)">订单数据管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <!--左侧 end-->
+    
+    <!--右侧 start-->
+    <div class="content" id="content">
+    	<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/market/css/perman.css" />    
+        
+    	<h2 class="tool-bar op-title">周边热货管理</h2>
+        
+        <div class="g-c-f e-search op-bg">
+            <span class="operation-l">
+               类目：<select style="width:100px;">
+               			<option style="">服装内衣</option>
+               			<option style="">鞋包配饰</option>
+                        <option style="">家纺家装</option>
+                        <option style="">纺织皮革</option>
+                        <option style="">五金电子</option>
+               		</select>
+                    <input type="button" value="获取最新排名" style="padding:0px 5px; line-height:20px;">
+            </span>
+            <form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+            	<span class="page-r">已选择100件商品(剩余可选100件) 当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;<input type="text" size="8" name="page"  onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')" />&nbsp;<input type="submit" value="跳转" /></span>
+            </form> 
+        </div>
+        
+        <div class="g-list xcw-lst">
+            <table class="xcw-tab">
+            	<colgroup>
+                	<col width="5%" />
+                    <col width="2%" />
+                    <col width="10%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="25%" />
+                    <col width="13%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td class="tab-h-l"><!--<input class="jsSltAll" type="checkbox" value="" name="" />-->&nbsp;选择</td>
+                        <td>&nbsp;</td>
+                        <td>序号</td>
+                        <td>图片</td>
+                        <td>商品名称</td>
+                        <td>商品网址</td>
+                        <td>交易状态</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>1</td>
+                        <td><img src="../../../img/logo-icon.png" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            不可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>3</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>4</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>5</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>6</td>
+                        <td><img src="../../../img/hncmap/q_bg_2.png" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>7</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                    <tr data-id="">
+                        <td class="tab-h-l"><input class="jsSltOne" type="checkbox" value="" name=""></td>
+                        <td>&nbsp;</td>
+                        <td>8</td>
+                        <td><img src="http://img.csc86.com/5487b040e4b08fc7988de550" width="70" height="50" /></td>
+                        <td>阿桑打算的</td>
+                        <td>
+                           <a href="#" target="_blank">http://img.csc86.com/5487b040e4b08fc7988de550</a>
+                        </td>
+                        <td>
+                            可交易
+                        </td>
+                    </tr>
+                </tbody>
+               <tfoot>
+                	<tr>
+                    	<td class="tab-h-l"><input class="jsSltAll" type="checkbox" value="" name="">全选</td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                            <input type="button" value="提交" style="padding:5px 10px; text-align:center; width:100px;">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="operation">
+                <form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+                    <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;<input type="text" size="8" name="page"  onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')" />&nbsp;<input type="submit" value="跳转" /></span>
+                </form> 
+            </div>
+            
+        </div>
+        <script>seajs.use('http://resmanage.csc86.com/v2/c/market/js/perman.js');</script>
+	</div>
+    <!--右侧 end-->
+</div>
+<!--主体 end-->
+</body>
+</html>

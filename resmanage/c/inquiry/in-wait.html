@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/inquiry.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">审核管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘列表</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">状态管理</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li><a href="inquiry.html">所有询盘</a></li>
+        <li class="cur"><a href="in-wait.html">待审核询盘</a></li>
+        <li><a href="in-adopt.html">已通过询盘</a></li>
+        <li><a href="in-not-adopt.html">未通过询盘</a></li>
+        <li><a href="in-e-isolation.html">隔离询盘</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">询盘搜索</h2>
+    <div class="g-c-f e-search">
+      <div class="tb-do">
+        <select>
+          <option value="按条件">按条件</option>
+          <option value="询盘会员ID">询盘会员ID</option>
+          <option value="供应商">供应商</option>
+          <option value="询盘标题">询盘标题</option>
+          <option value="客服管理">客服管理</option>
+        </select>
+      </div>
+      <div class="tb-search">
+        <input type="text" value="" placeholder="请输入查找关键字" class="tb-text" />
+        <input type="button" value="搜索" class="tb-btn" />
+      </div>
+      <div class="tb-time">
+        <select>
+          <option value="询盘时间">询盘时间</option>
+          <option value="过期时间">过期时间</option>
+        </select>
+        &nbsp;
+        <input type="text" id="startTime" class="g-d-text" />
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+        <input type="text"  class="g-d-text" id="endTime"/>
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+        <input type="button" value="GO" class="tb-btn" />
+      </div>
+    </div>
+    <h2 class="tool-bar">询盘管理</h2>
+    <div class="operation"> <span class="operation-l">
+      <input type="button" value="删除" />
+      移动至
+      <select class="u94" id="u94">
+        <option value="待审核">待审核</option>
+        <option value="已通过">已通过</option>
+        <option value="未通过">未通过</option>
+        <option value="隔离">隔离</option>
+      </select>
+      </span> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+      <input type="text" size="8" />
+      &nbsp;
+      <input type="button" value="跳转" />
+      </span></div>
+    <div class="g-list e-inquiry">
+      <table>
+        <thead>
+          <tr>
+            <td width="5%"><input name="" type="checkbox" value=""></td>
+            <td width="11%">询盘会员ID</td>
+            <td width="29%">询盘标题</td>
+            <td width="24%">询盘说明</td>
+            <td width="14%">询盘时间</td>
+            <td width="6%">客服</td>
+            <td width="11%">操作</td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="list-id"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>对【供应福建NAK80钢板材料优质NAK80特性性能】进行咨询</td>
+            <td>这个钢板我很感兴趣，最低价格多少？</td>
+            <td class="e-cent">2012-5-31 12:12:30</td>
+            <td class="e-cent">P区</td>
+            <td class="e-cent"><a class="ic-look" href="javascript:"  title="查看详情"></a><a class="ic-su" href="javascript:" title="审核" onClick="prESucceed()"></a></td>
+          </tr>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>对【供应福建NAK80钢板材料优质NAK80特性性能】进行咨询</td>
+            <td>这个钢板我很感兴趣，最低价格多少？</td>
+            <td class="e-cent">2012-5-31 12:12:30</td>
+            <td class="e-cent">P区</td>
+            <td class="e-cent"><a class="ic-look" href="javascript:"  title="查看详情"></a><a class="ic-su" href="javascript:" title="审核" onClick="prESucceed()"></a></td>
+          </tr>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>对【供应福建NAK80钢板材料优质NAK80特性性能】进行咨询</td>
+            <td>这个钢板我很感兴趣，最低价格多少？</td>
+            <td class="e-cent">2012-5-31 12:12:30</td>
+            <td class="e-cent">P区</td>
+            <td class="e-cent"><a class="ic-look" href="javascript:"  title="查看详情"></a><a class="ic-su" href="javascript:" title="审核" onClick="prESucceed()"></a></td>
+          </tr>
+          <tr>
+            <td class="list-id" ><input name="" type="checkbox" value=""></td>
+            <td>hbzybyaf66l</td>
+            <td>对【供应福建NAK80钢板材料优质NAK80特性性能】进行咨询</td>
+            <td>这个钢板我很感兴趣，最低价格多少？</td>
+            <td class="e-cent">2012-5-31 12:12:30</td>
+            <td class="e-cent">P区</td>
+            <td class="e-cent"><a class="ic-look" href="javascript:"  title="查看详情"></a><a class="ic-su" href="javascript:" title="审核" onClick="prESucceed()"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation"><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" />
+        &nbsp;
+        <input type="button" value="跳转" />
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

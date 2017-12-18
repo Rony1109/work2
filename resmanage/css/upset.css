@@ -1,0 +1,45 @@
+@charset "utf-8";
+.art-u { margin-bottom:8px; overflow:auto; zoom:1; }
+.art-u span { width:70px; text-align:right; margin-right:3px; display:inline-block; }
+.art-u span b{ vertical-align:middle; color:#f60;}
+.art-u label { margin-right:10px; vertical-align:middle; }
+.art-u label input { margin-right:3px; vertical-align:middle; }
+.del-color{ color:#f60;}
+.po-us{display:none; line-height:22px;}
+
+
+.l-allot{ float:left; width:160px;  }
+.l-allot span{ display:block; line-height:26px; text-align:left;}
+.a-r-sel ul,#userHtml,#roleHtml{ border:1px solid #e3e3e3; border-top-color:#a1b3c2; background:#fff; line-height:22px;}
+#roleHtml{ overflow-x:hidden; overflow-y:auto; height:230px;}
+#userHtml ul{ overflow-x:hidden; overflow-y:auto; height:230px;}
+.l-allot h4{ height:22px; background:#a1b3c2; text-indent:5px; color:#fff; font-size:12px;}
+.a-r-sel ul li{padding-left:5px; cursor:pointer;}
+.a-r-sel ul li.cur{ background:#3399ff; color:#fff;}
+.a-r-sel ul li input{ margin-right:3px;}
+.a-r-sel{ margin-right:20px;}
+.at-bw{width:200px;}
+.j-fi{ padding-left:20px; line-height:26px;}
+.j-fi span{ width:65px; display:inline-block; text-align:right;}
+.jf-ti{ line-height:26px;}
+.point-l,.pt-hidd{ line-height:32px; background:url(../img/icons/point-l.png) no-repeat 0 8px; padding-left:22px; clear:both; color:#404040;}
+.pt-hidd{display:none;}
+.pt-color{ color:#F00; display:block;}
+
+.c-items{ height:auto; overflow:hidden; zoom:1;}
+.c-items a { padding-left:44px; background:url(../img/icons/folder.png) no-repeat 22px center; color:#404040; }
+a.c-item-hd, a.c-2th-item-hd, .c-3th-items li a { white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow: hidden; display:block; }
+a.c-item-hd { width:157px; }
+a.c-2th-item-hd { width:142px; }
+.c-3th-items li a { width:127px; }
+.c-items .has-children { background:url(../img/icons/unless.png) no-repeat 4px 3px }
+.c-items .c-item-cur, .c-items .c-2th-item-cur { background-image:url(../img/icons/less.png) }
+.c-items ul, .c-items .c-item-cur .c-2th-items ul { display:none }
+.c-items .c-item-cur ul, .c-items .c-item-cur .c-2th-item-cur ul {display:block; }
+.c-items .c-item-cur .c-2th-item-cur ul{position:relative}
+.c-item-hd { font-weight:700 }
+.c-2th-items { margin-left:15px }
+.c-3th-items { margin-left:15px }
+.allot-r{ padding-left:10px;}
+.allot-r input{ margin-right:3px;}
+.pl20px{padding-left:20px;}

@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"ec96f00c27880bc28ceb67f34e0f4c35"}*/
+define(function(require){return require("../template")("public/logo",' <h1 id="logo"> <a href="http://www.qq.com"> <img width=\'134\' height=\'44\' src="http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png" alt="\u817e\u8baf\u7f51" /> </a> </h1> ')});

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<div onclick="f()">kkkkk</div>
+</body>
+<script>
+
+	var worker=new Worker('test.js');
+
+	worker.postMessage(10000000000);
+	worker.onmessage=function(e){
+		console.log(e.data)
+	}
+
+	function f(){alert(1)}
+</script>
+</html>

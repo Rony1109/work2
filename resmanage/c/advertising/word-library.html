@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>词库</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="../../css/advertising.css" rel="stylesheet" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="../../js/advertising.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">广告管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">广告管理</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="personal-member.html" onClick="mlast('ln-3th-cur','li-last',this)">添加付费关键词</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<link rel="stylesheet" href="../../css/examinees.css" />
+	<div class="content" id="content">
+        <h2 class="tool-bar g-fs-14">添加付费关键词</h2>
+        <div class="paid-key-form paykeyword">
+            <ul>
+                <li><input type="text" class="txt" id="keyWord" value="输入词汇查询是否在预留词库中">&nbsp;&nbsp;<input type="button" class="btnlink" value="查询" name="OK"><span class="libw-info"><a class="" href="#">下一个</a></span></li>
+                <li class="textarea">
+                	<h4>预留词库</h4>
+                    <div class="lib-word" id="libWord">
+                        <p><span>皮草</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮革</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>毛料</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮草</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮革</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>毛料</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮草</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮革</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>毛料</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮草</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮革</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>毛料</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮草</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>皮革</span><a class="ico-del" href="#">删除</a></p>
+                        <p><span>毛料</span><a class="ico-del" href="#">删除</a></p>
+                    </div>
+                </li>
+                <li class="g-t-l">
+                	<input type="button" class="btnlink" value="新增" name="addwd">
+                    <input type="button" class="btnlink" value="保存" name="save">
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+</body>
+</html>

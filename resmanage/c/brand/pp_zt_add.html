@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+      <li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+      <li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+      <li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">我的面板</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">我的模块</a>
+        <ul class="ln-3th">
+          <li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">我的面板</a></li>
+          <li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">我的面板控制</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a>
+        <ul class="ln-3th">
+          <li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">消息发送</a></li>
+          <li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">消息群发</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <div class="content" id="content">
+    <div style="margin:10px 0">您当前的位置是：品牌商家</div>
+    <div class="g-c-f e-search">
+      <div style="float:right; line-height:30px; padding-left:5px;">
+        <input type="button" value="新建专题" style="height:24px; padding:0 10px;">
+      </div>
+      <div class="tb-time" style="float:left">
+        <div class="tb-search" style="float:right;margin:0">
+        <input type="text" value="" placeholder="请输入会员帐号" class="tb-text">
+        <input type="button" value="搜索" class="tb-btn">
+      </div>
+        状态：<select>
+          <option value="all">第一期</option>
+          <option value="yes">第二期</option>
+          <option value="no">第三期</option>
+        </select> 
+      </div>
+    </div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td class="list-id">序号</td>
+            <td>期号</td>
+            <td>主题</td>
+            <td>本次主编</td>
+            <td class="e-cent">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id">1</td>
+            <td>第一期</td>
+            <td>华盛奥特莱斯</td>
+            <td>燕子</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:" title="查看">查看</a> <a class="g-ico ico-del" href="javascript:" title="删除">删除</a></td>
+          </tr>
+           <tr>
+            <td class="list-id">1</td>
+            <td>第一期</td>
+            <td>华盛奥特莱斯</td>
+            <td>燕子</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:" title="查看">查看</a> <a class="g-ico ico-del" href="javascript:" title="删除">删除</a></td>
+          </tr>
+           <tr>
+            <td class="list-id">1</td>
+            <td>第一期</td>
+            <td>华盛奥特莱斯</td>
+            <td>燕子</td>
+            <td class="e-cent"><a class="g-ico ico-see-children" href="javascript:" title="查看">查看</a> <a class="g-ico ico-del" href="javascript:" title="删除">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong> 页&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8">
+        &nbsp;
+        <input type="button" value="跳转">
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

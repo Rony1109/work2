@@ -1,0 +1,385 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>应收明细报表</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL=""</script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<body>
+<div class="m-nav">
+<script type="text/javascript">
+var innerError= function (){
+	art.dialog({
+		title:'错误提示',
+		content: '系统内部服务出现错误，您可以尝试重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+var offLineMsg= function (){
+	art.dialog({
+		title:'下线提醒',
+		content: '您的账号在其他地方登录，被迫下线，是否重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+
+function offLine(){
+	$.ajax({ 
+		url: "loginOffline.action", 
+		data: { }, 
+		dataType: "json", 
+		error: function(XHR, textStatus, errorThrown){
+			clearInterval(checkRequest);
+			innerError();
+		},
+		success: function (data, textStatus, XHR) { 
+			if(XHR.status == 200 && data == true){
+				clearInterval(checkRequest);
+				offLineMsg();
+			}
+		},
+		complete: function (XHR, TS) { XHR = null }
+	}); 	
+}
+
+function loginOut(){
+	//清除当前域所有的cookie
+	var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+	if(keys){
+		for (var i = keys.length; i--;){
+			document.cookie=keys[i]+'=0;expires=' + new Date(0).toUTCString()+'; path=/';
+		}
+	}
+	//请求退出
+	location.href="loginOut";
+}
+
+var checkRequest;
+$(document).ready(function(){  
+ 	//checkRequest = setInterval("offLine()", 30*1000);
+});  
+</script>
+<div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>开发</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+	    			<li><a href="../bops/audinquiry.waitInquiry?id=10004">审核管理</a></li>
+	    			<li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+	    			<li><a href="../bops/pagelist.ShufflingManage?id=10011">逛市场管理</a></li>
+	    			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+    		<li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+    	<!-- 20160324财务菜单默认链接页面为提款按钮设置页面 -->
+    		<li><a href="../bops/dw.showswithch?id=20003">财务管理</a></li>
+	    			<li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+	    			<li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+	    			<li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+	    			<li><a href="../bops/guang.listShop?cityId=1&id=10007">地图管理</a></li>
+	    			<li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+	    			<li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+	    			<li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+    </ul>
+</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+	  <h2 class="ln-hd">广告管理</h2>
+        <ul class="ln-2th">
+                <!--	-->      
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">广告竞价管理</a>
+                 <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/advertising.adverPageList?" data-id="60021" onClick="mlast('ln-3th-cur','li-last',this)">页面管理</a></li>
+                    <li class="li-last" ><a href="../bops/advertising.adsAdd?" data-id="60022" onClick="mlast('ln-3th-cur','li-last',this)">添加广告位</a></li>
+                    <li class="li-last" ><a href="../bops/advertising.adsList?" data-id="60023" onClick="mlast('ln-3th-cur','li-last',this)">广告位管理</a></li>
+                    <li class="li-last" ><a href="../bops/advertising.advertisingAdd?" data-id="60024" onClick="mlast('ln-3th-cur','li-last',this)">添加广告</a></li>
+                    <li class="li-last" ><a href="../bops/advertising.advertisingNormalList?" data-id="60025" onClick="mlast('ln-3th-cur','li-last',this)">广告管理</a></li>
+                    <li class="li-last" ><a href="../bops/advertAudit.getList?" data-id="60026" onClick="mlast('ln-3th-cur','li-last',this)">竞价广告审核</a></li>
+                    <li class="li-last" ><a href="../bops/advertising.advertisingNormalBidList?" data-id="60027" onClick="mlast('ln-3th-cur','li-last',this)">竞价广告管理</a></li>
+                    <li class="li-last" ><a href="../bops/advertAccount.getList?" data-id="60028" onClick="mlast('ln-3th-cur','li-last',this)">推广帐号管理</a></li>
+                 </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺模版管理</a>
+                 <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/shopskin.allShopskin?" data-id="60010" onClick="mlast('ln-3th-cur','li-last',this)">模版管理</a></li>
+                    <li class="li-last" ><a href="../bops/shopskin.gotoAddPage?" data-id="60019" onClick="mlast('ln-3th-cur','li-last',this)">添加模版</a></li>
+                    <li class="li-last" ><a href="../bops/shopskin.gotoTradeType?" data-id="60030" onClick="mlast('ln-3th-cur','li-last',this)">模版分类管理</a></li>
+                 </ul>
+            </li>
+                    <!-- add wangbo 2016034 增加财务管理菜单下左侧财务菜单 -->
+                    <!-- add wangbo 2016034end -->
+        </ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+    <!--<link rel="stylesheet" href="http://resmanage.csc86.com/css/shop/skin.css" />-->
+    <link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/mysy/css/mysy.css" />
+    <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+    <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+ 	 <h2 class="tool-bar">应收明细报表</h2>
+	<!-- <div style="border:1px solid #ccc;">-->
+
+     <div class="mysy-maxhei72">
+     	<div class="tb-do">
+        	<select id="recedate">
+            	<option value="费用属期">费用属期</option>
+            	<option value="缴费日期" >缴费日期</option>
+            	<option value="所属账期" >所属账期</option>
+        	</select>
+        </div>
+        <div class="tb-time mysy-costtime">
+            <input type="text" value="" id="startTime" class="g-d-text" readonly/>
+            <a class="g-data" href="javascript:"  onclick="WdatePicker({dateFmt:'yyyy-M-d ',maxDate:'#F{$dp.$D(\'endTime\')}',el:'startTime'})"></a>至        
+            <input type="text" value=""  class="g-d-text" id="endTime" readonly/>
+            <a class="g-data" href="javascript:"  onclick="WdatePicker({dateFmt:'yyyy-M-d ',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'#F{$dp.$D(\'startTime\',{M:+7});}',el:'endTime'})">		</a>
+        </div>
+        <div class="tb-do tb-hei30">
+            费用类型:
+            <select id="rece-typesoffee">
+                <option value="all">全部</option>
+                <option value="物业费" >物业费</option>
+                <option value="物业滞纳金" >物业滞纳金</option>
+                <option value="保证金" >保证金</option>
+                <option value="材料费" >材料费</option>
+                <option value="拆墙费" >拆墙费</option>
+                <option value="场地使用管理费" >场地使用管理费</option>
+                <option value="车位管理费" >车位管理费</option>
+                <option value="出入证工本费" >出入证工本费</option>
+                <option value="代收房产税" >代收房产税</option>
+                <option value="代收土地使用税" >代收土地使用税</option>
+                <option value="电费" >电费</option>
+                <option value="电费分摊" >电费分摊</option>
+                <option value="公共能耗" >公共能耗</option>
+                <option value="公共区域维护费" >公共区域维护费</option>
+                <option value="公摊电费" >公摊电费</option>
+                <option value="公摊加压费" >公摊加压费</option>
+                <option value="公摊水费" >公摊水费</option>
+                <option value="加班空调费" >加班空调费</option>
+                <option value="垃圾处理费" >垃圾处理费</option>
+                <option value="垃圾清运费" >垃圾清运费</option>
+                <option value="门禁IC卡" >门禁IC卡</option>
+                <option value="排污费" >排污费</option>
+                <option value="其他" >其他</option>
+                <option value="其他费用" >其他费用</option>
+                <option value="人工费" >人工费</option>
+                <option value="水费" >水费</option>
+                <option value="水费分摊" >水费分摊</option>
+                <option value="停车场经营收入" >停车场经营收入</option>
+                <option value="违约金" >违约金</option>
+                <option value="维修资金" >维修资金</option>
+                <option value="物业管理费" >物业管理费</option>
+                <option value="消防管网放水费" >消防管网放水费</option>
+                <option value="押金" >押金</option>
+                <option value="中央空调费" >中央空调费</option>
+                <option value="装修管理费" >装修管理费</option>
+                <option value="装修恢复费" >装修恢复费</option>
+                <option value="装修许可证工本费" >装修许可证工本费</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            对接系统:
+            <select id="rece-dockingsystem">
+            	<option value="all">全部</option>
+            	<option value="明源" >明源</option>
+            	<option value="思源" >思源</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            缴费状态:
+            <select id="rece-paymentstatus">
+            	<option value="all">全部</option>
+            	<option value="已缴费" >已缴费</option>
+            	<option value="未缴费" >未缴费</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            标记录入:
+            <select id="rece-tagentry">
+            	<option value="all">全部</option>
+            	<option value="已录入" >已录入</option>
+            	<option value="未录入" >未录入</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            缴费系统状态:
+            <select id="rece-paymentsysstatus">
+            	<option value="all">全部</option>
+            	<option value="已更新" >已更新</option>
+            	<option value="未更新" >未更新</option>
+        	</select>
+        </div>
+        
+    	
+        <div class="tb-do tb-hei30">
+            <input type="button" value="确定" class="mysy-okbtn">
+        </div>
+    </div>
+       
+	<div class="mysy-coding">
+        <div class="tb-do">
+        <select id="mysy-coding">
+            <option value="业务编码">业务编码</option>
+            <option value="商铺号" >商铺号</option>
+            <option value="优惠券编码" >优惠券编码</option>
+            <option value="应收金额" >应收金额</option>
+            <option value="业主/租客" >业主/租客</option>
+        </select>
+        </div>
+        
+        <div class="tb-search">
+            <input type="text" class="tb-text"  value="" id="keyword"  name="keyWord"/>
+            <input type="submit" value="查询" class="tb-btn" />
+        </div>
+        
+    </div>
+
+	<div class="mysy-money">
+        <div class="money-lumpsum">应收总额:<em>111111111111111.111111</em></div>
+        <div class="money-lumpsum">滞纳金总额:<em>111111111111111.1</em></div>
+	</div>
+
+	<div class="g-c-f e-search mysy-exportinput">
+        <span class="exportinput-list">
+        	<a href="javascript:;" name="receexport">导出数据</a>
+        </span>
+         <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+         上一页&nbsp;&nbsp;
+         <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+         <input type="text"  name="currentPage"size="5" id="noime">
+            &nbsp;
+            <input type="submit" value="跳转">
+         </span>
+        
+	</div>
+
+    <div class="g-list">
+        <table>
+            <thead>
+                <tr>
+                    <td class="list-id">选择</td>
+                    <td>业务编码</td>
+                    <td>项目名称</td>
+                    <td>对接系统</td>
+                    <td>商铺号</td>
+                    <td>业主</td>
+                    <td>费用类型</td>
+                    <td>所属账期</td>
+                    <td>缴费期限</td>
+                    <td>费用属期</td>
+                    <td>滞纳金</td>
+                    <td>应收金额</td>
+                    <td>缴费状态</td>
+                    <td>标记录入</td>
+                    <td>缴费系统更新状态</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="recesingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+            
+                </tr>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="recesingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="recesingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="g-c-f e-search">
+            <span class="mysy-botlist">
+                <input type="checkbox" name="rece-selectall"  id="receseleall">&nbsp;全选
+                <a href="javascript:;" name="receexport">导出数据</a>
+            </span>
+            
+            <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+            上一页&nbsp;&nbsp;
+            <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+            <input type="text"  name="currentPage"size="5" id="noime">
+                &nbsp;
+                <input type="submit" value="跳转">
+            </span>
+    </div>
+
+</div>
+</div>
+</body>
+
+    <script src="http://resmanage.csc86.com/v2/c/mysy/js/mysy.js"></script>
+</html>

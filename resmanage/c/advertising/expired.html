@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>旭日排名-已过期</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<link rel="stylesheet" href="../../css/advertising.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/advertising.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">广告管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">广告管理</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="in-progress.html" onClick="mlast('ln-3th-cur','li-last',this)">旭日排名列表</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<link rel="stylesheet" href="../../css/examinees.css" />
+	<div class="content" id="content">
+	<h2 class="tool-bar g-fs-14">旭日排名列表</h2>
+		<div class="sel-sub">
+			<ul>
+				<li><a href="in-progress.html">进行中</a></li>
+				<li class="cur"><a href="expired.html">已过期</a></li>
+				<li><a href="pay-ranking.html">所有</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar">付费关键词查询</h2>
+		<div class="g-c-f e-search">
+			<div class="tb-do">
+				<select>
+					<option value="产品ID">产品ID</option>
+					<option value="关键词">关键词</option>
+					<option value="企业名称">企业名称</option>
+				</select>
+			</div>
+			<div class="tb-search">
+				<input type="text" value="" placeholder="请输入查找关键字" class="tb-text" />
+				<input type="button" value="查询" class="tb-btn" />
+			</div>
+			<div class="tb-time"> <span>到期时间：</span>
+				<input type="text"  class="g-d-text" id="endTime" readonly/>
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'2020-10-01',el:'endTime'})"></a>
+				<input type="button" value="查询" class="tb-btn" />
+			</div>
+		</div>
+		<h2 class="tool-bar op-title rank-t">旭日排名产品管理列表</h2>
+		<div class="operation op-bg">
+			<div class="g-f-l">
+				<input type="checkbox" name="check" onclick="change(this.checked)">
+				<a href="javascript:" id="rank_del">删除</a>
+				<a href="add-paid-key.html">添加</a>
+			</div>
+			<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+			<input type="text" size="8" />
+			&nbsp; <a id="jumperTo" href="javascript:">跳转</a> </span></div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="5%" class="list-id"></td>
+						<td width="10%">关键词</td>
+						<td width="10%">热度</td>
+                        <td width="10%">类型</td>
+						<td width="8%"> 绑定产品ID</td>
+						<td>企业名称</td>
+						<td>会员账号</td>
+						<td width="10%">到期时间</td>
+						<td width="10%">生效时间</td>
+						<td width="7%"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>印花布料</td>
+						<td><b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></td>
+                        <td>城商通赠送</td>
+						<td>439604</td>
+						<td>花世家布行</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>棉带</td>
+						<td><b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></td>
+                        <td>付费300元</td>
+						<td>789908</td>
+						<td>深圳长河织带</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>印花布料</td>
+						<td><b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-y-star"></b></td>
+                        <td>付费300元</td>
+						<td>439604</td>
+						<td>花世家布行</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>棉带</td>
+						<td><b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></td>
+                        <td>付费300元</td>
+						<td>789908</td>
+						<td>深圳长河织带</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>印花布料</td>
+						<td><b class="icon-y-star"></b><b class="icon-d-star"></b><b class="icon-d-star"></b></td>
+                        <td>付费300元</td>
+						<td>439604</td>
+						<td>花世家布行</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input type="checkbox" /></td>
+						<td>棉带</td>
+						<td><b class="icon-y-star"></b><b class="icon-d-star"></b><b class="icon-d-star"></b></td>
+                        <td>付费300元</td>
+						<td>789908</td>
+						<td>深圳长河织带</td>
+						<td>lug@csc-ec.com</td>
+						<td>2013.10.26</td>
+						<td>2013.10.26</td>
+						<td><a href="#" onClick="keywordView(this);" class="g-ico ico-see-children">查看</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong> 页&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" />
+			&nbsp; <a id="jumperTo" href="javascript:">跳转</a> </span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

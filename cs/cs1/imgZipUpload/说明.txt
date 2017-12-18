@@ -1,0 +1,61 @@
+====================
+Flash图片压缩上传
+====================
+日期：2010-12-24
+作者：http://www.cnblogs.com/zjfree
+
+图片压缩后上传！Flash图片极速上传！提供参数控制！
+
+需求
+---------------------
+如果用户使用数码相机照的照片一般都会在很大！（2M~5M）
+一般网站都会在用户上传照片后对照片进行适当压缩，以提高网页浏览时照片的加载速度。
+如果可以在客户端对照片压缩后上传，可以节省带宽，并且也减轻服务器压力。会有很好的用户体验！以前实现这样的功能都需要借助上传组件！
+其实使用Flash 10.0就可以实现照片压缩后上传。
+
+原理
+---------------------
+首先使用Flash的上传功能让用户选择要上传的照片。
+加载选择照片的数据到Flash中。(此功能需要Flash10.0以上版本)
+将数据加载到Flash的image组件中。
+将image按照合适大小进行缩放。
+在对image的显示区域进行Flash截图存入Bitmap。
+将Bitmap转换为Jpg格式数据。
+使用post方式将Jpg数据发送到服务器端！
+
+文件说明
+---------------------
+SWFObject组件文件 用来在网页中嵌入Flash
+  swfobject.js
+  expressInstall.swf
+上传服务器端处理页面 Asp.net
+  saveImage.aspx
+  saveImage.aspx.cs
+SWF文件 页面使用的Flash
+  imgZipUpload.swf
+演示页面
+  imgZipUpload.htm
+Flex源码
+  imgZipUpload.mxml
+
+Flash参数说明
+---------------------
+serverUrl 服务器响应地址(必填项)
+imgWidth 图片缩放宽度(选填) 默认值100 范围10-2000
+imgHeight 图片缩放高度(选填) 默认值100 范围10-2000
+注意：用户上传照片会等比压缩在指定范围内。
+但当用户照片尺寸必需要缩放尺寸小时，不对用户照片进行缩放。
+上传时只支持上传jpg或bmp格式图片。因为png或gif如果是透明的在压缩后会变得不透明，所以不支持png或gif图片上传。
+imgQuality 图片质量(选填) 默认值80 范围1-100 数值越大质量越高，但文件也会越大。
+jsFunction 回调JS函数(选填) 函数参数type,str
+  type 当为error时,str为错误信息 当为complete,str为服务器端返回值
+btnText 上传按钮文字(选填) 默认值"上 传"
+注意：Flash中的按钮必须用户手动点击后才会弹出选择文件框！
+
+服务器端页面(Asp.net)
+-------------------------------
+Request.InputStream 压缩后的jpg文件流
+Request.Headers["fileName"] 用户图片名称
+Request.Headers["width"] 压缩后宽度
+Request.Headers["height"] 压缩后高度
+Response.Write(""); 上传成功返回数据

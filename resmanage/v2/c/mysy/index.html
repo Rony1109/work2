@@ -1,0 +1,293 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL=""</script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<body>
+    <!--<link rel="stylesheet" href="http://resmanage.csc86.com/css/shop/skin.css" />-->
+    <link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/mysy/css/mysy.css" />
+    <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+    <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+ 	 <h2 class="tool-bar">已收明细报表</h2>
+	<!-- <div style="border:1px solid #ccc;">-->
+
+     <div class="mysy-maxhei72">
+     	<div class="tb-do">
+        	<select id="costdate">
+            	<option value="费用属期">费用属期</option>
+            	<option value="缴费日期" >缴费日期</option>
+            	<option value="所属账期" >所属账期</option>
+        	</select>
+        </div>
+         
+        <div class="tb-time mysy-costtime">
+            <input type="text" value="" id="coststartTime" class="g-d-text" />
+            <a class="g-data" href="javascript:"  onclick="starttime()"></a>至        
+            <input type="text" value=""  class="g-d-text" id="costendTime" />
+            <a class="g-data" href="javascript:"  onclick="endtime()">		</a>
+        </div>
+       
+        <div class="tb-do tb-hei30">
+            交易方式:
+            <select id="cost-meanstran">
+            	<option value="all">全部</option>
+            	<option value="支付宝" >支付宝</option>
+            	<option value="微信" >微信</option>
+            	<option value="平安付" >平安付</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            费用类型:
+            <select id="cost-typesoffee">
+                <option value="all">全部</option>
+                <option value="物业费" >物业费</option>
+                <option value="物业滞纳金" >物业滞纳金</option>
+                <option value="保证金" >保证金</option>
+                <option value="材料费" >材料费</option>
+                <option value="拆墙费" >拆墙费</option>
+                <option value="场地使用管理费" >场地使用管理费</option>
+                <option value="车位管理费" >车位管理费</option>
+                <option value="出入证工本费" >出入证工本费</option>
+                <option value="代收房产税" >代收房产税</option>
+                <option value="代收土地使用税" >代收土地使用税</option>
+                <option value="电费" >电费</option>
+                <option value="电费分摊" >电费分摊</option>
+                <option value="公共能耗" >公共能耗</option>
+                <option value="公共区域维护费" >公共区域维护费</option>
+                <option value="公摊电费" >公摊电费</option>
+                <option value="公摊加压费" >公摊加压费</option>
+                <option value="公摊水费" >公摊水费</option>
+                <option value="加班空调费" >加班空调费</option>
+                <option value="垃圾处理费" >垃圾处理费</option>
+                <option value="垃圾清运费" >垃圾清运费</option>
+                <option value="门禁IC卡" >门禁IC卡</option>
+                <option value="排污费" >排污费</option>
+                <option value="其他" >其他</option>
+                <option value="其他费用" >其他费用</option>
+                <option value="人工费" >人工费</option>
+                <option value="水费" >水费</option>
+                <option value="水费分摊" >水费分摊</option>
+                <option value="停车场经营收入" >停车场经营收入</option>
+                <option value="违约金" >违约金</option>
+                <option value="维修资金" >维修资金</option>
+                <option value="物业管理费" >物业管理费</option>
+                <option value="消防管网放水费" >消防管网放水费</option>
+                <option value="押金" >押金</option>
+                <option value="中央空调费" >中央空调费</option>
+                <option value="装修管理费" >装修管理费</option>
+                <option value="装修恢复费" >装修恢复费</option>
+                <option value="装修许可证工本费" >装修许可证工本费</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            优惠劵:
+            <select id="cost-coupon">
+            	<option value="all">全部</option>
+            	<option value="已使用优惠券" >已使用优惠券</option>
+            	<option value="未使用优惠券" >未使用优惠券</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            对接系统:
+            <select id="cost-dockingsystem">
+            	<option value="all">全部</option>
+            	<option value="明源" >明源</option>
+            	<option value="思源" >思源</option>
+        	</select>
+        </div>
+        
+        <div class="tb-do tb-hei30">
+            <input type="button" value="确定" class="mysy-okbtn">
+        </div>
+    </div>
+       
+	<div class="mysy-coding">
+        <div class="tb-do">
+        <select id="cost-coding">
+            <option value="业务编码">业务编码</option>
+            <option value="订单号" >订单号</option>
+            <option value="交易流水号" >交易流水号</option> 
+            <option value="商铺号" >商铺号</option>
+            <option value="优惠券编码" >优惠券编码</option>
+            <option value="应收金额" >应收金额</option>
+            <option value="结算金额" >结算金额</option>
+            <option value="业主/租客" >业主/租客</option>
+            <option value="收款公司" >收款公司</option>
+        </select>
+        </div>
+        
+        <div class="tb-search">
+            <input type="text" class="tb-text"  value="" id="cost-keyword"  name="costkeyWord"/>
+            <input type="submit" value="查询" class="tb-btn" />
+        </div>
+        
+    </div>
+
+	<div class="mysy-money">
+        <div class="money-lumpsum">应收总额:<em>111111111111111.111111</em></div>
+        <div class="money-lumpsum">滞纳金总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">优惠总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">支付手续费总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">结算手续费总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">结算总额:<em>111111111111111.1</em></div>
+	</div>
+
+	<div class="g-c-f e-search mysy-exportinput">
+        <span class="exportinput-list">
+        	<a href="javascript:;" name="mysyexport">导出数据</a>
+            <a href="javascript:;" name="mysyinput">批量录入</a>
+        </span>
+         <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+         上一页&nbsp;&nbsp;
+         <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+         <input type="text"  name="currentPage"size="5" id="noime">
+            &nbsp;
+            <input type="submit" value="跳转">
+         </span>
+        
+	</div>
+
+    <div class="g-list">
+        <table>
+            <thead>
+                <tr>
+                    <td class="list-id">选择</td>
+                    <td>业务编码</td>
+                    <td>项目名称</td>
+                    <td>对接系统</td>
+                    <td>商铺号</td>
+                    <td>业主</td>
+                    <td>费用类型</td>
+                    <td>所属账期</td>
+                    <td>缴费期限</td>
+                    <td>费用属期</td>
+                    <td>滞纳金</td>
+                    <td>应收金额</td>
+                    <td>优惠劵面值</td>
+                    <td>优惠劵编号</td>
+                    <td>优惠抵扣</td>
+                    <td>收款方式</td>
+                    <td>订单号</td>
+                    <td>交易流水号</td>
+                    <td>支付金额</td>
+                    <td>支付日期</td>
+                    <td>收款公司</td>
+                    <td>录入状态</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="costsingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>8.00</td>
+                    <td>800000.00</td>
+                    <td>80000.00</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>2016年10月5日</td>
+                    <td>深圳华南城</td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="costsingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>8.00</td>
+                    <td>800000.00</td>
+                    <td>80000.00</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>2016年10月5日</td>
+                    <td>深圳华南城</td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td class="list-id list-skin-name">
+                        <input type="checkbox" name="costsingle">
+                    </td>
+                    <td>123456789</td>
+                    <td>一号交易广场</td>
+                    <td>明源</td>
+                    <td>4c-123</td>
+                    <td>李欢</td>
+                    <td>租金</td>
+                    <td>2016年10月</td>
+                    <td>2016年10月5日</td>
+                    <td>2016年10月1日-2017年10月1日</td>
+                    <td>8.00</td>
+                    <td>800000.00</td>
+                    <td>80000.00</td>
+                    <td>XFDKLHFJHDFF</td>
+                    <td>2252.00</td>
+                    <td>支付宝</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>123456789</td>
+                    <td>2016年10月5日</td>
+                    <td>深圳华南城</td>
+                    <td><input type="radio"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="g-c-f e-search">
+            <span class="mysy-botlist">
+                <input type="checkbox" name="cost-selectall" id="costseleall">&nbsp;全选
+                <a href="javascript:;" name="mysyexport">导出数据</a>
+                <a href="javascript:;" name="mysyinput">批量录入</a>
+            </span>
+            
+            <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+            上一页&nbsp;&nbsp;
+            <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+            <input type="text"  name="currentPage"size="5" id="noime">
+                &nbsp;
+                <input type="submit" value="跳转">
+            </span>
+    </div>
+    
+</body>
+<script src="http://resmanage.csc86.com/v2/c/mysy/js/mysy.js"></script>
+</html>

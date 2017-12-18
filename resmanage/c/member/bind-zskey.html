@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/examinees.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="http://resmanage.csc86.com/css/advertising.css" rel="stylesheet" />
+<link href="http://resmanage.csc86.com/v2/c/member/keyword/css/style.css" rel="stylesheet" />
+<script>var BASEURL="http://bops.csc86.com:80/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="http://resmanage.csc86.com/js/advertising.js"></script>
+<script src="http://resmanage.csc86.com/js/member.js"></script>
+<script src="http://resmanage.csc86.com/js/member-manage.js"></script>
+<script src="http://resmanage.csc86.com/js/json2.js"></script>
+
+<!--<script src="../js/advertising.js"></script>-->
+
+</head>
+	
+<body>
+<div class="m-nav">
+<script type="text/javascript">
+var innerError= function (){
+	art.dialog({
+		title:'错误提示',
+		content: '系统内部服务出现错误，您可以尝试重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+var offLineMsg= function (){
+	art.dialog({
+		title:'下线提醒',
+		content: '您的账号在其他地方登录，被迫下线，是否重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+
+function offLine(){
+	$.ajax({ 
+		url: "loginOffline.action", 
+		data: { }, 
+		dataType: "json", 
+		error: function(XHR, textStatus, errorThrown){
+			clearInterval(checkRequest);
+			innerError();
+		},
+		success: function (data, textStatus, XHR) { 
+			if(XHR.status == 200 && data == true){
+				clearInterval(checkRequest);
+				offLineMsg();
+			}
+		},
+		complete: function (XHR, TS) { XHR = null }
+	}); 	
+}
+
+function loginOut(){
+	//清除当前域所有的cookie
+	var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+	if(keys){
+		for (var i = keys.length; i--;){
+			document.cookie=keys[i]+'=0;expires=' + new Date(0).toUTCString()+'; path=/';
+		}
+	}
+	//请求退出
+	location.href="loginOut";
+}
+
+var checkRequest;
+$(document).ready(function(){  
+ 	//checkRequest = setInterval("offLine()", 30*1000);
+});  
+</script>
+<div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>login</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+	    			<li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+	    			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+    		<li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+	    			<li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+	    			<li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+	    			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+	    			<li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+	    			<li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+	    			<li><a href="../bops/guang.listShop?id=10007">地图管理</a></li>
+	    			<li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+	    			<li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+	    			<li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+    </ul>
+</div>
+</div>
+<div class="main">
+ 	<div class="left-nav" id="leftNav">
+	  <h2 class="ln-hd">会员管理</h2>
+
+<ul class="ln-2th">
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberManagerPwd.getPasswod?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">初始密码设置</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberManager.getEnterpriseService?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/gradeManager.findMemberList?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员等级</a></li>
+			        	<li class="ln-2th-item" id="cur2"> <a href="../bops/memberType.findMemberEServe?type=G" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员类型管理</a></li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员等级管理</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/gradeManager.findGrade?" data-id="50012" onClick="mlast('ln-3th-cur','li-last',this)">普通会员分组管理</a></li>
+	        <li class="li-last" ><a href="../bops/gradeManager.findGroup?" data-id="50013" onClick="mlast('ln-3th-cur','li-last',this)">会员系统分组管理</a></li>
+	        <li class="li-last" ><a href="../bops/gradeManager.findAllGrowRule?" data-id="50015" onClick="mlast('ln-3th-cur','li-last',this)">会员成长值、积分管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/paykeywordManager.getUnderwayPayKeyWord?" data-id="50018" onClick="mlast('ln-3th-cur','li-last',this)">旭日排名管理</a></li>
+	        <li class="li-last" ><a href="../bops/paykeywordManager.getReservedWords?" data-id="50019" onClick="mlast('ln-3th-cur','li-last',this)">预留词库管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺统计报表</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/shopStatistics.list?type=y" data-id="50017" onClick="mlast('ln-3th-cur','li-last',this)">线上数据</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">运营数据统计</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsMainNagi?" data-id="50020" onClick="mlast('ln-3th-cur','li-last',this)">主导航数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsChannels?" data-id="50021" onClick="mlast('ln-3th-cur','li-last',this)">各频道数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsSpecial?" data-id="50022" onClick="mlast('ln-3th-cur','li-last',this)">专题活动数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop20?" data-id="50023" onClick="mlast('ln-3th-cur','li-last',this)">TOP20数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop30?" data-id="50024" onClick="mlast('ln-3th-cur','li-last',this)">TOP30数据统计</a></li>
+	        <li class="li-last" ><a href="../bops/onlineStat.statisticsTop100?" data-id="50025" onClick="mlast('ln-3th-cur','li-last',this)">TOP100数据统计</a></li>
+	     </ul>
+    </li>
+</ul>
+
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <div class="content" id="content">
+		<script>
+		$(document).ready(function(){
+			$('body').load(function() {
+				alert('ok');
+			});
+		});
+        </script>
+		<h2 class="tool-bar">设置旭日排名</h2>
+        
+        <ul class="g-c-f setXrpm-tab">
+        	<li class="cur"><a href="bind-zskey.html">绑定关键词</a></li>
+            <li><a href="buy-ffkey.html">购买付费关键词</a></li>
+            <li><a href="add-ffkeyme.html">添加付费关键词名额</a></li>
+        </ul>
+        
+        <form id="add_or_update_payword_form">
+        <div class="bndkey-hd">
+            <ul class="g-c-f bndkey-tab">
+                <li><a href="bind-zskey.html"><input id="bndZsKeyRadio" name="bndkeyRadio" type="radio" value="" checked> <label>绑定赠送关键词</label></a></li>
+                <li><a href="bind-ffkey.html"><input id="bndFfKeyRadio" name="bndkeyRadio" type="radio" value=""> <label>绑定付费关键词</label></a></li>
+                <li><a href="bind-mekey.html"><input id="bndMeKeyRadio" name="bndkeyRadio" type="radio" value=""> <label>绑定名额关键词</label></a></li>
+            </ul>
+        </div>
+        <div class="paid-key-form paykeyword2 g-c-f">
+			<div class="g-f-l">
+        		<div class="key-minfo"><span>会员账号：<span title="15989166991">15989166991</span></span><span>企业名称：<span title="广州市艺帆展览服务有限责任公司">广州市艺帆展览服务有限责任公司</span></span><span>到期时间：<span>2014-11-30</span></span></div>
+                <ul>
+                    <input name="memberName" value="15989166991" type="hidden">
+                    <input name="companyName" value="广州市艺帆展览服务有限责任公司" type="hidden">
+                    <input name="endTime" value="2014-11-30" type="hidden">
+                    <input name="memberId" value="00057a53-e5ba-4d5c-83bb-424a889ab9c4" type="hidden">
+                    <input name="id" value="" type="hidden">
+                    <input name="starts" value="" type="hidden">
+                    <input name="serviceType" value="1" type="hidden">
+                    <input name="isObligate" value="N" type="hidden">
+                    <li>
+                        <span><em>*</em>关键词：</span>
+                        <input id="keyWord" type="text" class="txt" name="keyWord"/>&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <span><em>*</em>产品ID：</span>
+                        <input name="productId" type="text"  class="txt" id="productId"/>
+                    </li>
+                    <li class="g-t-l">
+                        <input type="button" class="btnlink" value="添加" name="OK" id="add_update_payword" onclick="submitForm()" />
+                    </li>
+                </ul>
+            </div>
+            <div class="cikulist">
+                <dl>
+                    <dt><span>关键词</span><span>产品ID</span></dt>
+                    
+                    <dd id="dd_payword_2467bbf5-9a00-477f-a9a1-25077165ad5b">
+                        <span style="display:none">2467bbf5-9a00-477f-a9a1-25077165ad5b</span>
+                        <span><b class="ico-del" style="cursor:pointer" onclick="deleteCstPayWord('2467bbf5-9a00-477f-a9a1-25077165ad5b')"></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b onclick="javascript:wantOption('2467bbf5-9a00-477f-a9a1-25077165ad5b','SERFE','984c728b-d25a-406b-8d8e-12162ee80a23','1')" style="cursor:pointer">SERFE</b></span>
+                        <span title="984c728b-d25a-406b-8d8e-12162ee80a23">984c728b-d25a-406b-8d8e-12162ee80a23</span>
+                    
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        </form>
+          	
+	</div>   
+</div> 
+<script src="http://resmanage.csc86.com/js/set-xrpm.js"></script>  
+</body>
+</html>
+

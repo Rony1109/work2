@@ -1,0 +1,650 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>对账确认</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL=""</script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<body>
+    <!--<link rel="stylesheet" href="http://resmanage.csc86.com/css/shop/skin.css" />-->
+    <link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/mysy/css/mysy.css" />
+    <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+    <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+    <script src="http://res.csc86.com/f=v2/l/seajs/sea.js"></script>
+ 	 <h2 class="tool-bar">已收明细报表</h2>
+	<!-- <div style="border:1px solid #ccc;">-->
+
+     <div class="mysy-maxhei72 ">
+     	<div class="tb-do tb-hei30">
+            对接系统:
+            <select name="systemName" id="cost-dockingsystem">
+            	<!-- <option value="all">全部</option> -->
+            	<option value="思源系统" selected="selected">思源</option>
+            	<option value="明源系统" >明源</option>
+        	</select>
+     	</div>
+        
+    	<div class="tb-do tb-hei30 sofftypeshow">
+            费用类型:
+            <select name="costType" id="cost-typesoffees">
+                <option value="" >全部</option>
+                <option value="物业管理费" >物业管理费</option>
+                <option value="电费" >电费</option>
+                <option value="水费" >水费</option>
+                <option value="车位管理费" >车位管理费</option>
+                <option value="维修资金" >维修资金</option>
+                <option value="保证金" >保证金</option>
+                <option value="品牌推广费" >品牌推广费</option>
+                <option value="代收房产税" >代收房产税</option>
+                <option value="代收土地使用税" >代收土地使用税</option>
+                <option value="公摊水费" >公摊水费</option>
+                <option value="公摊电费" >公摊电费</option>
+                <option value="垃圾清运费" >垃圾清运费</option>
+                <option value="出入证工本费" >出入证工本费</option>
+                <option value="垃圾处理费" >垃圾处理费</option>
+                <option value="押金" >押金</option>
+                <option value="公摊加压费" >公摊加压费</option>
+                <option value="停车场经营收入" >停车场经营收入</option>
+                <option value="公共区域维护费" >公共区域维护费</option>
+                <option value="人工费" >人工费</option>
+                <option value="装修许可证工本费" >装修许可证工本费</option>
+                <option value="消防管网放水费" >消防管网放水费</option>
+                <option value="拆墙费" >拆墙费</option>
+                <option value="门禁IC卡" >门禁IC卡</option>
+                <option value="装修管理费" >装修管理费</option>
+                <option value="材料费" >材料费</option>
+                <option value="燃气开通费" >燃气开通费</option>
+                <option value="电费分摊" >电费分摊</option>
+                <option value="水费分摊" >水费分摊</option>
+                <option value="中央空调费" >中央空调费</option>
+                <option value="公共能耗" >公共能耗</option>
+                <option value="场地使用管理费" >场地使用管理费</option>
+                <option value="装修恢复费" >装修恢复费</option>
+                <option value="违约金" >违约金</option>
+                <option value="加班空调费" >加班空调费</option>
+                <option value="排污费" >排污费</option>
+                <option value="其他" >其他</option>
+                <option value="其他费用" >其他费用</option>
+        	</select>
+     	</div>
+        
+    	<div class="tb-do tb-hei30 sofftypehide">
+            费用类型:
+     	<select name="costTypem" id="cost-typesoffeem">
+                <option value="租金">租金</option>
+        	</select>
+        </div>
+        
+
+     	<div class="tb-do tb-hei30">
+        	<select name="datetype" id="costdate">
+            	<option value="1"  id="costPeriod">费用属期</option>
+            	<option value="2"  id="payDate">缴费日期</option> <!-- 付费日期 -->
+            	<option value="3"  id="accountPeriod">所属账期</option>
+        	</select>
+        </div>
+        <div class="tb-time mysy-costtime mysy-costtimeshow tb-do tb-hei30">
+            <input type="text" value="2016-11-01" name="bgnDate" id="coststartTime" class="g-d-text" />
+            <a class="g-data" href="javascript:;"  id="coststrtim" ></a>至        
+            <input type="text" value="2016-11-30" name="endDate"  class="g-d-text" id="costendTime" />
+            <a class="g-data" href="javascript:;"  id="costendtim"></a>
+        </div>
+        
+        <div class="tb-time mysy-costtime mysy-costtimehide tb-do tb-hei30">
+            <input type="text" value="2016-11" name="bgnDate3" id="costssstartTime" class="g-d-text" />
+            <a class="g-data" href="javascript:;"  id="costssstrtim" ></a>
+        </div>
+		<div class="tb-do tb-hei30">
+            交易方式:
+            <select name="payMethod" id="cost-meanstran">
+            	<option value="" >全部</option>
+            	<option value="alipaywap" >支付宝</option>
+            	<option value="wxpay" >微信</option>
+            	<option value="khpaywap" >平安付</option>
+        	</select>
+        </div>
+        
+        
+        
+        <div class="tb-do tb-hei30">
+           优惠劵:
+            <select name="isCoupon" id="cost-coupon">
+            	<option value="" >全部</option>
+            	<option value="Y" >已使用优惠券</option>
+            	<option value="N" >未使用优惠券</option>
+        	</select>
+        </div>
+		
+     	<div class="tb-do tb-hei30">
+            支付手续费:
+            <select id="recon-payprocesfee">
+            	<option value="all">全部</option>
+            	<option value="项目公司承担" >项目公司承担</option>
+            	<option value="客户承担" >客户承担</option>
+        	</select>
+        </div>
+        
+     	<!--
+        
+        <div class="tb-do tb-hei30">
+            <input type="button" value="确定" class="mysy-okbtn">
+        </div>-->
+    </div>
+       
+	<div class="mysy-coding">
+        <div class="tb-do">
+        <select id="recon-coding">
+            <option value="业务编码">业务编码</option>
+            <option value="订单号" >订单号</option>
+            <option value="交易流水号" >交易流水号</option> 
+            <option value="商铺号" >商铺号</option>
+            <option value="优惠券编码" >优惠券编码</option>
+            <option value="应收金额" >应收金额</option>
+            <option value="结算金额" >结算金额</option>
+            <option value="业主/租客" >业主/租客</option>
+            <option value="收款公司" >收款公司</option>
+        </select>
+        </div>
+        
+        <div class="tb-search">
+            <input type="text" class="tb-text"  value="" id="recon-keyword"  name="reconkeyWord"/>
+            <input type="submit" value="查询" class="tb-btn" />
+        </div>
+        
+    </div>
+
+	<div class="mysy-money">
+        <div class="money-lumpsum">应收总额:<em>111111111111111.111111</em></div>
+        <div class="money-lumpsum">滞纳金总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">优惠总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">支付手续费总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">结算手续费总额:<em>111111111111111.1</em></div>
+        <div class="money-lumpsum">结算总额:<em>111111111111111.1</em></div>
+	</div>
+
+	<div class="g-c-f e-search mysy-exportinput">
+        <span class="exportinput-list">
+        	<a href="javascript:;" name="mysyexport">导出数据</a>
+        </span>
+         <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+         上一页&nbsp;&nbsp;
+         <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+         <input type="text"  name="currentPage"size="5" id="noime">
+            &nbsp;
+            <input type="submit" value="跳转">
+         </span>
+        
+	</div>
+
+    <div >
+    	<form>
+        <table class="recontab">
+            <thead>
+                <tr class="reconthead">
+                	<td class="list-id" width="26"><img src="v2/c/mysy/img/1.png" height="26px;" width="26px;"></td>
+                    <td class="list-id">选择</td>
+                    <td>序号</td>
+                    <td>订单号</td>
+                    <td>交易流水号</td>
+                    <td>支付时间</td>
+                    <td>华南城网账号</td>
+                    <td>支付方式</td>
+                    <td>支付账号</td>
+                    <td>应收金额</td>
+                    <td>优惠劵</td>
+                    <td>优惠劵编码</td>
+                    <td>支付手续费</td>
+                    <td>滞纳金合计</td>
+                    <td>结算手续费</td>
+                    <td>结算金额</td>
+                </tr>
+            </thead>
+            
+            <tbody class="recontbodylist">
+				<tr class="recontbody">
+                	<td class="list-id">
+                        <div class="recon-icon reconblock reconshow"><img src="img/2.png" height="12" width="12"></div>
+                        <div class="recon-icon reconnone" reconhide><img src="img/3.png" height="12" width="12"></div>
+                    </td>
+                    <td class="list-id"><input type="checkbox" name="reconcheall" class="reconselsig"></td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>2016年10月5日 10:00:00</td>
+                    <td>csc@csc86-sz.com</td>
+                    <td>支付宝</td>
+                    <td>13800138000</td>
+                    <td>100101.00</td>
+                    <td>1200.00</td>
+                    <td>1324567489161456</td>
+                    <td>1231.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                </tr>
+                <tr>
+                	<td colspan="16">
+                    	<table class="wdh100">
+                            <thead>
+                                <tr>
+                                    <th class="list-id oneth26"></th>
+                                    <th class="list-id twobt0" ></th>
+                                    <th>业务编码</th>
+                                    <th>项目名称</th>
+                                    <th>对接系统</th>
+                                    <th>商铺号</th>
+                                    <th>业主</th>
+                                    <th>费用类型</th>
+                                    <th>所属账期</th>
+                                    <th>缴费期限</th>
+                                    <th>费用属期</th>
+                                    <th>收款日期</th>
+                                    <th>优惠劵面值</th>
+                                    <th>优惠劵编号</th>
+                                    <th>优惠抵扣</th>
+                                    <th>滞纳金</th>
+                                    <th>应收金额</th>
+                                    <th>收款公司</th>
+                                    <th>标记录入</th>
+                                </tr>
+                            </thead>
+                            <tbody class="reconbodylist">
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源1</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源2</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源3</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              </tbody> 
+                		</table>
+                    </td>
+                </tr>
+            </tbody>
+             <tbody class="recontbodylist">
+				<tr class="recontbody">
+                	<td class="list-id">
+                        <div class="recon-icon reconblock reconshow"><img src="img/2.png" height="12" width="12"></div>
+                        <div class="recon-icon reconnone" reconhide><img src="img/3.png" height="12" width="12"></div>
+                    </td>
+                    <td class="list-id"><input type="checkbox" name="reconcheall" class="reconselsig"></td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>2016年10月5日 10:00:00</td>
+                    <td>csc@csc86-sz.com</td>
+                    <td>支付宝</td>
+                    <td>13800138000</td>
+                    <td>100101.00</td>
+                    <td>1200.00</td>
+                    <td>1324567489161456</td>
+                    <td>1231.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                </tr>
+                <tr>
+                	<td colspan="16">
+                    	<table class="wdh100">
+                            <thead>
+                                <tr>
+                                    <th class="list-id oneth26"></th>
+                                    <th class="list-id twobt0" ></th>
+                                    <th>业务编码</th>
+                                    <th>项目名称</th>
+                                    <th>对接系统</th>
+                                    <th>商铺号</th>
+                                    <th>业主</th>
+                                    <th>费用类型</th>
+                                    <th>所属账期</th>
+                                    <th>缴费期限</th>
+                                    <th>费用属期</th>
+                                    <th>收款日期</th>
+                                    <th>优惠劵面值</th>
+                                    <th>优惠劵编号</th>
+                                    <th>优惠抵扣</th>
+                                    <th>滞纳金</th>
+                                    <th>应收金额</th>
+                                    <th>收款公司</th>
+                                    <th>标记录入</th>
+                                </tr>
+                            </thead>
+                            <tbody class="reconbodylist">
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源1</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源2</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源3</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              </tbody> 
+                		</table>
+                    </td>
+                </tr>
+            </tbody>
+             <tbody class="recontbodylist">
+				<tr class="recontbody">
+                	<td class="list-id">
+                        <div class="recon-icon reconblock reconshow"><img src="img/2.png" height="12" width="12"></div>
+                        <div class="recon-icon reconnone" reconhide><img src="img/3.png" height="12" width="12"></div>
+                    </td>
+                    <td class="list-id"><input type="checkbox" name="reconcheall" class="reconselsig"></td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>11111111</td>
+                    <td>2016年10月5日 10:00:00</td>
+                    <td>csc@csc86-sz.com</td>
+                    <td>支付宝</td>
+                    <td>13800138000</td>
+                    <td>100101.00</td>
+                    <td>1200.00</td>
+                    <td>1324567489161456</td>
+                    <td>1231.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                    <td>34546546.00</td>
+                </tr>
+                <tr>
+                	<td colspan="16">
+                    	<table class="wdh100">
+                            <thead>
+                                <tr>
+                                    <th class="list-id oneth26"></th>
+                                    <th class="list-id twobt0" ></th>
+                                    <th>业务编码</th>
+                                    <th>项目名称</th>
+                                    <th>对接系统</th>
+                                    <th>商铺号</th>
+                                    <th>业主</th>
+                                    <th>费用类型</th>
+                                    <th>所属账期</th>
+                                    <th>缴费期限</th>
+                                    <th>费用属期</th>
+                                    <th>收款日期</th>
+                                    <th>优惠劵面值</th>
+                                    <th>优惠劵编号</th>
+                                    <th>优惠抵扣</th>
+                                    <th>滞纳金</th>
+                                    <th>应收金额</th>
+                                    <th>收款公司</th>
+                                    <th>标记录入</th>
+                                </tr>
+                            </thead>
+                            <tbody class="reconbodylist">
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源1</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源2</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源3</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                                <tr >
+                                    <td class="list-id"></td>
+                                    <td class="list-id"><input type="checkbox" name="reconchesingle" class="reconselsig"></td>
+                                    <td>121211212</td>
+                                    <td>一号交易广场</td>
+                                    <td>明源</td>
+                                    <td>4C-123456</td>
+                                    <td>李欢</td>
+                                    <td>租金</td>
+                                    <td>2016年10月</td>
+                                    <td>2016年10月1日</td>
+                                    <td>2016年10月1日-2016年8月21日</td>
+                                    <td>2016年10月1日</td>
+                                    <td>10000.00</td>
+                                    <td>XSAHFJASRFAF</td>
+                                    <td>20000.00</td>
+                                    <td>131232.00</td>
+                                    <td>33232323323.00</td>
+                                    <td>深圳华南城</td>
+                                    <td>已录入</td>
+                                </tr>
+                              </tbody> 
+                		</table>
+                    </td>
+                </tr>
+            </tbody>
+            
+           
+        </table>
+        </form>
+    </div>
+
+    <div class="g-c-f e-search">
+            <span class="mysy-botlist">
+                <input type="checkbox" name="recon-selectall" id="reconseleall">&nbsp;全选
+                <a href="javascript:;" name="mysyexport">导出数据</a>
+            </span>
+            
+            <span class="page-r">当前共有：<b>26</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>页&nbsp;&nbsp;
+            上一页&nbsp;&nbsp;
+            <a href="shopskin.getShopskinList?action=down&currentPage=1&tradeId=&styleId=&keyWord=">下一页</a>&nbsp;&nbsp;
+            <input type="text"  name="currentPage"size="5" id="noime">
+                &nbsp;
+                <input type="submit" value="跳转">
+            </span>
+    </div>
+    
+</body>
+<script>seajs.use('http://resmanage.csc86.com/v2/c/mysy/js/recon.js');</script>
+
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                    <li class="li-last" ><a href="#" data-id="30003" onClick="mlast('ln-3th-cur','li-last',this)">资讯管理</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">找货产品推荐</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">地图商家推荐</a></li>
+                    <li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+				</ul>
+			</li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地区管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/app/app.css" />
+        <script type="text/javascript" src="../../js/app/app.js"></script>
+        <h2 class="tool-bar">特惠推荐</h2>
+        <div class="g-c-f e-search">
+            <div class="tb-do">
+                <select id="searchType" name="searchType">
+                    <option value="0">所属行业</option>
+                    <option value="1">注册号</option>
+                </select>
+            </div>
+            <div class="tb-search">
+                <input type="text" onKeyDown="pfldowm(event,this)" id="searchValue" name="searchValue" value="" placeholder="关键字" class="tb-text">
+                <input type="button" id="search" onClick="pflsearch(this)" value="搜索" class="tb-btn">
+            </div>
+        </div>
+        <div class="g-c-f e-search op-bg">
+            <span class="operation-l">
+          <input type="button" value="删除" onClick="pfldel()"><input type="button" value="添加" onClick="pfladd()">
+          </span> 
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="pflup()">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="pflnext()">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pflKeyDown(event,this)" onKeyUp="this.value=this.value.replace(/[^_0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="pflpage(this)">
+          </span>
+      	</div>
+        <div class="g-list e-inquiry">
+          <table class="app-tab">
+            <thead>
+              <tr>
+                <td width="5%" class="tab-h-l"><input type="checkbox" value="" name="">
+                  &nbsp;选择</td>
+                 <td width="2%">&nbsp;</td>
+                <td width="10%">编号</td>
+                <td width="11%">图片</td>
+                <td width="20%">产品名称</td>
+                <td width="25%">企业名称</td>
+                <td width="25%">管理操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="list-id"><input type="checkbox" value="" name=""></td>
+                <td>&nbsp;</td>
+                <td>000001</td>
+                <td><img src="../../img/img.png" width="50" height="50" /></td>
+                <td>博纳国际影城</td>
+                <td>博纳国际影城</td>
+                <td><a title="推荐" href="javascript:;" onClick="pflto(this)">推荐</a><span class="redred">修改编号<input type="text" /><a href="javascript:" onClick="pflok(this)">确定</a></span></td>
+              </tr>
+              <tr class="bg">
+                <td class="list-id"><input type="checkbox" value="" name=""></td>
+                <td>&nbsp;</td>
+                <td>000001</td>
+                <td><img src="../../img/img.png" width="50" height="50" /></td>
+                <td>博纳国际影城</td>
+                <td>博纳国际影城</td>
+                <td><a title="推荐" href="javascript:;" onClick="pflno(this)">取消</a><span class="redred">修改编号<input type="text" /><a href="javascript:" onClick="pflok(this)">确定</a></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="operation">
+            <span class="operation-l">
+          <input type="button" value="删除" onClick="pfldel()"><input type="button" value="添加" onClick="pfladd()">
+          </span> 
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="pflup()">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="pfldaow()">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pflKeyDown(event,this)" onKeyUp="this.value=this.value.replace(/[^_0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="pflpage(this)">
+          </span>
+          </div>
+    	</div>
+      
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+		<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>日志分析</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="//resmanage.csc86.com/css/rizhi.css" >
+	<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+	<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>日志分析</p></div>
+<div class="warpbottom after">
+<div class="left">
+	<ul>
+		<li><a href="#">日志查询1</a></li>
+		<li><a href="#">日志查询2</a></li>
+		<li><a href="#">日志查询3</a></li>
+	</ul>
+</div>
+	<div class="right">
+		<div class="tkwk">
+			<form action="" method="get">
+			<table class="cwdztable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="480">
+					<col width="310">
+					<col width="">
+				</colgroup>
+				<tbody>
+				<tr>
+					<td class="tl tp1">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+						<input type="text" value="2016-10-31" id="startTime" class="g-d-text" name="startTime" readonly="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'%y-%M-%d',el:'startTime'})">
+						至
+						<input type="text" value="2016-11-07" class="g-d-text" id="endTime" name="endTime" readonly="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})">
+					</td>
+					<td class="tl">用户ID：<input type="text" id="orderId" name="orderId" value="" class="i2"></td>
+					<td class="tl">ip：<input type="text" class="i2" id="shopOrderNo" name="shopOrderNo" value=""></td>
+				</tr>
+				<tr>
+					<td class="tl tp1">日志级别：<select id="orderStatus" name="orderStatus">
+						<option value="">全部</option>
+						<option value="1">1</option>
+						<option value="1">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select></td>
+					<td class="tl">系统包名：
+						<select id="orderStatus" name="orderStatus">
+							<option value="">全部</option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+					<td class="tl">类名：
+						<select id="orderStatus" name="orderStatus">
+							<option value="">全部</option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="tl tp1">错误码：
+						<select id="orderStatus" name="orderStatus">
+							<option value="">全部</option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+
+					<td class="tl" colspan="2"><input type="submit" class="i3" value="查询"></td>
+
+				</tr>
+				</tbody>
+			</table>
+		</form>
+
+			<table class="cwmxtable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="160">
+					<col width="120">
+					<col width="120">
+					<col width="100">
+					<col width="90">
+					<col width="90">
+					<col width="90">
+					<col>
+				</colgroup>
+				<thead>
+
+				<tr>
+					<th>用户ID</th>
+					<th>IP</th>
+					<th>时间</th>
+					<th>类名</th>
+					<th>日志级别</th>
+					<th>包名</th>
+					<th>错误码</th>
+					<th>日志信息</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				<tr>
+					<td>123123123</td>
+					<td>127.0.0.1</td>
+					<td>2016-11-03 09:14</td>
+					<td>class</td>
+					<td>warn</td>
+					<td>包名</td>
+					<td>404</td>
+					<td class="tl">日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息日志信息</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+<script>seajs.use('//resmanage.csc86.com/c/member/js/rizhi.js');</script>
+
+</body>
+</html>

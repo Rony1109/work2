@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL="http://bops.csc86.com:80/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/attestation.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="http://res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+<script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script> 
+<script src="http://resmanage.csc86.com/js/handlers.js"></script>
+
+</head>
+	
+<body>
+<div class="m-nav">
+<script type="text/javascript">
+var innerError= function (){
+	art.dialog({
+		title:'错误提示',
+		content: '系统内部服务出现错误，您可以尝试重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+var offLineMsg= function (){
+	art.dialog({
+		title:'下线提醒',
+		content: '您的账号在其他地方登录，被迫下线，是否重新登录？',
+		fixed: true,
+		okVal: '确定',
+		background:"#000",
+		opacity:"0.3",
+		ok: function () {
+			location.href="login.action";
+		},
+		cancel: true,
+		lock:true
+	});
+}
+
+function offLine(){
+	$.ajax({ 
+		url: "loginOffline.action", 
+		data: { }, 
+		dataType: "json", 
+		error: function(XHR, textStatus, errorThrown){
+			clearInterval(checkRequest);
+			innerError();
+		},
+		success: function (data, textStatus, XHR) { 
+			if(XHR.status == 200 && data == true){
+				clearInterval(checkRequest);
+				offLineMsg();
+			}
+		},
+		complete: function (XHR, TS) { XHR = null }
+	}); 	
+}
+
+function loginOut(){
+	//清除当前域所有的cookie
+	var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+	if(keys){
+		for (var i = keys.length; i--;){
+			document.cookie=keys[i]+'=0;expires=' + new Date(0).toUTCString()+'; path=/';
+		}
+	}
+	//请求退出
+	location.href="loginOut";
+}
+
+var checkRequest;
+$(document).ready(function(){  
+ 	//checkRequest = setInterval("offLine()", 30*1000);
+});  
+</script>
+<div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>superAdmin</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+	    			<li><a href="../bops/guang.listShop?cityId=1&id=10007">地图管理</a></li>
+	    			<li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+	    			<li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+    		<li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+	    			<li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+	    			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+	    			<li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+	    			<li><a href="../bops/pagelist.ShufflingManage?id=10011">逛市场管理</a></li>
+	    			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+	    			<li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+	    			<li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+	    			<li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+	    			<li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="main">
+ 	<div class="left-nav" id="leftNav">
+	  <h2 class="ln-hd">审核管理</h2>
+
+<ul class="ln-2th">
+		<!--	-->
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/verifymanage.findPersonal?" data-id="40010" onClick="mlast('ln-3th-cur','li-last',this)">个人会员</a></li>
+	        <li class="li-last" ><a href="../bops/verifymanage.findEnterprise?" data-id="40011" onClick="mlast('ln-3th-cur','li-last',this)">企业会员</a></li>
+	     </ul>
+    </li>
+			
+        				<li class="ln-2th-item" id="cur2"> <a href="../bops/memberPay.memberPaylist?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">在线交易审核</a></li>
+				        	<li class="ln-2th-item" id="cur2"> <a href="../bops/productAudit.findProductByChecked?start=0&checked=N&" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">产品审核</a></li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/person.list?" data-id="40014" onClick="mlast('ln-3th-cur','li-last',this)">个人实名认证</a></li>
+	        <li class="li-last" ><a href="../bops/approve.controllerRealNameFenye?approveType=2&rz_id=101&" data-id="40015" onClick="mlast('ln-3th-cur','li-last',this)">企业实名认证</a></li>
+	        <li class="li-last" ><a href="../bops/prove.list" data-id="40031" onClick="mlast('ln-3th-cur','li-last',this)">企业身份认证</a></li>
+	        <li class="li-last" ><a href="../bops/local.list" data-id="40035" onClick="mlast('ln-3th-cur','li-last',this)">企业实地认证</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">市场审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/marketCheckManage.showCommentCheckManage?" data-id="40016" onClick="mlast('ln-3th-cur','li-last',this)">批发市场评论审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageNews.showNewMarketCheckManage?applyState=&" data-id="40017" onClick="mlast('ln-3th-cur','li-last',this)">批发市场创建审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageSettled.showMarketCheckManage?" data-id="40018" onClick="mlast('ln-3th-cur','li-last',this)">批发市场入驻审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketAudit.findDynamicWait?" data-id="40019" onClick="mlast('ln-3th-cur','li-last',this)">批发市场动态审核</a></li>
+	        <li class="li-last" ><a href="../bops/marketCheckManageRec.listRecommendMarket?" data-id="40020" onClick="mlast('ln-3th-cur','li-last',this)">批发市场推荐管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">圈子审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/circleAuditRec.listRecommendCircle?" data-id="40021" onClick="mlast('ln-3th-cur','li-last',this)">圈子推荐管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleAuditTopic.showTopicCheckManage?topicState=NORMAL&" data-id="40022" onClick="mlast('ln-3th-cur','li-last',this)">圈子内容审查</a></li>
+	        <li class="li-last" ><a href="../bops/memberAudit.findAllRecommendMember?" data-id="40023" onClick="mlast('ln-3th-cur','li-last',this)">会员推荐管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleAudit.showCircleCheckManage?applyState=WAITING&" data-id="40024" onClick="mlast('ln-3th-cur','li-last',this)">圈子审核管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleActivity.showCircleActivity?activityState=WAITING&" data-id="40026" onClick="mlast('ln-3th-cur','li-last',this)">圈子活动管理</a></li>
+	        <li class="li-last" ><a href="../bops/circleActivityTopic.listActivityTopic?" data-id="40027" onClick="mlast('ln-3th-cur','li-last',this)">活动评论审核</a></li>
+	        <li class="li-last" ><a href="../bops/cms.cmsList" data-id="40029" onClick="mlast('ln-3th-cur','li-last',this)">圈子碎片管理</a></li>
+	        <li class="li-last" ><a href="../bops/socialWall.listWall" data-id="40034" onClick="mlast('ln-3th-cur','li-last',this)">名片墙管理</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/shopBookAudit.findBooksByState?start=0&checked=C&actionType=byState&" data-id="40025" onClick="mlast('ln-3th-cur','li-last',this)">证书审核</a></li>
+	        <li class="li-last" ><a href="../bops/auditArticl.waitArticl?" data-id="40028" onClick="mlast('ln-3th-cur','li-last',this)">公司动态</a></li>
+	        <li class="li-last" ><a href="../bops/auditShop.adoptShops?" data-id="40032" onClick="mlast('ln-3th-cur','li-last',this)">旺铺审核</a></li>
+	        <li class="li-last" ><a href="../bops/submainVerify.waitList?" data-id="40033" onClick="mlast('ln-3th-cur','li-last',this)">域名转让审核</a></li>
+	        <li class="li-last" ><a href="../bops/shopkeepdomain.findkdDataList?" data-id="40039" onClick="mlast('ln-3th-cur','li-last',this)">设置保留域名</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘审核</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/audinquiry.waitInquiry?" data-id="100012" onClick="mlast('ln-3th-cur','li-last',this)">询盘审核</a></li>
+	        <li class="li-last" ><a href="../bops/auditOrderItem.normalOrderItem?" data-id="40030" onClick="mlast('ln-3th-cur','li-last',this)">意向订单审核</a></li>
+	     </ul>
+    </li>
+	<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">抓取数据</a>
+		 <ul class="ln-3th">
+	        <li class="li-last" ><a href="../bops/thirdInquiry.allThirdInquiry?pageNo=1" data-id="40003" onClick="mlast('ln-3th-cur','li-last',this)">询盘数据抓取</a></li>
+	     </ul>
+    </li>
+</ul>
+
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <div class="content" id="content">
+    <div class="sel-sub">
+      	<ul>
+        <li class="cur"><a href="prove.list?tab=WAITING&" >待审核</a></li>
+        <li ><a href="prove.list?tab=PREPASSS&" >预审通过</a></li>
+        <li ><a href="prove.list?tab=PASS&" >已通过</a></li>
+        <li ><a href="prove.list?tab=REFUSAL&" >未通过</a></li>
+      	</ul>
+    </div>
+     <type="hidden" value="企业身份认证"  id="masterCur" />
+    <h2 class="tool-bar">认证搜索</h2>
+    <form action="prove.list" method="get">
+     <input type="hidden" value="WAITING" name="tab">
+    <div class="g-c-f e-search">
+      <div class="tb-do">
+        <select id="searchType" name="searchType">
+        	<option value="ACCOUNT">会员帐号</option>
+        	<option  value="COMPANY">公司名称</option>
+        	<option  value="USER">申请人</option>
+        </select>
+      </div>
+      <div class="tb-search">
+        <input type="text" onkeydown="secKeyDown(event,this,'1')" id="searchValue" name="searchValue" value="" placeholder="请输入查找关键字" class="tb-text" />
+        <input type="submit" id="search" value="搜索" class="tb-btn">
+      </div>
+       </form>
+      <div class="tb-time">
+      <form action="prove.list" method="get">
+      <input type="hidden" value="WAITING" name="tab">
+        提交时间从<input type="text" id="startTime" readonly value="" name="startTime" class="g-d-text" />
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01 00:00:00\'}',el:'startTime'})"></a>至
+        <input type="text"  class="g-d-text" value="" readonly id="endTime" name="endTime"/>
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01 00:00:00',el:'endTime'})"></a>
+        <input type="submit" value="GO" class="tb-btn" />
+        </form>
+      </div>
+    </div>
+    
+
+ <div class="zxrz">
+ 
+ <form class="jsApplyFrm1" action="local.uploadInforamtion" enctype="multipart/form-data" method="post">
+ <div class="con after"><span class="s1">*</span><span class="s2">企业所在地GPS经度</span><input id="jd" value=""><span class="s3">（例如：144.95645）</span></div>
+ <div class="con after"><span class="s1">*</span><span class="s2">企业所在地GPS纬度</span><input id="wd" value=""><span class="s3">（例如：144.95645）</span></div>
+   <div class="con h102 after"><span class="s1">*</span><span class="s2">实际上门取证地址</span><textarea id="ad"></textarea></div>
+
+  <div class="con after"><span class="s1">*</span><span class="s2">场地面积</span><input value="" id="mj"><span class="s3">（例如：144.95平方米）</span></div>  
+    <div class="con after"><span class="s1">*</span><span class="s2">场地类型</span>
+    <select>
+  <option value ="volvo">工厂</option>
+  <option value ="saab">写字楼</option>
+  <option value="opel">住宅商用</option>
+  <option value="audi">商场商铺</option>
+</select>
+    </div>  
+  <div class="con after"><span class="s1">*</span><span class="s2">上门取证时间</span><input id="qztime" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"><a class="g-data timeimg" href="javascript:" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',el:'qztime'})"></a></div>
+    <div class="con after"><span class="s1">*</span><span class="s2">场地类型</span>
+    <select>
+  <option value ="volvo">自由产权</option>
+  <option value ="saab">租赁使用</option>
+</select>
+    </div>  
+  
+  <div class="con after"><span class="s1">*</span><span class="s2">场地租凭开始时间</span><input id="zltime" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"><a class="g-data timeimg" href="javascript:" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',el:'zltime'})"></a></div>     
+  
+    <div class="con after"><span class="s1">*</span><span class="s2">场地租凭有效期</span><input id="cdtime" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"><a class="g-data timeimg" href="javascript:" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',el:'cdtime'})"></a></div>    
+   
+  <div class="con pt10 after upld-box"><span class="s1">*</span><span class="s2">资质证照图片</span>
+  
+  <input id="uploadBtn0" class="jsUploadBtn" type="button" value="点击上传" />
+  <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1 after">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img  class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>   
+  
+   <!--div class="con pt10 after"><span class="s1">*</span><span class="s2">法人身份证照片</span>
+   <input id="uploadBtn1" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg"  src="http://resmanage.csc86.com/img/no-img.png" /></span>
+   </div--> 
+ 
+   <div class="con pt10 after"><span class="s1">*</span><span class="s2">法人与取证人合影</span>   
+   <input id="uploadBtn2" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img  class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>    
+
+   <div class="con pt10 after"><span class="s1"></span><span class="s2">园区大门图片</span>   
+   <input id="uploadBtn3" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>      
+   
+      <div class="con pt10 after"><span class="s1"></span><span class="s2">企业大门照片</span>   
+      <input id="uploadBtn4" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg"  src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>  
+      
+       <div class="con pt10 after"><span class="s1"></span><span class="s2">办公场所照片</span>   
+       <input id="uploadBtn5" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img  class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>      
+       
+       <div class="con pt10 after"><span class="s1"></span><span class="s2">生产场所照片</span>
+   <input id="uploadBtn6" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+  </div>        
+       
+        <div class="con pt10 after"><span class="s1"></span><span class="s2">产品照片</span>
+        <input id="uploadBtn7" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg"  src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>    
+        
+
+        <div class="con pt10 after"><span class="s1">*</span><span class="s2">场地使用许可照片</span>
+        <input id="uploadBtn8" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>    
+        
+        <div class="con pt10 after"><span class="s1">*</span><span class="s2">申请人与取证人合影</span>
+        <input id="uploadBtn9" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>   
+        
+        <div class="con pt10 after"><span class="s1">*</span><span class="s2">实地验证完结单</span>
+        <input id="uploadBtn10" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img class="noimg"  src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>    
+        
+        <div class="con pt10 after"><span class="s1">*</span><span class="s2">环拍</span>
+        <input id="uploadBtn11" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink imgup" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img  class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>        
+        
+        <div class="con pt10 after"><span class="s1"></span><span class="s2">公交站台照片</span>
+        <input id="uploadBtn12" class="jsUploadBtn" type="button" value="点击上传" />
+   <input class="imglink" type="hidden" name="" />
+  
+  <span class="ts1">未选择文件</span>
+  <span class="ts2">图片格式为JPG格式;图片大小不能超过2M</span>
+  <span class="imgshow after"><img  class="noimg" src="http://resmanage.csc86.com/img/no-img.png" /></span>
+        </div>    
+        
+        <div class="con center after"><input class="tj" type="submit" value="提交"></div>              
+        
+        
+ </form>                          
+  
+ </div>   
+    
+
+
+  	</div>
+</div>  
+ <script>
+	seajs.use('http://resmanage.csc86.com/js/zxrz.js',function(m){
+		m.step1();
+	});
+</script>
+</body>
+</html>

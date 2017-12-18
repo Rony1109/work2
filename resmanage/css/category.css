@@ -1,0 +1,38 @@
+@charset "utf-8";
+.main { background: url(../img/product/tree-bg.png) repeat-y scroll 0 0 #F1F1F1; }
+.main-bg{ background:#F1F1F1 url(../img/product/tree-bg.png) repeat-y -230px 0; }
+.content { position:relative; padding-left:210px; height:auto; }
+.category-tree { position:absolute; width:201px; top:0; left:-1px; line-height:24px; padding-bottom:5px; }
+.c-items { margin-top:12px }
+.c-items a { padding-left:44px; background:url(../img/icons/folder.png) no-repeat 22px center; color:#404040; }
+a.c-item-hd, a.c-2th-item-hd, .c-3th-items li a { white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow: hidden; display:block; }
+a.c-item-hd { width:157px; }
+a.c-2th-item-hd { width:142px; }
+.c-3th-items li a { width:113px; }
+.c-items .has-children { background:url(../img/icons/unless.png) no-repeat 4px 3px }
+.c-items .c-item-cur, .c-items .c-2th-item-cur,.c-items .c-2th-item-cur .c-3th-item-cur{ background-image:url(../img/icons/less.png) }
+.c-items ul, .c-items .c-item-cur .c-2th-items ul { display:none }
+.c-items ul, .c-items .c-item-cur .c-2th-items .c-3th-items ul { display:none }
+.c-items .c-item-cur ul, .c-items .c-item-cur .c-2th-item-cur ul { display:block }
+.c-items .c-item-cur ul, .c-items .c-item-cur .c-2th-item-cur .c-3th-item-cur ul { display:block }
+.c-item-hd { font-weight:700 }
+.c-2th-items,.c-3th-items,.c-3th-items ul{ margin-left:15px }
+#aSel select { width:120px; margin-right:10px; float:left; }
+.a-content { width:118px; margin-right:10px; }
+.de-r { height:auto; float:left; }
+.a-add, .de-r input { margin-bottom:5px; }
+.de-r input { cursor:pointer; }
+.a-rev { clear:both; margin-top:5px; display:none; }
+.a-show { display:block; }
+.a-transfer { width:250px; height:300px; overflow:hidden; overflow-y:auto; overflow-x:hidden; padding:0 5px; border:1px solid #D6D6D6; margin-top:10px; background:#fff; }
+.a-transfer ul li { position:relative; }
+.a-transfer ul li input { margin-right:5px; position:relative; left:30px; }
+.a-transfer .c-items .has-children { background:url(../img/icons/unless.png) no-repeat scroll 4px 1px; }
+.a-transfer .c-items .c-item-cur, .a-transfer .c-items .c-2th-item-cur { background-image: url("../img/icons/less.png"); }
+.a-transfer ul li a { background:none; padding-left:30px; display:inline; }
+.a-transfer a.c-item-hd { width:218px; }
+.point,.po-mes { color:#999; }
+.p-error { color:#f60; }
+.hidden-art { display:none; }
+#reviseName1,#reviseId1,#categoryName2,#categoryID2,#c-a-categoryName,#c-a-categoryID{ line-height:16px;height:16px; }
+.sss1,.sss2,.sss3{position:absolute;top:5px;left:5px;width:15px;height:15px;cursor:pointer;}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>添加排名词（城商通）</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="../../css/advertising.css" rel="stylesheet" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="../../js/advertising.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">广告管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">广告管理</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="personal-member.html" onClick="mlast('ln-3th-cur','li-last',this)">添加付费关键词</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<link rel="stylesheet" href="../../css/examinees.css" />
+	<div class="content" id="content">
+        <h2 class="tool-bar g-fs-14">添加付费关键词</h2>
+        <div class="paid-key-form paykeyword2 g-c-f">
+        	<div class="g-f-l">
+        	<div class="key-minfo"><span>会员账号：<span>45464654</span></span><span>企业名称：<span>65464654</span></span><span>到期时间：<span>2013.12.12</span></span></div>
+            <ul>
+                <li><span><em>*</em>关键词：</span><input id="keyWord" onKeyUp="this.value=this.value.replace(/[^\d\w\u4e00-\u9fa5]+$/g,'')" type="text" class="txt">&nbsp;&nbsp;<input type="button" class="btnlink" value="查询" name="OK"><label><b class="icon-y-star"></b><b class="icon-y-star"></b><b class="icon-d-star"></b></label></li>
+                <li><span><em>*</em>产品ID：</span><input type="text" disabled class="txt" id="productId"></li>
+                <li class="g-t-l"><input type="button" class="btnlink" value="添加" name="OK"></li>
+            </ul>
+            </div>
+            <div class="cikulist">
+            	<dl>
+                	<dt><span>关键词</span><span class="w-60b">产品ID</span></dt>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                    <dd><span><a class="ico-del" href="javascript://">去掉</a><em>关键词</em></span><span class="w-60b">lug@csc-ec.com</span></dd>
+                </dl>
+            </div>
+            <div class="g-t-c w-b100 g-f-l"><div class="g-h-50"></div><input class="savebtn" name="" type="submit" value="保&nbsp;&nbsp;存"></div>
+        </div>
+	</div>
+</div>
+</body>
+</html>

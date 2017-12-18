@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>广告管理</title>
+        <link rel="stylesheet" href="../../css/base-reset.css" />
+        <link rel="stylesheet" href="../../css/master.css" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/master.js"></script>
+        <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+        <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+        <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../../css/ads.css" />
+    </head>
+    <body>
+        <div class="m-nav">
+            <div class="m-n-tab">
+                <div class="m-loginbar">
+                    你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+                </div>
+                <ul>
+                    <li class="home">
+                        <a href="c/my-panel/my-panel.html">我的面板</a>
+                    </li>
+                    <li>
+                        <a href="c/upset/sidemenu.html">系统设置</a>
+                    </li>
+                    <li>
+                        <a href="c/examinees/sidemenu.html">审核管理</a>
+                    </li>
+                    <li>
+                        <a href="c/member/sidemenu.html">会员管理</a>
+                    </li>
+                    <li>
+                        <a href="c/information/sidemenu.html">资讯中心</a>
+                    </li>
+                    <li>
+                        <a href="c/product/sidemenu.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="c/apply/sidemenu.html">应用中心</a>
+                    </li>
+                    <li class="cur">
+                        <a href="c/product/sidemenu.html">广告管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-nav" id="leftNav">
+                <h2 class="ln-hd">广告管理</h2>
+                <ul class="ln-2th">
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">广告竞价管理</a>
+                        <ul class="ln-3th">
+                            <li class="li-last" >
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">页面管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">添加广告位</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告位管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">添加广告</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告管理</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告审核</a>
+                            </li>
+                            <li class="li-last">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">广告账户管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旭日排名管理</a>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">旺铺模板管理</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+            <div class="content" id="content">
+                <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+                <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+                <script src="http://resmanage.csc86.com/js/adsAuction.js"></script>
+                <h2 class="tool-bar">添加广告位</h2>                
+                  <div class="ads-form" id="advertising-form">
+                      <form method="post">
+                          <ul>
+                              <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>选择页面：</div>
+                                  <div class="ad-value">
+                                      <select id="ad-page">
+                                          <option value="d">请选择</option>
+                                          <option>网站首页</option>
+                                          <option>资讯频道</option>
+                                      </select>
+                                       <select id="ad-page-2th">                                                                   
+                                      </select>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>广告位名称：</div>
+                                  <div class="ad-value">
+                                      <input type="text" class="ad-txt" id="ad-title" />
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">广告位介绍：</div>
+                                  <div class="ad-value">
+                                      <textarea id="ad-intro"></textarea>
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>广告类型：</div>
+                                  <div class="ad-value">
+                                      <select id="ad-type">
+                                          <option value="d">请选择</option>
+                                          <option>图片广告</option>
+                                          <option>flash图片广告</option>
+                                          <option>文字广告</option>
+                                          <option>随屏移动广告</option>
+                                          <option>对联广告</option>
+                                      </select>
+                                      <span class="g-gray">添加成功后不可修改，请确定类型。</span>
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>图片宽度：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt w50" id="ad-w1" onkeyup="adInteger(this);" />&nbsp;px<span class="g-gray">仅允许输入正整数</span>
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>图片高度：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt w50" id="ad-h1" onkeyup="adInteger(this);" />&nbsp;px<span class="g-gray">仅允许输入正整数</span>
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">默认广告标题：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt" />
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">默认图片：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt" readonly id="imgload0"/>&nbsp;&nbsp;<input type="text" id="adsDefaultPic" />
+                                       <input type="hidden" id="imgurl0" />
+                                   </div>
+                                   <script>
+                                      new SWFUpload(uploadSettings({
+                                            type:"shopNews",
+                                            button_placeholder_id:"adsDefaultPic",
+                                            file_types: "*.jpg;*.jpeg;*.gif;*.png;",
+                                            file_size_limit : "2MB",
+                                            file_upload_limit : 0,
+                                            button_text_left_padding:16,
+                                            button_text:"上传图片"
+                                        }));
+                                   </script>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">默认链接地址：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt" />
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key"><span class="star">*</span>最低广告费用：</div>
+                                  <div class="ad-value">
+                                       <input type="text" class="ad-txt w50"  id="ad-fee"  onkeyup="nonNegative(this);"  />&nbsp;元/天<span class="g-gray">仅允许输入非负整数</span>
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">是否启用：</div>
+                                  <div class="ad-value">
+                                      <input type="radio" name="isEnable" checked/>&nbsp;是&nbsp;&nbsp;&nbsp;<input type="radio" name="isEnable"/>&nbsp;否
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key">是否开放给广告主：</div>
+                                  <div class="ad-value">
+                                      <input type="radio" name="isEnable2" checked/>&nbsp;是&nbsp;&nbsp;&nbsp;<input type="radio" name="isEnable2"/>&nbsp;否
+                                   </div>
+                               </li>
+                               <li>
+                                  <div class="g-f-l ad-key"></div>
+                                  <div class="ad-value">
+                                      <input type="hidden" value="false" id="error_tip"/>
+                                      <input type="submit" value="确定" class="confirm"/><input type="button" value="取消" class="cancel"/>
+                                   </div>
+                               </li>
+                          </ul>
+                      </form>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>

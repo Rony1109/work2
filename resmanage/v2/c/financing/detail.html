@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/financing/css/style.css" />
+<script src="http://resmanage.csc86.com/v2/l/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<!--
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>-->
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">产品中心</h2>
+		 <ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<h2 class="tool-bar">融资申请管理</h2>
+		<div class="details">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <th width="10%">企业名称：</th>
+                <td width="70%">等候诋毁彭德怀大批</td>
+               </tr>
+               <tr>
+                <th>工商注册号：</th>
+                <td>d1337479</td>
+               </tr>
+              <tr>
+                <th>法人/负责人：</th>
+                <td>李三</td>
+              </tr>
+              <tr>
+                <th>联系电话：</th>
+                <td>1234556</td>
+              </tr>
+              <tr>
+                <th>所在城市：</th>
+                <td>广东深圳市</td>
+              </tr>
+              <tr>
+                <th>借款金额：</th>
+                <td>50万元</td>
+              </tr>
+              <tr>
+                <th>借款用途：</th>
+                <td>首批的活泼的活泼的和平对话泼妇打破合肥活泼的活泼的炮轰等候i的活泼的炮轰东方红破发的和平符合破发点后皮肤hop佛配合</td>
+              </tr>
+              <tr>
+                <th>联系电话：</th>
+                <td>1234556</td>
+              </tr>
+            </tbody>
+		</table>
+		</div>
+		<div class="operatebtns">
+		<a href="javascript:" data-operate = "adopt" >通过</a>
+		<a href="javascript:" data-operate = "refuse" >拒绝</a>
+		<a href="javascript:" data-operate = "back" >返回</a>
+		<a href="javascript:" data-operate = "next" >下一条</a>
+    	</div>
+		<script>seajs.use('http://resmanage.csc86.com/v2/c/financing/js/init');</script>
+	</div>
+</div>
+</body>
+</html>

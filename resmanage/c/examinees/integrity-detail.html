@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>审核管理</title>
+        <link rel="stylesheet" href="../../css/base-reset.css" />
+        <link rel="stylesheet" href="../../css/master.css" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/master.js"></script>
+        <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+        <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+        <script src="../../js/json2.js"></script>
+        <script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+        <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../../css/examinees.css" />
+    </head>
+    <body>
+        <div class="m-nav">
+            <div class="m-n-tab">
+                <div class="m-loginbar">
+                    你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+                </div>
+                <ul>
+                    <li class="home">
+                        <a href="c/my-panel/my-panel.html">我的面板</a>
+                    </li>
+                    <li>
+                        <a href="c/upset/sidemenu.html">系统设置</a>
+                    </li>
+                    <li class="cur">
+                        <a href="c/examinees/sidemenu.html">审核管理</a>
+                    </li>
+                    <li>
+                        <a href="c/member/sidemenu.html">会员管理</a>
+                    </li>
+                    <li>
+                        <a href="c/information/sidemenu.html">资讯中心</a>
+                    </li>
+                    <li>
+                        <a href="c/product/sidemenu.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="c/apply/sidemenu.html">应用中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-nav" id="leftNav">
+                <h2 class="ln-hd">审核管理</h2>
+                <ul class="ln-2th">
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a>
+                        <ul class="ln-3th">
+                            <li>
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">实名认证</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">实体认证</a>
+                            </li>
+                            <li class="ln-3th-cur">
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">诚信认证</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+            <div class="content" id="content">
+                <div class="sel-sub">
+                    <ul>
+                        <li class="cur">
+                            <a href="javascript:">待审核</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">预审通过</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">未通过</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">已通过</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="tool-bar">诚信深商认证审核</h2>
+                <div class="wait-m cxss">
+
+                    <ul class="g-c-f status">
+                        <li>
+                            <span>状态：</span>待审核
+                        </li>
+                        <li>
+                            <span>提交时间：</span>2013-5-29   18:12
+                        </li>
+                    </ul>
+                    <div class="g-h-20"></div>
+                    <ul class="g-c-f status">
+                        <li>
+                            <span>状态：</span>预审通过
+                        </li>
+                        <li>
+                            <span>提交时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>预审时间：</span>2013-5-29   18:12
+                        </li>
+                    </ul>
+                    <div class="g-h-20"></div>
+                    <ul class="g-c-f status">
+                        <li>
+                            <span>状态：</span>认证通过
+                        </li>
+                        <li>
+                            <span>提交时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>预审时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>通过时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>审核意见：</span>资料无误，审核通过
+                        </li>
+                    </ul>
+                    <div class="g-h-20"></div>
+                    <ul class="g-c-f status">
+                        <li>
+                            <span>状态：</span>预审拒绝
+                        </li>
+                        <li>
+                            <span>提交时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>预审时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>拒绝时间：</span>2013-5-29   18:12
+                        </li>
+                        <li>
+                            <span>审核意见：</span>企业名称有误
+                        </li>
+                    </ul>
+                    <div class="g-h-20"></div>
+                    <dl>
+                        <dt>
+                            企业基本信息
+                        </dt>
+                        <dd>
+                            <table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th>企业名称：</th>
+                                    <td>深圳市龙岗区华美纺织行</td>
+                                </tr>
+                                <tr>
+                                    <th>营业执照注册号：</th>
+                                    <td>440307804954147</td>
+                                </tr>
+                                <tr>
+                                    <th>注册地：</th>
+                                    <td>广东省 深圳市 龙岗区</td>
+                                </tr>
+                                <tr>
+                                    <th>企业邮箱：</th>
+                                    <td>foonli@csc-ec.com</td>
+                                </tr>
+                                <tr>
+                                    <th>办公电话：</th>
+                                    <td>0755-88888888</td>
+                                </tr>
+                                <tr>
+                                    <th>办公地址：</th>
+                                    <td>平湖华南城纺织区L091</td>
+                                </tr>
+                                <tr>
+                                    <th>公司类型：</th>
+                                    <td>服务型 贸易型 生产型</td>
+                                </tr>
+                            </table>
+                        </dd>
+                        <dt>
+                            证件上传
+                        </dt>
+                        <dd>
+                            <table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th valign="top">营业执照：</th>
+                                    <td><img src="" width="150" height="130"/></td>
+                                </tr>
+                            </table>
+                        </dd>
+                        <dt>
+                            联系人信息
+                        </dt>
+                        <dd>
+                            <table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th>联系人姓名：</th>
+                                    <td>李伟</td>
+                                </tr>
+                                <tr>
+                                    <th>联系人电话：</th>
+                                    <td>18938869201</td>
+                                <tr>
+                                    <th>联系人邮箱：</th>
+                                    <td>foonli@csc-ec.com</td>
+                                </tr>
+                                <tr>
+                                    <th>联系人职务：</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>联系人姓名：</th>
+                                    <td>产品</td>
+                                </tr>
+                                <tr>
+                                    <th>联系人地址：</th>
+                                    <td></td>
+
+                                </tr>
+                            </table>
+                        </dd>
+                        <dt>
+                            联系人信息
+                        </dt>
+                        <dd>
+                            <table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th>旺铺名称：</th>
+                                    <td>深圳市龙岗区华美纺织行</td>
+                                </tr>
+                                <tr>
+                                    <th>旺铺域名：</th>
+                                    <td>http://hello.csc86.com</td>
+                                </tr>
+                                <tr>
+                                    <th>旺铺开通时间：</th>
+                                    <td>2013-5-29</td>
+                                </tr>
+                                <tr>
+                                    <th>主营行业：</th>
+                                    <td>电子产品</td>
+                                </tr>
+                                <tr>
+                                    <th>一句话简介：</th>
+                                    <td>厂家大批量直销各类布匹</td>
+                                </tr>
+                                <tr>
+                                    <th valign="top">旺铺LOGO：</th>
+                                    <td><img src="" width="100" height="100"/></td>
+                                </tr>
+                                <tr>
+                                    <th valign="top">详细介绍：</th>
+                                    <td>润源工艺礼品绳带厂成立于1999年，经过多年的不懈努力，公司已成为粤东及珠三角地区最具有影响力的工艺绳带厂之一，2004年因发展需要，在深圳国际工业原料城—华南城设立分公司，华南城地理位置优越，交通便利。润源工艺绳带辅料集生产、加工、销售为一体。</td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                    <input type="button" value="预审通过">
+                                    <input type="button" value="预审拒绝">
+                                    <input type="button" value="返回">
+                                    <input type="button" value="下一条">
+                                    </td>
+                                </tr>
+                            </table>
+                        </dd>
+
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

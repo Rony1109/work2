@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>逛市场</title>
+        <link rel="stylesheet" href="../../css/base-reset.css" />
+        <link rel="stylesheet" href="../../css/master.css" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/master.js"></script>
+        <script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+        <script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+        <link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="m-nav">
+            <div class="m-n-tab">
+                <div class="m-loginbar">
+                    你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+                </div>
+                <ul>
+                    <li class="home">
+                        <a href="c/my-panel/my-panel.html">我的面板</a>
+                    </li>
+                    <li>
+                        <a href="c/upset/sidemenu.html">系统设置</a>
+                    </li>
+                    <li>
+                        <a href="c/examinees/sidemenu.html">审核管理</a>
+                    </li>
+                    <li>
+                        <a href="c/member/sidemenu.html">会员管理</a>
+                    </li>
+                    <li>
+                        <a href="c/information/sidemenu.html">资讯中心</a>
+                    </li>
+                    <li>
+                        <a href="c/product/sidemenu.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="c/apply/sidemenu.html">应用中心</a>
+                    </li>
+                    <li class="cur">
+                        <a href="c/product/sidemenu.html">地图管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-nav" id="leftNav">
+                <h2 class="ln-hd">地图管理</h2>
+                <ul class="ln-2th">
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地图管理</a>
+                        <ul class="ln-3th">
+                            <li class="li-last" >
+                                <a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">深圳华南城</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商铺管理</a>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">个体市场</a>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">办事求助</a>
+                    </li>
+                    <li class="ln-2th-item">
+                        <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">配套服务</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+            <div class="content" id="content">
+                <link rel="stylesheet" href="../../css/visit_market.css" />
+                <script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+                <script src="http://resmanage.csc86.com/js/handlers.js"></script>
+                <script src="http://resmanage.csc86.com/js/visit_market.js"></script>
+                <h2 class="tool-bar">办事求助详情</h2>
+                <ul class="bsqz-info">
+                    <li><span> 类别：</span>找品牌商铺</li>
+                    <li><span> 昵称：</span>XXXX</li>
+                    <li><span> 联系电话：</span>13000000000</li>
+                    <li><span> 提交时间：</span>2013-12-28 13:00</li>
+                </ul>
+                <ul class="bsqz-list">
+                    <li>
+                        <div class="g-f-l key">咨询内容：</div>
+                        <div class="value">我十分想知道，这里有没有卖牛皮纸的，在哪卖，价格怎样，有没联系方式，急急急，在线等。</div>
+                    </li>
+                    <li>
+                        <div class="g-f-l key"> 华姐回复：</div>
+                        <div class="value">非常感谢您对我们的服务和产品提出的宝贵建议，在皮革区，P10001-P10100，都是卖牛皮纸的，价格根据类别会有不同，大致在20-30之间，具体需联系商家。</div>
+                    </li>
+                    <li>
+                        <div class="g-f-l key">咨询内容：</div>
+                        <div class="value">我十分想知道，这里有没有卖牛皮纸的，在哪卖，价格怎样，有没联系方式，急急急，在线等。</div>
+                    </li>
+                    <li>
+                        <div class="g-f-l key">华姐回复：</div>
+                        <div class="value"><textarea maxlength="100">非常感谢您对我们的服务和产品提出的宝贵建议，在皮革区，P10001-P10100，都是卖牛皮纸的，价格根据类别会有不同，大致在20-30之间，具体需联系商家。</textarea>&nbsp;<span class="g-gray">最多输入100字</span> </div>
+                    </li>
+                    <li>
+                        <div class="g-f-l key"></div>
+                        <div class="value">
+                            <input type="submit" value="保存" class="confirm" onclick="replyOperate(this,'0');"/><input type="button" value="删除" class="cancel" onclick="replyOperate(this,'1');"/><a href="#">返回列表</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

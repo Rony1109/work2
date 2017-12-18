@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>html5桌面通知</title>
+</head>
+<body>
+<input type="button" value="开启桌面通知" onclick="showNotice();">
+
+
+<button id="button">有人想加你为好友</button>
+<p id="text"></p>
+
+<script>
+
+	if (window.Notification) {
+		var button = document.getElementById('button'), text = document.getElementById('text');
+
+		var popNotice = function() {
+			if (Notification.permission == "granted") {
+				var notification = new Notification("Hi，帅哥：", {
+					body: '可以加你为好友吗？',
+					icon: 'http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg'
+				});
+
+				notification.onclick = function() {
+					text.innerHTML = '张小姐已于' + new Date().toTimeString().split(' ')[0] + '加你为好友！';
+					notification.close();
+				};
+			}
+		};
+
+		button.onclick = function() {
+			if (Notification.permission == "granted") {
+				popNotice();
+			} else if (Notification.permission != "denied") {
+				Notification.requestPermission(function (permission) {
+					popNotice();
+				});
+			}
+		};
+	} else {
+		alert('浏览器不支持Notification');
+	}
+
+	function showNotice(){
+		Notification.requestPermission(function(status){
+//status默认值'default'等同于拒绝 'denied' 意味着用户不想要通知 'granted' 意味着用户同意启用通知
+			if("granted" != status)
+				return;
+			var notify = new Notification("消息",{
+				dir:'auto',
+				lang:'zh-CN',
+				tag:'sds',//实例化的notification的id
+//icon 支持ico、png、jpg、jpeg格式
+				icon:'http://www.xttblog.com/icons/favicon.ico',//通知的缩略图
+				body:'html5桌面通知' //通知的具体内容
+			});
+			notify.onclick=function(){
+//如果通知消息被点击,通知窗口将被激活
+				//window.open('http://www.baidu.com');
+				window.focus();
+			}
+		});
+	}
+	setInterval(showNotice,10000);
+</script>
+</body>
+</html>

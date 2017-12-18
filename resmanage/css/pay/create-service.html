@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-初始化密码</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="../../js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+<script src="../../js/pay/pay.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">服务管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">服务管理</h2>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <h2 class="tool-bar">初始密码设置</h2>
+	<div class="wait-m">
+    <form action="" method="post" onSubmit="return subCreateService()">
+        <div class="edit-left">
+        	<table border="0">
+                <tr>
+                    <th><i>*</i>服务名称：</th>
+                    <td><input id="name" type="text" class="input-large" value="" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <th><i>*</i>LOGO：</th>
+                    <td><img src="../../img/no-img.png" width="80" height="80" /><input class="m-l-10" type="button" value="上传logo"></td>
+                </tr>
+                <tr>
+                    <th valign="top"><i>*</i>服务简介：</th>
+                    <td><textarea id="subject" maxlength="200" class="text-area"></textarea></td>
+                </tr>
+                <tr>
+                    <th valign="top"><i>*</i>服务详情：</th>
+                    <td><textarea id="detail" maxlength="2000" class="text-area" cols="" rows=""></textarea></td>
+                </tr>
+                <tr>
+                    <th>使用链接：</th>
+                    <td><input type="text" value="" class="input-large" name=""></td>
+                </tr>
+                <tr>
+                    <th>详情链接：</th>
+                    <td><input type="text" value="" class="input-large" name=""></td>
+                </tr>
+            </table>
+        </div>
+        <div class="edit-right">
+        	<table border="0">
+                <tr>
+                    <th valign="top"><i>*</i>服务选项：</th>
+                    <td id="s-ad">
+                    	<input id="mark" type="text" value="" class="input-medium" name="">
+                        <input id="price" type="text" value="" class="input-small m-l-10" name=""><span class="m-l-5">元</span>
+                        <input id="month" type="text" value="" class="input-small m-l-10" name=""><span class="m-l-5">月</span>
+                        <a id="c-add-btn" class="c-add-btn ico-add" href="javascript://" onClick="addService(this,'mark','price','month')">添加</a>
+                        <input id="items" type="hidden" value="" name="items">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i>*</i>允许重复订购：</th>
+                    <td>
+                    	<p>
+                            <label><input  type="radio" name="" value="是">&nbsp;是</label>&nbsp;
+                            <label><input type="radio" name="" value="否">&nbsp;否</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i>*</i>服务状态：</th>
+                    <td>
+                    	<p>
+                            <label><input type="radio" name="" value="是">&nbsp;上架</label>&nbsp;
+                            <label><input type="radio" name="" value="否">&nbsp;下架</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>服务排序：</th>
+                    <td><input type="text" value="0" class="input-medium"></td>
+                </tr>
+                <tr>
+                    <th>&nbsp;</th>
+                    <td><input class="sub-c-btn" type="submit" value="保存"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

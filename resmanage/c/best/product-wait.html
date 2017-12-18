@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link href="http://resmanage.csc86.com/js/highslide-4.1.13/highslide/highslide.css" rel="stylesheet">
+<script src="http://resmanage.csc86.com/js/highslide-4.1.13/highslide/highslide.js"></script>
+<script src="http://resmanage.csc86.com/js/ImgZoom.js"></script>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/best/product.css" />
+<script src="http://resmanage.csc86.com/js/best/product.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">优质供求库</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">优质库</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质产品库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="seller.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质卖家库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="buyers.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质买家库</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<div class="sel-sub">
+			<ul>
+				<li><a href="product.html">优质产品库</a></li>
+				<li class="cur"><a href="product-wait.html">待入库产品</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar">产品搜索</h2>
+		<div class="g-c-f e-search">
+			<div class="g-c-f" style="height:40px">
+				<div class="tb-do">
+					<select name="">
+						<option value="account" selected>会员账号</option>
+						<option value="company">企业名称</option>
+					</select>
+					<input type="text" name="" class="g-d-text"/>
+					<select name="price">
+						<option value="">价格</option>
+						<option value="">面议</option>
+						<option value="">其它</option>
+					</select>
+				</div>
+				<div class="tb-time"> 发布时间从：
+					<input type="text" id="startTime" class="g-d-text" />
+					<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+					<input type="text"  class="g-d-text" id="endTime"/>
+					<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+				</div>
+			</div>
+			<div class="g-c-f">
+				<div class="tb-do">
+					<select name="">
+						<option value="">会员类型</option>
+						<option value="">普通会员</option>
+						<option value="">城商通会员</option>
+						<option value="">VIP会员</option>
+					</select>
+					<select name="">
+						<option value="">产品等级</option>
+						<option value="">高</option>
+						<option value="">中</option>
+						<option value="">低</option>
+					</select>
+					<select name="">
+						<option value="">一级分类</option>
+					</select>
+					<select name="">
+						<option value="">二级分类</option>
+					</select>
+					<select name="">
+						<option value="">三级分类</option>
+					</select>
+				</div>
+				<div class="g-f-r">
+					<button type="sbumit" class="search-btn"><img src="http://resmanage.csc86.com/img/icons/search.png" alt=""/>搜索</button>
+				</div>
+			</div>
+		</div>
+		<h2 class="tool-bar">产品资料审核</h2>
+		<div class="operation op-bg"><button class="import-btn">批量入库</button><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+			<input type="text" size="8" />
+			&nbsp;
+			<input type="button" value="跳转" />
+			</span></div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="8%" class="list-id"><input name="" type="checkbox" value="">
+							&nbsp;选择</td>
+						<td width="13%">会员帐号</td>
+						<td width="14%">企业名称</td>
+						<td width="15%">信息标题</td>
+						<td width="12%">产品图片</td>
+						<td width="5%">价格</td>
+						<td width="7%">会员组</td>
+						<td width="15%">发布时间</td>
+						<td width="11%">管理操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>hbzybyaf66l</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td><a href="http://resmanage.csc86.com/img/test/no-img.png" class="highslide"><img src="http://resmanage.csc86.com/img/test/no-img.png" width="80" height="80" /></a></td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>2012-05-16 18:08:33</td>
+						<td><a href="javascript:" class="g-ico ico-to-rat">评等级</a><div class="g-h-05"></div><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><div class="g-h-05"></div><a href="javascript:" class="g-ico ico-import">入库</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>hbzybyaf66l</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td><a href="http://resmanage.csc86.com/img/test/no-img.png" class="highslide"><img src="http://resmanage.csc86.com/img/test/no-img.png" width="80" height="80" /></a></td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>2012-05-16 18:08:33</td>
+						<td><span class="g-ico ico-rat-h"></span><div class="g-h-03"></div><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><div class="g-h-05"></div><a href="javascript:" class="g-ico ico-import">入库</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>hbzybyaf66l</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td><a href="http://resmanage.csc86.com/img/test/no-img.png" class="highslide"><img src="http://resmanage.csc86.com/img/test/no-img.png" width="80" height="80" /></a></td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>2012-05-16 18:08:33</td>
+						<td><span class="g-ico ico-rat-m"></span><div class="g-h-03"></div><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><div class="g-h-05"></div><a href="javascript:" class="g-ico ico-import">入库</a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>hbzybyaf66l</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>无动力铝合金自然通风</td>
+						<td><a href="http://resmanage.csc86.com/img/test/no-img.png" class="highslide"><img src="http://resmanage.csc86.com/img/test/no-img.png" width="80" height="80" /></a></td>
+						<td>面议</td>
+						<td>待审核</td>
+						<td>2012-05-16 18:08:33</td>
+						<td><span class="g-ico ico-rat-l"></span><div class="g-h-03"></div><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a><div class="g-h-05"></div><a href="javascript:" class="g-ico ico-import">入库</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="g-c-f">
+			<div class="operation"><button class="import-btn">批量入库</button><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" />
+				&nbsp;
+				<input type="button" value="跳转" />
+				</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-查看会员详情</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/member-manage.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">会员管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <h2 class="tool-bar">查看会员详情</h2>
+    <div class="wait-m">
+		<h3>个人会员</h3>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="at-look">
+		  <tbody>
+		  <tr>
+			<th>会员账号：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>个人形象：</th>
+			<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+		  </tr>
+		  <tr>
+			<th>姓名：</th>
+			<td>XXXXXXXXXXXXXX有限公司</td>
+		  </tr>
+		  <tr>
+			<th>手机号码：</th>
+			<td>平湖华南城ba la ba la ba la ba la ba la </td>
+		  </tr>
+		  <tr>
+			<th>电子邮箱：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>固定电话：</th>
+			<td>htpp://www.xxxxxx.com</td>
+		  </tr>
+		  <tr>
+			<th>传真号码：</th>
+			<td>0755-88888888</td>
+		  </tr>
+		  <tr>
+			<th>联系地址：</th>
+			<td>XXXXXXXXXXXXXXXXXXXXXXXXXXXX ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la ba la <br />XXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		</tbody>
+		</table>
+		<h3>工作经历</h3>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="at-look">
+		  <tbody>
+		  <tr>
+			<th>公司名称：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>部门：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>职位：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		  <tr>
+			<th>工作时间：</th>
+			<td>XXXXXXXXXXXXXXXXXXXX</td>
+		  </tr>
+		</tbody>
+		</table>
+    </div>
+	<div class="wait-btn">
+		<input type="button" onclick="mresetPwd()" value="重置密码">
+		<input type="button" value="关闭">
+		<input type="button" onclick="history.back()" value="下一条">
+	</div>
+  </div>
+</div>
+</body>
+</html>

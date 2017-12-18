@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+
+
+<body>
+<div style="display:none;" id="obj">
+    <img  src="http://csdnimg.cn/www/images/csdnindex_logo.gif" />
+    <p>测试</p>
+    <p>测试</p>
+    <p>测试</p>
+    <p>测试</p>
+    <p>测试</p> 
+</div>
+
+<input type="button" onclick="test()" value="测试" />
+<script type="text/javascript">
+document.writeln('<style>#new_div{ position:fixed; left:0px;bottom:0px;}</style>');
+var test = function(){
+  var new_div = document.createElement("div");
+	  new_div.setAttribute("id","new_div");
+	  
+    document.body.appendChild(new_div);
+	new_div.innerHTML=document.getElementById('obj').innerHTML;
+	var img = new_div.getElementsByTagName('img');
+	var imgnum = new_div.getElementsByTagName('img').length;
+	if(imgnum>0){
+var obj = new Image;
+obj.src = img[imgnum-1].src;
+if(obj.complete ||obj.onload) { 
+var returnval =new_div.offsetHeight; 
+new_div.parentNode.removeChild(new_div); 
+}
+	}
+ alert(returnval);
+}
+</script>
+</body>
+</html>

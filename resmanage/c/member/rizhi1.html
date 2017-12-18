@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>1JAVA日志查询</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="//resmanage.csc86.com/css/rizhi.css" >
+	<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+	<script src="//resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>风控日志预警系统</p></div>
+<div class="warpbottom after">
+	<div class="left">
+		<ul>
+			<li><a href="logStatistic.html">异常统计分析图</a></li>
+			<li><a href="logSearch.html">JAVA日志查询</a></li>
+			<li><a href="reslogSearch.html">前端API异常查询</a></li>
+			<li><a href="oldJavaLogSearch.html">JAVA历史日志查询</a></li>
+		</ul>
+	</div>
+	<a href="javascript:;" title="关闭/打开左栏" class="close-left"></a>
+	<div class="right">
+	<div class="tkwk">
+		<form  method="get" action="logSearch.html" class="dsqform">
+			<table class="cwdztable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="440">
+					<col width="310">
+					<col width="">
+				</colgroup>
+				<tbody>
+				<tr>
+					<td class="tl tp1">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+						<input type="text" value="2017-01-04 00:00:00" id="startTime" class="g-d-text" name="startTime" readonly="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'%y-%M-%d',el:'startTime'})">
+						至
+						<input type="text" value="2017-01-05 23:59:59" class="g-d-text" id="endTime" name="endTime" readonly="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})">
+					</td>
+					<td class="tl">用户ID：&nbsp;&nbsp;&nbsp;<input type="text" id="loginId" name="loginId" value="" class="i2"></td>
+					<td class="tl">服务器IP：<input type="text" class="i2" id="ip" name="ip" value=""></td>
+				</tr>
+				<tr>
+					<td class="tl tp1">日志级别：<select id="level" name="level">
+						<option value="">全部</option>
+
+						<option value="I" >INFO</option>
+						<option value="W" >WARN</option>
+						<option value="E" selected>ERROR</option>
+						<option value="D" >DEBUG</option>
+						<option value="F" >FATAL</option>
+						<option value="O" >OFF</option>
+
+					</select></td>
+					<td class="tl">项目名：&nbsp;&nbsp;
+						<select id="appName" name="appName">
+							<option value="member">member</option>
+							<option value="payment" selected>payment</option>
+							<option value="order" >order</option>
+							<option value="approve" >approve</option>
+							<option value="shop" >shop</option>
+							<option value="search" >search</option>
+						</select></td>
+
+					<td class="tl">类名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="i2" id="className" name="className" value=""></td>
+				</tr>
+				<tr>
+					<td class="tl tp1">错误码：&nbsp;&nbsp; <input type="text" class="i2" id="code" name="code" value=""></td>
+					<td class="tl">显示条数：<input type="text" class="i2" id="pageSize" name="pageSize" value="1000"></td>
+					<td class="tl" colspan="2"><input type="submit" class="i3" value="查询"></td>
+				</tr>
+				<tr>
+					<td class="tl tp1" colspan="3"><input type="button" class="i3 dssx" value="开启定时刷新"></td>
+				</tr>
+				</tbody>
+
+			</table>
+			<table class="cwmxtable" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="100">
+					<col width="100">
+					<col width="100">
+					<col width="100">
+					<col width="100">
+					<col width="80">
+					<col>
+				</colgroup>
+				<thead>
+
+				<tr>
+					<th>用户ID</th>
+					<th>服务器IP</th>
+					<th>时间</th>
+					<th>项目名</th>
+					<th>类名</th>
+					<th>日志级别</th>
+					<th>日志信息</th>
+				</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</div>
+
+</div>
+
+<script>seajs.use('//resmanage.csc86.com/c/member/js/resrizhi.js');</script>
+
+</body>
+</html>

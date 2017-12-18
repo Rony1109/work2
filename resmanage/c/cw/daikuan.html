@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                    <li class="li-last" ><a href="#" data-id="30003" onClick="mlast('ln-3th-cur','li-last',this)">资讯管理</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">找货产品推荐</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">地图商家推荐</a></li>
+                    <li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+				</ul>
+			</li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地区管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/cw/cw.css" />
+        <script type="text/javascript" src="../../js/cw/cw.js"></script>
+        <h2 class="tool-bar">财务管理</h2>
+        <div class="g-c-f e-search sea-cw">
+        <form action="" method="post" data-type="cw">
+        	<span class="mr-16">交易时间：
+            	<input type="text" id="startTime" class="g-d-text" />
+                <a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'%y-%M-%d',el:'startTime'})"></a>至
+                <input type="text"  class="g-d-text" id="endTime"/>
+                <a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})"></a>
+            </span>
+            <span>受理状态：
+            <select name="searchType" class="w89">
+                <option value="0">全部</option>
+                <option value="1">未受理</option>
+                <option value="2">已受理</option>
+            </select>
+            </span>
+            <span>打款状态：
+            <select name="searchType" class="w89">
+                <option value="0">全部</option>
+                <option value="1">未打款</option>
+                <option value="2">已打款</option>
+            </select>
+            </span>
+            <br />
+            <span class="mr-16"><select name="searchType">
+                <option value="0">全部</option>
+                <option value="1">商家名称</option>
+                <option value="2">会员账号</option>
+                <option value="3">收款人</option>
+            </select></span>
+            <div class="tb-search mt-10">
+                <input type="text"name="" value="" placeholder="关键字" class="tb-text">
+                <input type="submit" value="查询" class="tb-btn">
+            </div>
+            </form>
+        </div>
+        <div class="g-c-f e-search cw-zd cw-dk">
+        	<span>总支付金额：0.00元  0笔</span>
+            <span>待支付金额：0.00元   0笔 </span>
+            <span>已支付金额：0.00元  0笔</span>
+        </div>
+        <div class="g-c-f e-search op-bg">
+        <a href="" class="export">导出</a>
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="touppftl(this)">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="todaowpftl(this)">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pageKeyDownpfl(event,this)" onKeyUp="this.value=this.value.replace(/[^.0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="topagepfl(this)">
+          </span>
+      	</div>
+        <div class="g-list">
+         <table class="app-tab">
+             <thead>
+                 <tr>
+                 <td class="bs-name" width="185">商家名称</td>
+                 <td width="105">会员账号</td>
+                 <td width="138">申请提交时间</td>
+                 <td width="71">收款人</td>
+                 <td width="130">收款账号</td>
+                 <td width="113">提款金额（元）</td>
+                 <td width="130">可提取金额（元）</td>
+                 <td width="63">受理状态</td>
+                 <td width="63">打款状态</td>
+                 <td class="dk-tool" width="120">操作</td>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                 <td class="bs-name">满天飞潮流饰品有限公司</td>
+                 <td>ao654635178</td>
+                 <td>2014.10.27 10:49</td>
+                 <td>张三</td>
+                 <td>6212345678912345</td>
+                 <td class="set-font">200.00</td>
+                 <td class="set-font">600.00</td>
+                 <td>未受理</td>
+                 <td></td>
+                 <td class="dk-tool"><a href="javascript:;" id="accept">受理</a> | <a href="#" target="_blank">详情</a></td>
+                 </tr>
+                 <tr>
+                 <td class="bs-name">满天飞潮流饰品有限公司</td>
+                 <td>ao654635178</td>
+                 <td norwrap>2014.10.27 10:49</td>
+                 <td>张三</td>
+                 <td>6212345678912345</td>
+                 <td class="set-font">200.00</td>
+                 <td class="set-font">600.00</td>
+                 <td>未受理</td>
+                 <td></td>
+                 <td class="dk-tool"><a href="javascript:;" id="affirm">确认打款</a> | <a href="#" target="_blank">详情</a></td>
+                 </tr>
+                 <tr>
+                 <td class="bs-name">满天飞潮流饰品有限公司</td>
+                 <td>ao654635178</td>
+                 <td>2014.10.27 10:49</td>
+                 <td>张三</td>
+                 <td>6212345678912345</td>
+                 <td class="set-font">200.00</td>
+                 <td class="set-font">600.00</td>
+                 <td>未受理</td>
+                 <td></td>
+                 <td class="dk-tool"><a href="#" target="_blank">详情</a></td>
+                 </tr>              
+             </tbody>
+         </table>
+          <div class="operation">
+            <a href="" class="export">导出</a>
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="touppftl()">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="todaowpftl()">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pageKeyDownpfl(event,this)" onKeyUp="this.value=this.value.replace(/[^_0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="topagepfl(this)">
+          </span>
+          </div>
+    	</div>
+	</div>
+</div>
+</body>
+</html>

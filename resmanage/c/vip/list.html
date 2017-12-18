@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-个人会员</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+	  <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">会员管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="http://resmanage.csc86.com/css/examinees.css" />
+  <script src="../../js/vip.js"></script>
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li class="cur"><a href="#">个人会员</a></li>
+		<li><a href="#">企业会员</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">个人会员搜索</h2>
+    <div class="g-c-f e-search">
+	<form action="" onSubmit="return vap_search(this)">
+	  <div class="tb-do">
+        <select name="searchType">
+        	<option value="0">会员ID</option>
+        	<option value="1">姓名</option>
+			<option value="2">手机号码</option>
+			<option value="3">电子邮箱</option>
+        </select>
+        <input type="text" name="searchText" value="" class="tb-text" />
+		<select name="sysType">
+			<option value="">选择会员系统组</option>
+			<option value="编辑">编辑</option>
+			<option value="运营">运营</option>
+			<option value="客服">客服</option>
+		</select>
+		<select name="userLv">
+			<option value="">选择用户等级</option>
+			<option value="1">vip1</option>
+			<option value="2">vip2</option>
+			<option value="3">vip3</option>
+			<option value="3">vip4</option>
+			<option value="3">vip5</option>
+			<option value="3">vip6</option>
+		</select>
+		注册时间：
+			<input type="text" id="startTime" class="g-d-text">
+			<a style="vertical-align:middle;" class="g-data" href="javascript:" onclick="WdatePicker({dateFmt:'yyyy-M-d',maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01  01:00:00\'}',el:'startTime'})"></a>至
+			<input type="text" class="g-d-text" id="endTime">
+			<a style="vertical-align:middle;" class="g-data" href="javascript:" onclick="WdatePicker({dateFmt:'yyyy-M-d',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01 01:00:00',el:'endTime'})"></a>
+		
+		<input type="submit" value="搜索" style="height:25px; padding:0 10px;" />
+      </div>
+	</form>
+<!--	<form action="" onSubmit="return vap_search1(2)">
+      <div class="tb-time"> 注册时间从：
+        <input type="text" id="startTime" name="startTime" class="g-d-text" />
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+        <input type="text"  class="g-d-text" id="endTime" name="endTime"/>
+        <a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+        <input type="submit" value="GO" class="tb-btn" />
+      </div>
+    </form>-->
+    </div>
+    <div class="g-c-f e-search op-bg">
+		<form action="" onsubmit="return form_gopage(this);">
+		<span class="page-r">
+			当前共有：<b>30</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>&nbsp;&nbsp;
+			<a href="#">上一页</a>
+			<a href="#">下一页</a>
+			<input type="text" name="start" class="ime_disabled" onkeydown="return offUnNumber(event)" onkeyup="this.value=this.value.replace(/\D/g,'')" onmousedown="return offPaste(this,event)" size="3">
+			<input type="submit" value="跳转">
+		</span>
+		</form>
+		<span class="tb-do" style="margin-left:0;">
+			<select name="sysType">
+				<option value="">选择会员系统组</option>
+				<option value="编辑">编辑</option>
+				<option value="运营">运营</option>
+				<option value="客服">客服</option>
+			</select>&nbsp;&nbsp;
+			<input type="button" onclick="save_glz_all(this)" value="设置" style="height:25px; padding:0 10px;" />
+		</span>
+	</div>
+    <div class="g-list e-inquiry">
+      <table>
+        <thead>
+          <tr>
+            <td width="55"><input type="checkbox" onclick="selectAll('userid',this)"></td>
+            <td>会员帐号</td>
+            <td>姓名</td>
+            <td>注册时间</td>
+            <td>成长值</td>
+			<td>积分</td>
+            <td>会员等级</td>
+			<td>所在管理组</td>
+            <td width="185">管理操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" ><input name="userid" type="checkbox" value=""></td>
+            <td class="e-cent">hbzybyaf66l</td>
+            <td class="e-cent">刘老三</td>
+            <td class="e-cent">2011-05-30</td>
+			<td class="e-cent">100</td>
+			<td class="e-cent">100</td>
+            <td class="e-cent">一级</td>
+			<td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<select name="sysType">
+						<option selected value="编辑">编辑</option>
+						<option value="运营">运营</option>
+						<option value="客服">客服</option>
+					</select>
+					<a onclick="save_glz('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+			</td>
+          </tr>
+		  <tr>
+            <td class="list-id" ><input name="userid" type="checkbox" value=""></td>
+            <td class="e-cent">hbzybyaf66l</td>
+            <td class="e-cent">刘老三</td>
+            <td class="e-cent">2011-05-30</td>
+			<td class="e-cent">100</td>
+			<td class="e-cent">100</td>
+            <td class="e-cent">一级</td>
+			<td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<select name="sysType">
+						<option selected value="编辑">编辑</option>
+						<option value="运营">运营</option>
+						<option value="客服">客服</option>
+					</select>
+					<a onclick="save_glz('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+			</td>
+          </tr>
+		  <tr>
+            <td class="list-id" ><input name="userid" type="checkbox" value=""></td>
+            <td class="e-cent">hbzybyaf66l</td>
+            <td class="e-cent">刘老三</td>
+            <td class="e-cent">2011-05-30</td>
+			<td class="e-cent">100</td>
+			<td class="e-cent">100</td>
+            <td class="e-cent">一级</td>
+			<td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<select name="sysType">
+						<option selected value="编辑">编辑</option>
+						<option value="运营">运营</option>
+						<option value="客服">客服</option>
+					</select>
+					<a onclick="save_glz('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+			</td>
+          </tr>
+		  <tr>
+            <td class="list-id" ><input name="userid" type="checkbox" value=""></td>
+            <td class="e-cent">hbzybyaf66l</td>
+            <td class="e-cent">刘老三</td>
+            <td class="e-cent">2011-05-30</td>
+			<td class="e-cent">100</td>
+			<td class="e-cent">100</td>
+            <td class="e-cent">一级</td>
+			<td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<select name="sysType">
+						<option selected value="编辑">编辑</option>
+						<option value="运营">运营</option>
+						<option value="客服">客服</option>
+					</select>
+					<a onclick="save_glz('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+			</td>
+          </tr>
+		  <tr>
+            <td class="list-id" ><input name="userid" type="checkbox" value=""></td>
+            <td class="e-cent">hbzybyaf66l</td>
+            <td class="e-cent">刘老三</td>
+            <td class="e-cent">2011-05-30</td>
+			<td class="e-cent">100</td>
+			<td class="e-cent">100</td>
+            <td class="e-cent">一级</td>
+			<td class="e-cent">客服</td>
+            <td class="e-cent">
+				<span class="table_unedit"><a class="g-ico ico-edit" onclick="vip_edit(this)" href="javascript:;">编辑</a></span>
+				<span class="table_edit" style="display:none">
+					<select name="sysType">
+						<option selected value="编辑">编辑</option>
+						<option value="运营">运营</option>
+						<option value="客服">客服</option>
+					</select>
+					<a onclick="save_glz('{会员ID}',this)" href="javascript:;">保存</a>
+					<a onclick="vip_unedit(this)" href="javascript:;">取消</a>
+				</span>
+			</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation">
+		<form action="" onsubmit="return form_gopage(this);">
+		<span class="page-r">
+			当前共有：<b>30</b>条记录&nbsp;&nbsp;<b>1</b>/<strong>3</strong>&nbsp;&nbsp;
+			<a href="#">上一页</a>
+			<a href="#">下一页</a>
+			<input type="text" name="start" class="ime_disabled" onkeydown="return offUnNumber(event)" onkeyup="this.value=this.value.replace(/\D/g,'')" onmousedown="return offPaste(this,event)" size="3">
+			<input type="submit" value="跳转">
+		</span>
+		</form>
+		<span class="tb-do" style="margin-left:0;">
+			<select name="sysType">
+				<option value="">选择会员系统组</option>
+				<option value="编辑">编辑</option>
+				<option value="运营">运营</option>
+				<option value="客服">客服</option>
+			</select>&nbsp;&nbsp;
+			<input type="button" onclick="save_glz_all(this)" value="设置" style="height:25px; padding:0 10px;" />
+		</span>
+	  </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="/css/base-reset.css" />
+<link rel="stylesheet" href="/css/master.css" />
+<link href="/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script>var BASEURL="http://10.10.10.59:8081/"</script>
+<link href="/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="/js/jquery.js"></script>
+<script src="/js/master.js"></script>
+<script src="/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<body>
+<div class="m-nav">
+<div class="m-n-tab">
+	<div class="m-loginbar">你好，<strong></strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+	<ul>
+	</ul>
+</div>
+</div>
+<div class="main">
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<link rel="stylesheet" href="/css/shop/skin.css" />
+		<script src="/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+		<script src="/js/handlers.js"></script>
+		<script src="/js/shop/skin.js"></script>
+		<h2 class="tool-bar">添加模版</h2>
+		<div class="ads-form" id="ad-page-form">
+			<form method="post" action="shopskin.fileUpComfirm">
+				<input type="hidden" name="action" value=""/>
+				<input type="hidden"name="pageId" value=""/>
+				<ul>
+					<li>
+						<div class="g-f-l ad-key"><span class="star">*</span>模版名称：</div>
+						<div class="ad-value">
+							<input type="text" class="ad-txt" id="ad-page-title"name="pageName" value=""/>
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"><span class="star" name="pageLink">*</span>价格：</div>
+						<div class="ad-value">
+						<input type="text" class="ad-txt ad-price" id="ad-page-title"name="mothPrice" value=""/>元/月 &nbsp;
+						<input type="text" class="ad-txt ad-price" id="ad-page-title"name="seasonPrice" value=""/>元/季度 &nbsp;
+						<input type="text" class="ad-txt ad-price" id="ad-page-title"name="yearPrice" value=""/>元/年 &nbsp;
+						<input type="text" class="ad-txt ad-price" id="ad-page-title"name="permanentPrice" value=""/>元/永久有效
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"><span class="star" name="pageLink">*</span>配色：</div>
+						<div class="ad-value">
+							<label class="g-d-ib"><input type="radio" name="color" value="6ecd5925-1f15-4aa3-9c2a-120d07eb7a52" />混合色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="f75f7093-add1-4862-a82b-fd40c72ad248" />红色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="9feb4012-ee97-482e-be23-1f39dc13eab3" />紫色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="3245f699-3a89-484b-91e8-650915267218" />蓝色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="91886e30-db51-4ab0-bd9a-42498b1bfc39" />绿色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="748ea729-87a0-4259-bb80-1d0361053e61" />黄色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="45f28394-ca64-455b-a1e5-4a1ee3c2d836" />黑色</label>
+							<label class="g-d-ib"><input type="radio" name="color" value="23275536-4df0-42b5-9ede-b5f37167a5b7" />橙色</label>
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"><span class="star">*</span>行业：</div>
+						<div class="ad-value">
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="20842fa5-b8dc-424f-aa9c-c115ff94ab59" />基本版</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="07a88ebb-bc4c-4bbf-9b05-d682e27b8217" />皮革皮具2</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="e6783f31-5063-4874-b312-9704db9e45d8" />机械电子</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="db306179-6e4f-42fc-afb8-4245d5cfe8b9" />工业原料</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="453cba42-1bde-457f-8849-aa405c9a5737" />服装服饰</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="2c6e522c-fdd9-475c-924d-426b2f60554f" />纺织行业</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="0499c0d2-6603-4201-b170-ceb919a9d2ee" />包装印刷</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="b0caa50a-867d-491f-b20b-dcdcf9e2ab73" />344</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="beac632d-617b-451c-bd89-e9f191ce26d7" />344</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="ad45e1eb-51fc-4138-a58e-9b785f16b51c" />555</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="d86cedaf-a35c-4322-8d47-423438ba0c72" />555</label>
+							<label class="g-d-ib"><input type="checkbox" name="trade" value="fdfecc41-df35-49bc-8b8e-5acf063eaec0" />测试行业修订</label>
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"><span class="star">*</span>热度：</div>
+						<div class="ad-value">
+							<label class="g-d-ib"><input type="radio" name="hot" value="1" /> 一星</label>
+							<label class="g-d-ib"><input type="radio" name="hot" value="2" /> 二星</label>
+							<label class="g-d-ib"><input type="radio" name="hot" value="3" /> 三星</label>
+							<label class="g-d-ib"><input type="radio" name="hot" value="4" /> 四星</label>
+							<label class="g-d-ib"><input type="radio" name="hot" value="5" /> 五星</label>
+						</div>
+					</li>
+						<li>
+						<div class="g-f-l ad-key"><span class="star">*</span>模版：</div>
+						<div class="ad-value">
+							<input type="text" class="ad-txt" readonly id="imgload0"/>
+							<input type="submit" name="上传" value="上传" id="shopSkinFile"/>
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"><span class="star">*</span>推荐模版：</div>
+						<div class="ad-value">
+						<input type="radio" name="isRecommend" value="1" /> 是
+						<input type="radio" name="isRecommend" value="0" /> 否
+						</div>
+					</li>
+					<li>
+						<div class="g-f-l ad-key"></div>
+						<div class="ad-value">
+							<input type="submit" value="确定" class="confirm"/>
+							<input type="button" value="取消" class="cancel"/>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+
+
+
+		<div class="g-c-f skin-cate">
+			<div class="skin-cate-item skin-industry">
+				<h2 class="hd">模板行业</h2>
+				<div class="bd">
+					<div class="add-skin-cate">
+						<form action="shopskin.addTrade" method="post">
+							<input type="text" name="tradeName" value="+添加行业" class="text c-888">
+							<input type="submit" value="确定" class="btn"></form>
+					</div>
+					<ul class="items">
+						<li data-id="20842fa5-b8dc-424f-aa9c-c115ff94ab59" data-number="1" data-name="基本版">
+							<span class="name">基本版</span>
+							<span class="c-888">(1)</span>
+						</li>
+						<li data-id="07a88ebb-bc4c-4bbf-9b05-d682e27b8217" data-number="2" data-name="皮革皮具2">
+							<span class="name">皮革皮具2</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="e6783f31-5063-4874-b312-9704db9e45d8" data-number="3" data-name="机械电子">
+							<span class="name">机械电子</span>
+							<span class="c-888">(3)</span>
+						</li>
+						<li data-id="db306179-6e4f-42fc-afb8-4245d5cfe8b9" data-number="2" data-name="工业原料">
+							<span class="name">工业原料</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="453cba42-1bde-457f-8849-aa405c9a5737" data-number="2" data-name="服装服饰">
+							<span class="name">服装服饰</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="2c6e522c-fdd9-475c-924d-426b2f60554f" data-number="3" data-name="纺织行业">
+							<span class="name">纺织行业</span>
+							<span class="c-888">(3)</span>
+						</li>
+						<li data-id="0499c0d2-6603-4201-b170-ceb919a9d2ee" data-number="9" data-name="包装印刷">
+							<span class="name">包装印刷</span>
+							<span class="c-888">(9)</span>
+						</li>
+						<li data-id="b0caa50a-867d-491f-b20b-dcdcf9e2ab73" data-number="2" data-name="344">
+							<span class="name">344</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="beac632d-617b-451c-bd89-e9f191ce26d7" data-number="2" data-name="344">
+							<span class="name">344</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="ad45e1eb-51fc-4138-a58e-9b785f16b51c" data-number="2" data-name="555">
+							<span class="name">555</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="d86cedaf-a35c-4322-8d47-423438ba0c72" data-number="2" data-name="555">
+							<span class="name">555</span>
+							<span class="c-888">(2)</span>
+						</li>
+						<li data-id="fdfecc41-df35-49bc-8b8e-5acf063eaec0" data-number="2" data-name="测试行业修订">
+							<span class="name">测试行业修订</span>
+							<span class="c-888">(2)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

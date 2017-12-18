@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/best/inquiry.css" />
+<script src="http://resmanage.csc86.com/js/best/inquiry.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>
+			<li class="cur"><a href="c/apply/sidemenu.html">优质供求库</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">优质库</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质产品库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="seller.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质卖家库</a></li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="buyers.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">优质买家库</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<div class="crumb">您当前的位置：<a href="">优质卖家库</a> - <strong>询盘列表</strong>
+		</div>
+		<h2 class="tool-bar">询盘搜索</h2>
+		<div class="g-c-f e-search">
+			
+			<div class="tb-do">
+				<div class="g-f-l">
+					<select name="">
+						<option value="account" selected>询盘名称</option>
+						<option value="company">企业名称</option>
+					</select>
+				</div>
+				<div class="tb-search">
+					<input type="text" name="search" class="tb-text" placeholder="请输入查找关键字"/>
+					<input type="submit" value="搜索" class="tb-btn"/>
+				</div>
+			</div>
+			<div class="tb-time"> 发布时间从：
+				<input type="text" id="startTime" class="g-d-text" />
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+				<input type="text"  class="g-d-text" id="endTime"/>
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+				<input type="submit" class="tb-btn" value=" GO ">
+			</div>
+		</div>
+		<h2 class="tool-bar">询盘管理</h2>
+		<div class="operation op-bg">
+			<div class="g-f-l g-fw-b">询盘单会员账号：会员账号在这里</div>
+			<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+			<input type="text" size="8" />
+			&nbsp;
+			<input type="button" value="跳转" />
+			</span></div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="8%" class="list-id"><input name="" type="checkbox" value="">
+							&nbsp;选择</td>
+						<td width="4%">序号</td>
+						<td width="15%">询盘名称</td>
+						<td width="15%">被询盘公司名称</td>
+						<td width="8%">采购数量</td>
+						<td width="15%">被询盘产品</td>
+						<td width="8%">询盘时间</td>
+						<td width="8%">有效期</td>
+						<td width="6%">点击率</td>
+						<td width="10%">管理操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>1000个</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>2012-05-16<br/>18:08:33</td>
+						<td>2012-05-16</td>
+						<td>33次</td>
+						<td><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a></td>
+					</tr><tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>1000个</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>2012-05-16<br/>18:08:33</td>
+						<td>2012-05-16</td>
+						<td>33次</td>
+						<td><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a></td>
+					</tr><tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>1000个</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>2012-05-16<br/>18:08:33</td>
+						<td>2012-05-16</td>
+						<td>33次</td>
+						<td><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a></td>
+					</tr><tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>1</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>1000个</td>
+						<td>霸州市邦捷机具器材厂</td>
+						<td>2012-05-16<br/>18:08:33</td>
+						<td>2012-05-16</td>
+						<td>33次</td>
+						<td><a class="g-ico ico-see-children" href="javascript:"  title="查看详情">查看详情</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation"><span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" />
+				&nbsp;
+				<input type="button" value="跳转" />
+				</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

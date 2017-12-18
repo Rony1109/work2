@@ -1,0 +1,71 @@
+/* CSS Document */
+body { font-size:12px; line-height:1.5; color:#333;	background:#EEE;}
+#map_main {
+	position:relative;
+	position:fixed; top:0; left:0; right:0; bottom:0; background:#FFF;
+	_position:absolute; 
+	_top:expression(eval(document.documentElement.scrollTop+0)); 
+	_left:expression(eval(document.documentElement.scrollLeft+0));
+	_width:expression(eval(document.documentElement.clientWidth)); 
+	_height:expression(eval(document.documentElement.clientHeight));
+	overflow:hidden;
+	font-size:0px; line-height:0px;
+}
+.move_box {position:relative; padding:0; top:0px; left:0px; font-size:12px; line-height:1.5; cursor:url(http://resmanage.csc86.com/img/hncmap/openhand.cur),auto;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none; 
+}
+.cur_p {cursor:url(http://resmanage.csc86.com/img/hncmap/closedhand.cur),move;}
+.move_box div {cursor:auto;}
+.move_box .sj {position:absolute; text-align:center; color:#FFF; cursor:pointer;}
+.map_index {width:1420px; height:1313px; background:url(../img/hncmap/map_bg.jpg) no-repeat center center;}
+.map_pg {width:1685px; height:1636px; background:url(../img/hncmap/map_bg_pg.jpg) no-repeat center center;}
+.map_fz {width:1827px; height:1745px; background:url(../img/hncmap/map_bg_fz.jpg) no-repeat center center;}
+.map_dz {width:1685px; height:1636px; background:url(../img/hncmap/map_bg_dz.jpg) no-repeat center center;}
+.map_wj {width:2037px; height:1933px; background:url(../img/hncmap/map_bg_wj.jpg) no-repeat center center;}
+
+.rzlbox {position:absolute; left:100px; top:25px; font-size:14px; background:#FFF; padding:5px 10px;border-radius:5px;box-shadow:1px 1px 8px #000; line-height:1.7; text-align:center;}
+.rzlbox div {font-size:16px; padding: 0 0 5px 0;}
+.rzlbox p span {color:#00F; font-weight:bold;}
+.rzlbox div select {margin:0 5px;}
+.cord_sp {position:absolute; top: 210px; left:210px; width:248px; border:1px solid #CCC; border-top:3px solid #639602; background:#FFF;
+	box-shadow:2px 2px 8px #000;
+	border-radius: 0 0 3px 3px;
+	z-index:9999;
+}
+.cord_sp .cord_sj {position:absolute; display:block; font-size:0; line-height:0;
+	top:-9px; left:118px;
+	border-bottom:7px solid #639602; 
+	border-left:7px dashed transparent;
+	border-right:7px dashed transparent;
+}
+.cord_sp .cord_main{display:block; padding:5px 5px 8px 5px; overflow:hidden; height:100%; min-height:50px; _height:50px;}
+.cord_sp h2 {padding: 5px 5px 6px 10px; height:18px; font:bold 14px/18px "宋体"; overflow:hidden;}
+.cord_sp dl {font:normal 12px/23px "宋体"; width:100%;/* height:20px; overflow:hidden; white-space:nowrap; word-wrap:normal;*/}
+.cord_sp dl dt,.cord_sp dl dd {/*display:inline-block; *display:inline; *zoom:1;*/}
+.cord_sp dl dt { float:left; width:75px; text-align:right; color:#888;}
+.cord_sp dl dd {margin-left:75px; _display:inline;}
+.index_q1,.index_q2,.index_q3,.index_q4 {position: absolute;}
+.index_q1 { top: 184px; left: 414px; width: 236px; height: 380px;}
+.index_q3 { top: 787px; left: 414px; width: 236px; height: 380px;}
+.index_q2 { top: 128px; left: 806px; width: 209px; height: 437px;}
+.index_q4 { top: 787px; left: 805px; width: 209px; height: 380px;}
+.move_box .q_exp {display:none; background-image:url(../img/hncmap/q_bg.png); width:209px; height:209px; cursor:pointer; _background: none;display:block;}
+.index_q1:hover .q_exp,.index_q2:hover .q_exp,.index_q3:hover .q_exp,.index_q4:hover .q_exp,.hover .q_exp{display:block;}
+
+
+ul.q_li {padding-top:59px; text-align:left;}
+ul.q_li li {padding-left:100px; height:26px; line-height:26px; color:#F00; overflow:hidden; font:bold 16px/26px '微软雅黑';cursor:pointer;}
+
+.index_q1 .q_exp {background-position:0 0; position:absolute; top:88px; left:15px;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://resmanage.csc86.com/img/hncmap/q_bg_1.png');}
+.index_q2 .q_exp {background-position:0 -215px; position:absolute; top:100px; left:0px;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://resmanage.csc86.com/img/hncmap/q_bg_2.png');}
+.index_q3 .q_exp {background-position:0 -430px; position:absolute; top:88px; left:15px;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://resmanage.csc86.com/img/hncmap/q_bg_3.png');}
+.index_q4 .q_exp {background-position:0 -645px; position:absolute; top:88px; left:0px;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://resmanage.csc86.com/img/hncmap/q_bg_4.png');}
+
+table.market_tab { border-collapse:collapse; position:absolute; background:#CCC; display:none;}
+table.market_tab td{ border:#888 solid 1px; text-align:center; vertical-align:middle; overflow:hidden;}

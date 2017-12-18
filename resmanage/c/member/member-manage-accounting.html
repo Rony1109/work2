@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理-占位管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/member-manage.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="javascript://">我的面板</a></li>
+      <li><a href="javascript://">系统设置</a></li>
+      <li><a href="javascript://">产品中心</a></li>
+      <li><a href="javascript://">审核管理</a></li>
+      <li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">占位管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+        <ul class="ln-3th ln-3thshow">
+          <li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <div class="sel-sub">
+      <ul>
+        <li><a href="member-manage-company.html">企业会员</a></li>
+        <li class="cur"><a href="member-manage-personal.html">个人会员</a></li>
+      </ul>
+    </div>
+    <h2 class="tool-bar">个人会员搜索</h2>
+    <div class="g-c-f e-search">
+      <form action="" method="get">
+      <div class="tb-search">
+        <input type="text" name="name" value="" maxlength="30" placeholder="请输入用户名" class="tb-text" />
+        <input type="submit" value="搜索" class="tb-btn" />
+      </div><input type="hidden" name="order" value="asc" id="cardOrder" /></form>
+    </div>
+    <div class="g-list e-inquiry">
+      <table>
+        <thead>
+          <tr>
+            <td width="5%">位置 <a href="javascript:void(cardAsc())">↑</a> <a href="javascript:void(cardDesc())">↓</a></td>
+            <td width="10%">用户名称</td>
+            <td width="15%">企业名称</td>
+            <td width="15%">所在地</td>
+            <td width="10%">电话</td>
+            <td width="5%">月抢占</td>
+            <td width="5%">周抢占</td>
+            <td width="15%">抢占时间</td>
+            <td width="15%">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id" >1</td>
+            <td>用户名称最长是十个字</td>
+            <td>深圳市金鑫铖家具有限公司</td>
+            <td>广东省 深圳市 龙岗区</td>
+            <td>13566127871</td>
+            <td>37</td>
+            <td class="e-cent">2</td>
+            <td class="e-cent">2013-08-12 15:30:20</td>
+            <td class="e-cent"><a href="javascript:void(canncelFun('231312sadas3223122312'))">取消</a></td>
+          </tr>
+          <tr>
+           <td class="list-id" >1</td>
+            <td>用户名称最长是十个字</td>
+            <td>深圳市金鑫铖家具有限公司</td>
+            <td>广东省 深圳市 龙岗区</td>
+            <td>13566127871</td>
+            <td>37</td>
+            <td class="e-cent">2</td>
+            <td class="e-cent">2013-08-12 15:30:20</td>
+            <td class="e-cent"><a href="javascript:void(canncelFun('dsdssw32342432sdkf2323sdfsdf33fd3'))">取消</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="operation"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" />
+        &nbsp;
+        <input type="button" value="跳转" />
+        </span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

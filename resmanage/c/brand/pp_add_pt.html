@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+		<head>
+				<meta charset="utf-8" />
+				<title>添加配套</title>
+				<link rel="stylesheet" href="../../css/base-reset.css" />
+				<link rel="stylesheet" href="../../css/master.css" />
+				<script src="../../js/jquery.js"></script>
+				<script src="../../js/master.js"></script>
+				<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+				<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+				<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+				<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/kindeditor-min.js"></script>
+				<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/lang/zh_CN.js"></script>
+				<link rel="stylesheet" href="../../css/visit_market.css" />
+				<script src="http://resmanage.csc86.com/js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+				<script src="http://resmanage.csc86.com/js/handlers.js"></script>
+				<script src="http://resmanage.csc86.com/js/market/v2.js"></script>
+		</head>
+		<body>
+				<div class="m-nav">
+						<div class="m-n-tab">
+								<div class="m-loginbar">
+										你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a>
+								</div>
+								<ul>
+										<li class="home">
+												<a href="c/my-panel/my-panel.html">我的面板</a>
+										</li>
+										<li>
+												<a href="c/upset/sidemenu.html">系统设置</a>
+										</li>
+										<li>
+												<a href="c/examinees/sidemenu.html">审核管理</a>
+										</li>
+										<li>
+												<a href="c/member/sidemenu.html">会员管理</a>
+										</li>
+										<li>
+												<a href="c/information/sidemenu.html">资讯中心</a>
+										</li>
+										<li>
+												<a href="c/product/sidemenu.html">产品中心</a>
+										</li>
+										<li>
+												<a href="c/apply/sidemenu.html">应用中心</a>
+										</li>
+										<li class="cur">
+												<a href="c/product/sidemenu.html">地图管理</a>
+										</li>
+								</ul>
+						</div>
+				</div>
+				<div class="main">
+						<div class="left-nav" id="leftNav">
+								<h2 class="ln-hd">地图管理</h2>
+								<ul class="ln-2th">
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地图管理</a>
+												<ul class="ln-3th">
+														<li class="li-last" >
+																<a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">深圳华南城</a>
+														</li>
+												</ul>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商铺管理</a>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">饮食男女</a>
+												<ul class="ln-3th">
+														<li class="li-last" >
+																<a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">专题</a>
+														</li>
+													 
+												</ul>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">品牌风暴</a>
+												<ul class="ln-3th">
+														<li class="li-last" >
+																<a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">专题</a>
+														</li>
+														<li class="li-last" >
+																<a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">品牌商家</a>
+														</li>
+												</ul>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">个体市场</a>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">办事求助</a>
+										</li>
+										<li class="ln-2th-item">
+												<a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">配套服务</a>
+										</li>
+								</ul>
+						</div>
+						<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+						<div class="content" id="content">
+								<h2 class="tool-bar">添加配套</h2>
+									<div class="pt-form" id="pt-form">
+											<form method="post" onSubmit="return isBlank(this,'#imgurl0')">
+													<ul>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>类别：</div>
+																	<div class="pt-value">
+																			<select>
+																					<option>全部</option>
+																					<option>餐饮</option>
+																					<option>休闲</option>
+																					<option>银行</option>
+																			</select>
+																	</div>
+															</li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>配套名称：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt"/>
+																	 </div>
+															 </li>
+															 <li>
+																	 <div class="g-f-l pt-key"><span class="star">*</span>位置：</div>
+																	 <div class="pt-value">
+																			 <input type="text" class="pt-txt" />
+																	 </div>
+															 </li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>联系电话：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															 <li>
+																	<div class="g-f-l pt-key">特色：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															 <li>
+																	<div class="g-f-l pt-key">url：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															 <li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>经营范围：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>人均消费：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>店铺介绍：</div>
+																	<div class="pt-value">
+																			<textarea id="txtEditor" style="width:670px; height:260px;"></textarea>
+																	</div>
+																	<script type="text/javascript">
+																		 KindEditor.ready(function(K) {
+																			window.editor = K.create('#txtEditor');
+																		});
+																	</script>
+															</li>
+															 <li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>形象图：</div>
+																	<div class="pt-value">
+																			 <input type="text" id="picUpload" /><span class="g-gray">上传292*292图片</span>
+																			<div class="pt-pic">
+																					 <img src="../../img/img.png" width="200" height="200"/>
+																			 </div>
+																			 <input type="hidden" />
+																	 </div>
+																	 <script>
+																			new SWFUpload(uploadSettings({
+																						type:"supportImg",
+																						button_placeholder_id:"picUpload",
+																						file_types: "*.jpg;*.jpeg;*.png;",
+																						file_size_limit : "2MB",
+																						file_upload_limit : 0,
+																						button_text_left_padding:16,
+																						button_text:"点击上传",
+																						upload_success_handler:supportImageSuccess
+																				}));
+																	 </script>
+															 </li>
+															  <li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>地图：</div>
+																	<div class="pt-value">
+																			 <input type="text" id="mapUplad" /><span class="g-gray">上传805*290图片</span>
+																			<div class="pt-pic">
+																					 <img src="../../img/img.png" width="278" height="100"/>
+																			 </div>
+
+																			 <input type="hidden"/>
+																	 </div>
+																	 <script>
+																			new SWFUpload(uploadSettings({
+																						type:"supportImg",
+																						button_placeholder_id:"mapUplad",
+																						file_types: "*.jpg;*.jpeg;*.png;",
+																						file_size_limit : "2MB",
+																						file_upload_limit : 0,
+																						button_text_left_padding:16,
+																						button_text:"点击上传",
+																						upload_success_handler:supportImageSuccess
+																				}));
+																	 </script>
+															 </li>
+															 <li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>产品图片：</div>
+																	<div class="pt-value">
+																			 <input type="text" id="productUpload" /><span class="g-gray">上传810*400图片</span>
+																			<div class="g-c-f">
+																				<div class="pt-pic g-f-l">
+																					 <img src="../../img/img.png" width="200" height="99"/>
+																					 <span style="display:block">链接：<input type="text" class="pt-txt" style="width:100px" /></span>
+																			 </div>
+																			 <div class="pt-pic g-f-l">
+																					 <img src="../../img/img.png" width="200" height="99"/>
+																					 <span style="display:block">链接：<input type="text" class="pt-txt" style="width:100px" /></span>
+																			 </div>
+																				<div class="pt-pic g-f-l">
+																					 <img src="../../img/img.png" width="200" height="99"/>
+																					 <span style="display:block">链接：<input type="text" class="pt-txt" style="width:100px" /></span>
+																			 </div>
+																				<div class="pt-pic g-f-l">
+																					 <img src="../../img/img.png" width="200" height="99"/>
+																					 <span style="display:block">链接：<input type="text" class="pt-txt" style="width:100px" /></span>
+																			 </div>
+																				<div class="pt-pic g-f-l">
+																					 <img src="../../img/img.png" width="200" height="99"/>
+																					 <span style="display:block">链接：<input type="text" class="pt-txt" style="width:100px" /></span>
+																			 </div>
+																		 </div>
+																			 <input type="hidden" />
+																	 </div>
+																	
+																	 <script>
+																		 new SWFUpload(uploadSettings({
+																						type:"supportImg",
+																						button_placeholder_id:"productUpload",
+																						file_types: "*.jpg;*.jpeg;*.png;",
+																						file_size_limit : "2MB",
+																						file_upload_limit : 0,
+																						button_text_left_padding:16,
+																						button_text:"点击上传",
+																						upload_success_handler:supportImagesSuccess
+																				}));
+																		
+																	 </script>
+															 </li>
+															 <li>
+																	<div class="g-f-l pt-key">页面底图：</div>
+																	<div class="pt-value">
+																			 <input type="text" id="baseImage" /><span class="g-gray">上传1100*700图片</span>
+																			<div class="pt-pic">
+																					 <img src="../../img/img.png" width="220" height="140"/>
+																			 </div> 
+																			 <input type="hidden" />
+																	 </div>
+																	
+																	 <script>
+																			new SWFUpload(uploadSettings({
+																						type:"supportImg",
+																						button_placeholder_id:"baseImage",
+																						file_types: "*.jpg;*.jpeg;*.png;",
+																						file_size_limit : "2MB",
+																						file_upload_limit : 0,
+																						button_text_left_padding:16,
+																						button_text:"点击上传",
+																						upload_success_handler:supportImageSuccess
+																				}));
+																		
+																	 </script>
+															 </li>
+																<li>
+																	<div class="g-f-l pt-key">店铺优惠：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt" />
+																	</div>
+															</li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>其他：</div>
+																	<div class="pt-value">
+																			<label for="stopCar"><input type="checkbox" id="stopCar" class="pt-chenkbox" />免费停车</label><label for="wifi"><input type="checkbox" class="pt-chenkbox" />无限网络</label><label for="vip"><input type="checkbox" class="pt-chenkbox" />包厢</label>
+																	</div>
+															</li>
+															<li>
+																	<div class="g-f-l pt-key"><span class="star">*</span>绑定圈子：</div>
+																	<div class="pt-value">
+																			<input type="text" class="pt-txt"  />
+																	</div>
+															</li>
+															 <li>
+																	<div class="g-f-l pt-key"></div>
+																	<div class="pt-value">
+																			<input type="submit" value="确定" class="confirm"/><input type="button" value="取消" class="cancel" onclick="window.location.href = 'list_pt.html'"/>
+																	 </div>
+															 </li>
+													</ul>
+											</form>
+									</div>
+						</div>
+				</div>
+		</body>
+</html>

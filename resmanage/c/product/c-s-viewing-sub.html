@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<link rel="stylesheet" href="../../css/product.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/product.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li class="cur"><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">产品中心</h2>
+    <ul class="ln-items">
+      <li class="ln-item"> <a class="ln-item-hd" href="javascript:" onClick="mhidden('ln-item-cur','ln-item',this)">产品管理</a>
+        <ul class="ln-2th">
+          <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+            <ul class="ln-3th">
+              <li class="li-last" ><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+              <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+              <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+            </ul>
+          </li>
+          <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+            <ul class="ln-3th">
+              <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+              <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+              <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="ln-item"><a href="javascript:" class="ln-item-hd">产品列表</a></li>
+      <li class="ln-item"><a href="javascript:" class="ln-item-hd">产品类目</a></li>
+      <li class="ln-item"><a href="javascript:" class="ln-item-hd">产品列表</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/category.css" />
+  <div class="content" id="content">
+    <div class="height-all category-tree">
+      <ul class="c-items">
+      	<li class="c-item"><a href="javascript:" class="c-item-hd">医药、医疗、保养</a>
+                <ul class="c-2th-items">
+                <li ><a class="c-2th-item-hd" href="javascript:">纺织敷料</a>
+                  <ul class="c-3th-items">
+                    <li><a href="javascript:">原材料</a></li>
+                  </ul>
+                </li>
+                <li ><a class="c-2th-item-hd" href="javascript:">天然纺织原料</a>
+                  <ul class="c-3th-items">
+                    <li><a href="javascript:">原材料</a></li>
+                  </ul>
+                </li>
+                
+                <li><a class="c-2th-item-hd" href="javascript:">化学纤维</a></li>
+              </ul>
+        </li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">化工</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">建筑、建材</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">能源</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">皮革</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">塑料橡胶</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">电子元器件</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">冶金矿产、金属</a></li>
+        <li class="c-item"><a href="javascript:" class="c-item-hd">医药、医疗、保养</a></li>
+      </ul>
+    </div>
+    <div class="g-c-f tool-bar">
+      <div class="tb-do"><a href="javascript:" class="g-ico ico-add"  onclick="addSub()">添加</a><a href="c-viewing-sub.html" class="g-ico ico-back">上级类目</a></div>
+      <div class="tb-search">
+        <input type="text" value="" placeholder="请输入类目ID或名称" class="tb-text" />
+        <input type="button" value="搜索" class="tb-btn" />
+      </div>
+    </div>
+    <div class="crumb">您当前的位置：<a href="category.html">原材料</a> &gt; <a href="category.html">纺织</a> &gt; <strong>化学纤维</strong><span>当前共有：<b>9</b>条记录</span></div>
+    <div class="g-list">
+      <table>
+        <caption>
+        类目列表
+        </caption>
+        <thead>
+          <tr>
+            <td width="15%" class="list-id">类目ID</td>
+            <td>类目名称</td>
+            <td width="35%">管理操作</td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="list-id"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td class="list-id">1003001</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties" onClick="addAttribute()">添加属性</a><a href="javascript:" class="g-ico ico-edit" onClick="cateModify('01','纺织')">修改</a><a href="javascript:" class="g-ico ico-del" onClick="del('2326455')">删除</a><a href="view-properties.html" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr class="bg">
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr class="cur">
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr class="bg">
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr class="bg">
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr>
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+          <tr class="bg">
+            <td class="list-id">01</td>
+            <td>纺织</td>
+            <td class="list-do"><a href="javascript:" class="g-ico ico-add-properties">添加属性</a><a href="javascript:" class="g-ico ico-edit">修改</a><a href="javascript:" class="g-ico ico-del">删除</a><a href="javascript:" class="g-ico ico-view-properties">查看属性</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/member/statistics/css/style.css" />
+<script src="http://resmanage.csc86.com/v2/l/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li class="cur"><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+			<!--
+			<li><a href="c/member/sidemenu.html">会员管理</a></li>
+			<li><a href="c/information/sidemenu.html">资讯中心</a></li>
+			<li><a href="c/product/sidemenu.html">产品中心</a></li>
+			<li><a href="c/apply/sidemenu.html">应用中心</a></li>-->
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">产品中心</h2>
+		 <ul class="ln-2th">
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+				<ul class="ln-3th">
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+					<li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="javascript:">昨日</a></li>
+				<li><a href="javascript:">最近7天</a></li>
+				<li><a href="javascript:">最近30天</a></li>
+				<li><a href="javascript:">最近一年</a></li>
+				<li><a href="javascript:">总计</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar"></h2>
+		<div class="g-c-f e-search">
+			<div class="tb-do">
+				<select name="">
+					<option value="default">请选择</option>
+					<option value="">PV（页面浏览量）</option>
+					<option value="">UV（浏览量）</option>
+					<option value="">IP（独立访客数）</option>
+				</select>
+				<input type="text" class="w60"/> - <input type="text" class="w60"/>
+				&nbsp;
+				产品名称：
+				<input type="text" class="w100"/>
+				&nbsp;
+				优质产品：
+				<select name="">
+					<option value="">是</option>
+					<option value="">否</option>
+				</select>
+			</div>
+			<form action="" method="get" data-autocomplete="true">
+				<div class="tb-time">
+					时间从：
+					<input type="text" id="startTime" name="startTime" class="g-d-text" />
+					<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'%y-%M-%d\'}',el:'startTime'})"></a></a>至
+					<input type="text"  class="g-d-text"  name="endTime" id="endTime"/>
+					<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})"></a>
+					<input type="submit" value="查询" class="tb-btn" />
+				</div>
+			</form>
+		</div>
+		<div class="g-c-f e-search">
+			<ul class="g-f-l sub-tabs">
+				<li class="cur"><a href="javascript:">关键词搜索TOP100</a></li>
+				<li><a href="javascript:">点击量TOP100产品</a></li>
+			</ul>
+			<button type="button" class="down-data">数据下载</button>
+		</div>
+		<div class="operation op-bg">
+			<form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+				<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" name="page"/>
+				&nbsp;
+				<input type="submit" value="跳转" />
+				</span>
+			</form>
+		</div>
+		<div class="g-list">
+			<table>
+				<thead>
+					<tr>
+						<td width="3%"></td>
+						<td width="15%">分类名称</td>
+						<td width="11%">搜索次数</td>
+						<td width="11%">UV（访客量）</td>
+						<td width="11%">PV（浏览量）</td>
+						<td width="11%">平均访问时长</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr><tr>
+						<td></td>
+						<td>页面标题</td>
+						<td>123</td>
+						<td>345</td>
+						<td>111</td>
+						<td>222</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation">
+				<form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+					<span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+					<input type="text" size="8" name="page"/>
+					&nbsp;
+					<input type="submit" value="跳转" />
+					</span>
+				</form>
+			</div>
+		</div>
+		<script>seajs.use('v2/c/member/statistics/js/init');</script>
+	</div>
+</div>
+</body>
+</html>

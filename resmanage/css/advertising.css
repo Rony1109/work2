@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* 旭日排名 2013.12.12 by lg */
+
+.bg-f5{background-color:#f5f5f5}
+.w-b100{width:100%;}
+.ml-10{margin-left:10px;}
+.c-f00{color:#F00;}
+.c-39f{color:#39F;}
+.w-60b{width:60%;}
+
+/*icon*/
+.icon-y-star,.icon-d-star,.ico-del,.ico-loading
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;}
+.icon-y-star{width:20px;padding-top:20px;background:url(../img/icons/u51.png) no-repeat;}
+.icon-d-star{width:20px;padding-top:20px;background:url(../img/icons/u55.png) no-repeat;}
+.ico-del{width:20px;padding-top:20px;}
+.ico-loading{width:16px;padding-top:16px;}
+
+/*添加付费关键词页面*/
+.paykeyword li .bg { background:#f5f5f5 }
+.paykeyword li .txt{width:251px;}
+.paykeyword li .g-d-text{width:102px;}
+.paykeyword li.textarea{height:auto}
+.paykeyword li.textarea h4{ text-align:center;line-height:28px;width:253px;background:#f5f5f5;border: 1px solid #CCCCCC;border-bottom:0;}
+.paykeyword li.textarea span{ vertical-align:top;}
+/*.paykeyword li.textarea textarea{width:253px;border: 1px solid #CCCCCC;height:150px;line-height:22px;padding:2px; resize:none;}*/
+div.lib-word{width:253px;border: 1px solid #CCCCCC;height:208px;line-height:22px;overflow:auto;overflow-x:hidden;overflow-y:scroll;}
+div.lib-word p{position:relative;}
+div.lib-word p .ico-del{position:absolute;right:5px;top:3px;}
+div.lib-word span{display:block;text-align:left;width:96%;padding:2px 5px;}
+.paid-key-form li span.libw-info{width:auto;text-align:left;}
+
+.key-minfo{margin-bottom:20px;}
+.key-minfo span{margin-left:10px;}
+.key-minfo span span{margin-left:0px;margin-right:0px;color:#666;width:80px;display:inline-block;overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;vertical-align:top;}
+.paykeyword2{padding:20px;min-width:920px;}
+.paykeyword2 li .txt{width:220px;}
+.paykeyword2 li span{width:70px;}
+.paykeyword2 ul li.g-t-l{padding-left:70px;}
+
+/*cikulist*/
+.cikulist{width:420px;float:left;margin-left:20px;}
+.cikulist dl{border:1px solid #d5d5d5;border-radius:3px;}
+.cikulist dt{height:33px; line-height:33px; background-color:#f2f2f2;color:#000;font-weight:bold;border-bottom:1px solid #d5d5d5;}
+.cikulist dd{height:33px; line-height:33px;}
+.cikulist span{float:left;width:40%; height:100%; text-align:center;overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.cikulist span.w-60b{width:60%;}
+.cikulist span em{display:inline-block;*display:inline-block;*zoom:1;width:80%;text-align:left;}
+.cikulist dd span .keywrd-td{display:inline-block;width:117px;padding-right:10px;overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;vertical-align:middle;}
+
+.savebtn{font-size:18px;width:120px;height:40px; font-weight:bold;color:#222;}
+
+/*会员列表*/
+.operation-l{float:none;padding-bottom:6px;}
+.page-r{float:none;}
+
+.add-key dt{width:70px;float:left;text-align:right}
+.add-key span{color:#f00}
+.add-key dd{padding:0 0 12px 80px}
+.add-key input{width:240px;height:22px;padding:2px;border:solid 1px #ccc}
+
+/***设置旭日排名***/
+/*.aui_icon div{overflow:hidden;}*/
+.g-cred{color:red;}
+.g-mt8{margin-top:8px;}
+.setXrpm-tab{background:#fff;height:42px;border-left:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;}
+.setXrpm-tab li{float:left;}
+.setXrpm-tab li a{display:inline-block;background:#f1f1f1;border:1px solid #d5d5d5;height:40px;line-height:40px;padding:0 20px;position:relative;bottom:-1px;margin-left:-1px;color:#444;font-size:14px;}
+.setXrpm-tab li a:hover{text-decoration:none;}
+.setXrpm-tab .cur a{background:#fff;border-bottom:1px solid #fff;}
+
+.xrpm-lrtbl,.xrpm-lsttbl{width:100%;}
+.xrpm-lrtbl tbody th{font-weight:normal;text-align:right;}
+.xrpm-lrtbl tbody th,.xrpm-lrtbl tbody td{padding:7px 0;}
+.xrpm-lrtbl .txt{background:#fff;border:1px solid #ccc;padding:0 2px;height:24px;line-height:24px;}
+.xrpm-lsttbl{border:1px solid #ddd;border-right:none;border-bottom:none;}
+.xrpm-lsttbl th,.xrpm-lsttbl td{border-right:1px solid #ddd;border-bottom:1px solid #ddd;padding:8px 5px;}
+.xrpm-lsttbl th{background:#f5f5f5;}
+
+.key-minfo{width:520px;}
+
+/*绑定关键词*/
+.bndkey-hd{background:#fff;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.bndkey-tab{height:20px;padding:30px 30px 10px;overflow:hidden;}
+.bndkey-tab li{float:left;margin-right:40px;}
+.bndkey-tab li a{color:#444;}
+.bndkey-tab li a:hover{text-decoration:none;}
+
+.keyWord-sltbox{width:450px;position:relative;margin-left:70px;}
+.keyWord-sltbox label{display:inline-block;white-space:nowrap;}
+
+.bind-mekey-bd li span{width:100px;}
+.frm-slt{display:inline-block;}
+
+/*购买付费关键词*/
+.buy-ffkey,.add-ffkeyme{background:#fff;border:1px solid #ccc;border-top:none;padding:30px 0 110px;}
+.buy-ffkey-bd{border-top:1px solid #eee;margin:30px;padding-top:15px;}
+
+/*添加付费关键词名额*/
+#content .add-form{margin-top:8px;padding-left:80px;}
+
+/*预留词库管理*/
+.e-search .srch-etip{float:left;padding:7px 0 0 15px;color:#F00;}

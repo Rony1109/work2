@@ -1,0 +1,61 @@
+<!-- 详情模板 -->
+<div class="buyerDetail">
+	<table class="buyerDetail_1">
+		<tr>
+		    <td class="buyerDetail_title">企业名称</td>
+			<td>{{importBuyer.company}}</td>
+			<td class="buyerDetail_title">主营行业</td>
+			<td>{{importBuyer.mainIndustry}}</td>
+			<td class="buyerDetail_title">区域</td>
+			<td>{{importBuyer.area}}</td>
+			<td class="buyerDetail_title">客服</td>
+			<td>{{importBuyer.servicePersonnel}}</td>
+		</tr>
+		<tr>
+		    <td class="buyerDetail_title">采购类目</td>
+			<td>{{importBuyer.categoryName}}</td>
+			<td class="buyerDetail_title">跟进次数</td>
+			<td>{{importBuyer.trackingCount}}</td>
+			<td class="buyerDetail_title">地址</td>
+			<td colspan="3">{{importBuyer.address}}</td>
+		</tr>
+		<tr>
+		    <td class="buyerDetail_title">导入时间</td>
+			<td>{{importBuyer.importTime}}</td>
+			<td class="buyerDetail_title">来源</td>
+			<td colspan="5">{{importBuyer.source}}</td>
+		</tr>
+	</table>
+	<table class="buyerDetail_1 mt10">
+		{{each importBuyer.importContactPersonDtos as v i}}
+		<tr>
+		    <td class="buyerDetail_title">联系人</td>
+			<td>{{v.name}}</td>
+			<td class="buyerDetail_title">职位</td>
+			<td>{{v.position}}</td>
+			<td class="buyerDetail_title">电话</td>
+			<td>{{v.moblie}}</td>
+			<td class="buyerDetail_title">座机</td>
+			<td>{{v.telephone}}</td>
+			<td class="buyerDetail_title">QQ</td>
+			<td>{{v.qqNo}}</td>
+			<td class="buyerDetail_title">邮箱</td>
+			<td>{{v.email}}</td>
+		</tr>
+		{{/each}}
+	</table>
+	<p class="setMessage_t mt10">跟进记录</p>
+	<ul class="buyerDetail_2">
+		{{if qTrackings.length === 0}}
+		<li>
+			<p>无根据记录</p>
+		</li>
+		{{/if}}
+		{{each qTrackings as v i}}
+	    <li>
+			<p>{{v.remark}}</p>
+			<p class="g-tr buyerDetail_2_1"><span>{{v.operator}}</span> 与 <span>{{v.trackingTime}}</span> 录入</p>
+		</li>
+		{{/each}}
+	</ul>
+</div>

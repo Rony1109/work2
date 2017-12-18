@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员管理-企业会员</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script src="../../js/member-manage.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="javascript://">我的面板</a></li>
+			<li><a href="javascript://">系统设置</a></li>
+			<li><a href="javascript://">产品中心</a></li>
+			<li><a href="javascript://">审核管理</a></li>
+			<li class="cur"><a href="member-manage-company.html">会员管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">会员管理</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item has-children ln-2th-item-cur"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员设置</a>
+				<ul class="ln-3th ln-3thshow">
+					<li class="li-last" ><a href="member-manage-init-password.html" onClick="mlast('ln-3th-cur','li-last',this)">会员初始密码</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item"> <a class="ln-2th-item-hd" href="member-manage-company.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员列表</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<link rel="stylesheet" href="../../css/examinees.css" />
+	<div class="content" id="content">
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="member-manage-company.html">企业会员</a></li>
+				<li><a href="member-manage-personal.html">个人会员</a></li>
+			</ul>
+		</div>
+		<h2 class="tool-bar">企业会员搜索</h2>
+		<div class="g-c-f e-search">
+			<div class="tb-do">
+				<select>
+					<option selected="" value="会员ID">会员ID</option>
+					<option value="公司名称">公司名称</option>
+				</select>
+			</div>
+			<div class="tb-search">
+				<input type="text" value="" placeholder="请输入会员帐号" class="tb-text" />
+				<input type="button" value="搜索" class="tb-btn" />
+			</div>
+			<div class="operation-l">主营行业：
+				<select>
+					<option value="皮革">请选择</option>
+					<option value="皮革">皮革</option>
+					<option value="纺织">纺织</option>
+					<option value="电商">电商</option>
+				</select>
+			</div>
+            <div class="operation-l">VIP会员：
+				<select>
+					<option value="全部">全部</option>
+					<option value="VIP1">VIP1</option>
+					<option value="VIP2">VIP2</option>
+					<option value="VIP3">VIP3</option>
+				</select>
+			</div>
+			<div class="tb-time"> 注册时间从：
+				<input type="text" id="startTime" class="g-d-text" />
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime'})"></a>至
+				<input type="text"  class="g-d-text" id="endTime"/>
+				<a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"></a>
+				<input type="button" value="GO" class="tb-btn" />
+			</div>
+		</div>
+		<div class="s-filter"><ul><li><label for="zz"><input id="zz" type="checkbox" name="zz"/>&nbsp;种子用户</label></li></ul></div>
+		<div class="g-c-f e-search op-bg"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+			<input type="text" size="8" />
+			&nbsp;
+			<input type="button" value="跳转" />
+			</span></div>
+		<div class="g-list e-service">
+			<table>
+				<thead>
+					<tr>
+						<td width="5%"><input name="" type="checkbox" value="">
+							&nbsp;选择</td>
+						<td width="10%">会员帐号</td>
+						<td width="22%">企业名称</td>
+						<td width="13%">企业LOGO</td>
+						<td width="13%">注册时间</td>
+						<td width="12%">已开通服务</td>
+						<td width="25%">管理操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>18929310222</td>
+						<td>深圳市千彩佳水转印有限公司</td>
+						<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+						<td class="e-cent">2012-05-16 18:08:33</td>
+						<td>种子用户</td>
+						<td class="e-cent"><a class="g-ico ico-see-children" href="member-manage-company-view.html"  title="详情">详情</a><a class="ico-psw" onclick="rstPwdFun()" href="javascript://"><span class="g-ico">重置密码</span></a><a class="ico-serv" onclick="servOpen()" href="javascript://"><span class="g-ico">服务管理</span></a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>18929310222</td>
+						<td>深圳市千彩佳水转印有限公司</td>
+						<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+						<td class="e-cent">2012-05-16 18:08:33</td>
+						<td>百大</td>
+						<td class="e-cent"><a class="g-ico ico-see-children" href="member-manage-company-view.html"  title="详情">详情</a><a class="ico-psw" onclick="mresetPwd()" href="javascript://"><span class="g-ico">重置密码</span></a><a class="ico-serv" onclick="servOpen()" href="javascript://"><span class="g-ico">服务管理</span></a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>18929310222</td>
+						<td>深圳市千彩佳水转印有限公司</td>
+						<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+						<td class="e-cent">2012-05-16 18:08:33</td>
+						<td>诚信供应团<br/>VIP商家</td>
+						<td class="e-cent"><a class="g-ico ico-see-children" href="member-manage-company-view.html"  title="详情">详情</a><a class="ico-psw" onclick="mresetPwd()" href="javascript://"><span class="g-ico">重置密码</span></a><a class="ico-serv" onclick="servOpen()" href="javascript://"><span class="g-ico">服务管理</span></a></td>
+					</tr>
+					<tr>
+						<td class="list-id" ><input name="" type="checkbox" value=""></td>
+						<td>18929310222</td>
+						<td>深圳市千彩佳水转印有限公司</td>
+						<td><img width="45" height="45" src="../../img/test/no-img.png"></td>
+						<td class="e-cent">2012-05-16 18:08:33</td>
+						<td>百大<br/>诚信供应团<br/>VIP商家</td>
+						<td class="e-cent"><a class="g-ico ico-see-children" href="member-manage-company-view.html"  title="详情">详情</a><a class="ico-psw" onclick="mresetPwd()" href="javascript://"><span class="g-ico">重置密码</span></a><a class="ico-serv" onclick="servOpen()" href="javascript://"><span class="g-ico">服务管理</span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="operation"> <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:">上一页</a>&nbsp;&nbsp;<a href="javascript:">下一页</a>&nbsp;&nbsp;
+				<input type="text" size="8" />
+				&nbsp;
+				<input type="button" value="跳转" />
+				</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

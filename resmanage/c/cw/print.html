@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>华南城网商户结算清单</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css"/>
+  <style>
+    body{color: #000;}
+    .info td{padding:2px}
+    .list td{border:solid 1px #333;}
+    .count{border-bottom:solid 1px #333;}
+    .count-cn{width:96%;margin:0 auto; border-top:solid 1px #333;margin-top:2px}
+    .hide-print{padding-bottom:20px; text-align: center;}
+    .hide-print button{width:106px;height:26px;cursor: pointer;margin:0 5px;}
+  </style>
+  <style media="print">
+    .hide-print{display: none;}
+  </style>
+  <script src="http://res.csc86.com/v2/l/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  function printSettle(){
+    if(confirm('打印结算单并标注已结算？')){
+      $.get('sz.merchantInsertSettlement',{
+        enterpriseId: 'enterpriseId' || '',
+        month: 'month' || ''
+      },function(data){
+        if(data.status === 'true'){
+          print();
+        }else{
+          alert(data.msg)
+        }
+      },'json');
+    }
+  }
+  </script>
+</head>
+<body class="g-ffy g-fs14">
+  <div class="g-cf" style="padding:20px 10px">
+    <img src="http://res.csc86.com/v2/m/head-search/css/img/logo.png" alt="" width="" height="" class="g-fl"/>
+    <span class="g-fr" style="margin-top:16px">深圳华南城网科技有限公司</span>
+  </div>
+  <h1 class="g-tc g-fwn" style="font-size:36px">华南城网商户结算清单</h1>
+  <div class="g-h10"></div>
+  <table width="90%" align="center" class="info g-fwb">
+    <tr>
+      <td width="50%">商户名称：</td>
+      <td width="50%">应付日期：</td>
+    </tr>
+    <tr>
+      <td>商铺号：</td>
+      <td>收款账户名：</td>
+    </tr>
+    <tr>
+      <td>电话：</td>
+      <td>收款银行：</td>
+    </tr>
+    <tr>
+      <td>所属市场：</td>
+      <td>收款账号：</td>
+    </tr>
+    <tr>
+      <td>地址：</td>
+      <td>币种：</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>佣金比例：</td>
+    </tr>
+    <tr>
+      <td>打印日期：</td>
+      <td>结算期间：</td>
+    </tr>
+  </table>
+  <div class="g-h10"></div>
+  <table width="96%" align="center" class="g-tr list">
+    <thead>
+      <tr class="g-tc">
+        <td width="5%">序号</td>
+        <td width="10%">交易日期</td>
+        <td width="8%">订单号</td>
+        <td width="15%">商品名称</td>
+        <td width="8%">当前结算数量</td>
+        <td width="8%">结算单价</td>
+        <td width="7%">结算金额</td>
+        <td width="7%">佣金比例</td>
+        <td width="7%">佣金金额</td>
+        <td width="7%">其他扣款</td>
+        <td width="8%">应付金额</td>
+        <td width="10%">备注</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="g-tc">1</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">2</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">3</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">4</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">5</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">6</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">7</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">8</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">9</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">10</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">11</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">12</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">13</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">1</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">2</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">3</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">4</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">5</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">6</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">7</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">8</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">9</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">10</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">11</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">12</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+      <tr>
+        <td class="g-tc">13</td>
+        <td class="g-tc"></td>
+        <td class="g-tc"></td>
+        <td class="g-tl"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="g-tl"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="g-h10"></div>
+  <table width="96%" align="center" class="g-fwb count g-tr">
+    <tr>
+      <td width="5%" class="g-tc"> 合计：</td>
+      <td colspan="5"></td>
+      <td width="7%">0.00</td>
+      <td width="7%"></td>
+      <td width="7%">0.00</td>
+      <td width="7%"></td>
+      <td width="8%">0.00</td>
+      <td width="10%"></td>
+    </tr>
+  </table>
+  <div class="g-tc g-fwb count-cn">应付金额大写：</div>
+  <div class="g-h20"></div>
+  <table width="80%" align="center" class="g-fwb">
+    <tr>
+      <td width="33%">审批：</td>
+      <td width="33%">审核人：</td>
+      <td width="33%">制表人：</td>
+    </tr>
+  </table>
+  <div class="g-h20"></div>
+  <div class="hide-print">
+    <button onclick="print()">打印</button>
+    <button onclick="printSettle()">打印并结算</button>
+  </div>
+</body>
+</html>

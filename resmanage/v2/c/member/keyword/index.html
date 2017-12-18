@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>添加付费关键词名额</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/member/keyword/css/style.css" />
+<script src="http://resmanage.csc86.com/v2/l/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+			<li class="cur"><a href="c/upset/sidemenu.html">系统设置</a></li>
+			<li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<h2 class="tool-bar">添加付费关键词名额</h2>
+		<div class="g-c-cf">
+			<div class="add-form">
+				<form action="">
+					<div class="g-c-f form-item">
+						<label class="item-key">会员账号：</label>
+						<div class="item-val">
+							yclou
+						</div>
+					</div>
+					<div class="g-c-f form-item">
+						<label class="item-key">付费关键词名额：</label>
+						<div class="item-val">
+							<input type="text" name="num"/>
+							个
+						</div>
+					</div>
+					<div class="g-c-f form-item">
+						<label class="item-key">价格：</label>
+						<div class="item-val">
+							<input type="text" name="price"/>
+							元/月
+						</div>
+					</div>
+					<div class="g-c-f form-item">
+						<label class="item-key">有效期：</label>
+						<div class="item-val">
+							<input type="text" name="month"/>
+							个月
+						</div>
+					</div>
+					<div class="g-c-f form-item">
+						<div class="item-val"><button type="submit">确定</button></div>
+					</div>
+				</form>
+			</div>
+			<div class="place-list">
+				<strong class="g-fs-14">付费关键词名额列表</strong>
+				<span class="g-fw-b">一共8个，已用6个</span>
+				<br/>
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<td>数量</td>
+							<td>剩余数量</td>
+							<td>价格</td>
+							<td>添加时间</td>
+							<td>有效期</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>3个</td>
+							<td>3个</td>
+							<td>2500元/月</td>
+							<td>2014/09/08</td>
+							<td>48个月</td>
+							<td><a href="javascript:">修改</a> <a href="javascript:">删除</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+		<script>seajs.use('v2/c/member/keyword/js/init');</script>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加优惠券 - 优惠券管理</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/common/css/style.css" /> 
+<link rel="stylesheet" href="http://resmanage.csc86.com/v2/c/other/coupon/css/style.css" /> 
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+
+<body>
+<!--头部 start-->
+<div class="m-nav">
+    <div class="m-n-tab">
+        <div class="m-loginbar">你好，<strong>pengle</strong><a href="mypance.accountSettings?id=10001">帐号设置</a>|<a href="javascript:loginOut()">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+        <ul>
+            <li><a href="../bops/audinquiry.waitInquiry?id=10004">审核管理</a></li>
+            <li><a href="../bops/mypance.accountSettings?id=10001">我的面板</a></li>
+            <li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+            <li><a href="../bops/otherApplication?id=20002">其他应用</a></li>
+            <li><a href="../bops/sz.financeManage?id=20003">财务管理</a></li>
+            <li><a href="../bops/categorymanager.findFirstLoad?categoryNo=01000000001&id=10003">商品与报价</a></li>
+            <li><a href="../bops/memberManagerPwd.getPasswod?id=10005">会员管理</a></li>
+            <li><a href="../bops/shopskin.allShopskin?id=10006">广告管理</a></li>
+            <li><a href="../bops/guang.listShop?cityId=1&id=10007">地图管理</a></li>
+            <li><a href="../bops/pay.getManagerIncomeOrder?id=10008">帐户中心</a></li>
+            <li><a href="../bops/qualityProduct.findAllProduct?id=100009">优质库</a></li>
+            <li><a href="../bops/app.activitiesManage?id=10009">APP管理</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部 end-->
+
+<!--主体 start-->
+<div class="main">
+	<!--左侧 start-->
+    <div class="left-nav" id="leftNav">
+    	<h2 class="ln-hd">逛市场管理</h2>
+        <ul class="ln-2th">
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.couponsManage?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.enterpriseManage" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a href="../bops/app.uploadManage?" class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">下载页管理</a></li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.activitiesManage?" data-id="90011" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+                    <li class="li-last" ><a href="../bops/app.specialManage?" data-id="90012" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.couponRecommendManage" data-id="90023" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.productCategoryManage?" data-id="90031" onClick="mlast('ln-3th-cur','li-last',this)">找货类目</a></li>
+                    <li class="li-last" ><a href="../bops/app.enterpriseCategoryManage" data-id="90032" onClick="mlast('ln-3th-cur','li-last',this)">商家类目</a></li>
+                    <li class="li-last" ><a href="../bops/app.couponCategoryManage" data-id="90033" onClick="mlast('ln-3th-cur','li-last',this)">特惠类目</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">广场管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=1" data-id="90081" onClick="mlast('ln-3th-cur','li-last',this)">深圳广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=2" data-id="90082" onClick="mlast('ln-3th-cur','li-last',this)">西安广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=3" data-id="90083" onClick="mlast('ln-3th-cur','li-last',this)">南宁广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=4" data-id="90084" onClick="mlast('ln-3th-cur','li-last',this)">南昌广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=5" data-id="90085" onClick="mlast('ln-3th-cur','li-last',this)">郑州广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=6" data-id="90086" onClick="mlast('ln-3th-cur','li-last',this)">哈尔滨广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=7" data-id="90087" onClick="mlast('ln-3th-cur','li-last',this)">合肥广场</a></li>
+                    <li class="li-last" ><a href="../bops/app.venueManage?cityId=8" data-id="90088" onClick="mlast('ln-3th-cur','li-last',this)">重庆广场</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">专业市场管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.professionMarketManage?" data-id="90091" onClick="mlast('ln-3th-cur','li-last',this)">深圳专业市场</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">新闻管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=1" data-id="90051" onClick="mlast('ln-3th-cur','li-last',this)">深圳新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=2" data-id="90052" onClick="mlast('ln-3th-cur','li-last',this)">西安新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=3" data-id="90053" onClick="mlast('ln-3th-cur','li-last',this)">南宁新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=4" data-id="90054" onClick="mlast('ln-3th-cur','li-last',this)">南昌新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=5" data-id="90055" onClick="mlast('ln-3th-cur','li-last',this)">郑州新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=6" data-id="90056" onClick="mlast('ln-3th-cur','li-last',this)">哈尔滨新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=7" data-id="90057" onClick="mlast('ln-3th-cur','li-last',this)">合肥新闻</a></li>
+                    <li class="li-last" ><a href="../bops/app.newsManage?cityId=8" data-id="90058" onClick="mlast('ln-3th-cur','li-last',this)">重庆新闻</a></li>
+                </ul>
+            </li>
+            <li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">数据管理</a>
+                <ul class="ln-3th">
+                    <li class="li-last" ><a href="../bops/orderDateList?" data-id="90092" onClick="mlast('ln-3th-cur','li-last',this)">订单数据管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+    <!--左侧 end-->
+    
+    <!--右侧 start-->
+    <div class="content" id="content">
+        <div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="./add-coupon.html">添加优惠券</a></li>
+				<li><a href="./history-record.html">历史记录</a></li>
+			</ul>
+		</div>
+        <div class="addcpn-box">
+        	<form id="addCpnFrm">
+        	<table class="m-lrtbl add-cpn-tbl">
+            	<colgroup>
+                	<col width="150" />
+                    <col />
+                    <col width="60" />
+                </colgroup>
+                <tbody>
+                	<tr>
+                    	<th>优惠券用途：</th>
+                        <td colspan="3"><input id="use" class="g-mr10 g-w200 u-ipttxt" type="text" name="" value=""/><span class="g-c8">请填写此优惠券用于何种优惠活动！</span></td>
+                    </tr>
+                    <tr>
+                    	<th>优惠券名称：</th>
+                        <td colspan="3"><input id="name" class="g-mr10 g-w200 u-ipttxt" type="text" name="" value=""/></td>
+                    </tr>
+                    <tr>
+                    	<th>优惠券面额：</th>
+                        <td colspan="3"><input id="bills" class="g-w65 u-ipttxt" type="text" name="" value=""/><span class="g-ml10 g-mr10">元</span></td>
+                    </tr>
+                    <tr>
+                    	<th>优惠券数量：</th>
+                        <td colspan="3"><input id="num" class="g-w65 u-ipttxt" type="text" name="" value=""/><span class="g-ml10 g-mr10">张</span></td>
+                    </tr>
+                    <tr class="cpntype-tr">
+                    	<th>优惠券类型：</th>
+                        <td colspan="3"><label for="voucher"><input id="voucher" name="cpnType" type="radio" value="d"> 代金券</label><label for="cash" class="g-ml35 g-mr10"><input id="cash" name="cpnType" type="radio" value="x"> 现金券</label></td>
+                    </tr>
+                    <tr class="sytj-tr">
+                    	<th>使用条件：</th>
+                        <td colspan="3">满 <input id="condition" class="g-w65 u-ipttxt" type="text" name="" value=""/> <span class="g-mr10">元可用</span></td>
+                    </tr>
+                    <tr class="sender-tr">
+                    	<th>发送方：</th>
+                        <td colspan="3"><label for="csc"><input id="csc" name="sender" type="radio" value="csc"> 华南城网</label><label for="seller" class="g-ml35"><input id="seller" name="sender" type="radio" value="sj"> 商家</label><input id="sellerUrl" class="g-ml10 g-mr10 g-w200 u-ipttxt" type="text" name="" value="" placeholder="请输入商家旺铺地址"/></td>
+                    </tr>
+                    <tr class="ffqd-tr">
+                    	<th>发放渠道：</th>
+                        <td colspan="3"><label for="online"><input id="online" name="ffqd" type="radio" value="online"> 在线领取</label><label for="offline" class="g-ml35 g-mr10"><input id="offline" name="ffqd" type="radio" value="offline"> 线下派发</label></td>
+                    </tr>
+                    <tr class="cpnPwd-tr" >
+                    	<th>券密码：</th>
+                        <td colspan="3"><label for="noPwd"><input id="noPwd" name="cpnPwd" type="radio" value="N"> 无密码</label><label for="autoPwd" class="g-ml35 g-mr10"><input id="autoPwd" name="cpnPwd" type="radio" value="Y"> 自动生成密码</label></td>
+                    </tr>
+                    <tr>
+                    	<th>有效期：</th>
+                        <td colspan="3"><input id="startTime" class="g-w100 u-ipttxt" type="text" name="" value="" readonly/> 至 <input id="endTime" class="g-mr10 g-w100 u-ipttxt" type="text" name="" value="" readonly/></td>
+                    </tr>
+                    <tr class="useplt-tr">
+                    	<th>使用平台：</th>
+                        <td colspan="3"><label class="g-mr35" for="pcPlt"><input id="pcPlt" name="usePlt[]" type="checkbox" value="PC端平台"> <span>PC端平台</span></label><label class="g-mr35" for="gscApp"><input id="gscApp" name="usePlt[]" type="checkbox" value="逛市场APP"> <span>逛市场APP</span></label><label class="g-mr35" for="hshApp"><input id="hshApp" name="usePlt[]" type="checkbox" value="惠生活APP"> <span>惠生活APP</span></label><label class="g-mr10" for="wslm"><input id="wslm" name="usePlt[]" type="checkbox" value="微商联盟"> <span>微商联盟</span></label>
+                        </td>
+                    </tr>
+                    <tr class="userange-tr">
+                    	<th>使用范围：</th>
+                        <td class="g-p-r">
+                        	<input id="useRange" class="g-w420 u-ipttxt" type="text" name="" value="" readonly />
+                        	<div id="ctgryBox" class="g-c-f ctgry-box">
+                            	<ul id="frstCtgry" class="ctgry-itm">
+                                	<li><label for="allCtgry"><input id="allCtgry" name="allCtgry" type="checkbox" value="全品类"> 全品类</label></li>
+                                    <li><label for="frstCtgry0"><input id="frstCtgry0" name="frstCtgry[]" type="checkbox" value="纺织"> 纺织</label></li>
+                                    <li><label for="frstCtgry1"><input id="frstCtgry1" name="frstCtgry[]" type="checkbox" value="皮革"> 皮革</label></li>
+                                    <li><label for="frstCtgry2"><input id="frstCtgry2" name="frstCtgry[]" type="checkbox" value="五金"> 五金</label></li>
+                                    <li><label for="frstCtgry3"><input id="frstCtgry3" name="frstCtgry[]" type="checkbox" value="电子"> 电子</label></li>
+                                    <li><label for="frstCtgry4"><input id="frstCtgry4" name="frstCtgry[]" type="checkbox" value="数码"> 数码</label></li>
+                                </ul>
+                                <ul id="secCtgry" class="g-d-n ctgry-itm">
+                                    <!--<li><label for="secCtgry0"><input id="secCtgry0" name="secCtgry[]" type="checkbox" value="纺织"> 纺织</label></li>
+                                    <li><label for="secCtgry1"><input id="secCtgry1" name="secCtgry[]" type="checkbox" value="皮革"> 皮革</label></li>
+                                    <li><label for="secCtgry2"><input id="secCtgry2" name="secCtgry[]" type="checkbox" value="五金"> 五金</label></li>
+                                    <li><label for="secCtgry3"><input id="secCtgry3" name="secCtgry[]" type="checkbox" value="电子"> 电子</label></li>
+                                    <li><label for="secCtgry4"><input id="secCtgry4" name="secCtgry[]" type="checkbox" value="数码"> 数码</label></li>
+                                    <li><label for="secCtgry5"><input id="secCtgry5" name="secCtgry[]" type="checkbox" value="数码"> 数码</label></li>-->
+                                </ul>
+                                <ul id="thrdCtgry" class="g-d-n ctgry-itm last">
+                                    <!--<li><label for="thrdCtgry0"><input id="thrdCtgry0" name="thrdCtgry[]" type="checkbox" value="纺织"> 纺织</label></li>
+                                    <li><label for="thrdCtgry1"><input id="thrdCtgry1" name="thrdCtgry[]" type="checkbox" value="皮革"> 皮革</label></li>
+                                    <li><label for="thrdCtgry2"><input id="thrdCtgry2" name="thrdCtgry[]" type="checkbox" value="五金"> 五金</label></li>
+                                    <li><label for="thrdCtgry3"><input id="thrdCtgry3" name="thrdCtgry[]" type="checkbox" value="电子"> 电子</label></li>
+                                    <li><label for="thrdCtgry4"><input id="thrdCtgry4" name="thrdCtgry[]" type="checkbox" value="数码"> 数码</label></li>
+                                    <li><label for="thrdCtgry5"><input id="thrdCtgry5" name="thrdCtgry[]" type="checkbox" value="数码"> 数码</label></li>-->
+                                </ul>
+                            </div>
+                        </td>
+                        <th>描述：</th>
+                        <td><input id="desc" class="g-w200 u-ipttxt" type="text" name="" value="" placeholder="一句话描述使用范围，15字内"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="frm-box"><input class="cpn-smt" type="submit" name="" value="提交优惠券"/></div>
+            </form>
+        </div>   
+	</div>
+    <!--右侧 end-->
+</div>
+<!--主体 end-->
+
+<script>seajs.use('http://resmanage.csc86.com/v2/c/other/coupon/js/add-coupon.js');</script>
+</body>
+</html>

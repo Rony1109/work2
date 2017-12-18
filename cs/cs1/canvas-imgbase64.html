@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+        }
+        #canvas{
+            margin: auto auto;
+            width: 7rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="600"></canvas>
+<img id="img" src="" />
+
+</body>
+</html>
+<script type="text/javascript">
+    /**
+     * rem 布局初始化
+     */
+    /**
+     * 获取 canvas 画布
+     * 获取 canvas 绘图上下文环境
+     */
+    var canvas = document.getElementById("canvas");
+    var cxt = canvas.getContext('2d');
+
+    /**
+     * 图片处理函数 drawImage, 图片转化为 base64 格式 toDataURL
+     * drawImage(图形对象, sx, sy, sw, sh, dx, dy, dw, dh)
+     * s: 原图形
+     * d: 新图形
+     * x: 图形的起点横坐标
+     * y: 图形的起点纵坐标
+     * w: 图形的宽度
+     * h: 图形的高度
+     * toDataURL("图片格式, 默认为 image/png")
+     */
+    var img = new Image();
+    img.src = "./csc.png";
+    img.onload = function(){
+        cxt.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
+        var src = canvas.toDataURL("image/jpeg");
+        document.getElementById("img").src= src;
+    }
+</script>

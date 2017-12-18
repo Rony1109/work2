@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                    <li class="li-last" ><a href="#" data-id="30003" onClick="mlast('ln-3th-cur','li-last',this)">资讯管理</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">找货产品推荐</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">地图商家推荐</a></li>
+                    <li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+				</ul>
+			</li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地区管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/cw/cw.css" />
+        <script type="text/javascript" src="../../js/app/app.js"></script>
+        <h2 class="tool-bar">财务管理</h2>
+        <div class="g-c-f e-search sea-cw">
+        <form action="" method="post" data-type="cw">
+        	<span>交易时间：
+            	<input type="text" id="startTime" class="g-d-text" />
+                <a class="g-data" href="javascript:"  onclick="WdatePicker({maxDate:'%y-%M-%d',el:'startTime'})"></a>至
+                <input type="text"  class="g-d-text" id="endTime"/>
+                <a class="g-data" href="javascript:"  onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime'})"></a>
+            </span>
+            <span>交易平台：
+            <select name="searchType">
+                <option value="0">所属分类</option>
+                <option value="1">注册号</option>
+            </select></span>
+            <span>交易状态：
+            <select name="searchType">
+                <option value="0">所属分类</option>
+                <option value="1">注册号</option>
+            </select>
+            </span>
+            <span>交易方式：
+            <select name="searchType">
+                <option value="0">所属分类</option>
+                <option value="1">注册号</option>
+            </select>
+            </span>
+            <span>订单状态：
+            <select name="searchType">
+                <option value="0">所属分类</option>
+                <option value="1">注册号</option>
+            </select>
+            </span><Br />
+            <span><select name="searchType">
+                <option value="0">所属分类</option>
+                <option value="1">注册号</option>
+            </select></span>
+            <div class="tb-search">
+                <input type="text"name="" value="" placeholder="关键字" class="tb-text">
+                <input type="submit" value="查询" class="tb-btn">
+            </div>
+            </form>
+        </div>
+        <div class="g-c-f e-search cw-zd">
+        <form action="" method="post" data-type="cwzd">
+        	<span>交易金额：245.00元</span>
+            <span>商家数：20</span>
+            <span>已结算金额：22.00</span>
+            <span>待结算金额：500.00</span>
+            <span>已结算商家数：50</span>
+            <span>未结算商家数：20</span><Br />
+            <span class="no-w">e卡通：20</span>
+            <span class="no-w">微信支付：20</span>
+            <span class="no-w">支付宝：20</span>
+            <input type="button" value="查看商户帐单" class="tb-btn"  />
+            </form>
+        </div>
+        <div class="g-c-f e-search op-bg">
+          <a href="javascript:" class="export">导出</a>
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="touppftl(this)">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="todaowpftl(this)">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pageKeyDownpfl(event,this)" onKeyUp="this.value=this.value.replace(/[^.0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="topagepfl(this)">
+          </span>
+      	</div>
+        <div class="g-list">
+          <table class="app-tab">
+            <thead>
+              <tr>
+                <td class="list-id" width="5%">序号</td>
+                <td width="10%">交易时间</td>
+                <td width="8%">交易订单</td>
+                <td width="8%">交易流水</td>
+                <td width="8%">交易方</td>
+                <td width="12%">交易帐户</td>
+                <td width="8%">交易金额</td>
+                <td width="8%">交易方式</td>
+                <td width="8%">交易平台</td>
+                <td width="8%">交易状态</td>
+                <td width="8%">订单状态</td>
+                <td width="8%">操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="list-id">1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1688</td>
+                <td><a href="javascript:">详情</a> <a href="javascript:">退款</a></td>
+              </tr>
+              <tr>
+                <td class="list-id">1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1688</td>
+                <td><a href="javascript:">详情</a> <a href="javascript:">退款</a></td>
+              </tr>
+              <tr>
+                <td class="list-id">1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1</td>
+                <td>2</td>
+                <td>刘老三</td>
+                <td>博纳国际影城</td>
+                <td>1688</td>
+                <td>1688</td>
+                <td><a href="javascript:">详情</a> <a href="javascript:">退款</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="operation">
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a class="pg-cur" onClick="touppftl()">上一页</a>&nbsp;&nbsp;<a class="pg-cur" onClick="todaowpftl()">下一页</a>&nbsp;&nbsp;
+          <input class="innu" type="text" size="8" onKeyDown="pageKeyDownpfl(event,this)" onKeyUp="this.value=this.value.replace(/[^_0-9]/g,'')">&nbsp;<input type="button" value="跳转" onClick="topagepfl(this)">
+          </span>
+          </div>
+    	</div>
+
+	</div>
+</div>
+</body>
+</html>

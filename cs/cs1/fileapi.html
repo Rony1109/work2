@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        if(typeof FileReader == "undified") {
+            alert("您老的浏览器不行了！");
+        }
+		
+		    $("#btnGetFile2").click(function (e) {
+                var fileList = document.getElementById("fileDemo2").files;
+                for (var i = 0; i < fileList.length; i++) {
+                    if (!(/image\/\w+/.test(fileList[i].type))) {
+                         $("#result2").append("<span>type:"+fileList[i].type+"--******非图片类型*****--name:"+fileList[i].name+"--size:"+fileList[i].size+"</span><br />");
+                    }
+                    else {
+                        $("#result2").append("<span>type:"+fileList[i].type+"--name:"+fileList[i].name+"--size:"+fileList[i].size+"</span><br />");
+                    }
+                }
+            });
+
+        function showDataByURL() {
+            var resultFile = document.getElementById("fileDemo").files[0];
+            if (resultFile) {
+                var reader = new FileReader();
+                reader.readAsDataURL(resultFile);
+                reader.onload = function (e) {
+                    var urlData = this.result;
+                    document.getElementById("result").innerHTML += "<img src='" + urlData + "' alt='" + resultFile.name + "' />";
+                }; 
+            }
+        } 
+
+        function showDataByBinaryString() {
+            var resultFile = document.getElementById("fileDemo").files[0];
+            if (resultFile) {
+                var reader = new FileReader();
+                //异步方式，不会影响主线程
+                reader.readAsBinaryString(resultFile);
+                reader.onload = function(e) {
+                    var urlData = this.result;
+                    document.getElementById("result").innerHTML += urlData;
+                };
+            }
+        }
+
+        function showDataByText() {
+            var resultFile = document.getElementById("fileDemo").files[0];
+            if (resultFile) {
+                var reader = new FileReader();
+                reader.readAsText(resultFile,'gb2312');
+                reader.onload = function (e) {
+                    var urlData = this.result;
+                    document.getElementById("result").innerHTML += urlData;
+                };
+            }
+        }
+
+
+
+
+  $("#btnGetFile").click(function (e) {
+                var fileList = document.getElementById("fileDemo").files;
+                for (var i = 0; i < fileList.length; i++) {
+                    if (!(/image\/\w+/.test(fileList[i].type))) {
+                         $("#result").append("<span>type:"+fileList[i].type+"--******非图片类型*****--name:"+fileList[i].name+"--size:"+fileList[i].size+"</span><br />");
+                    }
+                    else {
+                        $("#result").append("<span>type:"+fileList[i].type+"--name:"+fileList[i].name+"--size:"+fileList[i].size+"</span><br />");
+                    }
+                }
+            });
+    </script>
+</head>
+<body>
+
+        <form action="/home/index" method="POST" novalidate="true">
+        <input type="file" multiple="multiple" name="fileDemo" id="fileDemo2" /><br/>
+        <input type="button" value="获取文件的名字" id="btnGetFile2"/>
+        <div id="result2"></div>
+        
+        <hr />
+        
+    <input type="file" name="fileDemo" id="fileDemo" multep/>
+    <input type="button" value="readAsDataURL" id="readAsDataURL" onclick="showDataByURL();"/>
+    <input type="button" value="readAsBinaryString"  id="readAsBinaryString" onclick="showDataByBinaryString();"/>
+    <input type="button" value="readAsText"  id="readAsText" onclick="showDataByText();"/>
+    <div id="result">
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/base-reset.css" />
+<link rel="stylesheet" href="http://resmanage.csc86.com/css/master.css" />
+<script src="http://resmanage.csc86.com/v2/l/jquery.js"></script>
+<script src="http://resmanage.csc86.com/v2/l/sea.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li class="cur"><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <!--
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>-->
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">产品中心</h2>
+     <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+        <ul class="ln-3th">
+          <li class="li-last" ><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+          <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+          <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">类目管理</a>
+        <ul class="ln-3th">
+          <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">原材料</a></li>
+          <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">消费品</a></li>
+          <li class="li-last"><a href="javascript:" onClick="mlast('ln-3th-cur','li-last',this)">工业品</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <div class="content" id="content">
+
+    <h2 class="tool-bar">您当前的位置：栏目管理- 热门栏目</h2>
+
+    <h2 class="tool-bar op-title">热门栏目</h2>
+    <div class="operation op-bg">
+      <span class="operation-l">
+        <input type="button" value="删除"/>
+        <input type="button" value="添加"/>
+      </span>
+      <form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+        <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+        <input type="text" size="8" name="page"/>
+        &nbsp;
+        <input type="submit" value="跳转" />
+        </span>
+      </form>
+    </div>
+    <div class="g-list">
+      <table>
+        <thead>
+          <tr>
+            <td width="5%" class="list-id"><input name="" type="checkbox" value=""></td>
+            <td width="18%">图片</td>
+            <td width="18%">名称</td>
+            <td width="10%">前台显示</td>
+            <td width="18%">链接</td>
+            <td width="18%">管理(UV)</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="list-id"><input name="" type="checkbox" value=""></td>
+            <td><img src="/image/img.png" alt="" width="100" height="30"/></td>
+            <td>供应福建NAK80钢板材料优质NAK80特</td>
+            <td>
+              <label for=""><input type="radio" name="" id=""/>是</label>
+              <label for=""><input type="radio" name="" id=""/>否</label>
+            </td>
+            <td>http://www.qq.com</td>
+            <td>
+              <a href="">编辑</a>
+              <a href="">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-id"><input name="" type="checkbox" value=""></td>
+            <td><img src="/image/img.png" alt="" width="100" height="30"/></td>
+            <td>供应福建NAK80钢板材料优质NAK80特</td>
+            <td>
+              <label for=""><input type="radio" name="" id=""/>是</label>
+              <label for=""><input type="radio" name="" id=""/>否</label>
+            </td>
+            <td>http://www.qq.com</td>
+            <td>
+              <a href="">编辑</a>
+              <a href="">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-id"><input name="" type="checkbox" value=""></td>
+            <td><img src="/image/img.png" alt="" width="100" height="30"/></td>
+            <td>供应福建NAK80钢板材料优质NAK80特</td>
+            <td>
+              <label for=""><input type="radio" name="" id=""/>是</label>
+              <label for=""><input type="radio" name="" id=""/>否</label>
+            </td>
+            <td>http://www.qq.com</td>
+            <td>
+              <a href="">编辑</a>
+              <a href="">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-id"><input name="" type="checkbox" value=""></td>
+            <td><img src="/image/img.png" alt="" width="100" height="30"/></td>
+            <td>供应福建NAK80钢板材料优质NAK80特</td>
+            <td>
+              <label for=""><input type="radio" name="" id=""/>是</label>
+              <label for=""><input type="radio" name="" id=""/>否</label>
+            </td>
+            <td>http://www.qq.com</td>
+            <td>
+              <a href="">编辑</a>
+              <a href="">删除</a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="operation">
+        <form action="" method="get" class="g-d-i page" data-page="1" data-total="10">
+          <span class="page-r">当前共有：<b>9</b>条记录&nbsp;&nbsp;<b>3</b>/<strong>18</strong>&nbsp;&nbsp;<a href="javascript:" class="pg-prev">上一页</a>&nbsp;&nbsp;<a href="javascript:" class="pg-next">下一页</a>&nbsp;&nbsp;
+          <input type="text" size="8" name="page"/>
+          &nbsp;
+          <input type="submit" value="跳转" />
+          </span>
+        </form>
+      </div>
+    </div>
+    <script>seajs.use('v2/c/market/js/init');</script>
+  </div>
+</div>
+</body>
+</html>

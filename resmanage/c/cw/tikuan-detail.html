@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<link rel="stylesheet" href="http://resmanage.csc86.com/js/artDialog/4.1.5/skins/blue.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/artDialog.js"></script>
+<script src="http://resmanage.csc86.com/js/artDialog/4.1.5/plugins/iframeTools.js"></script>
+<script src="http://resmanage.csc86.com/js/cw/cw.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">内容管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">活动管理</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">专题管理</a></li>
+                    <li class="li-last" ><a href="#" data-id="30003" onClick="mlast('ln-3th-cur','li-last',this)">资讯管理</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">推荐管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">找货产品推荐</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">地图商家推荐</a></li>
+                    <li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">特惠推荐</a></li>
+				</ul>
+			</li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">特惠管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">地区管理</a></li>
+            <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">商家管理</a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+        <link rel="stylesheet" href="../../css/app/app.css" />
+        <script src="../../js/SWFUpload/v2.2.0.1/swfupload.js"></script> 
+        <script src="../../js/handlers.js"></script>
+        <script src="../../js/app/uploadimg-bus-add.js"></script>
+        <script type="text/javascript" src="../../js/app/app.js"></script>
+		<h2 class="tool-bar tin15">提款申请详情</h2>
+        <div class="wait-m pt-4">
+         <div class="back-btn"><a href="javascript:history.back()">返回列表</a></div>
+          <ul class="tk-detail">
+            <li><span>商家名称：</span>喜士多</li>
+            <li><span>商家电话：</span>0755-66879565</li>
+            <li><span>会员账号：</span>cstore</li>
+            <li><span>申请提交时间：</span>2014.11.22.12.35</li>
+            <li><span>收款人：</span>朱豪三</li>
+            <li><span>收款账号：</span>62226323232***561</li>
+            <li><span>提款金额：</span>6000元</li>
+            <li><span>可提取金额：</span>10000元</li>
+            <li><span>受理状态：</span>未受理</li>
+            <li><span>受理时间：</span>2014.11.22.12.35</li>
+            <li><span>打款状态：</span>未打款</li>
+            <li><span>打款时间：</span>2014.11.22.12.35</li>
+            <li><span>交易流水：</span>1212465654798565</li>
+          </ul>
+    </div>
+	</div>
+</div>
+</body>
+</html>

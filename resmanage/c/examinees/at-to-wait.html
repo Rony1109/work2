@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>审核管理</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/examinees.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">审核管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员审核</a>
+        <ul class="ln-3th">
+          <li class="li-last" ><a href="personal-member.html" onClick="mlast('ln-3th-cur','li-last',this)">个人资料</a></li>
+          <li class="li-last"><a href="personal-company.html" onClick="mlast('ln-3th-cur','li-last',this)">企业资料</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="inquiry.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘审核</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="product.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">产品审核</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="attestation.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+    <h2 class="tool-bar">认证审核</h2>
+    <div class="wait-m">
+    	<table class="wait-l" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th>企业名称：</th>
+            <td>深圳市华洋高飞科技有限公司</td>
+          </tr>
+          <tr>
+            <th>营业执照注册号：</th>
+            <td>3356987456256</td>
+          </tr>
+          <tr>
+            <th>营业执照注册地：</th>
+            <td>广东深圳龙岗区平湖华南城XXX</td>
+          </tr>
+          <tr>
+            <th>营业期限：</th>
+            <td>2012年10月31日</td>
+          </tr>
+          <tr>
+            <th>登记机关：</th>
+            <td>深圳市工商管理局</td>
+          </tr>
+          <tr>
+            <th>法定代表人：</th>
+            <td>张一非</td>
+          </tr>
+          <tr>
+            <th>企业类型：</th>
+            <td>私营企业</td>
+          </tr>
+         <tr>
+            <th>经营范围：</th>
+            <td>布匹、绒毛</td>
+          </tr>
+         <tr>
+            <th>成立日期：</th>
+            <td>2012年10月31日</td>
+          </tr>
+          <tr>
+            <th>营业执照扫描件：</th>
+            <td></td>
+          </tr>
+        </table>
+    	<table class="wait-r" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th>申请人：</th>
+            <td>胡海</td>
+          </tr>
+          <tr>
+            <th>申请人部门：</th>
+            <td>营销部</td>
+          </tr>
+          <tr>
+            <th>申请人职位：</th>
+            <td>营销经理</td>
+          </tr>
+          <tr>
+            <th>联系电话：</th>
+            <td>13100000000</td>
+          </tr>
+          <tr>
+            <th>身份证扫描件：</th>
+            <td>正面</td>
+          </tr>
+     	</table>
+    </div>
+    <div class="wait-btn">
+		<input type="button" value="通过审核" />
+		<input type="button" value="拒 绝" />
+		<input type="button" value="返 回" onclick="history.back();" />
+	</div>
+</div>
+</body>
+</html>

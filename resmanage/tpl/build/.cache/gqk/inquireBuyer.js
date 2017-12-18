@@ -1,0 +1,2 @@
+/*TMODJS:{"version":14,"md5":"c9bfa181b2e29e3eb384ec0e2628ab64"}*/
+template('gqk/inquireBuyer',' <div class="inquireBuyer"> <p><span>分配账号：</span> 默认使用手机号码或邮箱作为账号</p> <p><span>默认密码：</span> csc123456</p> <p class="c-gray">激活后，买家可通过手机号码或邮箱登录华南城网</p> </div>');

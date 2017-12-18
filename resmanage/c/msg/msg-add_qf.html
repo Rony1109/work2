@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理首页</title>
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/base-reset.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/master.css">
+<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/upset.css">
+<script>var BASEURL="http://192.168.1.241:8084/"</script>
+<script src="http://resmanage.csc86.com/js/jquery.js"></script>
+<script src="http://resmanage.csc86.com/js/master.js"></script>
+<script src="http://resmanage.csc86.com/js/upset.js"></script>
+</head>
+<body>
+<div class="m-nav">
+	<div class="m-n-tab">
+		<div class="m-loginbar">你好，<strong>超级管理员</strong><a href="javascript:">帐号设置</a>|<a href="loginOut">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+		<ul>
+			<li><a href="../bops/appController.action?id=10001">我的面板</a></li>
+			<li><a href="../bops/userLists.action?id=10002">系统设置</a></li>
+			<li><a href="../bops/categorymanager.fetchAllTree?id=10003">产品中心</a></li>
+			<li><a href="../bops/verifymanage.findPersonal?id=10004">审核管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main">
+	<div class="left-nav" id="leftNav">
+		<h2 class="ln-hd">我的面板</h2>
+		<ul class="ln-2th">
+			<li class="ln-2th-item" id="cur2"><a class="ln-2th-item-hd" href="javascript:" onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">我的模块</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="30001" onClick="mlast('ln-3th-cur','li-last',this)">我的面板</a></li>
+					<li class="li-last" ><a href="#" data-id="30002" onClick="mlast('ln-3th-cur','li-last',this)">我的面板控制</a></li>
+				</ul>
+			</li>
+			<li class="ln-2th-item" id="cur3"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">消息管理</a>
+				<ul class="ln-3th">
+					<li class="li-last" ><a href="#" data-id="40001" onClick="mlast('ln-3th-cur','li-last',this)">消息发送</a></li>
+					<li class="li-last" ><a href="#" data-id="0002" onClick="mlast('ln-3th-cur','li-last',this)">消息群发</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+	<div class="content" id="content">
+		<link rel="stylesheet" type="text/css" href="http://resmanage.csc86.com/css/msg.css">
+		<script src="http://resmanage.csc86.com/js/msg.js"></script>
+		<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/kindeditor-min.js"></script>
+		<script src="http://resmanage.csc86.com/js/kindeditor/4.1.2/lang/zh_CN.js"></script>
+		<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/WdatePicker.js"></script>
+		<h2 class="tool-bar">消息管理</h2>
+		<div class="sel-sub">
+			<ul>
+				<li class="cur"><a href="../bops/verifymanage.findEnterprise">创建新消息</a></li>
+			</ul>
+		</div>
+		<div>
+			<div class="tool-bar">
+				<input type="button" class="but_comm" value="发送" onClick="$('#form_add_qf').submit();">
+				<input type="button" class="but_comm" value="关闭" onClick="location.href=''">
+			</div>
+			<div class="g-c-f e-search" style="padding-top:5px;">
+				<div style="width:1020px;">
+					<div style="padding-left:10px; height:35px; line-height:35px;">
+						<div style="float:right;">
+							<form id="form_user_qf" onsubmit="return member_search_qf();">
+							己选接收人定位：
+							<input type="hidden" name="user_groups" value="">
+							<select name="id" style="display:none">
+								<option value="0">用户所属的组</option>
+							</select>
+							<select name="type">
+								<option value="HY">按会员帐号</option>
+								<option value="SJ">按手机号码</option>
+								<option value="YX">按邮箱帐号</option>
+							</select>
+							<input id="text_field" type="text" name="condition" value="" style="width:150px;" >
+							<input type="submit" value="定位" class="tb-btn"> ｜ 	<input type="button" value="清空会员" class="tb-btn" onClick="del_ul('all')">
+							</form>
+						</div>
+						选择群组：
+					</div>
+					<div id="qz_main" style="overflow:hidden;">
+						<div id="qz_1" class="msg_qz_box">
+							<ul class="qz_li">
+
+							</ul>
+						</div>
+						<div id="qz_2" class="msg_qz_box">
+							<ul class="qz_li">
+
+							</ul>
+						</div>
+						<div class="qz_com">
+							<input id="qz_add" type="button" onclick="add_ul('all')" value="&gt;&gt;" title="全部添加" />
+							<input id="qz_add" type="button" onclick="add_ul()" value="-&gt;" title="添加"/>
+							<input id="qz_del" type="button" onclick="del_ul()" value="&lt;-" title="移除" />
+							<input id="qz_del" type="button" onclick="del_ul('all')" value="&lt;&lt;" title="全部移除" />
+						</div>
+						<div id="qz_3" class="msg_qz_box">
+								<ul class="qz_li">
+								</ul>
+						</div>
+						<div class="qz_4" style="width:300px; float:left; margin-left:10px;">
+							<div class="msg_user_box" style="margin-top:0;">
+								<table class="msg_user_t">
+									<tr>
+										<th width="100">会员帐号</th>
+										<th align="center">会员名称</th>
+										<th width="60"></th>
+									</tr>
+								</table>
+								<div id="ajaxMemberSearch">
+									<div class="user_list_qf">
+										<table class="msg_user">
+											<tr userid="111" class="u_del">
+												<td width="100">13988888888</td><td>张三</td>
+												<td width="60">
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="222" class="u_del">
+												<td>13988888888</td><td>张1</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="sfsf">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="12aaa12">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="1dfda212">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="12sffdf12">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="121sffsd2">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="121sdff2">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="12sd12">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+											<tr userid="12dsf12">
+												<td>13988888888</td><td>张三</td><td>
+													<a class="Del_user" href="javascript:;">删除</a>
+													<a class="unDel_user" href="javascript:;">还原</a>
+												</td>
+											</tr>
+										</table>
+										
+									</div>
+									<div class="user_t_b">
+										<span>共 <b>1894</b> 人&nbsp;&nbsp;<b>1</b>/<strong>1</strong> 页</span>
+										&nbsp;&nbsp;
+										<a class="gopage_qf" href="javascript:;" onclick="gopage_qf('34cf5c91-7b36-11e2-99b9-c8600070a4ae','19')">上一页</a>&nbsp;&nbsp;
+										<a class="gopage_qf" href="javascript:;" onclick="gopage_qf('34cf5c91-7b36-11e2-99b9-c8600070a4ae','21')">下一页</a></div>
+								</div>
+						</div>
+					</div>
+						
+				</div>
+					<div class="form_qf">
+					<form id="form_add_qf" action="add">
+						<table class="msg_add" style="width:100%;">
+							<tr>
+								<th width="80">消息类型：</th>
+								<td width="">
+									<select name="msg_type" style="width:120px;">
+										<option value="0">系统消息</option>
+										<option value="2">XX消息</option>
+									</select>
+								</td>
+								<th width="100">是否定时发送：</th>
+								<td>
+									<div><label><input type="radio" name="msg_ds" checked value="0" /> 实时</label></div>
+									<div>
+										<label><input type="radio" name="msg_ds" value="1" /> 定时</label> 
+										待发送时间： <input id="msg_time" name="msg_time" type="text" disabled />
+										<a class="g-data" href="javascript:;" onclick="WdatePicker({el:'msg_time',dateFmt:'yyyy-M-d H:mm:ss'})" style="vertical-align:middle;"></a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>消息主题：</th>
+								<td colspan="3"><input type="text" name="msg_title" value="" style="width:98%;" /></td>
+							</tr>
+							<tr>
+								<th>消息内容：</th>
+								<td colspan="3">
+									<textarea id="msg_text" name="msg_content" style="width:98%; height:200px;"></textarea>
+									<div id="msg_text_err" class="">不超过200个字符。</div>
+								</td>
+							</tr>
+						</table>
+						</form>
+					</div>
+				</div>
+				<script>var user_del_arr = ["111","222"];$why_msg_option.test = true;</script>
+				<div class="g-h-20"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

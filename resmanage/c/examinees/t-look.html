@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>认证审核</title>
+<link rel="stylesheet" href="../../css/base-reset.css" />
+<link rel="stylesheet" href="../../css/master.css" />
+<script src="../../js/jquery.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/artDialog/4.1.5/artDialog.source.js"></script>
+<script src="../../js/artDialog/4.1.5/plugins/iframeTools.source.js"></script>
+<script src="../../js/json2.js"></script>
+<script src="../../js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<link href="../../js/artDialog/4.1.5/skins/blue.css" rel="stylesheet" />
+<script src="../../js/SWFUpload/v2.2.0.1/swfupload.js"></script>
+<script src="../../js/handlers.js"></script>
+<script src="../../js/snsInfouploadimg.js"></script>
+<script src="../../js/snsUploadimg.js"></script>
+<script src="../../js/marketplace.js"></script>
+</head>
+<body>
+<div class="m-nav">
+  <div class="m-n-tab">
+    <div class="m-loginbar">你好，<strong>李伟</strong><a href="javascript:">帐号设置</a>|<a href="javascript:">安全退出</a><a href="javascript:" class="g-d-ib b-btn">网站首页</a><a href="javascript:" class="g-d-ib b-btn">返回</a></div>
+    <ul>
+      <li class="home"><a href="c/my-panel/my-panel.html">我的面板</a></li>
+      <li><a href="c/upset/sidemenu.html">系统设置</a></li>
+      <li class="cur"><a href="c/examinees/sidemenu.html">审核管理</a></li>
+      <li><a href="c/member/sidemenu.html">会员管理</a></li>
+      <li><a href="c/information/sidemenu.html">资讯中心</a></li>
+      <li><a href="c/product/sidemenu.html">产品中心</a></li>
+      <li><a href="c/apply/sidemenu.html">应用中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="left-nav" id="leftNav">
+    <h2 class="ln-hd">审核管理</h2>
+    <ul class="ln-2th">
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="javascript:"  onclick="mhidden('ln-2th-item-cur','ln-2th-item',this)">会员审核</a>
+        <ul class="ln-3th">
+          <li class="li-last" ><a href="personal-member.html" onClick="mlast('ln-3th-cur','li-last',this)">个人资料</a></li>
+          <li class="li-last"><a href="personal-company.html" onClick="mlast('ln-3th-cur','li-last',this)">企业资料</a></li>
+        </ul>
+      </li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="inquiry.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">询盘审核</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="product.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">产品审核</a></li>
+      <li class="ln-2th-item"> <a class="ln-2th-item-hd" href="attestation.html" onClick="mhidden('ln-2th-item-cur','ln-2th-item',this)">认证审核</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(closeLeft())" title="关闭/打开左栏" class="close-left" id="closeLeft"></a>
+  <link rel="stylesheet" href="../../css/examinees.css" />
+  <div class="content" id="content">
+      <h2 class="tool-bar">编辑市场推荐</h2>
+        <div class="wait-m">
+        <table class="at-look" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th>市场ID：</th>
+                <td><input type="text" value="82910b7c-d5e0-4ac8-8919-b0272fa13164" id="marketId" name="marketId" style="width: 300px;"></td>
+              </tr>
+            </table>
+    	<h3>明星成员</h3>
+        <table class="waitin-tr3" width="100%" border="0" cellspacing="0" cellpadding="0">
+       		<thead>
+            	<tr>
+                	<td width="6%"></td>
+                    <td width="20%">商家名称</td>
+                    <td width="20%">旺铺地址</td>
+                    <td width="40%">产品中心链接</td>
+              </tr>
+            </thead>
+              <tr>
+              	<td><input type="hidden" value="1" name="sort" id="sort"><input type="hidden" id="memberName" value="453543" name="memberId" class="memberId"></td>
+                <td><input type="text" id="memberName" value="的在v做的" name="memberName" class="memberName"></td>
+                <td><input onkeyup="this.value=this.value.replace(/^http:\/\//g,\'\')" type="text" id="shopUrl" value="萨发送" name="shopUrl" class="shopUrl"></td>
+                <td><input type="text" id="productCenterUrl" value="苏打粉萨福" name="productCenterUrl" class="proUrl"></td>
+                <td><span class="upImg"><img src="../../../../../image/no-img.png" id="imgload0" width="60" height="60" alt="图片" /></span><input   id="upload00" type="button" value="图片上传" /></td>
+              </tr>
+            </table>
+    </div>
+    <div class="wait-btn"><input type="button" onClick="checksub();" value="确定"><input type="button" value="取消" onClick="javascript:history.go(-1);">
+</div>
+</body>
+</html>

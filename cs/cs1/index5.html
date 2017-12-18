@@ -1,0 +1,29 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!--link href="css/css.css" rel="stylesheet" type="text/css" /-->
+
+</head>
+<body>
+<a href="#" onclick="openwin()">打开一个窗口</a>
+<input type="button" onclick="openwin()" value="打开窗口">
+<script LANGUAGE="javascript"> 
+function openwin() {OpenWindow=window.open("", "newwin", 'width='+(window.screen.availWidth-200)+',height='+(window.screen.availHeight-200)+ ',top=100,left=100,toolbar=no,menubar=no,scrollbars=yes, resizable=no,location=no, status=no'); 
+			/*
+				var html= '<TITLE>例子</TITLE>\
+						<BODY BGCOLOR=#ffffff>\
+						<h1>Hello!</h1>\
+						New window opened!\
+						</BODY>\
+						</HTML>';
+				OpenWindow.document.write(html);
+				*/
+				OpenWindow.location.href='http://www.csc86.com';
+				OpenWindow.document.close();
+}
+</script>
+</body>
+</html>

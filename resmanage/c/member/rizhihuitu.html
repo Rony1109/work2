@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+		<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>日志分析</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="//resmanage.csc86.com/css/rizhi.css" >
+	<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+	<script src="http://resmanage.csc86.com/js/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- 网站顶部  start -->
+<div class="warptop"> <p>日志分析</p></div>
+<div class="warpbottom after">
+<div class="left">
+	<ul>
+		<li><a href="#">日志查询1</a></li>
+		<li><a href="#">日志查询2</a></li>
+		<li><a href="#">日志查询3</a></li>
+	</ul>
+</div>
+	<div class="right">
+		<div class="tkwk">
+			<form action="" method="get">
+				<table class="cwdztable" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="420">
+						<col width="310">
+						<col width="">
+					</colgroup>
+					<tbody>
+					<tr>
+						<td class="tl tp1">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+							<input type="text" value="2016-12-01" id="startTime" class="g-d-text" name="startTime" readonly="" onclick="WdatePicker({maxDate:'%y-%M-%d',el:'startTime',dateFmt:'yyyy-MM-dd'})">
+							至
+							<input type="text" value="2016-12-08" class="g-d-text" id="endTime" name="endTime" readonly="" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'%y-%M-%d',el:'endTime',dateFmt:'yyyy-MM-dd'})">
+						</td>
+						<td class="tl" colspan="3"><input type="button"  class="htan i3" value="查询"></td>
+					</tr>
+
+					</tbody>
+				</table>
+			</form>
+			<div class="rizhicontent nopad">
+				<div class="rizhicontent2 nopad" id="rizhicontent2"></div>
+				<div class="rizhicontent2 nopad" id="rizhicontent3"></div>
+			</div>
+
+			<div class="rizhicontent" id="rizhicontent"></div>
+
+		</div>
+	</div>
+
+</div>
+
+<script>seajs.use('//resmanage.csc86.com/c/member/js/rizhi.js');</script>
+
+</body>
+</html>
