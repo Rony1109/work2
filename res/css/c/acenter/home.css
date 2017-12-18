@@ -1,0 +1,26 @@
+/*账户中心首页 by lg 2013.07.09*/
+.clearfix:after{clear: both;content: " ";display: block;height: 0;visibility: hidden;}
+.clearfix{zoom:1;}
+.pay-banner{width:100%;height:350px;overflow:hidden;}
+.pay-banner li{height:350px;}
+.pay-banner li .pay_link{width:1000px;height:100%;margin:0 auto;position:relative;z-index:1;}
+.pay-banner li .pay_link a{position:absolute;display:block;width:159px;height:0px;padding-top:38px;font-size:0;text-indent:-1000px;left:559px;top:173px;}
+.service{width:1000px;margin:50px auto;height:158px;}
+.service ul{width:751px;height:100%;float:left;position:relative;overflow:hidden;}
+.service ul li{float:left;width:456px;height:128px;overflow:hidden;margin-top:17px;cursor:pointer;position:absolute;left:0;background-color:#fafafa;}
+.re_img,.vip_img,.store_img,.comp_img,.more_img
+{float:left;height:0;overflow:hidden;background:url(img/service_icon.png) no-repeat;margin-right:20px;}
+.re_img{width:98px;padding-top:158px;background-position:0 -553px;}
+.vip_img{width:128px;padding-top:128px;background-position:0 -720px;}
+.store_img{width:128px;padding-top:128px;background-position:0 -858px;}
+.comp_img{width:128px;padding-top:128px;background-position:0 -996px;}
+.service li.hover .vip_img,.service li:hover .vip_img{background-position:0 0;}
+.service li.hover .store_img,.service li:hover .store_img{background-position:0 -138px;}
+.service li.hover .comp_img,.service li:hover .comp_img{background-position:0 -276px;}
+.more_img{width:128px;padding-top:128px;background-position:0 -1134px;margin-right:0;margin-top:17px;}
+a:hover.more_img{background-position:0 -414px;}
+.service li a,.service li a:hover{color:#666;text-decoration:none;font-family:Microsoft YaHei,simhei;line-height:22px;}
+.service li h2{width:290px;float:left;font-size:22px;font-weight:400;margin-bottom:10px;margin-top:7px;padding-left:5px;}
+.service li h2 a{color:#444;}
+.service li h2 a:hover{color:#444;}
+.service li span{font-size:13px;width:290px;float:left;padding-left:5px;}

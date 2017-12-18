@@ -1,0 +1,33 @@
+/*消息中心css yq*/
+.msg-nav h2{ height:30px; line-height:30px; padding-left:35px; background:#f6f4f4;background: url(/css/c/shopmember/img/mem-shop.png) no-repeat 10px -45px;}
+.msg-nav li{ padding:3px 0;}
+.msg-nav li a{ padding-left:35px;line-height:27px;}
+
+/*消息列表css yq*/
+.msg-list{ padding:20px 15px;}
+.msg-con h2 a{ float:right; font-weight:700; font-size:12px; margin-right:15px;}
+.msg-list ul{ padding:0 20px;}
+.msg-list li{ padding:10px; border-bottom:1px solid #eee; color:#888; overflow:hidden; zoom:1;}
+.msg-list li.cur,.msg-list li.cur a{ color:#333; }
+.msg-list li em{ float:right;}
+.msg-list li a{ float:left; padding-left:25px; width:450px; color:#888; background:url(img/msg-way.png) no-repeat 3px 3px;}
+.msg-list li.cur a{ color:#333; background:url(img/del-icol.png) no-repeat 3px 3px;}
+.msg-con .up .check-all-msg{float:left;margin-top:3px;margin-right:10px;margin-left:19px;}
+.msg-list li .msg-of-check{float:left;margin-right:10px;margin-top:3px;}
+.msg-con .up .num-page{float:right;margin-right:10px;}
+.msg-con .up .jmp-page{float:right;margin-right:15px;}
+.m-t-3{margin-top:3px;}
+/*消息详情css yq*/
+.msg-tc h2{ background:#FFFFE6; border:none; height:30px; line-height:30px; padding-left:20px;}
+.msg-con .up,.msg-con .down{height:30px; border:1px solid #e4e4e4; padding:5px 5px 0;background:#f3f3f3;}
+.msg-con .cancel,.msg-con .del{ float:left; width:49px; margin-right:10px; text-align:center; height:24px; line-height:24px; background:url(img/back-bg.png) no-repeat 0 0; color:#333;}
+.msg-con .show-up{ margin-left:10px;margin-right:10px;}
+.msg-con .show-up,.msg-con .show-down{ float:right; }
+.msg-con .cancel:hover,.msg-con .del:hover{ text-decoration:none; color:#333;}
+.msg-con .cancel{float:left;}
+/*消息内容css yq*/
+.msg-tc .msg-conn{ margin:10px 25px; line-height:22px; min-height:200px;_height:200px;}
+.msg-tc h4{ line-height:55px;}
+.msg-tc div p{ text-indent:2em;}
+.msg-tc .msg-time{ margin-left:25px;}
+.msg-tc .msg-time span{ display:block;}

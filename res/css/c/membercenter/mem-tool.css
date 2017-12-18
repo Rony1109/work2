@@ -1,0 +1,34 @@
+/*工具列表css yq*/
+.aui_content{ display:block;}
+
+.mem-toolct h3{ line-height:45px; padding-left:12px; font-weight:normal; font-size:12px;}
+
+.mem-toolct li{float:left; display:inline; width:80px; text-align:center; padding-bottom:20px; zoom:1; margin-left:5px;}
+.mem-toolct .cative{ border-bottom:1px dashed #ddd1d5; position:relative; zoom:1;}
+.mem-toolct li span{ display:block; position:relative; zoom:1;}
+.mem-toolct li span.img,.mem-toolct li span.img{ position:relative; text-aling:center; height:48px; overflow:hidden;}
+
+.mem-toolct li span .del{ display:none; position:absolute;top:6px; right:4px; width:12px; height:14px; background:url(img/tool-del.png) no-repeat 0 0; cursor:pointer;}
+.mem-toolct li span .add{display:none; position:absolute;top:6px; right:4px; width:12px; height:14px; background:url(img/add-tool.png) no-repeat 0 0; cursor:pointer;}
+.mem-toolct li span:hover .del{ display:block;}
+.mem-toolct li span:hover .add{ display:block;}
+
+
+.mem-toolct li span.title {height:18px; overflow:hidden; text-align:center; zoom:1;}
+.mem-toolct li span input {display:none;position:absolute; overflow:hidden; border:none; width:6px; height:18px; background:url(img/r-l.png) no-repeat 0 5px; cursor:pointer;}
+.mem-toolct li span.title input.l{left:0; top:0;}
+.mem-toolct li span.title input.r{right:0; top:0; background-position:0 -22px;}
+.mem-toolct li:hover span.title input,
+.mem-toolct li.hover span.title input,
+.mem-toolct li.hover span .del,
+.mem-toolct li.hover span .add {display:block; zoom:1;}
+
+
+
+
+
+
+
+
+
+

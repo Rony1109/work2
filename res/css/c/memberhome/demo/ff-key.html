@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员中心</title>
+<link rel="stylesheet" href="/bhf/">
+<link rel="stylesheet" href="/css/m/app-frame/style.css" />
+<link rel="stylesheet" href="/css/c/membercenter/member.css" />
+<link rel="stylesheet" href="/css/c/memberhome/m-public.css" />
+<link rel="stylesheet" href="/css/c/memberhome/m-top.css" />
+<link rel="stylesheet" href="/css/c/memberhome/m-foot.css" />
+<script src="/js/"></script>
+<script src="/js/c/membercenter/member.js"></script>
+<script src="/c/memberhome/m-home.js"></script>
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+  <div class="head-bd">
+    <div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+    <div class="head-nav"> <a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a> <a href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a> <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a> <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a> </div>
+    <div class="index-link"> <a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a> </div>
+  </div>
+</div>
+<!--顶部导航 end--> 
+<script>csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){ csc.hover("div.head li.user,div.head li.apply,div.head li.msg");});</script>
+<link rel="stylesheet" href="/css/c/collect/collect.css" />
+<link rel="stylesheet" href="/css/c/memberhome/m-collect.css" />
+<script src="http://res.csc86.com/f=js/c/collect/pro-filter.js,js/m/page.js"></script>
+<div id="apply" class="g-o-a app-frame">
+  <div id="apply" class="af-nav xrpm">
+    <h2>旭日排名</h2>
+    <ul class="nav-items">
+      <li class="item"><a href="add-key.html">添加关键词排名</a></li>
+      <li class="item cur"> <a href="key.html">排名管理</a></li>
+    </ul>
+  </div>
+  <div class="af-bd list-info keymng-box">
+    <h2 class="af-hd">添加关键词排名</h2>
+    	
+        <div class="g-c-f keymng-tab">
+        	<a href="key.html">增送关键词</a>
+            <a class="cur" href="ff-key.html">付费关键词</a>
+        </div>
+        <div class="g-h-15"></div>
+        <!--列表 有内容时 start-->
+        <div class="xr">
+            <div class="clearfix">
+                <span class="g-f-l">关键词状态：<select>
+                <option value="已取消">已取消</option>
+                <option value="展示中">展示中</option>
+                </select></span>
+                <span class="g-f-r"><a href="javascript://" class="uu-btn-s"><em>添加关键词</em></a></span>
+            </div>
+            <div class="g-h-10"></div>
+            <!--列表分页 start-->
+            <div class="g-c-f af-page">
+                <div class="g-f-r afp-bd">
+                    <div class="afp-box"><form onsubmit="csc.page(this);return false;">跳转到第<input name="page" class="afp-text" vlaue="" teype="text">页<input type="submit" class="afp-btn" value="确定"></form></div>
+                    <span>1/1 页</span><a onclick="csc.afPage(this)" href="javascript://">跳转</a>
+                </div>
+            </div>
+            <!--列表分页 end-->
+            <div class="af-list">
+                <table width="100%">
+                    <thead class="af-list-hd">
+                        <tr>
+                            <td width="20%">关键词</td>
+                            <td width="30%">产品标题</td>
+                            <td width="10%">添加时间</td>
+                            <td width="20%">状态</td>
+                            <td width="20%">操作</td>
+                        </tr>
+                    </thead>
+                    <tbody class="af-list-bd">
+                        <tr class="af-list-pro">
+                            <td><a href="http://search.csc86.com/selloffer/products.html?q=关键词" target="_blank" title="关键词">关键词</a></td>
+                            <td><div class="g-t-l"><a href="#" target="_blank" title="产品标题">产品标题</a></div></td>
+                            <td>2014-02-23</td>
+                            <td>展示中</td>
+                            <td><a href="modify-key.html">修改</a></td>
+                        </tr>
+                        <tr class="af-list-pro">
+                            <td><a href="http://search.csc86.com/selloffer/products.html?q=关键词" target="_blank" title="关键词">关键词</a></td>
+                            <td><div class="g-t-l"><a href="#" target="_blank" title="产品标题">产品标题</a></div></td>
+                            <td>2014-02-23</td>
+                            <td>已过期</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--列表分页 start-->
+            <div class="g-c-f af-page">
+                <div class="g-f-r afp-bd">
+                    <div class="afp-box"><form onsubmit="csc.page(this);return false;">跳转到第<input name="page" class="afp-text" vlaue="" teype="text">页<input type="submit" class="afp-btn" value="确定"></form></div>
+                    <span>1/1 页</span><a onclick="csc.afPage(this)" href="javascript://">跳转</a>
+                </div>
+            </div>
+            <!--列表分页 end-->
+        </div>
+        <!--列表 有内容时 end-->
+        <script src="/js/c/memberhome/xrhover.js"></script>
+        
+        <!--列表 无内容时 start-->
+        <div class="xr">
+            <div class="clearfix">
+                <span class="g-f-l">关键词状态：<select>
+                  <option value="已取消">已取消</option>
+                  <option value="展示中">展示中</option>
+              </select></span>
+                <span class="g-f-r"><a href="javascript://" class="uu-btn-s"><em>添加关键词</em></a></span>
+            </div>
+            <div class="g-h-10"></div>
+            <div class="af-list">
+                <table width="100%">
+                    <thead class="af-list-hd">
+                        <tr>
+                            <td width="20%">关键词</td>
+                            <td width="30%">产品标题</td>
+                            <td width="10%">添加时间</td>
+                            <td width="20%">状态</td>
+                            <td width="20%">操作</td>
+                        </tr>
+                    </thead>
+                    <tbody class="af-list-bd">
+                    	<tr class="af-list-empty">
+                        	<td colspan="4"><br><br><br>目前没有添加关键词排名，这就去抢<a href="#" target="_blank">关键词排名</a><br><br><br></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--列表 无内容时 end-->
+    
+  </div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+  <div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a> </div>
+  <p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+  深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5 </div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

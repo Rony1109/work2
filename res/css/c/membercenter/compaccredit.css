@@ -1,0 +1,185 @@
+/*认证首页css yq*/
+.af-nav h2{background:url(img/accred-ico.png) no-repeat 8px -43px;}
+
+.auth-bar{border:solid 1px #ddd;color:#666;}
+    .auth-bar h3,.auth-bar h4{color:#333;font-family:Microsoft Yahei;font-size:14px;}
+    .auth-t{background:#f6f6f6;border-bottom:solid 1px #ddd;}
+    .auth-t h3{float:left;width:90px;padding:0 0 0 80px;/*border-right:solid 1px #ddd;*/line-height:78px;}
+    .auth-t p{display:block;padding:15px 25px;margin-left:170px;line-height:24px;border-left:solid 1px #ddd;font-family:simsun;}
+	.qyrz-sfrz .auth-t h3{margin-top:25px;}
+	.qyrz-sdrz .auth-t h3{margin-top:12px;}
+    
+    .a-sm-t h3{background:url(../auth/sm60.png) 15px center no-repeat;}
+    .a-st-t h3{background:url(../auth/st60.png) 15px center no-repeat;}
+    .a-ss-t h3{background:url(../auth/ss60.png) 15px center no-repeat;}
+	.a-gr-t h3{background:url(../auth/gr60.png) 15px center no-repeat;}
+    
+    .auth-l{padding:20px 25px;}
+    .auth-l li{position:relative;_display:inline;float:left;width:165px;margin:0 5px;padding:0 0 0 85px;line-height:22px;}
+        .auth-l li .icon{position:absolute;left:18px;top:20px;width:45px;height:45px;background:url(img/rz-icon.png) 0 -45px no-repeat;}
+        .auth-l .at2 .icon{background-position:0 0;}
+        .auth-l .at3 .icon{background-position:0 -90px;}
+        .auth-l .at4 .icon{background-position:0 -45px;}
+        .auth-l .at5 .icon{background-position:0 -135px;}
+        .auth-l .at6 .icon{background-position:0 -180px;}
+        .auth-l .at7 .icon{background-position:0 -225px;}
+        .auth-l .at8 .icon{background-position:0 -270px;}
+        .auth-l .at9 .icon{background-position:0 -315px;}
+        
+        .auth-apply{padding:10px 0;border-top:solid 1px #ddd;}
+        .auth-apply span,.auth-apply a{display:inline-block;width:180px;height:36px;line-height:36px;background:url(img/s-acci.png) no-repeat;color:#fff;font-family:Microsoft Yahei;font-size:14px;}
+        .auth-apply span{width:110px;height:32px;background-position:-190px -4px;line-height:32px;color:#666;}
+        .auth-apply a:hover{ text-decoration:none; color:#FFF;}
+
+.con-tips{ padding:20px;}
+.ci-tips{ padding:2px 2px 2px 20px; margin-left:6px; background:url(/css/m/app-frame/img/verify-bg.png) no-repeat scroll 0 -149px;}
+
+
+/*认证状态css yq*/
+.accri-status,.comp-accredit h5.t{ padding-left:25px;}
+.accri-status{ border-bottom:1px dashed #ccc; line-height:27px; padding-bottom:10px;}
+.accri-status li em{ margin-right:110px;}
+/*操作完成提示css yq*/
+.adres-con span.con-adress{ float:left;width:240px;}
+.accri-adress{ line-height:27px; padding-left:35px; border-bottom:1px dashed #ccc; padding-bottom:15px;}
+.accri-adress li{ overflow:hidden;}
+.accri-adress span{ float:left; }
+.accri-adress em{ float:left; width:250px; margin:0 10px 0 10px; color:#888;}
+.accri-adress em.mine{ width:150px; }
+.accri-adress i{ padding-left:20px; font-style:normal; font-weight:700;}
+.accri-adress i.cur{background:url(img/suss-icol.png) no-repeat 0 0;}
+.emy-show img{ margin-left:35px; width:200px; height:160px;}
+/*操作完成提示css yq*/
+.btn-reg{ display:inline-block; width:100px; height:36px;line-height:36px; text-align:center; margin-left:5px;background:url(img/btn-reg-bg.png) no-repeat 0 0;cursor:pointer;font-weight:700;font-size:14px;color:#666}
+.btn-reg:hover{ text-decoration:none; color:#666;}
+.hide{ display:none;}
+.comp-accredit .h-tips,.cxss-accredit .h-tips{border:1px solid #ffd186; padding:5px 9px; line-height:25px;background:#fefaef;}
+.comp-accredit .h-tips em,.cxss-accredit em{ color:#fa6500;}
+
+.comp-accredit li strong{ color:#FF0000; position:relative; top:2px;}
+.comp-accredit li .uploadimg div{ margin-right:20px;_margin-right:10px; width:200px;}
+.comp-accredit li .uploadimg p{ margin-bottom:15px;}
+.comp-accredit li .uploadimg .g-f-msg-box{width:auto;}
+.comp-accredit li .uploadimg .g-f-msg-box p{margin-bottom:0;}
+.comp-accredit .back{ margin-left:20px;}
+.comp-accredit .aff-value span#show-name{ line-height:28px;}
+.comp-accredit .aff-value .midfy{ margin-left:20px;}
+.comp-accredit .g-select{ width:92px;}
+.uploadimg{*padding-left:0;}
+
+.info-show{ position:relative;}
+.info-show .aff-item{ margin-bottom:10px;}
+.info-show .aff-key{ margin-left:20px; line-height:23px; display:inline; font-size:12px;}
+.info-show .aff-value{color:#666; line-height:22px; display:inline; float:left; padding-left:2px; width:235px;}
+.info-show .denf{ position:absolute; top:0; right:5px;}
+.info-show .denf span{ display:block; line-height:25px;}
+.info-show .denf img{ margin:6px 0;}
+.info-show .ctive .aff-value{ padding-left:151px; width:300px; }
+
+.compsuccess .tit{font-size:14px; overflow:hidden;zoom:1; padding-left:77px;}
+.comp-accredit .accreditation{padding-bottom:20px;}
+.accreditation .nav-tips{ width:605px;}
+.compsuccess .tit em{ float:left; margin-left:20px; font-weight:700;}
+.compsuccess .tit span{ float:left; width:135px; margin-right:10px; }
+.success-tips{ padding:10px 10px 10px 190px; line-height:27px;background:#e1f4ff url(img/success-icol.png) no-repeat 125px 25px; border:1px solid #e5edf1;}
+.success-tips strong{ font-size:14px; }
+.success-tips a{ text-decoration:underline; }
+input.icon-date{background:url(img/icon-date.png) 98% 4px no-repeat;}
+
+.comp-accredit .dis-tit{ border:1px solid #ccc; padding:10px;}
+
+.comp-accredit li .adress-con input,.comp-accredit li .adress-con input a,.comp-accredit li .adress-con input em{ float:left;}
+.comp-accredit li .add-adress{ position:relative; top:10px;*top:6px; display:inline-block;zoom:1; height:20px; margin:0 30px 0 5px; background:url(img/add-adress.png) no-repeat 0 2px; width:13px;  }
+.comp-accredit li .del-adress{ top:0; width:16px; background-position:5px -30px; margin-left:1px;}
+.comp-accredit li .adres-con{ margin-bottom:5px;}
+.show-frame dt,.ent-conn h3{ padding-left:15px; line-height:35px; margin-bottom:10px; border-bottom:1px dashed #CCC; font-size:14px; font-weight:700;}
+.show-frame .localinfo-shw{ position:absolute; right:50px; top:48px;}
+.show-frame dd{ margin-left:20px;}
+.show-frame .aff-key{ font-size:12px;}
+.show-frame .aff-value{ color:#999;}
+.loadimg{*padding-left:0;}
+.loadimg img{ float:left; margin-right:10px; width:200px; height:160px;}
+.comp-show{ float:left; width:300px; width:450px;}
+.r-img{ float:left; width:350px;}
+
+.localinfo-show .aff-key{ font-size:12px; line-height:18px;}
+.localinfo-show-r .aff-key{ font-size:12px; line-height:18px;}
+.localinfo-show .loadimg img{ margin-right:15px;text-align:left;}
+.localinfo-show em{ margin-left:40px; color:#333;}
+.localinfo-show .adress span.adr{ float:left; width:315px; }
+.localinfo-show .aff-value{ line-height:18px;}
+.localinfo-show .aff-value span{ float:left; width:200px;}
+.localinfo-show .aff-value .aff-submit{ width:auto;}
+li.addrtips{ margin-left:130px;}
+li.addrtips .g-f-msg-box{ position:relative; margin-top:-7px;}
+li.addrtips p{ margin-top:0;}
+.g-f-msg-box{ overflow:hidden;}
+#companyType{width:264px;}
+#companyType option{ display:block; padding-left:15px;}
+#companyType .first{ padding:0;}
+.g-f-msg-box{ display:block;}
+.aff-value select{ padding:4px; border:1px solid #CCC; width:115px;overflow:hidden;white-space:nowrap;}
+.aff-value .province,.aff-value .city{ float:left; margin:0 15px 0 0;}
+.adres-con select.border-error{ border:1px solid #fb9f9f;}
+.uploadimg { height:218px; }
+.uploadimg img{ width:200px; height:160px;}
+.comp-accredit li.border{ border-top:1px dashed #CCC; padding-top:10px;}
+
+.main-indu .btn{position:relative; border:1px solid #CCC; border-left:none; padding:0 12px; height:28px; float:left; background:#f4f4f4 url(img/m-btn.png) repeat-x 0 0;}
+.main-indu{ position:relative; width:630px;}
+.main-indu .selec-con{ overflow:hidden; zoom:1; float:left;width:340px;min-height:24px;_height:24px;border:1px solid #ccc; padding-top:2px; background:#FFF;}
+.main-indu .selec-con span{ float:left; padding:0 18px 0 5px; height:20px; line-height:20px; margin-left:5px; margin-bottom:3px; white-space:nowrap; background:#eaeaea url(img/select-close.png) no-repeat right 5px; cursor:pointer;}
+.main-indu .all-sele-con{display:none;position:absolute; z-index:44; top:28px; left:0; width:578px; border:1px solid #CCC; background:#FFF;}
+.main-indu .all-sele-con input{margin:0 3px 0 0;}
+.main-indu .indus-con label{display:inline-block; width:160px;_height:28px; white-space:nowrap; margin:0 6px;}
+.main-indu.hover .all-sele-con{display:block;}
+
+.cxss-accredit dl{margin:20px 0 0;}
+.cxss-accredit .regbtn{width:49px;height:24px;line-height:24px;text-align:center;background:url(img/back-bg.png) no-repeat;border:none;color:#333;cursor:pointer;}
+.cxss-accredit .dis-btn{background:#aaa;cursor:default;}
+.cxss-accredit dt{padding:0 0 10px 15px;border-bottom:solid 1px #ddd;font-weight:700;}
+.cxss-accredit dd{padding:20px 0 10px;}
+.cxss-accredit .aff-item{margin-bottom:9px;}
+.cxss-accredit .aff-text{width:210px;}
+.cxss-accredit .aff-value{padding-left:145px;}
+.cxss-accredit .aff-value select{width:auto;}
+.cxss-accredit .aff-key{color:#666;}
+.cxss-accredit .g-f-msg-box{display:inline-block;}
+.cxss-accredit .comtype .ty{margin:0 10px 0 0;}
+.uploadtip{margin:0 0 0 5px;color:#666;}
+.cxss-accredit .distext{background:#f6f6f6;}
+.cxss-accredit .abletext{border-color:#fff;background:#fff;padding:2px 0 5px;color:#f60;}
+.cxss-accredit .uploadpic{display:inline-block;margin:10px 0 0;}
+.cxss-accredit .description{width:390px;height:100px;}
+
+.accr-status{padding:15px;}
+.accr-status li{display:inline;margin:0 10px 0 0;}
+.accr-status li strong{font-weight:400;color:#666;}
+.accr-status li .ico{display:inline-block;padding:0 20px 0 0;background:url(img/verify-bg.png) 0 0 no-repeat;}
+.accr-status li .warn{color:#f60;}
+.accr-status li .refuse{background-position:right 2px;}
+.accr-status li .pass{background-position:right -48px;}
+
+.ac-top-tips {padding: 15px 20px 15px 15px;border: solid #eee 1px;background: #fafafa;line-height: 26px;}
+.ac-top-tips strong {color: #333;font-size: 14px;}
+.ac-top-tips a{margin:0 30px 0 0;}
+
+.company .auth-status{border:solid 1px #e9e9e9;background:url(//res.csc86.com/v2/c/member/authenticate/personalreal/css/img/status-bg.png) repeat-y 0 0;}
+.company .auth-status .hd{position: relative; width:40px;padding: 16px 30px 0; color: #fff;float:left;font-family:Microsoft YaHei;font-size:20px;font-weight:700;}
+.company .auth-status .hd .arr{position: absolute;top:0;right:-9px; display: block; width:10px;height:10px;background:url(//res.csc86.com/v2/c/member/authenticate/personalreal/css/img/status-arr.png);}
+.company .auth-status .bd{padding: 35px 0 30px 148px;font-weight:700;font-size:14px;font-family:arial,simsun;}
+.company .auth-status .bd ul{height:24px;}
+.company .auth-status .bd li{float:left;margin-right:50px}
+.company .auth-status .reason{line-height:22px;margin-top:5px;color:#fb6822;font-size:12px;}
+.company .auth-status .reason strong{color: #333;}
+
+.company .form-btn{margin-right:20px;padding:6px 12px;cursor: pointer;font-weight:700;border:0;border-radius:3px}
+.company a.form-btn{padding:0 12px;line-height:28px;display: inline-block;*display: inline;*zoom: 1;}
+.company a.form-btn:hover{text-decoration: none;}
+.company .submit-btn{background:#f9601d;color:#fff;font-size:12px;}
+.company .mt10{margin-top:10px;}
+
+/*新企业实名认证页面入口*/
+.new-entrance{padding-top:120px;padding-bottom:240px;text-align: center;color:#666;font-size: 14px;font-family:Microsoft YaHei;}
+.new-entrance a{display:inline-block;background-color: #f5b525;width:202px;height: 42px;line-height: 42px;margin-top:25px;color:#fff;border-radius: 3px;font-size: 16px;}
+.new-entrance a:hover{background-color: #eba406;text-decoration: none;}

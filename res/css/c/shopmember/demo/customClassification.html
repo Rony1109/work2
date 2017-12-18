@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>自定义分类</title>
+<link rel="stylesheet" type="text/css" href="/css/" />
+<link rel="stylesheet" href="/b=css&f=m/app-frame/style.css,c/membercenter/member.css,c/shopmember/shopmember.css,c/shopmember/classification.css,m/page/style.css" />
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/dialog/"></script>
+<script type="text/javascript" src="/b=js/c&f=shopmember/classify.js"></script>
+</head>
+
+<body>
+<div class="head">
+	<div class="g-o-a">
+		<ol class="g-f-r">
+			<li class="msg"><span>消息<i>(5)</i></span>
+				<div class="s-outer">
+					<div class="msg-con">
+						<div class="g-c-f"><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">XXX给你发来留言</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">你有10个询盘消息</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">XXX个系统消息个系统消息个系统消息个系统消息个系统消息</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">超级管家发来XX消息</a></span></div>
+						<p><a href="javascript:" class="all-show">查看全部消息&gt;&gt;</a></p>
+					</div>
+				</div>
+			</li>
+			<li class="user"><em>账号<i></i></em>
+				<div class="dial-user"> <span>admin</span>
+					<div><a href="javascript:" class="img"><img src="../../../../image/img.png" width="50" height="50"></a><a href="javascript:">账号管理 </a><a href="javascript:">账号安全</a><a href="javascript:" class="exit">安全退出</a></div>
+				</div>
+			</li>
+		</ol>
+		<a href="javascript:" class="img"><img src="../../../../image/c/m-logo.png" width="204" height="48"></a>
+		<ul class="main">
+			<li class="cur"><a href="javascript:">首页</a></li>
+			<li><a href="javascript:">个人社区</a></li>
+			<li class=""><a href="javascript:">企业管理</a></li>
+		</ul>
+	</div>
+</div>
+<div class="g-h-10"></div>
+<div class="g-o-a app-frame">
+	<div class="af-nav">
+		<h2>企业旺铺</h2>
+		<ul class="af-nav-items">
+			<li class="item has-children has-children-cur"><a href="javascript:">旺铺管理</a>
+				<ul>
+					<li><a href="javascript:">旺铺装修</a></li>
+				</ul>
+			</li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">公司管理</a>
+				<ul>
+					<li><a href="javascript:">公司介绍</a></li>
+					<li><a href="javascript:">联系方式</a></li>
+					<li><a href="javascript:">证书荣誉</a></li>
+				</ul>
+			</li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">产品管理</a>
+			<ul>
+					<li><a href="javascript:">发布供应产品</a></li>
+					<li><a href="javascript:">管理供应产品</a></li>
+					<li class="cur"><a href="javascript:">产品自定义分类</a></li>
+					<li><a href="javascript:">橱窗产品推荐</a></li>
+				</ul>
+			</li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">旺铺服务</a>
+			<ul><li><a href="javascript:">友情链接</a></li></ul>
+			</li>
+		</ul>
+	</div>
+	<div class="af-bd">
+		<h2 class="af-hd border-none">产品自定义分类</h2>
+		<ul class="g-c-f af-tab">
+      <li class="cur"><a href="#">自定义分类</a></li>
+      <li><a href="#">供应产品分类</a></li>
+    </ul>
+		<div class="g-h-10"></div>
+		<div class="classify">
+		<div class="g-c-f classify-top">
+			<input name="" type="button" class="addparentbtn" value="添加分类" />
+			</div>
+		    <div class="g-h-10"></div>
+			 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="customClassify">
+			 <thead>
+	<tr>
+		<th colspan="2">分类名称 </th>
+		<th width="15%">分类排序</th>
+		<th width="22%">管理分类信息 </th>
+		<th width="12%">操作</th>
+	</tr>
+	
+	</thead>
+	<tbody id="p01">
+	<tr class="parent">
+		<td><a class="branch" href="#"></a><input type="text" class="aff-text txt" /></td>
+		<td><a href="#" class="addsubbtn">添加子分类</a></td>
+		<td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td>
+		<td align="center"><a href="#">10条产品信息</a></td>
+		<td align="center"><a href="#" class="del">删除</a></td>
+	</tr>
+	<tr class="subCon" id="s01"><td><span class="broken"></span><input type="text" class="aff-text txt" value="1" /></td><td></td><td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td><td align="center"></td><td align="center"><a href="#" class="del">删除</a></td></tr>
+	<tr class="subCon" id="s02"><td><span class="broken"></span><input type="text" class="aff-text txt" value="2" /></td><td></td><td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td><td align="center"></td><td align="center"><a href="#" class="del">删除</a></td></tr>
+	<tr class="subCon" id="s03"><td><span class="broken"></span><input type="text" class="aff-text txt" value="3" /></td><td></td><td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td><td align="center"></td><td align="center"><a href="#" class="del">删除</a></td></tr>
+	</tbody>
+	
+	<tbody id="p02">
+	
+	<tr class="parent">
+		<td><a class="branch" href="#"></a><input type="text" class="aff-text txt" /></td>
+		<td><a href="#" class="addsubbtn">添加子分类</a></td>
+		<td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td>
+		<td align="center"><a href="#">10条产品信息</a></td>
+		<td align="center"><a href="#" class="del">删除</a></td>
+	</tr>
+	</tbody>
+	
+	<tbody  id="p03">
+	<tr class="parent">
+		<td><a class="branch" href="#"></a><input type="text" class="aff-text txt" /></td>
+		<td><a href="#" class="addsubbtn">添加子分类</a></td>
+		<td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td>
+		<td align="center"><a href="#">10条产品信息</a></td>
+		<td align="center"><a href="#" class="del">删除</a></td>
+	</tr>
+	</tbody>
+	
+	<tfoot>
+	<tr class="parentCon" id="parentCon" style="display:none;"><td width="29%"><a class="branch" href="#"></a><input type="text" class="txt" /></td><td width="22%"><a href="#" class="addsubbtn">添加子分类</a></td><td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td><td></td><td align="center"><a href="#" class="del">删除</a></td></tr>
+	<tr class="subCon" id="subCon" style="display:none;"><td><span class="broken"></span><input type="text" class="txt" /></td><td></td><td align="center"><a href="#" class="order up" title="上升"></a><a href="#" class="order down" title="下降"></a></td><td align="center"></td><td align="center"><a href="#" class="del">删除</a></td></tr>
+	</tfoot>
+</table>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a href="javascript:">关于华南城</a>|<a href="javascript:">About csc86.com</a>|<a href="javascript:">会员服务</a>|<a href="javascript:">广告服务</a>|<a href="javascript:">商务合作</a>|<a href="javascript:">服务条款</a>|<a href="javascript:">法律申明</a>|<a href="javascript:">隐私保护</a>|<a href="javascript:">意见反馈</a>|<a href="javascript:">帮助中心</a>|<a href="javascript:">网站地图</a>|<a href="javascript:">联系我们</a></div>
+	<p class="group-link">Copyright©2009-2011 China South City Holdings Limited. All Rights Reserved </p>
+	华南城控股有限公司 版权所有</div>
+</body>
+</html>

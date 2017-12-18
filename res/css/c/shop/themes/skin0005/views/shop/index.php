@@ -1,0 +1,65 @@
+<?php $this->widget('Banner');?>
+<div class="g-o-a">
+	<div class="main home">
+		<div class="box-home rec-product">
+			<h2 class="bh-hd">橱窗产品<span>SHOWROOM</span></h2>
+			<div class="bh-bd">
+				<?php if(ShopHelper::XmlCallBack('getShopProductList')){?><ul class="g-c-f g-i-v-m rec-list">
+				<?php foreach (ShopHelper::XmlCallBack('getShopProductList') as $value){?>
+					<li class="item">
+						<div class="ibox">
+							<a href="/product/<?php echo CSCHelper::setDefault($value['id'])?>.html" class="i" target="_blank">
+								<img src="<?php echo ShopHelper::scale($value['pic1'],300);?>" data-max="238" alt="<?php echo CSCHelper::setDefault($value['title']);?>" />
+							</a>
+						</div>
+						<a href="/product/<?php echo CSCHelper::setDefault($value['id'])?>.html" class="t" target="_blank"><?php echo CSCHelper::setDefault($value['title']);?></a>
+						<div class="price"><strong><?php echo CSCHelper::priceFormat($value['price'],$value['speak']);?></strong></div>
+						<div class="g-c-f">
+						<?php if(array_search($value['id'], $collectProduct)){?>
+							<a class="g-f-l g-ico ico-favorited" rel="nofollow" data-id="14204" href="javascript:">已收藏</a>
+						<?php }else{?>
+							<a href="javascript:void(csc.shop.fav('<?php echo CSCHelper::setDefault($value['id'])?>',function (){csc.shop.favRec('<?php echo CSCHelper::setDefault($value['id'])?>')}));" data-id="14204" class="g-f-l g-ico ico-favorite" rel="nofollow">收藏</a>
+						<?php }?>
+							<a href="http://jiaoyi.csc86.com/inquiry/publish/?proid=<?php echo CSCHelper::setDefault($value['id'])?>" class="g-f-r g-ico ico-inquiry" target="_blank" rel="nofollow">立即询盘</a>
+						</div>
+					</li>
+				<?php }?>
+				</ul>
+				<?php }else{ ?>
+				<div class="empty">暂无橱窗产品</div>
+				<?php }?>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<div class="box-home hot-product">
+			<div class="bh-hd">
+				<h2>热门产品<span>HOT PRODUCTS</span></h2>
+				<a href="/product.html" class="more" rel="nofollow">更多&gt;&gt;</a>
+			</div>
+			<div class="bh-bd">
+				<?php if(ShopHelper::XmlCallBack('getHotProductList')){?><ul class="g-c-f g-i-v-m thumb-list">
+				<?php foreach (ShopHelper::XmlCallBack('getHotProductList') as $value){?>
+					<li class="item">
+						<div class="ibox">
+							<a href="/product/<?php echo CSCHelper::setDefault($value['id'])?>.html" class="i" target="_blank">
+								<img src="<?php echo ShopHelper::scale($value['pic1'],300);?>" data-max="160" alt="<?php echo CSCHelper::setDefault($value['title']);?>" />
+							</a>
+						</div>
+						<a href="/product/<?php echo CSCHelper::setDefault($value['id'])?>.html" class="t" target="_blank"><?php echo CSCHelper::setDefault($value['title'])?></a>
+						<div class="price">
+							<strong>
+								<?php echo CSCHelper::priceFormat($value['price'],$value['speak']);?>
+							</strong>
+						</div>
+						<a href="http://jiaoyi.csc86.com/inquiry/publish/?proid=<?php echo CSCHelper::setDefault($value['id'])?>" class="g-ico ico-inquiry" target="_blank" rel="nofollow">立即询盘</a>
+					</li>
+				<?php }?>
+				</ul><?php }else{ ?>
+				<div class="empty">暂无热门产品</div>
+				<?php }?>
+			</div>
+		</div>
+	</div>
+	<div class="sub"><?php CSCHelper::widgets(array('Company','Cate','News','Links'));?></div>
+
+</div>

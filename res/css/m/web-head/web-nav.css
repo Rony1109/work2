@@ -1,0 +1,22 @@
+/*主导航*/
+.m-nav{height:37px; min-width:1000px; line-height:37px; background:#e94545;}
+.m-nav .g-o-a{position:relative;}
+.m-nav li{ float:left; width:110px; height:37px; line-height:37px; text-align:center;}
+.m-nav li a{ float:left; width:100px; height:34px; line-height:30px;_line-height:32px;margin-top:3px;font-family:Microsoft YaHei,simhei; font-size:15px;font-weight:700; color:#FFF;}
+.m-nav li a.new{ background-image: url(img/new.gif); background-position: 68px 5px; background-repeat: no-repeat; }
+@media all and (-webkit-min-device-pixel-ratio:0) {
+	.m-nav li a{ line-height:32px}
+}
+.m-nav li.cur a,.m-nav li a:hover{ background-color:#FFF; color:#e94545; text-decoration:none; *zoom:1;}
+
+.m-nav li.rel-iocl{ position:relative;}
+.m-nav li.rel-iocl i{ position:absolute; top:-6px; right:12px; width:24px; height:13px; background:url(img/nav-iocl.png) no-repeat 0 0;}
+
+.m-nav .jnb-vip{position:absolute;right:5px;bottom:0;_bottom:1px; height:53px;}
+.m-nav .jnb-vip:hover{text-decoration:none;}
+
+.hot-industry{ width:998px; height:22px; padding:7px 0; font-size:14px; line-height:22px; border:1px solid #ebebeb; border-top:none;}
+.hot-industry span{ float:left; padding-right:15px; margin:0 -20px 0 30px;}
+.hot-industry a{ float:left;  padding:0 8px 0 8px; color:#444}
+.hot-industry a.new{background:url(img/new.gif) no-repeat right 0; padding-right:23px;}
+.hot-industry a:hover{ color:#2664a2; }

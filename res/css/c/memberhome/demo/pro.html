@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员中心</title>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" /><script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script><link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" /><script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script></head>
+<body>
+<div class="head"><!--顶部导航 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script><link rel="stylesheet" href="http://res.csc86.com/f=css/c/offer/style.css" />
+<script src="http://res.csc86.com/editor/"></script>
+<script src="http://res.csc86.com/swfupload/"></script>
+<script src="http://res.csc86.com/b=js&f=m/page.js,m/showFormError.js,c/offer/list.js"></script>	
+<div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+  <h2>产品管理</h2>
+  <ul class="nav-items">
+    <li class="bg-none item cur"><a href="/product/sell/category.html">发布供应产品</a></li>
+    <li class="bg-none item"><a href="/product/sell/list.html">管理供应产品</a></li>
+    <!--<li class="item"><a href="javascript:">管理旺铺产品分类</a></li>-->
+  </ul><script>seajs.use(csc.url("res","/f=js/m/statusTab"),function (){
+			csc.statusTab("ul.nav-items>li.item>a");
+		});</script>
+</div>
+<div class="af-bd pro-pub">
+    <h1 class="af-hd"><a href="http://cncms.csc86.com/special/ranking/" target="_blank">如何让产品排名靠前？</a>管理供应产品</h1>
+    <ul class="g-c-f af-tab">
+      <li class="cur"><a href="/product/sell/list.html">已发布上网</a></li>
+      <li ><a href="/product/sell/list.html?status=N">审核中</a></li>
+      <li ><a href="/product/sell/list.html?status=R">审核未通过</a></li>
+	  <li ><a href="/product/sell/list.html?status=A">已下架</a></li>
+	  <li style="float:right; border:none; background:none;">共<span style="color:#F00;">13</span>条数据</li>
+	      
+    </ul>
+    <div class="g-c-f af-page">
+        <ul class="g-f-l afp-option">
+          <li class="select-all"><label>
+            <input name="all" type="checkbox" value="">
+            全选</label></li>
+          <li class="item"><a href="/product/sell/delete/">删除</a></li>          <li class="item"><a href="/product/sell/Ungroundings/">批量下架</a></li>          <li class="pr-push"><a href="/product/sell/Ungroundings/">一键发布第三方平台</a></li> <li class="search">
+               <form method="get">
+                    <input type="text" name="title" class="txt" placeholder="请输入产品名称" value="" maxlength="10"/><input type="submit" value="搜索" class="btn" />
+               </form>
+           </li>
+        </ul>
+        <div class="g-f-r afp-bd">
+          <div class="afp-box">
+            <form onSubmit="csc.page(this);return false;">
+            跳转到第<input teype="text" vlaue="" class="afp-text" name="page" />页
+            <input type="submit" value="确定" class="afp-btn" />
+            </form>
+          </div>
+           <span>1/<span class="p-total">2</span> 页</span><a href=''>下一页</a><a href="javascript:" onClick="csc.afPage(this)">跳转</a><script src="http://res.csc86.com/f=js/m/page.js"></script>        </div>      
+      </div> 
+    <div class="af-list">
+      <table width="100%">
+        <thead class="af-list-hd">
+          <tr>
+            <td width="34"></td>
+            <td width="100">产品图片</td>
+            <td>产品名称</td>
+            <td width="130">发布时间</td>
+            <td width="60">操作</td>
+            <td width="60">商机</td>
+            <td width="80">第三方平台</td>
+          </tr>
+        </thead>
+        <tbody class="af-list-bd">
+          <tr>
+            <td class="c"><input name="id[]" type="checkbox" value="3d5732cf-56ad-4129-8290-aa651912c271" /></td>
+            <td class="g-i-v-m thimg"><div class="ibox"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2013/11/09/thumbs/201311091449940_t0.jpeg" data-max="60"/></a></div></td>
+            <td class="t"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank">654641321</a></td>
+            <td>2013-11-09</td>
+            <td><a href="/product/sell/Update/?proid=3d5732cf-56ad-4129-8290-aa651912c271">修改</a><span class="g-ff-s">|</span> <a href="/product/sell/Ungrounding/?proid=3d5732cf-56ad-4129-8290-aa651912c271" >下架</a></td>
+            <td>
+            	<div class="pro-sj">
+           	    	<img onClick="csc.offer.sj(this)" src="../img/pro-mem.gif" width="20" height="15" title="好像有人想买这个产品" alt=""/>
+                    <div class="pro-sj-txt">
+                    	<a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                    </div>
+                </div>
+                </td>
+          		<td> 
+                <span class="albb-no"><i></i></span>
+                <span class="albb-info">未发布</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="c"><input name="id[]" type="checkbox" value="3d5732cf-56ad-4129-8290-aa651912c271" /></td>
+            <td class="g-i-v-m thimg"><div class="ibox"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2013/11/09/thumbs/201311091449940_t0.jpeg" data-max="60"/></a></div></td>
+            <td class="t"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank">654641321</a></td>
+            <td>2013-11-09</td>
+            <td><a href="/product/sell/Update/?proid=3d5732cf-56ad-4129-8290-aa651912c271">修改</a><span class="g-ff-s">|</span> <a href="/product/sell/Ungrounding/?proid=3d5732cf-56ad-4129-8290-aa651912c271" >下架</a></td>
+            <td>
+            	<div class="pro-sj">
+           	    	<img onClick="csc.offer.sj(this)" src="../img/pro-mem.gif" width="20" height="15" title="好像有人想买这个产品" alt=""/>
+                    <div class="pro-sj-txt">
+                    	<a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                    </div>
+                </div>
+                </td>
+              	<td> 
+                <span class="albb-no"><a href="jvascript:;" target="_blank">进入详情</a></span>
+                <span class="albb-info">已发布</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="c"><input name="id[]" type="checkbox" value="3d5732cf-56ad-4129-8290-aa651912c271" /></td>
+            <td class="g-i-v-m thimg"><div class="ibox"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2013/11/09/thumbs/201311091449940_t0.jpeg" data-max="60"/></a></div></td>
+            <td class="t"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank">654641321</a></td>
+            <td>2013-11-09</td>
+            <td><a href="/product/sell/Update/?proid=3d5732cf-56ad-4129-8290-aa651912c271">修改</a><span class="g-ff-s">|</span> <a href="/product/sell/Ungrounding/?proid=3d5732cf-56ad-4129-8290-aa651912c271" >下架</a></td>
+            <td>
+            	<div class="pro-sj">
+           	    	<img onClick="csc.offer.sj(this)" src="../img/pro-mem.gif" width="20" height="15" title="好像有人想买这个产品" alt=""/>
+                    <div class="pro-sj-txt">
+                    	<a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                    </div>
+                </div>
+                </td>
+          		<td> 
+                <span class="albb-no"><a href="jvascript:;" target="_blank">进入详情</a></span>
+                <span class="albb-info">已发布</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="c"><input name="id[]" type="checkbox" value="3d5732cf-56ad-4129-8290-aa651912c271" /></td>
+            <td class="g-i-v-m thimg"><div class="ibox"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2013/11/09/thumbs/201311091449940_t0.jpeg" data-max="60"/></a></div></td>
+            <td class="t"><a href="http://offer.csc86.com/product/3d5732cf-56ad-4129-8290-aa651912c271.html" target="_blank">654641321</a></td>
+            <td>2013-11-09</td>
+            <td><a href="/product/sell/Update/?proid=3d5732cf-56ad-4129-8290-aa651912c271">修改</a><span class="g-ff-s">|</span> <a href="/product/sell/Ungrounding/?proid=3d5732cf-56ad-4129-8290-aa651912c271" >下架</a></td>
+            <td>
+            	<div class="pro-sj">
+           	    	<img onClick="csc.offer.sj(this)" src="../img/pro-mem.gif" width="20" height="15" title="好像有人想买这个产品" alt=""/>
+                    <div class="pro-sj-txt">
+                    	<a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                        <a href="#" target="_blank" title="求购一万个">求购一万个LED灯泡</a>
+                    </div>
+                </div>
+               </td>
+          		<td> 
+                <span class="albb-no"><a href="jvascript:;" target="_blank">进入详情</a></span>
+                <span class="albb-info">已发布</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="g-c-f af-page">
+        <ul class="g-f-l afp-option">
+          <li class="select-all"><label>
+            <input name="all" type="checkbox" value="">
+            全选</label></li>
+          <li class="item"><a href="/product/sell/delete/">删除</a></li><li class="item"><a href="/product/sell/Ungroundings/">批量下架</a></li><li class="pr-push"><a href="/product/sell/Ungroundings/">一键发布第三方平台</a></li></ul>
+        <div class="g-f-r afp-bd">
+          <div class="afp-box">
+            <form onSubmit="csc.page(this);return false;">
+            跳转到第<input teype="text" vlaue="" class="afp-text" name="page" />页
+            <input type="submit" value="确定" class="afp-btn" />
+            </form>
+          </div>
+           <span>1/<span class="p-total">2</span> 页</span><a href=''>下一页</a><a href="javascript:" onClick="csc.afPage(this)">跳转</a><script src="http://res.csc86.com/f=js/m/page.js"></script>        </div>      
+      </div>  
+    </div>
+</div></div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+	深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>
+

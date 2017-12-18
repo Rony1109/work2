@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* 企业会员中心改版 2013.08.19 by lg */
+
+/*m-mid*/
+.m-mid{margin-left:25px;width:610px;float:left;margin-top:20px;}
+
+	/*通用标题样式*/
+.p-tit{height:40px;line-height:40px;font-size:18px;color:#444;font-weight:400;border-bottom:2px solid #ebebeb;_position:relative;}
+.tit-m{height:40px;_height:46px;float:left;border-bottom:2px solid #3b405e;_position:absolute;_top:0;_left:0;}
+.p-tit a.tit-txt{float:right;font-size:12px;color:#3B405E;height:30px;padding-top:6px;}
+a:hover.tit-txt{color:#F67301;}
+	
+	/*我的商城和团购*/
+.my-mall,.my-tuan{width:288px;height:132px;background-image:url(img/fun-bg.gif);background-repeat:no-repeat;position:relative;}
+.my-mall a,.my-tuan a{position:absolute;font-size:16px;}
+.my-mall a:hover,.my-tuan a:hover{color:#F67301;}
+.my-mall{float:left;}
+.my-tuan{float:right;background-position:0 -133px;}
+.my-mall:hover,.my-mall-cur{background-position:0 -266px;}
+.my-tuan:hover,.my-tuan-cur{background-position:0 -399px;}
+.my-ord{top:18px;left:165px;color:#ccc;}
+.my-cou{top:52px;left:115px;color:#333;}
+.my-adr{top:52px;left:195px;color:#ccc;}
+.my-cha{top:87px;left:115px;color:#ccc;}
+.my-fav{top:87px;left:190px;color:#888;}
+.my-inv{top:18px;left:135px;color:#ccc;}
+.my-odr{top:52px;left:115px;color:#333;}
+.my-cop{top:52px;left:195px;color:#333;}
+.my-int{top:87px;left:113px;color:#ccc;}
+.my-acc{top:87px;left:190px;color:#ccc;}
+
+	/*通用圆角框*/
+.rd{}
+.rd-c{border-left:1px solid #ebebeb;border-right:1px solid #ebebeb;background-color:#f5f5f5;}
+.rd-up{height:2px;border-top:1px solid #ebebeb;position:relative;background-color:#f5f5f5;}
+.rd-dw{height:2px;border-bottom:1px solid #ebebeb;position:relative;}
+.rd .rd-dw{background-color:#f5f5f5;}
+.r-up-left{left:0;top:-1px;position:absolute;}
+.r-up-right{right:0;top:-1px;position:absolute;}
+.r-dw-left{left:0;top:0;position:absolute;}
+.r-dw-right{right:0;top:0;position:absolute;}
+
+	/*会员资料块*/
+.m-info{padding:15px;position:relative;}
+.c-name{color:#067ED4;font-size:14px;height:30px}
+.c-name h3{float:left;}
+.c-name h3 a,.c-name h3 a:hover{font-size:14px;margin-left:0px;}
+.c-name b.info-icon{margin-left:20px;margin-right:5px;}
+.c-name span{color:#f67301;font-size:12px;}
+.c-statistics a{color:#f77402}
+.c-name a{color:#2664A2;font-size:12px;margin-left:5px;}
+.c-name a:hover{color:#F67301;}
+.c-grade{margin-top:10px;_margin-top:15px;}
+.c-grade .m-l-45{margin-left:30px;}
+.c-grade span{color:#333;_display:inline;}
+.c-grade em{color:#888;}
+.c-grade em.vip{color:#f67301;}
+.c-grade a{color:#2664A2;margin-left:10px;}
+.c-grade a:hover{color:#F67301;}
+.c-grade a b.turn-icon{margin-right:3px;}
+.store-info{margin-top:10px;color:#333;}
+.store-info a{margin-right:12px;color:#2664A2;}
+.store-info a:hover{color:#F67301;}
+.light-img{width:138px;position:absolute;top:-3px;right:-1px;}
+.light-img a{display:block;background-color:#F5F5F5;}
+.light-img a:hover{background-position:-70px -161px;}
+.light-img a.hover,.light-img a.hover:hover{background-position:-70px -213px;padding-top:40px;}
+
+	/*感兴趣的好友*/
+.boys .r-dw{}
+.boys-list{background-color:#fff;_padding-bottom:15px;}
+.rd-tit{padding:0 20px;height:30px;line-height:28px;font-weight:400;}
+.rd-tit .f-l{font-size:14px;color:#444;}
+.rd-tit .f-r{_margin-top:7px;}
+.rd-tit .f-r a{color:#666;}
+.rd-tit .f-r a:hover{color:#F67301;}
+.rd-tit .f-r a:hover .ref-icon{background-position:-50px -163px;}
+.boys-list li{width:165px;float:left;margin:22px 0 22px 28px;line-height:16px;_display:inline;_zoom:1;}
+.boys-list li img{float:left;margin-right:10px;}
+.boys-list li span{float:left;}
+.boys-list li span.f-l em{display:block;height:16px;width:51px;overflow:hidden;}
+.boys-list li a:hover{color:#F67301;}
+.boys-list li a:hover b.plus-icon{background-position:-23px -192px;}
+.boy-name{color:#067ED4;}
+.boy-adr{color:#888;}
+.boy-add{float:right;height:20px;padding:0 6px;border:1px solid #ebebeb;line-height:20px;text-align:center;margin-top:5px;_padding:6px 6px 0;_height:16px;_overflow:hidden;}
+
+	/*tab*/
+.tab{margin-top:18px;}
+.tab-list{height:30px;line-height:30px;border-bottom:1px solid #ebebeb;_border-bottom:0;_margin-bottom:-1px;}
+.tab-list li{float:left;color:#444;font-size:14px;padding:0 10px;height:30px;line-height:30px;cursor:pointer;}
+.tab-list li.cur{border:1px solid #ebebeb;border-bottom:0;background-color:#fff;line-height:28px;_position:relative;_z-index:10;}
+.hot-list{padding-left:10px;padding-top:10px;}
+.hot-list li{height:38px;line-height:38px;border-bottom:1px solid #ebebeb;padding-right:10px;}
+.hot-list li .hotnum-icon{float:left;text-align:center;padding-right:4px;color:#888;line-height:20px;margin-top:9px;margin-right:15px;}
+.hot-list li .c-f67301{color:#f67301;}
+.hot-list-txt{float:left;width:320px;overflow:hidden;margin-right:10px;}
+.hot-list-txt a{color:#333;}
+.hot-list-txt a:hover{color:#f67301;}
+.hot-list .f-r b{margin-left:25px;margin-bottom:2px;margin-right:5px;}
+#tabCont{_border-top:1px solid #ebebeb;}
+
+.disc-list{padding:10px 20px;}
+.disc-list dt{font-size:14px;}
+.disc-list .disc-icon{margin-right:7px;}
+.disc-list dd {line-height:30px;padding:0 21px;}
+.disc-list dd .disc-null{float:none;text-align:center;color:#888;}
+.disc-list dd .disc-null a{color:#067ED4;float:none;}
+.disc-list dd .disc-null a:hover{color:#F67301;float:none;}
+.disc-list dd a b.disc-min-icon{margin-bottom:2px;margin-right:5px;}
+.disc-list dd a{float:left;width:164px;margin-right:10px;color:#888;}
+.disc-list dd a:hover{color:#F67301;}

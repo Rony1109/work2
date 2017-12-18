@@ -1,0 +1,34 @@
+.rec-list{}
+.rec-list .item,.thumb-list .item{_display:inline;float:left;}
+.rec-list .item{width: 250px;height: 345px;margin:10px 5px;padding:2px;background:url(img/bg.png) repeat-x 0 bottom;border:solid 1px #ebebeb;}
+.rec-list .ibox,.rec-list .i{width:250px;height: 250px;outline:none;overflow:hidden;}
+.rec-list .i img{max-width:250px;max-height:250px;_display:none;}
+.rec-list .i{*font-size: 250px;}
+.rec-list .t,.thumb-list .t{display:block;height:40px;margin-top:3px;line-height:20px;overflow:hidden}
+.rec-list .price,.thumb-list .price{margin-bottom:6px;}
+.rec-list .t,.rec-list .price{padding:0 5px;}
+.rec-list .price strong,.thumb-list .price strong{color:#c00;font:700 14px arial;}
+.rec-list .price em,.thumb-list .price em{color:#888;font-family:Microsoft Yahei;}
+.rec-list .price i,.thumb-list .price i{font-style:normal;font-size:12px;}
+.rec-list .price span,.thumb-list .price span{color:#888;font-size:12px;}
+.rec-list .price dfn,.thumb-list .price dfn{font-size:12px;font-family:Microsoft Yahei;}
+
+.rec-list .g-ico{position: absolute;width:75px;padding:4px 0 4px 52px; background-position:26px 60% }
+.rec-list .g-c-f{margin-left:-9px}
+.rec-list .ico-inquiry{margin-left:127px;border-left:solid 1px #e7e7e7;}
+.rec-list .ico-favorited{cursor:default}
+
+.thumb-list .item{width:176px;height:300px;margin:0 14px;_display:inline;_overflow:hidden;}
+.thumb-list .ibox,.thumb-list .i{width:160px;height:160px;overflow:hidden;}
+.thumb-list .ibox,.thumb-list .i img{max-width:160px;max-height:160px;}
+.thumb-list .i img{_display:none;}
+.thumb-list .ibox{padding:2px;border:solid 1px #e0e0e0;}
+.thumb-list .i{*font-size: 160px}
+.thumb-list .t{margin:6px 0 3px}
+
+/* 东盟旺铺加标识 */
+.logo-name .name-asean{padding-right: 30px;background: url(img/icon-asean-4.png) right 10px no-repeat;}
+.asean-icon-4{position: absolute;z-index: 999;display: block;width: 51px;height: 22px;left: -4px;top: -1px;background: url(img/icon-asean-5.png) no-repeat;_bacground:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/icon-asean-5.png");}
+.rec-list .item,.thumb-list .item{position: relative;}
+
+.logo-name .name-fur{padding-right: 46px;background: url(img/icon-fur-1.png) right 10px no-repeat;}

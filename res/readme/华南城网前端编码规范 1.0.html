@@ -1,0 +1,563 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>华南城网前端编码规范 1.0</title>
+<style>
+body {
+    font:12px/1.5 Verdana, '微软雅黑'
+}
+pre {
+    font: 14px/1.5 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', '微软雅黑';
+    padding: 10px;
+    background: #F8F8F6;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+}
+table {
+    border-collapse: collapse;
+}
+table,
+td,
+tr,
+th {
+    border-collapse: collapse;
+    border: 1px solid #d1d1d1;
+}
+td {
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>华南城网前端编码规范 1.0</h1>
+<p>本规范共分为三部分，<a href="#web">前端通用编码规范</a> <a href="#css">css编码规范</a> <a href="#html">html编码规范</a> <a href="#javascript">javascript编码规范</a></p>
+<ol>
+  <li>
+    <h2 id="web">前端通用编码规范</h2>
+    <ol>
+      <li>
+        <h3>文件编码</h3>
+        <p>前端开发涉及的所文件统一使用utf-8编码</p>
+      </li>
+      <li>
+        <h3>id 和 class 命名约定</h3>
+        <ol>
+          <li>议少用id，必须保证id唯一性</li>
+          <li>id 和 class 的命名总规则为： 内容优先,表现为辅. 首先根据内容来命名, 比如 main-nav. 如果根据内容找不到合适的命名, 可以再结合表现来定, 比如 skin-blue, present-tab, col-main. </li>
+          <li>id 和 class 名称一律小写, 多个单词用连字符连接, 比如 recommend-presents.</li>
+          <li>id 和 class 名称中只能出现小写的 26 个英文字母、数字和连字符(-), 任何其它字符都严禁出现.</li>
+          <li>id 和 class 尽量用英文单词命名.</li>
+          <li>在不影响语义的情况下, id 和 class 名称中可以适当采用英文单词缩写, 比如 col, nav, hd, bd, ft 等, 但切忌自造缩写.</li>
+          <li>id 和 class 名称中的第一个词必须是单词全拼或语义非常清晰的单词缩写, 比如 present, col.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <h2 id="css">css编码规范</h2>
+    <ol>
+      <li>
+        <h3>申明及注释</h3>
+        <p>文件头部必须加上文件申明信息，必须包括文件描述、作者、最后更新(更新人+时间)</p>
+        <pre>/*
+*@Description: 头部公用样式
+*@Author:      章君
+*@Update:      章君(2011-08-09 17:22)
+*/</pre>
+      </li>
+      <li>
+        <h3>Hack 规则</h3>
+        <p>通用 Hack</p>
+        <pre>.all-IE{property:value\9;}
+:root .IE-9{property:value\0/;}
+.gte-IE-8{property:value\0;}
+.lte-IE-7{*property:value;}
+.IE-7{+property:value;}
+.IE-6{_property:value;}
+.not-IE{property//:value;}
+@-moz-document url-prefix() { .firefox{property:value;} }
+@media all and (-webkit-min-device-pixel-ratio:0) { .webkit{property:value;} }
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) { .opera{property:value;} }
+@media screen and (max-device-width: 480px) { .iphone-or-mobile-s-webkit{property:value;} }</pre>
+      </li>
+      <li>
+        <h3>CSS文件</h3>
+        <ul>
+          <li>文件一律通过 link 链入 (NOT @import) </li>
+          <li> 当只是单个页面使用时，才写在 &lt;head&gt; 的 &lt;style&gt; 中</li>
+        </ul>
+      </li>
+      <li>
+        <h3>书写顺序</h3>
+        <pre>//显示属性
+* display
+* list-style
+* position
+* float
+* clear
+//自身属性
+* width
+* height
+* margin
+* padding
+* border
+* background
+//文本属性
+* color
+* font
+* text-decoration
+* text-align
+* vertical-align
+* white-space
+* other text
+* content
+
+
+display || visibility
+list-style : list-style-type || list-style-position || list-style-image
+position
+top || right || bottom || left
+z-index
+float
+clear
+
+width
+max-width || min-width
+height
+max-height || min-height
+overflow || clip
+margin : margin-top || margin-right || margin-bottom || margin-left
+padding : padding-top || padding-right || padding-bottom || padding-left
+outline : outline-color || outline-style || outline-width
+border
+background : background-color || background-image || background-repeat || background-attachment || background-position
+
+color
+font : font-style || font-variant || font-weight || font-size || line-height || font-family
+font : caption | icon | menu | message-box | small-caption | status-bar
+text-decoration
+text-align
+vertical-align
+white-space
+text-indent
+text-overflow
+line-height
+content
+cursor
+
+zoom
+</pre>
+      </li>
+      <li>
+        <h3>书写格式</h3>
+      </li>
+      <li>
+        <h3>命名规范</h3>
+        <ul>
+          <li>所有g-开头class为全局级样式，全部放在base-reset.css文件中，其他地方不允许出现以g-开头的class</li>
+          <li>所有m-开头class为模块样式，每个模块应建立单独的文件夹和css，并有demo，<br />
+            文件夹结构参考前端目录构架，其他地方不允许出现以g-开头的class<br />
+            模块下面再取 xxx-hd(头部),xxx-bd(内容),xxx-ft(尾部)命名</li>
+          <li>on, active, first, last, list, item, col, nav, hd, bd, ft…是公共级别，不准单独定义其样式</li>
+        </ul>
+      </li>
+      <li>
+        <h3>层级(z-index)关系</h3>
+        <ul>
+          <li>1-99 普通页面内容</li>
+          <li>100-299 预留</li>
+          <li>300-399 区块展开、弹出，像隐藏菜单、二级导航之类</li>
+          <li>400-599 预留</li>
+          <li>600-799 页面弹窗、气泡</li>
+          <li>层级应尽量就低，为10的整数倍，最高层级不超过799</li>
+        </ul>
+      </li>
+      <li>
+        <h3>其他</h3>
+        <ul>
+          <li>不要在CSS中使用 "*" 选择符 </li>
+          <li>不要直接修改标签的样式</li>
+          <li>禁止使用expression表达式</li>
+          <li>禁止滥用！important</li>
+          <li>在保证选择器准确的情况下尽量简化选择器 (尽量不超过4级，最多4级)，不写多余的选择器(如class/id前的标签选择器、li上一级的的ul/ol、dt/dd上一级的dl等，在保证准确的前提下能去掉的都去掉)</li>
+          <li>字体粗细采用具体数值，粗体bold写为700，正常normal写为400</li>
+          <li>颜色用#f60，能简写的颜色简写</li>
+          <li>能缩写的尽量缩写，如margin、padding、font(font-style font-variant font-weight font-size/line-height font-family)、border(border-width border-style border-color)、background(background-color background-image background-repeat background-attachment background-position)等</li>
+          <li>去掉0后面的单位</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <h2 id="html">html编码规范</h2>
+    <ol>
+      <li>
+        <h3>DOCTYPE </h3>
+        <p>页面文档类型统一使用HTML5 DOCTYPE. 代码如下：</p>
+        <pre>&lt;!doctype html&gt;</pre>
+      </li>
+      <li>
+        <h3>编码 </h3>
+        <p>声明方法遵循HTML5的规范. 代码如下：</p>
+        <pre>&lt;meta charset="utf-8" /&gt;</pre>
+      </li>
+      <li>
+        <h3>语义化 </h3>
+        <p>使用符合语义的标签书写 HTML 文档, 选择恰当的元素表达所需的含义</p>
+        <ol>
+          <li>
+            <h4>结构性元素</h4>
+            <ul>
+              <li>p 表示段落. 只能包含内联元素, 不能包含块级元素;</li>
+              <li>li 本身无特殊含义, 可用于布局. 几乎可以包含任何元素;</li>
+              <li>br 表示换行符;</li>
+              <li>hr 表示水平分割线;</li>
+              <li>h1-h6 表示标题. 其中 h1 用于表示当前页面最重要的内容的标题;</li>
+              <li>blockquote 表示引用, 可以包含多个段落. 请勿纯粹为了缩进而使用 blockquote, 大部分浏览器默认将 blockquote 渲染为带有左右缩进;</li>
+              <li>pre 表示一段格式化好的文本;</li>
+            </ul>
+          </li>
+          <li>
+            <h4>头部元素</h4>
+            <ul>
+              <li>title 每个页面必须有且仅有一个 title 元素;</li>
+              <li>base 可用场景：首页、频道等大部分链接都为新窗口打开的页面;</li>
+              <li>link link 用于引入 css 资源时, 可省去 media(默认为all) 和 type(默认为text/css) 属性;</li>
+              <li>style type 默认为 text/css, 可以省去;</li>
+              <li>script type 属性可以省去; 不赞成使用lang属性; 不要使用古老的&lt;!– //–&gt;这种hack脚本, 它用于阻止第一代浏览器(Netscape 1和Mosaic)将脚本显示成文字;</li>
+              <li>noscript 在用户代理不支持 JavaScript 的情况下提供说明;</li>
+            </ul>
+          </li>
+          <li>
+            <h4>文本元素</h4>
+            <ul>
+              <li>a a 存在 href 属性时表示链接, 无 href 属性但有 name 属性表示锚点;</li>
+              <li>em,strong em 表示句意强调, 加与不加会引起语义变化, 可用于表示不同的心情或语调; strong 表示重要性强调, 可用于局部或全局, strong强调的是重要性, 不会改变句意;</li>
+              <li>abbr 表示缩写;</li>
+              <li>sub,sup 主要用于数学和化学公式, sup还可用于脚注;</li>
+              <li>span 本身无特殊含义;</li>
+              <li>ins,del 分别表示从文档中增加(插入)和删除</li>
+            </ul>
+          </li>
+          <li>
+            <h4>媒体元素</h4>
+            <ul>
+              <li>img 请勿将img元素作为定位布局的工具, 不要用他显示空白图片; 必要时给img元素增加alt属性;</li>
+              <li>object 可以用来插入Flash;</li>
+            </ul>
+          </li>
+          <li>
+            <h4>列表元素</h4>
+            <ul>
+              <li>dl 表示关联列表, dd是对dt的解释; dt和dd的对应关系比较随意：一个dt对应多个dd、多个dt对应一个dd、多个dt对应多个dd, 都合法; 可用于名词/单词解释、日程列表、站点目录;</li>
+              <li>ul 表示无序列表;</li>
+              <li>ol 表示有序列表, 可用于排行榜等;</li>
+              <li>li 表示列表项, 必须是ul/ol的子元素;</li>
+            </ul>
+          </li>
+          <li>
+            <h4>表单元素</h4>
+            <ul>
+              <li>推荐使用 button 代替 input, 但必须声明 type;</li>
+              <li>推荐使用 fieldset, legend 组织表单</li>
+              <li>表单元素的 name 不能设定为 action, enctype, method, novalidate, target, submit 会导致表单提交混乱</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h3>大小写，属性值</h3>
+        <p>元素的标签和属性名必须小写, 属性值必须加双引号</p>
+      </li>
+      <li>
+        <h3>html模板</h3>
+        <pre>&lt;!doctype html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&lt;title&gt;csc example page&lt;/title&gt;<br />&lt;link rel=&quot;stylesheet&quot; href=&quot;css_example_url&quot; /&gt;<br />&lt;script src=&quot;js_example_url&quot;&gt;&lt;/script&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&lt;div class=&quot;header&quot;&gt;<br />    页头<br />&lt;/div&gt;<br />&lt;div class=&quot;content&quot;&gt;<br />    主体<br />&lt;/div&gt;<br />&lt;div class=&quot;footer&quot;&gt;<br />    页尾<br />&lt;/div&gt;<br />&lt;script&gt;<br />// 你的代码<br />&lt;/script&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <h2 id="javascript">javascript编码规范</h2>
+    <p>JavaScript程序应独立保存在后缀名为.js的文件中。</p>
+    <p>js代码不应该被包含在HTML文件中,除非这是段特定只属于此部分的代码。在HTML中的js代码会明显增加文件大小,而且也不能对其进行缓存和压缩。</p>
+    filename.js应尽量放到body的后面。这样可以减少因为载入script而造成其他页面内容载入也被延迟的问题。也没有必要使用 language或者type属性。MIME类型是由服务器而非scripttag来决定的。
+    </p>
+    <ol>
+      <li>
+        <h3>注释</h3>
+        <ul>
+          <li>
+            <p>每个js文件的文件头都必须包含@author, 建议加上@version</p>
+            <pre>/**
+* jQuery JavaScript version 1.0
+* author Yngqin
+* Date: 2012.05.28 10:34
+*/</pre>
+          </li>
+          <li>
+            <p>私有函数，建议添加 @ignore 让文档输出时可以忽略这段注释</p>
+          </li>
+          <li>
+            <p>函数内部调用其他的函数，建议加上@see Function 来对上下文做索引</p>
+          </li>
+          <li>
+            <p>每个带参数的函数必须包含 @param </p>
+            <pre>/**
+*基类 Shape
+* @constructor
+* @base Shape
+* @param args
+* @return  returnValue
+*/
+function Circle(args){
+// do some thing 
+return  returnValue
+}
+</pre>
+          </li>
+          <li>
+            <p>构造函数 必须加上 @constructor（同上）</p>
+          </li>
+          <li>
+            <p>每个有返回值的函数必须包含 @return（同上）</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>标识符命名</h3>
+        <p>在js中，标识符的命名规则是：由包含字母、数字和下划线组成，且第一个字符必须是字母开头或下划线或＄（一般不要用＄）符。不能与 JavaScript 保留字（Key Words，凡是可以用来做 JavaScript 命令的字都是保留字）重复；在js中变量是区分大小写的；命名规则参考下表：</p>
+        <table width="700">
+          <thead>
+            <tr>
+              <th>结构</th>
+              <th>规则</th>
+              <th>样例</th>
+            </tr>
+          <thead>
+            <tr>
+              <td>构造函数</td>
+              <td>驼峰式 </td>
+              <td>ModuleClass() </td>
+            </tr>
+            <tr>
+              <td>公有方法</td>
+              <td>混合式</td>
+              <td>getPosition()</td>
+            </tr>
+            <tr>
+              <td>公有变量</td>
+              <td>混合式</td>
+              <td>frameStyle</td>
+            </tr>
+            <tr>
+              <td>常量</td>
+              <td>大写式</td>
+              <td>DEFAULT_FRAME_LAYOUT</td>
+            </tr>
+            <tr>
+              <td>私有方法</td>
+              <td>混合</td>
+              <td>_mixedCase（）</td>
+            </tr>
+            <tr>
+              <td>私有变量</td>
+              <td>混合</td>
+              <td>_mixedCase</td>
+            </tr>
+            <tr>
+              <td>方法（method）参数</td>
+              <td>混合</td>
+              <td>_mixedCase, mixedCase</td>
+            </tr>
+            <tr>
+              <td>本地（local）变量</td>
+              <td>混合</td>
+              <td>_mixedCase, mixedCase</td>
+            </tr>
+        </table>
+      </li>
+      <li>
+        <h3>缩进</h3>
+        <p>华南城网提倡4 个空格。这是因为直到现在还没有统一的标准来定义 TAB 键所代替的空白大小，有些编辑器解析为 4 个空格大小，有些则解析为 8 个。因而用不同的编辑器查看代码，可能造成格式混乱。当然 TAB 简单易用，为解决这问题，建议在设置开发环境时，将编辑器里的 TAB 快捷键重新设置为 4 个空格。据了解 Eclipse, Vi, Nodepad++，Editplus, UltraEdit 等流行的编辑器，均提供了此功能。</p>
+        <ul>
+          <li>
+            <h4>变量声明:</h4>
+            多个变量声明时, 适当换行表示;参照 var 关键字, 缩进一层次</li>
+          <li>
+            <h4>函数参数:</h4>
+            函数参数写在同一行上;传递匿名函数时, 函数体应从调用该函数的左边开始缩进</li>
+          <li>
+            <h4>数组和对象初始化时:</h4>
+            如果初始值不是很长, 尽量保持写在单行上;初始值占用多行时, 缩进一层次;对象中, 比较长的变量/数值, 不要以冒号对齐</li>
+          <li>
+            <h4>二元/三元操作符:</h4>
+            操作符始终跟随前行;实在需要缩进时, 按照上述缩进风格</li>
+        </ul>
+      </li>
+      <li>
+        <h3>空格</h3>
+        <ul>
+          <li>数值操作符(如, +/-/*/% 等)<b>两边留空</b></li>
+          <li>赋值操作符/等价判断符两边留一空格</li>
+          <li>for 循环条件中, 分号后留一空格
+            <pre>for(var i = 0 ; i < 9 ; i++){
+  statements;
+}
+</pre>
+          </li>
+          <li>变量声明语句, 数组值, 对象值及函数参数值中的逗号后留一空格</li>
+          <li>空行不要有空格</li>
+          <li>行尾不要有空格</li>
+          <li>逗号和冒号后一定要跟空格</li>
+          <li>点号前后不要出现空格</li>
+          <li>空对象和数组不需要填入空格</li>
+          <li>函数名末尾和左括号之间不要出现空格</li>
+        </ul>
+      </li>
+      <li>
+        <h3>换行</h3>
+        行长超过右边界，根据以下原则断行：
+        <ul>
+          <li>逗号之后换行</li>
+          <li>分隔符之前换行</li>
+          <li>尽可能在高一级断行，不要低一级断行</li>
+          <li>新行和上一行同一级别的表达式的开始处对齐</li>
+          <li>如果按上述规则，导致令人混淆的代码，或新行超越了右边界，则缩进8个字符即可</li>
+        </ul>
+      </li>
+      <li>
+        <h3>语句</h3>
+        Javascript程序是由若干语句组成的，语句是编写程序的指令。Javascript提供了完整的基本编程语句
+        <ul>
+          <li>赋值语句
+            <pre>var str = "value1";  //声明变量并赋值
+var obj = new Object();  //创建一个对象的实例
+var fn=function fname(){statements;} //命名表达式
+var person={name:"admin",age:26}; //字面量声明方式
+</pre>
+          </li>
+          <li>if, if-else, if else-if else 语句
+            <pre>if (condition) {
+    statements;
+}
+
+if (condition) {
+    statements;
+} else {
+    statements;
+}
+
+if (condition) {
+    statements;
+} else if (condition) {
+    statements;
+} else {
+    statements;
+}
+</pre>
+          </li>
+          <li>switch选择语句
+            <pre>switch (condition) {
+case ABC:
+    statements;
+    /* falls through */
+case DEF:
+    statements;
+    break;
+case XYZ:
+    statements;
+    break;
+default:
+    statements;
+    break;
+}
+
+</pre>
+          </li>
+          <li>while循环语句
+            <pre>while (condition) {
+    statements;
+    update;   // 更新循环变量
+}</pre>
+          </li>
+          <li>for循环语句
+            <pre>for(var i = 0 ; i < 9 ; i++){
+  statements;
+}
+</pre>
+          </li>
+          <li>do while循环语句
+            <pre>do {
+    statements;
+    update;   // 更新循环变量
+} while (condition);</pre>
+            注：只少执行一次循环 </li>
+          <li>for-in循环语句
+            <pre>for(var i in Object){
+  console.log("i" + " : " + Object[i]); //输出对象的所有属性值
+}
+</pre>
+          </li>
+          <li>break循环终止语句
+            <pre>while (condition) {
+    if(condition){
+    	break; //跳出循环体，程序往下执行
+    }
+    statements;
+    update;   // 更新循环变量
+}</pre>
+          </li>
+          <li>continue循环中断语句
+            <pre>while (condition) {
+    if(condition){
+    	continue; //终止本次循环，执行下一次循环
+    }
+    statements;
+    update;   // 更新循环变量
+}</pre>
+          </li>
+          <li>with语句
+            <pre>with (Math) {
+   x = cos(3 * PI) + sin(LN10);
+   y = tan(14 * E);
+}</pre>
+          </li>
+          <li>try-catch语句
+            <pre>try {
+    statements;
+} catch (ExceptionClass ec) {
+    statements;
+} finally {
+    statements;
+}</pre>
+          </li>
+          <li> 另外，call语句，apply语句，eval等用法，请大家参考网上的建议。 </li>
+        </ul>
+      </li>
+      <li>
+        <h3>一般建议</h3>
+        <ul>
+          <li>写js代码最头痛的是兼容性的问题，而每个浏览器对js的支持有不同。这就需要我们自己去兼容他们
+            <pre>IE：有window.event对象   
+FF：没有window.event对象。可以通过给函数的参数传递event对象。如onmousemove=doMouseMove(event)
+解决方法：var event = event || window.event; 
+
+example:
+function test(event) {
+var event = event || window.event;
+//do Something
+}</pre>
+          </li>
+          <li>不要使用parentElement，统一采用parentNode，保证兼容性。</li>
+          <li>不要使用document.getElementById('xx').value 这样的方式来访问Dom元素对象的属性或值，先将元素对象获取到变量中，例如：var txtName=document.getElementById('textName')判断Dom对象是否存在再取它的属性或值，以提高程序的健壮性。</li>
+          <li>类型编写必须使用prototype模式，避免在内存中创建相同方法的多个实例。</li>
+          <li>使用大括弧来定义静态对象，而不是使用new Object()的方式。</li>
+          <li>尽量不要使用全局变量，如果需要使用多个方法访问的变量，请将变量和方法放在一个静态Object对象中。</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ol>
+</body>
+</html>

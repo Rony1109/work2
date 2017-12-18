@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* 企业会员中心改版 2013.08.19 by lg */
+
+/*right*/
+.m-right{width:190px;float:right;margin-top:20px}
+
+/*right-menu*/
+.right-menu div{float:left}
+.right-menu a.open-shop,.right-menu a.get-busi,.right-menu a.visit-markt,.right-menu a.a-tuan,.right-menu a.brand-sale,.right-menu a.int-cer,.right-menu a.up-goods,.right-menu a.buy-info,.right-menu a.up-info,.right-menu a.get-info,.right-menu a.s-more,.right-menu a.ico-mcon,.right-menu a.m-iquiry,.right-menu a.m-product,.right-menu a.rank,.right-menu a.m-quoted{float:left;display:block;width:95px;height:0px;padding-top:95px;overflow:hidden;vertical-align:middle;background:url(img/right-menu.gif) no-repeat}/*icon*/
+.right-menu a.open-shop{background-position:-191px -570px}
+.right-menu a.get-busi{background-position:-286px 0}
+.right-menu a.visit-markt{background-position:-191px -95px}
+.right-menu a.a-tuan{background-position:-286px -95px}
+.right-menu a.brand-sale{background-position:-191px -190px}
+.right-menu a.int-cer{background-position:-286px -190px}
+.right-menu a.up-goods{background-position:-191px -285px}
+.right-menu a.buy-info{background-position:-286px -285px}
+.right-menu a.m-iquiry{background-position:-286px -570px}
+.right-menu a.m-product{background-position:-191px -665px}
+.right-menu a.rank{background-position:-286px -665px}
+.right-menu a.m-quoted{background-position:-191px -760px}
+.right-menu a.up-info{background-position:-191px -380px}
+.right-menu a.get-info{background-position:-286px -380px}
+.right-menu a.s-more{background-position:-191px -475px}
+.right-menu a.open-shop:hover{background-position:0 -570px}
+.right-menu a.get-busi:hover{background-position:-95px 0}
+.right-menu a.visit-markt:hover{background-position:0 -95px}
+.right-menu a.a-tuan:hover{background-position:-95px -95px}
+.right-menu a.brand-sale:hover{background-position:0px -190px}
+.right-menu a.int-cer:hover{background-position:-95px -190px}
+.right-menu a.up-goods:hover{background-position:0 -285px}
+.right-menu a.buy-info:hover{background-position:-95px -285px}
+.right-menu a.up-info:hover{background-position:0 -380px}
+.right-menu a.get-info:hover{background-position:-95px -380px}
+.right-menu a.m-iquiry:hover{background-position:-95px -570px}
+.right-menu a.m-product:hover{background-position:0 -665px}
+.right-menu a.rank:hover{background-position:-95px -665px}
+.right-menu a.m-quoted:hover{background-position:0 -760px}
+.right-menu a.s-more:hover{background-position:0 -475px}
+.right-menu a.mcon{display:block;width:19px;height:19px;line-height:19px;overflow:hidden;position:absolute;right:15px;top:10px;z-index:1;text-align:center;color:#fff;}
+.right-menu a.mcon .ico-mcon{position:absolute;top:0;left:0;display:block;width:19px;height:0px;padding-top:19px;background:url(img/member-icon.gif) no-repeat;background-position:-23px -202px;z-index:-1;}
+.right-menu div:hover.g-p-r a.up-goods,.right-menu div.hover a.up-goods{background-position:0 -285px;}

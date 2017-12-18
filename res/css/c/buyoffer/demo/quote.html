@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>报价单</title>
+<link rel="stylesheet" href="/css/base-reset.css" />
+<link rel="stylesheet" href="../buyoffer.css" />
+<script src="/js/l/jquery.js"></script>
+<script src="/js/m/config.js"></script>
+<script src="/js/m/tab.js"></script>
+</head>
+
+<body>
+<div class="g-o-a list">
+  <div class="w-180 g-f-l list-nav">
+    <h2>报价管理</h2>
+    <ul class="nav-items">
+      <li class="cur"><a href="javascript:">收到的询盘</a></li>
+      <li><a href="javascript:">发出的报价</a></li>
+    </ul>
+  </div>
+  <div class="w-768 g-f-l list-bd">
+    <h1 class="g-fs-16">询盘报价</h1>
+    <div class="g-h-12"></div>
+    <div class="box-a">
+      <h2 class="ba-hd">询盘</h2>
+      <div class="ba-bd offer-info"> <a href="javascrpt:" class="see-detail">查看询盘详情</a>
+        <div class="g-h-01"></div>
+        <table>
+          <tr>
+            <th>产品名称：</th>
+            <td><a href="javascript:" class="g-fw-b">求购女式风衣</a></td>
+          </tr>
+          <tr>
+            <th>产品数量：</th>
+            <td>1000 件</td>
+          </tr>
+          <tr>
+            <th>交货地点：</th>
+            <td>广东省深圳市平湖华南城　　　　　交货期限：2012年12月31日前</td>
+          </tr>
+          <tr>
+            <th>留言：</th>
+            <td>要求现货美元交易，急要。XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="g-h-12"></div>
+    <div class="box-a my-quote">
+      <h2 class="ba-hd">我的报价单</h2>
+      <a href="javascript:" class="show-detail" onclick="$(this).toggleClass('show-less');$('.ba-bd>table').toggleClass('show');">展开详情</a>
+      <div class="ba-bd">
+        <table width="100%" class="mini show">
+          <tr>
+            <th>总报价：</th>
+            <td><strong>11000.00</strong>元</td>
+            <th>单价：</th>
+            <td>100.00/件</td>
+          </tr>
+        </table>
+        <table width="100%" class="complete">
+          <thead>
+            <tr>
+              <td class="g-t-r" width="80">报价项目　</td>
+              <td width="70"></td>
+              <td> 金额（元）</td>
+              <td width="215"> 数量（件）</td>
+              <td width="80">合计（元）</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>商品报价：</th>
+              <td></td>
+              <td>100.00　　　此报价已含税</td>
+              <td>100</td>
+              <td>10000.00</td>
+            </tr>
+            <tr>
+              <th>运费报价：</th>
+              <td></td>
+              <td>1000.00</td>
+              <td></td>
+              <td>1100.00</td>
+            </tr>
+            <tr>
+              <th>其他费用：</th>
+              <td></td>
+              <td>0.00</td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr class="total">
+              <th>总报价：</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><strong>0.00</strong></td>
+            </tr>          <tr>
+              <th>其他说明：</th>
+              <td colspan="3">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="box-a buy-msg"> <span class="up-ico"><span class="g-v-h">&uarr;</span></span>
+      <h2 class="ba-hd">买家留言</h2>
+      <div class="ba-bd">
+        <div class="msg">你好，贵公司的报价我们收到了。但是100元的单价有点高，能不能酌情降低单价？</div>
+        <div class="g-f-r ui-re-btn"><a href="javascript:">报价回复</a><a href="javascript:">留言回复</a></div>
+        <div class="g-h-01"></div>
+      </div>
+    </div>
+    <div class="g-h-12"></div>
+    <ul class="g-c-f status-tab">
+      <li class="cur"><a href="javascript:">报价</a></li>
+      <li><a href="javascript:">留言</a></li>
+    </ul>
+    <div class="quote-form">
+      <div class="qf-item re-quote cur">
+        <h3 class="rq-hd">报价单<span class="g-fw-n">（现货/标准品）</span></h3>
+        <div class="g-h-01"></div>
+        <div class="quote-order">
+          <table class="quote-order-hd" width="100%">
+            <tr>
+              <td width="110">报价项目</td>
+              <td class="g-t-l">　　金额（元）</td>
+              <td width="200" class="g-t-l">数量（件）</td>
+              <td width="90">合计（元）</td>
+            </tr>
+          </table>
+          <table class="quote-order-bd" width="100%">
+            <tfoot>
+              <tr>
+                <th><strong>总报价：</strong></th>
+                <td></td>
+                <td></td>
+                <td><strong class="total">1000.00</strong></td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <th width="90">商品报价：</th>
+                <td><input name="" type="text" class="text" />
+                  <br />
+                  <label>
+                    <input type="checkbox" />
+                    此报价已含税</label></td>
+                <td width="190">100</td>
+                <td width="80">1000.00</td>
+              </tr>
+              <tr>
+                <th>运费报价：</th>
+                <td><input name="" type="text" class="text" /></td>
+                <td></td>
+                <td>1100.00</td>
+              </tr>
+              <tr>
+                <th>其他费用：</th>
+                <td><input name="" type="text" class="text" /></td>
+                <td></td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="g-h-18"></div>
+        <div class="order-other"><em class="g-f-l g-t-r">其他说明：</em>
+          <textarea name="" cols="" rows=""></textarea>
+          </div>
+        
+      </div>
+      <div class="g-t-c qf-item leave-msg"><textarea name="" cols="" rows=""></textarea></div><div class="g-h-10"></div>
+          <span class="g-f-r ui-submit">
+          <input type="submit" value="提交报价"/>
+          </span>
+          <div class="g-h-20"></div>
+    </div>
+    <script>
+	csc.tab(".status-tab>li",".quote-form>.qf-item","click",function (t){$(".ui-submit>input").val("提交" + t.children("a").text());});
+    </script>
+  </div>
+</div>
+</body>
+</html>

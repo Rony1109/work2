@@ -1,0 +1,105 @@
+/*我的账户中心-内容块 by lg 2013.07.09*/
+
+.uc-c-f .b1,.uc-c-f .b2,.uc-c-f .b3,.uc-c-f .b4{height:1px;font-size:0px;overflow:hidden;display:block;background-color:#fff;}
+.uc-c-f .b1{height:0;margin:0 5px;border-top:1px solid #ebebeb;}
+.uc-c-f .b2{margin:0 3px;border-right:2px solid #ebebeb;border-left:2px solid #ebebeb;}
+.uc-c-f .b3{margin:0 2px;border-right:1px solid #ebebeb;border-left:1px solid #ebebeb;}
+.uc-c-f .b4{margin:0 1px;border-right:1px solid #ebebeb;border-left:1px solid #ebebeb;height:2px;}
+.uc-c-m{border-right:1px solid #ebebeb;border-left:1px solid #ebebeb;background-color:#fff;}
+.uc-c-m h3{height:35px;line-height:35px;padding:0 25px;border-bottom:1px solid #ebebeb;font-weight:400;}
+.uc-c-m h3 em{font-size:18px;color:#333;float:left;font-family:Microsoft YaHei,SimHei;}
+	/*选项卡*/
+.uc-c-m h3.h3-tab{padding:0;}
+.uc-c-m h3.h3-tab em{position:relative;z-index:2;height:39px;padding:0 25px;border-right:1px solid #EBEBEB;margin-top:-4px;font-size:16px;cursor:pointer;}
+.uc-c-m h3.h3-tab em a,.uc-c-m h3.h3-tab em a:hover{color:#444;text-decoration:none;}
+.uc-c-m h3.h3-tab em.cur{border-bottom:3px solid #1693a5;height:36px;}
+.uc-price{color:#ff0000; font-size:16px; vertical-align:middle; padding-bottom:2px;margin-right:4px;font-weight:bold;}
+.uc-prics{ font-weight:bold; color:#444; font-size:16px;}
+/*table*/
+.uc-table{width:100%;}
+.uc-table th,.uc-table td{border-collapse:collapse;border:1px solid #ececec;text-align:center;}
+.uc-table th{font-weight:700;color:#333;line-height:35px;}
+.uc-table td{padding-top:17px;padding-bottom:17px;}
+.uc-table td a:hover{ color:#2664A2;}
+
+/*blank-list*/
+.blank-list{padding:30px;text-align:center;}
+.blank-list span{font-size:20px;margin-left:20px;font-family:Microsoft YaHei,SimHei;line-height:60px;}
+.blank-list span.f-s-14{font-size:14px;}
+.blank-list span.m-l-10{margin-left:10px;}
+.blank-list .san-tips{width:80%;margin:0 auto;text-align:left;font-family:Microsoft YaHei,SimHei;}
+.blank-list .san-tips .tips-icon{float:left;}
+.blank-list .san-tips span{float:left;width:85%;font-size:16px;color:#666;line-height:26px;margin-top:5px;}
+
+/**
+ * 服务列表
+ */
+.service-list{padding:5px 30px 30px}
+.service-list .item{padding:20px 0;border-bottom:dotted 0px #ececec;}
+.service-list .icon{float:left;width:95px;}
+.service-list .des{float:left;width:340px;color:#888;font-family:Microsoft YaHei,SimHei;}
+.service-list .des h4{color:#444;font-size:20px;font-weight:400}
+.service-list .des h4 span{color:#ff3266;font-size:16px;font-weight:700}
+.service-list .des p{position:relative;}
+.service-list .des p a{position:absolute;padding:0px 8px;background-color:#fff;right:0;bottom:0;_bottom:auto;}
+.service-list .price{float:left;width:125px;height:50px;padding:32px 0 0 80px;}
+.service-list .action{float:left;padding-top:25px;}
+
+/**
+ * 服务确认
+ */
+.service-confim{color:#888;padding:45px 50px 60px}
+.service-confim .icon{float:left;width:115px}
+.service-confim .des{padding-left:115px;font-size:14px;line-height:22px;}
+.service-confim .des h4{ margin-bottom:10px; color:#1693a5;font-size:22px;font-weight:400;font-family:Microsoft YaHei,SimHei}
+.service-confim .service-detail{padding:45px 0 20px}
+	/*确认订购*/
+.confim-options{margin-top:20px;font-size:14px;line-height:24px;color:#444;}
+.confim-options strong{float:left;width:80px;}
+.confim-options p{margin-left:80px;color:#666;}
+.confim-options p label{margin-right:35px;}
+
+.protocol{margin-top:5px}
+.protocol p{color:#888;font-size:12px}
+.protocol-error p{color:#f00}
+
+/**
+ * 支付信息
+ */
+.pay-info{margin-top:-24px;padding:15px 25px;background:#f2f2f2;border:solid 1px #e7e7e7;border-radius:5px}
+.pay-btn{padding-left:75px}
+.pay-password{margin-bottom:10px;}
+.pay-password .uc-input{width:160px}
+
+/**
+ * 我的服务
+ */
+.my-service{padding-bottom:60px;}
+.my-service li{float:left;width:210px;margin:40px 0 0 40px;}
+.my-service h4{width:115px; height:26px; padding:5px 0 8px; color:#444;font-size:20px;font-weight:400;font-family:Microsoft YaHei,SimHei;overflow:hidden;}
+.my-service .icon{float:left;width:95px}
+.my-service .use-btn{padding:0 8px 2px;cursor: pointer;background:#ebebeb;border:solid 1px #d9d9d9;border-radius:2px;color:#888;text-decoration:none;line-height:20px}
+
+/**
+ * 我的订单
+ */
+ 
+.g-btn{ margin-left:15px; }
+a.g-btn:hover {
+    background-position: right 0;
+    text-decoration: none;
+}
+a.g-btn:hover em {
+    background-position: 0 0;
+    color: #888888;
+}
+.my-order{padding:30px 20px;}
+.my-order .g-t-l{padding:0 10px;}
+.my-order .Spage_noB{padding:10px 0;text-align:right;}
+/* 订单提醒 yq 2014.03.20 */
+.aui_title{min-width:400px !important; }
+.aui_content{ white-space:normal !important;}
+.con_art{ padding:0 25px; overflow:hidden; zoom:1; }
+.art_btn a.m-l-80{ margin-left:140px;}
+.con_art em.iocl{ float:left; width:95px; height:68px;background:url(img/pay_icol.jpg) no-repeat 0 0 }
+.con_art span{ float:left; width:221px; padding-top:8px; font-size:17px;font-family:Microsoft YaHei,SimHei;}

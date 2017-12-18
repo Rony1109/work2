@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="/css/" />
+<link rel="stylesheet" href="/b=css&f=m/app-frame/style.css,c/membercenter/member.css,c/shopmember/shopmember.css,c/shopmember/company.css,c/shopmember/shopnews.css" />
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/swfupload/"></script>
+<script type="text/javascript" src="/editor/"></script>
+<script src="/b=js&f=c/shopmember/uploadimg.js,c/shopmember/reditionuploadimg.js,c/shopmember/preview.js,c/shopmember/news.js"></script>
+</head>
+<body>
+<div class="g-h-10"></div>
+<div class="g-o-a app-frame">
+	<div class="af-nav">
+		<h2>企业旺铺</h2>
+		<ul class="af-nav-items">
+			<li class="item has-children has-children-cur"><a href="javascript:">旺铺管理</a>
+				<ul>
+					<li><a href="javascript:">旺铺装修</a></li>
+				</ul>
+			</li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">公司管理</a>
+				<ul>
+					<li><a href="javascript:">公司介绍</a></li>
+					<li><a href="javascript:">联系方式</a></li>
+					<li><a href="javascript:">证书荣誉</a></li>
+				</ul>
+			</li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">产品管理</a></li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">旺铺服务</a></li>
+			<li class="item has-children  has-children-cur"><a href="javascript:">公司动态</a>
+				<ul>
+					<li class="cur"><a href="javascript:">发布公司动态</a></li>
+					<li><a href="javascript:">公司动态管理</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="af-bd">
+		<h2 class="af-hd">发布公司动态<span class="g-fs-12 g-fw-n"> （公司动态将展示在您的旺铺前台和企业商圈，快速宣传您的企业形象）</span></h2>
+		<form id="newsForm">
+			<div class="g-c-f sh-news">
+				<ul class="g-f-l">
+					<li class="g-c-f aff-item">
+						<div class="aff-key"><span class="star">*</span>标题：</div>
+						<div class="aff-value">
+							<input type="text" name="title" value="" data-verify='{"role":[{"regex":"/[^`~!@#%$^&*()=|{}:;,\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“。，、？]/","tip":"标题不能全部特殊字符"},{"regex":"/^.{5,}$/","tip":"标题过短，最少5个字"},{"regex":"/^.{5,30}$/","tip":"标题过长，最多30个字"}],"must":{"tip":"标题不能为空"},"success":{"tip":" "}}' class="aff-text" />
+							<div class="g-f-msg-box"><p class="g-f-error"></p></div>
+						</div>
+					</li>
+					<li>
+						<div class="aff-key"><span class="star">*</span>文字内容：</div>
+						<div class="aff-value">
+							<textarea name="content" id="newscontent" class="newscontent"></textarea>
+							<div class="f-amount">0/100000</div>
+							<div class="g-f-msg-box" id="n-editor"><p class="g-f-error" id="amountErr"></p></div>
+						</div>
+					</li>
+					<li class="g-c-f aff-item">
+						<div class="aff-key">插入图片：</div>
+						<div class="aff-value">
+							<div class="newspic"><a href="javascript:" id="newspicupload">00</a>&nbsp;&nbsp;<span class="g-f-c-8">图片格式可为jpg、png、gif，图片大小不能超过3M</span><br/><span class="news-pic"><span class="xc"></span><img src="/image/img.png" width="100" height="100" /></span>
+					</div>
+						</div>
+					</li>
+					<li class="g-c-f aff-item"><div class="aff-key">关键词：</div>
+					<div class="aff-value"><input type="text" name="keyword" data-verify='{"role":[{"regex":"/^([A-Za-z\u4e00-\u9fa5]+)(,[A-Za-z\u4e00-\u9fa5]+)*$/","tip":"汉字或汉字与字母组合"},{"regex":"/^.{0,30}$/","tip":"关键词过长，最多30个字"}],"success":{"tip":" "}}' class="aff-text" />&nbsp;&nbsp;<span class="g-f-c-8">多个关键词之间请用“,”隔开</span></div>
+					</li>
+					<li class="g-c-f aff-item"><div class="aff-key"></div>
+					<div class="aff-value"><input name="" type="submit" class="btn btn2" value="发表" disabled="disabled" /><input name="" type="button" class="btn btn2" value="预览" /></div>
+					</li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div>
+<script>
+	$(function (){
+		var	othis = csc.sns;
+		othis.picUpload=[];
+		othis.picUpload[1] = new SWFUpload(csc.sns.uploadSetting("newspicupload","上传图片",25));
+	});
+	seajs.use(csc.url("res","/f=js/m/verify"),function (){
+		csc.verify("input[data-verify]");
+	});
+</script>
+</body>
+</html>

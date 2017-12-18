@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>我的账户中心-修改密码</title>
+<link rel="stylesheet" href="/bhf/" />
+<link rel="stylesheet" href="/css/m/acenter/acenter-top/top.css" />
+<link rel="stylesheet" href="/css/m/acenter/acenter-footer/footer.css" />
+<link rel="stylesheet" href="/css/m/acenter/uc/uc.css" /><!--账户中心all-->
+<link rel="stylesheet" href="/css/m/acenter/uc-sidebar/uc-sidebar.css" /><!--账户中心 仅sidebar-->
+<link rel="stylesheet" href="/css/m/acenter/uc-content/uc-content.css" /><!--账户中心 所有内容块-->
+<link rel="stylesheet" href="/css/c/acenter/change-pwd.css" /><!--账户中心 修改密码页面-->
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/js/c/acenter/changepwd.js"></script>
+
+</head>
+
+<body>
+<div class="top-bar"><!--top bar start-->
+    <div class="g-o-a">
+        <div class="top-csc-group"> <a href="http://group.csc86.com" target="_blank">走进华南城</a> <span class="coming"> <a href="http://sz.csc86.com" target="_blank">深圳</a><a href="http://nn.csc86.com" target="_blank">南宁</a><a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a><a href="http://xa.csc86.com" target="_blank">西安</a><a href="http://group.csc86.com/project/zhengzhou/introduce.html" target="_blank">郑州</a><a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a> </span> </div>
+        <div class="top-my-account">
+            <div class="hd">我的账户</div>
+            <div class="g-c-f bd ">
+                <ul class="csc-bd">
+                    <li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+                    <li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+                    <li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+                    <li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-sign-info"> 您好，<span class="bd">欢迎光临华南城网！ <a class="tit" href="http://member.csc86.com/login/phone/" rel="nofollow">登录</a><span class="v-line"></span><a href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow">免费注册</a></span><span class="v-line"></span> </div>
+    </div>
+</div><script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("div.top-my-account");csc.hover("div.top-csc-group");});</script><!--top bar end-->
+
+<div class="nav-shadow">
+    <div class="pay-nav"><!--pay-nav start-->
+        <h1><a href="http://www.csc86.com" title="华南城网首页"><img src="/css/m/acenter/acenter-top/img/logo.jpg" alt="华南城网账户中心" width="273" height="51"></a></h1>
+        <ul class="nav">
+            <li><a class="home_txt" href="javascript:" target="_self">首页</a></li>
+            <li><a class="kc_txt" href="javascript:" target="_self">账户充值</a></li>
+            <li class="cur"><a class="myac_txt" href="javascript:" target="_self">我的账户</a></li>
+            <li><a class="open_txt" href="javascript:" target="_self">服务开通</a></li>
+            <li><a class="faq_txt" href="javascript:" target="_self">帮助指引</a></li>
+        </ul>
+        <script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover(".nav>li");})</script>
+    </div><!--pay-nav end-->
+</div>
+
+<div class="uc">
+	<div class="uc-sidebar">
+    	<div class="side-head"><!--side-head start-->
+        	<b class="b1"></b>
+            <div class="side-head-c clearfix">
+            	<div class="my_info clearfix">
+                    <span class="h-img"><a href="javascript:" target="_self"><img src="/image/c/acenter/02.jpg" width="52" height="52"></a></span>
+                    <span class="block"><em class="m-r-5 c-888">您还未登录</em><a href="javascript:" target="_self">请登录</a></span>
+                </div>
+            </div>
+            <b class="b2"></b>
+        </div><!--side-head end-->
+        <div class="side-200 m-t-20"><!--side-menu start-->
+        	<ul class="side-menu">
+            	<li class="cur"><a href="javascript:" target="_self"><b class="home_icon">账户首页</b>账户首页</a><b class="b-f4"></b></li>
+                <li><a href="javascript:" target="_self"><b class="list_icon">交易明细</b>交易明细</a><b class="b-f4"></b></li>
+                <li><a href="javascript:" target="_self"><b class="lock_icon">支付密码</b>支付密码</a><b class="b-f4"></b></li>
+            </ul>
+            <script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover(".side-menu>li");})</script>
+        </div><!--side-menu end-->
+    </div>
+    <div class="uc-content"><!--uc-content start-->
+        <div class="uc-c-f m-t-6"><!--uc-c-f start-->
+        	<b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><!--圆角-->
+            <div class="uc-c-m">
+            	<h3><em>管理支付密码</em></h3>
+                <form id="setpwd_form" method="post" action="/" onSubmit="return verifyChangePwd.submitChangedPwd('#oldPwd','#newPwd','#reNewPwd');">
+                <ul class="change-pwd">
+                    <li>
+                        <span class="cp-th">请输入旧支付密码：</span>
+                        <span class="cp-td"><input id="oldPwd" class="uc-input" name="" type="password"><br/><em class="c-888">首次设置，请使用华南城网的登录密码</em></span>
+                    </li>
+                    <li>
+                        <span class="cp-th">请输入新支付密码：</span>
+                        <span class="cp-td"><input id="newPwd" class="uc-input" name="" type="password"><br/><em class="c-888">字符数在6-20位之间，区分大小写（不能与登录密码相同）</em></span>
+                    </li>
+                    <li>
+                        <span class="cp-th">请再次输入新支付密码：</span>
+                        <span class="cp-td"><input id="reNewPwd" class="uc-input" name="" type="password"></span>
+                    </li>
+                    <li>
+                        <span class="cp-th">&nbsp;</span>
+                        <span class="cp-td"><a id="submitChangedPwd" class="y-btn" target="_self" href="javascript:"><em>提&nbsp;&nbsp;交</em></a></span>
+                        <input class="hid_btn" type="submit" name="" value="" />
+                    </li>
+                </ul>
+                </form>
+                <dl class="setpwd-txt">
+                    <dt><b class="face-icon"></b>温馨提示</dt>
+                    <dd>&nbsp;&nbsp;● &nbsp;如果您没设置过支付密码，请在输入旧支付密码时输入华南城网登录密码。</dd>
+                    <dd>&nbsp;&nbsp;● &nbsp;支付密码用来对您的资金加强保护，请您在设置好之后牢记。</dd>
+                    <dd>&nbsp;&nbsp;● &nbsp;您在使用账户余额订购相关产品或服务时将要求您输入支付密码。</dd>
+                    <dd>&nbsp;&nbsp;● &nbsp;若您忘记了之前设置的支付密码，为保障您的资金安全，请联系客服申请找回。</dd>
+                </dl>
+<!--                    
+                <div class="blank-list clearfix">
+                    <b class="right-icon"></b><span class="yahei f-s-22 c-3da535 m-l-10">恭喜您: 支付密码设置成功！</span><br />
+                    <a class="y-btn" href="javascript:" target="_self"><em>立即充值</em></a>
+                    <a class="g-btn m-l-10" href="javascript:" target="_self"><em>返回首页</em></a>
+                </div>
+-->                    
+            </div>
+            <b class="b4"></b><b class="b3"></b><b class="b2"></b><b class="b1"></b><!--圆角-->
+        </div><!--uc-c-f end-->
+    </div><!--uc-content end-->
+</div>
+
+<div class="footer m-t-20">Copyright © 2009-2013 China South City Holdings Limited. All Rights Reserved<br/>华南城控股有限公司 版权所有 粤ICP备12062577号-5</div>
+</body>
+</html>

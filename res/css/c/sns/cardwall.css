@@ -1,0 +1,117 @@
+.cardwall{background:url(img/cardwall/sub-bg.png) repeat-y right 0;}
+
+.main{width:800px}
+.sub{width:190px}
+
+.sub h2{color:#333;border-top:solid 1px #dadada;padding: 8px 10px;}
+.sub a{color:#444}
+.sub a:hover{color:#fc6824}
+
+.card-nav{width:115px;margin-left:-119px;position:absolute;z-index:9;background:#f7f7f7;line-height:24px}
+.card-nav h2{height:27px;padding-right: 24px;background: #fc6824 url(img/cardwall/ico-bg.png) no-repeat 96px -192px;font-size:14px;color:#fff;line-height:27px;cursor:pointer}
+.card-nav li{height:24px;*margin-bottom:-3px;}
+.card-nav a{color:#444;display:block;padding-right:3px;}
+.card-nav a:hover,.card-nav a span{color:#fc6824;text-decoration:none}
+.card-nav .cur{background:#ececec}
+.card-nav .cur a,.card-nav .all a{color:#fc6824}
+.card-nav .all{background:#eee}
+.card-nav .last a{padding-right:6px;}
+.card-nav-mini{width:35px;margin-left:-39px;}
+.card-nav-mini h2{padding-right: 19px;background-position: 19px -192px;}
+.card-nav-mini h2 span,.card-nav-mini ul{display:none}
+.card-nav-pos{margin-left:0;left:5px}
+
+/*提醒完善资料*/
+.notice{height:28px;margin-bottom:10px; line-height: 28px;border:dashed 1px #fc6824;background: #fffded;color: #888;}
+.notice a{color:#fc6824;text-decoration: underline;}
+.notice .close{display:block; top: 5px;right: 5px;width:10px;height:10px;overflow:hidden;background:url(img/cardwall/notice-close.png) 0 0;}
+.notice .close:hover{background-position:-10px 0}
+
+/*名片列表*/
+.card-items{width:800px;overflow:hidden;}
+.card-items ul{width: 810px;padding-bottom: 5px;}
+.card-items .item{position:relative;float:left;width:258px;height:93px;margin:0 10px 10px 0;border:solid 1px #e7e7e7;border-radius:2px}
+.card-items .empty{background: url(img/cardwall/grab-bg.png) no-repeat center;cursor:pointer;}
+	.item .t-n{padding:5px;height:60px;background:#fff;}
+	.item .t-n .t{float:left;}
+	.item .t-n .t img{border-radius:2px}
+	.item .t-n div{padding: 13px 0 0 60px;}
+	.item .t-n a{font-weight:700;font-size:16px;font-family:microsoft yahei,simhei;color:#444}
+	.item .n a{padding-left:5px;}
+	.item .t-n a:hover{color:#fc6824}
+	.item .t-n .markico{margin-left:5px}
+	.item dl{display:none;height:88px;padding:5px 7px 12px;line-height:22px;background:#fff;}
+	.item dt{float:left;width:36px;white-space:nowrap}
+	.item dd{height: 22px;overflow: hidden;}
+	.item .personality{padding:0 7px;height: 23px;line-height: 23px;background:#f5f5f5;overflow:hidden}
+	.item .no{position:absolute;display:block;width:30px;height:27px; top:0;left:0;background:url(img/cardwall/no-bg.png) 0 0;_background-image:url(img/cardwall/no-bg-ie.png);}
+	.item .no2{background-position:0 -50px;}
+	.item .no3{background-position:0 -100px;}
+	.item .plus{display:none;position: absolute; width: 119px;height:17px;line-height:17px; background: #fc7524;color:#fd8b57;top:0;right:0;border-radius:0 0 0 2px}
+	.item .plus a{display:inline-block;height:17px;padding: 0 5px 0 18px; color:#fff;background: url(img/cardwall/ico-bg.png) no-repeat 5px 4px;}
+	.item .plus a:hover{background-color:#df4819;}
+	.item .plus span{margin:0 -2px 0 -3px;}
+	.item .plus .ex{background-position:5px -49px;padding-left: 17px;}
+	.item .plus .pg{background-position: 2px -147px;}
+	.item .plus .msg{background-position: 3px -97px;}
+	/*.item .plus-hover{background:#e66d04}*/
+
+.card-items .large{height: 198px;}
+.card-items .large dl{display:block;}
+.card-items .correct{margin:105px 10px 10px -270px}
+/*FireFox*/
+@-moz-document url-prefix() {
+	.card-items .item:nth-child(20n+5){margin-left:270px}
+}
+.card-items .hover{z-index:2;border-color:#fc6824;}
+.card-items .hover .plus{display:block}
+.card-items .hover .personality,.card-items .ins-large .personality{_position:absolute;_width:244px;margin:0 -1px;border:solid #fc6824;border-width:0 1px 1px}
+.card-items .t-hover dl,.card-items .ins-large dl{_position:absolute;width:244px;display:block;margin:0 -1px;border:solid #fc6824;border-width:0 1px}
+.card-items .t-hover .personality{_top:175px}
+.card-items .ins-large .personality,.card-items .ins-t-hover .personality{_top:174px}
+.card-items .ins-cur{width:256px;height:91px;border:solid 2px #fc6824;}
+.card-items .ins-large{height:196px}
+.card-items .ins-cur .t-n{padding: 4px 4px 5px;}
+.card-items .ins-cur .no{top:-1px;left:-1px}
+.card-items .ins-cur dl{padding:5px 6px 12px;}
+.card-items .ins-cur .personality{height: 22px;padding:0 6px}
+.card-items .ins-cur-hover dl,.card-items .ins-large dl{margin:0 -2px;border-width:0 2px}
+.card-items .ins-cur-hover .personality,.card-items .ins-large .personality{margin:0 -2px;border-width:0 2px 2px;}
+/*状态提示*/ 
+.status-des{height: 70px;padding: 15px 10px;background:url(img/cardwall/status-bg.png) no-repeat 0 0;line-height: 22px;}
+.status-des strong{color:#fc6824}
+.status-des p{color:#4e4e4e}
+
+/*首页占位提醒*/
+.top-home{padding-top:10px; border-top:solid 1px #dadada}
+
+/*名片达人*/
+.rank h2 span{color:#fc6824}
+.rank ol{padding-left: 27px;background: url(img/cardwall/order-no.png) no-repeat 9px 9px;line-height: 16px;}
+.rank li{height: 52px;}
+.rank .t{margin-top: 2px;float:left;}
+.rank .t img{border-radius:2px}
+.rank i{margin-bottom:3px;}
+.rank ol div{padding-left:40px;}
+.rank .n{font-size:14px;font-weight:700}
+
+/*推荐话题*/
+.rec-topic{border-bottom:solid 1px #dadada}
+.rec-topic ul,.raiders ol{padding: 0 10px 10px;line-height:22px}
+.rec-topic li,.raiders li{height:22px;overflow:hidden}
+.rec-topic li{padding-left: 8px;background:url(img/li_bg.gif) no-repeat 0 center;}
+
+.sub-ad{width:170px;height:145px;margin:0 auto;}
+.sub-ad ol{top:8px}
+.sub-ad ol li,.sub-ad ol li.cur{width: 8px;height: 8px;top:0;text-indent:-200px;overflow:hidden}
+
+/*弹窗提醒*/
+.pop-notice{width:294px;text-align:center}
+.pop-notice strong{color:#fc6824;font-size:16px}
+.pop-notice strong a{color:#2664a2}
+.pop-notice p{padding-top: 5px;font-size:14px;color:#444;line-height:22px}
+.pop-notice .bd{padding-top: 20px;height: 92px;}
+.pop-notice .ft{background:#ebebeb;height: 20px;line-height: 20px;padding: 6px 0;}
+.pop-notice .ft a{color:#888}
+.pop-notice .ft .btn{padding: 2px 13px;background:#fc6824;color:#fff;border-radius: 2px;}
+.pop-notice .ft a:hover{text-decoration:none}

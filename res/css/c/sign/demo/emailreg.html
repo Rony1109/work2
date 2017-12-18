@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="/css/" />
+<link rel="stylesheet" href="/f=css/c/sign/sign.css" />
+<script src="/js/"></script>
+<script src="/b=js/m&f=tab.js,validator.js"></script>
+<!--script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100284638" data-redirecturi="<{$smarty.const.MEMBER_URL}>/register/black" charset="utf-8"></script-->
+<script type="text/javascript" src="../../../../js/m/validator.js"></script>
+</head>
+
+<body>
+<div class="g-o-a reg-head">
+  <div class="head-link"><a href="javascript:">供应商专区</a> | <a href="javascript:">采购商专区</a>
+    <p>如遇注册问题请拨打，<strong>0755-33628666</strong></p>
+  </div>
+  <h1 class="logo"><a href="javascript:"><img width="213" height="37" alt="华南城网" src="http://a.csc86.com/images/logo-2.png"></a></h1>
+</div>
+<div class="g-o-a reg">
+  <div class="other-reg">
+    <h2>实体+网络从华南城网开始</h2>
+    <p>网站依托华南城庞大的实体市场资源，是目前中国领先的实体+网络立体电子商务新模式的倡导者。</p>
+    <ul>
+      <li class="list">
+        <p>您也可以使用下列帐号登录：</p>
+        <div> <a href="javascript:" class="taobao"> 淘宝网</a> <a href="javascript:" class="sina"> 新浪微博</a> <a href="javascript:" class="one"> 网易 </a> <span id="qqLoginBtn" class="qq">QQ</span></div>
+      </li>
+      <li> 已有账号？<a href="javascript:">马上登录</a> <br />
+        没有手机？使用<a href="javascript:">邮箱注册</a></li>
+    </ul>
+  </div>
+
+  <div class="local-reg email">
+    <h1>邮箱注册</h1>
+     <form action=""  method="post" name="regemailform"  onSubmit="return csc.sign.submitemail();">
+      <ul>
+       <li>
+          <label>手机号码：</label>
+          <input type="text" value="" id="phone" maxlength="11" class="txt" autocomplete="off" autofocus="">
+           <input type="hidden" name="phone" id="hen-phone" value="13728641842">
+          <span class="cd-tips right g-f-success" id="phonetips"></span>
+         </li>
+        <li class="vail-des">
+          <input name="getEmailCode" id="getEmailCode" type="button" class="btn-bg vail-btn" value="获取验证码" />
+        </li>
+        <li>
+          <label>验证码：</label>
+          <input name="code" id="verifycode" class="txt" type="text" />
+          <span id="verifytips"></span>
+          <div class="tips">请输入您收到的验证码</div>
+        </li>
+        <li>
+          <label>密　　码：</label>
+          <input name="password" id="password" type="password" class="txt" />
+          <span id="passwordmtips"></span>
+          <div class="g-d-n pwd-level"><span class="level-cur">弱</span><span>中</span><span>强</span></div>
+        </li>
+        <li>
+          <input name="" id="accord" type="checkbox" checked />
+          我已看过并同意《<a href="javascript:">华南城网服务条款</a>》 </li>
+        <li>
+          <div id="tips" class="error <{$msg|default:''}>"><{$errorMessage|default:''}></div>
+        </li>
+        <li>
+          <input name="" id="emailsbmit" class="btn-bg" type="submit" value="立即注册">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+<div class="g-o-a foot">
+  <div class="foot-link"><a href="javascript:">关于华南城网</a>|<a href="javascript:">会员服务</a>|<a href="javascript:">广告服务</a>|<a href="javascript:">商务合作</a>|<a href="javascript:">服务条款</a>|<a href="javascript:">交通指南</a>|<a href="javascript:">联系我们</a></div>
+  <p class="group-link"><a href="javascript:">华南城控股</a>：<a href="javascript:">深圳华南城</a> <a href="javascript:">河源华南城</a> <a href="javascript:">西安华南城</a> <a href="javascript:">南昌华南城</a> <a href="javascript:">南宁华南城</a> 网站客服：0755-33628666&#12288;招商热线：0755-28498888</p>
+  版权所有 &copy; 2009 华南国际工业原料城（深圳）有限公司&#12288;<a href="javascript:">粤ICP备06103630号</a></div>
+  <script type="text/javascript">
+/*  $(function(){
+	$("#qqLoginBtn a").html("QQ");  
+	});*/
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="/css/" />
+<link rel="stylesheet" href="/b=css/c/sns&f=friendmanage.css,infodialog.css" />
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/f=js/c/sns/scroll.js"></script>
+</head>
+<body>
+<div class="g-c-f m-outer info-card show-info-win">
+  <div class="g-c-f m-inner">
+    <div id="scoll-b-iner" class="scoll-outer"> <span class="default l"></span> <span class="default r"></span>
+      <div class="show-win">
+        <ul>
+          <li id="1"><img src="../../../../image/c/membercenter/female.jpg" alt="" height="165" width="165" /></li>
+          <li id="2"><img src="../../../../image/c/membercenter/m-logo.png" alt="" height="165" width="165" /></li>
+          <li id="3"><img src="../../../../image/c/membercenter/photo-company-small.jpg" alt="" height="165" width="165" /></li>
+          <li id="4"><img src="../../../../image/c/membercenter/tips00.jpg" alt="" height="165" width="165" /></li>
+        </ul>
+      </div>
+      <div class="t-area"><a id="addfriend" class="g-d-n area-btn add-friend" href="javascript:">好友</a><a id="personal" class="g-d-n area-btn personal" href="javascript:">查看我的个人档案</a><span id="shorsend" class="g-d-n"><a id="send-msg" class="area-btn send-msg" href="javascript:">发消息</a><a id="sh-info" class="area-btn sh-info" href="javascript:">看档案</a></span></div>
+    </div>
+    <ul class="info-font">
+      <li>姓名：<strong>许琦</strong>（会员名：<a href="javascript:">admin</a>）</li>
+      <li>企业：深圳华南城网电子商务有限公司</li>
+      <li>职务：B2B运营部--运营经理</li>
+      <li>电话：13808454315</li>
+      <li>邮箱：netjer@yeah.net</li>
+      <li>区域：广东--深圳市</li>
+    </ul>
+  </div>
+</div>
+<script>
+var url=location.href;
+if(url.indexOf("previewcard")!=-1){
+	$("#personal").removeClass("g-d-n");
+}else if(url.indexOf("addsend")!=-1){
+	$("#addfriend").removeClass("g-d-n");
+}else if(url.indexOf("sendmes")!=-1){
+	$("#shorsend").removeClass("g-d-n");
+}
+</script>
+</body>
+</html>

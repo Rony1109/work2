@@ -1,0 +1,206 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提示框，信息框</title>
+<link rel="stylesheet" href="http://res.csc86.com/css/" />
+<script type="text/javascript" src="http://res.csc86.com/js/"></script>
+<script>
+function dialog(config){
+	var _config = {
+		lock:false,
+		ok: true,
+		cancel: null,
+		icon:"mem-w"
+	}
+	for(i in config){
+		_config[i] = config[i];
+	}
+	csc.useDialog(function(){
+		artDialog(_config);
+	})
+}
+function cscdialog(a){
+	csc.useDialog(function(){
+		switch(a)
+		{
+			case "tip":
+				csc.tip("hello world!");
+				break;
+			case "success":
+				csc.success("操作成功!");
+				break;
+			case "error":
+				csc.error("操作失败！");
+				break;
+			case "confirm":
+				csc.confirm("今天早餐吃得太饱了，那么你觉得中午还应该去吃饭吗？",function(){alert("浪费！")},function(){alert("傻了吧！")});
+				break;
+			default:
+				csc.alert("这里是默认提示框的内容！");
+		}
+	})
+}
+function artdilog(a){
+	csc.useDialog(function(){
+		switch(a)
+		{
+			case "tip":
+				art.dialog.tips("hello world!",1.5);
+				break;
+			case "confirm":
+				art.dialog.confirm("今天早餐吃得太饱了，那么你觉得中午还应该去吃饭吗？",function(){alert("浪费！")},function(){alert("傻了吧！")});
+				break;
+			case "prompt":
+				art.dialog.prompt('请输入图片网址', function (val) {
+					art.dialog.tips(val);
+				}, 'http://');
+				break;
+			default:
+				art.dialog.alert('人品越来越不那么稳定了，请检查！');
+		}
+	
+	})
+}
+
+function alert6(){
+	var html = $("#msg1").html();
+	csc.useDialog(function(){
+		artDialog({
+			lock:false,
+			resize:true,
+			init:function(){/*this.content("打开了..")*/},
+			ok: false,
+			content: html
+		});
+	},"mem")
+}
+
+function alert7(){
+	var html = $("#msg2").html();
+	csc.useDialog(function(){
+		artDialog({
+			lock:false,
+			resize:true,
+			init:function(){
+				var o = this;
+				$(this.content()).find(".Dialog_link").click(function(){
+					o.close();
+				}).prependTo($(o.DOM.wrap[0]).find(".aui_footer"));
+			},
+			close:function(){
+				$(this.DOM.wrap[0]).find(".aui_footer .Dialog_link").remove();
+			},
+			ok:false,
+			icon:"mem-w",
+			content: html
+		});
+	},"mem")
+}
+
+function alert8(){
+	csc.useDialog(function(){
+		csc.window_msg = art.dialog.open('msg1.html', {
+			id:"window_msg",
+			padding:"0",
+			title:"消息",
+			lock:true,
+			resize:true,
+			width:750,
+			height:390,
+			minWidth:500,				// 最小宽度限制
+			minHeight:240,	
+			init:function(){
+				//$(this.DOM.wrap[0]).addClass("aui_if"); //mem皮肤需要此语句；
+				//this.DOM.wrap[0].style.width = "auto";
+				//this.DOM.wrap[0].style.width =this.DOM.wrap[0].offsetWidth + 'px';
+			}
+		});
+	});
+}
+
+function sking(sking_name,ico){
+	csc.useDialog(null,sking_name,ico);
+}
+
+</script>
+</head>
+
+<body>
+artdilog默认配置对话框<br>
+<button onClick="artdilog('alert')">art.dialog.alert 普通</button>
+<button onClick="artdilog('confirm')">art.dialog.confirm 选择</button>
+<button onClick="artdilog('prompt')">art.dialog.success 输入</button>
+<button onClick="artdilog('tip')">art.dialog.tips 自动关闭小提示</button><br><br>
+csc默认配置对话框<br>
+<button onClick="cscdialog('alert')">csc.alert 普通</button>
+<button onClick="cscdialog('success')">csc.success 成功</button>
+<button onClick="cscdialog('error')">csc.error 出错</button>
+<button onClick="cscdialog('confirm')">csc.confirm 选择</button>
+<button onClick="cscdialog('tip')">csc.tip 自动关闭小提示</button><br><br>
+手动配置对话框<br>
+<button onClick="dialog({content:'这里是默认提示框的内容！<br/>这是第二行的内容！',icon:false})">普通</button>
+<button onClick="dialog({content:'操作成功!',ok:false,icon:'mem-c',time:1.5})">成功</button>
+<button onClick="dialog({content:'操作失败！</br>jfjslfkjsldf;jf',icon:'mem-e'})">出错</button>
+<button onClick="dialog({content:'今天早餐吃得太饱了，那么你觉得中午还应该去吃饭吗？',ok:true,cancel:true})">选择</button>
+<button onClick="dialog({content:'hello world!',time:1.5,ok:false})">自动关闭小提示</button><br><br>
+
+特殊提示框: <br>
+<button onClick="alert6()">特殊错误提示</button>
+<button onClick="alert7()">带链接提示</button>
+<button onClick="alert8()">会员消息（iframe）</button><br>
+<br>
+<div>
+换皮肤：<br>
+<select onChange="sking(this.value)">
+	<option value="mem">默认（mem）</option>
+	<option value="aero">aero</option>
+	<option value="black">black</option>
+	<option value="blue">blue</option>
+	<option value="chrome">chrome</option>
+	<option value="default">default</option>
+	<option value="green">green</option>
+	<option value="idialog">idialog</option>
+	<option value="opera">opera</option>
+	<option value="simple">simple</option>
+	<option value="twitter">twitter</option>
+</select><br>
+（目只有 默认皮肤（mem）做了特殊提示框处理使用其他皮肤请自行添加 样式！）<br><br>
+</div>
+<div>
+换图标：
+<select onChange="sking(null,this.value)">
+	<option value="ico_24">默认（ico_24）</option>
+	<option value="ico_36">ico_36</option>
+	<option value="ico_40">ico_40</option>
+</select><br>
+（提示框 显示前 有效）
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="msg1">
+	<table class="big_err">
+		<tr>
+			<th>出错了!</th>
+			<td>
+				<dl>
+					<dt>以下产品信息填写不正确,请编辑后重新发布</dt>
+					<dd>1.交流电机 在时枯井 枯井 </dd>
+					<dd>2.见风使舵轩可悲地士大夫士大夫</dd>
+					<dd>3.枯井枯井 霜两地分居 是枯井中</dd>
+					<dd>4.发酵饲料加进是发酵饲料在地村</dd>
+					<dd>5.蛔进枯进枯 霜夺枯地士大夫枯霜</dd>
+				</dl>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="msg2">
+您需要先实名!<div class="Dialog_link"><a href="http://www.baidu.com" target="_blank">现在就去实名认证</a> <a href="javascript:;">下次再说</a></div>
+</div>
+
+
+</body>
+</html>

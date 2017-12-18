@@ -1,0 +1,83 @@
+/*会员中心_个人名片 yq*/
+.info-card div .mod-save{height:26px; padding-top:14px;}
+.info-card div .mod-save input{ margin-right:15px; display:inline-block; border:none; color:#333; width:53px; padding:2px 0; background:url(img/m-c-bg.png) no-repeat 0 0; cursor:pointer; vertical-align:top; font-size:12px;}
+.info-card div .mod-save input#save{ background-position:0 -42px;color:#FFF;}
+.info-card div a.modify{ float:right; margin-right:10px; padding-left:25px; line-height:27px; background:url(img/edit.png) no-repeat 0 -37px; font-size:14px; }
+.info-card .m-inner{ padding:15px 10px;}
+.info-card .grab{padding-right:16px; background:url(/v2/c/home/index/css/img/hot.png) no-repeat right 6px;}
+
+.scoll-outer{ position:relative; float:left; width:118px; text-align:center;}
+.scoll-outer .default{ position:absolute; top:40px;width:12px; height:15px; background:url(img/r-l.png) no-repeat 0 0; cursor:pointer;}
+.scoll-outer .l{ left:0; display:none;}
+.scoll-outer .r{ right:0; display:none; background-position:-7px 0;}
+.scoll-outer .l,.scoll-outer .r{_display:block}
+.scoll-outer:hover .l,.scoll-outer:hover .r{ display:block;}
+.scoll-outer .show-win{ position:relative; overflow:hidden; height:100px;width:100px; margin:0 auto; }
+.scoll-outer ul{ position:absolute; left:0; width:650px;float:left;}
+.scoll-outer li{ float:left; width:100px; }
+.show-info-win .scoll-outer li{ float:left; width:160px; }
+.scoll-outer img{ width:100px; height:100px;}
+.show-info-win .scoll-outer img{ width:160px; height:160px;}
+.scoll-outer a{ line-height:27px;}
+
+.info-items{padding-left:135px;}
+.info-items .edit-card{ width:58px;height:22px; text-align: center; font-size:14px; background:url(img/but_bg_58x22.png) no-repeat;color:#333;}
+.info-items .edit-card:hover{color:#f30; text-decoration:none}
+.info-items h3{ margin-bottom:5px; font-size:14px}
+.info-items dl{line-height:34px;margin-bottom:15px;}
+.info-items .info-item{width:49%}
+.info-items dt{float:left;color:#888;}
+.info-items dd{padding-left:42px;}
+.info-items dd a{color:#2664a2}
+.info-items dd span{color:#888}
+.info-items .info-intro{line-height:20px}
+
+.outer-input{ display:none;}
+.outer-font{ display:none;}
+.hide{ display:none}
+.cur{ display:block;}
+.outer-input .info-font{ line-height:30px; width:250px;}
+.outer-input .info-work { width:325px;}
+.m-inner select{ padding:4px; border:1px solid #CCC; width:92px;*width:86px;height:26px;}
+#province{*margin-top:-3px;}
+.m-inner .txt{ margin-right:6px; padding:3px 6px 3px; width:188px;height:22px; line-height:22px;border:1px solid #CCC; outline:none;}
+.m-inner .txt:focus,.m-inner .txt.focus{  border-color:#8BA5CA;}
+/*添加会员分组 yq*/
+.friendmanage{ position:relative; color:#404040;}
+.friendmanage h2 span{ font-weight:normal; font-size:12px; color:#808080; }
+.friendmanage .m-inner{ padding:10px 0 10px 20px; }
+.friendmanage .group{ height:42px; }
+.friendmanage .group li{ width:257px; overflow:hidden; }
+.friendmanage .group li,.friendmanage .group a{ float:left; margin:0; padding:0; }
+.friendmanage .group a,.filt-group span{ width:234px; height:30px; line-height:30px;  border:1px solid #eaeaea; margin-right:20px;text-align:center; background:#f5f5f5; color:#666; }
+.friendmanage .group a:hover,.filt-group a:hover{ text-decoration:none;}
+.friendmanage .group a.cur,.filt-group span.cur{ background:#7db0e9; border:1px solid #6ea1e1; color:#FFF;}
+.filt-group span.cur a{ color:#FFF; }
+.filt-group span{ float:left; margin-bottom:10px;background:#f5f5f5;}
+.filt-group a{color:#666;}
+.filt-group span{ position:relative;}
+.filt-group span i{ position:absolute;right:20px; top:7px; width:16px; height:16px; cursor:pointer;background:url(img/delfriend.png) no-repeat center;}
+.friendmanage .btn{ float:right; width:80px; height:30px; padding-left:20px; margin-right:10px;  background:url(img/firend-btn-cur.png) no-repeat 0 2px; cursor:pointer; }
+.friendmanage .order{ height:27px; line-height:27px; padding-left:20px; border-bottom:1px solid #cadfef;  background:#f3faff;}
+.friendmanage .order a{ margin:0 3px; float:left; width:15px; text-align:center; color:#666; }
+.friendmanage .order a.cur{ position:relative; height:24px; top:2px; background:#7db0e9; color:#FFF;}
+.f-all{ width:300px; float:left;}
+.f-all-top{ height:25px; display:block;}
+/*好友列表显示 yq*/
+.list-friend li{ float:left; width:380px; line-height:25px; margin-top:20px;}
+.list-friend .img{ float:left; margin-right:10px;}
+.list-friend strong{ margin-right:10px; color:#666;}
+.list-friend span,.list-friend strong,.list-friend em{ float:left;}
+.list-friend span{ position:relative; top:3px; height:16px; line-height:16px; padding:0 3px 0 5px; background:url(img/firend-icol.png) no-repeat right 0; color:#ff3300; display:none;}
+.list-friend span i{ position:absolute; left:0px; top:0; width:5px; height:16px;background:url(img/firend-icol.png) no-repeat 0 -19px;}
+
+.list-friend div a.msg{ margin:0 10px 0 10px;_margin-right:-5px; display:inline-block; position:relative;}
+.list-friend div a.invite{ margin:0 15px 0 10px; display:none;}
+
+.card-manage{ background:url(/css/c/sns/img/preview.png) no-repeat 0 0;float: right; height: 23px; line-height: 23px; text-align: center;width: 87px; position: absolute; top:48px; right:0;_right:-1px;}
+.card-manage a:hover{ text-decoration:none;}
+
+.aui_dialog .aui_content .add-ifm{ width:550px; height:340px; border:1px solid #dbdbdb; padding:10px; line-height:22px; color:#333;}
+.info-card div.ic-title{height:40px; border-bottom:2px solid #e8e8e8; font-family:Microsoft YaHei,simhei;font-size:15px; font-weight:700; line-height:40px;}
+.aui_titleBar .aui_title{min-width:300px}
+.aui_content textarea{ margin-top:10px; width:330px;height:40px; border:1px solid #d4d0c8; color:#999; resize:none;}

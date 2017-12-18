@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+html{ overflow-y:scroll  !important;}
+.p-l-contert{ width:790px; height:auto; float:left;}
+	.p-c-dl{ border:1px solid #c4d6e4; border-bottom:1px solid #d6e3ed; margin-bottom:10px;}
+	.p-c-dl dt{ height:30px; line-height:30px; background:#ecf4f9 url(img/per-h2-bg.png) repeat-x 0 0;}
+	.p-c-dl dt  h2{ float:left; font-size:14px; color::#404040; font-weight:700; padding-left:10px; display:inline-block;}
+	.p-c-dl>dd{background-positionY:bottom; background:url(img/per-dd-bg.png) repeat-x 100% 100%;}
+	.basic-d dd{ padding:10px 10px 10px 15px; }
+	.basic-d table{color:#404040;}
+	.basic-d tr{ height:26px;}
+	.basic-d tr td{ line-height:26px; text-align:left; }
+	.basic-d td img{ margin-top:3px; display:inline-block; height:85px; width:85px;}
+	.send-mes{ display:block; height:31px;}
+	.send-mes input,.p-r-side dd .send-mes{ width:62px; height:21px; border:0; background:#edf7fb url(img/send-mes.png) no-repeat 0 0; margin:10px 0 0 10px;}
+	.basic-d .p-status{ padding-left:28px; background:url(../membercenter/img/s-fir.png) no-repeat -1px -28px; line-height:26px;}
+	.ico-2,.ico-3{width:16px; height:16px;vertical-align:middle;}
+	.ico-2{background:url(../membercenter/img/grade.png) no-repeat 0 0; display:inline-block;}
+	.ico-3{background:url(../membercenter/img/star.png) no-repeat 0 0; display:inline-block; margin-right:25px; }
+	.p-color{ color:#808080; margin-right:25px;}
+		.p-i-dl{ height:auto; overflow:auto; zoom:1;}
+		.p-introduce .p-i-dl dt,.p-activity  .p-i-dl dt{height:30px; line-height:30px;font-weight:700; font-size:12px;}
+		.p-introduce .p-i-dl{ padding:0 10px;}
+		.p-introduce .p-i-dl dt{border-bottom:1px dashed #bac6d8; background:url(img/dt-list.png) no-repeat 0 12px; padding-left:10px; color:#067ED4; }
+		.p-introduce .p-i-dl dd{ color:#808080; line-height:22px; padding:5px 10px 10px;}
+	.p-activity dt  a{ float:right; margin-right:10px;}
+	.p-activity dd{ padding:5px 0 10px 0;}
+		.p-activity  .p-i-dl{ padding:0 0  0 10px;}
+		.p-activity  .p-i-dl dt{color:#808080; background:none; }
+		.p-activity  .p-i-dl dd{ height:auto; overflow:hidden; zoom:1;  padding:0 0 0 10px;}
+		.p-activity ul{ width:150px; height:60px; display:inline-block; float:left; overflow:hidden; margin-bottom:10px;}
+		.p-activity ul li{ float:left;}
+		.p-activity .p-a-img{ width:60px; height:60px; overflow:hidden;}
+		.p-activity .p-a-m{ width:80px; height:60px; padding:0 5px;}
+		.p-activity .p-a-m a{ display:block; color:#067ED4;}
+		.p-activity .p-a-m span{ display:block; color:#808080;}
+		.p-activity .p-a-m b{ color:#404040; font-weight:normal;}
+		.recent-list ul{ padding:10px;}
+		.recent-list ul li{line-height:30px; text-align:left;  background:url(img/dt-list.png) no-repeat 0 -27px; padding-left:10px; position:relative;}
+		.recent-list ul li a{color:#404040; width:650px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; display:block;}
+		.recent-list ul li span{ width:100px; position:absolute; right:0; top:0; color:#808080;}
+.p-r-side{ width:200px; height:auto; float:right; padding:0; border:1px solid #c7d8e6; background:#fafafa;}
+	.p-r-side dd{ padding:10px 0 10px 20px; position:relative;}
+	.p-r-side dt{height:30px; line-height:30px;font-weight:700; font-size:14px; background:url(img/per-h2-bg.png) repeat-x 0 0; padding-left:10px;}
+	.p-r-side dt span{ font-size:12px; font-weight:normal; color:#067ED4; line-height:30px; height:30px; vertical-align:middle;}
+	.p-r-side dd .send-mes{ margin:0;}
+	.p-r-side .g-c-f{ padding:0;}
+.p-page{ height:26px; margin:10px 0 20px;}
+.p-page a{ height:24px; line-height:24px; border:1px solid #ccc; padding:0 8px; margin-left:6px; display:inline-block; color:#333;}
+.p-page a.cur{ background:#1a91e5; color:#fff; border:1px solid #117bc6; display:inline-block  !important;}
+.p-page a.next-p{ background:url(img/next-page.png) no-repeat 48px 7px; padding-right:15px;}
+.pr-in-h3{ display:inline-block; width:100px; overflow:hidden; vertical-align:middle; height:30px;}
+.par-f-i{ width:50px; height:50px; overflow:hidden; display:inline-block; padding-right:10px;}
+.recommend dd div.g-f-r{ width:100px; display:inline-block;}
+.recommend dd div.g-f-r a { color: #067ED4;display: block;}
+
+/*名片收藏显示名片*/
+.set-up-card{width:620px; height:auto; font-size:12px;}
+	.suc-po{ padding:5px 0 5px 30px; background:#f6fbff; border:1px solid #cadfef; color:#404040; line-height:22px; margin-bottom:5px;}
+	.suc-imgup{ width:110px; height:auto; text-align:center; padding-top:10px; float:left;margin:0;}
+	.suc-imgup span{ width:110px; height:110px; display:block; margin-bottom:10px;}
+	.suc-imgup a{ width:72px; height:24px; border:none; background:#ededed url(img/tradering.png) no-repeat -50px -100px; color:#333; line-height:24px; text-align:center;}
+	.suc-infmes{ width:460px; height:auto; float:right; list-style:none; padding:0; margin:0;}
+	.suc-infmes li{line-height:28px; padding:10px 0; list-style:none;}
+	.suc-infmes li span .s-po,.s-po{ color:#ff3300;}
+	.suc-infmes li .s-in1,.suc-infmes li .s-in2{line-height:26px; height:26px; width:173px; }
+	.suc-infmes li .s-in1{ margin-right:15px; }
+	.suc-infmes li .s-in3{ width:410px; height:26px; line-height:26px;}
+	.suc-infmes li.suc-but{ text-align:center;}
+	.suc-infmes li #province,.suc-infmes li #city,.suc-infmes li #area{ width:65px; display:inline-block;}
+	.si-name{ width:40px; display:inline-block; line-height:28px; text-align:right; padding-right:3px;}
+	.inCard{ width:103px; height:32px; line-height:32px; border:none; background:url(img/tradering.png) no-repeat -88px -264px; color:#fff; font-weight:700; cursor:pointer;}
+#addfriend .pr-c-sh{ width:128px;}
+#addfriend .pr-c-sh div.sh-p-con{ width:52px;}
+.epcirle-isexist{ margin:0 3px 0 8px;}
+#catNamePo,#catProPo{ color:#888;}
+#catProPo{ margin-left:12px;}
+h2.cer-h2{ font-size:14px; margin-bottom:6px;}
+#creCardSig{ width:620px; height:420px; overflow:hidden; border:none; }
+.sh-pr .ly-a-l span a.card-received{ color:#888;}
+.sh-pr .ly-a-l span a.card-received:hover{ color:#888; text-decoration:none;}
+/*.mem-main{ width:800px; overflow:hidden; height:auto; float:right;}*/
+.mem-nav,.mem-main{ margin:0; padding:0;}
+.mem-main h1{ width:360px;}
+.h-f-inst dt{ position:relative;}
+*+html .for-group{ position:absolute; right:5px; top:-5px;}
+.for-group{ position:absolute; right:5px; top:0px;}

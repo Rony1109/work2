@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>资质认证2</title>
+<link rel="stylesheet" type="text/css" href="/css/" />
+<link rel="stylesheet" href="/b=css&f=/m/app-frame/style.css,c/membercenter/member.css,c/membercenter/tipssctive.css,c/membercenter/compaccredit.css" />
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/swfupload/"></script>
+<script type="text/javascript" src="/b=js/c/accreditation&f=accreditvalite.js,uploadimg.js,reditionuploadimg.js"></script>
+<script type="text/javascript" src="/f=js/p/My97DatePicker/4.8/WdatePicker.js"></script>
+</head>
+<body>
+<div class="head">
+  <div class="g-o-a">
+    <ol class="g-f-r">
+      <li class="msg"><span>消息<i>(5)</i></span>
+        <div class="s-outer">
+          <div class="msg-con">
+            <div class="g-c-f"><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">XXX给你发来留言</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">你有10个询盘消息</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">XXX个系统消息个系统消息个系统消息个系统消息个系统消息</a></span><span><a href="javascript:" class="del"></a><a href="javascript:" class="title">超级管家发来XX消息</a></span></div>
+            <p><a href="javascript:" class="all-show">查看全部消息&gt;&gt;</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="user"><em>账号<i></i></em>
+        <div class="dial-user"> <span>admin</span>
+          <div><a href="javascript:" class="img"><img src="/image/img.png" width="50" height="50"></a><a href="javascript:">账号管理 </a><a href="javascript:">账号安全</a><a href="javascript:" class="exit">安全退出</a></div>
+        </div>
+      </li>
+    </ol>
+    <a href="javascript:" class="img"><img src="/image/c/membercenter/m-logo.png" width="204" height="48"></a>
+    <ul class="main">
+      <li class="cur"><a href="javascript:">首页</a></li>
+      <li><a href="javascript:">个人社区</a></li>
+      <li class=""><a href="javascript:">企业管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="g-h-10"></div>
+<div class="g-o-a app-frame">
+  <div class="af-nav">
+    <h2>报价管理</h2>
+    <ul class="af-nav-items">
+      <li class="item has-children has-children-cur"><a href="javascript:">认证展示</a>
+        <ul>
+          <li><a href="javascript:">旺铺</a></li>
+        </ul>
+      </li>
+      <li class="item has-children  has-children-cur"><a href="javascript:">认证申请</a>
+        <ul>
+          <li><a href="javascript:">企业身份认证</a></li>
+          <li><a href="javascript:">企业实地认证</a></li>
+          <li><a href="javascript:">组织认证</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="af-bd comp-accredit">
+    <h2 class="af-hd">企业身份认证</h2>
+    <div class="g-h-20"></div>
+    <ul class="nav-tips">
+      <li class="prev">1.填写企业基本信息</li>
+      <li class="cur">2.填写申请人信息</li>
+      <li>3.确认信息</li>
+      <li class="last">4.完成认证</li>
+    </ul>
+    <div class="g-h-20"></div>
+    <form action="" onsubmit="return csc.credit.entersecond();">
+      <ul class="af-form">
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>企业类型：</div>
+          <div class="aff-value">
+            <select name="companyType" id="companyType" class="w-250">
+              <option class="first">内资企业</option>
+              <option>国有企业</option>
+              <option>集体企业</option>
+              <option>股份合作企业</option>
+              <option>联营企业</option>
+              <option>有限责任公司</option>
+              <option>股份有限公司</option>
+              <option>私营企业</option>
+              <option>其他企业</option>
+              <option class="first">港、澳、台商投资企业</option>
+              <option>合作经营企业(港或澳、台资)</option>
+              <option>合资经营企业(港或澳、台资)</option>
+              <option>港、澳、台商独资经营企业</option>
+              <option>港、澳、台商投资股份有限公司</option>
+              <option class="first">外商投资企业</option>
+              <option>中外合资经营企业</option>
+              <option>中外合作经营企业</option>
+              <option>外资企业</option>
+              <option>外商投资股份有限公司</option>
+            </select>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>经营范围：</div>
+          <div class="aff-value">
+            <input id="sphere" name="" type="text" class="aff-text w-250" />
+            <div class="g-f-msg-box">
+              <p  id="spheretips" class="g-f-error"></p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>成立日期：</div>
+          <div class="aff-value">
+            <input name="" id="periodtime" type="text" class="aff-text w-250" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
+            <div class="g-f-msg-box">
+            <p id="periodtips" class="g-d-n g-f-error"></p>
+          </div>
+          </div>
+          
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>申请人：</div>
+          <div class="aff-value">
+            <input id="applicant" name="" type="text" class="aff-text w-250" />
+            <div class="g-f-msg-box">
+              <p id="applicanttips" class="g-f-error">申请人不可为空</p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key">申请人部门：</div>
+          <div class="aff-value">
+            <input name="" id="department" type="text" class="aff-text w-250" />
+            <div class="g-f-msg-box">
+              <p id="departmenttips" class="g-f-error">申请人部门不可为空</p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key">申请人职位：</div>
+          <div class="aff-value">
+            <input id="account" name="" type="text" class="aff-text w-250" />
+            <div class="g-f-msg-box">
+              <p id="accounttips" class="g-f-error"></p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>固定电话：</div>
+          <div class="aff-value">
+            <input id="telephoneUsePrefix" name="" type="text" class="aff-text w-50" />
+            <input id="telephoneAreaCode" name="" type="text" class="aff-text w-70" />
+            <input id="telephone" name="" type="text" class="aff-text w-100" />
+            <div class="g-f-msg-box">
+              <p id="teletips" class="g-f-error"></p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key">手 机 号：</div>
+          <div class="aff-value">
+            <input id="phone" name="" type="text" class="aff-text w-250" />
+            <div class="g-f-msg-box">
+              <p id="phonetips" class="g-f-error"></p>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>申请人身份证：</div>
+          <div class="g-c-f aff-value uploadimg">
+            <div class="g-f-l">
+              <p>
+                <input name="" id="upload00" type="button" value="点击上传" />
+              </p>
+              <img id="imgload00" src="/image/c/accreditation/acrrizeng.jpg" width="170" height="110"></a>
+              <div class="g-f-msg-box">
+                <p class="g-f-error" id="phototips0"></p>
+              </div>
+            </div>
+            <div class="g-f-l">
+              <p>
+                <input name="" id="upload01" type="button" value="点击上传" />
+              </p>
+              <img id="imgload01" src="/image/c/accreditation/acrrfan.jpg" width="170" height="110"></a>
+              <div class="g-f-msg-box">
+                <p class="g-f-error" id="phototips0"></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-value"><span class="aff-submit">
+            <input type="submit" value="提交审核" />
+            </span><span class="back aff-submit aff-cancel"> <a href="javascript:">返回上一步</a> </span></div>
+        </li>
+      </ul>
+    </form>
+    <div class="g-h-20"></div>
+    <div class="g-h-20"></div>
+    <div class="h-tips"><span>企业身份认证</span>是华南城网针对会员推出的<em>免费认证服务</em>，同一个企业名称不称不允许重复认证，<span>通过企业身份认证后</span>,会在平台<span>展示真实企业名称和认证标识</span>,帮助您更好的获得卖家信赖。</div>
+  </div>
+</div>
+<div class="g-o-a foot">
+  <div class="foot-link"><a href="javascript:">关于华南城</a>|<a href="javascript:">About csc86.com</a>|<a href="javascript:">会员服务</a>|<a href="javascript:">广告服务</a>|<a href="javascript:">商务合作</a>|<a href="javascript:">服务条款</a>|<a href="javascript:">法律申明</a>|<a href="javascript:">隐私保护</a>|<a href="javascript:">意见反馈</a>|<a href="javascript:">帮助中心</a>|<a href="javascript:">网站地图</a>|<a href="javascript:">联系我们</a></div>
+  <p class="group-link">Copyright©2009-2011 China South City Holdings Limited. All Rights Reserved </p>
+  华南城控股有限公司 版权所有</div>
+</body>
+</html>

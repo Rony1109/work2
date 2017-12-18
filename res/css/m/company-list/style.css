@@ -1,0 +1,24 @@
+.pro-filter .g-select .s-items{overflow:visible}
+
+.company-list{}
+	.cl-item{padding:10px 50px 10px 5px;*padding-bottom:5px;border-bottom:solid 1px #ebebeb;color:#333;}
+	.cl-item em{color: #d60101}
+	.cl-item .icol{clear:both;}
+		.ci-title{margin-bottom: 3px}
+		.ci-title a{font-size: 14px;font-weight: 700}
+		.ci-title .vip,.ci-title .ppxf{position: relative;top:-2px;*top:0;}
+		.ci-title .vip{margin:0 4px}
+		.ci-items{float: left;width: 580px; margin-bottom:5px}	
+		.ci-items li{_display:inline;float:left;width:48%;height:22px;margin:4px 10px 4px 0;overflow:hidden;line-height:22px;}
+			.cii-key{float:left;width:60px;}
+			.cii-value{width:215px;margin-left: 60px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+		.ci-area{_display:inline;margin:0 10px 0 30px;color:#888;}	
+		.ci-contact{float: right;width: 70px}
+		.ci-service{width: 880px}
+		.ci-service .s{height:26px;margin-right:12px;padding-left:27px;color:#999;background:url(../../m/list-pro/img/p-li-icol.png) no-repeat 0 -48px;}
+		.ci-service .e{background:url(../../m/list-pro/img/p-li-icol.png) no-repeat -171px -48px;}
+		.ci-service .e strong{color:#f30;font-weight: 400}
+		.ci-contact a{display:inline-block;*display: inline;margin-top:6px; padding-left:20px;background: url(../../m/list-pro/img/p-li-icol.png) no-repeat -20px 2px;color:#888;*zoom:1}
+		.ci-contact .cic-contact{background-position: -20px -22px}
+		.ci-contact .cic-proview{background-position: -20px -48px}
+	.cl-cur{margin-top:-1px;*margin-top:-3px;padding:14px 15px;*padding-bottom:5px;background:#f5fbfd;border:solid 1px #bae5f1}

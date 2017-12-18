@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="/js/"></script>
+<script src="http://res.csc86.com/js/p/kindeditor/4.1.2/kindeditor-min.js"></script>
+<script src="http://res.csc86.com/js/p/kindeditor/4.1.2/lang/zh_CN.js"></script>
+<script src="/js/m/emoticons.js"></script>
+
+<script>
+	$(function(){
+		$("#eeee").on("click",function(){
+			var box = $("<div></div>");
+			 box.html(emoticons_ico.tohtml($(this).val()));
+			$("#a123").append(box);
+		})
+		
+		//emoticons_ico.emoticons('#eeee1',this)
+		editor = KindEditor.create("#eeee1", {
+						themeType : 'qq',
+						pasteType : 1,
+						items : ['emoticons'],
+						newlineTag:'br',
+						afterChange : function() {
+							this.sync();
+						}
+					});
+		
+	})
+</script>
+</head>
+
+<body>
+	<div id="a123" >
+		<textarea id="eeee" style="width:300px; height:100px;"></textarea><br>
+		<a href="javascript:;" onClick="emoticons_ico.emoticons('#eeee',this);">插入表情</a><br>
+		<textarea id="eeee1" style="width:300px; height:100px;"></textarea><br>
+		<a href="javascript:;" onClick="emoticons_ico.emoticons(editor,this);">插入表情</a><br>
+	</div>
+</body>
+</html>

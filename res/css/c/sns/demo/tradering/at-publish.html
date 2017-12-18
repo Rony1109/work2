@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>生意圈活动</title>
+<link rel="stylesheet" href="/css/" />
+<link rel="stylesheet" href="/f=css/c/sns/tradering.css" />
+<script type="text/javascript" src="/js/"></script>
+<script src="/editor/"></script>
+<link rel="stylesheet" href="/f=css/c/sns/tradering.css" />
+<script type="text/javascript" src="/swfupload/"></script>
+<script type="text/javascript" src="/dialog/"></script>
+<script src="/js/p/My97DatePicker/4.8/buyoffer_WdatePicker.js"></script>
+<script type="text/javascript" src="/b=js/c/sns&f=snsInfouploadimg.js,snsUploadimg.js,tradering.js"></script>
+<script type="text/javascript" src="/js/c/sns/activity.js"></script>
+</head>
+<body>
+<!--start main-->
+<div class="g-o-a">
+    <!--start 左边-->
+    <div class="g-f-l mb-l">
+        <div class="tr-mb-content">
+        	<!--选项内容-->
+            <div class="g-h-10"></div>
+            
+			<div class="pb_title">发起新活动</div>
+            <form>
+                <div class="pb_con">
+                    <div class="g-f-l pc_l">
+                        <span class="pl_img ibox-img"><p class="at-img" href="javascript:"><img  id="imgload0"  src="../../../../../image/no-img.png" alt="" width="160" height="160" /></p></span>
+                        <div class="g-h-10"></div>
+                        <input class="pl_btn" type="button" value="上传图片" id="upload00" />
+                        <span class="pl_po">仅支持jpg、gif、 Png图片文件，且文件小于3MB.</span>
+                    </div>
+                    <div class="g-f-l pc_r">
+                    	<table width="528px" border="0" cellspacing="0" cellpadding="0">
+                        <colgroup>
+                        	<col width="78px" />
+                        	<col width="450px" />
+                        </colgroup>
+                          <tr>
+                            <th>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题：</th>
+                            <td>
+                            <input class="pl_in" type="text" value="最多30个字符" />
+                            <!--<input type="text" class="pl_in" onblur="if(this.value=='') this.value='搜索'; this.style.color='#999'; return true;" onfocus="if(this.value=='搜索') this.value='';this.style.color='#333'; return true;" value="搜索" class="search" name="passwordtwo" maxlength="30" />-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>活动类型：</th>
+                            <td><label class="pi_l"><input name="type" type="radio" value="线下活动">线下活动</label><label class="pi_r"><input name="type" type="radio" value="线上活动">线上活动</label></td>
+                          </tr> 
+                          <tr>
+                            <th>活动范围：</th>
+                            <td><label class="pi_l"><input name="extent" type="radio" value="所有成员">所有成员</label><label class="pi_r"><input name="extent" type="radio" value="圈内成员">圈内成员</label></td>
+                          </tr> 
+                          <tr>
+                            <th>活动时间：</th>
+                            <td>
+                            <div class="at-time-s-e">
+                            	<span class="pl_time">开始时间<input type="text" id="startTime" class="time-text" onClick="WdatePicker({dateFmt:'yyyy-M-d',maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}',el:'startTime',minDate:'%y-%M-%d'})" />
+                                    <select name="" class="pl-min">
+                                        <option value="00:00">00:00</option>
+                                        <option value="00:30">00:30</option>
+                                        <option value="01:00">01:00</option>
+                                        <option value="01:30">01:30</option>
+                                        <option value="02:00">02:00</option>
+                                        <option value="02:30">02:30</option>
+                                        <option value="03:00">03:00</option>
+                                        <option value="03:30">03:30</option>
+                                        <option value="04:00">04:00</option>
+                                        <option value="04:30">04:30</option>
+                                        <option value="05:00">05:00</option>
+                                        <option value="05:30">05:30</option>
+                                        <option value="06:00">06:00</option>
+                                        <option value="06:30">06:30</option>
+                                        <option value="07:00">07:00</option>
+                                        <option value="07:30">07:30</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="08:30">08:30</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="23:30">23:30</option>
+                                        <option value="24:00">24:00</option>
+                                        <option value="24:30">24:30</option>
+                                    </select>
+                                    </span>
+                                    <span class="pl_time">结束时间<input type="text"  class="time-text" id="endTime" onClick="WdatePicker({dateFmt:'yyyy-M-d',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01',el:'endTime'})"/>
+                                    <select name="" class="pl-min">
+                                        <option value="00:00">00:00</option>
+                                        <option value="00:30">00:30</option>
+                                        <option value="01:00">01:00</option>
+                                        <option value="01:30">01:30</option>
+                                        <option value="02:00">02:00</option>
+                                        <option value="02:30">02:30</option>
+                                        <option value="03:00">03:00</option>
+                                        <option value="03:30">03:30</option>
+                                        <option value="04:00">04:00</option>
+                                        <option value="04:30">04:30</option>
+                                        <option value="05:00">05:00</option>
+                                        <option value="05:30">05:30</option>
+                                        <option value="06:00">06:00</option>
+                                        <option value="06:30">06:30</option>
+                                        <option value="07:00">07:00</option>
+                                        <option value="07:30">07:30</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="08:30">08:30</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="23:30">23:30</option>
+                                        <option value="24:00">24:00</option>
+                                        <option value="24:30">24:30</option>
+                                    </select>
+                                	</span>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>活动地点：</th>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th></th>
+                            <td>—&nbsp;&nbsp;<input class="pl_in" type="text" value="详细地址" maxlength="30" /></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <dl class="g-h-01 ap-inf-t">
+                    	<dt>活动详情：</dt>
+                        <dd>
+                            <textarea name="description" id="description" class="pl_con_t"></textarea>
+                            <div class="pct_po">0/2000</div>
+                        </dd>
+                    </dl>
+                    <div class="pb_btn"><input class="pb_b" type="button" value="预览"/><input class="pb_sub" type="submit" value="提交"/></div>
+                </div>
+			</form>
+       
+       
+       
+            
+        </div>  
+    </div>
+    
+    <div class="g-f-r mb-r">
+        <dl class="mr-cf-list ap-list">
+        	<dt class="pu-ti">如何让你发起的活动获得更多关注和参与？</dt>
+            <dd>
+				<ol>
+                	<li>	明确地表达活动的意义和主题，简明的阐述活动能给参与者带来哪些收获和益处；</li>
+                    <li>把活动发布在潜在参与者聚集的圈子里；</li>
+                    <li>提早发布活动信息，明确时间地点； </li>
+                    <li>每隔一段时间发布活动相关的话题，提醒有意向的参与者或新的浏览者；</li>
+                    <li>把发在圈子里的活动信息分享到更多的SNS平台吸引关注。</li>
+                </ol>
+            </dd>
+        </dl>
+        <dl class="mr-cf-list">
+        	<dt>如何打造热门圈子</dt>
+            <dd>
+            	<ol>
+                	<li>为圈子取一个明了好记的圈名；</li>
+                    <li>在圈子介绍和公告中简明表述创建圈子的意义以及加入圈子能有怎样的收获；</li>
+                    <li>邀请自己的商务伙伴加入，营造分享和讨论的氛围；</li>
+                    <li>尽量多发表原创话题，表达自己的真实想法和意见以引发讨论；</li>
+                    <li>在其他热门圈子中发表话题并保持活跃度，并适当推广自己的圈子，引起圈内其他成员关注；</li>
+                    <li>多在圈中发起线上和线下活动，增进圈友间的交流；</li>
+                    <li>将圈子中的热门话题及活动推广至其他SNS平台。</li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>推广中心</title>
+        <link rel="stylesheet" href="http://res.csc86.com/app/" />
+        <link rel="stylesheet" href="http://res.csc86.com/b=css/c/membercenter&f=mem-head.css,mem-nav.css,mem-foot.css,member.css" />
+        <link rel="stylesheet" href="http://res.csc86.com/f=css/c/ads/style.css">
+        <script src="http://res.csc86.com/js/"></script>
+        <script src="http://res.csc86.com/b=js&f=c/membercenter/member.js,m/page.js"></script>
+
+    </head>
+    <body>
+        <div class="g-o-a app-frame">
+            <div id="apply" class="af-nav">
+                <h2><a href="/shop/shopinfo.html">推广中心</a></h2>
+                <ul class="nav-items">
+                    <li class="item has-children has-children-cur">
+                        <a href="javascript:">抢广告位</a>
+                        <ul>
+                            <li>
+                                <a href="/shop/add-ads.html">添加广告</a>
+                            </li>
+                            <li>
+                                <a href="/shop/ads-list.html">我的广告</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item bg-none">
+                        <a href="ad-account.html">我的账号</a>
+                     </li>
+                </ul>
+            </div>
+            <script>
+				seajs.use(csc.url("res", "/f=js/m/hrefinfo"), function() {
+					csc.hrefinfo("ul.nav-items>li.item>a");
+				});
+            </script>
+            <div class="af-bd">
+                <h1 class="af-hd">广告位介绍</h1>
+                <div class="ads">
+                    <a href="javascript:"><img src="http://res.csc86.com/image/c/ads/ad01.jpg" /></a>
+                    <dl class="ad-intro">
+                        <dt>如何购买广告位？</dt>
+                        <dd><div class="ad-step"><img src="http://res.csc86.com/image/c/ads/step.jpg" /></div></dd>
+                        <dt>广告位能为您做什么？</dt>
+                        <dd>
+                         <ul class="ad-i-ul">
+                            <li class="n1"><strong>树立品牌形象</strong><br/>让您的网站获得更多的曝光机会，彰显品牌实力。</li>
+                            <li class="n2"><strong>精准覆盖客户</strong><br/>凭借华南城网专业的客户数据，精准高效推广服务。</li>
+                            <li class="n3"><strong>贴心服务</strong><br/>独享专家服务、智能推广方案、账务托管。</li>
+                            <li class="n4"><strong>灵活控制预算</strong><br/>合理设置每笔推广的投放时间，灵活控制预算的同时，让推广更有针对性。</li>                            
+                        </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

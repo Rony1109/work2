@@ -1,0 +1,6 @@
+.focus-play{position:relative;overflow:hidden;width:480px;height:180px;z-index:0}
+.focus-play ul li{position:absolute;display:none}
+.focus-play ul li.cur{display:block}
+.focus-play ol{position:absolute;right:6px;bottom:8px;z-index:3}
+.focus-play ol li{float:left;width:18px;height:18px;margin-right:6px;color:#ff4e00;text-align:center;line-height:18px;background:#fef3d9;border-radius:18px;opacity:.7;filter:alpha(opacity=70);cursor:default}
+.focus-play ol li.cur{position:relative;width:19px;height:19px;top:-1px;color:white;font-size:14px;font-weight:bold;line-height:19px;background:#f60;border-radius:19px;opacity:1;filter:alpha(opacity=100)}

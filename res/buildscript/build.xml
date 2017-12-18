@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="res" default="package" xmlns:mvn="antlib:org.apache.maven.artifact.ant">
+
+		
+	<property name="lib.dir" value="deploy" />
+
+	<target name="init">
+		<mkdir dir="${lib.dir}" />
+		<mkdir dir="${pom.tmpdir}" />
+	</target>
+	
+	<target name="maven-depends" depends="init">
+
+	</target>
+
+	<target name="build" depends="maven-depends" description="--> compile project">
+	
+	</target>
+	
+	<target name="package" depends="build" description="--> p project">
+		<!-- 目的： 添加两个pom文件，zippom.pom.xml, 让zip包自描述版本和依赖关系-->
+		<!-- 采用补丁的方式，调antcall来处理, 便于删除 -->
+		<antcall target="addVersionFile"/>
+		
+		<zip destfile="${lib.dir}/ui-res.zip" basedir="../" excludes="buildscript/**, .project">
+		</zip>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${lib.dir}" />
+		<delete dir="${pom.tmpdir}" />
+	</target>
+
+	<target name="release" depends="package">
+		<mvn:pom id="default-pom" file="uploadProject_template.pom.xml" settingsFile="settings.xml"/>
+		<mvn:deploy file="${lib.dir}/${default-pom.artifactId}.${default-pom.packaging}">
+			<remoteRepository id="release" url="http://192.168.0.100:8081/artifactory/simple/ext-release-local/">
+				<authentication username="admin" password="java@admin" />
+			</remoteRepository>
+			<pom refid="default-pom" />
+		</mvn:deploy>
+	</target>
+	
+	<!-- 临时文件目录 -->
+	<property name="pom.tmpdir" value="tmp" />
+	
+	<!-- 以下由hudson操作，不建议用手工执行 -->	
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+	
+	<!-- 上传制品到制品库artifactory -->
+	<!-- 选择：M.m.n -->
+	<property name="uploadVersion" value="1.0.0" />
+	<!-- 选择：release, snapshot, none -->
+	<property name="uploadTarget" value="release" />
+
+	<target name="upload" depends="">
+		<echo message="======上传->工程=======" />
+		<antcall target="uploadProject"/>
+	</target>
+
+
+	<target name="uploadProject" depends="package">
+		<if>
+			<equals arg1="${uploadTarget}" arg2="snapshot" />
+			<then>
+				<echo message="======上传到->测试仓库=======" />
+				<copy file="uploadProject_template.pom.xml" tofile="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" overwrite="true" />
+				<replace file="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" token="@version@" value="${uploadVersion}-SNAPSHOT" />
+				<mvn:pom id="default-pom" file="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" settingsFile="settings.xml" />
+				<mvn:deploy file="${lib.dir}/${default-pom.artifactId}.${default-pom.packaging}">
+					<remoteRepository id="snapshots" url="http://192.168.0.100:8081/artifactory/simple/ext-snapshot-local/">
+						<authentication username="admin" password="java@admin" />
+					</remoteRepository>
+					<pom refid="default-pom" />
+				</mvn:deploy>
+			</then>
+			<elseif>
+				<equals arg1="${uploadTarget}" arg2="release" />
+				<then>
+					<echo message="======上传到->发布仓库=======" />
+					<copy file="uploadProject_template.pom.xml" tofile="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" overwrite="true" />
+					<replace file="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" token="@version@" value="${uploadVersion}-RELEASE" />
+					<mvn:pom id="default-pom" file="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" settingsFile="settings.xml" />
+					<mvn:deploy file="${lib.dir}/${default-pom.artifactId}.${default-pom.packaging}">
+						<remoteRepository id="release" url="http://192.168.0.100:8081/artifactory/simple/ext-release-local/">
+							<authentication username="admin" password="java@admin" />
+						</remoteRepository>
+						<pom refid="default-pom" />
+					</mvn:deploy>
+				</then>
+			</elseif>			
+			<else>
+				<echo message="======没有执行上传操作=======" />
+			</else>
+		</if>
+	</target>
+	
+	<target name="addVersionFile" depends="">
+		<if>
+			<equals arg1="${uploadTarget}" arg2="snapshot" />
+			<then>
+				<echo message="======addVersionFile---服务器端---测试仓库=======" />
+				<copy file="uploadProject_template.pom.xml" tofile="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" overwrite="true" />
+				<replace file="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" token="@version@" value="${uploadVersion}-SNAPSHOT" />
+				<copy file="${pom.tmpdir}/uploadProject_SNAPSHOT.pom.xml" tofile="../pomzip.pom.xml" overwrite="true" />
+			</then>
+			<elseif>
+				<equals arg1="${uploadTarget}" arg2="release" />
+				<then>
+					<echo message="======addVersionFile---服务器端---发布仓库=======" />
+					<copy file="uploadProject_template.pom.xml" tofile="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" overwrite="true" />
+					<replace file="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" token="@version@" value="${uploadVersion}-RELEASE" />
+					<copy file="${pom.tmpdir}/uploadProject_RELEASE.pom.xml" tofile="../pomzip.pom.xml" overwrite="true" />
+				</then>
+			</elseif>			
+			<else>
+				<echo message="======没有执行addVersionFile操作=======" />
+			</else>
+		</if>
+	</target>
+	
+	
+</project>

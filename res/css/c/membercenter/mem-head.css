@@ -1,0 +1,55 @@
+/*会员头部css yq*/
+.head{ position:relative; z-index:9; height:40px;  background:#1b6db7 url(img/head-bg.png) repeat-x center; color:#FFF; font-size:14px;}
+.head .logo{ margin:8px 0 0 15px; height:25px; width:90px;}
+.head ul.main,.head .logo{ float:left; display:inline;}
+.head ul.main{ margin-left:45px; font-size:15px; text-align:center;}
+.head .main li{ float:left; display:inline; width:105px;}
+.head .main li a.fir{ display:block; width:106px; line-height:40px; color:#FFF; font-family:Microsoft YaHei,simhei; }
+.head .main li.cur a.fir,.head .main li:hover a.fir{ text-decoration:none; background:#0065ac url(img/head-list-cur.png) no-repeat 0;}
+/*工具列表css */
+.head .main li.apply{ position:relative;}
+.head  li .outer{ position:absolute;left:-322px; top:40px; padding-top:7px;}
+.head  li .outer i.icol{ position:absolute; left:50%; top:0px; width:16px; height:10px; background:url(img/tool-icol.png) no-repeat center 0; }
+.head  li .inner{ border:2px solid #ccc; background:#fff;}
+.head .main li.apply .outer{ display:none; width:740px; }
+.head .main li.apply:hover .outer,.head .main li.hover .outer{ display:block;}
+.head .main li.apply .inner{ padding:0 0 20px;}
+.head .main li.apply h3{ overflow:hidden; line-height:35px; border-bottom:1px solid #e5e5e5; color:#333; text-align:left;background:#fff; padding:0 10px 0 16px;}
+.head .main li.apply h3 a{ float:right; font-size:12px; height:27px; line-height:27px; margin:6px 6px 0 0; }
+.head .main li.apply ul{ padding-left:15px;background:#fff;}
+.head .main li.apply li{ width:87px; text-align:center; margin-top:25px;}
+.head .main li.apply img{ display:block; margin:0 auto;}
+.head .main li.apply li a{ color:#333; font-size:12px;}
+
+/*消息列表css */
+.head ol{float:right; width:280px;*width:295px;}
+.head ol li.index-dic{ float:right; }
+.head ol li.index-dic a{ color:#FFF; margin-left:10px; line-height:39px; white-space:nowrap;}
+.head ol li.index-dic a:hover{ text-decoration:none; }
+.head li.msg,.head li.user{ position:relative; float:right; line-height:40px; height:40px; padding:0 5px; cursor:pointer;}
+.head ol .tit{ float:right; color:#FFF; height:40px; line-height:40px; white-space:nowrap;}
+.head ol .num-bg{ float:right;margin:12px 8px 0 5px; max-width:32px; overflow:hidden; padding-right:5px; height:16px; line-height:13px; background:url(img/msg-bg.png) no-repeat right 0; color:#0070c0; font-style:normal; font-weight:bold; font-size:12px;}
+.head ol .num-bg i{ float:left;height:16px; padding-left:5px; overflow:hidden; background:url(img/msg-bg.png) no-repeat 0 -19px; font-style:normal; }
+.head li.msg{ *width:85px;}
+.head li.msg .outer{ display:none; left:-147px;*left:-127px; width:270px;}
+.head  li.msg .outer i.icol{ left:65%;}
+.head li.msg:hover .outer,.head li.hover .outer{display:block;}
+.head li.msg ul{ padding-bottom:20px;}
+.head li.msg li{ overflow:hidden;_zoom:1; padding:2px 15px 2px 40px; background:url(img/del-icol.png) no-repeat 15px 7px;}
+.head li.msg li:hover,.head li.msg li.hover{background:#f0f0f0 url(img/del-icol.png) no-repeat 15px 7px; }
+.head li.msg li:hover a:hover,.head li.msg li.hover a:hover{text-decoration:none;}
+.head li.msg li a{line-height:22px; color:#333; font-size:12px; }
+.head li.msg li a.title{ float:left; width:196px; overflow:hidden;text-overflow:ellipsis; max-height:42px; line-height:21px;}
+.head li.msg li a.del{ display:none; float:right; width:14px; height:12px; margin-top:5px; background:url(img/del-icol.png) no-repeat 0 -39px;} 
+.head li.msg li:hover a,.head li.msg li.hover a{ display:block;}
+.head li.msg p{ text-align:center; border-top:1px solid #e5e5e5; }
+.head li.msg p a{ font-size:12px; line-height:27px; }
+/*用户列表css */
+.head .user em{ height:40px; line-height:40px; background:url(img/h-san.png) no-repeat right center; display:block;_display:inherit; padding-right:15px;}
+.head li.user .outer{ display:none; position:absolute; left:-25px; width:110px; line-height:25px;font-size:12px;}
+.head li.user:hover .outer,.head li.hover .outer{ display:block;}
+.head li.user .outer div{ clear:both;}
+.head li.user .outer span{ float:right; width:40px; height:54px; overflow:hidden; line-height:18px; color:#067ED4; margin:3px 3px 0 0; font-weight:700;}
+.head li.user .outer div a{ display:block; padding-left:6px; white-space:nowrap;background:#fff}
+.head li.user .outer a.img{ float:left; height:55px; margin-top:8px;}
+.head li.user .outer a.exit{ border-top:1px solid #e4e4e4; color:#404040; margin:0 4px; padding:5px 0 0 2px;}

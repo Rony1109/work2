@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>诚信深商</title>
+        <link rel="stylesheet" href="/app/" />
+        <link rel="stylesheet" href="/b=css/c/membercenter&f=mem-head.css,mem-nav.css,mem-foot.css,member.css" />
+        <link rel="stylesheet" href="/b=css&f=/m/app-frame/style.css,c/membercenter/compaccredit.css" />
+        <script type="text/javascript" src="/js/"></script>
+        <script type="text/javascript" src="/swfupload/"></script>
+        <script type="text/javascript" src="/b=js/c/membercenter&f=member.js,uploadimg.js"></script>
+        <script type="text/javascript" src="/b=js/c/accreditation&f=authenticate.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <div class="g-o-a">
+                <ol class="g-f-r">
+                    <li class="index-dic">
+                        <a href="http://www.csc86.com" target="_blank">华南城网首页</a>
+                    </li>
+                    <li class="user">
+                        <em>账号<i></i></em>
+                        <div class="outer">
+                            <i class="icol"></i>
+                            <div class="inner">
+                                <div>
+                                    <a class="img" href="/membercenter/getuserinfo/"><img width="50" height="50" src="
+                                    http://img.csc86.com/upfiles/2013/01/31/201301312241342.jpg"></a><span title="张子龙"> 张子龙</span>
+                                </div>
+                                <div>
+                                    <a href="/membercenter/userinfo/">账号管理 </a><a href="/membercenter/getphoneverification/">账号安全</a><a class="exit" href="/login/logout?done=http://member.csc86.com/">安全退出</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="msg">
+                        <em class="num-bg"><i id="talNum-o">0</i></em><a href="/membercenter/messagelist/"><span class="tit">消息</span></a>
+                        <div class="outer">
+                            <i class="icol"></i>
+                            <div class="inner">
+                                <ul class="g-c-f" id="msgi-link"></ul>
+                                <p>
+                                    <a class="all-show" href="/membercenter/messageall/">查看全部消息&gt;&gt;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <img src="http://res.csc86.com/image/c/membercenter/m-logo.png" class="logo">
+                <ul class="main" id="head-main">
+                    <li class="cur">
+                        <a href="/" class="fir">首页</a>
+                    </li>
+                    <li class="apply">
+                        <a href="/membercenter/tool/" class="fir">我的工具</a>
+                        <div class="outer">
+                            <i class="icol"></i>
+                            <div class="inner">
+                                <h3><a href="javascript:" id="entr-ment">管理快捷入口</a>我的工具</h3>
+                                <ul class="g-c-f">
+                                    <li>
+                                        <a class="img" href="/product/sell/list.html" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply00.png"></a><a href="/product/sell/list.html" target="_blank">产品管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="/inquiry/list.html?status=Y" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply01.png"></a><a href="/inquiry/list.html?status=Y" target="_blank">询盘管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="/quote/list.html" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply03.png"></a><a href="/quote/list.html" target="_blank">报价管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="/accreditation/Accreditation.html" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply04.png"></a><a href="/accreditation/Accreditation.html" target="_blank">认证服务</a>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="/favorites/index.html" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply05.png"></a><a href="/favorites/index.html" target="_blank">收藏夹</a>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="/shop/guide.html" target="_blank"><img width="48" height="48" src="http://res.csc86.com/image/c/membercenter/apply/apply02.png"></a><a href="/shop/guide.html" target="_blank">旺铺</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="g-o-a app-frame">
+            <div class="af-nav">
+                <h2>认证服务</h2>
+                <ul class="nav-items">
+                    <li class="bg-none item">
+                        <a href="/accreditation/Enterpriserealnamedetailsauthentication/">企业实名认证</a>
+                    </li>
+                    <li class="bg-none item ">
+                        <a href="/accreditation/Physicalstoredetailscertification/">实体店认证</a>
+                    </li>
+                    <li class="bg-none item cur">
+                        <a href="javascript:">诚信深商</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="af-bd cxss-accredit">
+                <h2 class="af-hd">诚信深商认证</h2>
+                <div class="h-tips">
+                    诚信深商认证由华南城网联合政府授权和委托机构——众信网，针对开通旺铺且注册地为深圳的商家，特别打造的真实身份权威认证。
+                </div>
+                <form method="post" id="authenticate">
+                    <dl>
+                        <dt>
+                            企业基本信息
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>企业注册号：</label>
+                                    <div class="aff-value">
+                                        <input type="text" name="regNo" class="aff-text" id="regNo" />
+                                        <input type="button" class="regbtn" value="确 定" onclick="checkRegNo();"/>
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>企业名称：</label>
+                                    <div class="aff-value">
+                                        <input type="text" readonly="readonly" name="companyName" class="aff-text distext" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>注册地：</label>
+                                    <div class="aff-value">
+                                        <span>广东省&nbsp;</span><span>&nbsp;深圳市&nbsp;</span>
+                                        <select name="area">
+                                            <option value="罗湖区">罗湖区</option>
+                                            <option value="福田区">福田区</option>
+                                            <option value="龙岗区">龙岗区</option>
+                                            <option value="盐田区">盐田区</option>
+                                            <option value="宝安区">宝安区</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>企业邮箱：</label>
+                                    <div class="aff-value">
+                                        <input type="text" name="email" class="aff-text verify"  data-verify='{"focus":{"tip":"请输入常用邮箱，如：xxx@csc86.com"},"role":[{"regex":"/^.{6,50}$/","tip":"邮箱长度为6-50位"},{"regex":"/^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$/","tip":"请输入正确邮箱地址，如：xxx@csc86.com"}],"must":{"tip":"不能为空"}}' maxlength="50" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>办公电话：</label>
+                                    <div class="aff-value">
+                                        <input type="text" name="telephone" class="aff-text verify"  data-verify='{"focus":{"tip":"格式：区号-电话号，如0755-8888888"},"role":[{"regex":"/^.{11,13}$/","tip":"请输入正确的办公电话"},{"regex":"/^(\\d){3,4}([-](\\d){7,8})+$/","tip":"请输入正确的办公电话"}],"must":{"tip":"不能为空"}}' maxlength="13" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>办公地址：</label>
+                                    <div class="aff-value">
+                                        <input type="text" name="address" class="aff-text verify"  data-verify='{"focus":{"tip":"请输入详细的办公街道地址"},"role":[{"regex":"/^[A-Za-z0-9\\u4e00-\\u9fa5\\(\\（\\）\\)]{5,125}$/","tip":"办公地址为5-125个字"}],"must":{"tip":"不能为空"}}' maxlength="125" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item comtype">
+                                    <label class="aff-key"><span class="star">*</span>公司类型：</label>
+                                    <div class="aff-value">
+                                        <label class="ty">
+                                            <input type="checkbox" name="serviceType" value="服务型" />
+                                            服务型</label>
+                                        <label class="ty">
+                                            <input type="checkbox" name="produceType" value="生产型" />
+                                            生产型</label>
+                                        <label class="ty">
+                                            <input type="checkbox" name="tradeType" value="贸易型" />
+                                            贸易型</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt>
+                            证件上传
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li class="g-c-f aff-item license">
+                                    <label class="aff-key"><span class="star">*</span>营业执照：</label>
+                                    <div class="aff-value">
+                                        <span id="license">点击上传</span><span class="uploadtip">请上传Jpg、png格式图片，大小不超过2M</span><br/>
+                                        <span class="uploadpic"><img id="imgload00" src="/image/c/accreditation/acci00.png" width="200" height="160" /></span>
+                                        <input name="uploadAuthLicense" id="imgurl00" type="hidden" value="">
+                                        <script>
+											new SWFUpload(uploadSettings({
+												upload_url : csc.url("img", "/upload?type=authLicense"),
+												button_placeholder_id : "license",
+												button_image_url : csc.url("res", "/css/c/membercenter/img/upload.png"),
+												button_width : 82,
+												button_text : "点击上传",
+												button_text_left_padding : 15,
+												file_types : "*.jpg;*.jpeg;*.png;",
+												file_size_limit :"2 MB"
+											}));
+                                        </script>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt>
+                            联系人信息
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>联系人姓名：</label>
+                                    <div class="aff-value">
+                                        <input name="contactName" type="text" class="aff-text verify"  data-verify='{"focus":{"tip":"请输入真实有效的联系人姓名"},"role":[{"regex":"/^[A-Za-z\\u4e00-\\u9fa5]{2,10}/","tip":"联系人姓名为2-10个字"}],"must":{"tip":"不能为空"}}' maxlength="10" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>联系人电话：</label>
+                                    <div class="aff-value">
+                                        <input name="contactTelephone" type="text" class="aff-text verify"  data-verify='{"focus":{"tip":"请输入手机号或座机号；座机需加区号，用“-”分隔”"},"role":[{"regex":"/(^1[3|4|5|8][0-9]\\d{4,8}$)|(^(\\d){3,4}([-](\\d){7,8})+$)/","tip":"联系人电话为11-13位数字"}],"must":{"tip":"不能为空"}}' maxlength="13" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>联系人邮箱：</label>
+                                    <div class="aff-value">
+                                        <input name="contactEmail" type="text" class="aff-text verify"  data-verify='{"focus":{"tip":"请输入常用邮箱，如：xxx@csc86.com"},"role":[{"regex":"/^.{6,50}$/","tip":"邮箱长度为6-50位"},{"regex":"/^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$/","tip":"请输入正确邮箱地址，如：xxx@csc86.com"}],"must":{"tip":"不能为空"}}' maxlength="50" />
+                                    </div>
+                                </li>
+
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key">联系人职务：</label>
+                                    <div class="aff-value">
+                                        <input name="contactPost" type="text" class="aff-text"  data-verify='{"focus":{"tip":"请输入联系人在企业的职务，2-10个字"},"role":[{"regex":"/^[A-Za-z0-9\\u4e00-\\u9fa5]{2,10}/","tip":"职务为2-10位数字、字母或汉字"}]}' maxlength="10" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key">联系人地址：</label>
+                                    <div class="aff-value">
+                                        <input name="contactAddress" type="text" class="aff-text"  data-verify='{"focus":{"tip":"请输入详细的街道地址"},"role":[{"regex":"/^[A-Za-z0-9\\u4e00-\\u9fa5\\(\\（\\）\\)]{5,125}$/","tip":"联系人地址为5-125个字"}]}' maxlength="125"/>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </dd>
+
+                        <dt>
+                            旺铺信息
+                        </dt>
+                        <dd>
+                            <ul>
+
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>一句话简介：</label>
+                                    <div class="aff-value">
+                                        <input type="text" name="wordIntroduction" class="aff-text verify" data-verify='{"role":[{"regex":"/^.{5,35}$/","tip":"简介为5-35个字"}],"must":{"tip":"不能为空"}}' maxlength="35" />
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item industry">
+                                    <label class="aff-key"><span class="star">*</span>主营行业：</label>
+                                    <div class="aff-value">
+                                        <div id="indu" class="main-indu">
+                                            <div id="indus-sele" class="selec-con"></div>
+                                            <input name="" type="button" class="btn" value="选择">
+                                            <div id="indus-con" class="all-sele-con indus-con">
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="01">
+                                                    1</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="02">
+                                                    22</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="03">
+                                                    333</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="04">
+                                                    4444</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="05">
+                                                    55555</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="06">
+                                                    6</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="07">
+                                                    77</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="08">
+                                                    888</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="09">
+                                                    9999</label>
+                                                <label>
+                                                    <input name="industry[]" type="checkbox" value="10">
+                                                    101010</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item cshoplogo">
+                                    <label class="aff-key"><span class="star">*</span>旺铺LOGO：</label>
+                                    <div class="aff-value">
+                                        <span id="shopLogo">点击上传</span><span class="uploadtip">请上传Jpg、png格式图片，大小不超过2M</span><br/>
+                                        <span class="uploadpic"><img id="imgload01" src="/image/no-proimg.png" width="100" height="100" /></span>
+                                        <input name="uploadShopLogo" id="imgurl01" type="hidden" value="">
+                                        <script>
+											new SWFUpload(uploadSettings({
+												upload_url : csc.url("img", "/upload?type=authShopLogo"),
+												button_placeholder_id : "shopLogo",
+												button_image_url : csc.url("res", "/css/c/membercenter/img/upload.png"),
+												button_width : 82,
+												button_text : "点击上传",
+												button_text_left_padding : 15,
+												file_types : "*.jpg;*.jpeg;*.png;",
+												file_size_limit :"2 MB"
+											}));
+                                        </script>
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <label class="aff-key"><span class="star">*</span>详细介绍：</label>
+                                    <div class="aff-value">
+                                        <textarea class="description" id="cdescription"></textarea>
+                                    </div>
+                                </li>
+                                <li class="g-c-f aff-item">
+                                    <div class="aff-value">
+                                        <input type="checkbox" class="agreement" checked="checked" />
+                                        已阅读《<a href="javascript:" target="_blank">电子商务可信交易生态圈承诺函</a>》，确认申请
+                                        <br/>
+                                        <input type="checkbox" class="agreement" checked="checked" />
+                                        已阅读《<a href="javascript:" target="_blank">“深商E天下”活动承诺函</a>》，确认申请
+                                        <br/><br/>
+                                        <span class="aff-submit">
+                                            <input type="submit" value="确定提交">
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </form>
+                <script>
+					seajs.use(csc.url("res", "/f=js/m/verify"), function() {
+						csc.verify("input[data-verify]");
+					});
+                </script>
+            </div>
+        </div>
+        <div class="g-o-a foot">
+            <div class="foot-link">
+                <a href="javascript:">关于华南城</a>|<a href="javascript:">About csc86.com</a>|<a href="javascript:">会员服务</a>|<a href="javascript:">广告服务</a>|<a href="javascript:">商务合作</a>|<a href="javascript:">服务条款</a>|<a href="javascript:">法律申明</a>|<a href="javascript:">隐私保护</a>|<a href="javascript:">意见反馈</a>|<a href="javascript:">帮助中心</a>|<a href="javascript:">网站地图</a>|<a href="javascript:">联系我们</a>
+            </div>
+            <p class="group-link">
+                Copyright©2009-2011 China South City Holdings Limited. All Rights Reserved
+            </p>
+            华南城控股有限公司 版权所有
+        </div>
+    </body>
+</html>

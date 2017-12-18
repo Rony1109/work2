@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>生意圈创建成功</title>
+<link rel="stylesheet" href="/css/" />
+<script type="text/javascript" src="/js/"></script>
+<link rel="stylesheet" href="/f=css/c/sns/tradering.css" />
+<script src="/b=js&f=c/sns/tradering.js"></script>
+<script>
+$(function(){scussVal();});
+var i=5;
+function scussVal(){
+	if(i>=0){
+		$(".asc-time span").html(i);
+		i--;
+		setTimeout(function(){scussVal()},1000);
+	}else{
+		clearInterval(scussVal());
+	}
+}
+</script>
+</head>
+<body>
+
+<!--start main-->
+<div class="g-o-a">
+    <!--start 左边-->
+    <div class="g-f-l mb-l">
+        <div class="ap-model">
+        	<ul class="art-rate">
+             	<li class="te1">1.选择创建类型</li>
+                <li class="te2 te1_2">2.填写基本信息</li>
+                <li class="te3 te3_1">3.完成并提交审核</li>
+             </ul>
+             <h2 class="asc-h">你申请创建的商圈在审核中......</h2>
+            <span class="asc-c">我们会在24小时内对您的申请和资格进行审核，通过后会以系统消息的形式通知您</span>
+        	<span class="asc-c1">商圈名称：湖南省钢铁原料业务圈</span>
+            <span class="asc-c1">商圈类型：行业商圈</span>
+            <span class="asc-c1">申请理由：服装的朋友们一起来交流</span>
+             <div class="asc-time">等待<span>5</span>秒钟后自动返回商圈 首页<br>若未自动返回请点 <a href="javascript:">这里</a></div>
+        </div>
+        </div>
+       
+    </div>
+    <!--end 左边-->
+</div>
+</body>
+</html>

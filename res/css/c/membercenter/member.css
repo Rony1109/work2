@@ -1,0 +1,46 @@
+
+/*会员级别css yq*/
+span.star-s{  position:absolute; width:16px; height:16px; margin-top:3px;*margin-top:-2px; line-height:15px;padding-right:20px; text-indent:-99999px; background:url(img/star.png) no-repeat right 1px; *background-position: right 0;}
+span.star00{background-position: right -16px;}
+em.grade{ position:absolute; margin-top:3px;*margin-top:-2px;width:10px; height:16px; line-height:16px; padding-left:6px;  background:url(img/grade.png) no-repeat 0 0;font-size:10px; color:#f17215;}
+/*主题内容提示css yq*/
+.mem-main{ width:828px;}
+.mem-main h1{ height:35px; width:350px; line-height:35px; font-size:16px; }
+.mem-main .s-fir{ float:right; height:26px; line-height:26px; width:229px; padding-left:18px; background:url(img/s-fir.png) no-repeat 0 0; color:#808080; font-size:12px; font-weight:normal; }
+/*外层框架*/
+.m-outer{}
+.m-outer h2{height:40px; line-height:40px;border-bottom:2px solid #e8e8e8;font-family: Microsoft YaHei,simhei;font-size:15px; }
+.m-outer h2 div{ display:inline; height:21px;}
+/*主题内容提示css yq*/
+.n-tips{ border:1px solid #e4e4e4; padding:10px 10px 15px; }
+.n-tips .tips{border:1px solid #cadfef; padding-left:10px; line-height:25px; color:#808080; background:#edf8ff;}
+.n-tips .tips .close-tips{ float:right; padding-right:33px; background: url(img/exit-icol.png) no-repeat right 2px;}
+.n-tips dt{ color:#184c95; line-height:40px; font-weight:700;}
+.n-tips dd{ float:left; color:#808080; width:95px; padding-left:30px; text-align:center; background:url(img/dd-icol.png) no-repeat left 20px; }
+.n-tips dd.first{ background:none;}
+.n-tips dd img{ display:block; margin:0 auto; margin-bottom:15px;}
+.n-tips dd a{ color:#808080;}
+
+.n-tips1{ position:relative;}
+.n-tips1 .tips{display:none; padding-left:40px; line-height:30px; color:#666;}
+.n-tips1 a.close-tips{display:block; width:28px; height:28px; position:absolute; top:10px; right:0; background:url(img/ico_clear.png) no-repeat 9px 7px;}
+.n-tips1 a.close-tips:hover{ background-position:9px -36px;}
+.n-tips1 dl{border:2px solid #e8e8e8;}
+.n-tips1 dt{ color:#63b6ff; line-height:40px; font-weight:700;}
+.n-tips1 dd{float:left; color:#808080; width:95px; padding-left:35px; text-align:center; background:url(img/dd-icol.png) no-repeat -55px -20px; }
+.n-tips1 dd.first {background:none;}
+.n-tips1 dd a{color:#067ed4; cursor:default;}
+.n-tips1 dd a:hover {color:#067ed4; text-decoration:none;}
+.n-tips1 dd a span {display:block; text-align:center; margin-bottom:15px; padding-top:60px; background:url(img/lc_bak.png) center top no-repeat;}
+.n-tips1 dd.zl_1 span{background-position:center 15px;}
+.n-tips1 dd.zl_2 span{background-position:center -75px;}
+.n-tips1 dd.zl_3 span{background-position:center -155px;}
+.n-tips1 dd.zl_4 span{background-position:center -240px;}
+.n-tips1 dd.zl_5 span{background-position:center -325px;}
+.n-tips1 dd.zl_6 span{background-position:center -410px;}
+.n-tips1 dd.first{ background:none;}
+
+/*显示消息个数*/
+b.m-mu{height:12px;line-height:11px;position:absolute; top:2px; left:28px; background:url(../sns/img/mes-nu.png) no-repeat 0 0;  padding-left:5px; display:inline-block;}
+.mes-po{ position:relative; width:150px; overflow:hidden; height:25px;}
+b.m-mu b{height:12px;background:url(../sns/img/mes-nu.png) no-repeat right 0; padding-right:2px; color:#fff; font-size:11px; display:inline-block; position:relative; top:-1px;}

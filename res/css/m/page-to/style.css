@@ -1,0 +1,53 @@
+/**兼容以前样式及PHP新样式_why**/
+.market-showpage,.market-showpage ul{font-size:0; line-height:0;}
+.market-showpage * {font-size:12px; line-height:24px;color:#888}
+.market-showpage a , .market-showpage span {display:inline-block; *display:inline; zoom:1; vertical-align:middle; margin-right:5px;white-space:nowrap; color:#333}
+.market-showpage span,.market-showpage ul li {color:#888}
+.market-showpage a {border:1px solid #CCC; height:24px;  min-width:16px; _width:16px; text-align:center; padding:0 4px;}
+.market-showpage a:hover,.market-showpage a.hover,.market-showpage ul li.selected a {color:#F67301; border-color:#F67301; text-decoration:none;}
+.market-showpage a.to_up,
+.market-showpage a.to_down,
+.market-showpage ul li.previous a,
+.market-showpage ul li.next a,
+.market-showpage ul li.previous span, 
+.market-showpage ul li.next span{background-image:url(http://res.csc86.com/css/m/page-to/img/bg.gif); background-repeat:no-repeat;}
+
+.market-showpage a.to_up,
+.market-showpage ul li.previous a{background-position:9px 8px; padding:0 9px 0 19px;}
+.market-showpage a.to_up:hover,
+.market-showpage ul li.previous a:hover{background-position:9px -11px;}
+.market-showpage a.to_down,
+.market-showpage ul li.next a{padding:0 19px 0 9px; background-position:right -30px;}
+.market-showpage a.to_down:hover,
+.market-showpage ul li.next a:hover{background-position:right -49px;}
+.market-showpage input.to_txt,
+.market-showpage .pageNo {ime-mode:disabled; height:20px; line-height:20px; margin-right:5px; width:25px; text-align:center; color:#333;}
+.market-showpage .but {border:1px solid #ABADB3;}
+
+
+.market-showpage ul li {display:inline-block; *display:inline; zoom:1; vertical-align:middle; margin-right:6px; white-space:nowrap;}
+.market-showpage ul li a {margin-right:0;}
+.market-showpage ul li.previous span{ border:1px solid #CCC; background-position:9px 8px; padding:0 9px 0 19px;}
+.market-showpage ul li.next span{border:1px solid #CCC; padding:0 19px 0 9px; background-position:right -30px;}
+.market-showpage ul li.hidden span{color:#CCC; border-color:#CCC; cursor:default; margin-right:0;}
+.market-showpage form .submit_go,.market-showpage form .submit_go:active,.market-showpage form .submit_go:hover,.market-showpage form .submit_go:focus,.market-showpage form .submit_go:visited {height:24px; width:49px; line-height:24px; text-align:center; color:#333;}
+
+
+
+.desend_noborder a,.desend_noborder span,.desend_noborder button,.desend_noborder input,.desend_noborder ul li {line-height:18px;}
+.desend_noborder a,.desend_noborder ul li a {border:1px solid #FFF; height:18px; line-height:18px; min-width:12px; _width:12px;padding:0 3px;}
+.desend_noborder a:hover,
+.desend_noborder ul li.selected a{border:1px solid #F67301;height:18px; line-height:18px; min-width:12px; _width:12px;}
+.desend_noborder a.to_up,.desend_noborder ul li.previous a{background-position:9px 5px;}
+.desend_noborder a.to_up:hover,.desend_noborder ul li.previous a:hover{background-position:9px -14px;}
+.desend_noborder a.to_down,.desend_noborder ul li.next a {background-position:right -33px;}
+.desend_noborder a.to_down:hover,.desend_noborder ul li.next a:hover {background-position:right -52px;}
+.desend_noborder input.to_txt {height:16px; line-height:16px;}
+
+.desend_noborder .pageNo {height:16px; line-height:16px;}
+.desend_noborder form .submit_go,
+.desend_noborder form .submit_go:active,
+.desend_noborder form .submit_go:hover,
+.desend_noborder form .submit_go:focus,
+.desend_noborder form .submit_go:visited {height:22px; width:49px; line-height:22px; text-align:center; color:#333;}
+.desend_noborder .hidden {display:none;}

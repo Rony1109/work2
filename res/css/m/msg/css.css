@@ -1,0 +1,45 @@
+/* CSS Document */
+html {overflow-y:auto; *background-attachment:fixed; background-image:URL("about:blank");}
+body {}
+.msg_but {color:#333; display:inline-block; *display:inline; *zoom:1; padding:0 15px; line-height:23px; border:1px solid #888;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DDDDDD'); 
+	background: linear-gradient(top, #EEEEEE, #DDDDDD); 
+	background: -moz-linear-gradient(top, #EEEEEE, #DDDDDD); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#DDDDDD));
+	-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+.msg_but:hover {text-decoration:none; color:#555;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD'); 
+	background: linear-gradient(top, #FFFFFF, #DDDDDD); 
+	background: -moz-linear-gradient(top, #FFFFFF, #DDDDDD); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#DDDDDD));
+}
+.msg_title_box {height:36px; line-height:36px; background:#EFEFEF; border-bottom:1px solid #E5E5E5; overflow:hidden; padding-left:10px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EFEFEF'); 
+background: linear-gradient(top, #FFF, #EFEFEF); 
+background: -moz-linear-gradient(top, #FFF, #EFEFEF); 
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EFEFEF)); 
+}
+.msg_text_box {line-height:2; position:fixed; bottom:46px; top:37px; width:100%; overflow:auto;
+_position:absolute; 
+_top:expression(eval(document.documentElement.scrollTop+document.body.scrollTop+37));
+_height:expression(eval(document.documentElement.clientHeight-37-46));
+z-index:2;
+}
+.msg_text_main {padding:25px;}
+.msg_text_main .msg_to {font:bold 14px/2 Microsoft YaHei,simhei;}
+.msg_text_main .msg_msg {padding:0 15px; min-height:140px; _height:180px;}
+.msg_text_main .msg_form {line-height:2; text-align:right; padding:0 15px;}
+.msg_comm_box {height:25px; padding:10px 0; line-height:25px; overflow:hidden; border-top:1px solid #E5E5E5;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#FFFFFF'); 
+background: linear-gradient(top, #F9F9F9, #FFF); 
+background: -moz-linear-gradient(top, #F9F9F9, #FFF); 
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F9F9F9), to(#FFF)); 
+position:fixed;bottom:0; width:100%;
+_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop+document.body.scrollTop+document.documentElement.clientHeight-this.offsetHeight));
+z-index:3;
+}
+.msg_comm_main {padding:0 15px;}
+.msg_comm_main .msg_comm{float:left;}
+.msg_comm_main .msg_map{ margin-left:70px; text-align:right;  white-space:nowrap;}

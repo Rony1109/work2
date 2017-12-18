@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>带跳转ShowPage</title>
+<link rel="stylesheet" href="/css/base-reset.css" />
+<link rel="stylesheet" href="../style.css" />
+<script src="/js/"></script>
+<script src="/js/m/noime.js"></script>
+</head>
+
+<body>
+<div class="market-showpage g-t-r" style="padding:10px">
+	<form id="form1" onSubmit="alert('跳转'); return false;">
+		<a class="to_up" href="#">上一页</a> <a class="to_up" href="javsscript:;">上一页</a> <a href="#">1</a> <a href="#" class="hover">2</a> <a href="#">3</a> <a href="#">4</a> <span>...</span> <a href="#">30</a> <span>共30页</span> <a class="to_down" href="#">下一页</a> <span>&nbsp;&nbsp;&nbsp;到</span>
+		<input id="gopage_text" type="text" class="to_txt" value="1" />
+		<span>页</span> <a href="javascript:;" onclick="$('#form1').submit()" class="but">确定</a> 
+		<script>csc.noime("#gopage_text");</script><!--脚本作用:文本框只能录入数字-->
+	</form>
+</div>
+<div class="market-showpage desend_noborder g-t-r" style="padding:10px 10px;">
+	<form id="form2" onSubmit="alert('跳转'); return false;">
+		<a class="to_up" href="#">上一页</a> <a href="#">1</a> <a href="#" class="hover">2</a> <a href="#">3</a> <a href="#">4</a> <span>...</span> <a href="#">30</a> <a class="to_down" href="#">下一页</a> <span>&nbsp;&nbsp;&nbsp;到</span>
+		<input id="gopage_text1" type="text" class="to_txt" value="1" />
+		<span>页</span> <a href="javascript:;" onclick="$('#form1').submit()" class="but">确定</a> 
+		<script>csc.noime("#gopage_text1");</script><!--脚本作用:文本框只能录入数字-->
+	</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div>&nbsp;&nbsp;&nbsp;&nbsp;配合PHP 新样式</div>
+<div class="market-showpage" style="padding:10px">
+	<ul>
+		<li class="previous hidden"><span>上一页</span></li>
+		<li class="previous"><a href="/favorites/page.html?cscdebug=bug&amp;page=2">上一页</a></li>
+		<li class="first"><a href="/favorites/page.html?cscdebug=bug">1</a></li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=2">2</a></li>
+		<li class="selected"> <a href="/favorites/page.html?cscdebug=bug&amp;page=3">3</a></li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=4">4</a></li>
+		<li>...</li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=9">9</a></li>
+		<li class="last"><a href="/favorites/page.html?cscdebug=bug&amp;page=10">100</a></li>
+		<li class="next"><a href="/favorites/page.html?cscdebug=bug&amp;page=4">下一页</a></li>
+		<li class="next hidden"><span>下一页</span></li>
+		<li>共10页</li>
+		<li>
+			<form action="" method="get" id="topage">
+				<span>到</span><input type="text" class="pageNo" id="pageNo"><span>页</span>
+				<input type="submit" class="submit_go" value="确定" />
+			</form>
+		</li>
+	</ul>
+	<script>
+		var $page_name = "page";
+		document.getElementById("topage").onsubmit=function(){
+			var pagename = $page_name || "page",
+				pageNo=document.getElementById("pageNo").value,
+				pageUri=window.location.href,
+				Reg = new RegExp( "(" + pagename + "=)[^&]*");
+			if(!/^\d+$/.test(pageNo)){return false;}
+			if(Reg.test(pageUri)==true){
+				pageUri=pageUri.replace(Reg,"$1"+pageNo)
+			}else{
+				var s=/\?/.test(pageUri)?"&":"?";
+				pageUri+=s+pagename+"="+pageNo;
+			};
+			window.location = pageUri; 
+			return false;
+		}
+	</script>
+	<script>csc.noime("#pageNo");</script>
+</div>
+<div class="market-showpage desend_noborder" style="padding:0 10px;">
+	<ul>
+		<li class="previous hidden"><a href="javascript:;">上一页</a></li>
+		<li class="previous"><a href="/favorites/page.html?cscdebug=bug&amp;page=2">上一页</a></li>
+		<li class="first"><a href="/favorites/page.html?cscdebug=bug">1</a></li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=2">2</a></li>
+		<li class="selected"> <a href="/favorites/page.html?cscdebug=bug&amp;page=3">3</a></li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=4">4</a></li>
+		<li>...</li>
+		<li><a href="/favorites/page.html?cscdebug=bug&amp;page=9">9</a></li>
+		<li class="last"><a href="/favorites/page.html?cscdebug=bug&amp;page=10">100</a></li>
+		<li class="next"><a href="/favorites/page.html?cscdebug=bug&amp;page=4">下一页</a></li>
+		<li class="next hidden"><a href="javascript:;">下一页</a></li>
+		<li>共10页</li>
+		<li>
+			<form action="" method="get" id="topage1">
+				<span>到</span><input type="text" class="pageNo" id="pageNo1"><span>页</span>
+				<input type="submit" class="submit_go" value="确定" />
+			</form>
+		</li>
+	</ul>
+	<script>
+		var $page_name = "page";
+		document.getElementById("topage1").onsubmit=function(){
+			var pagename = $page_name || "page",
+				pageNo=document.getElementById("pageNo1").value,
+				pageUri=window.location.href,
+				Reg = new RegExp( "(" + pagename + "=)[^&]*");
+			if(!/^\d+$/.test(pageNo)){return false;}
+			if(Reg.test(pageUri)==true){
+				pageUri=pageUri.replace(Reg,"$1"+pageNo)
+			}else{
+				var s=/\?/.test(pageUri)?"&":"?";
+				pageUri+=s+pagename+"="+pageNo;
+			};
+			window.location = pageUri; 
+			return false;
+		}
+	</script>
+	<script>csc.noime("#pageNo1");</script>
+</div>
+
+</body>
+</html>

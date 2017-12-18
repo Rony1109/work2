@@ -1,0 +1,27 @@
+/*账户中心头部 by lg 2013.07.09*/
+body{background-color:#fafafa;}
+.nav-shadow{padding-bottom:4px;background:url(img/t-bg.gif) #fff repeat-x 0 100px;margin-bottom:-4px;
+/*-moz-box-shadow:0 2px 2px #ccc;-webkit-box-shadow:0 2px 2px #ccc;box-shadow:0 2px 2px #ccc;*/}
+.pay-nav{width:1190px;margin:0 auto;height:100px;}
+.pay-nav h1{float:left;margin-top:26px;padding-right:119px;background:url(img/ac.png) no-repeat 286px 10px;}
+.nav{margin-top:40px;width:551px;float:right;height:41px;}
+.nav li{float:left;width:87px;margin-left:23px;text-align:center;height:100%;_height:41px;position:relative;_display:inline;}
+.home_txt,.kc_txt,.myac_txt,.open_txt,.faq_txt
+{display:inline-block;*display:inline-block;*zoom:1;width:87px;height:0px;padding-top:41px;overflow:hidden;background-image:url(img/nav-txt.png);background-repeat:no-repeat;}
+.home_txt{background-position:0 0;}
+.kc_txt{background-position:-88px 0;}
+.myac_txt{background-position:-176px 0;}
+.open_txt{background-position:-264px 1px;}
+.faq_txt{background-position:-352px 0;}
+.nav li:hover .home_txt,.nav li.hover .home_txt{background-position:0 -42px;}
+.nav li:hover .kc_txt,.nav li.hover .kc_txt{background-position:-88px -42px;}
+.nav li:hover .myac_txt,.nav li.hover .myac_txt{background-position:-176px -42px;}
+.nav li:hover .open_txt,.nav li.hover .open_txt{background-position:-264px -41px;}
+.nav li:hover .faq_txt,.nav li.hover .faq_txt{background-position:-352px -42px;}
+.nav li.cur .home_txt{background-position:0 -84px;}
+.nav li.cur .kc_txt{background-position:-88px -84px;}
+.nav li.cur .myac_txt{background-position:-176px -84px;}
+.nav li.cur .open_txt{background-position:-264px -84px;}
+.nav li.cur .faq_txt{background-position:-352px -84px;}
+.top-a{display:none;width:0;height:0;line-height:0;overflow:hidden;font-size:0;border:4px;border-color:#fff #fff #1693a5 #fff;border-style:solid;position:absolute;top:17px;left:28px;}
+.nav li:hover .top-a,.nav li.hover .top-a{display:block;}

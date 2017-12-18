@@ -1,0 +1,272 @@
+﻿/*css格式化*/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, address, big, cite, code, del, em, font, 
+img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, 
+ul, li, fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+:focus {
+    outline: 0 none;
+}
+a img {
+    border: 0 none;
+}
+img {
+    vertical-align: middle;
+}
+table {
+    empty-cells: show;
+}
+a {
+	font-size: 13px;
+	font-family: 宋体;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.topBar {
+    background: #f1f1f1 none repeat scroll 0 0;
+    height: 29px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.rows {
+    margin: 0 auto;
+    width: 1002px;
+}
+.navh{margin-top:15px;}
+.navh h1 a{color:#595757;font-weight:normal;font-family:"宋体";}
+.navh h1 .bluea{color:#067ed4;}
+.navh h1{color:#595757;font-weight:normal;}
+#rows div.left a {
+    line-height: 29px;
+}
+
+#rows div.right {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#rows div.right b {
+    font-size: 12px;
+    line-height: 29px;
+    font-weight: normal;
+}
+
+#rows div.right a.blue {
+    color: #067ED4;
+}
+
+#rows div.right a img {
+    margin-right: 5px;
+}
+
+#logo div.left a img {
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+#logo div.left span {
+    font-size: 26px;
+    font-family: 微软雅黑;
+    color: #727272;
+    border-left: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 40px;
+    padding-left: 15px;
+}
+
+#logo div.right p {
+    font-size: 20px;
+    color: #CFCFCF;
+    font-weight: normal;
+    font-family: 微软雅黑;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+/*导航条*/
+#navBar {
+    background: #007DD7 url(//res.csc86.com/css/c/rent/images/nav_bg1.jpg) repeat scroll 0 0;
+    height: 37px;
+    margin-top: 30px;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+#wrapper {
+    width: 960px;
+    border: 1px solid #D5D5D5;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+#wrapper div.caption {
+    height: 45px;
+    margin-left: -10px;
+    border-bottom: 2px solid #D4D4D4;
+    position: relative;
+}
+
+#wrapper div.caption a {
+    font-size: 22px;
+    color: #939393;
+    margin-left: 15px;
+    line-height: 20px;
+    font-family: 微软雅黑;
+}
+
+#wrapper div.caption b {
+    position: absolute;
+    top: 37px;
+    *top: 40px;
+    left: 160px;
+
+}
+
+#wrapper div.caption a {
+    background: url(//res.csc86.com/css/c/rent/images/title1.jpg) no-repeat;
+    padding-left: 35px;
+    height: 40px;
+    line-height: 40px;
+}
+#wrapper div.caption a.active1 {
+    background: url(//res.csc86.com/css/c/rent/images/active1.jpg) no-repeat;
+    color: #BA3326
+}
+
+#wrapper div.caption a.active2 {
+    background: url(//res.csc86.com/css/c/rent/images/active2.jpg) no-repeat;
+    color: #BA3326
+}
+#wrapper div.caption a.gray {
+    background: url(//res.csc86.com/css/c/rent/images/title2.jpg) no-repeat;
+}
+
+
+
+#wrapper div.img_nav {
+    margin: 20px 0 20px -10px; 
+}
+
+#wrapper div.form table {
+    width: 100%;
+    color: #595757;
+}
+
+#wrapper div.form table tr {
+    height: 50px;
+    
+}
+
+#wrapper div.form table tr td {
+    border-bottom: 1px dashed #DEDEDE;
+}
+
+#wrapper div.form table.info input {
+    width: 320px;
+    height: 18px;
+    padding: 5px;
+    border-width: 2px 1px 1px 2px;
+    border-color: #DEDDDD;
+    border-style: solid;
+}
+
+#wrapper div.form table.info button.submit {
+    width: 179px;
+    height: 41px;
+    border: 0 none;
+    line-height: 20px;
+    *line-height: 41px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 20px;
+    text-indent: 1.5em;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    background: url(../images/btn.jpg) no-repeat;
+    cursor: pointer;
+}
+
+#wrapper div.form textarea.ctn {
+    width: 806px;
+    height: 290px;
+    padding: 5px;
+    border-width: 2px 1px 1px 2px;
+    border-color: #DEDDDD;
+    border-style: solid;
+    margin: 5px 0;
+    overflow: auto;
+}
+
+#wrapper div.form td.setTop {
+    padding-top: 5px;
+    text-align: right;
+    vertical-align: top;
+}
+
+#rent {
+    display: none;
+}
+
+
+.footer_info {
+    background: #fff;
+}
+
+.footer_info p {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #595757;
+    padding: 0 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer_info div.links {
+    width: 95%;
+    height: 60px;
+    margin: 20px auto;
+    text-align: center;
+    color: #630000;
+    font-size: 16px;
+    font-family: 微软雅黑;
+}
+
+.footer_info div.links img {
+    vertical-align: top;
+}
+
+.footer_info div.links span {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer_info div.links span i {
+    font-size: 28px;
+    font-style: normal;
+}
+
+.footer_info div.links span b {
+    font-size: 32px;
+    font-weight: normal;
+}
+.top-msg-num{position:static;}
+.top-sign-info a{font-size:12px;}

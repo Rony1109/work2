@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员中心</title>
+<link rel="stylesheet" href="http://res.csc86.com/app/">
+<link rel="stylesheet" href="http://res.csc86.com/b=css/c/membercenter&amp;f=mem-head.css,mem-nav.css,mem-foot.css,member.css">
+<script src="http://res.csc86.com/js/"></script>
+<script src="http://res.csc86.com/f=js/c/membercenter/member.js"></script>
+<link charset="utf-8" rel="stylesheet" href="http://res.csc86.com/f=js/p/artDialog/4.1.5/skins/blue.css">
+<link charset="utf-8" rel="stylesheet" href="http://res.csc86.com/f=css/c/membercenter/mem-tool.css">
+</head>
+<body>
+<div style="display: none; position: absolute; " class="">
+	<div class="aui_outer">
+		<table class="aui_border">
+			<tbody>
+				<tr>
+					<td class="aui_nw"></td>
+					<td class="aui_n"></td>
+					<td class="aui_ne"></td>
+				</tr>
+				<tr>
+					<td class="aui_w"></td>
+					<td class="aui_c"><div class="aui_inner">
+							<table class="aui_dialog">
+								<tbody>
+									<tr>
+										<td colspan="2" class="aui_header"><div class="aui_titleBar">
+												<div class="aui_title" style="cursor: move; "></div>
+												<a class="aui_close" href="javascript:/*artDialog*/;" style="">×</a></div></td>
+									</tr>
+									<tr>
+										<td class="aui_icon" style="display: none; "><div class="aui_iconBg" style="background-image: none; background-position: initial initial; background-repeat: initial initial; "></div></td>
+										<td class="aui_main" style="width: auto; height: auto; "><div class="aui_content" style="padding: 20px 25px; "></div></td>
+									</tr>
+									<tr>
+										<td colspan="2" class="aui_footer"><div class="aui_buttons" style="display: none; "></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div></td>
+					<td class="aui_e"></td>
+				</tr>
+				<tr>
+					<td class="aui_sw"></td>
+					<td class="aui_s"></td>
+					<td class="aui_se" style="cursor: se-resize; "></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="head">
+	<div class="g-o-a">
+		<ol class="g-f-r">
+			<li class="user"><em>账号<i></i></em>
+				<div class="outer"><i class="icol"></i>
+					<div class="inner">
+						<div><a href="javascript:" class="img"><img src="http://res.csc86.com/image/c/membercenter/photo-female-small.jpg" width="50" height="50"></a><span title="wanghy@csc-ec.com">wanghy@csc-ec.com</span></div>
+						<div><a href="/membercenter/userinfo/">账号管理 </a><a href="/membercenter/getphoneverification/">账号安全</a><a href="/login/logout?done=http://member.csc86.com/" class="exit">安全退出</a></div>
+					</div>
+				</div>
+			</li>
+			<li class="msg"><em class="num-bg"><i id="talNum-o">99+</i></em><a href="/membercenter/messagelist/"><span class="tit">消息</span></a>
+				<div class="outer"> <i class="icol"></i>
+					<div class="inner">
+						<ul id="msgi-link" class="g-c-f">
+						</ul>
+						<p><a href="/membercenter/messageall/" class="all-show">查看全部消息&gt;&gt;</a></p>
+					</div>
+				</div>
+			</li>
+			<li><a href="http://www.csc86.com" target="_blank">华南城网首页</a></li>
+		</ol>
+		<a href="http://www.csc86.com" target="_blank" class="logo"><img src="http://res.csc86.com/image/c/membercenter/m-logo.png" width="213" height="45"></a>
+		<ul class="main">
+			<li class="cur"><a class="fir" href="/">我的首页</a></li>
+			<!--<li><a href="javascript:" class="fir">企业管理</a></li>
+      -->
+			<li class="apply"><a class="fir" href="/membercenter/tool/">应用</a>
+				<div class="outer"><i class="icol"></i>
+					<div class="inner">
+						<h3><a id="entr-ment" href="javascript:">管理快捷入口</a>我的应用</h3>
+						<ul class="g-c-f">
+							<li><a target="_blank" href="/shop/guide.html" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply02.png" width="48" height="48"></a><a target="_blank" href="/shop/guide.html">旺铺</a></li>
+							<li><a target="_blank" href="/accreditation/Accreditation.html" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply04.png" width="48" height="48"></a><a target="_blank" href="/accreditation/Accreditation.html">认证服务</a></li>
+							<li><a target="_blank" href="/inquiry/list.html?status=Y" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply01.png" width="48" height="48"></a><a target="_blank" href="/inquiry/list.html?status=Y">询盘</a></li>
+							<li><a target="_blank" href="/product/sell/list.html" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply00.png" width="48" height="48"></a><a target="_blank" href="/product/sell/list.html">产品供应</a></li>
+							<li><a target="_blank" href="/#" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply05.png" width="48" height="48"></a><a target="_blank" href="/#">收藏夹</a></li>
+							<li><a target="_blank" href="/quote/list.html" class="img"><img src="http://res.csc86.com/image/c/membercenter/apply/apply03.png" width="48" height="48"></a><a target="_blank" href="/quote/list.html">报价</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="g-h-10"></div>
+<div id="mem-toolct" style="display:none;">
+	<div class="mem-toolct">
+		<h3>当前正在使用的应用:</h3>
+		<ul id="usertool" class="g-c-f cative">
+			<li><span class="img"><a id="1144bb9d-8e61-449c-aea1-ac3d101af3b8" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply02.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 旺铺 </span></li>
+			<li><span class="img"><a id="5d9c6372-8a00-4b50-9965-b9342ca67539" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply04.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 认证服务 </span></li>
+			<li><span class="img"><a id="3c487551-5d9c-4bd7-bbc6-a31df2a7084a" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply01.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 询盘 </span></li>
+			<li><span class="img"><a id="087272be-b178-467a-b28a-ebea9d2e1b66" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply00.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 产品供应 </span></li>
+			<li><span class="img"><a id="811a6039-b46a-4ae3-8fbf-94e75f98f6bc" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply05.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 收藏夹 </span></li>
+			<li><span class="img"><a id="41131b99-bba7-484e-a04d-d84de5d55176" href="javascript:" class="del"></a><img src="http://res.csc86.com/image/c/membercenter/apply/apply03.png" width="48" height="48"></span><span class="title"><em class="l"></em><em class="r"></em> 报价 </span></li>
+		</ul>
+		<h3>还可使用的应用:</h3>
+		<ul id="unused" class="g-c-f">
+		</ul>
+	</div>
+</div>
+<script src="http://res.csc86.com/b=js&amp;f=c/sns/SNSdiallog.js"></script> 
+<script src="http://res.csc86.com/b=js/c/sns&amp;f=scroll.js"></script> 
+<script src="http://res.csc86.com/b=js/c/sns&amp;f=visitingCard.js"></script>
+<link rel="stylesheet" href="http://res.csc86.com/b=css&amp;f=c/sns/friendmanage.css,c/sns/personal.css,c/sns/SNSdiallog.css,c/sns/infodialog.css,c/sns/visiting-card.css">
+<div id="container" class="g-o-a">
+	<div class="g-f-l mem-nav">
+		<dl class="g-c-f">
+			<dt><a href="/membercenter/getuserinfo/"><img src="
+      http://res.csc86.com/image/c/membercenter/female.jpg" width="90" height="90"></a></dt>
+			<dd class="username" title="wanghy@csc-ec.com">wanghy@csc-ec.com</dd>
+			<dd><a href="/membercenter/getuserinfo/" class="icol"></a></dd>
+			<dd><a href="/membercenter/getuserinfo/">编辑资料</a></dd>
+		</dl>
+		<!--<div class="all-app">
+  <h2><em><i>
+    6    </i></em><a href="/membercenter/tool/">全部应用</a></h2>
+</div>
+-->
+		<div class="info">
+			<h2>个人社区</h2>
+			<ul>
+				<li class="bus-cir"><a href="/sns/circle/admin.html">生意圈</a></li>
+				<li class="card"><em><i id="cardnum">0</i></em><a href="/sns/card">名片夹</a></li>
+				<li class="firen"><a href="/sns/home/friends.html">好　友</a></li>
+				<li class="firmsg"><em><i id="allmsg">0</i></em><a href="/personal/message/allMessage">信件箱</a></li>
+				<li class="mem-club"><a href="javascript:" title="禁用连接!" style="cursor: not-allowed; ">俱乐部</a></li>
+			</ul>
+		</div>
+		<div class="tools">
+			<h2><a id="mem-ry" href="javascript:">管理入口</a>我的应用</h2>
+			<ul>
+				<li class="buyoffer"><a href="/shop/guide.html" target="_blank">旺铺</a></li>
+				<li class="accred"><a href="/accreditation/Accreditation/" target="_blank">认证服务</a></li>
+				<li class="mem-shop"><a href="/inquiry/list.html?status=Y" target="_blank">询盘</a></li>
+				<li class="offer"><a href="/product/sell/list.html" target="_blank">产品供应</a></li>
+				<li class="coll-mem"><a href="javascript:">收藏夹</a></li>
+				<li class="quote"><a href="/quote/list.html" target="_blank">报价</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	seajs.use(csc.url("res","/f=js/c/membercenter/postnum"),function (){
+});</script>
+	<link rel="stylesheet" href="http://res.csc86.com/f=css/c/membercenter/home.css">
+	<div class="g-f-r mem-main"> 
+		<!-- <div class="g-c-f n-tips">
+      <h3>待处理：</h3>
+      <ul>
+        <li>159****2343对你的产品<span>PVC塑料</span>进行询盘。</li>
+        <li>159****2343对你的产品<span>PVC塑料</span>进行询盘。</li>
+      </ul>
+    </div>
+    <div class="g-h-10"></div> -->
+		<h1><span class="s-fir">您的生意，您的朋友，您的生态生意圈</span>个人管理</h1>
+		<div id="n-tips" class="g-c-f n-tips">
+			<p class="tips"><a href="javascript:" id="close-tips" class="close-tips">不再提示请点击</a> 提示：您还是个人会员，若想进行企业产品发布等操作，请<a href="/membercenter/getcompanyinfo/">完善企业资料</a>升级为企业会员。</p>
+			<dl class="g-c-f">
+				<dt>完善企业资料并启用店铺流程：</dt>
+				<dd class="first"><a href="javascript:"><img src="http://res.csc86.com/image/c/membercenter/tips00.jpg" alt="" width="55" height="55"></a><a href="javascript:">完善个人资料</a></dd>
+				<dd><a href="javascript:"><img src="http://res.csc86.com/image/c/membercenter/tips01.jpg" alt="" width="55" height="55"></a><a href="javascript:">完善企业资料</a></dd>
+				<dd><img src="http://res.csc86.com/image/c/membercenter/tips02.jpg" alt="" width="55" height="55">客服验证通过</dd>
+				<dd><img src="http://res.csc86.com/image/c/membercenter/tips03.jpg" alt="" width="55" height="55">开通企业用户</dd>
+				<dd><img src="http://res.csc86.com/image/c/membercenter/tips04.jpg" alt="" width="55" height="55">装修并开通店铺</dd>
+				<dd><img src="http://res.csc86.com/image/c/membercenter/tips05.jpg" alt="" width="55" height="55">货物上架发布</dd>
+			</dl>
+		</div>
+		<div class="g-h-10"></div>
+		<div id="n-tips" class="g-c-f n-tips1">
+			<a href="javascript:" id="close-tips" class="close-tips"></a>
+			<p class="tips"> 提示：您还是个人会员，若想进行企业产品发布等操作，请<a href="/membercenter/getcompanyinfo/">完善企业资料</a>升级为企业会员。</p>
+			<div class="g-h-10"></div>
+			<dl class="g-c-f">
+				<dd class="first zl_1"><a href="javascript:"><span>完善个人资料</span></a></dd>
+				<dd class="zl_2"><a href="javascript:"><span>完善企业资料</span></a></dd>
+				<dd class="zl_3"><a href="javascript:"><span>客服验证通过</span></a></dd>
+				<dd class="zl_4"><a href="javascript:"><span>开通企业用户</span></a></dd>
+				<dd class="zl_5"><a href="javascript:"><span>装修并开通店铺</span></a></dd>
+				<dd class="zl_6"><a href="javascript:"><span>货物上架发布</span></a></dd>
+			</dl>
+			<div class="g-h-10"></div>
+		</div>
+		<div class="g-h-10"></div>
+		<link rel="stylesheet" href="http://res.csc86.com/b=css&amp;f=c/membercenter/home.css,c/sns/friendmanage.css,c/sns/personal.css">
+		<script type="text/javascript" src="http://res.csc86.com/b=js/c/sns&amp;f=scroll.js,infomodify.js,addInformation.js"></script>
+		<style type="text/css">
+html {
+	overflow-y: hidden;
+}
+</style>
+		<div class="g-c-f m-outer info-card">
+			<div class="ic-title"><span class="g-f-l">个人名片</span><span class="g-f-r mod-save"><a href="javascript:" id="in-modify" onclick="edit('info',this)" class="modify">修改</a> </span></div>
+			<div class="g-c-f m-inner">
+				<div id="scoll-b-iner" class="scoll-outer cur"><span class="default l"></span> <span class="default r"></span>
+					<div class="show-win" id="show-win">
+						<ul>
+							<li id="1"><img src="http://res.csc86.com/image/c/membercenter/female.jpg" alt="" height="85" width="85"></li>
+						</ul>
+					</div>
+					<a id="upload-btn" href="javascript:">修改上传个人相册</a></div>
+				<div id="outer-font" class="outer-font cur">
+					<ul class="info-font">
+						<li>姓名：<strong></strong></li>
+						<li>企业：</li>
+						<li>电话：</li>
+						<li>区域：</li>
+						<li>签名：</li>
+					</ul>
+					<dl class="info-work">
+						<dt><a href="javascript:" class="previewcard">预览个人名片</a><a href="/sns/card/">名片夹管理</a><a href="/personal/wallcard" target="_blank">抢个人名片墙</a></dt>
+						<dd>职务：</dd>
+						<dd>邮箱：wanghy@csc-ec.com </dd>
+						<dd class="edit-info"><a href="javascript:" onclick="addInformation()">完善个人介绍</a></dd>
+						<!--<dt class="cards"></dt>
+	
+	<dd class="card-manage"></dd>-->
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<script type="text/javascript"> 
+	    csc._ajax=function(box,url){
+	    	$.ajax({
+			type: "POST",
+			url: url,
+			contentType:"application/x-www-form-urlencoded;charset=UTF-8",
+			success: function(data){			
+				$("#"+box).html(data);
+			}
+		});
+	    }	   
+    	function edit(t,obj){
+    		var url="/personal/personal/edit?t="+t;
+    		$(obj.parentNode).html("<input id=\"save\" onclick=\"_save('"+t+"',this)\"  type=\"button\" value=\"保存\" /><input name=\"\" id=\"cancel\" type=\"button\"  onclick=\"cl(this)\" value=\"取消\" />");
+    		csc._ajax("outer-font",url);    		
+    	}
+    	function cl(obj){
+    		var url="/personal/personal/edit?t=re";    	
+    		$(obj.parentNode).html('<a href="javascript:" id="in-modify" onclick="edit(\'info\',this)" class="modify">修改</a> ');
+    		csc._ajax("outer-font",url); 
+    	}
+
+    	
+		function _save(t,obj){
+		  var formName=("info"==t?"infoForm":"intrForm");
+		  	if("info"==t){
+					var name =$("#name").val();
+					name=$.trim(name);
+					if(null==name||""==name) {
+						csc.alert("姓名不能为空,请输入");
+						document.getElementById("name").select();
+						return ;
+					}
+				}
+		    var data=$("#"+formName).serialize();		
+			var url="/personal/personal/edit?t=u"+t+"&"+data;
+			$(obj.parentNode).html('<a href="javascript:" id="in-modify" onclick="edit(\'info\',this)" class="modify">修改</a> ');
+			csc._ajax('outer-font',url);
+		}
+ </script><script src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+		<div class="m-outer">
+			<h2>我的好友</h2>
+			<div id="addfriend" class="m-inner recommend sh-pr">
+				<dl class="g-c-f first h-f-inst">
+					<dt>您可能感兴趣的人<span>(和您同城、同行业、值得推荐的会员)</span></dt>
+				</dl>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<link rel="stylesheet" href="http://res.csc86.com/b=css&amp;f=c/sns/message-frend.css,m/page/style.css">
+		<script type="text/javascript" src="http://res.csc86.com/b=js/c/sns&amp;f=message.js"></script>
+		<div id="pBlockBox"></div>
+		<script src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+		<div class="m-outer">
+			<h2>好友动态</h2>
+			<div class="m-inner fri-situas">
+				<ul id="dynamic">
+					<li class="first">暂时没有好友信息</li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<!--div class="m-outer">
+      <h2>待处理</h2>
+      <div class="m-inner">
+        <ul>
+          <li>交易消息：<span>询盘消息(N)</span><span>交易成功(N)</span></li>
+          <li>用户消息：<span>用户留言(N)</span></li>
+          <li>系统消息：<span>登录信息(N)</span><span>密码修改(N)</span></li>
+          <li>应用消息：<span>营销推广(N)</span></li>
+          <li>社交消息：<span>新的好友(N)</span><span>好友对话(N)</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-h-10"></div>
+    <div class="m-outer">
+      <h2>待处理</h2>
+      <div class="m-inner">
+        <ul>
+          <li>交易消息：<span>询盘消息(N)</span><span>交易成功(N)</span></li>
+          <li>用户消息：<span>用户留言(N)</span></li>
+          <li>系统消息：<span>登录信息(N)</span><span>密码修改(N)</span></li>
+          <li>应用消息：<span>营销推广(N)</span></li>
+          <li>社交消息：<span>新的好友(N)</span><span>好友对话(N)</span></li>
+        </ul>
+      </div>
+    </div--> 
+	</div>
+	<div class="g-h-10"></div>
+	<div class="g-h-20"></div>
+	<div class="g-o-a foot">
+		<div class="foot-link"><a href="http://www.chinasouthcity.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://www.csc86.com/about/" target="_blank" rel="nofollow">About csc86.com</a><a href="http://www.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://www.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://www.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://www.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://www.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://www.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://www.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://www.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://www.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+		<p class="group-link">Copyright©2009-2011 China South City Holdings Limited. All Rights Reserved </p>
+		华南城控股有限公司 版权所有</div>
+</div>
+<style>
+.back-top{_position:relative}.back-top a{display:block;padding-top:14px;color:#333;text-align:center;line-height:15px}.back-top a:hover{color:#f60;text-decoration:none}.back-top .bt-bd{_display:inline;_float:right;width:20px;height:78px;margin-left:1000px;background:#f5f5f5 url(http://res.csc86.com/css/m/back-top/img/bg.png) no-repeat;position:fixed;_position:absolute;bottom:0}.back-top .bt-hide{display:none}
+</style>
+<div class="g-o-a back-top" id="backTop">
+	<div class="bt-bd bt-hide" style="right: auto; "><a href="#">返回顶部</a></div>
+</div>
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; "></div>
+</body>
+</html>

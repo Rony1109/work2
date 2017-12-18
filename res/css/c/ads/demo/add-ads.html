@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>推广中心</title>
+        <link rel="stylesheet" href="http://res.csc86.com/app/" />
+        <link rel="stylesheet" href="http://res.csc86.com/b=css/c/membercenter&f=mem-head.css,mem-nav.css,mem-foot.css,member.css" />
+        <link rel="stylesheet" href="http://res.csc86.com/f=css/c/ads/style.css">
+        <script src="http://res.csc86.com/js/"></script>
+        <script src="http://res.csc86.com/b=js&f=p/My97DatePicker/4.8/WdatePicker.js"></script>
+        <script type="text/javascript" src="http://res.csc86.com/swfupload/"></script>
+        <script src="http://res.csc86.com/b=js&f=c/membercenter/member.js,m/page.js,m/handlers.js,c/ads/ads.js"></script>
+
+    </head>
+    <body>
+        <div class="g-o-a app-frame">
+            <div id="apply" class="af-nav">
+                <h2><a href="/shop/shopinfo.html">推广中心</a></h2>
+                <ul class="nav-items">
+                    <li class="item has-children has-children-cur">
+                        <a href="javascript:">抢广告位</a>
+                        <ul>
+                            <li>
+                                <a class="cur" href="/shop/add-ads.html">添加广告</a>
+                            </li>
+                            <li>
+                                <a href="/shop/ads-list.html">我的广告</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item bg-none">
+                        <a href="ad-account.html">我的账号</a>
+                     </li>
+                </ul>
+            </div>
+            <script>
+				seajs.use(csc.url("res", "/f=js/m/hrefinfo"), function() {
+					csc.hrefinfo("ul.nav-items>li.item>a");
+				});
+            </script>
+            <div class="af-bd">
+                <h1 class="af-hd">添加广告</h1>
+                <div class="add-ads">
+                    <form method="post">
+                        <ul class="af-form">
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>选择页面：</div>
+                                <div class="aff-value">
+                                    <select id="parentPage" class="s1">
+                                        <option value="01">网站首页</option>
+                                        <option value="02">生意圈频道</option>
+                                        <option value="03">资讯频道</option>
+                                    </select>
+                                    <select id="childPage" class="s1">
+                                        <option value="01">资讯首页</option>
+                                        <option value="02">行业资讯</option>
+                                        <option value="03">电商学院</option>
+                                        <option value="04">展览展会</option>
+                                        <option value="05">精彩专题</option>
+                                    </select>
+                                    <a href="javascript:" class="effects">查看效果图</a>
+                                </div>
+                            </li>
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>选择广告位：</div>
+                                <div class="aff-value">
+                                    <select id="adType">
+                                        <option value="01">Flash切换展位（通用）</option>
+                                        <option value="02">Flash切换展位（位置1）</option>
+                                        <option value="03">随屏移动广告</option>
+                                        <option value="04">对联广告</option>
+                                        <option value="05">文字广告</option>
+                                    </select>
+                                </div>
+                           </li>
+                        </ul>
+                        <ul class="af-form ad-info">
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key">广告类型：</div>
+                                <div class="aff-value">图片广告</div>
+                            </li>
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key">尺寸：</div>
+                                <div class="aff-value">570px*250px</div>
+                            </li>
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key">支持说明：</div>
+                                <div class="aff-value">格式（JPG、JPEG、GIF、PNG、SWF），大小&lt;2M</div>
+                            </li>
+                         </ul>
+                         <ul>
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>广告费用：</div>
+                                <div class="aff-value"><input type="text" class="aff-text txt1" id="ad-fee"  />&nbsp; 元/天<div class="g-f-msg-box"><p class="gray">竞价费用最少不能低于50元/天，出价越高，展示机会越大</p></div></div>
+                            </li>
+                             <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>投放时间：</div>
+                                <div class="aff-value"><input type="text" placeholder="开始于" id="startTime" class="aff-text ad-date" data-verify='{"must":{"tip":"请选择投放时间"},"success":{"tip":" "}}' readonly onclick="WdatePicker({dateFmt:'yyyy-M-d',maxDate:'#F{$dp.$D(\'endTime\',{d:-3})||\'2020-10-01  01:00:00\'}',el:'startTime',onpicking:function(dp){csc.ads.calculate(this,dp.cal.getNewDateStr())}})"> - <input type="text" placeholder="结束于" id="endTime" class="aff-text ad-date" data-verify='{"must":{"tip":"请选择投放时间"},"success":{"tip":" "}}' readonly onclick="WdatePicker({dateFmt:'yyyy-M-d',minDate:'#F{$dp.$D(\'startTime\',{d:+3})}',maxDate:'2020-10-01 01:00:00',el:'endTime',onpicking:function(dp){csc.ads.calculate(this,dp.cal.getNewDateStr())}})">
+                                </div>
+                              </li>
+                              <li class="g-c-f aff-item">
+                                <div class="aff-key">广告总费用：</div>
+                                <div class="aff-value"><span id="total-fee">0.00</span>元</div>
+                              </li>
+                              <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>广告标题：</div>
+                                <div class="aff-value"><input type="text" class="aff-text" data-verify='{"focus":{"tip":"请输入广告标题"},"role":{},"must":{"tip":"广告标题不能为空"},"success":{"tip":" "}}' /></div>
+                              </li>
+                        </ul>
+                        <ul  class="af-form picService">
+                            <li class="g-c-f aff-item">
+                                <div class="aff-key">要求图片服务：</div>
+                                <div class="aff-value"><input type="radio" name="picService" checked />&nbsp;否&nbsp;&nbsp;<input type="radio" id="yes" name="picService" />&nbsp;是<span class="gray">（推广期间免费）</span></div>
+                              </li>
+                              <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>广告图片：</div>
+                                <div class="aff-value"><input type="text" class="aff-text picUpload" readonly id="imgload0"/>&nbsp;&nbsp;<input type="text" id="adsPic" />
+                                <input type="hidden" id="imgurl0" class="picUpload" />
+                                <script>
+                                 new SWFUpload(uploadSettings({
+                                    type:"shopNews",
+                                    button_placeholder_id:"adsPic",
+                                    file_types: "*.jpg;*.jpeg;*.png;*.gif;*.swf",
+                                    file_size_limit : "1MB",
+                                    file_upload_limit : 0,
+                                    button_text_left_padding:15,
+                                    button_text:"上 传"
+                                }));
+                                </script>
+                                                            </div>                                
+                              </li>
+                              <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>广告图片：</div>
+                                <div class="aff-value"><input type="text" class="aff-text picUpload" readonly id="imgload1"/>&nbsp;&nbsp;<input type="text" id="adsPic2" />
+                                <input type="hidden" id="imgurl1" class="picUpload" />
+                                <script>
+                                 new SWFUpload(uploadSettings({
+                                    type:"shopNews",
+                                    button_placeholder_id:"adsPic2",
+                                    file_types: "*.jpg;*.jpeg;*.png;*.gif;*.swf",
+                                    file_size_limit : "1MB",
+                                    file_upload_limit : 0,
+                                    button_text_left_padding:15,
+                                    button_text:"上 传"
+                                }));
+                                </script>
+                                                            </div>                                
+                              </li>
+                           </ul>
+                           <ul class="af-form">
+                              <li class="g-c-f aff-item">
+                                <div class="aff-key"><span class="star">*</span>链接地址：</div>
+                                <div class="aff-value"><input type="text" class="aff-text" data-verify='{"focus":{"tip":"请输入广告链接地址"},"role":[{"regex":"/^(https?:\\/\\/)?([a-z0-9]+([a-z0-9-]*[a-z0-9]+)?\\.)+[a-z]{2,4}([\\/\\?#](.*))?$/i","tip":"请输入正确的广告链接地址"}],"must":{"tip":"广告链接地址不能为空"},"success":{"tip":" "}}' /><div class="g-f-msg-box"><p class="gray">请输入以http://开头的网址</p></div></div>
+                              </li>
+                              <li class="g-c-f aff-item">
+                                  <div class="aff-value">
+                                    <span class="aff-submit">
+                                      <input type="submit" value="提交广告，立即去支付">
+                                    </span>
+                                    <span class="aff-submit aff-cancel">
+                                      <a href="javascript:">取 消</a>
+                                    </span>
+                                  </div>
+                                </li>
+                        </ul>
+                        <script>
+                        seajs.use(csc.url("res","/f=js/m/verify"),function (){
+                            csc.verify("input[data-verify]:visible",true);
+                        });
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

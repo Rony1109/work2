@@ -1,0 +1,33 @@
+.contain-cate{height:34px;background:#f6f6f6;border:solid 1px #ddd;border-bottom:0;line-height:34px}
+.contain-cate div{display:inline;padding-left:14px}
+.contain-cate h1{display:inline}
+
+.cate-filter{margin-bottom:10px;border:solid 1px #ddd;background:#fff}
+.cate-filter .item h3{float:left;width:60px;padding-top:8px;font-weight:400;text-align:center;line-height:30px;}
+.cate-filter .item .cate-bd{float:left;width:906px;/*padding:8px 15px;*/padding:0 15px;border-left:solid 1px #ddd}
+.cate-filter .item li{_display:inline;float:left;width:150px;padding-left:1px;height:30px;/*border-top:solid 1px #eee;*/border-bottom:solid 1px #eee;overflow:hidden;line-height:30px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.cate-filter .item li.first-line{/*border:0;*/}
+
+.cate-filter .item li a span{float:left;max-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;word-wrap:normal;}
+.cate-filter .item li a span:hover{ color:#f67301;}
+.cate-filter .item li a em{color:#888;}
+.cate-filter .item li a:hover{text-decoration:underline;}
+.cate-filter .item li a:hover span{text-decoration:underline;}
+
+.cate-filter .hide ul{max-height:61px;_height:61px;overflow:hidden}
+.cate-filter .hide-item{display:none}
+.cate-filter .cate-more{height:3px;background:#f6f6f6;border-top:solid 1px #ddd;position:relative;top:-1px;overflow:hidden;}
+.cate-filter .cate-more-bd{position:absolute;width:90px;height:17px;left:50%;margin:0 0 0 -46px;background: #f6f6f6 url(http://res.csc86.com/css/m/category-filter/img/bg.png) no-repeat 60px -94px;border:solid 1px #ddd;border-top:0;line-height: 14px;}
+.cate-filter .cate-more-bd a{display:block;height:16px;border-bottom:solid 1px #fff;padding-left:25px;color:#666;}
+.cate-filter .cate-more-bd a:hover{color:#f60;text-decoration:none}
+.cate-filter .less{background-position:60px -144px}
+
+.cate-filter .cur a{color:#e94545;}
+.cate-filter .cur a:hover{text-decoration:none}
+
+.cate3th{padding:7px 0 4px;border-top:solid 1px #ececec;background:#fcfcfc}
+.cate3th h3{padding-left:77px;color:#2764a3;}
+.cate3th ul{margin-left:76px}
+.cate3th .item li{border:0;}
+.cate3th .cur{display:block}
+.cate3th .cur a{color:#184c95;font-weight:400;}

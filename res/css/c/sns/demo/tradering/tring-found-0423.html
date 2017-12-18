@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>生意圈活动详细</title>
+<link rel="stylesheet" href="/css/" />
+<script type="text/javascript" src="/js/"></script>
+<script type="text/javascript" src="/dialog/"></script>
+<link rel="stylesheet" href="/f=css/c/sns/tradering.css" />
+<script type="text/javascript" src="/js/"></script>
+</head>
+<body>
+<div class="g-h-50"></div>
+<div class="g-o-a">
+	<!--左则 start-->
+    <div class="g-f-l w745-l">
+    	<!--创建填写-->
+        <h1 class="found-title">创建商圈</h1>
+        <form>
+            <table class="fc-table" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th><span>*</span> 商圈名称 ：</th>
+                <td><input type="text" class="found-i-w" maxlength="10" /><span class="fip-br">10个字以内</span></td>
+              </tr>
+              <tr>
+                <th>商圈logo ：</th>
+                <td>
+                  </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 商圈类型 ：</th>
+                <td>
+                    <select name="" class="found-i-w">
+                    <option value="AREA">地区商圈</option>
+                    <option value="INDUSTRY">行业商圈</option>
+                     </select>
+                </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 行业类型 ：</th>
+                <td>
+                    <select name="" class="found-i-w">
+                    <option value="AREA">地区商圈</option>
+                    <option value="INDUSTRY">行业商圈</option>
+                     </select>
+                </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 所属地区 ：</th>
+                <td>
+                    <select name="">
+                    <option value="AREA">地区商圈</option>
+                    <option value="INDUSTRY">行业商圈</option>
+                     </select>省
+                     <select name="">
+                    <option value="AREA">地区商圈</option>
+                    <option value="INDUSTRY">行业商圈</option>
+                     </select>市
+                </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 商圈简介 ：</th>
+                <td>
+                <textarea class="fip-texta-w" cols="" maxlength="200" rows="5" onblur="textarea_maxlen.eRMouse()" onfocus="textarea_maxlen.dRMouse()" onkeyup="textarea_maxlen.isMax('circleDescription','200')"  name="circleDescription"></textarea>
+                <span class="fip-br">简单介绍一下您的圈子。（<i>200</i>字以内）</span></td>
+              </tr>
+              <tr>
+                <th>加入身份 ：</th>
+                <td>
+                <select name=""  class="found-i-w">
+                    <option value="AREA">地区商圈</option>
+                    <option value="INDUSTRY">行业商圈</option>
+                     </select>
+                </td>
+              </tr>
+              <tr>
+                <th>访问权限 ：</th>
+                <td>
+                    <label><input type="radio" name="RadioGroup1" value="公开圈子">&nbsp;公开圈子<span class="fip-nbr">（所有人可见）</span></label>
+                    <label><input type="radio" name="RadioGroup1" value="私密圈子">&nbsp;私密圈子<span class="fip-nbr">（仅圈子成员可见）</span></label>
+                </td>
+              </tr>
+              <tr>
+                <th>加入权限 ：</th>
+                <td><label><input  name="" type="checkbox" value="需要审核">&nbsp;需要审核<span class="fip-nbr">（加入圈子需要申请并通过审核）</span></label></td>
+              </tr>
+              <tr>
+                <th>商圈标签 ：</th>
+                <td><input type="text" class="found-i-w" /><span class="fip-br">最多可用五个关键词做为标签，每个标签用逗号（,）分隔。</span></td>
+              </tr>
+              <tr>
+                <th><span>*</span>申请理由 ：</th>
+                <td>
+                    <textarea class="fip-texta-w" cols="" maxlength="200" rows="5" onblur="textarea_maxlen.eRMouse()" onfocus="textarea_maxlen.dRMouse()" onkeyup="textarea_maxlen.isMax('circleDescription','200')"  name="circleDescription"></textarea>
+                    <span class="fip-br">简单介绍一下您的圈子。（<i>200</i>字以内）</span>
+                </td>
+              </tr>
+              <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <label><input name="" type="checkbox" value="我已经阅读并同意了《华南城网“生意圈”产品使用须知》">&nbsp;<a href="javascript:;" title="我已经阅读并同意了《华南城网“生意圈”产品使用须知》">我已经阅读并同意了《华南城网“生意圈”产品使用须知》</a></label>
+                </td>
+              </tr>
+              <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <button type="submit" value="提交申请" class="fip-sub" >提交申请</button>
+                </td>
+              </tr>
+            </table>
+        </form>
+    	<!--创建出错 1-->
+        <div class="found-error">
+        	<div class="fe-c1">
+            	<h3>抱歉，您的名片信息为空，需要有完善的名片信息后，才能创建圈子。</h3>
+                <a class="fe-card-wr" href="javascript:;">现在就完善我的名片信息 </a><span class="fe-c1-1">或</span><a href="javascript:;">返回生意圈首页>></a>
+            </div>
+        </div>
+        <!--创建出错 2-->
+        <div class="found-error">
+        	<div class="fe-c1">
+            	<h3>抱歉，您创建的圈子数量已达上限。</h3>
+                <p>您可创建的商圈数 <span>[ <i>5</i> ]</span> 个，已创建审核通过的商圈<span> [ <i>1</i> ]</span> 个，待审核的商圈<span> [ <i>2</i> ]</span>个。</p>
+                <a href="javascript:;">查看我的商圈 </a><span class="fe-c1-1">或</span><a href="javascript:;">返回生意圈首页>></a>
+            </div>
+        </div>
+    </div>
+    <!--左则 end-->
+	<!--右则 start-->
+    <div class="g-f-r w238-b-r hf-t-bg">
+    	<h2 class="hot-found-t">如何打造热门圈子？</h2>
+        <h2 class="hot-found-e">如何打造热门圈子？</h2>
+        <ol class="hot-con">
+        	<li>为圈子取一个明了好记的圈名；</li>
+            <li>为圈子增加一个形象的图片；</li>
+            <li>在圈子介绍和公告中简明表述创建圈子的意义及加入圈子有怎样的收获；</li>
+            <li>邀请自己的商务伙伴加入，营造分享和讨论的氛围；</li>
+            <li>常在圈中发起话题或活动；</li>
+            <li>尽量多发表原创话题，表达自己的真实想法和意见以引发讨论；</li>
+            <li>在其它热门圈子中发表话题并保持活跃度，并适当推广自己的圈子，引起圈内其它成员关注；</li>
+            <li>常转发圈子中的热门话题或活动至其它网站，如微博等。</li>
+        </ol>
+    </div>
+    <!--右则 end-->
+</div>
+
+</body>
+</html>

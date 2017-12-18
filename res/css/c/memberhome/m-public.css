@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* 企业会员中心改版 2013.08.19 by lg */
+
+/*public*/
+.block{display:block;}
+
+.f-l{float:left;}
+.f-r{float:right;}
+.m-t-5{margin-top:5px;}
+.m-t-10{margin-top:10px;}
+.m-t-18{margin-top:18px;}
+.m-t-20{margin-top:20px;}
+.m-t-25{margin-top:25px;}
+.m-l-5{margin-left:5px;}
+.m-l-10{margin-left:10px;}
+.m-l-15{margin-left:15px;}
+.m-l-20{margin-left:20px;}
+.m-l-30{margin-left:30px;}
+.m-l-45{margin-left:45px;}
+.m-r-5{margin-right:5px;}
+.m-r-10{margin-right:10px;}
+.m-b-2{margin-bottom:2px;}
+.m-b-5{margin-bottom:5px;}
+.m-b-10{margin-bottom:10px;}
+.c-f67301{color:#f67301;}
+.c-888{color:#888;}
+.c-318e1c{color:#318e1c;}
+.c-red{color:red;}
+.c-b9b9b9{color:#b9b9b9;}
+.c-cb0000{color:#cb0000;}
+.w-260{width:260px;}
+.w-363{width:363px;}
+.p-20{padding:20px;}
+.p-l-3{padding-left:3px;}
+.p-r-3{padding-right:3px;}
+.l-h-24{line-height:24px;}
+.l-h-22{line-height:22px;}
+.hander{cursor:pointer;}
+
+.yahei{font-family:Microsoft YaHei,SimHei}/*yahei*/
+.simsun{font-family:Simsun}
+
+.clearfix:after,.disc-list dd:after{display:block;clear:both;content:".";visibility:hidden;height:0;}/*clear*/
+.clearfix,.disc-list dd{zoom:1;}/*clear*/
+
+.ellipsis,.hot-list-txt{overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}/*...*/
+
+.inline-block,.uu-btn,.uu-btn em,.uu-btn-s,.uu-btn-s em,.sj
+{display:inline-block;*display:inline-block;*zoom:1;_display:inline-block;_zoom:1;}/*block*/
+
+a,a:hover{outline:none;text-decoration:none;}
+
+.home-icon,.compay-icon,.mall-icon,.tuan-icon,.account-icon,.tool-icon,.phone-icon,.mail-icon,.fd-icon,.msg-icon,.card-icon,.m-menu li a .d,.pay-btn,.open-btn,
+.msgc-icon,.acc-icon,.online-img,.stel-img,.r-up-left,.r-up-right,.r-dw-left,.r-dw-right,.msg-tips,.msg-tips i,.ref-icon,.info-icon,.turn-icon,.plus-icon,
+.hotnum-icon,.pnum-icon,.heart-icon,.comm-icon,.disc-icon,.disc-min-icon,.phone-l-icon,.mail-l-icon,.light-img a,.chg-hed-icon,.wslm-icon,.ico-help
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;background-image:url(img/member-icon.gif);background-repeat:no-repeat;}/*icon*/
+.home-icon{width:20px;padding-top:20px;background-position:0 0;margin-right:6px;margin-bottom:2px;}
+.compay-icon{background:url(/v2/c/member/common/css/img/member-icon.gif) no-repeat;width:22px;padding-top:16px;/*background-position:0 -22px;*/background-position:-151px -318px;margin-right:6px;margin-bottom:2px;}
+.mall-icon{width:15px;padding-top:20px;background-position:0 -40px;margin-right:6px;margin-bottom:2px;}
+.tuan-icon{width:20px;padding-top:20px;background-position:0 -62px;margin-right:6px;margin-bottom:2px;}
+.account-icon{width:17px;padding-top:20px;background-position:0 -84px;margin-right:6px;margin-bottom:2px;}
+.tool-icon{width:21px;padding-top:20px;background-position:0 -106px;margin-right:6px;margin-bottom:2px;}
+.wslm-icon{width:30px;padding-top:18px;background-position:0px -256px;margin-right:6px;margin-bottom:2px;}
+.phone-icon{width:16px;padding-top:18px;background-position:-23px 0;margin-bottom:2px;}
+.phone-icon-v{background-position:0 -300px}
+.mail-icon{width:21px;padding-top:14px;background-position:-23px -18px;margin-bottom:2px;}
+.mail-icon-v{background-position:0 -320px}
+.fd-icon{width:25px;padding-top:25px;background-position:-23px -32px;margin-bottom:2px;}
+.msg-icon{width:25px;padding-top:19px;background-position:-23px -59px;margin-bottom:2px;}
+.card-icon{width:23px;padding-top:25px;background-position:-23px -80px;margin-bottom:2px;}
+.m-menu li a .d{width:8px;padding-top:8px;background-position:-40px 0px;margin-bottom:2px;}
+.pay-btn{width:56px;padding-top:40px;background-position:-50px 0px;margin-bottom:2px;}
+.open-btn{width:79px;padding-top:39px;background-position:-108px 0px;margin-bottom:2px;}
+.msgc-icon{width:25px;padding-top:25px;background-position:-50px -42px;margin-bottom:2px;}
+.acc-icon{width:25px;padding-top:25px;background-position:-77px -42px;margin-bottom:2px;}
+.msg-tips{width:auto;height:17px;background-position:-159px -61px;}
+.msg-tips i{width:8px;height:17px;line-height:17px;background-position:-168px -42px;float:right;*float:none;*margin-top:-1px;_margin-top:0px;_zoom:1;}
+.online-img{width:75px;padding-top:18px;background-position:-50px -69px;margin-bottom:2px;}
+.stel-img{width:112px;padding-top:18px;background-position:-50px -89px;margin-bottom:2px;}
+.r-up-left{width:3px;padding-top:3px;background-position:-187px -42px;}
+.r-up-right{width:3px;padding-top:3px;background-position:-191px -42px;}
+.r-dw-left{width:3px;padding-top:3px;background-position:-187px -46px;}
+.r-dw-right{width:3px;padding-top:3px;background-position:-191px -46px;}
+.ref-icon{width:14px;padding-top:12px;background-position:-50px -135px;margin-bottom:2px;margin-right:6px;}
+.info-icon{width:16px;padding-top:10px;background-position:-50px -123px;margin-bottom:2px;}
+.turn-icon{width:16px;padding-top:12px;background-position:-50px -109px;}
+.plus-icon{width:8px;padding-top:8px;background-position:-23px -182px;margin-bottom:2px;margin-right:5px;}
+.hotnum-icon{width:43px;height:20px;background-position:-50px -256px;}
+.pnum-icon{width:10px;padding-top:12px;background-position:-98px -256px;}
+.heart-icon{width:12px;padding-top:12px;background-position:-110px -256px;}
+.comm-icon{width:12px;padding-top:12px;background-position:-124px -256px;}
+.disc-icon{width:14px;padding-top:14px;background-position:-138px -256px;}
+.disc-min-icon{width:3px;padding-top:3px;background-position:-184px -256px;}
+.phone-l-icon{width:10px;padding-top:16px;background-position:-154px -256px;}
+.mail-l-icon{width:16px;padding-top:12px;background-position:-166px -256px;}
+.light-img a{width:138px;padding-top:50px;background-position:-70px -109px;}
+.chg-hed-icon{width:19px;padding-top:14px;background-position:-189px -256px;}
+.ico-help{width:14px;padding-top:14px;background-position:0px -339px;}
+
+/*公用警示类图标*/
+.succs-icon,.tips-icon
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;background-repeat:no-repeat;background-image:url(../memberhome/img/univ-icon.gif);}
+.succs-icon{background-position:0 0;width:50px;height:50px;}
+.tips-icon{background-position:0 -51px;width:50px;height:50px;}
+
+/*会员中心公用button*/
+.uu-btn{background:url(img/uu-btn.gif) no-repeat right top;color:#FFF;padding-right:15px;}
+.uu-btn em{background:url(img/uu-btn.gif) no-repeat;padding-left:15px;height:32px;line-height:32px;}
+a.uu-btn:hover{background-position:right bottom;color:#FFF;text-decoration:none;}
+a.uu-btn:hover em{background-position:left bottom;}
+.uu-btn-s{background:url(img/uu-btn-s.gif) no-repeat right top;color:#FFF;padding-right:15px;}
+.uu-btn-s em{background:url(img/uu-btn-s.gif) no-repeat;padding-left:15px;height:28px;line-height:28px;}
+a.uu-btn-s:hover{background-position:right bottom;color:#FFF;text-decoration:none;}
+a.uu-btn-s:hover em{background-position:left bottom;}
+
+.uu-btn-gray{background:url(/css/c/membercenter/img/uu-btn-gray.png) no-repeat right top;color:#333;padding-right:15px;display: inline-block;}
+.uu-btn-gray em{background:url(/css/c/membercenter/img/uu-btn-gray.png) no-repeat;padding-left:15px;line-height:28px;display: inline-block;}
+
+body{font-family:Microsoft YaHei,SimHei;}
+
+/*mbd*/
+.mbd{width:1000px;margin:0 auto;}

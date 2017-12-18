@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="/app/" />
+
+<style>
+	.aff-item {margin-bottom:5px;}
+</style>
+<script src="/js/"></script>
+<script src="v_why.js"></script>
+<script src="/js/m/showFormError.js"></script>
+<script>
+	$(function(){
+		verify1 = new verify_why({});
+		verify1.info("form");
+	})
+	function pwdyz(pwd) {
+		if (pwd.length >= 6) {
+			return /^((\d+\w+)|(\w+\d+))$/.test(pwd);
+		} else {
+			return false;
+		}
+	}
+/*
+	说明：
+	1.在需要验证的元素标签中添加 data-verify 属性具体格式为:
+	{
+		type : "require",		//继承设置好的验证,require不为空验证 继承多个验证可以用“|”分隔.
+		focus : "默认提示",		//焦点提示：当值为空，并获得焦点时提示；
+		require："为空提示",		//require值为数组时（如：require:[$("#a"),"#b",$("#d")[0]]），激活联合验证，具体参看“3.特殊验证”；
+		success : {				//检测对像组，如果第一个没有验证成功 则验证下一个。具体说明请看“2.验证机制”
+			"验证成功" : /^[1-9]\d{5}$/,
+			"验证成功${1}" ： /^[1-9]\d{10}/    //若验证说明相同请添加“${XXX}”做为区分，“${XXX}”会在显示时过滤。
+		},
+		err : {					//当验证不通过会验证错误符合的情况，验证机制与检测成功一至
+			"首位不能为零" : /^0/,
+			"只支持数字" : /[^\d]+/,
+			"长度必须为6个字符" : /^((.{1,5})|(.{7,}))$/,
+			"其他出错信息" : /./
+		}
+	}
+	2.验证机制：
+	所有验证都是由verify_why对像的v_verifi函数进行验证，并返回验证结果true/false。
+	验证流程为：
+		2.1 为空验证。 
+			如果 值为空 并继承了不为空验证，则不通过，否则通过；如果 值不为空 则转到下一步验证。
+		2.2 检测值是否符合条件。（值不区分string 或 number 类型）
+			2.2.1 当条件类型为RegExp则进行正则匹配；
+			2.2.2 当条件类型为function 则值做为第一个参数传入 function 匹配结果为 function 返回的结果；
+			2.2.3 当条件类型为HTMLElement或jQuery对像，则判值是否和对像的值相等；（会为HTMLElement/jQuery对像绑定onchange事件用于检测）
+			2.2.4 当条件类型为Array则判断数组中是否包含此值。
+			2.2.5 当条件类型为String或number则直接判断是否相等；
+			2.2.5 当条件类弄为null或undefined则直接通过验证；
+		2.3 如果第2步通过则跳到第4步，否则进行一次错误验证；
+			错误条件同2；
+		2.4 根据判断结果变换样式；
+	3.特殊验证：
+		3.1 联合为空验证：
+			当data-verify的 require值为数组时激活，验证阶段在“为空验证中”；根据数组中的元素类型不能进行不同判断；
+				String : 遍历$("[string]")对像,检查值是否为空;
+				jQuery : 遍历jQuery对像,检查是否为空;
+				HTMLElement : 检查HTMLElement的值是否为空;
+			当检测到只要有一个不为空时通过验证;
+		3.2 特殊成功验证:
+			当验证条件为2.2.3时 如果待检测的对像值为空则不验证是否相等,直接获得一个特殊验证通过标志,但在验证流程2.4中不变换为样式为"默认样式".
+*/
+	
+	//alert(Date.parse("4/1/2000") + "\n" + Date.parse("2000/4/1")); //all
+	//alert(Date.parse("4/1/2000") + "\n" + Date.parse("2000-4-1")); //google
+</script>
+</head>
+
+<body>
+<form data-verify='' onSubmit="">
+	<ul class="af-form">
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>6位数字(自定义)：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入首位不为0的6位数字" name="numb6" value="" data-verify='{type:"require",focus:"默认提示",err:{"首位不能为零":/^0/,"只支持数字":/[^\d]+/,"长度必须为6个字符":/^((.{1,5})|(.{7,}))$/,"出错其他出错":/./},success:{"验证成功":/^[1-9]\d{5}$/}}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>不能为空：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入" name="nor" value="" data-verify='{type:"require"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>数字(可留空)：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入" name="nor" value="" data-verify='{type:"integer"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item" style="background:#CFF">
+			<div class="aff-key">邮箱：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="电子邮箱" id="email" name="email" value="" data-verify='{type:"email"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item" style="background:#CFF">
+			<div class="aff-key">固定电话：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入电话号码" id="phone" name="phone" value="" data-verify='{type:"phone"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item" style="background:#CFF">
+			<div class="aff-key">手机：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入手机号码" id="mobile"  name="mobile"value="" data-verify='{type:"mobile"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>联合为空验证：</div>
+			<div class="aff-value">
+				<input type="hidden" data-verify='{require:["#email","#mobile","#phone"],err:{"上面的联系方式请至少填写一种":null}}' />
+				<div class="g-f-msg-box">
+					<p>测试联系方式至少填写一个</p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>电话/手机/邮箱：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入联系方式" id="tel" name="tel" value="" data-verify='{type:"require|mobile|phone|email",focus:"你可以输入电话号码、手机号码或是电子邮箱地址！"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p>多项匹配测试</p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>密码：</div>
+			<div class="aff-value">
+				<input type="password" placeholder="请输入联系电话" id="password" name="password" value="" data-verify='{type:"require",err:{"密码长度为必须大于等于6个字符":/^(.{1,5})$/,"密码必须由字母加数字组成":/^((\d+)|([a-zA-Z]+))$/},success:{"密码格式正确":pwdyz}}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>重复密码(使用对像)：</div>
+			<div class="aff-value">
+				<input type="password" placeholder="请设置密码" id="password1" name="password1" value="" data-verify='{err:{"两次密码不一至":null},success:{"OK":$("#password")}}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>银行卡号：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="银行卡号" id="bank_nub" name="bank_nub" value="" data-verify='{type:"require",err:{"格式不正确":/./},success:{"输入正确!":/^\d{16,20}$/}}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>确认银行卡号：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请再输入一次卡号" id="password4" name="password4" value="" data-verify='{err:{"两次密码不一至":null},success:{"卡号一至":$("#password")}}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>日期：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入日期1997/7/1" id="password4" name="password4" value="" data-verify='{type:"date"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>IP地址：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入IP地址" id="IP" name="IP" value="" data-verify='{type:"IP"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>身份证：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入身份证号码" id="IDcord" name="IDcord" value="" data-verify='{type:"IDcord"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p>简单身份证验证</p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>QQ号：</div>
+			<div class="aff-value">
+				<input type="text" placeholder="请输入QQ号码" id="IDcord" name="IDcord" value="" data-verify='{type:"|qq"}' class="aff-text" />
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key">下拉框：</div>
+			<div class="aff-value">
+				<select id="cate1" data-verify='{type:"require",err:{"请选择行业":null}}'>
+					<option value="">默认项</option>
+					<option value="01010000001">纺织</option>
+					<option value="01020000002">印刷</option>
+					<option value="01030000003">纸业</option>
+					<option value="01040000004">皮革</option>
+					<option value="01050000005">包装</option>
+					<option value="01060000006">化工</option>
+					<option value="01070000007">塑料橡胶</option>
+					<option value="01080000008">电子元器件</option>
+					<option value="01090000009">五金、工具</option>
+					<option value="01100000010">照明工业</option>
+					<option value="01110000011">电工电气</option>
+					<option value="01120000012">机械及行业设备</option>
+					<option value="01130000013">服装、服饰</option>
+					<option value="01140000014">箱包皮具</option>
+					<option value="01150000015">安防、消防</option>
+					<option value="01160000016">通信产品</option>
+					<option value="01170000017">广电、传媒设备</option>
+					<option value="01180000018">汽摩及配件</option>
+					<option value="01190000019">医药、医疗、保养</option>
+					<option value="01200000020">建筑、建材</option>
+					<option value="01210000021">能源</option>
+					<option value="01220000022">治金矿产、金属</option>
+					<option value="01230000023">环保</option>
+					<option value="01240000024">交通运输</option>
+					<option value="01250000025">礼品、工艺品</option>
+					<option value="01260000026">玩具</option>
+					<option value="01270000027">饰品、首饰</option>
+					<option value="01280000028">仪器仪表</option>
+					<option value="01290000029">家居、酒店用品</option>
+					<option value="01300000030">运动、休闲</option>
+					<option value="01310000031">办公、文教</option>
+					<option value="01320000032">数码、电脑</option>
+					<option value="01330000033">美容、护肤</option>
+					<option value="01340000034">家用电器</option>
+					<option value="01350000035">食品、饮料</option>
+					<option value="01360000036">商务服务</option>
+				</select>
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key">多选：</div>
+			<div class="aff-value">
+				<select size="6" id="interest" name="interest" multiple data-verify='{type:"require",err:{"两项或以上":/./},success:{"${OK}":/^([^,]+,?){2,}$/}	}'>
+					<option value="0">打篮球</option>
+					<option value="1">踢足球</option>
+					<option value="3">跑步</option>
+					<option value="3">爬山</option>
+					<option value="3">看书</option>
+					<option value="4">玩游戏</option>
+				</select>
+				<div class="g-f-msg-box">
+					<p></p>
+				</div>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>复选：</div>
+			<div class="aff-value">
+				<label>
+					<input type="checkbox" name="huohao" value="货号1"/>
+					货号1</label>
+				<label>
+					<input type="checkbox" name="huohao" value="货号2"/>
+					货号2</label>
+				<label>
+					<input type="checkbox" name="huohao" value="货号3"/>
+					货号3</label>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-key"><span class="star">*</span>单选：</div>
+			<div class="aff-value">
+				<label>
+					<input type="radio" name="radio1" value="是"/>
+					是</label>
+				<label>
+					<input type="radio" name="radio1" value="否"/>
+					否</label>
+			</div>
+		</li>
+		<li class="g-c-f aff-item">
+			<div class="aff-value"> <span class="aff-submit">
+				<input type="submit" value="下一步，填写产品详细信息"/>
+				</span> <span class="aff-submit"> <a href="javascript:">下一步，填写产品详细信息</a> </span> <span class="aff-submit aff-cancel">
+				<input type="submit" value="下一步，填写产品详细信息"/>
+				</span> <span class="aff-submit aff-cancel"> <a href="javascript:">下一步，填写产品详细信息</a> </span> </div>
+		</li>
+	</ul>
+</form>
+</body>
+</html>

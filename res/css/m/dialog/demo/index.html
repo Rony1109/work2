@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提示框修改</title>
+<link rel="stylesheet" href="http://res.csc86.com/css/" />
+<script type="text/javascript" src="http://res.csc86.com/js/"></script>
+<script>
+function dialog(msg,okcall,cancelcall,ico){
+	csc.useDialog(function(){
+		artDialog({
+			lock:true,
+			resize:false,
+			init:function(){/*this.content("打开了..")*/},
+			ok: okcall || false,
+			cancel: cancelcall || false,
+			icon:ico || "mem-w",
+			content: msg
+		});
+	},"mem")
+}
+
+function alert1(){
+	//dialog("这是默认提示框！");
+	csc.useDialog(function(){
+		csc.alert("这是默认提示框！",function(){alert("回调！")});	
+	})
+}
+function alert2(){
+	//dialog("成功提示框","","","mem-c");
+	csc.useDialog(function(){
+		csc.success("成功提示框!")
+	})
+}
+function alert3(){
+	//dialog("出错了提示框","","","mem-e");
+	csc.useDialog(function(){
+		csc.error("出错了提示框!")
+	})
+}
+function alert4(){
+	//dialog("选择提示框!",function(){},function(){},"mem-q");
+	csc.useDialog(function(){
+		csc.confirm("选择提示框!",function(){alert("YES")},function(){alert("NO")})
+	})
+}
+function alert5(){
+	//dialog("成功提示框","","","mem-n");
+	csc.useDialog(function(){
+		csc.tip("小提示框!",2)
+	})
+}
+function alert6(){
+	var html = $("#msg1").html();
+	csc.useDialog(function(){
+		artDialog({
+			lock:false,
+			resize:false,
+			init:function(){/*this.content("打开了..")*/},
+			ok: false,
+			cancel: false,
+			content: html
+		});
+	},"mem")
+}
+function alert7(){
+	var html = $("#msg2").html();
+	csc.useDialog(function(){
+		artDialog({
+			lock:false,
+			resize:false,
+			init:function(){
+				var o = this;
+				$(this.content()).find(".Dialog_link").click(function(){
+					o.close();
+				}).prependTo($(o.DOM.wrap[0]).find(".aui_footer"));
+			},
+			close:function(){
+				$(this.DOM.wrap[0]).find(".aui_footer .Dialog_link").remove();
+			},
+			ok:false,
+			icon:"mem-w",
+			content: html
+		});
+	},"mem")
+}
+function alert8(){
+	csc.useDialog(function(){
+		art.dialog.open('msg1.html', {
+			title: '提示',
+			lock:true,
+			width:750,
+			height:390,
+			init:function(){
+				$(this.DOM.wrap[0]).find(".aui_main").css("padding","0");
+				$(this.DOM.wrap[0]).find(".aui_footer").css("height","0");
+			}
+		});
+	});
+}
+function blue(){
+	csc.useDialog(function(){},"mem_orange");
+}
+</script>
+</head>
+
+<body>
+<div onClick='csc.useDialog(function(){artDialog("曙日撒酒疯三大件星罗棋布野果奋进星罗棋布昌",function(){},function(){});},"mem");'>mem</div><br>
+<div onClick='csc.useDialog(function(){artDialog("这里是提示的内容");},"mem");'>无按钮提示</div>
+<button onClick="alert1()">默认</button>
+<button onClick="alert2()">成功</button>
+<button onClick="alert3()">出错</button>
+<button onClick="alert4()">选择</button>
+<button onClick="alert5()">自动关闭小提示</button><br>
+特殊提示框: <br>
+<button onClick="alert6()">特殊错误提示</button>
+<button onClick="alert7()">带链接提示</button>
+
+<button onClick="blue()">换皮肤</button>
+iframe提示框: <br>
+<button onClick="alert8()">默认iframe</button>
+
+<br>
+<br>
+<br>
+<br>
+<div id="msg1">
+	<table class="big_err">
+		<tr>
+			<th>出错了!</th>
+			<td>
+				<dl>
+					<dt>以下产品信息填写不正确,请编辑后重新发布</dt>
+					<dd>1.交流电机 在时枯井 枯井 </dd>
+					<dd>2.见风使舵轩可悲地士大夫士大夫</dd>
+					<dd>3.枯井枯井 霜两地分居 是枯井中</dd>
+					<dd>4.发酵饲料加进是发酵饲料在地村</dd>
+					<dd>5.蛔进枯进枯 霜夺枯地士大夫枯霜</dd>
+				</dl>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="msg2">
+您需要先实名!<div class="Dialog_link"><a href="http://www.baidu.com" target="_blank">现在就去实名认证</a> <a href="javascript:;">下次再说</a></div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>应用框架</title>
+<link rel="stylesheet" href="/app/" />
+<script src="/js/"></script>
+<script src="/js/m/page.js"></script>
+</head>
+
+<body>
+<div class="g-o-a app-frame">
+  <div class="af-nav">
+    <h2>报价管理</h2>
+    <ul class="af-nav-items">
+      <li class="item cur"><a href="javascript:">收到的询盘</a></li>
+      <li class="item"><a href="javascript:">发出的报价</a></li>
+      <li class="item has-children has-children-cur"><a href="javascript:">会员资料管理</a>
+        <ul>
+          <li class="cur"><a href="javascript:">发出的报价</a></li>
+          <li><a href="javascript:">发出的报价</a></li>
+        </ul>
+      </li>
+      <li class="item has-children"><a href="javascript:">账号安全</a><ul>
+          <li class="cur"><a href="javascript:">发出的报价</a></li>
+          <li><a href="javascript:">发出的报价</a></li>
+        </ul></li>
+    </ul>
+  </div>
+  <div class="af-bd">
+    <ul class="pre-opening p-write">
+      <li class="cur">1.填写询盘单</li>
+      <li>2.审核并发布</li>
+      <li>3.供应商回复</li>
+      <li>4.达成交易</li>
+    </ul>
+    <h1 class="af-hd">我收到的询盘</h1>
+    <div>
+      <form>
+      <ul class="af-form">
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>普通文本框：</div>
+          <div class="aff-value">
+            <input type="text" placeholder="例如：求购韩版上衣" value="" data-verify='{"focus":{"tip":"焦点提示"},"role":[{"regex":"/^a(.*)b$/","tip":"格式错误"},{"regex":"/^.{6,}$/","tip":"长度错误"}],"must":{"tip":"为空提示"},"success":{"tip":"成功需要提示么"}}' class="aff-text" />
+            <div class="g-f-msg-box"><p>默认提示</p></div>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key">下拉框：</div>
+          <div class="aff-value">
+            <select id="cate1">
+              <option value="01010000001">纺织</option>
+              <option value="01020000002">印刷</option>
+              <option value="01030000003">纸业</option>
+              <option value="01040000004">皮革</option>
+              <option value="01050000005">包装</option>
+              <option value="01060000006">化工</option>
+              <option value="01070000007">塑料橡胶</option>
+              <option value="01080000008">电子元器件</option>
+              <option value="01090000009">五金、工具</option>
+              <option value="01100000010">照明工业</option>
+              <option value="01110000011">电工电气</option>
+              <option value="01120000012">机械及行业设备</option>
+              <option value="01130000013">服装、服饰</option>
+              <option value="01140000014">箱包皮具</option>
+              <option value="01150000015">安防、消防</option>
+              <option value="01160000016">通信产品</option>
+              <option value="01170000017">广电、传媒设备</option>
+              <option value="01180000018">汽摩及配件</option>
+              <option value="01190000019">医药、医疗、保养</option>
+              <option value="01200000020">建筑、建材</option>
+              <option value="01210000021">能源</option>
+              <option value="01220000022">治金矿产、金属</option>
+              <option value="01230000023">环保</option>
+              <option value="01240000024">交通运输</option>
+              <option value="01250000025">礼品、工艺品</option>
+              <option value="01260000026">玩具</option>
+              <option value="01270000027">饰品、首饰</option>
+              <option value="01280000028">仪器仪表</option>
+              <option value="01290000029">家居、酒店用品</option>
+              <option value="01300000030">运动、休闲</option>
+              <option value="01310000031">办公、文教</option>
+              <option value="01320000032">数码、电脑</option>
+              <option value="01330000033">美容、护肤</option>
+              <option value="01340000034">家用电器</option>
+              <option value="01350000035">食品、饮料</option>
+              <option value="01360000036">商务服务</option>
+            </select>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>复选：</div>
+          <div class="aff-value">
+            <label>
+              <input type="checkbox" name="productPropertys[9][货号][]" value="货号1"/>
+              货号1</label>
+            <label>
+              <input type="checkbox" name="productPropertys[9][货号][]" value="货号2"/>
+              货号2</label>
+            <label>
+              <input type="checkbox" name="productPropertys[9][货号][]" value="货号3"/>
+              货号3</label>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-key"><span class="star">*</span>单选：</div>
+          <div class="aff-value">
+            <label>
+              <input type="radio" name="productPropertys[8][是否环保]" value="是"/>
+              是</label>
+            <label>
+              <input type="radio" name="productPropertys[8][是否环保]" value="否"/>
+              否</label>
+          </div>
+        </li>
+        <li class="g-c-f aff-item">
+          <div class="aff-value">
+            <span class="aff-submit">
+              <input type="submit" value="下一步，填写产品详细信息"/>
+            </span>
+            <span class="aff-submit">
+              <a href="javascript:">下一步，填写产品详细信息</a>
+            </span>
+            <span class="aff-submit aff-cancel">
+              <input type="submit" value="下一步，填写产品详细信息"/>
+            </span>
+            <span class="aff-submit aff-cancel">
+              <a href="javascript:">下一步，填写产品详细信息</a>
+            </span>
+          </div>
+        </li>
+      </ul></form>
+    </div>
+    <ul class="g-c-f af-tab">
+        <li class="cur"><a href="javascript:">全部询盘</a></li>
+        <li><a href="javascript:">未读询盘<em>(5)</em></a></li>
+        <li><a href="javascript:">未回复/报价</a></li>
+        <li><a href="javascript:">已回复/报价</a></li>
+        <li><a href="javascript:">已过期询盘</a></li>
+      </ul>
+
+    <div class="g-c-f af-page">
+      <ul class="g-f-l afp-option">
+        <li><a href="javascript:">删除</a></li>
+      </ul>
+      <div class="g-f-r afp-bd">
+        <div class="afp-box">
+          <form onsubmit="csc.page(this);return false;">
+          跳转到第<input teype="text" vlaue="" class="afp-text" name="page" />页
+          <input type="submit" value="确定" class="afp-btn" />
+          </form>
+        </div>
+        <span>1/20</span><a href="javascript:">上一页</a><a href="javascript:">下一页</a><a href="javascript:" onclick="csc.afPage(this)">跳转</a>        
+      </div>      
+    </div>
+    <div class="af-list">      
+     <table width="100%">
+        <thead class="af-list-hd">
+          <tr>
+            <td width="50" class="c"></td>
+            <td>产品名称</td>
+            <td width="130">采购数量</td>
+            <td width="120">状态</td>
+            <td width="130">截至时间</td>
+            <td width="100">操作</td>
+          </tr>
+        </thead>
+        <tbody class="af-list-bd">
+          <tr>
+            <td>操作</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>操作</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>操作</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>操作</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        </table>
+
+      
+      </div>
+      <table class="tab-price" width="100%" border="1">
+        <colgroup>
+        <col width="102" />
+        <col width="150" />
+        <col width="170" />
+        <col width="170" />
+        <col width="170" />
+        </colgroup>
+        <thead>
+          <tr>
+            <td colspan="5"><strong class="l">比价</strong><strong class="r">单位：<span>元（人民币）</span></strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th></th>
+            <th><a href="javascript:">乐诚皮革</a></th>
+            <th><a href="javascript:">梦云饰品</a></th>
+            <th><a href="javascript:">诚信纺织辅料</a></th>
+            <th><a href="javascript:">万顺达纺织品</a></th>
+          </tr>
+          <tr class="tr-white">
+            <td>单价</td>
+            <td>100元/件</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tr-blue">
+            <td>运费</td>
+            <td>1000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tr-white">
+            <td>其它费用</td>
+            <td>4000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tr-blue">
+            <td>总计费用</td>
+            <td><span>15000</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tr-white">
+            <td>其他说明</td>
+            <td>可长期供货，可接受OEM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tr-blue">
+            <td>附件预览</td>
+            <td><a href="javasctipt:">--</a></td>
+            <td><a href="javascropt:">产品.docx</a></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="quotation-p" width="100%" border="0">
+        <colgroup>
+        <col width="120" />
+        <col width="200" />
+        <col width="330" />
+        <col width="168" />
+        </colgroup>
+        <thead>
+          <tr>
+            <td colspan="4"><strong>报价单<span>（现货/标准品）</span></strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="q-tr">
+            <th>报价项目</th>
+            <th>金额（元）</th>
+            <th>数量（件）</th>
+            <th>合计（元）</th>
+          </tr>
+          <tr>
+            <td class="align-r">商品报价：</td>
+            <td><span class="p-duty">
+              <input type="text" />
+              <br />
+              <input name="" type="checkbox" value="">
+              &nbsp;此报价已含税</span></td>
+            <td class="align-c" rowspan="4">100</td>
+            <td class="align-c">10000.00</td>
+          </tr>
+          <tr>
+            <td class="align-r">运费报价：</td>
+            <td><input type="text" /></td>
+            <td class="align-c">1100.00</td>
+          </tr>
+          <tr>
+            <td class="align-r">其他费用：</td>
+            <td><input type="text" /></td>
+            <td class="align-c">0.00</td>
+          </tr>
+          <tr>
+            <td class="align-r"><strong>总报价：</strong></td>
+            <td></td>
+            <td class="align-c"><b>11000.00</b></td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+</div>
+<script>
+  seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+    csc.placeholder("input[placeholder]");
+  });
+  seajs.use("/js/m/verify.js",function (){
+    csc.verify("input[data-verify]");
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.g-select{position:relative;float:left;width:99px;height:24px;margin-right:10px;background:url(http://res.csc86.com/css/m/area-select/img/bg.png) no-repeat 0 0;z-index:9}
+.g-select a, .g-select a:hover{display:block;color:#000;text-decoration:none}
+.g-select .s-txt{height:24px;padding:0 37px 0 14px;background:url(http://res.csc86.com/css/m/area-select/img/bg.png) no-repeat right -50px;line-height:23px ;*line-height:25px;line-height:25px\9;overflow:hidden}
+.g-select .s-items{position:absolute;display:none;width:100%;max-height:600px;overflow-y:scroll;top:24px;left:-1px;background:#fff;border:1px solid #b2b2b2;box-shadow:0 0 3px #a8a8a8;z-index:1}
+.g-select .s-item{height:28px;_margin-bottom:-2px;overflow:hidden}
+.g-select .s-item a{line-height:28px;padding:0 10px}
+.g-select .s-item a:hover{background:#f5f5f5}
+.g-select .s-item span{display:none}
+.g-select .cur a{background:#e6e6e6}
+.g-select .cur a,.g-select .cur a:hover{background:#e6e6e6}
+.g-select-hover{border-radius:2px 2px 2px 2px;box-shadow:0 0 2px #a8a8a8;z-index:10}
+.g-select-hover .s-items{display:block}
+
+.g-select-area .s-items{width:434px;padding:2px 9px 3px;line-height:21px;*line-height:23px;overflow-y:visible}
+.g-select-area .s-items a,.g-select-area .s-items a:hover{width:54px;height:22px;padding-left:8px;color:#333;overflow:hidden;}
+.g-select-area .s-items a:hover{background:#f0f0f0}
+.all-near,.s-areas{border-bottom:1px dashed #ddd}
+.all-near{position:relative;_width:454px;padding:6px 0;z-index:9}
+.near-area,.near-area-prov{position:absolute;}
+.near-area-prov{top:6px;right:20px;_right:-20px}
+.near-area{top:8px;right:100px}
+.s-areas,.s-provs{padding:8px 0 2px 2px;*padding-bottom:10px;_padding-bottom:2px}
+.s-areas li,.prov-item{float:left;width:60px;margin:0 24px 8px 0;padding:2px 0}
+.prov-txt{background:url(img/bg.png) no-repeat right -240px}
+.g-select-area .s-items .prov-txt:hover{background:#f5f5f5 url(http://res.csc86.com/css/m/area-select/img/bg.png) no-repeat right -190px}
+.g-select-area .s-items .cur .prov-txt{background-color:#e6e6e6}
+.g-select-area .cur ul a{background:#f8f8f8}
+.g-select-area .cur .cur a,.g-select-area .cur .cur a:hover{background:#e6e6e6}
+.prov-item{position:relative}
+.prov-item-hover{z-index:1}
+.prov-item-hover .city-items{display:block}
+.city-items{position:absolute;display:none;width:222px;left:62px;top:1px;padding:6px;background:#f8f8f8;border:1px solid #a4a4a4}
+.city-items li{float:left;width:74px;margin:4px 0;padding:2px 0;overflow:hidden}
+.g-select-area .city-items a{width:60px;overflow:hidden;}
+.g-select-area .city-items a:hover{width:60px}

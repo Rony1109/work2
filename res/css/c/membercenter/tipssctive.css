@@ -1,0 +1,59 @@
+/*操作完成提示css yq*/
+.tipsctive{ height:27px; padding:15px 0 0 100px;}
+.nav-tips{ height:10px; background:url(img/be-sted.png) repeat-x 0 0; width:410px;}
+.nav-tips li{ position:relative; float:left; height:10px; width:195px;}
+.tipsctive .nav-tips li.prev{ background:url(img/be-sted.png) repeat-x 0 -29px;}
+.bylg .nav-tips li.prev,.backpwd_bylg .nav-tips li.prev{ background:none;}
+.nav-tips li i{ position:absolute; left:-2px; background:url(img/nav-bg.png) no-repeat 0 0;height: 34px;top: -13px;width: 34px;}
+
+.nav-tips li i.num1{ background-position:0 -44px;}
+.nav-tips li i.num2{ background-position:-44px -44px;}
+.nav-tips li i.num3{ background-position:-88px -44px;}
+.nav-tips li i.num4{ background-position:-132px -44px;}
+.nav-tips li i.num5{ background-position:-176px -44px;}
+.nav-tips li.cur{background:url(img/be-sted.png) no-repeat 0 -29px;}
+.nav-tips li.prev i.num1,
+.nav-tips li.cur i.num1{ background-position:0 0;}
+.nav-tips li.cur i.num2,.nav-tips li.cur i.num3,.nav-tips li.cur i.num4,.nav-tips li.cur i.num5,
+.tipsctive .nav-tips li.prev i.num2,.tipsctive .nav-tips li.prev i.num3,.tipsctive .nav-tips li.prev i.num4,.tipsctive .nav-tips li.prev i.num5
+{ background-position:-44px 0;}
+.nav-tips li.cur i.num4{background-position:-88px 0;}
+/*.nav-tips li.prev span{ color:#067ED4; }*/
+/*.nav-tips li.cur span{ color:#067ED4;}*/
+.nav-tips li.last{ width:19px;}
+.nav-tips li.last i{ right:-2px; left:auto;}
+
+.nav-tips li span{ position:absolute; top:20px; left:-42%; width:180px; text-align:center; color:#888; font-weight:700;}
+.bylg{padding-top:20px;height:95px;}
+.bylg .nav-tips{margin-top: 40px;background:url(img/prev.png) no-repeat;height: 34px;width: 430px;}
+.bylg .nav-tips2{ background-position:0 -41px;}
+.bylg .nav-tips3{ background-position:0 -82px;}
+.bylg .nav-tips li{ background:none;}
+.bylg .nav-tips li span{top:-40px;}
+.bylg .nav-tips li i{display:none;}
+.bylg{padding-top:20px;height:95px;}
+.bylg .nav-tips{margin-top: 40px;background:url(img/prev.png) no-repeat;height: 34px;width: 430px;}
+.bylg .nav-tips2{ background-position:0 -41px;}
+.bylg .nav-tips3{ background-position:0 -82px;}
+.bylg .nav-tips li{ background:none;}
+.bylg .nav-tips li span{top:-40px;}
+.bylg .nav-tips li i{display:none;}
+.bylg{padding-top:20px;height:95px;}
+.bylg .nav-tips{margin-top: 40px;background:url(img/prev.png) no-repeat;height: 34px;width: 430px;}
+.bylg .nav-tips2{ background-position:0 -41px;}
+.bylg .nav-tips3{ background-position:0 -82px;}
+.bylg .nav-tips li{ background:none;}
+.bylg .nav-tips li span{top:-40px;}
+.bylg .nav-tips li i{display:none;}
+.nav-tips li.last span{ width:60px; left:-104%;}
+
+.tips-success{ padding-left:205px;}
+
+
+
+
+
+
+
+
+

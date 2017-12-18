@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自定义分类-会员中心</title>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" /><script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script><link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" /><script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script></head>
+<body>
+<div class="head"><!--顶部导航 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://i.csc86.com/user/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        	
+        	<a  
+        	href="http://wslm.csc86.com/member" title="微商联盟"><b class="wslm-icon"></b>微商联盟</a>
+        	
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://login.csc86.com/signout" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/c/shopmember/shopmember.css,css/c/shopmember/company.css,css/c/shopmember/prolist.css,css/c/shopmember/links.css,css/m/page/style.css,css/c/shopmember/classification.css,css/c/shopmember/shopnews.css" />
+<script src="http://res.csc86.com/f=js/p/SWFUpload/v2.2.0.1/swfupload.js,js/m/handlers.js"></script>
+<script src="http://res.csc86.com/f=js/c/shopmember/shop.js,js/c/shopmember/classify.js,js/c/shopmember/verify.js,js/c/shopmember/news.js"></script>
+<div class="g-o-a app-frame">
+    <div id="apply" class="af-nav">
+                <h2><a href="/shop/shopinfo.html">旺铺</a></h2>
+        <ul class="nav-items">
+            <li class="item has-children has-children-cur"><a href="javascript:">旺铺管理</a>
+                <ul>
+                    <li class=""><a href="/shop/decoration.html" target="_blank">旺铺装修</a></li>
+                    <li class=""><a href="/shop/template.html" target="_blank">模版装扮 <img src="http://res.csc86.com/css/c/shopmember/img/new.gif" width="30" height="13" /></a></li>
+                </ul>
+            </li>
+            <li class="item has-children has-children-cur"><a href="javascript:">模版管理</a>
+                <ul>
+                    <li class=""><a href="/shop/temp.html" target="_blank">我购买的模版</a></li>
+                    <li class=""><a href="/shop/tempmarket.html" target="_blank">模版市场</a></li>
+                </ul>
+            </li>
+            <li class="item has-children  has-children-cur"><a href="javascript:">公司管理</a>
+                <ul>
+                    <li class=""><a href="/shop/introduce.html" target="_blank">企业资料</a></li>
+                    <li class=""><a href="/shop/contact.html" target="_blank">联系方式</a></li>
+                    <li class=""><a href="/shop/honor.html" target="_blank">证书荣誉</a></li>
+                </ul>
+            </li>
+            <li class="item has-children  has-children-cur"><a href="javascript:">旺铺服务</a>
+                <ul>
+                	<li class=""><a href="/shop/newdomain.html" target="_blank">旺铺域名</a></li>
+                    <li class=""><a href="/shop/link.html" target="_blank">友情链接</a></li>                   
+                </ul>
+            </li>
+            <li class="item has-children  has-children-cur"><a href="javascript:">公司动态</a>
+				<ul>
+					<li class=""><a href="/shop/publish.html" target="_blank">发布公司动态</a></li>
+					<li class=""><a href="/shop/list.html" target="_blank">公司动态管理</a></li>
+				</ul>
+			</li>
+        </ul>
+        </div>
+	<script>seajs.use(csc.url("res","/f=js/m/hrefinfo"),function (){
+		csc.hrefinfo("ul.nav-items>li.item>a");
+	});</script> 
+		<div class="af-bd">
+    		<h2 class="af-hd">产品自定义分类</h2>
+	<ul class="g-c-f af-tab">
+		<li class="cur"><a href="/shop/defineCate">自定义分类</a></li>
+		<li><a href="/shop/procate">供应产品分类</a></li>
+	</ul>
+	<div class="classify">
+		<div class="g-c-f classify-top">
+			<input name="" type="button" class="addparentbtn" value="添加分类" />
+		</div>
+		<div class="g-h-10"></div>
+        <form id="mdfyClssfyForm">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" class="customClassify">
+			<thead>
+				<tr>
+					<th colspan="2">分类名称 </th>
+					<th width="15%">分类排序</th>
+					<th width="22%">管理分类信息 </th>
+					<th width="12%">操作</th>
+				</tr>
+			</thead>
+									<tbody id="1ae11efd-7702-4734-878a-c145d2d72cb0">
+				<tr class="parent">
+					<td><a class="branch" href="#"></a>
+						<input type="text" class="txt" value="服装"/></td>
+					<td><a href="javascript: " class="addsubbtn" id="1ae11efd-7702-4734-878a-c145d2d72cb0">添加子分类</a></td>
+					<td align="center"><a href="" class="order up" title="上移分类"></a><a href="" class="order down" title="下移分类"></a></td>
+					<td align="center"><a href="/shop/proCate?classify=1ae11efd-7702-4734-878a-c145d2d72cb0" class="pro-amount">0<em>条产品信息</em></a></td>
+					<td align="center"><a id="1ae11efd-7702-4734-878a-c145d2d72cb0" href="javascript:" class="del">删除</a></td>
+				</tr>
+								<tr class="subCon" id="e8946faa-b84d-413a-8ce7-9999712b39f4">
+					<td><span class="broken"></span>
+						<input type="text" class="txt" value="女装" /></td>
+					<td></td>
+					<td align="center"><a href="#" class="order up" title="上移分类"></a><a href="#" class="order down" title="下移分类"></a></td>
+					<td align="center"></td>
+					<td align="center"><a id="e8946faa-b84d-413a-8ce7-9999712b39f4" href="javascript:" class="del">删除</a></td>
+				</tr>
+							</tbody>
+									<tfoot>
+				<tr>
+					<td>其他分类</td>
+					<td></td>
+					<td align="center"></td>
+					<td align="center"><a href="/shop/proCate?classify=1ee5d116-daf9-4a8c-a392-04f6d3a27c30"  class="pro-amount">5<em>条产品信息</em></a></td>
+					<td align="center"></td>
+				</tr>
+				<tr class="parentCon" id="parentCon" style="display:none;">
+					<td width="29%"><a class="branch" href="#"></a>
+						<input type="text" class="txt" /></td>
+					<td width="22%"><a href="#" class="addsubbtn">添加子分类</a></td>
+					<td align="center"><a href="#" class="order up" title="上移分类"></a><a href="#" class="order down" title="下移分类"></a></td>
+					<td></td>
+					<td align="center"><a href="#" class="del">删除</a></td>
+				</tr>
+				<tr class="subCon" id="subCon" style="display:none;">
+					<td><span class="broken"></span>
+						<input type="text" class="txt" /></td>
+					<td></td>
+					<td align="center"><a href="#" class="order up" title="上移分类"></a><a href="#" class="order down" title="下移分类"></a></td>
+					<td align="center"></td>
+					<td align="center"><a href="#" class="del">删除</a></td>
+				</tr>
+			</tfoot>
+		</table>
+        <div class="frm-opt"><input class="org-btn" type="submit" value="保存分类" name="" /></div>
+        </form>
+		<script>ResetF('.customClassify');</script>
+	</div>    
+	</div>
+</div><div class="g-h-20"></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://www.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://www.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://www.csc86.com/about/terms.html" target="_blank" rel="nofollow">服务条款</a><a href="http://www.csc86.com/about/legal.html" target="_blank" rel="nofollow">法律申明</a><a href="http://www.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://www.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://www.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2014 China South City Holdings Limited. All Rights Reserved </p>
+	深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

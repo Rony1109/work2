@@ -1,0 +1,81 @@
+@charset "utf-8";
+/**头部**/
+html {overflow:auto;}
+body {font-family:simsun,tahoma,arial,sans-serif;}
+textarea {resize:none;}
+.g-h-40 {clear:both;}
+.top-bar .top-sign-info a {color:#067ED4;}
+.top-bar .top-sign-info .top-msg-num {color:#FFF;}
+.web-search {height:85px;}
+.web-search h1 {margin-top:0;}
+.web-search h2 {float:left; _display:inline; margin:20px 0 0 10px; border-left:1px solid #CECECE; height:38px; vertical-align:bottom; padding:5px 0 0 10px;}
+.m-nav-quan {height:32px; border-bottom:4px solid #FC6824; min-width:1000px;}
+.m-nav-quan .g-o-a {position:relative;}
+ul.m-nav1,ul.m-nav2 {position:absolute;}
+ul.m-nav1 {z-index:2px; font-size:0; line-height:0;}
+ul.m-nav1 li {float:left; _display:inline; height:32px; text-align:center;}
+ul.m-nav1 li a {display:inline-block; padding:0 18px; height:31px; min-width:50px; font:normal 16px/32px Microsoft YaHei,simhei; border:1px solid #E5E5E5; border-bottom:none; border-left:none; color:#444;}
+ul.m-nav1 li.l1 a {border-left:1px solid #E5E5E5}
+/*ul.m-nav1 li a:hover,ul.m-nav1 li a.hover{background:#007DD6; text-decoration:none; color:#FFF; text-shadow:1px 1px 2px #333; border-radius:4px 4px 0 0 ; padding-top:1px;box-shadow:1px -1px 4px #999;}*/
+ul.m-nav1 li a:hover{text-decoration:none; color:#fc6824;}
+ul.m-nav1 li a.hover{background:#FC6824; border-color:#FC6824; color:#FFF; padding-top:1px;}
+ul.m-nav1 li a.hover:hover {color:#FFF;}
+
+ul.m-nav2 {position:absolute; right:0; top:10px; text-align:right; z-index:1px; font-size:0; line-height:0;}
+ul.m-nav2 li {display:inline-block; *display:inline; *zoom:1; padding:0 10px; border-left:1px solid #DFDFDF;}
+ul.m-nav2 li.l1 {border:none;}
+ul.m-nav2 li a {color:#686868; font:normal 14px/16px simsun;}
+ul.m-nav2 li a:hover {color:#007DD6;}
+
+/**面包宵**/
+.breadcrumbs {line-height:14px; font-family:simsun; clear:both; line-height: 14px; color: #333; text-indent:10px;}
+.breadcrumbs i{font-style:normal; padding:0 8px;}
+.breadcrumbs a {color:#067ED4;}
+.breadcrumbs a:hover {color:#067ED4;}
+/**友情链接**/
+.friendly_link {border:1px solid #DDD;background:#F8F8F8;}
+.frie-links {padding:10px 0 10px 85px; position:relative;line-height:22px; height:auto; border:none;}
+.frie-links strong {position:absolute; left:15px; top:10px; font:bold 14px/22px Microsoft YaHei,simhei; color:#6C6C6C;}
+.frie-links span {float:none; color:#D9D9D9}
+.frie-links span a {color:#888;}
+/**页脚**/
+.quan_link {line-height:12px; background:#333; min-width:1000px; color:#C4C4C4; padding:30px 0; text-align:center; font-family:tahoma,simsun,arial;}
+.quan_link a {color:#C4C4C4;}
+.quan_link .netmap a{ display:inline-block; *display:inline; *zoom:1; padding:0 8px; border-left:1px solid #696969;}
+.quan_link .netmap a.a1 {border:none; padding-left:15px;}
+/**搜索**/
+.q-t-s{background:#FC6824; margin-top:25px; float:right; overflow:hidden; border:1px solid #FC6824;}
+.qts-txt{width:362px; padding:5px 3px 5px 6px; line-height:20px; height:20px; border:none; border:0; outline:none;}
+.qts-btn{width:72px; height:30px; line-height:30px; background:#FC6824; border:none; color:#fff; font-size:16px; cursor:pointer; font-family:"Microsoft YaHei",Tahoma; font-weight:300; overflow:hidden;}
+
+/*2015年03月06日 更新底部样式和2015版首页统一*/
+.quan_link_2015{margin-top:20px;font-family:arial,simsun}
+.quan_link_2015 .foot-lg { padding: 10px 0; }
+.quan_link_2015 .foot-lg span { width: 120px; border: 1px solid #d2d2d2; margin: 0 5px; display: inline-block; *display: inline; *zoom: 1; height: 50px; text-align: center; vertical-align: top; }
+
+/**内页公用**/
+/**单像素灰色(#E5E5E5)背景图片**/
+.imgE5E5E5,.right_l {/*background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAOXl5f///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw==);*/background-image:url(img/imgE5E5E5.gif);}
+.right_l {background-position:740px 0; background-repeat:repeat-y;}
+
+/**广告位**/
+#quan_ad1 {position:relative; margin-bottom:-10px; font-size:0; line-height:0;}
+#quan_ad1 a.close {display:block; position:absolute; width:11px; height:11px; top:5px; right:5px; background:url(img/ad1_close.gif) no-repeat;}
+/**名片样式**/
+#SNSCardDIV {border-color:#FFCDB6; border-width:3px;}
+#SNSCardDIV a {color:#AA4E23;}
+#SNSCardDIV .ly-a-l a {color:#444;}
+#SNSCardDIV .ly-a-l a:hover {color:#FC6824;}
+#SNSCardDIV .ly-a-l .add-ly-fend {background:url(img/icon_y2.gif) 0 center no-repeat;}
+#SNSCardDIV .ly-a-l .card-fend {background:url(img/icon_y1.gif) 0 center no-repeat;}
+#SNSCardDIV a.card-received,#SNSCardDIV a.card-received:hover {color:#999;}
+
+/**禁用会员样式**/
+.ban {color:#888888; display:inline; font-style:normal;}
+
+
+
+
+
+
+

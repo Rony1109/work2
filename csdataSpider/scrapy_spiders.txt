@@ -1,0 +1,8 @@
+cd /data/pywork/cuteSpider
+
+nohup /usr/python-3.6.0/bin/scrapy crawl graingerProductLink >> /data/logs/graingerProductLink.log 2>&1 &
+nohup /usr/python-3.6.0/bin/scrapy crawl graingerProductInfo >> /data/logs/graingerProductInfo.log 2>&1 &
+
+nohup /usr/python-3.6.0/bin/scrapy crawl toolmallProductPage >> /data/logs/toolmallProductPage.log 2>&1 &
+nohup /usr/python-3.6.0/bin/scrapy crawl toolmallProduct >> /data/logs/toolmallProduct.log 2>&1 &
+nohup /usr/python-3.6.0/bin/scrapy crawl toolmallProductInfo >> /data/logs/toolmallProductInfo.log 2>&1 &

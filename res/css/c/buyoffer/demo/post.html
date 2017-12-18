@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>询盘发布</title>
+<link rel="stylesheet" href="/css/base-reset.css" />
+<link rel="stylesheet" href="../buyoffer.css" />
+<script src="/js/"></script>
+<script src="/editor/"></script>
+<script src="/b=js&f=m/area.js,c/buyoffer/post.js"></script>
+</head>
+
+<body>
+<div class="g-o-ab box-a">
+  <h2 class="ba-hd">询盘发布</h2>
+  <div class="ba-bd">
+    <div class="g-t-c post-step"><img src="/image/c/buyoffer/post-step.png" alt="" width="810" height="31" /></div>
+    <div class="post-form">
+      <form method="post">
+        <fieldset>
+          <ul class="basic">
+            <li class="g-c-f f-item">
+              <label class="key"><span class="right"></span><span class="star">*</span>采购单有效期：</label>
+              <div class="value validity">
+                <label>
+                  <input name="validity" type="radio" value="180" checked />
+                  180天</label>
+                <label>
+                  <input name="validity" type="radio" value="7" />
+                  7天</label>
+                <label>
+                  <input name="validity" type="radio" value="4" />
+                  4天</label>
+                <label>
+                  <input name="validity" type="radio" value="30" />
+                  30天</label>
+                <label>
+                  <input name="validity" type="radio" value="90" />
+                  90天</label>
+                <span class="eg">最晚截至<strong>2012年6月10日</strong>前采购单有效</span>
+                <div class="msg-box">
+                  <p class="error">未填写产品名称</p>
+                </div>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key"><span class="star">*</span>产品名称：</label>
+              <div class="value">
+                <input type="text" placeholder="例如：求购韩版上衣" value="" class="ui-text" />
+                <div class="msg-box">
+                  <p class="error">未填写产品名称</p>
+                </div>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key"><span class="star">*</span>采购数量：</label>
+              <div class="value">
+                <input type="text" placeholder="数额" value="" class="ui-text" style="width:130px;margin-right:4px;_margin-right:7px" />
+                <input type="text" placeholder="单位" value="" class="ui-text" style="width:85px" />
+                <div class="msg-box">
+                  <p class="error">未填写产品名称</p>
+                </div>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key"><span class="star">*</span>采购类型：</label>
+              <div class="value buy-type">
+                <label>
+                  <input name="buy-type" type="radio" value="1" checked />
+                  现货/标准品</label>
+                <label>
+                  <input name="buy-type" type="radio" value="2" />
+                  加工/定制品</label>
+                <label>
+                  <input name="buy-type" type="radio" value="3" />
+                  库存/二手商品</label>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key"><span class="star">*</span>产品类别：</label>
+              <div class="value">
+                <select name="product-category" size="9" style="width:200px">
+                  <option value="1">电子元器件</option>
+                  <option value="2">安全、防护</option>
+                  <option value="3">包装</option>
+                  <option value="4">数码、电脑</option>
+                  <option value="5">电工电气</option>
+                  <option value="6">纺织、皮革</option>
+                  <option value="7">安全、防护</option>
+                  <option value="8">包装</option>
+                  <option value="9">纺织、皮革</option>
+                  <option value="1">电子元器件</option>
+                  <option value="2">安全、防护</option>
+                  <option value="3">包装</option>
+                  <option value="4">数码、电脑</option>
+                  <option value="5">电工电气</option>
+                  <option value="6">纺织、皮革</option>
+                  <option value="7">安全、防护</option>
+                  <option value="8">包装</option>
+                  <option value="9">纺织、皮革</option>
+                </select>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key"><span class="star">*</span>详细描述：</label>
+              <div class="value description">
+                <p class="g-c-f description-eg"><span class="g-f-r"><a href="javascript:">范本一</a><a href="javascript:">范本二</a></span><span class="eg">填写详细的采购需求，如规格、材质、交货期及其他特殊要求.</span></p>
+                <textarea name="description" id="description" class="description-text"></textarea>
+                <script>
+				KindEditor.ready(function(K) {
+					K.each({ 
+						'plug-align' : {
+							name : '对齐方式',
+							method : {
+								'justifyleft' : '左对齐',
+								'justifycenter' : '居中对齐',
+								'justifyright' : '右对齐'
+							}
+						},
+						'plug-order' : {
+							name : '编号',
+							method : {
+								'insertorderedlist' : '数字编号',
+								'insertunorderedlist' : '项目编号'
+							}
+						},
+						'plug-indent' : {
+							name : '缩进',
+							method : {
+								'indent' : '向右缩进',
+								'outdent' : '向左缩进'
+							}
+						}
+					},function( pluginName, pluginData ){
+						var lang = {};
+						lang[pluginName] = pluginData.name;
+						KindEditor.lang( lang );
+						KindEditor.plugin( pluginName, function(K) {
+							var self = this;
+							self.clickToolbar( pluginName, function() {
+								var menu = self.createMenu({
+										name : pluginName,
+										width : pluginData.width || 100
+									});
+								K.each( pluginData.method, function( i, v ){
+									menu.addItem({
+										title : v,
+										checked : false,
+										iconClass : pluginName+'-'+i,
+										click : function() {
+											self.exec(i).hideMenu();
+										}
+									});
+								})
+							});
+						});
+					});
+					K.create('#description', {
+						themeType : 'qq',
+						items : [
+							'bold','italic','underline','fontname','fontsize','forecolor','hilitecolor','plug-align','plug-order','plug-indent','link'
+						]
+					});
+				});
+            </script>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <ul class="advanced">
+            <li class="advanced-guide">为了更好地为你找到商家，强烈建议尽可能充分地填写采购单信息。</li>
+            <li class="g-c-f f-item">
+              <label class="key">期望交货地点：</label>
+              <div class="value delivery-area">
+                <select name="province">
+                  <option value="s">选择省</option>
+                  <script>document.write(csc.getArea())</script>
+                </select>
+                <select class="city">
+                  <option value="s">选择市</option>
+                </select>
+                <select name="county">
+                  <option value="s">选择区</option>
+                </select>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key">期望交货时间：</label>
+              <div class="value delivery-date">
+                <input type="text" value="2012/06/05" class="ui-text" />
+                <a href="javascript:" class="g-d-ib from"></a> 到
+                <input type="text" value="2012/06/05" class="ui-text end-date" />
+                <a href="javascript:" class="g-d-ib to"></a></div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key">期望供应商地点：</label>
+              <div class="value suppliers">
+                <select class="suppliers">
+                  <option value="s">选择地区</option>
+                </select>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key">可提供样品：</label>
+              <div class="value">
+                <label>
+                  <input name="sample" type="radio" value="n" checked />
+                  不提供</label>
+                <label>
+                  <input name="sample" type="radio" value="y" />
+                  提供</label>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key">是否长期采购：</label>
+              <div class="value">
+                <label>
+                  <input name="long-term" type="radio" value="n" checked />
+                  否</label>
+                <label>
+                  <input name="long-term" type="radio" value="y" />
+                  是</label>
+              </div>
+            </li>
+            <li class="g-c-f f-item">
+              <label class="key">支付方式说明：</label>
+              <div class="value payment">
+                <label style="_margin-left:-3px;">
+                  <input name="payment" type="checkbox" value="1" />
+                  货到付款 </label>
+                <label>
+                  <input name="payment" type="checkbox" value="2" />
+                  现金结算</label>
+                <label>
+                  <input name="payment" type="checkbox" value="3" />
+                  支票汇票</label>
+                <label>
+                  <input name="payment" type="checkbox" value="4" />
+                  可预付定金</label>
+                <label>
+                  <input name="payment" type="checkbox" value="5" />
+                  可给发票</label>
+                <br />
+                <label>
+                  <input name="payment" type="checkbox" value="6" />
+                  报价之后公开联系信息</label>
+                <br />
+                <label>
+                  <input name="payment" type="checkbox" value="7" />
+                  公开采购信息 <span class="eg">(允许供应商在求购搜索里找到我的询价单)</span></label>
+                <br />
+                <label>
+                  <input name="payment" type="checkbox" value="8" />
+                  允许系统推荐 <span class="eg">(允许系统将我的询价单发送给相关供应商以便更快达成采购)</span></label>
+              </div>
+            </li>
+            <li class="f-item">
+              <div class="value"> <span class="ui-submit">
+                <input type="submit" value="提交采购单"/>
+                </span>
+                <div class="g-h-15"></div>
+                <label>
+                  <input name="agreement" type="checkbox" value="agree" />
+                  <a href="javascript:">我已阅读并同意《华南城采购交易协议》</a></label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div class="g-h-25"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

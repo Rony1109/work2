@@ -1,0 +1,45 @@
+﻿/*滚动条样式*/
+.Scroll{ border:1px solid #999; overflow:hidden;}
+
+/**向上，向下，滑块样式**/
+.Scroll_y {}
+.Scroll_y {width:8px;line-height:0px; font-size:0px;} /**滚动条宽度**/
+.Scroll_y .Scroll_y_Drag { background:#DDD;} /*滚动条背景*/
+.Scroll_y .Scroll_y_Drag_Bar {background:#BBB;  cursor: pointer} /*滑块*/
+.Scroll_y .Scroll_y_Drag_Bar .Scroll_y_DBT { } /*滑块顶部，固定装装饰*/
+.Scroll_y .Scroll_y_Drag_Bar .Scroll_y_DBB { } /*滑块底部，固定装装饰*/
+.Scroll_y .Scroll_y_Drag_Bar .Scroll_y_DBM { } /*滑块中部，非固定高底装饰*/
+.Scroll_y .Scroll_y_Up,
+.Scroll_y .Scroll_y_Down{width:6px; height:6px; border:solid 1px #BBB; background:#CCC }/*向上，向下按钮*/
+.Scroll_y .Scroll_y_Drag_Bar_D,
+.Scroll_y .Scroll_y_Up_D,
+.Scroll_y .Scroll_y_Down_D { background-color:#555} /*鼠标按下样式*/
+
+/*滚动条样式1*/
+.Scroll1 .Scroll_y .Scroll_y_Drag_Bar {border-radius:4px; border-width:0;}
+.Scroll1 .Scroll_y .Scroll_y_Drag {border-radius:4px; border-width:0;}
+.Scroll1 .Scroll_y .Scroll_y_Up,
+.Scroll1 .Scroll_y .Scroll_y_Down {border-radius:4px;}
+
+/*滚动条样式2*/
+.Scroll2 .Scroll_y {width:11px;line-height:0px; font-size:0px;}
+.Scroll2 .Scroll_y .Scroll_y_Drag_Bar {border-radius:5px; background-color:#868E93;}
+.Scroll2 .Scroll_y .Scroll_y_Drag {border-radius:5px;background-color:#DBDEE0;}
+.Scroll2 .Scroll_y .Scroll_y_Up,.Scroll2 .Scroll_y .Scroll_y_Down {width:0px; height:0px; border:0; border-left:5px solid #FFF; border-right:5px solid #FFF;}
+.Scroll2 .Scroll_y .Scroll_y_Up {border-bottom:6px solid #999;}
+.Scroll2 .Scroll_y .Scroll_y_Down {border-top:6px solid #999;}
+
+/*滚动条样式3*/
+.Scroll3 .Scroll_y {width:10px;line-height:0px; font-size:0px;}
+.Scroll3 .Scroll_y .Scroll_y_Drag_Bar {width:10px; border-radius:10px; background-color:#868E93;}
+.Scroll3 .Scroll_y .Scroll_y_Drag {width:10px; border-radius:10px;background-color:#DBDEE0;}
+.Scroll3 .Scroll_y .Scroll_y_Up,
+.Scroll3 .Scroll_y .Scroll_y_Down {width:10px; height:11px; border:0; background-image:url(imc_so.gif); background-repeat:no-repeat; background-color:transparent;}
+.Scroll3 .Scroll_y .Scroll_y_Up {background-position:0 -33px;}
+.Scroll3 .Scroll_y .Scroll_y_Down {background-position:0 -11px;}
+.Scroll3 .Scroll_y .Scroll_y_Up_D {background-position:0 -22px;}
+.Scroll3 .Scroll_y .Scroll_y_Down_D {background-position:0 0px;}
+.Scroll3 .Scroll_y .Scroll_y_Drag_Bar_D{ background-color:#999;}
+
+
+/*向上，向下按钮*/

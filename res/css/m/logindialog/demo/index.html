@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员登录</title>
+<link rel="stylesheet" href="/css/" />
+<link rel="stylesheet" href="/f=css/m/logindialog/logindialog.css" />
+<script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100284638" data-redirecturi="http://www.csc86.com/register/black"></script>
+<script src="/js/"></script>
+<script src="/b=js/m&f=tab.js"></script>
+<script type="text/javascript" src="../../../../js/m/validator.js"></script>
+</head>
+<body>
+<div class="login-loc">
+  <div class="aui_border"> <a href="javascript:" class="aui_titleBar" onclick="top.art.dialog({id: 'signDialog'}).close();"></a>
+    <ol id="dialog-tit">
+      <li class="cur"><a href="javascript:">用户登录</a></li>
+      <li><a href="javascript:">免费注册</a></li>
+    </ol>
+  </div>
+  <div class="log-dialog cur">
+    <h3>您需要登录才能进行操作</h3>
+    <form action="" method="post" id="into" name="loginform" onSubmit="return csc.sign.submitlog();" >
+      <ul>
+        <li>
+          <label>登录账号：</label>
+          <input name="loginName" id="loginName" type="text" class="txt">
+        </li>
+        <li>
+          <label>密　　码：</label>
+          <input name="password" id="passwordlog" type="password" class="txt">
+          <a href="/register/getpassword">忘记密码</a> </li>
+        <li>
+          <label>验 证 码：</label>
+          <input name="code" id="code" type="text" class="txt w-vail">
+          <span id="getCaptcha"><img src="/register/login/getLoginVerifyCode" width="80" height="35" ></span><a href="javascript:GetLoginVerify();">看不清</a> </li>
+        <li>
+          <div id="logtips" class="error <{$msg|default:''}>"><{$errorMessage|default:''}></div>
+        </li>
+        <li>
+          <input name="" id="logmain" class="btn-bg" type="submit" value="登　　录">
+        </li>
+        <li class="list">
+          <div>您也可以使用第三方帐号登录：</div>
+          <div> <!--a href="javascript:" class="taobao"> 淘宝网</a> <a href="javascript:" class="sina"> 新浪微博</a> <a href="javascript:" class="one"> 网易 </a--> <span id="qqLoginBtn" class="qq">QQ</span></div>
+        </li>
+      </ul>
+    </form>
+    <script>
+	 	if(QC.Login.check()){QC.Login.signOut();}
+ 		 QC.Login({
+			btnId:"qqLoginBtn"	//插入按钮的节点id
+		}); 
+	    $.post("/register/login/getLoginVerifyCode",null,function(data){
+			$("#getCaptcha").html(data);
+		});
+		function GetLoginVerify(){
+			$.post("/register/login/getLoginVerifyCode",null,function(data){
+				$("#getCaptcha").html(data);
+			});
+		}
+    </script> 
+  </div>
+  <div class="phone-reg">
+    <h3>欢迎注册华南城网</h3>
+    <form method="post" action="" name="regform" onsubmit="return csc.sign.submitreg();">
+      <ul>
+        <li>
+          <label>手机号码：</label>
+          <input name="phone" type="text" class="txt" id="phone"/>
+          <span id="phonetips"></span> </li>
+        <li>
+          <input name="getPhone" type="button" class="btn-bg vail-btn" id="getPhoneCode" value="获取验证码1" disabled="disabled" />
+        </li>
+        <li>
+          <label>验证码：</label>
+          <input id="verifycode" name="code" class="txt" type="text">
+          <span id="verifytips"></span> </li>
+        <li>
+          <label>密　　码：</label>
+          <input name="password" id="password" type="password" size="20" class="txt">
+          <span id="passwordmtips"></span>
+          <div class="g-d-n pwd-level"><span class="level-cur">弱</span><span>中</span><span>强</span></div>
+        </li>
+        <li>
+          <input name="" id="accord" type="checkbox" checked />
+          我已看过并同意《<a href="javascript:">华南城网服务条款</a>》</li>
+        <li>
+          <div id="tips" class="error <{$msg|default:''}>"><{$errorMessage|default:''}></div>
+        </li>
+        <li>
+          <input id="phonesbmit" name="sub" class="btn-bg" type="submit" value="立即注册">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+</body>
+</html>

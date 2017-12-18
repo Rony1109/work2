@@ -1,0 +1,31 @@
+.top-bar{min-width:1000px;height:26px;line-height:25px;background:#f1f1f1;border:solid 1px #ebebeb;border-width:1px 0;color:444;}
+.top-bar .v-line{display:inline-block;*display: inline; width:1px;height:12px;margin:0 10px -2px;background:#d8d8d8;*zoom:1;overflow:hidden;}
+	.top-csc-group{float:left;}
+	.top-csc-group a{margin-right:10px;color:#444}
+	.top-csc-group a:hover{color:#2664a2;}
+	.top-csc-group .coming{display:none;}
+	.top-csc-group:hover .coming,.top-bar .g-o-a .hover .coming{display:inline;}
+
+	.top-my-account{position:relative;float:right;_width:72px;*margin-left:-6px;_margin-left:-4px;z-index:3}
+	.top-my-account .hd{position:relative;margin:0 1px 0 -10px;padding:0 22px 0 10px;background:url(img/top-icol.png) no-repeat 62px 11px;cursor:default;z-index:2}
+	.top-my-account .hd a{ color:#444;}
+	.top-my-account .bd{position:absolute;display:none; /*width:193px;*/top:26px;right:0;padding:5px 0; background:#fff; border:solid 1px #e6e6e6;line-height:24px;}
+	.w-193{width:193px;}
+	.top-my-account:hover .hd,.top-bar .hover .hd{height:27px;margin:-1px 0 -1px -11px;background:#fff url(img/top-icol.png) no-repeat 62px -13px;border:solid 1px #e6e6e6;border-bottom:0}
+	.top-my-account:hover .bd,.top-bar .hover .bd{display:block;}
+	.top-my-account ul{width:79px}
+	.top-my-account .w-193 ul{width:96px}
+	.top-my-account ul a{padding-left:10px;color:#444;}
+	.top-my-account .w-193 ul a{padding-left:26px;}
+	.top-my-account a:hover{color:#2664a2}
+	.top-my-account .csc-bd{float:left;padding-right:1px;/*background:url(img/dot.png) repeat-y right 0;*/}
+	.top-my-account .w-193 .csc-bd{background:url(img/dot.png) repeat-y right 0;}
+	.top-my-account .yesmore-bd{float:right;}
+
+	.top-sign-info{float:right;_margin-top:5px;}
+	.top-msg-num{ position: relative;top:1px; margin-left:5px;display:inline-block;height:16px;line-height:16px;padding:1px 4px;background:#2664a2;color:#fff;}
+	.top-msg-num:hover{color:#fff;}
+/**首页加 服务中心**/
+.server-r{ float:right; color:#444;}
+.server-r a{ color:#444;}
+.top-bar  .sev-r{ float:right; margin:5px 10px 0;}

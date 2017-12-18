@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.mem-main{ width:828px; padding-left:20px;}
+#container{/*background: url(img/mem_nav_bg.png) repeat-y 21px 0;*/}
+
+.mem-main h1 { width:360px;font-size: 16px; height: 35px; line-height: 35px;}
+.mem-main .tit-fir { float: right; width: 229px; background: url(img/sns-h.png) no-repeat; font-size:12px; font-weight:normal; height: 22px;line-height: 22px; color: #fff;  margin-top: 8px; padding-left:18px;}
+
+.m-outer h2 {border-bottom: 2px solid #E8E8E8;font-family: Microsoft YaHei,simhei;font-size: 15px;font-weight: 700; width:828px;height: 40px;line-height: 40px;}
+.m-outer h2 span.ft1 { font-size:12px; font-weight:normal; color:#888;}
+.m-outer h2 span.ft1 strong { color:#f67301;}
+.m-outer h2 span.ft2 {font-size:12px; font-weight:normal;color:#067ED4;}
+.info-card .m-inner { padding: 15px 0 15px 10px;}
+.info-card h2 a.modify { background: url(img/edit.png) no-repeat  0 -37px ; float: right; font-size: 14px; line-height: 27px;  margin-top: 10px; padding-left: 25px;}
+.scoll-outer {float: left; position: relative; text-align: center; width: 118px;}
+.scoll-outer .show-win { height: 100px; margin: 0 auto;  overflow: hidden; position: relative; width: 100px;}
+.scoll-outer ul { float: left; left: 0; position: absolute; width: 650px;}
+.scoll-outer li {float: left; width: 100px;}
+.info-font {width: 290px; float: left; line-height: 28px;  margin-left: 10px;  position: relative; top: -5px;}
+.info-work {width: 390px; float: left; line-height: 28px; margin-left: 10px; position: relative; }
+.info-work dt {width: 76px; position: absolute; right: 0; top: 0;}
+#outer-font .info-work dt a { width: 76px; float: right; height: 23px; white-space:nowrap; line-height: 23px;zoom:1; overflow: hidden; padding-bottom: 20px; text-align: left; }
+.info-work .edit-info a { background: url(img/edit.png) no-repeat  0 -1px ; padding: 2px 0 2px 27px; margin-left:-5px;}
+
+.fa-c-f { padding: 10px 0; position: relative; z-index: 1;}
+.fa-c-f li { color: #067ED4; display: inline-block; float: left; line-height: 30px; margin-right: 15px;  position: relative;white-space: nowrap; word-break: keep-all;z-index: 1;}
+.fa-c-f li.fa-g-n { color: #333333;}
+.fa-c-f li.add-ca {  width: 90px; color: #333333; cursor: pointer;}
+.fa-c-f li.fa-ad-h { width: 140px;}
+.fa-c-f li.fa-ad-h, .fa-c-f li.fads-h { display: none;}
+
+.mor-sig {width: 769px; height: auto; position: relative; }
+.mor-sig .member-list { display: inline-block; float: left;  height: 90px; margin-bottom: 15px; padding-left: 12px;position: relative; width: 145px;}
+.mor-sig li .ms-s { background:#fff; border: 1px solid #dadada; float: left; height: 88px; position: relative; width: 127px; z-index: 1;}
+.fp-h { height: 48px; overflow: hidden; padding: 6px 6px 10px;}
+.fp-h a { display: inline-block; float: left; height: 48px; width: 48px;}
+.fp-h span, .fp-h div {display: inline-block; float: right; height: 20px; line-height: 20px; overflow: hidden; width: 57px;}
+.fp-h span { color: #067ED4;}
+.fp-h div { color:#888;}
+.fp-in { border-top: 1px solid #DADADA;  color: #808080; height: 20px; line-height: 20px; padding: 0 6px;position: relative; width: 115px;}
+.fp-in span.fi-1 { display: block; color: #808080; height: 20px; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 115px;}
+.fp-in span.fi-2 {display: inline-block; background: url(img/card-btn.png) no-repeat -52px -72px; width: 11px; height: 8px; position: absolute; right: 18px; top: -7px; z-index: 1;}

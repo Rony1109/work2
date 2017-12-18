@@ -1,0 +1,644 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>生意圈首页</title>
+<link rel="stylesheet" href="http://res.csc86.com/bhf/">
+<link rel="stylesheet" href="http://res.csc86.com/css/c/sns/base.css">
+<link rel="stylesheet" href="http://res.csc86.com/css/c/sns/index.css">
+<script src="http://res.csc86.com/js"></script>
+<script src="http://res.csc86.com/b=js&f=c/sns/tradering.js"></script>
+</head>
+<body>
+<!--头部begin-->
+<div class="top-bar">
+	<div class="g-o-a">
+		<div class="top-csc-group"> <a href="http://group.csc86.com" target="_blank">走进华南城</a><a href="http://sz.csc86.com" target="_blank">深圳</a><a href="http://nn.csc86.com" target="_blank">南宁</a><a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a><a href="http://xa.csc86.com" target="_blank">西安</a><a href="http://group.csc86.com/project/zhengzhou/introduce.html" target="_blank">郑州</a><a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a> </div>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-c-f bd">
+				<ul class="csc-bd">
+					<li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+					<li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+					<li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+					<li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+				</ul>
+				<ul class="yesmore-bd">
+					<li><a href="http://my.csc86.com/userorders" target="_blank" rel="nofollow">我的订单</a></li>
+					<li><a href="http://cart.csc86.com/cart" target="_blank" rel="nofollow">购物车</a></li>
+					<li><a href="http://sale.csc86.com/seckill" target="_blank" rel="nofollow">抢购秒杀</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-sign-info"> 您好，<span class="bd">欢迎光临华南城网！ <a class="tit" href="http://member.csc86.com/login/phone/" rel="nofollow">登录</a><span class="v-line"></span><a href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow">免费注册</a></span><span class="v-line"></span> </div>
+	</div>
+</div>
+<script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("div.top-my-account");});</script>
+<div class="web-search">
+	<div class="g-o-a">
+		<h1><a href="http://www.csc86.com" title="实体商圈，可信交易。" class="logo"><img width="280" height="57" src="http://res.csc86.com/image/c/index/logo.png" alt="实体商圈，可信交易。"></a></h1>
+		<h2><a href="http://quan.csc86.com" title="生意圈"><img src="http://res.csc86.com/css/c/sns/img/quan_logo.png" width="80" height="28" alt="生意圈"></a></h2>
+		<div class="m-search">
+			<form method="get" action="/search/index.html">
+				<div class="q-t-s">
+					<input type="text" id="search-txt" autocomplete="off" maxlength="35" value="" placeholder="请输入圈子关键字" name="q" class="g-f-l qts-txt">
+					<input class="g-f-l qts-btn" id="searchbtn" type="submit" value="搜索">
+				</div>
+			</form>
+		</div>
+		<script>
+			$(function(){
+					$("form").one("keydown",function (){
+							seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+								csc.suggest();
+							});
+						});
+						seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+							csc.placeholder("#search-txt");
+						});   
+			})
+		</script>
+	</div>
+</div>
+<!--头部end-->
+<!--导航条begin-->
+<div class="m-nav-quan">
+	<div class="g-o-a">
+		<ul class="m-nav1" id="quannav">
+			<li><a href="http://quan.csc86.com" class="hover">首页</a></li>
+			<li><a href="http://quan.csc86.com/link/">圈子广场</a></li>
+			<li><a href="http://member.csc86.com/personal/wallcard" target="_blank">名片墙</a></li>
+		</ul>
+		<ul class="m-nav2">
+			<li class="l1"><a href="http://www.csc86.com" target="_blank">华南城网首页</a></li>
+			<li><a href="http://market.csc86.com/" target="_blank">批发市场</a></li>
+			<li><a href="http://mall.csc86.com/" target="_blank">在线商城</a></li>
+		</ul>
+	</div>
+</div>
+<div class="g-h-10"></div>
+<!--导航条end-->
+<script>(function (window){
+	var host = location.href;
+	var navs = document.getElementById("quannav").getElementsByTagName("a"),p_i=0,indexof="";
+	for(var i = navs.length; i-- ;){
+		navs[i].className = navs[i].className.replace(/\bhover\b/,"");
+		if(p_i==0 && host.indexOf(navs[i].href)>-1) p_i = i;
+	}
+	navs[p_i].className += " hover";
+})(this);
+</script>
+<!--主体-->
+<div class="g-o-a q_b_l1">
+	<div class="q_banner" id="q_banner">
+		<ul class="ban_list">
+			<!--碎片1(banner广告)begin-->
+			<li>
+	<img src="http://res.csc86.com/css/c/sns/img/b1.jpg" width="720" height="236" alt="深圳商友见面会" /> 
+	<div class="a_text">
+		<h3>
+			深圳商友见面会
+		</h3>
+		<p>
+			Redesign是以重新审视已经<a href="#">存在的日常用品为目的的设计，目</a>的并不在于借各个优秀的设计师之手来改良其原先的设计...
+		</p>
+		<p>
+			时间：2013-4-8 09:00至4-26 17:00<br />
+地点：<span style="background-color:#FF9900;">深圳华南城1号交易广场</span>
+		</p>
+	</div>
+</li>
+<li>
+	<img src="http://res.csc86.com/css/c/sns/img/b2.jpg" width="720" height="236" alt="深圳商友见面会" /> 
+	<div class="a_text">
+		<h3>
+			深圳商fff1会
+		</h3>
+		<p>
+			Redesign是以重新审视已经存在的日fsdfs借各个优秀的设计师之手来改良其原先的设计...
+		</p>
+		<p>
+			时间：20dsfsdf0至4-26 17:00<br />
+地点：深圳华南城1号交易广场
+		</p>
+	</div>
+</li>
+<li>
+	<img src="http://res.csc86.com/css/c/sns/img/b3.jpg" width="720" height="236" alt="深圳商友见面会" /> 
+	<div class="a_text">
+		<h3>
+			深圳商友2见面会
+		</h3>
+		<p>
+			Redesign是以sdfsd的设<a href="#">计，目的并不在于借各个优秀的设计师之</a>手来改良其原先的设计...
+		</p>
+		<p>
+			时间：2013-4-8 09:00至4-26 17:00<br />
+地点：深圳华南城1号交易广场
+		</p>
+	</div>
+</li>
+<li>
+	<img src="http://res.csc86.com/css/c/sns/img/b3.jpg" width="720" height="236" alt="深圳商友见面会" /> 
+	<div class="a_text">
+		<h3>
+			深圳商友221见面会
+		</h3>
+		<p>
+			Redesign是以重新审视已经存在的日常用品为目的的设计，目的并不在于借各个优秀的设计师之手来改良其原先的设计...
+		</p>
+		<p>
+			时间：2fsdf易广场
+		</p>
+	</div>
+</li>
+<li>
+	<img src="http://res.csc86.com/css/c/sns/img/b3.jpg" width="720" height="236" alt="深圳商友见面会" /> 
+	<div class="a_text">
+		<h3>
+			深圳商友2见面会
+		</h3>
+		<p>
+			Redesignsdfsdf在的于借各个优秀的设计师之手来改良其原先的设计...
+		</p>
+		<p>
+			时间：2013-4-8 09:00至4-26 17:00<br />
+地点：深圳华南城1号交易广场
+		</p>
+	</div>
+</li>
+			<!--碎片1(banner广告)end-->
+		</ul>
+		<div class="ban_tex">
+			<div class="ban_tex_b"></div>
+			<div class="ban_tex_t"></div>
+		</div>
+		<div class="ban_but"></div>
+	</div>
+	<script>
+		$(function(){
+			seajs.use(csc.url("res","/js/m/slide"),function (){
+				var p_ban = new csc.slide("#q_banner .ban_list","#q_banner .ban_list>li",{
+								slideWidth:720,
+								slideHeight:236,
+								slideDirection:0,
+								slides_auto_span:5000,
+								slideButs_bindsj:"mouseover",
+								slideButs:"#q_banner .ban_but",		//切换按钮容器，样式自定义
+								slideButs_html:null,
+								slides_fun:q_banner_event
+				});
+				$("#q_banner .ban_tex").bind("mouseenter",function(){p_ban.zantin=true;}).bind("mouseleave",function(){p_ban.zantin=false;});
+			});
+			//右侧文字切换动画;
+			function q_banner_event(i){
+				var tabs = this.slideButs.find("a");//$("#q_banner .ban_but>a");
+				tabs.removeClass("s");
+				$(tabs[i]).addClass("s");
+				$("#q_banner .ban_tex").stop();
+				var html = $(this.slides[i]).find(".a_text").html();
+				$("#q_banner .ban_tex").animate({"right":"-250px"},200,function(){
+					$("#q_banner .ban_tex_t").html(html)
+					$("#q_banner .ban_tex").animate({"right":"0px"},400);
+				})
+			}
+		})
+	</script>
+	<div class="q_user">
+	<!--未登陆	
+		<div class="unlogin">
+			<a class="a_1" href="http://member.csc85.com" target="_blank">登&nbsp;&nbsp;陆</a>
+			<a class="a_2" href="http://member.csc85.com" target="_blank">免费注册</a>
+			<div class="untxt">
+				<h1 title="华南城生意圈">华南城生意圈</h1>
+				<h2 title="分享关注 建立商圈 拓展人脉 收获价值">分享关注 建立商圈 拓展人脉 收获价值</h2>
+			</div>
+		</div>
+	未登陆-->	
+	<!--己登陆begin-->
+		<div class="islogin">
+			<dl class="q_i_usr">
+				<dt><img src="../../img/unlogin.png" width="60" height="60"></dt>
+				<dd class="u_name"><p><strong>张三李四</strong></p></dd>
+			</dl>
+			<div>
+				<ul class="qtabT">
+					<li class="hover">我创建的圈子</li>
+					<li>我管理的圈子</li>
+					<li>我加入的圈子</li>
+				</ul>
+				<ul class="q_tabD">
+					<li class="tabD">
+						<ul class="my_q_list">
+							<li><a href="#">[创建]华南城网客服咨询圈</a></li>
+							<li><a href="#">[创建]华南城网客服咨询圈</a></li>
+							<li><a href="#">[创建]华南城网客服咨询圈</a></li>
+							<li><a href="#">[创建]华南城网客服咨询圈</a></li>
+							<li><a href="#">[创建]华南城网客服咨询圈</a></li>
+						</ul>
+						<!--a class="more" href="#" target="_blank">查看更多<i></i></a-->
+					</li>
+					<li class="tabD">
+						<ul class="my_q_list">
+							<li><a href="#">[管理]华南城网客服咨询圈</a></li>
+							<li><a href="#">[管理]华南城网客服咨询圈</a></li>
+							<li><a href="#">[管理]华南城网客服咨询圈</a></li>
+							<li><a href="#">[管理]华南城网客服咨询圈</a></li>
+							<li><a href="#">[管理]华南城网客服咨询圈</a></li>
+						</ul>
+						<!--a class="more" href="#" target="_blank">查看更多<i></i></a-->
+					</li>
+					<li class="tabD">
+						<ul class="my_q_list">
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+							<li><a href="#">[加入]华南城网客服咨询圈</a></li>
+						</ul>
+						<!--a class="more" href="#" target="_blank">查看更多<i></i></a-->
+					</li>
+				</ul>
+			</div>
+			<script>
+				seajs.use(csc.url("res","/f=js/m/tabconn.js,js/p/cscjsScroll/cscjsScroll.js"),function(){
+					seajs.use(csc.url("res","/f=js/p/cscjsScroll/scroll.css"),function(){
+						csc.tabconn(".islogin .qtabT>li",".islogin .q_tabD>li","click","hover",0,function(i){
+							$(".islogin .q_tabD>li:eq("+i+")").addClass("Scroll1").cscjsScroll({showArrows:false});
+						});
+					})
+				});
+			</script>			
+		</div>
+	<!--己登陆end-->
+	</div>
+
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a">
+	<!--主体左边beign-->
+	<div class="q_i_left">
+		<div class="r_topic">
+			<h3 class="q_titl1">话题推荐</h3>
+			<!--碎片2(话题推荐)begin-->
+			<dl class="dl_topic dl1">
+				<dt>
+					<h4><a href="#" target="_blank">SEO这个东东，你知道是啥吗？</a></h4>
+					<div class="comm">赞（<em>11</em>） 回复（<em>2011</em>）</div>
+				</dt>
+				<dd class="pic"><a href="#"><img src="../../img/b1.jpg" width="80" height="80"></a></dd>
+				<dd>
+				SEO（Search Engine Optimization），汉译为搜索引擎优化。搜索引擎优化是一种利用搜索引擎的搜索规则来提高目的网站在有关搜索引擎内的排名的方式。SEO目的理解是：为网站提供生态式的自我营销解决方案，让网站在行业内占据领先地位，从而获得品牌收益。SEO可分为...
+				</dd>
+			</dl>
+			<dl class="dl_topic">
+				<dt>
+					<h4><a href="#" target="_blank">SEO这个东东，你知道是啥吗？</a></h4>
+					<div class="comm">赞（<em>11</em>） 回复（<em>2011</em>）</div>
+				</dt>
+				<dd class="pic"><a href="#"><img src="../../img/b1.jpg" width="80" height="80"></a></dd>
+				<dd>
+				SEO（Search Engine Optimization），汉译为搜索引擎优化。搜索引擎优化是一种利用搜索引擎的搜索规则来提高目的网站在有关搜索引擎内的排名的方式。SEO目的理解是：为网站提供生态式的自我营销解决方案，让网站在行业内占据领先地位，从而获得品牌收益。SEO可分为...
+				</dd>
+			</dl>
+			<dl class="dl_topic">
+				<dt>
+					<h4><a href="#" target="_blank">SEO这个东东，你知道是啥吗？</a></h4>
+					<div class="comm">赞（<em>11</em>） 回复（<em>2011</em>）</div>
+				</dt>
+				<dd class="pic"><a href="#"><img src="../../img/b1.jpg" width="80" height="80"></a></dd>
+				<dd>
+				SEO（Search Engine Optimization），汉译为搜索引擎优化。搜索引擎优化是一种利用搜索引擎的搜索规则来提高目的网站在有关搜索引擎内的排名的方式。SEO目的理解是：为网站提供生态式的自我营销解决方案，让网站在行业内占据领先地位，从而获得品牌收益。SEO可分为...
+				</dd>
+			</dl>
+			<!--碎片2(话题推荐)end-->
+			<script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("dl.dl_topic");});</script>
+		</div>
+		<div class="g-h-10"></div>
+		<div class="q_i_hots">
+			<h3 class="q_titl1">产业</h3>
+			<div class="g-h-10"></div>
+			<div class="hots_main">
+				<dl class="ht">
+					<dt>话题</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>2</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<dl class="hd">
+					<dt>活动</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>1</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<div class="g-h-10"></div>
+				<ul class="q_imglist1">
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<div class="q_i_hots">
+			<h3 class="q_titl1">企业</h3>
+			<div class="g-h-10"></div>
+			<div class="hots_main">
+				<dl class="ht">
+					<dt>话题</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>2</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<dl class="hd">
+					<dt>活动</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>1</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<div class="g-h-10"></div>
+				<ul class="q_imglist1">
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<div class="q_i_hots">
+			<h3 class="q_titl1">兴趣</h3>
+			<div class="g-h-10"></div>
+			<div class="hots_main">
+				<dl class="ht">
+					<dt>话题</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>2</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<dl class="hd">
+					<dt>活动</dt>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1</em>回复<em>1</em></div>
+					</dd>
+					<dd>
+						<a href="#" target="_blank" title="代理进出口报关代收外汇代办商检">代理进出口报关代收外汇代办商检</a>
+						<div class="comm">赞<em>1211</em>回复<em>2011</em></div>
+					</dd>
+				</dl>
+				<div class="g-h-10"></div>
+				<ul class="q_imglist1">
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+					<li><a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="100" height="100" alt="皮革产业" /><span>皮革产业</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-h-10"></div>
+		<div>
+			<h3 class="q_titl1"><a class="more" href="#" target="_blank">更多&gt;&gt;</a>圈子推荐</h3>
+			<div class="quan_remain">
+				<ul class="q_imglist2">
+					<li>
+						<div class="q_img">
+							<a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="120" height="120" alt="皮革产业" /></a>
+							<div class="q_add">
+								<div class="back"></div>
+								<div class="text">
+									已有<strong>125</strong>个成员<br>
+									<a href="javascript:;" onClick="csc.addCircle('42ca5425-1809-4ce1-8bf3-1fff36448809',this)"><strong>加入我们</strong></a>
+								</div>
+							</div>
+						</div>
+						<div class="q_title"><a href="#" target="_blank" title="皮革产业">皮革产业</a></div>
+					</li>
+					<li>
+						<div class="q_img">
+							<a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="120" height="120" alt="皮革产业" /></a>
+							<div class="q_add">
+								<div class="back"></div>
+								<div class="text">
+									已有<strong>125</strong>个成员<br>
+									<a href="javascript:;" onClick="csc.addCircle('42ca5425-1809-4ce1-8bf3-1fff36448809',this)"><strong>加入我们</strong></a>
+								</div>
+							</div>
+						</div>
+						<div class="q_title"><a href="#" target="_blank" title="皮革产业">皮革产业</a></div>
+					</li>
+					<li>
+						<div class="q_img">
+							<a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="120" height="120" alt="皮革产业" /></a>
+							<div class="q_add">
+								<div class="back"></div>
+								<div class="text">
+									已有<strong>125</strong>个成员<br>
+									<a href="javascript:;" onClick="csc.addCircle('42ca5425-1809-4ce1-8bf3-1fff36448809',this)"><strong>加入我们</strong></a>
+								</div>
+							</div>
+						</div>
+						<div class="q_title"><a href="#" target="_blank" title="皮革产业">皮革产业</a></div>
+					</li>
+					<li>
+						<div class="q_img">
+							<a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="120" height="120" alt="皮革产业" /></a>
+							<div class="q_add">
+								<div class="back"></div>
+								<div class="text">
+									已有<strong>125</strong>个成员<br>
+									<a href="javascript:;" onClick="csc.addCircle('42ca5425-1809-4ce1-8bf3-1fff36448809',this)"><strong>加入我们</strong></a>
+								</div>
+							</div>
+						</div>
+						<div class="q_title"><a href="#" target="_blank" title="皮革产业">皮革产业</a></div>
+					</li>
+					<li>
+						<div class="q_img">
+							<a href="#" target="_blank" title="皮革产业"><img src="../../img/b3.jpg" width="120" height="120" alt="皮革产业" /></a>
+							<div class="q_add">
+								<div class="back"></div>
+								<div class="text">
+									已有<strong>125</strong>个成员<br>
+									<a href="javascript:;" onClick="csc.addCircle('42ca5425-1809-4ce1-8bf3-1fff36448809',this)"><strong>加入我们</strong></a>
+								</div>
+							</div>
+						</div>
+						<div class="q_title"><a href="#" target="_blank" title="皮革产业">皮革产业</a></div>
+					</li>
+				</ul>
+				<div class="g-h-10"></div>
+				<script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("ul.q_imglist2 .q_img");});</script>
+			</div>
+			
+		</div>
+	</div>
+	<!--主体左边end-->
+	<div class="q_i_right">
+		<div class="q_border_1 r_xxs">
+			<h3 class="q_titl2">新鲜事儿</h3>
+			<ul class="xxs_list">
+				<li class="l1">
+					<p><a href="#">张三</a>  刚刚发起了活动</p>
+					<p><a href="#"><strong>半死不活的除了创业公司还有风投啊...</strong></a></p>
+				</li>
+				<li>
+					<p><a href="#">张三</a>  刚刚发起了活动</p>
+					<p><a href="#"><strong>2013春季货源订货会开始啦！</strong></a></p>
+				</li>
+				<li>
+					<p><a href="#">张三</a>  刚刚发起了活动</p>
+					<p><a href="#"><strong>2013春季货源订货会开始啦！</strong></a></p>
+				</li>
+				<li>
+					<p><a href="#">张三</a>  刚刚发起了活动</p>
+					<p><a href="#"><strong>2013春季货源订货会开始啦！</strong></a></p>
+				</li>
+				<li>
+					<p><a href="#">张三</a>  刚刚发起了活动</p>
+					<p><a href="#"><strong>半死不活的除了创业公司还有风投啊...</strong></a></p>	
+				</li>
+			</ul>
+		</div>
+		<div class="g-h-20"></div>
+		<div class="q_border_1">
+			<h3 class="q_titl2">热门话题</h3>
+			<ul class="q_list1">
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+				<li><a href="#" target="_blank" title="梁满林总裁荣任香港深圳社总会会长">梁满林总裁荣任香港深圳社总会会长</a></li>
+			</ul>
+			<div class="g-h-10"></div>
+		</div>
+		<div class="g-h-20"></div>
+		<div class="q_border_1">
+			<h3 class="q_titl2">焦点用户</h3>
+			<ul class="q_userlist_50">
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+				<li><a href="#" target="_blank" title="张三"><img src="../../img/b3.jpg" width="50" height="50" alt="皮革产业" /><span>张三</span></a></li>
+			</ul>
+			<div class="g-h-10"></div>
+		</div>
+		<div class="g-h-20"></div>
+		<div class="q_border_1">
+			<dl class="q_i_usr">
+				<dt><a href="#" target="_blank"><img src="../../img/b3.jpg" width="60" height="60" alt="皮革产业" /></a></dt>
+				<dd class="q_name"><a href="#" target="_blank">玩转生意圈官方服务圈</a></dd>
+				<dd class="q_exp">需要什么？请留下你的声音！</dd>
+			</dl>
+		</div>
+		<div class="g-h-20"></div>
+		<div class="q_border_1">
+			<h3 class="q_titl2">教你怎么玩转生意圈</h3>
+			<ul class="q_list2">
+				<li><a href="/showTopic.html?topicId=5be94de0-bcfc-4cc9-b599-9ab6e8a173ce" target="_black">1、什么是生意圈？</a></li>
+				<li><a href="/showTopic.html?topicId=5bc28621-0888-4ebe-adf5-8de4dff66900" target="_black">2、为什么要加入生意圈？</a></li>
+				<li><a href="/showTopic.html?topicId=9aec5e4b-775c-4ff0-9f85-de3db5426d62" target="_black">3、在生意圈中我们能干什么？</a></li>
+				<li><a href="/showTopic.html?topicId=9b70de7e-c2df-4f5b-8f4f-415e434973f9" target="_black">4、我也可以创建生意圈吗？</a></li>
+				<li><a href="/showTopic.html?topicId=4ea63ab6-e6de-4042-bf5d-ae39b63c81ba" target="_black">5、加入商圈有什么要求？</a></li>
+				<li><a href="/showTopic.html?topicId=331df304-f951-4cb6-af6f-03b1de091c26" target="_black">6、玩转圈子的七个步骤 </a></li>
+				<li><a href="/showTopic.html?topicId=b2958635-22a9-451d-8099-4dd20f78fee1" target="_black">7、如何依靠生意圈来扩大我的商务人脉？</a></li>
+				<li><a href="/showTopic.html?topicId=6d72f5cf-4336-4f38-85ad-e7ab7880cef5" target="_black">8、怎么依靠生意圈来提升我的业务？</a></li>
+			</ul>
+			<div class="g-h-10"></div>
+		</div>
+	</div>
+<div class="g-h-10"></div>	
+</div>
+<div class="g-h-10"></div>
+<!--主体结束-->
+
+<!--友情链接begin-->
+<div class="friendly_link">
+	<div class="g-o-a frie-links"><strong>友情链接：</strong><span><a href="http://www.shoes.net.cn" target="_blank">环球鞋网</a>| <a href="http://www.51kids.com" target="_blank">中国童装网</a>| <a href="http://space.yaolan.com" target="_blank">摇篮空间</a>| <a href="http://www.jinbaowang.cn" target="_blank">进包网</a>| <a href="http://www.ic98.com" target="_blank">百纳网</a>| <a href="http://www.7p.com.cn" target="_blank">韩国服装批发</a>| <a href="http://www.hangye5.com/" target="_blank">行业网</a>| <a href="http://china.zyw.com/index.html" target="_blank">B2B资源网</a> |<a href="http://www.cpp1.cn/" target="_blank">中国印刷网</a>| <a href="http://ciif.csc86.com/" target="_blank">深圳国际工业博览会</a>|<a href="http://top.78.cn/ " target="_blank">加盟网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a></span></div>
+</div>
+<!--友情链接end-->
+<!--页角begin-->
+<div class="g-o-a link">
+  <div class="g-h-10"></div>
+  <div class="love-links"><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">关于华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+  <p>Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+  <p>深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5</p>
+</div>
+<!--页角end-->
+</body>
+</html>

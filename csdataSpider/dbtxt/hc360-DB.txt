@@ -1,0 +1,40 @@
+
+CREATE TABLE `hc360details_platform_hcant` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `price` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `unit` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,  
+  `total` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `orderInfo` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `pics` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `company` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `otherInfo` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `companyHome` varchar(200) COLLATE utf8_general_ci DEFAULT NULL,
+  `url` varchar(2000) COLLATE utf8_general_ci DEFAULT NULL,
+  `createtime` timestamp NULL DEFAULT NULL,
+  `productId` varchar(20) COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+
+
+CREATE TABLE `hc360introduce_platform_hcant` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `basicinfo` varchar(4000) COLLATE utf8_general_ci DEFAULT NULL,
+  `contactinfo` varchar(4000) COLLATE utf8_general_ci DEFAULT NULL,
+  `companyHome` varchar(200) COLLATE utf8_general_ci DEFAULT NULL,  
+  `url` varchar(200) COLLATE utf8_general_ci DEFAULT NULL,
+  `createtime` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+
+
+CREATE TABLE `hc360contact_platform_hcant` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contactinfo` varchar(4000) COLLATE utf8_general_ci DEFAULT NULL,
+  `companyHome` varchar(200) COLLATE utf8_general_ci DEFAULT NULL,  
+  `url` varchar(200) COLLATE utf8_general_ci DEFAULT NULL,
+  `createtime` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;

@@ -1,0 +1,29 @@
+.list-top{ margin-bottom:10px}
+.list-top .h-list{ height:30px; border-style:solid; border-color:#ebebeb #ebebeb #223241 #ebebeb; border-width:1px 1px 2px 0;background:#fdfdfd;line-height:30px;}
+.list-top .h-list .p-txt{float:left; width:115px; height:30px; font:15px/30px "Microsoft YaHei"; text-align:center; background:#223241; color:#FFF;}
+.list-top .h-list .c-info{_display:inline;float:right;margin-right:9px;color:#888;display:inline-flex;}
+.list-top .h-list .c-info strong{color:#e94545;}
+.list-top .h-list .c-info h1{display:inline-block;font-weight:700;color:#e94545;max-width:175px; vertical-align:top\0\9;overflow:hidden;white-space:nowrap;word-wrap:normal;text-overflow:ellipsis;*display:inline;*zoom:1;}
+@-moz-document url-prefix(){.list-top .h-list .c-info h1{vertical-align:top;}}
+
+.list-top .pro-filter{ height:36px; padding-top:8px;*padding-top:6px; border:1px solid #ebebeb; border-top:none; background:#fff; }
+.list-top .pro-filter select{ margin-left:10px;height:24px;}
+.list-top .pro-filter label{ margin-left:10px;}
+
+	.order-by{display:inline-block;margin-left:8px;}
+	.order-by a{display:inline-block;height:23px;border:solid #d3d5d6 1px;color:#333; line-height:23px;}
+    .order-by .asc,.order-by .desc{width:21px;background:url(http://res.csc86.com/css/m/list-pro-top/img/pro-top-bg.png) no-repeat -54px -73px;text-indent:-9999px;}
+	.order-by .desc{margin-left:5px;border-right:none;background-position:6px -73px;}
+    .order-by .desc:hover,.order-by .desc-cur{background-position:-24px -73px;}
+	.order-by .asc:hover,.order-by .asc-cur{background-position:-84px -73px;}
+	.order-by .newest{margin-left:10px;padding:0 6px;}
+	.order-by a:hover,.order-by .cur{background-color:#eee;color:#333; text-decoration:none;}
+
+.list-top .g-f-r{_display:inline;margin:4px 10px 0 0;}
+.list-top .g-f-r a{*display:inline-block;padding:4px 5px 4px 25px; *padding-bottom:2px; background:#eee url(http://res.csc86.com/css/m/list-pro-top/img/pro-top-bg.png) no-repeat 3px -39px; border:solid #d3d5d6 1px; color:#333;}
+.list-top .g-f-r a:hover{text-decoration:none;}
+.list-top .g-f-r .p-dial{border-left:none;background-color:#fff;background-position:-88px -39px;}
+.list-top .type-cur a{background-color:#fff;background-position:3px -109px}
+.list-top .type-cur .p-dial{background-color:#eee;background-position:-88px -109px}
+
+.list-top .g-select{margin:1px 0 0 6px;}

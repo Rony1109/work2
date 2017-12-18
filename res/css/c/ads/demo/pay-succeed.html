@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>推广中心</title>
+        <link rel="stylesheet" href="http://res.csc86.com/app/" />
+        <link rel="stylesheet" href="http://res.csc86.com/b=css/c/membercenter&f=mem-head.css,mem-nav.css,mem-foot.css,member.css" />
+        <link rel="stylesheet" href="http://res.csc86.com/f=css/c/ads/style.css">
+        <script src="http://res.csc86.com/js/"></script>
+        <script src="http://res.csc86.com/b=js&f=c/membercenter/member.js,m/page.js"></script>
+
+    </head>
+    <body>
+        <div class="g-o-a app-frame">
+            <div id="apply" class="af-nav">
+                <h2><a href="/shop/shopinfo.html">推广中心</a></h2>
+                <ul class="nav-items">
+                    <li class="item has-children has-children-cur">
+                        <a href="javascript:">抢广告位</a>
+                        <ul>
+                            <li>
+                                <a class="cur" href="/shop/add-ads.html">添加广告</a>
+                            </li>
+                            <li>
+                                <a href="/shop/ads-list.html">我的广告</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item bg-none">
+                        <a href="ad-account.html">我的账号</a>
+                     </li>
+                </ul>
+            </div>
+            <script>
+				seajs.use(csc.url("res", "/f=js/m/hrefinfo"), function() {
+					csc.hrefinfo("ul.nav-items>li.item>a");
+				});
+            </script>
+            <div class="af-bd">
+                <h1 class="af-hd">广告支付成功</h1>
+                <div class="ad-d-b ad-paid">
+                    <div><strong>恭喜您，广告单支付成功！</strong><p>广告单将在24小时内完成审核，请耐心等待。</p><a href="javascript:" class="a1">继续添加广告</a><a href="javascript:" class="a2">查看我的广告</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

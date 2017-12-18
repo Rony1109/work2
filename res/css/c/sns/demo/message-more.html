@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/b=css&f=c/sns/message-frend.css" />
+<script type="text/javascript">
+
+var textarea_maxlen = {
+  isMax : function (id,tmp){
+	var textarea = 
+		document.getElementById(id);
+	var max_length =tmp;
+	if(textarea.value.length > max_length){
+	  textarea.value = 
+		textarea.value.substring(0, max_length);
+	}
+  },
+  dRMouse : function (){
+	document.oncontextmenu = 
+	  function (){ return false; }
+  },
+  eRMouse : function (){
+	document.oncontextmenu = null;
+  }
+};
+</script>
+</head>
+<body>
+<div class="m-single" id="mSingle">
+	<h1>与“Alibaba”消息对话</h1>
+    <a href="javascript:" class="lay-close" onClick="closeDiv()">关闭</a>
+    <div class="m-main">
+		<div class="l-block l-t4"><span>好友：</span><div class="l-t22"><span>李秋原<a href="javascript:" ></a></span><span>李秋原<a href="javascript:" >关闭</a></span><span>李秋原<a href="javascript:" >关闭</a></span><span>李秋原<a href="javascript:" >关闭</a></span><span>李秋原<a href="javascript:" >关闭</a></span><a href="javascript:" class="l-add-f">加入好友</a></div><div class="l-t43">最多可选择五位好友....</div></div>
+		<div class="l-block l-t2"><span>标题：</span>
+        <input type="text" class="l-t22" onFocus="if(this.value=='不超过20汉字....') this.value='';this.style.color='#333'; return true;" value='不超过20汉字....' style='color:#ccc;'  />
+        </div>
+		<div class="l-block l-t3"><span>内容：</span>
+        <textarea class="l-t32"  id="area" onFocus="if(this.value=='不超过200汉字....') this.value='';this.style.color='#333'; return true;" value='不超过200汉字....' style='color:#ccc;' onkeyup="textarea_maxlen.isMax('area','20')"  onblur="textarea_maxlen.eRMouse()">不超过200汉字....</textarea>
+        </div>
+        <div class="aui_buttons"><button type="button">发送</button><button type="button">发送多人消息</button></div>
+	 </div>
+</div>
+</body>
+</html>

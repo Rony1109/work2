@@ -1,0 +1,69 @@
+.af-nav h2{background-image:url(img/coll-mem.png);}
+/*筛选css yq*/
+.filter{ position:relative; overflow:hidden; height:30px; padding:5px 10px; border:1px solid #ebebeb; margin-bottom:10px;}
+.filter .tit{text-align:left; margin-right:8px;}
+.filter a{ display:inline-block;zoom:1; margin:0 5px; line-height:30px; white-space:nowrap; }
+.filter a:hover{ text-decoration:none; }
+.filter a.cur{font-weight:700;}
+.filter .fiter-sph{ width:600px;}
+.filter em{ color:#888;}
+.fiter-sph{}
+.filter a.more{ position:absolute; right:6px;top:3px; padding-left:13px; background:url(img/i-bg.png) no-repeat 0 10px; color:#888;}
+.filter a.less{ background-position:0 -20px;}
+/*店铺列表css yq*/
+table,tr,td{ text-align:center;}
+/*.af-list-hd td{ background:#f8f8f8;}*/
+.af-list-hd .canc-coll{ margin:0 30px 0 10px;}
+table td.chk{ text-align:left;}
+table td.chk label{ white-space:nowrap;}
+table td.chk a.canncel{white-space:nowrap;}
+.af-list-pro td{ padding:20px 5px; text-align:left;}
+.af-list-pro td.mid{ vertical-align:middle;}
+.af-list-pro td.chk{ vertical-align:middle; width:35px;}
+.af-list-pro td.thimg{ vertical-align:middle;}
+.af-list-pro td span.price{color: #c00;font:700 14px Microsoft Yahei;}
+.af-list-pro td span.price em{color: #888;font-family: Microsoft Yahei;}
+.af-list-pro td span.price i{font-style: normal;font-size: 12px;}
+.af-list-pro td span.price span{font-size: 12px;color: #888;}
+.af-list-pro td span.price dfn{font-size: 12px;font-family: Microsoft Yahei;}
+.m-con,.market-con,.pro-con{ padding-right:100px; line-height:22px;text-align:left;}
+.af-list-pro .m-con{ padding-right:35px;}
+.m-con p,.market-con p,.pro-con p{ color:#888;}
+.m-con p.pro{ display:block; overflow:hidden; height:40px; line-height:20px;}
+.m-con p span,.market-con p span,.pro-con p span{ color:#333;}
+table td.chk input { margin:0 10px;}
+tfoot td{ padding-top:5px;}
+tfoot span a{ margin-left:20px; }
+
+/*市场列表css yq*/
+.af-list-bd .af-list-pro:hover{ background:#f6f6f6;}
+.af-list-pro .pro-space{padding:10px; text-align:left;}
+.af-list-pro .market-con,.af-list-pro .pro-con{ /*padding:7px 35px 0 15px;*/ line-height:22px; text-align:left;}
+.af-list-pro .market-con em{ display:block; font-weight:normal;}
+.market-con *{ display:block; height:21px;}
+.market-con span{ overflow:hidden;height:42px; line-height:21px;}
+.market-con p span{ display:inline;}
+/*收藏的商品css yq*/
+.af-list-pro td{ vertical-align:top;}
+.pro-con{ padding-right:15px;}
+.af-list-pro p.rule{ height:38px; line-height:19px; margin:5px 0; }
+.pro-con a{ display:block; height:38px; line-height:19px; color:#444;}
+.pro-con a:hover{ text-decoration:none; color:#f67301;}
+.af-list-pro em{ color:#cb0000; font:700 12px Arial; font-weight:bold;}
+.af-list-pro .m-btn,.btn-dis{ display:block; width:72px; height:24px; line-height:24px; background:url(img/m-btn.png) no-repeat 0 0; text-align:center; color:#444; margin-bottom:10px;}
+.af-list-pro .m-btn:hover{text-decoration:none;}
+.af-list-pro a.btn-dis,.af-list-pro a:hover.btn-dis{color:#ccc;cursor:default;text-decoration:none;}
+.af-list-pro .m-btn,.af-list-pro .sig-can,.af-list-pro .btn-dis{background:url(/css/c/collect/img/fav_link_ico.png) no-repeat;display:inline-block;*display:inline-block;*zoom:1;text-align:right;width:73px;height:22px;color:#444;}
+.af-list-pro a.m-btn{ background-position:0 -30px;margin-right:15px;float:left !important;margin-top:-3px !important;}
+.af-list-pro a:hover.m-btn{ background-position:0 5px;color:#f67301;}
+.af-list-pro a.sig-can{background-position:0 -109px;margin-right:20px;}
+.af-list-pro a:hover.sig-can{background-position:0 -70px;color:#f67301;}
+.af-list-pro a.btn-dis{background-position:0 -145px;width:85px;margin-right:8px;float:left !important;margin-top:-3px !important;}
+.af-list-pro a:hover.btn-dis{color:#ccc;}
+.margin-input{margin-bottom:2px;margin-right:5px;}
+.thimg .ibox{width:60px;height:60px;background-color:#fff;padding:1px;border:1px solid #ebebeb;overflow:hidden;}
+.thimg .i{ width:60px; height:60px;*font-size:60px;*display:block;overflow:hidden;}
+.thimg .i img{max-width:60px;max-height:60px;_display:none;}
+.canc-coll{padding-left:10px;}
+.m-l-13px{margin-left:13px;}
+.nav-items li.cur a,.nav-items li.cur a:hover{color:#067ED4;}

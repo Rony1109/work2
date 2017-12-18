@@ -1,0 +1,48 @@
+/*我的账户中心 账户充值 by lg 2013.07.09*/
+.payment{padding:40px 20px;line-height:26px;}
+.payment dl{color:#444;}
+.payment dt{margin-right:5px;font-size:14px;float:left;}
+.payment dd{float:left;width:660px;*width:650px;_width:658px;overflow:hidden;}
+.pay_money{font-size:14px;}
+.pay_money input{margin-right:5px;vertical-align:middle;}
+.pay_money label{margin-right:30px;}
+.pay_money .uc-input{width:120px;}
+.pay_money label i{font-style: normal;padding: 0 2px;color: #444;font-weight: bold;}
+.pay-icon{/*margin-top:10px;*/}
+.pay-icon li{float:left;_width:150px;margin-right:20px;margin-bottom:20px;*margin-right:10px;}
+.pay-icon li.pay-icon-txt{width:100%;margin-bottom:10px;}
+.pay-icon li label{display:block;height:40px;}
+.pay-icon li input{float:left;margin-top:13px;margin-right:5px;_margin-right:0;}
+.pay-icon li span{float:left;width:120px;height:0;padding-top:38px;overflow:hidden;background-image:url(img/combo.png);background-repeat:no-repeat;border:1px solid #ebebeb;}
+.pay-icon li.hover span,.pay-icon li:hover span{border:1px solid #8ac9d2;}
+.alipay_icon{background-position:3px -936px;}
+.tenpay_icon{background-position:3px -972px;}
+.bill99_icon{background-position:3px -1014px;}
+.icbc_icon{background-position:3px -539px;}
+.boc_icon{background-position:3px -107px;}
+.ccb_icon{background-position:3px -142px;}
+.abc_icon{background-position:3px 3px;}
+.cmb_icon{background-position:3px -322px;}
+.postgc_icon{background-position:0px -609px;}
+.comm_icon{background-position:3px -394px;}
+.spa_icon{background-position:3px -754px;}
+.ceb_icon{background-position:0px -213px;}
+.citic_icon{background-position:3px -286px;}
+.cmbc_icon{background-position:3px -359px;}
+.sdb_icon{background-position:0px -647px;}
+.cib_icon{background-position:0px -250px;}
+.gdb_icon{background-position:1px -466px;}
+.spdb_icon{background-position:3px -790px;}
+
+
+/**
+ * 支付状态
+ */
+.pay-status{padding:60px 0 60px 285px;background:url(img/success.png) no-repeat 200px 67px;font-size:14px}
+.pay-status h2{font-size:22px;color:#3da535;font-weight:400}
+.pay-status p{padding:10px 0 15px;}
+.pay-status .icon{margin-bottom:-12px;vertical-align:middle;color:#444;text-decoration:none;font-size:12px}
+.pay-status .icon img{margin-bottom:8px;}
+
+.pay-fail{background-image:url(img/fail.png)}
+.pay-fail h2{color:#e86d4c;}

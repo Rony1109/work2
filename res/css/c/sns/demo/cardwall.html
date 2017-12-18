@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>个人名片墙</title>
+<link rel="stylesheet" href="http://res.csc86.com/bhf/" />
+<link rel="stylesheet" href="http://res.csc86.com/b=css&f=c/membercenter/home.css,c/sns/friendmanage.css,c/sns/infodialog.css,c/sns/visiting-card.css" />
+<link rel="stylesheet" href="http://res.csc86.com/f=js/p/artDialog/4.1.5/skins/mem.css" />
+<script type="text/javascript" src="http://res.csc86.com/js/"></script>
+<script type="text/javascript" src="http://res.csc86.com/b=js/c/sns&f=visitingCard.js,public/cardHead.js"></script>
+</head>
+<body>
+<div class="top-bar">
+	<div class="g-o-a">
+		<div class="top-csc-group">
+			<a href="http://group.csc86.com" target="_blank">走进华南城</a>
+			<span class="coming">           <a href="http://sz.csc86.com" target="_blank">深圳</a><a href="http://nn.csc86.com" target="_blank">南宁</a><a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a><a href="http://xa.csc86.com" target="_blank">西安</a><a href="http://zz.csc86.com" target="_blank">郑州</a><a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a>
+			</span>         </div>
+		<div class="server-r"><a href="http://cncms.csc86.com/help/" target="_blank" title="">客服中心</a></div><span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-c-f bd ">
+				<ul class="csc-bd">
+					<li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+					<li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+					<li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+					<li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，<span class="bd">
+						欢迎光临华南城网！ <a class="tit" href="http://member.csc86.com/login/phone/" rel="nofollow">登录</a><span class="v-line"></span><a href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow">免费注册</a>
+						</span><span class="v-line"></span>
+		</div>
+	</div>
+</div><script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("div.top-my-account");});</script><div class="web-search">
+	<div class="g-o-a">
+		<h1>
+			<a href="http://www.csc86.com" title="实体商圈，可信交易。" class="logo">
+				<img width="280" height="57" src="http://res.csc86.com/image/c/index/logo.png" alt="实体商圈，可信交易。">
+			</a>
+		</h1>
+					<h2>
+				<a href="http://quan.csc86.com" title="生意圈">
+					<img src="http://res.csc86.com/css/c/sns/img/quan_logo.png" width="80" height="28" alt="生意圈">
+				</a>
+			</h2>
+							<div class="m-search">
+				<form method="get" action="/search/index.html">
+					<div class="q-t-s">
+						<input type="text" id="search-txt" autocomplete="off" maxlength="35" value="" placeholder="请输入圈子关键字" name="q" id="__q" class="g-f-l qts-txt">
+						<input class="g-f-l qts-btn" id="searchbtn" type="submit" value="搜索" />
+					</div>
+				</form>
+			</div>  
+			
+			<script>
+			$(function(){
+					$("form").one("keydown",function (){
+							seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+								csc.suggest();
+							});
+						});
+						seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+							csc.placeholder("#search-txt");
+						});   
+			})
+	
+</script>
+
+				</div>
+</div><link rel="stylesheet" href="http://res.csc86.com/css/c/sns/base.css?v=1" />
+<div class="g-o-a g-d-n">
+<!-- 弹窗提示效果cardwall.js -->
+	<div class="g-ff-y pop-notice">
+		<div class="bd">
+			<strong>呃额...没抢到~</strong>
+			<p>就只慢了0.1秒，位置刚被<br/>人占了，赶快找个空位再试试吧！</p>
+		</div>
+		<div class="ft"><a href="javascript:void(popNotice.close())" class="btn">好 的</a></div>
+	</div>
+
+	<div class="g-ff-y pop-notice">
+		<div class="bd">
+			<div class="g-h-25"></div>
+			<strong>抱歉，网络不给力，抢占不成功～</strong>
+		</div>
+		<div class="ft"><a href="javascript:void(popNotice.close())">算了</a>&nbsp; &nbsp;<a href="javascript:" class="btn J_tryAgain">我再试试</a></div>
+	</div>
+
+	<div class="g-ff-y pop-notice">
+		<div class="bd">
+			<strong>恭喜你，抢占成功！</strong>
+			<p>今晚12点前，这个位置就是<br/>你的了，明天再接再厉哦！</p>
+		</div>
+	</div>
+
+</div>
+<div class="m-nav-quan">
+	<div class="g-o-a">
+		<ul class="m-nav1" id="quannav">
+			<li class="l1"><a href="http://quan.csc86.com"  target="circleIndex">首页</a></li>
+			<li><a href="/square.html"  target="square">圈子广场</a></li>
+			<li><a href="/cards/index.html"  class="hover"  target="wallcard">名片墙</a></li>
+		</ul>
+		<ul class="m-nav2">
+			<li class="l1"><a href="http://www.csc86.com" target="_blank">华南城网首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="g-h-15"></div>
+<link rel="stylesheet" href="/css/m/focus-play/style.css"/>
+<link rel="stylesheet" href="../cardwall.css"/>
+<link rel="stylesheet" href="/b=css&f=c/sns/message-frend.css,m/page/style.css,m/zzmark/css.css"/>
+<script src="/js/c/sns/cardwall.js"></script>
+<div class="g-o-a">
+	<div class="card-nav g-t-r g-ff-y">
+		<h2>找<span>客户</span></h2>
+		<ul>
+			<li><a href="javascript:" data-ins="皮革">皮革<span>(25)</span></a></li>
+			<li><a href="javascript:" data-ins="机械及行业设备">机械及行业设备<span>(60)</span></a></li>
+			<li><a href="javascript:" data-ins="塑料橡胶">塑料橡胶<span>(12)</span></a></li>
+			<li><a href="javascript:" data-ins="化工能源">化工能源<span>(2)</span></a></li>
+			<li><a href="javascript:" data-ins="冶金矿产金属">冶金矿产金属<span>(1)</span></a></li>
+			<li><a href="javascript:" data-ins="环保">环保<span>(8)</span></a></li>
+			<li><a href="javascript:" data-ins="其他">其他<span>(3)</span></a></li>
+			<li class="last all"><a href="javascript:" data-ins="全部">全部</a></li>
+		</ul>
+	</div>
+</div>
+<div class="g-o-a cardwall">
+	<div class="g-f-l main">
+		<div class="g-p-r g-ff-y g-t-c g-fs-14 notice">
+			要完善名片信息，才能抢占哦！<a href="javascript:">现在就完善</a>
+			<a href="javascript:" class="close g-p-a J_close_notice"></a>
+		</div>
+		<div class="card-items">
+			<ul class="g-c-f">
+				<li class="item large" data-ins="皮革">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:">好友</a><span>|</span><a href="javascript:" class="ex">交换名片</a></div>
+				</li>
+				<li class="item" data-ins="环保">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:">好友</a><span>|</span><a href="javascript:" class="ex">交换名片</a></div>
+				</li>
+				<li class="item correct" data-ins="皮革">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<span class="no no1"></span>
+					<div class="plus"><a href="javascript:">好友</a><span>|</span><a href="javascript:" class="ex">交换名片</a></div>
+				</li>
+				<li class="item" data-ins="塑料橡胶">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				<li class="item" data-ins="化工能源">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<span class="no no2"></span>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				<li class="item" data-ins="塑料橡胶">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				<li class="item correct" data-ins="皮革">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<span class="no no3"></span>
+					<div class="plus"><a href="javascript:">好友</a><span>|</span><a href="javascript:" class="ex">交换名片</a></div>
+				</li>
+				<li class="item large" data-ins="塑料橡胶">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				<li class="item" data-ins="皮革">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				<li class="item" data-ins="化工能源">
+					<div class="t-n">
+						<a href="javascript:" class="t"><img src="/image/img.png" alt="" width="60" height="60"/></a>
+						<div class="n">
+							<a href="javascript:">深圳电子深圳电子电子</a>
+							<br/>
+							<i class="markico us_l2" title="小商贩"></i>
+						</div>
+					</div>
+					<dl class="g-c-f infos">
+						<dt>企业：</dt>
+						<dd>深圳骏宇包装材料有限公司</dd>
+						<dt>职务：</dt>
+						<dd>企划部经理</dd>
+						<dt>电话：</dt>
+						<dd>1326896253</dd>
+						<dt>区域：</dt>
+						<dd>广东省·深圳市·宝安区</dd>
+					</dl>
+					<p class="personality">欢迎全国各地橡胶行业的朋友一起交...</p>
+					<div class="plus"><a href="javascript:" class="pg">个人页</a><span>|</span><a href="javascript:" class="msg">发消息</a></div>
+				</li>
+				
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li class="item empty"></li>
+
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				
+				<li class="item empty"></li>
+				<li class="item empty correct"></li>
+				<li class="item empty large"></li>
+				<li class="item empty"></li>
+				<li data-ins="电子" class="item">
+					<div class="t-n">
+						<a href="http://quan.csc86.com/u/ec4e61dd-d3ce-404b-8621-9471444c8273" target="_blank" class="t"><img src="http://img.csc86.com/scale/60/5234664569227d359973409e" onError="this.src='http://res.csc86.com/image/c/membercenter/photo-male-small.jpg'" alt="申海华" width="60" height="60"/></a>
+						<div class="n">
+							<a href="http://quan.csc86.com/u/ec4e61dd-d3ce-404b-8621-9471444c8273" target="_blank">申海华</a>
+							<br/>
+							<i class="markico us_l1" title="新手"></i>
+						</div>
+					</div>
+					<dl class="infos">
+						<dt>职务：</dt>
+						<dd>00000</dd>
+						<dt>电话：</dt>
+						<dd>18938869260</dd>
+						<dt>区域：</dt>
+						<dd>广东省深圳市</dd>
+					</dl>
+					<p class="personality">00000</p>
+					<div class="plus"><a href="javascript:void(csc.addfriend('ec4e61dd-d3ce-404b-8621-9471444c8273'))">好友</a><span>|</span><a href="javascript:void(cardChange('ec4e61dd-d3ce-404b-8621-9471444c8273',this))" class="ex">交换名片</a></div>
+				</li>
+			</ul>
+			<div class="card-bottom-ad">
+				<div><img src="/image/img.png" width="800" height="40" alt=""/></div>
+				<div class="g-h-10"></div>
+				<div><img src="/image/img.png" width="800" height="40" alt=""/></div>
+			</div>
+			<div class="g-h-10"></div>
+		</div>
+	</div>
+	<div class="g-f-r sub">
+		<div class="status-des g-ff-y">
+			<strong class="g-fs-16">还有空位，赶紧抢！</strong>
+			<p class="g-fs-14">每天有60个位置，来的越早，抢的位置越好哦！</p>
+		</div>
+		<div class="g-h-10"></div>
+		<div class="top-home g-t-c"><img src="/image/c/sns/cardwall/top-home.png" alt="哇~每天占位前两名，自动推荐上首页啊！"/></div>
+		<div class="g-h-12"></div>
+		<div class="rank g-ff-y">
+			<h2 class="g-fs-16"><span>周</span>名片达人</h2>
+			<ol>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="rank g-ff-y">
+			<h2 class="g-fs-16"><span>月</span>名片达人</h2>
+			<ol>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:" class="t SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273"><img src="/image/img.png" alt="" width="30" height="30"/></a>
+					<div>
+						<a href="javascript:" class="n SNScard" fuid="ec4e61dd-d3ce-404b-8621-9471444c8273">林焕武</a><i class="markico us_l2" title="小商贩"></i>
+						<p class="g-ff-s">专业生产食品包装</p>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="g-h-50"></div>
+		<div class="raiders">
+			<h2 class="g-fs-16 g-ff-y">抢占名片墙攻略</h2>
+			<ol>
+				<li><a href="javascript:">1、什么是名片墙？</a></li>
+				<li><a href="javascript:">2、为什么要抢占名片墙？</a></li>
+				<li><a href="javascript:">3、抢占名片墙能干什么？</a></li>
+				<li><a href="javascript:">4、抢占名片墙需要什么条件？</a></li>
+			</ol>
+		</div>
+		<div class="rec-topic">
+			<h2 class="g-fs-16 g-ff-y">推荐话题</h2>
+			<ul>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">在老外眼里，在中国做生意</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">外贸人不可不防的四大“</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">合伙做生意朋友逼我退出</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">右眼皮跳是真的有事要发</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">除了价格战 电子商务拿什</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">订单旺季，频现工厂“有</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">伙伴们，认证服务全面升</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">比同行贵30%，客户照样选</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">万般皆是空，唯有“吃”</a></li>
+				<li><a href="javascript:" title="在老外眼里，在中国做生意">死磕微信 阿里将推流量免</a></li>
+			</ul>
+		</div>
+		<div class="g-h-15"></div>
+		<div class="sub-ad focus-play">
+			<ul>
+				<li class="cur"><a href="javascript:" target="_blank"><img src="/image/img.png" alt="" width="170" height="145"/></a></li>
+				<li><a href="javascript:" target="_blank"><img src="/image/img.png" alt="" width="170" height="145"/></a></li>
+				<li><a href="javascript:" target="_blank"><img src="/image/img.png" alt="" width="170" height="145"/></a></li>
+			</ul>
+		</div>
+		<script>
+		seajs.use(csc.url("res","/f=js/m/focusPlay"),function (){
+			csc.foucsPlay("div.focus-play")
+		});
+		</script>
+		<div class="g-h-20"></div>
+	</div>
+</div>
+<div class="quan_link">
+	<div class="g-o-a">
+		<p>© 2009-2013<span class="netmap"><a class="a1" href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></span> 粤ICP备14011296号-1</p>
+	</div>
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div></body>
+</html>

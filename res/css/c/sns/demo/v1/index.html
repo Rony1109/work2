@@ -1,0 +1,792 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>生意圈首页</title>
+<link rel="stylesheet" href="http://res.csc86.com/bhf/">
+<link rel="stylesheet" href="http://res.csc86.com/css/c/sns/base.css">
+<link rel="stylesheet" href="http://res.csc86.com/b=css&f=m/page-to/style_li.css,c/sns/tradering.css,c/sns/visiting-card.css,m/zzmark/css.css" />
+<script src="http://res.csc86.com/js"></script>
+<script>
+	$(window).on("load",function(){
+		
+		seajs.use(csc.url("res","/b=js/m&f=cookie.js,shade.js"),function(){
+			if(!csc.getCookie("quan_in")){
+				var zz1 = new csc.shade("zz1",{zIndex:11});
+				var gnts1 = $('<div class="g-o-a gnts1"><div class="gnts1_main"><a href="javascript:;" class="a1" title="关闭"></a><a href="javascript:;" class="a2" title="我知道了"></a><a href="#" class="a3" class="a3" title="立即体验"></a></div>');
+				gnts1.find(".gnts1_main").css("top",$("#lh_box").offset().top + 6 + "px");
+				gnts1.find(".a1,.a2").on("click",function(){
+					zz1.Close(); //隐藏遮罩
+					gnts1.hide(); //隐藏提示层
+					csc.setCookie("quan_in","1",99999,"quan.csc86.com"); //设置Cookie;
+					return false;
+				});
+				gnts1.find(".a3").on("click",function(){
+					csc.setCookie("quan_in","1",99999,"quan.csc86.com"); //设置Cookie;
+				});
+				$(".top-bar").before(gnts1);
+			};
+		})
+	})
+</script>
+<link rel="stylesheet" type="text/css" href="../../index_v1.css">
+</head>
+<body>
+<!--头部begin-->
+<div class="top-bar">
+	<div class="g-o-a">
+		<div class="top-csc-group"> <a href="http://group.csc86.com" target="_blank">走进华南城</a><a href="http://sz.csc86.com" target="_blank">深圳</a><a href="http://nn.csc86.com" target="_blank">南宁</a><a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a><a href="http://xa.csc86.com" target="_blank">西安</a><a href="http://group.csc86.com/project/zhengzhou/introduce.html" target="_blank">郑州</a><a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a> </div>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-c-f bd">
+				<ul class="csc-bd">
+					<li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+					<li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+					<li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+					<li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+				</ul>
+				<ul class="yesmore-bd">
+					<li><a href="http://my.csc86.com/userorders" target="_blank" rel="nofollow">我的订单</a></li>
+					<li><a href="http://cart.csc86.com/cart" target="_blank" rel="nofollow">购物车</a></li>
+					<li><a href="http://sale.csc86.com/seckill" target="_blank" rel="nofollow">抢购秒杀</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-sign-info"> 您好，<span class="bd">欢迎光临华南城网！ <a class="tit" href="http://member.csc86.com/login/phone/" rel="nofollow">登录</a><span class="v-line"></span><a href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow">免费注册</a></span><span class="v-line"></span> </div>
+	</div>
+</div>
+<script>csc.ie6 && seajs.use(csc.url("res","/f=js/m/hover"),function (){csc.hover("div.top-my-account");});</script>
+
+<div class="web-search">
+	<div class="g-o-a">
+		<h1><a href="http://www.csc86.com" title="实体商圈，可信交易。" class="logo"><img width="280" height="57" src="http://res.csc86.com/image/c/index/logo.png" alt="实体商圈，可信交易。"></a></h1>
+		<h2><a href="http://quan.csc86.com" title="生意圈"><img src="http://res.csc86.com/css/c/sns/img/quan_logo.png" width="80" height="28" alt="生意圈"></a></h2>
+		<div class="m-search">
+			<form method="get" action="/search/index.html">
+				<div class="q-t-s">
+					<input type="text" id="search-txt" autocomplete="off" maxlength="35" value="" placeholder="请输入圈子关键字" name="q" class="g-f-l qts-txt">
+					<input class="g-f-l qts-btn" id="searchbtn" type="submit" value="搜索">
+				</div>
+			</form>
+		</div>
+		<script>
+			$(function(){
+				seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+					csc.placeholder("#search-txt");
+				});
+			})
+		</script> 
+	</div>
+</div>
+<!--头部end--> 
+<!--导航条begin-->
+<div class="m-nav-quan">
+	<div class="g-o-a">
+		<ul class="m-nav1" id="quannav">
+			<li class="l1"><a href="http://quan.csc86.com" class="hover" target="circleIndex">首页</a></li>
+			<li><a href="http://quan.csc86.com/square.html" target="square">圈子广场</a></li>
+			<li><a href="http://member.csc86.com/personal/wallcard" target="wallcard">名片墙</a></li>
+		</ul>
+		<ul class="m-nav2">
+			<li class="l1"><a href="http://www.csc86.com" target="_blank">华南城网首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="g-h-10"></div>
+<!--导航条end--> 
+<!--主体begin-->
+<script>
+$(function(){
+	$("#fixedbar").on("click","a[href^='#']",function(){
+		var o = $(this);
+		var top = $(o.attr("href")).length ? $(o.attr("href")).offset().top:"0";
+		$("body,html").animate({scrollTop:top},200,function(){
+			location.href = location.href.replace(/#.*$/,"") + o.attr("href");
+		});
+		return false;
+	});
+	$(window).on("load",function(){
+		var fixedbar = $("#fixedbar"),as = [],as_a = fixedbar.find("ul li a");
+		$("a.Ascroll").each(function(index, element){
+			as.push({obj:this.id,top:$(this).offset().top});
+		});
+		csc.ie6 && (fixedbar[0].style.cssText = "top:expression(eval(document.documentElement.scrollTop+10>document.getElementById('lh_box').offsetTop?(document.documentElement.scrollTop+10):document.getElementById('lh_box').offsetTop))");
+		var showscroll = function(){
+			var hc=document.documentElement.clientHeight/3,mintop=$("#lh_box").offset().top;
+			if (document.documentElement.clientWidth<1000){fixedbar.hide();}else{fixedbar.show();}
+			var top_ = $(document).scrollTop(),ids="";
+			for(var i = as.length;i--;){
+				if(top_ > as[i].top-hc){
+					ids = as[i].obj;
+					break;
+				};
+			};
+			as_a.removeClass("hover");
+			if(ids !== ""){
+				 fixedbar.find("ul li a[href='#"+ids+"']").addClass("hover");
+			};
+			if(!csc.ie6){
+				if(top_+10>mintop){
+					fixedbar.attr("class","fixed_toolbar1").css("top","10px");
+				}else{
+					fixedbar.attr("class","fixed_toolbar").css("top",mintop+"px");
+				};
+			};
+		};
+		$(window).on("scroll resize", function(){ 
+			showscroll();
+		}).trigger("scroll"); 	
+	});
+	$(".web-search").before($("#__indexAd").html());
+})
+</script>
+<div class="g-o-a">
+	<div class="i_fl">
+		<div class="i_topbox">
+			<div class="lh_box" id="lh_box">
+				<ul class="li_lh">
+					<!--碎片1-->
+					<li><a href="#" target="_blank" title="图片说明1"><img src="../../img/ban1.jpg" width="340" height="260" alt="图片说明1"></a></li>
+					<li><a href="#" target="_blank" title="图片说明2"><img src="../../img/ban1.jpg" width="340" height="260" alt="图片说明2"></a></li>
+					<li><a href="#" target="_blank" title="图片说明3"><img src="../../img/ban1.jpg" width="340" height="260" alt="图片说明3"></a></li>
+					<li><a href="#" target="_blank" title="图片说明4"><img src="../../img/ban1.jpg" width="340" height="260" alt="图片说明4"></a></li>
+					<li><a href="#" target="_blank" title="图片说明5"><img src="../../img/ban1.jpg" width="340" height="260" alt="图片说明5"></a></li>
+					<!--碎片1end-->
+				</ul>
+				<div class="text_bg"></div>
+				<div class="text">
+					<div class="but"></div>
+					<span><a href="#" title="图片说明1图片说明1图片说明1图片说明1图片说明1图片说明1">图片说明1图片说明1图片说明1图片说明1图片说明1图片说明1</a></span>
+				</div>
+				<a class="to_left" href="javascript:;">&lt;</a><a class="to_right" href="javascript:;">&gt;</a> </div>
+				<script>	
+$(function(){
+	seajs.use(csc.url("res","/js/m/slide"),function (){
+		var p_ban = new csc.slide("#lh_box .li_lh","#lh_box .li_lh>li",{
+						slideWidth:340,
+						slideHeight:260,
+						slideDirection:0,
+						slides_auto_span:5000,
+						slideButs_bindsj:"mouseover",
+						slideButs:"#lh_box .but",
+						slideButs_html:null,
+						slides_fun:q_banner_event,
+						slides_to_l:$("#lh_box a.to_left"),
+						slides_to_r:$("#lh_box a.to_right")
+		});
+		$("#lh_box .ban_tex").bind("mouseenter",function(){p_ban.zantin=true;}).bind("mouseleave",function(){p_ban.zantin=false;});
+	});
+	//右侧文字切换动画;
+	function q_banner_event(i){
+		var tabs = this.slideButs.find("a");//$("#q_banner .ban_but>a");
+		tabs.removeClass("s");
+		$(tabs[i]).addClass("s");
+		var url = $(this.slides[i]).find("a").attr("href"),
+			txt = $(this.slides[i]).find("a").attr("title")
+		$("#lh_box .text span").html('<a href="'+url+'" title="'+txt+'" target="_blank">'+txt+'</a>');
+	}
+})
+				</script>
+			<div style="padding:15px 18px 0 18px; float:right; width:345px; height:238px;"> 
+				<!--碎片2-->
+				<dl class="dl_top">
+					<dt><a href="#" target="_blank">又是一年毕业季，你的房租涨了吗?</a></dt>
+					<dd>第二届“华南城网MAX”杯篮球大赛已于2013年6月22日18:30分正式火热开赛。公司派我到华南城学习的时候，我非常的开心，我开心我能学到更多有关网络的东西！</dd>
+				</dl>
+				<div class="g-h-15"></div>
+				<dl class="dl_l">
+					<dt><a href="#" target="_blank" title="活动：加入球队圈子 领取现金大礼包">活动：加入球队圈子 领取现金大礼包</a></dt>
+					<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+					<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+				</dl>
+				<dl class="dl_r">
+					<dt><a href="#" target="_blank" title="话题：细节决定冷冻机的使用年限">话题：细节决定冷冻机的使用年限</a></dt>
+					<dd><a href="#" target="_blank" title="不是MAX个人，而是MAX团队！">不是MAX个人，而是MAX团队！</a></dd>
+					<dd><a href="#" target="_blank" title="玻璃化工行业淡旺季大调查">玻璃化工行业淡旺季大调查</a></dd>
+				</dl>
+				<!--碎片2end--> 
+			</div>
+		</div>
+	</div>
+	<div class="i_fr q_user"> 
+		<!--未登陆
+		<div class="unlogin">
+			<div class="untxt">
+				<h1 title="华南城生意圈">华南城生意圈</h1>
+				<h2 title="生意人自己的圈子">生意人自己的圈子</h2>
+				<h2 title="分享关注 建立商圈 拓展人脉 收获价值">分享关注 建立商圈 拓展人脉 收获价值<br>
+					&nbsp;</h2>
+			</div>
+			<a class="a_1" href="http://member.csc86.com/login/phone" rel="nofollow" title="登陆"></a><a class="a_2" href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow" title="还没有帐号？免费注册"></a> </div>-->
+		<!--未登陆end--> 
+		<!--已登陆-->
+		<div class="islogin">
+			<dl class="q_i_usr">
+				<dt><img src="http://img.csc86.com/scale/60/51c8f90d7fa2c05b72526a21" onerror="this.src='http://res.csc86.com/image/c/membercenter/photo-male-small.jpg'" width="60" height="60"></dt>
+				<dd class="u_name"><a href="#" target="_blank">汪航洋</a><i class="markico us_l0"></i></dd>
+				<dd class="u_vip">等级：小商贩</dd>
+				<dd class="u_vipnumb">成长值：<a href="javascript:;" class="u_ccz">1000</a></dd>
+			</dl>
+			<div class="czz_box">
+				<i class="sj" style=""></i>
+				<p>当前成长值：<em>1000</em>分</p>
+				<table class="czz_jd">
+					<tr><td>小商贩</td><td><div class="jdt_bg"><div style="width:80%;"></div></div></td><td>个体户</td></tr>
+				</table>
+				<p>升级还需要<em>500</em>积分</p>
+			</div>
+			<div>
+				<ul class="qtabT">
+					<li class="hover">我创建的圈子</li>
+					<li>我管理的圈子</li>
+					<li>我加入的圈子</li>
+				</ul>
+				<ul class="q_tabD">
+					<li class="tabD Scroll1" style="display: list-item; overflow: auto;">
+						<div class="Scroll_main">
+							<ul class="my_q_list">
+								<li><a href="/41eddef0-b9cc-4511-9b12-7fc87ff91f8f.html" target="_blank">金华漆业</a><span>[隐藏]</span></li>
+								<li><a href="/dc79ca3c-2976-4c73-ae81-2effc0874a0f.html" target="_blank">数码外设互羸</a> </li>
+							</ul>
+						</div>
+					</li>
+					<li class="tabD" style="display: none;">
+						<ul class="my_q_list">
+							<li><a href="/89286f68-750e-49f8-a5d1-9942e0c4c76b.html" target="_blank">华南城英雄联盟</a></li>
+						</ul>
+					</li>
+					<li class="tabD" style="display: none;">
+						<ul class="my_q_list">
+							<li><a href="/21bd8e73-d430-4dba-a81d-9014e63fedb3.html" target="_blank">电子商务营销圈</a></li>
+							<li><a href="/39242ff7-2efd-4ab9-8a07-4efc7777c6da.html" target="_blank">产品意见收集</a></li>
+							<li><a href="/39ff629e-ca43-4271-a3cf-7f54f8eae9f8.html" target="_blank">深圳市泰河电子有限公司</a></li>
+							<li><a href="/42ca5425-1809-4ce1-8bf3-1fff36448809.html" target="_blank">华南城网客服咨询圈</a></li>
+							<li><a href="/4aa2b93a-cc4f-49de-bf9e-5970cbb522d4.html" target="_blank">吃货小分队</a></li>
+							<li><a href="/527336ab-c242-4293-9d36-07262ec1fe73.html" target="_blank">深圳华南城活动圈</a></li>
+							<li><a href="/73e707a0-cc03-4aed-b463-28706caec5da.html" target="_blank">谭氏兄弟股份有限公司</a></li>
+							<li><a href="/dfc7221a-ae6f-4ef2-b621-20e36af9bd78.html" target="_blank">泰达化工生意圈</a></li>
+							<li><a href="/e7fd6310-21b9-4abc-9256-ce213933aa62.html" target="_blank">哈狗帮</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<script>
+				seajs.use(csc.url("res","/f=js/m/tabconn.js,js/p/cscjsScroll/cscjsScroll.js"),function(){
+					seajs.use(csc.url("res","/f=js/p/cscjsScroll/scroll.css"),function(){
+						csc.tabconn(".islogin .qtabT>li",".islogin .q_tabD>li","click","hover",0,function(i){
+							$(".islogin .q_tabD>li:eq("+i+")").addClass("Scroll1").cscjsScroll({showArrows:false});
+						});
+					})
+				});
+				$(function(){
+					var ccz = $(".u_ccz"),b = $(".czz_box");
+					function cxdw(){
+						var o = ccz,
+							p1 = o.offset(),
+							s1 = [o.outerWidth(),o.outerHeight()],
+							p2 = {top:0,left:0},
+							s2 = [b.outerWidth(),b.outerHeight()];
+						p2.left = p1.left + (s1[0]/2) - (s2[0]*0.6);
+						p2.top = p1.top +s1[1]+6;
+						b.css({"left":p2.left+"px","top":p2.top+"px"});
+					}
+					ccz.on("mouseenter",function(){
+						cxdw();
+						b.show();
+					}).on("mouseleave",function(){
+						b.hide();
+					});
+					$(window).on("resize",cxdw);
+				})
+			</script> 
+		</div>
+		<!--已登陆end--> 
+	</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a">
+	<div class="i_fl">
+		<h2 class="i_t_l i_fl_m"><a id="l1" class="Ascroll"></a>商业 · 企业</h2>
+		<div class="i_fl_p i_bd_r">
+			<div class="g-h-15"></div>
+			<div class="i_fl_1">
+				<dl class="dl_2l_b">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<h3 class="h3_1">热门活动</h3>
+				<dl class="dl_2l_b">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销...</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+			</div>
+			<div class="i_fr_1">
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<div class="g-h-15"></div>
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<ul class="ul_2l">
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+				</ul>
+				<ul class="ul_pic">
+					<li><a href="#" target="_blank" title="深圳电子"><img src="../../img/ico_t.jpg" width="60" height="60"/><span>深圳电子</span></a></li>
+					<li><a href="#" target="_blank" title="深圳电子"><img src="../../img/ico_t.jpg" width="60" height="60"/><span>深圳电子</span></a></li>
+					<li><a href="#" target="_blank" title="深圳电子"><img src="../../img/ico_t.jpg" width="60" height="60"/><span>深圳电子</span></a></li>
+				</ul>
+			</div>
+			<div class="g-h-01"></div>
+		</div>
+	</div>
+	<div class="i_fr_1">
+		<h2 class="i_t_r">新鲜事儿</h2>
+		<ul class="xxs_list">
+			<li class="l1">
+				<p> <a href="javascript:;" class="SNScard" fuid="4b5a3b8b-ae1c-47ad-8c72-4d7041d18b44" wz="3">九妹</a>&nbsp;&nbsp;2小时前回复了话题 </p>
+				<p> <a href="/thread/detail/68c35c66-fbdd-48c0-b584-48d1d2a0f3f7.html" title="火速加入“MAX篮球队”！赢取价值600元大礼包！" target="_blank"><strong>火速加入“MAX篮球队”！赢取价…</strong></a> </p>
+			</li>
+			<li>
+				<p> <a href="javascript:;" class="SNScard" fuid="bb51219b-9695-4f5c-8de4-2076632957fa" wz="3">李雯</a>&nbsp;&nbsp;2小时前发表了话题 </p>
+				<p> <a href="/thread/detail/1d726b23-0065-47f1-8606-80a7a23bcf72.html" title="皮质彩绘手机套批发" target="_blank"><strong>皮质彩绘手机套批发</strong></a> </p>
+			</li>
+			<li>
+				<p> <a href="javascript:;" class="SNScard" fuid="250ed490-469b-4ae7-93d0-b76e3015ce95" wz="3">李艳平</a>&nbsp;&nbsp;2小时前回复了话题 </p>
+				<p> <a href="/thread/detail/6b667176-9b74-4cd7-b8b3-eb747f831b01.html" title="这些买家真傻" target="_blank"><strong>这些买家真傻</strong></a> </p>
+			</li>
+			<li>
+				<p> <a href="javascript:;" class="SNScard" fuid="250ed490-469b-4ae7-93d0-b76e3015ce95" wz="3">李艳平</a>&nbsp;&nbsp;2小时前回复了话题 </p>
+				<p> <a href="/thread/detail/a7934b67-18ce-4902-b59c-5b7cfeb08126.html" title="同一个平台，同一个梦想，欢迎大家加入MAX!" target="_blank"><strong>同一个平台，同一个梦想，欢迎大家…</strong></a> </p>
+			</li>
+			<li>
+				<p> <a href="javascript:;" class="SNScard" fuid="f8d50d20-6313-4448-906b-9eb98a94051c" wz="3">周正祈</a>&nbsp;&nbsp;2小时前回复了话题 </p>
+				<p> <a href="/thread/detail/68c35c66-fbdd-48c0-b584-48d1d2a0f3f7.html" title="火速加入“MAX篮球队”！赢取价值600元大礼包！" target="_blank"><strong>火速加入“MAX篮球队”！赢取价…</strong></a> </p>
+			</li>
+		</ul>
+	</div>
+	<div class="g-h-20"></div>
+</div>
+<div class="g-o-a">
+	<h2 class="i_t_l"><a id="l2" class="Ascroll"></a>同城 · 生活</h2>
+	<div class="g-h-15"></div>
+	<div class="i_fl">
+		<div class="i_fl_p i_bd_r">
+			<div class="i_fl_1">
+				<dl class="dl_2l_b">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+			</div>
+			<div class="i_fr_1">
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<div class="g-h-15"></div>
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<ul class="ul_2l">
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+				</ul>
+				<ul class="ul_3l">
+					<li><a href="#" target="_blank" title="泰达化工生意圈">商圈活动</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">班车路线</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">园区配套</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">求职招聘</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">物业通知</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">商家促销</a></li>
+				</ul>
+			</div>
+			<div class="g-h-01"></div>
+		</div>
+	</div>
+	<div class="i_fr">
+		<h3 class="h3_2">热门活动</h3>
+		<div class="pic_box1">
+			<a href="#" target="_blank" title="婴儿爬行锦标赛 可爱宝宝萌翻全场">
+			<img src="../../img/ban2.jpg" width="260" height="130" alt="说明">
+			<span class="text_bg"></span>
+			<span class="text">婴儿爬行锦标赛 可爱宝宝萌翻全场</span>
+			</a>
+		</div>
+		<ul class="ul_d_bg">
+			<li><a href="#" target="_blank" title="泰达化工生意圈">商圈活动商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">班车路线商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">园区配套商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">求职招聘商圈活动商圈活动商圈活动</a></li>
+		</ul>
+	</div>
+	<div class="g-h-20"></div>
+</div>
+<div class="g-o-a">
+	<h2 class="i_t_l"><a id="l3" class="Ascroll"></a>图片墙</h2>
+	<div class="g-h-15"></div>
+	<ul class="ul_4_1">
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_1_1.jpg" width="290" height="370">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_1_2.jpg" width="290" height="160">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+	</ul>
+	<ul class="ul_4_2">
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_2_1.jpg" width="240" height="220">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_2_2.jpg" width="240" height="310">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+	</ul>
+	<ul class="ul_4_3">
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_3_1.jpg" width="240" height="320">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_3_2.jpg" width="240" height="210">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+	</ul>
+	<ul class="ul_4_4">
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_4_1.jpg" width="190" height="153">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_4_2.jpg" width="190" height="107">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+		<li>
+			<a href="#" title="">
+				<img src="../../img/temp/img_4_3.jpg" width="190" height="210">
+				<span>话题：松茸牛尾浓汤 炖够5小时汤浓肉糯</span>
+			</a>
+			<p><i>煤矿工人</i><em>业鸿焊锡篮球队</em></p>
+		</li>
+	</ul>
+	<div class="g-h-10"></div>
+</div>
+<div class="g-o-a">
+	<h2 class="i_t_l"><a id="l4" class="Ascroll"></a>兴趣 · 娱乐</h2>
+	<div class="g-h-15"></div>
+	<div class="i_fl">
+		<div class="i_fl_p i_bd_r">
+			<div class="i_fl_1">
+				<dl class="dl_2l_b exp">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+					<dd class="text">大千世界无奇不有！龟也有染烟瘾的时候！ 据他的主人说，这只鳄龟在一个月前无意中学会吸烟后便一发不可收拾。</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank"><strong>胡国平：细节决定冷冻机的使用年限</strong></a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a href="#" target="_blank">胡国平：细节决定冷冻机的使用年限</a></dt>
+					<dd>电子商务营销圈</dd>
+				</dl>
+			</div>
+			<div class="i_fr_1">
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<div class="g-h-15"></div>
+				<dl class="dl_pic1">
+					<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+					<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+					<dd>成员：153</dd>
+					<dd>众所周知，深圳是我国电子信息产品的</dd>
+				</dl>
+				<ul class="ul_2l">
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+					<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+				</ul>
+				<div class="g-h-20"></div>
+				<div class="pic_box1 pic_box1_typ1 g-f-l">
+					<a href="#" target="_blank" title="婴儿爬行锦标赛 可爱宝宝萌翻全场">
+					<img src="../../img/ban2.jpg" width="123" height="90" alt="说明">
+					<span class="text_bg"></span>
+					<span class="text">婴儿爬行锦标赛 可爱宝宝萌翻全场</span>
+					</a>
+				</div>
+				<div class="pic_box1 pic_box1_typ1 g-f-r">
+					<a href="#" target="_blank" title="婴儿爬行锦标赛 可爱宝宝萌翻全场">
+					<img src="../../img/ban2.jpg" width="123" height="90" alt="说明">
+					<span class="text_bg"></span>
+					<span class="text">婴儿爬行锦标赛 可爱宝宝萌翻全场</span>
+					</a>
+				</div>
+			</div>
+			<div class="g-h-01"></div>
+		</div>
+	</div>
+	<div class="i_fr">
+		<h3 class="h3_2">热门活动</h3>
+		<div class="pic_box1 pic_box1_typ2">
+			<a href="#" target="_blank" title="婴儿爬行锦标赛 可爱宝宝萌翻全场">
+			<img src="../../img/ban2.jpg" width="260" height="190" alt="说明">
+			<span class="text_bg"></span>
+			<span class="text">婴儿爬行锦标赛 可爱宝宝萌翻全场</span>
+			</a>
+		</div>
+		<ul class="ul_d_bg">
+			<li><a href="#" target="_blank" title="泰达化工生意圈">商圈活动商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">班车路线商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">园区配套商圈活动</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">求职招聘商圈活动商圈活动商圈活动</a></li>
+		</ul>
+	</div>
+	<div class="g-h-20"></div>
+</div>
+<div class="g-o-a">
+	<h2 class="i_t_l"><a id="l5" class="Ascroll"></a>行业</h2>
+	<div class="g-h-15"></div>
+	<div class="i_fl3">
+		<h3 class="h3_2">原材料</h3>
+		<dl class="dl_pic1">
+			<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+			<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+			<dd>成员：153</dd>
+			<dd>众所周知，深圳是我国电子信息产品的</dd>
+		</dl>
+		<ul class="ul_2l_t1">
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+		</ul>
+		<dl class="dl_t1">
+			<dt><a href="#" target="_blank" title="活动：加入球队圈子 领取现金大礼包">活动：加入球队圈子 领取现金大礼包</a></dt>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+		</dl>
+		
+	</div>
+	<div class="i_fl3">
+		<h3 class="h3_2">工业品</h3>
+		<dl class="dl_pic1">
+			<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+			<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+			<dd>成员：153</dd>
+			<dd>众所周知，深圳是我国电子信息产品的</dd>
+		</dl>
+		<ul class="ul_2l_t1">
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+		</ul>
+		<dl class="dl_t1">
+			<dt><a href="#" target="_blank" title="活动：加入球队圈子 领取现金大礼包">活动：加入球队圈子 领取现金大礼包</a></dt>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+		</dl>
+	</div>
+	<div class="i_fl3 no_b">
+		<h3 class="h3_2">消费品</h3>
+		<dl class="dl_pic1">
+			<dt><a href="#" target="_blank" title="深圳电子元器件商贸联">深圳电子元器件商贸联</a></dt>
+			<dd class="pic"><img src="../../img/ico_t.jpg" width="60" height="60"/></dd>
+			<dd>成员：153</dd>
+			<dd>众所周知，深圳是我国电子信息产品的</dd>
+		</dl>
+		<ul class="ul_2l_t1">
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+			<li><a href="#" target="_blank" title="泰达化工生意圈">泰达化工生意圈</a></li>
+		</ul>
+		<dl class="dl_t1">
+			<dt><a href="#" target="_blank" title="活动：加入球队圈子 领取现金大礼包">活动：加入球队圈子 领取现金大礼包</a></dt>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+			<dd><a href="#" target="_blank" title="看比赛，猜结果，拿大奖！">看比赛，猜结果，拿大奖！</a></dd>
+			<dd><a href="#" target="_blank" title="一样的B2B 不一样的华南城">一样的B2B 不一样的华南城</a></dd>
+		</dl>
+	</div>
+	<div class="g-h-30"></div>
+</div>
+
+<div id="__indexAd" style="display:none">
+		<div class="g-o-a quan_ad" id="quan_ad1"><a href="http://quan.csc86.com/special/kgds/sign-up.html"><img src="http://res.csc86.com/css/c/sns/img/temp/ad1.jpg" width="1000" height="40" alt="欢乐迪"></a><a class="close" href="#" onclick="$(this).parents('.quan_ad').slideUp(200); return false;"></a></div>
+</div>
+<!--右侧工具条-->
+<div>
+<div id="fixedbar" class="fixed_toolbar">
+	<ul>
+		<li><a href="#l1">商业·企业</a></li>
+		<li><a href="#l2">同城·生活</a></li>
+		<li><a href="#l3">图片墙</a></li>
+		<li><a href="#l4">兴趣·娱乐</a></li>
+		<li><a href="#l5">行业</a></li>
+	</ul>
+	<div class="gotop">
+		<a href="#" title="返回顶部" class="gotop"></a>
+	</div>
+</div>
+</div>
+<!--右侧工具条end-->
+
+<!--主体end--> 
+<!--友情链接begin-->
+<div class="friendly_link">
+	<div class="g-o-a frie-links"><strong>友情链接：</strong><span><a href="http://www.shoes.net.cn" target="_blank">环球鞋网</a>| <a href="http://www.51kids.com" target="_blank">中国童装网</a>| <a href="http://space.yaolan.com" target="_blank">摇篮空间</a>| <a href="http://www.jinbaowang.cn" target="_blank">进包网</a>| <a href="http://www.ic98.com" target="_blank">百纳网</a>| <a href="http://www.7p.com.cn" target="_blank">韩国服装批发</a>| <a href="http://www.hangye5.com/" target="_blank">行业网</a>| <a href="http://china.zyw.com/index.html" target="_blank">B2B资源网</a> |<a href="http://www.cpp1.cn/" target="_blank">中国印刷网</a>| <a href="http://ciif.csc86.com/" target="_blank">深圳国际工业博览会</a>|<a href="http://top.78.cn/ " target="_blank">加盟网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a>|<a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a></span></div>
+</div>
+<!--友情链接end--> 
+<!--页脚begin-->
+<div class="quan_link">
+	<div class="g-o-a">
+		<p>© 2009-2013 深圳华南城网电子商务有限公司<span class="netmap"><a class="a1" href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">关于华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></span></p>
+	</div>
+</div>
+<!--页脚end-->
+</body>
+</html>
