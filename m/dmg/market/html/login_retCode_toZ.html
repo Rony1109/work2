@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+	<meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+	<meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+	<meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+	<meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+	<meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+	<meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+	<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+	<meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+	<meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+	<meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+	<meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+	<meta name="browsermode" content="application"><!-- UC应用模式 -->
+	<meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+	<meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+	<title>重置密码</title>
+	<link rel="stylesheet" href="//res.csc86.com/f=v3/dmg/market/css/reset.css">
+	<link rel="stylesheet" href="//res.csc86.com/f=v3/dmg/market/css/layer.css">
+	<link rel="stylesheet" href="//res.csc86.com/f=v3/dmg/market/css/common.css">
+	<script>//为加速js，置为内联
+	!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+	</script>
+</head>
+<style>
+	body,html{
+		background-color: #fff;
+	}
+</style>
+<body >
+<!--导航start-->
+<div class="sh_positon_f sh_left_0 sh_right_0 sh_top_0  sh_z-index_10  sh_box-sizing_C  box_shaow sh_bg_color_1" >
+	<div class="sh_margin_a sh_width_max ">
+		<div class="sh_width_2 sh_float_l sh_te_align_c sh_pr_hg90  sh_font_sz0 sh_lingheight_90 " >
+			<a href="javascript:history.go(-1);" class="sh_font_sz0">
+				<img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrHead_left_a.png" alt="" class="sh_v_middle pro_intrHead_left_a sh_bor_right_3 sh_pd_right36 sh_pd_bottom10 sh_pd_top10"/>
+			</a>
+		</div>
+		<div class="sh_width_8 sh_float_l sh_te_align_c sh_font_sz34  sh_font_color6 sh_lingheight_100 sh_pd_bottom28 sh_pd_top28 ">重置密码</div>
+	</div>
+</div>
+<!--导航end-->
+<div class="sh_clear sh_pd_top90 sh_margin_a sh_width_max">
+	<div class="sh_width_12 sh_bg_color_1">
+		<div class=" sh_width_10  sh_font_sz26 sh_margin_a sh_ellipsis">
+			<form action="" method="">
+				<div class=" sh_bor_bottom_2 sh_pd_top30 sh_font_sz0 sh_positon_r">
+					<input type="text" value=""  placeholder="请输入手机号" id="phone" class="sh_font_color5 sh_login_user sh_width_6 sh_pd_left70 sh_pr_hg75  sh_font_sz28" />
+					<input type="button" disabled value="获取验证码" id="getPhoneCode" class="sh_lingheight_100 sh_width_4 sh_font_sz28 sh_font_color8   sh_positon_a sh_right_1 sh_bottom_1 sh_pd_top20 sh_pd_bottom20 sh_border_radius_5 sh_pd_right8 sh_pd_left8 sh_box-sizing_C sh_ellipsis sh_bg_color_11" style="display: inline"/>
+				</div>
+
+				<div class=" sh_bor_bottom_2  sh_pd_top30 sh_font_sz0">
+					<input type="text" value="" id="rcode" placeholder="请输入验证码" class="sh_font_color5 sh_login_chc sh_width_10 sh_pd_left70 sh_pr_hg75  sh_font_sz28 "/>
+				</div>
+
+				<div class=" sh_bor_bottom_2 sh_margin_b_70 sh_pd_top30 sh_font_sz0 sh_positon_r">
+					<img src="//res.csc86.com/v3/shopping_center/market/demo/login_psd_e.png" alt="" class="sh_positon_a sh_right_0 sh_bottom_1 login_psd_e"/>
+					<input type="password" value="" id="password" placeholder="请设置新密码" class="sh_font_color5 sh_login_pwd sh_width_10 sh_pd_left70 sh_pr_hg75  sh_font_sz28 "/>
+				</div>
+
+
+				<input type="button"  value="完成" id="phonesbmit" class="sh_lingheight_100 sh_login_button sh_width_12 sh_font_color8 sh_font_sz34 sh_pd_bottom20 sh_pd_top20  sh_margin_b_44 sh_bg_color_4 sh_border_radius_5"/>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="//res.csc86.com/f=v3/dmg/common/seajs/sea.js,v3/dmg/common/seajs/config.js,v3/dmg/common/js/l/jq/jquery-3.0.0.min.js"></script>
+<script>
+	seajs.use('/v3/dmg/market/js/src/login_retCode_toZ.js');
+</script>
+<script src="//res.csc86.com/f=js/m/statistics.js?"></script>
+</body>
+
+</html>

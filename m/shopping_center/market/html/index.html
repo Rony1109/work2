@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+    <meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+    <meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+    <meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+    <meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+    <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+    <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+    <meta name="browsermode" content="application"><!-- UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+    <title>华南城网_B2B电子商务平台</title>
+    <link rel="stylesheet" href="//res.csc86.com/f=v3/shopping_center/common/js/l/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="//res.csc86.com/f=v3/shopping_center/market/css/reset.css">
+    <link rel="stylesheet" href="//res.csc86.com/f=v3/shopping_center/market/css/common.css">
+    <script>//为加速js，置为内联
+    !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<style>
+    body,html{background-color: #f3f3f3}
+</style>
+<body>
+<!--搜索导航start-->
+<header class="sh_positon_f sh_left_0 sh_right_0  sh_top_0 sh_box-sizing_C sh_bg_color_1 box_shaow sh_width_max sh_margin_a sh_z-index_10">
+    <div class="sh_margin_a sh_width_max sh_pd_top15 sh_pd_bottom15">
+        <div class="sh_width_92 sh_margin_a sh_clear"  style="height: 0.8rem;">
+            <div class=" sh_width_2 sh_float_l" style="height: 100%">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/index_logo.png" alt="" class="sh_img_max index_logo" />
+            </div>
+            <div class="sh_width_10 sh_float_l sh_font_sz0 sh_border_radius_5 sh_bg_color_13 index_ser_prev" style="height:100%">
+                <div class="sh_width_2 sh_di_inblock sh_te_align_c sh_positon_r sh_font_color5 index_triangle sh_lingheight_100 sh_font_sz0 sh_pd_bottom14 sh_pd_top14">
+                    <span class="sh_lingheight_100 sh_font_sz32">商品</span>
+                    <div class="triangle-bottomright"></div>
+                </div>
+                <input type="text" value="" placeholder="请输入商品关键字" readonly="readonly" class=" sh_pd_left14 sh_box-sizing_C sh_width_10 sh_font_sz32 sh_font_color5 index_ser_bg" style="height: 100%"/>
+            </div>
+        </div>
+    </div>
+</header>
+<!--搜索导航end-->
+<section class=" sh_pd_top90 sh_margin_a sh_width_max">
+    <!--轮播区域start-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="//www.csc86.com/zt/2017/hotsellh5/" class="sh_font_sz0"><img src="//www.csc86.com/zt/wjjdsc/h5sy/img/chunjicaigou.jpg" alt="" class="sh_width_max"/></a></div>
+            <div class="swiper-slide"><a href="//www.csc86.com/zt/2017/xrzxh5/?winzoom=1" class="sh_font_sz0"><img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3chongli.jpg" alt="" class="sh_width_max"/></a></div>
+            <div class="swiper-slide"><a href="//www.csc86.com/zt/2017/wjfh/" class="sh_font_sz0"><img src="//www.csc86.com/zt/wjjdsc/h5sy/img/banner1.jpg" alt="" class="sh_width_max"/></a></div>
+            <div class="swiper-slide"><a href="//www.csc86.com/zt/wjjdsc/ddgjh5/" class="sh_font_sz0"><img src="/images/index_banner_4.jpg" alt="" class="sh_width_max"/></a></div>
+            <div class="swiper-slide"><a href="//www.csc86.com/zt/tuangou/yph5/" class="sh_font_sz0"><img src="//res.csc86.com/v3/shopping_center/market/demo/index_banner_3.jpg" alt="" class="sh_width_max"/></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--轮播区域end-->
+
+    <!--热销精选start-->
+    <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30 sh_pd_bottom30 ">
+        <div  class="sh_width_1 sh_float_l sh_font_sz0 sh_te_align_c">
+            <img src="//res.csc86.com/v3/shopping_center/market/demo/index_choose.png" alt="" class="index_choose"/>
+        </div>
+        <div  class=" sh_width_10 sh_float_l sh_lingheight_100 sh_font_sz32 sh_font_color4">精选热销</div>
+    </div>
+    <div class="sh_bg_color_1 sh_pd_bottom20 sh_pd_top20">
+        <div class="index_choose_container sh_width_92 sh_margin_a">
+
+            <div class="swiper-wrapper sh_box-sizing_C">
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5223134" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-01.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32  sh_pd_bottom5 sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            东成手电钻 J1Z-FF05-10A 正反可调速
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>128.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5222269" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-02.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_bottom5 sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            宝工 PM-396J 不锈钢无牙圆嘴钳
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>38.30</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5222275" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-03.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_bottom5 sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            日立角磨机 G10SS2 抛光机切割机
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>160.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5199096" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-04.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            铁锚 工业级150角向磨光机180角磨切割机230
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>199.04</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5199712" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-05.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            东成角磨机S1M-FF-100A
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>152.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5189160" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-06.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            KEYIDA环保锡线(含银3％)1.0
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>243.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5202463" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-07.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            易金30/70抗氧化有铅锡条
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>61.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5188987" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-08.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            易金环保低温锡膏Sn42/Bi58 500g
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>86.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5207080" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-09.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            镀蓝白锌GB845十字圆头盘头自攻螺钉ST2.9
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>19.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5205922" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-10.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            GB30外六角螺丝4.8级本色M4系列
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>30.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5207155" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-11.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            4级本色GB6170-86国标六角螺母M3-M45
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>7.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5208006" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-12.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            鼎城兴 1009D无尘布 超细纤维 防静电擦拭布
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>18.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide sh_bor_a sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5207950" class="sh_di_block sh_width_92 sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/0-13.jpg" alt="" class="sh_img_max index_swipe_img"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32    sh_pd_top10  sh_font_sz22 index_img_alter ">
+                            鼎城兴 ESD系列防静电镊子 高精密不锈钢镊子
+                        </div>
+                        <div class="sh_width_92 sh_margin_a sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <em>￥</em><em>6.00</em><em>起</em>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--精选热销end-->
+    <div class="sh_pr_hg30"></div><!--分割线-->
+    <!--电动工具start-->
+    <article class="sh_clear sh_box-sizing_C  sh_bor_top_w2 sh_bg_color_1">
+        <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30  sh_pd_bottom30 ">
+            <div  class="sh_width_5 sh_float_l  sh_lingheight_100 sh_font_sz0 sh_te_align_r sh_pd_right14">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/index_skin2.png" alt="" class="index_skin sh_v_middle"/>
+            </div>
+            <div  class=" sh_width_6 sh_float_l sh_lingheight_100 sh_font_sz32 sh_font_color16">电动工具</div>
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" > <!--电动工具第一排start-->
+            <div class="sh_clear  sh_width_92 sh_margin_a">
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5199888" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-11.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">大有/DEVON2213平板砂光机</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>229.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5200784" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-12.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32  sh_pd_top10  sh_font_sz22 index_img_alter ">DEVON大有 平板砂光机2313 家具打磨</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>599.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5199094" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-13.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">DEVON大有20V锂电充电电锤5401</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>139.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!--电动工具第一排end-->
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--电动工具第2排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5198713" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-21.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">铁锚工业级手枪钻铁220V小型家用电钻木多功能</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>132.38</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5199716" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-22.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">铁锚修边机木工电动雕刻机锣机电木铣DIY开槽切割机</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>185.71</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5199718" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-23.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">铁锚电动墙壁切割机无尘一次成型开槽机无死角混泥土</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>1219.04</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--电动工具第2排end-->
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--电动工具第3排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5197683" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-31.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">东成曲线锯M1Q-FF-85</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>358.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5194338" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-32.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">东成DCA 电磨头 S1J-FF02-25</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>172.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5199476" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/1-33.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">东成充电式马刀锯DCJF15(A型)</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>528.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--电动工具第3排end-->
+    </article> <!--电动工具end-->
+    <div class="sh_pr_hg30"></div> <!--分割线-->
+    <!--紧固件start-->
+    <article class="sh_clear sh_box-sizing_C  sh_bor_top_w2 sh_bg_color_1">
+        <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30  sh_pd_bottom30 ">
+            <div  class="sh_width_5 sh_float_l  sh_lingheight_100 sh_font_sz0 sh_te_align_r sh_pd_right14">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/index_skin2.png" alt="" class="index_skin sh_v_middle"/>
+            </div>
+            <div  class=" sh_width_6 sh_float_l sh_lingheight_100 sh_font_sz32 sh_font_color16">紧固件</div>
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" > <!--紧固件第一排start-->
+            <div class="sh_clear  sh_width_92 sh_margin_a">
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188757" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-11.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">低价平头内六角螺丝</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>21.82</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188768" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-12.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">低价杯头内六角螺丝</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.01</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5188288" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-13.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">12.9级高强度 内六角螺栓杯头圆柱头螺丝钉</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.01</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!--紧固件第一排end-->
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--紧固件第2排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188762" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-21.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">热销高强度不锈钢六角螺母</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>26.22</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5200432" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-22.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">304不锈钢螺母 A2-70螺丝帽M1.6-M30</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.03</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5188286" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-23.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">201不锈钢尼龙锁紧螺母/防松螺帽/防脱螺母</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.02</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--紧固件第2排end-->
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--紧固件第3排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188673" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-31.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">膨胀螺丝 不锈钢拉爆螺丝 六角头公制牙膨胀螺栓</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.60</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188563" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-32.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">十字沉头自攻螺丝 316不锈钢M5沉头十字尖尾螺丝</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.10</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5188685" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/2-33.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">十字自攻圆头螺钉 PA螺丝 环镍</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.01</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--紧固件第3排end-->
+    </article> <!--紧固件end-->
+    <div class="sh_pr_hg30"></div> <!--分割线-->
+    <!--电子辅料start-->
+    <article class="sh_clear sh_box-sizing_C  sh_bor_top_w2 sh_bg_color_1">
+        <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30  sh_pd_bottom30 ">
+            <div  class="sh_width_5 sh_float_l  sh_lingheight_100 sh_font_sz0 sh_te_align_r sh_pd_right14">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/index_skin2.png" alt="" class="index_skin sh_v_middle"/>
+            </div>
+            <div  class=" sh_width_6 sh_float_l sh_lingheight_100 sh_font_sz32 sh_font_color16">电子辅料</div>
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" > <!--电子辅料第一排start-->
+            <div class="sh_clear  sh_width_92 sh_margin_a">
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5199441" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-11.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">嘉鹏泰40/60有铅锡线1.0 800g</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>55.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5207802" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-12.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">嘉鹏泰环保锡线1.2 800g</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>118.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5197616" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-13.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">兴鸿泰环保无铅锡线1.2 1000g</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>146.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!--电子辅料第一排end-->
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--电子辅料第2排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188800" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-21.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">兴鸿泰63/37有铅锡条</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>93.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5189166" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-22.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">KEYIDA环保锡条 1000g</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>145.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5202469" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-23.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">易金55/45抗氧化有铅锡条</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>89.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--电子辅料第2排end-->
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--电子辅料第3排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5189141" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-31.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">KEYIDA环保锡膏(含银1％)</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>113.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5188861" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-32.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">华锡环保贴片锡膏(含银0.3%)</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>121.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5189024" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/3-33.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">腾飞盛环保锡膏(含银0.3%) 500g</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>124.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--电子辅料第3排end-->
+    </article> <!--电子辅料end-->
+    <div class="sh_pr_hg30"></div> <!--分割线-->
+    <!--研磨劳保start-->
+    <article class="sh_clear sh_box-sizing_C  sh_bor_top_w2 sh_bg_color_1">
+        <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30  sh_pd_bottom30 ">
+            <div  class="sh_width_5 sh_float_l  sh_lingheight_100 sh_font_sz0 sh_te_align_r sh_pd_right14">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/index_skin2.png" alt="" class="index_skin sh_v_middle"/>
+            </div>
+            <div  class=" sh_width_6 sh_float_l sh_lingheight_100 sh_font_sz32 sh_font_color16">研磨劳保</div>
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" > <!--研磨劳保第一排start-->
+            <div class="sh_clear  sh_width_92 sh_margin_a">
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5190274" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-11.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">3M8577活性炭防毒口罩 防尘防甲醛防雾</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>24.20</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5192437" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-12.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">冠桦 一次性活性炭口罩 四层防护防雾霾口罩G206</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>11.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C">
+                    <a href="/search/product_detail.ftl?productId=5192858" class="sh_di_block sh_width_92  sh_margin_a">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-13.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">华特口罩2021一次性活性炭口罩 防尘防臭防尾气</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>17.60</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!--研磨劳保第一排end-->
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--研磨劳保第2排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5201202" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-21.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">600g白色尼龙手套耐磨防滑劳保手套 工业专用手套</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>0.83</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5214827" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-22.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">DUYILCOTS怡隆一次性进口无尘无粉白色手指套</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>24.00</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5188147" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-23.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">SATA世达工具经济型全皮手套FS0105</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>24.50</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--研磨劳保第2排end-->
+        </div>
+        <div class="sh_clear sh_bor_bottom_1 index_sh_img" >
+            <div class="sh_clear  sh_width_92 sh_margin_a index_sh_img">   <!--研磨劳保第3排start-->
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5201384" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-31.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">锂电池绿色终止胶带100米 PET绝缘耐高温胶纸</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>7.22</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C sh_bor_right_3">
+                    <a href="/search/product_detail.ftl?productId=5201403" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-32.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">金手指胶带茶色耐高温屏蔽PI膜聚醯亚胺胶带绝缘胶带</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>2.75</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sh_float_l sh_width_4 sh_box-sizing_C ">
+                    <a href="/search/product_detail.ftl?productId=5202372" class="sh_di_block sh_width_92  sh_margin_a sh_pd_top20">
+                        <img src="//www.csc86.com/zt/wjjdsc/h5sy/img/4-33.jpg" alt="" class="sh_img_max"/>
+                        <div class=" sh_width_92 sh_margin_a sh_font_color5 sh_box-sizing_C li-ht32   sh_pd_top10  sh_font_sz22 index_img_alter ">PET彩色玛拉胶带 耐高温单面胶 环保阻燃彩色胶带</div>
+                        <div class="sh_font_color2  sh_box-sizing_C sh_lingheight_100 sh_pd_bottom20 sh_pd_top20  sh_font_sz22">
+                            <div class="sh_width_92 sh_margin_a"><em>￥</em><em>2.55</em><em>起</em></div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--研磨劳保第3排end-->
+    </article> <!--研磨劳保end-->
+    <div class="sh_pr_hg30"></div> <!--分割线-->
+
+    <article class="sh_clear sh_box-sizing_C "><!--尾部触屏start-->
+        <img src="/images/index-new.jpg" alt="" class="sh_width_max sh_margin_a block"/>
+    </article>
+    <div class="sh_pr_hg30"></div><!--分割线-->
+</section>
+
+
+
+
+<div class="sh_pr_hg100"></div>
+<!--底部导航start-->
+<footer class="sh_positon_f sh_left_0 sh_right_0 sh_bottom_0   sh_bg_color_1 box_shaow sh_z-index_10">
+    <div class=" sh_clear sh_margin_a sh_width_max sh_pd_top20 sh_pd_bottom20">
+        <div class="sh_width_4 sh_float_l sh_te_align_c sh_font_sz0 sh_lingheight_100 index_lead">
+            <a href="//m.develop.csc86.com" class="sh_font_sz0"><img src="//res.csc86.com/v3/shopping_center/market/demo/index_fo_1.png" alt="" class="index_fo"/></a>
+        </div>
+        <div class="sh_width_4 sh_float_l sh_te_align_c sh_font_sz0 sh_lingheight_100 index_sh_cart sh_positon_r pro_sh_de_scr">
+            <img src="//res.csc86.com/v3/shopping_center/market/demo/index_fo_2.png" alt="" class="index_fo"/>
+            <div class="sh_cart_index sh_font_sz20 sh_positon_a sh_font_color8  ">
+                <span class="pro_de_num_s"></span><em class="pro_de_add_s" style="display:none">+</em>
+            </div>
+        </div>
+        <div class="sh_width_4 sh_float_l sh_te_align_c sh_font_sz0 sh_lingheight_100 index_my_own">
+            <a href="//res.csc86.com/v3/shopping_center/market/html/p_center.html" class="sh_font_sz0"><img src="//res.csc86.com/v3/shopping_center/market/demo/index_fo_3.png" alt="" class="index_fo"/></a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="//res.csc86.com/f=v3/shopping_center/common/seajs/sea.js,v3/shopping_center/common/seajs/config.js,v3/shopping_center/common/js/l/jq/jquery-3.0.0.min.js"></script>
+<script src="//res.csc86.com/f=js/m/statistics.js?"></script>
+<script>
+    seajs.use('//res.csc86.com/v3/shopping_center/market/js/src/index.js');
+</script>
+</html>

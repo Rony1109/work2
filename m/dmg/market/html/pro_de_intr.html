@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+    <meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+    <meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+    <meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+    <meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+    <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+    <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+    <meta name="browsermode" content="application"><!-- UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+    <title>商品详情名称</title>
+    <link rel="stylesheet" href="../../common/js/l/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="//res.csc86.com/f=v3/dmg/market/css/reset.css">
+    <link rel="stylesheet" href="//res.csc86.com/f=v3/dmg/market/css/common.css">
+    <script>//为加速js，置为内联
+    !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+    <style>
+        body,html{background-color: #fff}
+    </style>
+</head>
+<body>
+<!--导航start-->
+<div class="sh_positon_f sh_left_0 sh_right_0 sh_top_0  sh_z-index_10  sh_box-sizing_C  sh_outline sh_bg_color_1">
+    <div class="sh_margin_a sh_width_max ">
+        <div class="sh_width_2 sh_float_l sh_te_align_c sh_pr_hg90  sh_font_sz0 sh_lingheight_90 ">
+            <a href="javascript:history.go(-1);" class="sh_font_sz0">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrHead_left_a.png" alt="" class="sh_v_middle pro_intrHead_left_a sh_bor_right_3 sh_pd_right36 sh_pd_bottom10 sh_pd_top10">
+            </a>
+        </div>
+        <div class="sh_width_8 sh_float_l sh_te_align_c sh_font_sz34  sh_font_color6 sh_lingheight_100 sh_pd_bottom28 sh_pd_top28  sh_ellipsis">DIN912螺栓/合金钢内六角螺钉M10*1*20	</div>
+        <div class="sh_width_2 sh_float_l sh_te_align_c sh_font_sz0">
+            <a href="//res.csc86.com/v3/dmg/market/html/p_center.html" class="sh_pd_top28 sh_di_block">
+                <img src="//res.csc86.com/v3/dmg/market/demo/user_i.png" class="addr_list">
+            </a>
+        </div>
+    </div>
+</div>
+<!--导航end-->
+<div class="sh_clear sh_bg_color_1 sh_pd_top90 ">
+    <!--轮播区域start-->
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active"><img src="http://img.csc86.com/product/2016/07/14/thumbs/201607147134920_t4.jpeg" alt="" class="sh_img_max"></div>
+            <div class="swiper-slide swiper-slide-next"><img src="http://img.csc86.com/product/2016/07/14/thumbs/201607148073951_t4.jpeg" alt="" class="sh_img_max"></div>
+            <div class="swiper-slide"><img src="http://img.csc86.com/product/2016/07/14/thumbs/201607144366945_t4.jpeg" alt="" class="sh_img_max"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+    </div>
+    <!--轮播区域end-->
+
+    <div class="sh_clear sh_box-sizing_C   sh_bor_bottom_1 sh_pd_top34 sh_pd_bottom34 sh_font_sz32 ">
+        <span class="sh_width_92 sh_di_block sh_margin_a sh_wor_space sh_lingheight_1_5 sh_font_color5">DIN912螺栓/合金钢内六角螺钉M10*1*20</span>
+    </div>
+    <!--产品名称介绍区域end-->
+
+    <div class="sh_clear sh_bor_bottom_1">
+        <div class="sh_box-sizing_C sh_margin_a sh_width_92 sh_pd_top30">
+            <div class=" sh_width_4 sh_float_l sh_pd_bottom30 _formatch_num">
+                <div class="sh_bor_left_1 sh_pd_left14">
+                    <div class=" sh_pd_bottom10 sh_font_color13 sh_font_sz24 sh_ellipsis">
+                        <span> &gt;=  1</span><span>件</span>
+                    </div>
+                    <div class="  sh_font_color2 sh_font_sz28  sh_ellipsis  ">
+                        <span class="">￥</span>
+                        <span> 1.32 </span>
+                        <span>起</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--第一行-->
+        </div>
+    </div>
+    <!--价格区间区域end-->
+
+    <div class="sh_clear sh_bor_bottom_1">
+        <div class=" sh_box-sizing_C  sh_width_92 sh_margin_a  sh_font_color4  sh_font_sz28">
+            <div class="sh_width_6   sh_float_l sh_pd_bottom30   sh_pd_top30 sh_ellipsis sh_box-sizing_C">
+                <span>供货量：</span>
+                <span data-aid="Infinity" class="pro_de_intrN">库存充足</span>
+            </div>
+
+            <div class=" sh_width_6  sh_float_l sh_pd_bottom30  sh_pd_top30 sh_ellipsis sh_box-sizing_C">
+                <span>快递：</span>
+				<span>商品包邮运费到付</span>
+            </div>
+        </div>
+    </div>
+    <!--快递区域end-->
+
+    <div class="sh_clear sh_bor_bottom_1 ">
+        <div class=" sh_box-sizing_C  sh_width_92 sh_margin_a  sh_font_color4 sh_pd_top30 sh_font_sz28 ">
+            <div class="sh_width_4 sh_ellipsis sh_pd_bottom30  sh_float_l sh_lingheight_100 "><img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrSend_labe.png" alt="" class="pro_intrSend_labe sh_v_middle sh_pd_right14">现货</div>
+            <div class=" sh_width_5 sh_ellipsis sh_pd_bottom30  sh_float_l sh_lingheight_100 "><img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrSend_labe.png" alt="" class="pro_intrSend_labe sh_v_middle sh_pd_right14">48小时发货</div>
+            <div class=" sh_width_3 sh_ellipsis sh_pd_bottom30  sh_float_l sh_lingheight_100 "><img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrSend_labe.png" alt="" class="pro_intrSend_labe sh_v_middle sh_pd_right14">规格数量</div>
+        </div>
+    </div>
+    <!--发货区域end-->
+
+    <div class="sh_clear   line_hg1_5 sh_box-sizing_C sh_bor_bottom_1 sh_font_color6">
+        <div class="sh_clear sh_width_92 sh_margin_a sh_pd_top30 sh_pd_bottom30 ">
+            <div class=" sh_width_10 sh_float_l sh_lingheight_100 sh_font_sz28 ">请选择规格数量</div>
+            <div class="sh_width_2 sh_float_l sh_te_align_r  sh_lingheight_100 sh_font_sz0 peo_de_size pro_de_intrSi">
+                <img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrSize_choose.png" alt="" class="pro_intrSize_choose sh_v_middle">
+            </div>
+        </div>
+    </div>
+    <!--规格区域end-->
+    <div class="sh_separate20 sh_bg_color_3"></div>
+    <!-- 店铺信息 start -->
+    <div class="sh_pd_top30 sh_pd_right20 sh_pd_bottom30 sh_font_sz0 sh_clear">
+        <div class="sh_width_18 sh_float_l pro_de_shoplogo"><a href=""><img class="sh_img_max sh_bor_a_2" src="../demo/default_logo.jpg"></a></div>
+        <div class="sh_width_82 sh_float_l sh_clear">
+            <div class="sh_pd_left8">
+                <a href="">
+                    <div class="sh_font_sz26 sh_font_color23 sh_lingheight_100 main_title">宁津利丰铸型尼龙轴套滑轮有限公司</div>
+                    <div class="sh_font_sz20 sh_font_color13">
+                        <span class="sh_di_block sh_lingheight_100 sh_pd_top5">
+                            <i><img class="pro_de_icon sh_v_middle" src="../demo/campany_icon.png"></i>
+                            <em class="sh_v_middle">企业实名认证</em>
+                        </span>
+                        <span class="sh_di_block sh_lingheight_100 sh_pd_top5">
+                            <i><img class="pro_de_icon sh_v_middle" src="../demo/concern.png"></i>
+                            <em class="sh_v_middle">88人关注</em>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="sh_pd_top30 sh_pd_bottom30 sh_font_sz0 sh_bor_top_c sh_bor_bottom_c">
+        <ul class="sh_font_sz30 sh_clear">
+            <li class="sh_width_6 sh_di_block sh_te_align_c sh_float_l sh_bor_right_2">
+                <i class=""><img class="sh_v_middle pro_de_icon28" src="//res.csc86.com/v3/shopping_center/market/demo/pro_shoplogo.png"></i>
+                <a class="sh_font_color5" href="">进入店铺</a>
+            </li>
+            <li class="sh_width_48 sh_di_block sh_float_l sh_te_align_c">
+                <i class=""><img class="sh_v_middle pro_de_icon28" src="//res.csc86.com/v3/shopping_center/market/demo/pro_shoptel.png"></i>
+                <a class="sh_font_color5" href="tel:13838383838">联系商家</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 店铺信息 end -->
+    <div class="sh_separate20 sh_bg_color_3"></div>
+    <!--产品详细信息start-->
+    <ul class="sh_tab_box  sh_clear sh_te_align_c sh_font_sz32">
+        <li class="sh_float_l sh_width_6  sh_pd_top32 sh_pd_bottom32 sh_active sh_lingheight_100 sh_bor_top_w4">详细信息</li>
+        <li class="sh_float_l sh_width_6  sh_pd_top32 sh_pd_bottom32 sh_lingheight_100 sh_bor_top_w4">售后说明</li>
+    </ul>
+    <div class=" sh_tab  peo_de_intrPage sh-show sh_font_sz24"><!--产品详细信息start-->
+        <div class="  sh_width_92 sh_margin_a   sh_pd_top30  sh_pd_bottom14">产品名称：<span> DIN912螺栓/合金钢内六角螺钉M10*1*20  </span></div>
+        <div class="  sh_width_92 sh_margin_a   sh_pd_bottom14 ">产品编号：<span></span></div>
+        <div class="  sh_width_92 sh_margin_a   sh_pd_bottom30 ">品牌/生产商：<span> 佰瑞特</span></div>
+        <div class="  sh_width_92 sh_margin_a   sh_pd_bottom30 "><span> <p><img src="http://img.csc86.com/57875827e4b0b15482370eb3" _src="http://img.csc86.com/57875827e4b0b15482370eb3"></p><p><br></p><p><br></p></span></div>
+    </div>
+    <!--产品详细信息end-->
+    <div class="sh_tab peo_de_intrPage sh_clear"><!--售后说明start-->
+        <div class="  sh_width_92 sh_margin_a sh_font_sz24  sh_pd_top30 sh_box-sizing_C ">
+            <div class="sh_width_2 sh_float_l">退货：</div>
+            <div class="sh_width_10 sh_float_l">
+                确认收货后 <em class="sh_font_color2 ">15</em><span class="sh_font_color2">日</span>内可与卖家协商退货，可能需要扣除部分货款作为卖家的损失
+            </div>
+        </div>
+        <div class="  sh_width_92 sh_margin_a sh_font_sz24  sh_box-sizing_C  ">
+            <div class="sh_width_2 sh_float_l">换货：</div>
+            <div class="sh_width_10 sh_float_l">
+                确认收货后<em class="sh_font_color2 ">15</em><span class="sh_font_color2">日</span>内可与卖家协商换货，换货过程中可能会产生一些额外费用
+            </div>
+        </div>
+        <div class="  sh_width_92 sh_margin_a sh_font_sz24  sh_box-sizing_C  ">
+            <div class="sh_width_2 sh_float_l">质保：</div>
+            <div class="sh_width_10 sh_float_l">
+                质保期限<em class="sh_font_color2 ">3</em><span class="sh_font_color2">个月</span>如有任何售后问题请尽量在质保期内联系卖家协商处理，超过质保期卖家不保证受理，请知悉！
+            </div>
+        </div>
+
+    </div>
+    <!--售后说明end-->
+    <div class="backToTop" style="display: none;" id="backToTop"><img src="//res.csc86.com/v3/shopping_center/market/demo/pro_intrBackTop.png" alt="返回顶部"></div><!--置顶按钮-->
+    <div class="sh_pr_hg30"></div>
+    <div class="sh_pr_hg100"></div>
+    <!--底部导航start-->
+    <div class="sh_positon_f sh_left_0 sh_right_0 sh_bottom_0 sh_width_12 sh_z-index_10 sh_bg_color_1 ">
+        <div class=" sh_margin_a sh_width_max">
+            <div class="sh_width_2 sh_float_l sh_te_align_c sh_font_sz0 sh_box-sizing_C">
+                <img src="http://res.csc86.com/v3/shopping_center/market/demo/pro_intrStore_f.png" alt="" class="pro_intrStore_f sh_v_middle pro_intrStore_ch">
+            </div>
+            <div class="sh_width_2 sh_float_l sh_te_align_c sh_positon_r sh_font_sz0  sh_box-sizing_C  pro_sh_de_scr sh_bor_left_1">
+                <img src="http://res.csc86.com/v3/shopping_center/market/demo/pro_intrStore_f2.png" alt="" class="pro_intrStore_f sh_v_middle pro_intrStore_ch">
+                <div class="sh_cart sh_font_sz20 sh_positon_a sh_font_color8 sh_bg_color_5  sh_pd_right8 sh_pd_left8 ">
+                    <span class="pro_de_num_c"></span><em class="pro_de_add_c" style="display:none">+</em>
+                </div>
+            </div>
+            <div class="sh_width_4 sh_float_l sh_te_align_c sh_font_sz34 sh_pd_bottom32 sh_pd_top32 sh_fo_bg3  sh_lingheight_100 sh_font_color8 pro_de_intrSc sh_ellipsis">
+                加入购物车
+            </div>
+            <div class="sh_width_4 sh_float_l sh_te_align_c sh_font_sz34 sh_pd_bottom32 sh_pd_top32 sh_fo_bg2 sh_font_color8 sh_lingheight_100 sh_ellipsis">
+                立即购买
+            </div>
+        </div>
+    </div>
+    <!--规格选择页面start抽屉-->
+    <div class="sh_clear  pro_de_siP sh_positon_f sh_left_0 sh_right_0 sh_z-index_999">
+        <div class="sh_clear sh_width_max sh_margin_a">
+            <div class="sh_clear sh_box-sizing_C   sh_bor_bottom_1 sh_bor_top_1  sh_pd_bottom34 sh_pd_top34 sh_font_sz32 sh_font_color5  sh_bg_color_1">
+                <div class="sh_clear sh_width_92 sh_margin_a sh_positon_r">
+                    <div class="sh_clear sh_width_8 sh_margin_a sh_margin_r">
+                        <span class=" sh_float_l sh_width_11 sh_di_block  sh_wor_space sh_lingheight_1_5 ">DIN912螺栓/合金钢内六角螺钉M10*1*20</span>
+                        <div class="sh_float_l sh_width_1 sh_wor_space sh_lingheight_1_5 sh_te_align_r">
+                            <img src="//res.csc86.com/v3/shopping_center/market/demo/pro_de_wr.png" alt="" class="pro_de_wr">
+                        </div>
+                    </div>
+                    <div class="sh_font_sz0 sh_lingheight_100 sh_positon_a sh_left_0 sh_bottom_0 pro_de_intrImgAlter"><img src="http://img.csc86.com/product/2016/07/14/thumbs/201607147134920_t4.jpeg" alt="" class="goo_size_banner"></div>
+                </div>
+            </div>
+            <!--产品名称介绍区域end-->
+            <div class="sh_clear sh_bor_bottom_1 sh_bg_color_1 sh_font_color3 sh_font_sz24 box_shaow">
+                <div class="sh_clear sh_box-sizing_C sh_margin_a sh_width_92 sh_pd_top30 pro_de_sizep pro_de_intr_spa">
+                    <div class=" sh_width_4 sh_float_l sh_pd_bottom30 _formatch_num">
+                        <div class="sh_bor_left_1 sh_pd_left14">
+                            <div class=" sh_pd_bottom10 sh_font_color3 sh_font_sz24 sh_ellipsis">
+                                <span>&gt;=<em class="pro_de_num">1</em></span><span>件</span>
+                            </div>
+                            <div class=" sh_font_color2 sh_font_sz28  sh_ellipsis  ">
+                                <span class="">￥</span>
+                                <span>1.32</span>
+                                <span>起</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--价格区间区域end-->
+
+            <div class="pro_de_intrOverflow">
+                <div id="sys_spec_color" class="sh_clear  sh_pd_bottom30 sh_pd_top30 sh_bor_bottom_1 sys_item_specpara sh_bg_color_1">
+                    <div class=" sh_clear sh_width_92 sh_margin_a sh_font_sz28 sh_font_color6 sh_lingheight_100 ">颜色/款式</div>
+                    <ul class="sys_spec_text sh_width_92 sh_margin_a  sh_font_sz24 sh_font_color6">
+                        <li data-aid="519699" class="sh_float_l sh_margin_t_20 "><a href="javascript:;" title="M10*1*20" class="sh_font_color6 sh_pd_left8 sh_pd_right8 sh_margin_r_1 sh_di_inblock sh_pd_bottom13 sh_pd_top13 sh_lingheight_100 sh_border_radius_5 sh_te_align_c">M10*1*20</a></li>
+                        <li data-aid="519699" class="sh_float_l sh_margin_t_20"><a href="javascript:;" title="M10*1*20" class="sh_font_color6 sh_pd_left8 sh_pd_right8 sh_margin_r_1 sh_di_inblock sh_pd_bottom13 sh_pd_top13 sh_lingheight_100 sh_border_radius_5 sh_te_align_c">M10*1*20</a></li>
+                    </ul>
+                </div>
+
+                <!--颜色和款式end-->
+                <div id="sys_spec_size" class="sh_clear  sh_pd_bottom30 sh_pd_top30 sh_bor_bottom_1 sys_item_specpara sh_bg_color_1">
+                    <div class=" sh_clear sh_width_92 sh_margin_a sh_font_sz28 sh_font_color6 sh_lingheight_100 ">尺码/规格</div>
+                    <ul class="sys_spec_text sh_width_92 sh_margin_a  sh_font_sz24 sh_font_color6">
+                        <li data-aid="519699" class="sh_float_l sh_margin_t_20 "><a href="javascript:;" title="M10*1*20" class="sh_font_color6 sh_di_inblock sh_pd_bottom13 sh_pd_top13 sh_pd_left8 sh_pd_right8 sh_margin_r_1 sh_lingheight_100 sh_border_radius_5 sh_te_align_c">M10*1*20M10*1*20M10*1*20</a></li>
+                        <li data-aid="519699" class="sh_float_l sh_margin_t_20"><a href="javascript:;" title="M10*1*20" class="sh_font_color6 sh_di_inblock sh_pd_bottom13 sh_pd_top13 sh_pd_left8 sh_pd_right8 sh_margin_r_1 sh_lingheight_100 sh_border_radius_5 sh_te_align_c">M10*1*20</a></li>
+                    </ul>
+                </div>
+
+                <!--尺码和规格end-->
+                <div id="sys_spec_number" class="sh_clear  sh_pd_bottom30 sh_pd_top30 sh_bor_bottom_1 sh_bg_color_1 sh_clear">
+                    <div class=" sh_width_6 sh_float_l sh_font_sz28 sh_font_color6 sh_lingheight_100 ">
+                        <span class="sh_di_block sh_pd_left30 sh_pd_top14">购买数量</span>
+                    </div>
+                    <div class="sh_pd_right30 sh_float_r sh_font_sz24 sh_font_color6">
+                        <div class="sh_float_l sh_width_260 sh_pr_hg50 sh_bor_a_2 sh_border_radius_5 sh_te_align_c">
+                            <div class="sh_width_18 sh_float_l sh_pr_hg50  sh_lingheight_48 good_size_min  sh_bor_right_2"></div>
+                            <input type="number" value="0" disabled="" class="text_box sh_width_61 sh_font_sz24 sh_te_align_c sh_float_l  sh_pr_hg50 sh_v_middle">
+                            <div class="sh_width_18 sh_float_l sh_pr_hg50 sh_lingheight_48 good_size_plus  sh_bor_left_2"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--购买数量end-->
+                <div class="sh_clear sh_width_12 sh_pd_bottom30 sh_pd_top30 sh_bor_bottom_1 sh_bg_color_1">
+                    <div class="sh_width_92 sh_margin_a sh_font_sz32 sh_font_color6 sh_lingheight_100 " data-aid="0">总价 <em class="sh_font_color2">￥</em><span id="sys_spec_totalprice" class="sh_font_color2 total_price">0.00</span></div>
+                </div>
+                <!--购买总价end-->
+            </div>
+            <div class=" sh_margin_a sh_width_max sh_te_align_c ">
+                <div id="sys_spec_ok" class=" disabled sh_font_sz34 sh_pd_bottom33 sh_pd_top34 sh_fo_bg2 sh_font_color8 sh_lingheight_100 pro_de_intr_c" data-aid="4894676">
+                    确定
+                </div>
+            </div>
+            <!--底部导航end-->
+        </div>
+    </div>
+    <!--规格选择页面end-->
+
+
+    <div class="popup_cover"></div>
+    <!--弹窗信息框-->
+    <div class="sh_positon_f sh_left_0 sh_right_0  sh_width_12 sh_z-index_10" style="bottom:45%;">
+        <div class=" sh_margin_a sh_width_max sh_te_align_c">
+		<span class="sh_di_inblock sh_pd_left30 sh_pd_right30 sh_margin_a sh_font_sz28 sh_font_color8 sh_border_radius_5 login_reg_acc_tip sh_pd_bottom20 sh_pd_top20 sh_box-sizing_C" id="msg-content" style="background-color: rgba(0, 0, 0, 0.37);display: none">
+
+		</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="//res.csc86.com/f=v3/dmg/common/seajs/sea.js,v3/dmg/common/seajs/config.js,v3/dmg/common/js/l/jq/jquery-3.0.0.min.js"></script>
+<script>
+//    seajs.use(['/v2/shopping_center/market/js/src/peo_de_intr', '/v2/shopping_center/market/js/src/shangpin'], function (control, ShangPin) {
+    seajs.use(['../js/src/peo_de_intr', '../js/src/shangpin'], function (control, ShangPin) {
+        var shangPin = new ShangPin(//页面初始化函数
+        '4894676', // productId产品id
+        'c9967876-2e0d-4697-bda7-cb9f0428a55e',//卖家id
+        1, // 报价方式
+        ['size','color'], // 产品属性列表，如果没有颜色或者规格，即传入空数组
+        Infinity,  // 库存量无上限，设置为无穷大
+        '深圳市佰瑞特紧固件有限公司',
+        'http://img.csc86.com/product/2016/07/14/thumbs/201607147134920_t4.jpeg', //图片路径
+        'DIN912螺栓/合金钢内六角螺钉M10*1*20' //产品名称
+        );
+//        debugger;
+        shangPin.setPriceUrl({url: "//m.csc86.com/search/inventoryAndPrice.do"});
+        shangPin.setPriceList('[[1,1.32]]');
+        control.size_choose(shangPin);
+    });
+</script>
+<!--<script src="//res.csc86.com/f=v3/shopping_center/common/seajs/sea.js,v3/shopping_center/common/seajs/config.js,v3/shopping_center/common/js/l/jq/jquery-3.0.0.min.js"></script>-->
+<!--<script>-->
+    <!--seajs.use(['//res.csc86.com/f=v3/shopping_center/market/js/src/peo_de_intr', '//res.csc86.com/f=v3/shopping_center/market/js/src/shangpin'], function (control, ShangPin) {-->
+
+        <!--var shangPin = new ShangPin(//页面初始化函数-->
+                <!--'4894676', // productId产品id-->
+                <!--'c9967876-2e0d-4697-bda7-cb9f0428a55e',//卖家id-->
+                <!--0, // 报价方式-->
+                <!--['size','color'], // 产品属性列表，如果没有颜色或者规格，即传入空数组-->
+                <!--Infinity,  // 库存量无上限，设置为无穷大-->
+                <!--'深圳市佰瑞特紧固件有限公司',-->
+                <!--'http://img.csc86.com/product/2016/07/14/thumbs/201607147134920_t4.jpeg', //图片路径-->
+                <!--'DIN912螺栓/合金钢内六角螺钉M10*1*20' //产品名称-->
+        <!--);-->
+
+        <!--shangPin.setPriceUrl({url: "//m.csc86.com/search/inventoryAndPrice.do"});-->
+        <!--shangPin.setPriceList('[[1,1.32]]');-->
+        <!--control.size_choose(shangPin);-->
+    <!--});-->
+<!--</script>-->
+<script src="//res.csc86.com/f=js/m/statistics.js?"></script>
+</html>
