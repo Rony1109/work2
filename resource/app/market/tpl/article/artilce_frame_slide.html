@@ -1,0 +1,12 @@
+<div class="slidebox">
+    <img src="images/bannerEmpty.jpg" class="slidebg" alt="">
+    <div class="clearfix slidecontrol chimg channel-focus1">    
+       <div class="swiper-wrapper">
+        {{each dataarray as value index}}
+          <div class="swiper-slide"><a data-href="article-detail.html?arcid={{value.id}}" ><img src="{{value.thumb}}" alt="{{value.title}}"></a><p class="chtitle">{{value.title}}</p></div>
+        {{/each}}
+       </div>
+      <div class="channel-pagin channel-pagin1"></div>        
+    </div>
+</div>
+

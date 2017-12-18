@@ -1,0 +1,364 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('/v2/m/init/css/style.css'); 
+@import url('/v2/m/newtopnav/css/style.css'); 
+@import url('/v2/m/newsearch/css/style.css'); 
+@import url('/v2/m/bot-rightcopy/css/style.css'); 
+
+
+/* 全局样式 */
+/*\5FAE\8F6F\96C5\9ED1 微软雅黑  '\5b8b\4f53'宋体*/
+body{font:12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',sans-serif,arial;}   /*采用自体编码方便计算机读取*/
+.g-o{width:1190px;}
+.inlineb{
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+}
+a {
+    outline:none;
+    -webkit-tap-highlight-color:rgba(255, 0, 0, 0);
+    blr:expression(this.onFocus=this.blur());
+}
+a:focus {
+    outline:0;
+}
+.sm_warp{background:#fbf2e9;overflow:hidden}
+i{font-style:normal}
+.g_logo h1 a{overflow:hidden}
+/*  修复search 二级logo 微生活*/
+.hoverMnu-m{width:auto;z-index:100}
+.g_logo{width:550px;}
+.g_logo h1,.g_logo h2,.g_logo span{float:left} 
+.g_logo h2,.g_logo h2 a {
+	width:84px;
+	height:24px;
+	margin-top:25px;
+}
+.g_logo h2 a{
+	display:block;
+	background:url(img/sflife.png) no-repeat
+}
+.g_logo span{
+	height:20px;
+	width:1px;
+	background:#d2d2d2;
+	overflow:hidden;
+	margin:53px 15px 0 15px
+}
+
+.top_bar,.g_search,.footer,.frie-links,.link{font-family:arial,simsun}
+
+/*返回头部重新*/
+.g-back-btn{background-color:#e94544 !important;margin-bottom:5px;}
+.g-back-btn:hover{background-color:#ed615f !important;}
+
+/*********首页主要菜单导航*********/
+.g_nav{
+	height:40px;
+	width:100%;
+	background:#e94545;
+	min-width:1190px;
+	_overflow:hidden;
+}
+.fixNav{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:300;
+}
+.main_nav{
+	float:left;
+}
+.main_nav li{
+	float:left;
+	line-height:40px;
+}
+.main_nav li a{
+	padding:0 25px;
+	display:block;
+	color:#fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+.main_nav li a:hover,.main_nav li a:active{
+	text-decoration: none;
+	background:#d21818;
+}
+.cur_nav{background:#d21818;}
+.jion_bus{
+	width:180px;
+	height:50px;
+	float:right;
+	margin:-10px 0 0 0;
+}
+.jion_bus img{
+	display:block;
+	width:180px;
+	height:50px;
+}
+.g_c_nav{
+	height:30px;
+	border:1px solid #ebebeb;
+}
+.g_c_n{overflow:hidden;}
+.g_c_n li{
+	float:left;
+	line-height:29px;
+}
+.g_c_n li a{
+	color:#444;
+	padding:0 10px;
+}
+.g_c_n li a:hover,.g_c_n li a:active{color:#f67301;}
+.hot_tit{
+	color:#888;
+	margin-left: 0;
+}
+.icon{
+	background:url(../image/group_icon.png) no-repeat;
+}
+.hot_icon{
+	width:16px;
+	height:12px;
+	background-position: -353px 0;
+	vertical-align: text-top;
+	*margin-left: 2px
+}
+
+
+/* 幻灯片样式 */
+.slide{
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	margin-top:10px;
+}
+.slide li{
+	display:none;
+}
+.slide_icon{background:url(img/slide_icon.png) no-repeat}
+.prev,.next{
+	position:absolute;
+	width:27px;
+	height:53px;
+	padding:15px 0 0 9px;
+	background:#000;
+	filter:alpha(opacity=50);
+	opacity:.5;
+	top:116px;
+	display:none;
+}
+.prev{left:0}
+.next{right:0}
+.prev:hover,.next:hover{
+	filter:alpha(opacity=70);
+	opacity:.7;
+}
+.prev i,.next i{
+	width:19px;
+	height:38px;
+}
+.prev i{
+	background-position:-21px 0
+}
+.apiont{
+	position:absolute;
+	width:100%;
+	bottom:15px;
+	text-align:center;
+}
+.apiont i{
+	width:13px;
+	height:12px;
+	background-position:-42px 0;
+	margin:0 4px;
+}
+.apiont i:hover{
+	background-position:-42px -26px		
+}
+.apiont .cur_i{
+	background-position:-42px -26px	
+}
+.slide li.cur_slide_warp{display:block;}
+/***********当前页面切换瀑布流菜单***********/
+.sm_mu,.sm_menu li,.sm_menu li a{
+	height:135px;
+	overflow:hidden
+}
+.sm_menu li{
+	float:left;
+}
+.sm_menu li a{display:block;}
+.sm_menu_all{
+	background:#e94545;
+	width:50px;
+}
+.icon_sm{
+	display:block;
+	width:22px;
+	height:25px;
+	background:url(img/all_icon.png) no-repeat;
+	margin:30px 0 8px 4px;
+}
+.sm_menu_all a{
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	padding:0 10px;
+	text-align:center
+}
+.sm_menu_all a:hover,.sm_menu_all a:active,.sm_menu_li a:hover,.sm_menu_li:active{
+	text-decoration:none;
+	filter:alpha(opacity=70);
+	opacity:.7
+}
+.sm_menu_li{
+	width:135px;
+	margin-left:7.5px;
+}
+.sm_menu_li img{
+	display:block;
+	height:135px;
+	width:135px;
+}
+
+
+/************ 瀑布流内容**************/
+#waterfall li{
+	width:282px;
+	float:left;
+	overflow:hidden;
+	margin:0 0 0 20px;	
+}
+#waterfall li .fallcell{
+	width:280px;
+	cursor:pointer;
+	-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2);
+	-moz-box-shadow:0 1px 0 rgba(0,0,0,.2);
+	box-shadow:0 1px 0 rgba(0,0,0,.2);
+	border:1px solid #eae2d9;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+#waterfall li.wf_list1{margin-left:0}
+.wf_top{
+	width:280px;
+	min-height:260px;
+	_height:260px;
+	position:relative;
+	overflow:hidden	
+}
+.wf_top:hover .hv_mark,.wf_top:hover .hv_code{
+	display:block;
+}
+.wf_top .pro_img{
+	width:100%;
+	min-height:260px;
+}
+.hv_mark,.hv_code{
+	position:absolute;
+	display:none
+}
+.hv_mark{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	bottom:0;	
+	background:#000;
+	filter:alpha(opacity=50);
+	opacity:.5;
+}
+.hv_code{
+	width:170px;
+	height:200px;
+	z-index:50;
+	text-align:center;
+	top:50%;
+	left:50%;
+	margin:-100px 0 0 -85px;
+}
+.hv_code span{
+	font-size:20px;
+	color:#fff
+}
+.wf_txt{
+	padding:10px;
+	background:#fff
+}
+.wf_txt_tit{
+	color:#333;
+	line-height:20px;
+	font-family:'\5b8b\4f53'
+}
+.wf_txt_pri{position:relative;height:57px;}
+.wf_txt_pri .discount{
+	color:red;
+	font-size:38px;
+	font-family:arial;
+	font-weight:bold;
+}
+.wf_txt_pri em,.cur_pri{
+	font-size:14px;
+	color:red;
+}
+.cur_pri,.old_pri{
+	font-family:arial;
+	font-weight:bold;
+}
+.pri_dis{
+	position:absolute;
+	right:0;
+	top:13px;
+	text-align:left
+}
+
+.old_pri{
+	font-size:14px;
+	text-decoration:line-through;
+	color:#666;
+}
+
+
+/*******返回上一步******/
+#goTop{
+	position:fixed;
+	right: 30px;
+	bottom: 30px;
+}
+.up{
+	width: 48px;
+	height: 48px;
+	background:url(img/gotop.png) no-repeat;
+}
+.up:hover{
+	filter:alpha(opacity=80);
+	opacity:.8
+}
+
+/* 加载loading*/
+.loadTip{
+	text-align:center;
+	font-size:14px;
+	display:none;
+}
+.loadicon{
+	width:16px;
+	height:16px;
+	background:url(img/ico-loading.gif) no-repeat;
+	vertical-align:middle
+}
+
+#foot_warp{display:none;}
+
+/* ie8异常问题 */
+.frie-links dd{width:1065px\9 }
+.frie-links .more{
+	width:45px\9;
+}

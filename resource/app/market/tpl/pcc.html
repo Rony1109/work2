@@ -1,0 +1,80 @@
+<!--广告轮播 start-->
+<div class="slidebox">
+	<img src="images/bannerEmpty.jpg" class="slidebg" alt="">
+	<div id="slide" class="slide slidecontrol swiper-container swiper-container-horizontal">
+		<ul class="swiper-wrapper">
+			{{each forcePicAds as value index}}
+			<li class="swiper-slide">
+				<a data-href="{{if value.product_id}}product?productId={{value.product_id}}{{else}}cyclePage?href={{value.url}}{{/if}}"><img src="{{value.thumb}}" alt=""/></a>
+			</li>
+			{{/each}}
+		</ul>
+		<div class="swiper-pagination swiper-pagination-white"></div>
+	</div>
+</div>
+
+<!--广告轮播 end-->
+
+<!--皮草惠 start-->
+{{if pccHui.total>2}}
+<div class="flr">
+	<h2>皮草惠</h2>
+	<div class="flr-bd">
+		<div id="scroll" class="swiper-container swiper-container-horizontal">
+			<ul class="g-cf pro-lst scroll-lst swiper-wrapper">
+				{{each pccHui.product as value index}}
+				<li class="swiper-slide">
+					<a data-href="product?productId={{value.product_id}}">
+						<p class="pic" style="background-image:url({{value.thumb}})"></p>
+						<p class="t">{{value.title}}</p>
+						<p class="prc">{{if value.desc!='价格面议'}}&yen; {{/if}}{{value.desc}}</p>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
+{{/if}}
+<!--皮草惠 end-->
+
+<!--楼层 start-->
+{{each floor as value index}}
+<div class="flr">
+	<h2>{{value.title}}</h2>
+	<div class="flr-bd ctpro-bd">
+		<ul class="g-cf ctpro-lst">
+			{{each value.product as value index}}
+			<li>
+				<a data-href="{{if value.product_id}}product?productId={{value.product_id}}{{else}}cyclePage?href={{value.url}}{{/if}}">
+					<p class="t">{{value.title}}</p>
+					<p class="s">{{value.desc}}</p>
+					<p class="pic" style="background-image:url({{value.thumb}})"></p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+{{/each}}
+<!--楼层 end-->
+
+<!--名品汇 start-->
+<div class="flr">
+	<h2>名品汇</h2>
+	<div class="flr-bd brnd-bd">
+		<ul class="g-cf brnd-lst">
+			{{each famousHui as value index}}
+			{{if index<8}}
+			<li>
+				<a data-href="{{if value.product_id}}product?productId={{value.product_id}}{{else}}cyclePage?href={{value.url}}{{/if}}">
+					<p class="pic" style="background-image: url({{value.thumb}})"></p>
+					<p class="t">{{value.title}}</p>
+				</a>
+			</li>
+			{{/if}}
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<!--名品汇 end-->

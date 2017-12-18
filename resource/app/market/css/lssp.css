@@ -1,0 +1,108 @@
+@import url('common.css');
+
+/*img{width:100%;border:none;}*/
+.slidebox{
+	position: relative;
+}
+.slidebg{
+	width:100%;
+}
+.slidecontrol{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*产品类别导航*/
+.ctgry{background-color:#fff;border-bottom:1px solid #ddd;}
+.ctgry-lst{margin-left:3px;margin-right:3px;padding-top:5px;padding-bottom:8px;}
+.ctgry-lst li{float:left;width:20%;margin-top:5px;padding-bottom:5px;}
+.ctgry-lst a{display:block;color:#666;text-align:center;}
+.ctgry-lst .pic{text-align:center;height:0;padding-bottom:75%;background-size:contain;background-repeat: no-repeat;background-position:center top;}
+.ctgry-lst img{display:inline-block;/*width:auto;*/max-width:100%;}
+.ctgry-lst .t{margin-top:3px;}
+
+/*今日特推/*/
+.scroll-lst li{width:29%;}
+.scroll-lst .pic,.jxpro-lst .pic{height:0;padding-bottom:100%;}
+
+/*精选商品*/
+.jxpro-lst li{width:33.3%;}
+.jxpro-lst .pic{border:1px solid #ededed;}
+
+/*绿色粮油/山珍特产/就水饮料/包装机械*/
+.titlink{
+	display: block;
+}
+.ctpro-bd{padding:0 13px 15px;}
+.ctpro-bd,.lsright,.ctpro-lst,.ctpro-lst li,.ctpro-lst a,.ctpro-lst .pic{display:-webkit-box;display:box;display:-webkit-flex;display:flex;overflow: hidden;}
+.lsright,.ctpro-lst a{-webkit-box-orient:horizontal;box-orient:horizontal;-webkit-flex-direction:column;flex-direction:column;}
+.ctpro-bd .aside{-webkit-box-flex:3.3;box-flex:3.3;-webkit-flex:3.3;flex:3.3;}
+.ctpro-bd .aside img{width:100%;}
+.lsright{-webkit-flex:6.7;flex:6.7;}
+.lsright ul:first-child li{
+	margin-bottom:4px;
+}
+.ctpro-lst,.ctpro-lst li{-webkit-box-flex:1;box-flex:1;-webkit-flex:1;flex:1;}
+.ctpro-lst li{padding-bottom:0;}
+.ctpro-lst a{margin-left:6px;margin-right:0;position: relative;padding-bottom:1em;width:100%;}
+.ctpro-lst .pic{-webkit-box-flex:7;box-flex:7;-webkit-flex:7;flex:7;-webkit-box-pack:center;box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;box-align:center;-webkit-align-items:center;align-items:center;border:1px solid #ededed;}
+.ctpro-lst img{display:inline-block;/*width:auto;*/max-width:100%;}
+.ctpro-lst .t{
+	margin:4px 0;
+}
+.ctpro-lst .prc{
+	position: absolute;
+	width:100%;
+	bottom: 0;
+	left:0;
+	height: 1em;
+}
+.ctpro-lst .prc{padding-bottom:0px;margin:0;}
+/*.ctpro-bd .aside,.lsright,.ctpro-lst{display:table-cell;}
+.ctpro-bd .aside{width:33%;}
+.lsright{width:67%;height:100%;max-height:100%;}
+.ctpro-lst{height:100%;display:inline-block;}
+.ctpro-lst li{width:50%;height:50%;padding-bottom:0;}
+.ctpro-lst a{margin-left:6px;margin-right:0;}
+.ctpro-lst .pic{border:1px solid #ddd;text-align:center;}
+.ctpro-lst img{display:inline-block;}
+.ctpro-lst .t{margin-top:3px;}
+.ctpro-lst .prc{margin-top:3px;padding-bottom:0px;}*/
+
+/*针对各屏幕宽度做效果*/
+@media screen and (max-width:320px){
+
+}
+@media screen and (min-width:321px) and (max-width:375px){
+	
+}
+@media screen and (min-width:376px) and (max-width:414px){	
+	/*.ctpro-bd .aside{width:32%;}
+	.lsright{width:68%;}*/
+}
+@media screen and (min-width:415px) and (max-width:639px){
+	/*.ctpro-bd .aside{width:29%;}
+	.lsright{width:71%;}*/
+	.more{background-size:100% 100%;right:16px;}
+}
+@media screen and (min-width:640px) and (max-width:719px){
+	/*.ctpro-bd .aside{width:29%;}
+	.lsright{width:71%;}*/
+	.more{background-size:100% 100%;right:16px;}
+}
+@media screen and (min-width:720px) and (max-width:749px){
+	/*.ctpro-bd .aside{width:31%;}
+	.lsright{width:69%;}*/
+	.more{background-size:100% 100%;right:16px;top:16px;}
+}
+@media screen and (min-width:750px) and (max-width:799px){
+	
+	.more{background-size:100% 100%;right:16px;top:18px;}
+}
+@media screen and (min-width:800px){
+	
+	.more{background-size:100% 100%;right:16px;top:22px;}
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 
+ * 微盟V1.1  微盟会员中心首页
+ * 会员中心
+ * 2014.05.27 by lg
+ */
+
+ @import url('/v2/m/init/css/style.css');
+ @import url('../../public/css/wslm-mywm.css');
+ @import url('/v2/m/page/style_li.css');
+
+/*public*/
+.c-888{color: #888;}
+.c-f67301{color:#f67301;}
+.l-h22{line-height: 22px;}
+.l-h40{line-height: 40px;}
+
+/*公告*/
+.amlist li{*zoom:1;border-bottom: 1px solid #e8e8e8;height: 46px;line-height: 46px;padding: 0 15px;overflow: hidden;}
+.amlist li:after{display:block;visibility:hidden;clear:both;height:0;content:'\20';}
+.amlist li span.g-fl{display: inline-block;width: 730px;overflow: hidden;}
+.amlist li span a{color: #333;}
+.amlist li span a:hover{color: #2664A2;}
+.amlist li span.g-fr,.amlist li span.g-fr a{color: #888;}
+
+/*公告详情 返回栏*/
+.back{padding: 10px;background-color: #f3f3f3;border: 1px solid #e4e4e4;}
+.wmtable li span.downimg{ width:80px; height:24px;background:#F5F5F5; display:inline-block; text-align:center; line-height:28px; overflow:hidden; position:relative; vertical-align:middle; border:1px solid #EAEAEA; border-radius:2px; margin-left:8px;}
+.wmtable li span.downimg #fileuploadimg{ position:absolute; left:0; top:0;width:400px; height:200px;direction:rtl;font-size:300px; filter:alpha(opacity=0);opacity:0;}

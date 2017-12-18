@@ -1,0 +1,101 @@
+/**
+* 前端模板css文件
+* 
+*/
+
+/* 依赖的模块 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+@import url('/v2/m/register/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+/**
+* 建议的书写顺序
+* 标签样式
+* 公共样式
+* 模块样式
+* 具体内容
+* 
+*/
+.link{border-top: 0;}
+a{color: #444}
+.web-search h1, .web-search .logo-box{width: 229px}
+.selected_channel .sel_chnel{width: 60px;background-position: 58px 8px;}
+.selected_channel span.hover{background-position: 58px -5px;}
+.selected_channel .chnel_list{width: auto;white-space:nowrap;}
+.selected_channel{margin-top: 50px;}
+
+.navigation{height: 37px;background: #e52142}
+.navigation a{color: #fff}
+.main-nav li{float: left;display: inline;}
+.main-nav li a{display: inline-block;_display: inline;zoom:1;margin-top: 5px;padding: 0 15px;height: 32px;text-align: center;font: 16px/32px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #e52142;text-decoration: none;background: #fff;}
+.sub-nav{float: right;display: inline;margin-top: 14px;width: 297px;height: 15px;border-left: 1px #ea6279 solid;}
+.sub-nav a{font: 14px/15px Microsoft YaHei,simsun;padding-left: 12px;color: #ffd4d4}
+.sub-nav a:hover{color:#ffd4d4}
+
+.title{height: 30px;overflow: hidden;font:700 14px/30px Microsoft YaHei,simsun;word-break:break-all;}
+
+.title-m h2{height: 30px;overflow: hidden;font:700 14px/30px Microsoft YaHei,simsun;word-break:break-all;}
+.title-m a{float: right;display: inline;font: 12px simsun;color: #888;line-height: 30px}
+
+.title-link{height: 40px;padding: 0 9px;background: #f7f7f7}
+.title-link h2{font: 700 20px/40px Microsoft YaHei,simsun;}
+.title-link span{float: right;display: inline;width: 800px;height: 40px;overflow: hidden;word-break:break-all;}
+.title-link span a{position: relative;float: right;display: inline;padding:0 10px;margin:15px -1px 0 0;height: 14px;font: 12px/14px simsun;color: #888;border-right: 1px #cecece solid;}
+.underline{position: relative;margin:0 0 -2px -10px;padding: 0 10px;width: 80px;border-bottom: 2px #ca1a1a solid;}
+.add-line{border-bottom: 2px #b5b5b5 solid;}
+.column-list li{text-indent: 7px;overflow: hidden;word-break:break-all;background: url(img/icos.gif) no-repeat -498px  -878px;}
+
+a.img-msg{position: relative;display: block;width: 190px;margin: 0 auto;}
+a.img-msg span{position: absolute;left: 0;bottom:0;display: block;width: 190px;height: 20px;overflow: hidden;word-break:break-all;text-align: center;color: #fff;}
+a.img-msg:hover span{color: #444}
+a.img-msg span.bg{background: #000;opacity: .6;filter:alpha(opacity=60);}
+a.img-msg:hover span.bg{background: #fff}
+
+.column{border:1px #e6e6e6 solid;}
+
+.foot{border-color: #3d4d76}
+.foot-title{border-bottom: 1px #e8e8e8 solid;}
+.dz_h_box5 {overflow:hidden;}
+.hzhb_list {width:1200px; padding:15px 0 10px 2px;}
+.hzhb_list li {float:left; _display:inline; width:125px; height:64px; margin-right:20px;}
+.hzhb_list li img {width:125px; height:64px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:48px;overflow:hidden;zoom:1;position: relative;line-height: 26px}
+.dz_f_links strong {position:absolute; left:0; top:11px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; /*line-height:26px; */color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;background:url(img/icos.gif) -2px -133px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -154px;}
+/*.dz_hide {height: 52px;overflow: hidden;}*/
+
+/* 热门活动列表 */
+.special{overflow: hidden;}
+.special li{overflow: hidden;margin-bottom:12px }
+.special li a.img-set{float: left;display: inline;width: 80px;}
+.special li p{float: right;display: inline;width: 290px;height: 75px;overflow: hidden;word-break:break-all;}
+.special li  p a{display: block;height: 22px;overflow: hidden;word-break:break-all;font:700 14px/22px Microsoft YaHei,simsun;}
+
+.fix-special{margin-top: 7px;}
+.fix-special li{margin-bottom: 20px;overflow: hidden;zoom:1;}
+.fix-special li p{position: relative;margin-top: -3px;height: 85px;color: #888;line-height: 22px}
+.fix-special li p span{display: block;max-height: 42px;_height:expression(this.scrollHeight > 42 ? "42px" : "auto");overflow: hidden;word-break:break-all;}
+.fix-special li p a{margin-bottom: 3px;text-indent: 35px;font-size: 17px;background: url(img/icos.gif) no-repeat 0 -940px;}
+.fix-special li p b{display: block;font-weight:normal;}
+
+.interview-top{margin-top: 7px;}
+.interview-top p{float: right;display: inline;margin-right: 3px;width: 190px;}
+.interview-title{display: block;max-height: 37px;_height:expression(this.scrollHeight > 37 ? "37px" : "auto");overflow: hidden;font:700 14px Microsoft YaHei,simsun;}
+.interview-top span{display: block;margin-top: 8px;height: 18px;line-height: 18px;overflow: hidden;word-break:break-all;}
+a.fc-cc0000{color: #cc0000}
+.g-h36{overflow: hidden;height: 36px;zoom:1;clear: both}
+.g-h27{overflow: hidden;height: 27px;zoom:1;clear: both}
+
+.back-top{width: 48px;height: 48px;position: fixed;bottom: 148px;right: 130px;margin-left: 50%;_position: absolute;_top: expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50));display: none;z-index: 100;}
+.back-top a{display: block;width: 48px;height: 48px;background: url(img/icon_top.gif) no-repeat;}
+.back-top a:hover{background: url(img/icon_top_hover.gif) no-repeat;}

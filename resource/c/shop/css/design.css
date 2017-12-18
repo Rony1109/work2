@@ -1,0 +1,59 @@
+/*装修头部*/
+*html{background-image:url(about:blank);background-attachment:fixed;}
+#toolbar{background:#3d4368;position:fixed;top:0;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));width:100%;z-index:30;}
+.toolbar-bd{background:url(img/design-t.png) no-repeat left 15px;text-align:center;color:#fff;font:bold 16px/50px simsun;height:50px;}
+.toolbar-bd .close,.toolbar-bd .opts{position:absolute;}
+.toolbar-bd .close{background:url(img/design-sf.png) no-repeat -56px 0;width:15px;height:15px;line-height:99px;overflow:hidden;right:5px;top:3px;}
+.toolbar-bd .opts{right:44px;top:0;_top:12px;}
+.toolbar-bd .opts li{float:left;}
+.toolbar-bd .opts li a{display:inline-block;height:27px;padding:0 19px;border-radius:3px;color:#fff;font:bold 12px/27px simsun;}
+.toolbar-bd .opts li .org-btn{background:#f57301;text-decoration:none;}
+
+/* 2015/7/20 add by guozeng */
+.button{display:inline-block;height:27px;padding:0 19px;border-radius:3px;color:#fff;font:bold 12px/27px simsun;white-space:nowrap;}
+.button:hover{text-decoration:none;}
+.org-button{background:#f57301;text-decoration:none;}
+.file_bod{width:100%;height:100%; position:absolute;background-color:#000;z-index:199;display:inline-block;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5; opacity: 0.5;}
+.save-template1{position:absolute; right:0px!important; top:0px!important; background:#f5f5f5 url(img/design-sf.png) no-repeat;width:55px; height:26px;z-index:99;}
+
+
+/* 保存提示的CSS*/
+.tis_san{position:absolute; display:none; top:42px;*top:-10px; right:65px; border-left:8px solid transparent;border-right: 10px solid transparent;border-bottom:12px solid #dcecfb; z-index:1999}
+.tis_txt{position:absolute; display:none; width:286px; height:28px;border-radius:4px 4px 4px 4px; font-size:14px; font-weight:100; font-family:'yahei'; line-height:28px; top:52px; right:5px; color:#255586; background-color:#dcecfb;}
+.left_txt{float:left; margin-left:5px;}
+.close_savetis{float:right;width:20px;height:20px; cursor:pointer; background:url(../image/close1.jpg) no-repeat 5px;}
+
+/* 引导页面的CSS */
+.file_xz{width:93px; height:44px; margin-left:415px; background:url(../image/intro-arrow-1.png) no-repeat;}
+.file_db{float:left;width:130px; height:168px; background:url(../image/katong2.png) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_hd{float:left;width:130px; height:148px; background:url(../image/wp-hd.jpg) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_hd2{float:left;width:130px; height:148px; background:url(../image/wp-hd.png) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_lb{float:left;width:130px; height:148px; background:url(../image/wp-lb.jpg) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_mj{float:left;width:130px; height:148px; background:url(../image/wp-mj.jpg) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_tb{float:left;width:120px; height:148px; background:url(../image/wp-tb.jpg) no-repeat; background-size:100%; margin-left:40px; margin-top:70px;}
+.file_cc{float:left;width:120px; height:148px; background:url(../image/wp-cc.jpg) no-repeat; background-size:100%; margin-left:50px; margin-top:100px;}
+.file_updown{float:left;width:122px; height:200px; background:url(../image/wp-updown.png) no-repeat; background-size:100%; margin-left:60px; margin-top:40px;}
+
+.file_txt{float:left; width:320px; height:250px;}
+.file_txt_head{color:#7c2c00;height:26px; font-size:24px; font-weight:bold; display:block; margin-top:30px; margin-left:20px;font-family:'微软雅黑';}
+.file_txt_center{font-size:22px;color:#7c2c00; width:300px; display:block; margin-top:20px; margin-left:15px; font-family:'微软雅黑';}
+.file_txt_center a{ text-decoration:underline; color:#e60012;}
+.mr-top{margin-top:50px;}
+.file_btn{background:url(../image/intro_btn_bg.png) no-repeat; color:#444; cursor:pointer; line-height:44px; text-align:center;display:block; font-weight:700; font-size:16px; margin-top:-10px; float:left; width:125px; height:44px;}
+.file_btn:hover{text-decoration:none;}
+.file_list_ul{display:inline-block; float:left;}
+.file_list_ul li{float:left;background:url(../image/intro_step2.png) no-repeat; width:26px; height:20px;}
+.file_li_hover{background:url(../image/intro_step.png) no-repeat !important;}
+
+/*鼠标放到对应模块时出现的编辑遮罩层*/
+.wp-mdl-cz{position:relative;z-index:2;}
+.wp-mdl-cz .bg,.wp-mdl-cz .acts{position:absolute;}
+.wp-mdl-cz .bg{background:#000;opacity:0.2;filter:alpha(opacity=20);left:50%;}
+.wp-mdl-cz .acts{text-align:right;padding-top:10px;left:50%;}
+.wp-lyt-m .wp-mdl-cz .acts{width:1000px;margin-left:-500px;}
+.wp-lyt-sm .wp-colmain .acts{width:800px;margin-left:-400px;}
+.wp-lyt-sm .wp-colsub .acts{width:190px;margin-left:-95px;}
+.wp-mdl-cz .acts a{display:inline-block;background:#f5f5f5 url(img/design-sf.png) no-repeat;height:26px;line-height:99px;overflow:hidden;box-shadow:1px 1px 2px rgba(0,0,0,0.2);margin-right:10px;vertical-align:middle;}
+.wp-mdl-cz .acts .edit{background-position:0 0;width:55px;}
+
+.intro_close{background:url(../image/close_intro.png) no-repeat 0 0;width:28px;height:25px;position:absolute;right:73px;top:64px;}

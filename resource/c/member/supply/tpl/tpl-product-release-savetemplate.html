@@ -1,0 +1,17 @@
+<div id="gz-save-box" style="padding:30px;">
+	<p class="g-c8">提示：我的模板数量最多5个，当前为 <span class="g-cred" id="temp-count"></span> 个</p>
+	<ul class="g-mt12">
+	    <li><label><input type="radio" name="savefun" checked="checked"/> 新建模板：</label> <input id="temp-name" class="ipt-txt g-w170" type="text" name="temp-name" maxlength="15"> <span class="g-cred ml10 g-dn">请输入模板名称</span></li>
+		<li><span class="g-c8 save-template-tip">去</span><a href="#" title="管理模板">管理模板</a></li>
+		<li class="g-mt12">
+			<label><input type="radio" name="savefun" /> 替换模板：</label>
+			<select id="se-mytemplate" class="frm-slt jsOtherSlt g-w170">
+				<option value="-1">请选择</option>
+			</select>
+			<span class="g-cred ml10 g-dn">请选择替换模板</span>
+		</li>
+	</ul>
+</div>
+<div class="g-tc g-fs-16 g-dn" id="gz-savetemp-success" style="padding:30px;">
+	<i class="icon-success"></i><span class="ml10">保存成功！您可以在 <a href="javascript:;" title="我的模板" id="check-mytemp">我的模板</a> 中查看或使用</span>
+</div>

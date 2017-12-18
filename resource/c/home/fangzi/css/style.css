@@ -1,0 +1,48 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+
+/*导航菜单*/
+.icon-img {background-image: url(img/icon-group.png);}
+.nav-banner {width: 100%; height: 35px; background: url(img/nav-banner-bg.jpg) no-repeat;}
+.nav-banner ul li {float: left; width: 110px; height: 35px; line-height: 35px; text-align: center;}
+.nav-banner ul li a {width: 105px; height: 30px; margin-top: 5px;color: #FFFFFF;float: left;font-family: Microsoft YaHei,simhei;font-size: 15px;font-weight: 700;line-height: 30px; text-decoration: none;}
+.nav-banner ul li.cur a, .nav-banner ul li a:hover {background: #fff; color: #FC7000}
+
+.f-recommend {height: 19px; border: 1px solid #FCE0CB; border-top: none; background: #fff; line-height: 19px; padding: 5px 10px; width: 980px;}
+.f-recommend a {color: #666; margin-right: 20px;}
+.f-recommend a:hover{ color:#f60;}
+
+.main-wrapper {margin-top: 10px;}
+.main-wrapper .catalog-menu {width: 198px; height: 620px; float: left; border: 1px solid}
+
+.main-wrapper .content-mid {width: 540px; margin: 0 10px; float: left;}
+.main-wrapper .content-mid .slide {width: 540px; height: 220px; overflow: hidden; position: relative;}
+.content-mid .slide ul li { width: 540px; height: 220px;}
+.content-mid .slide ol {position: absolute; bottom: 8px; right: 5px; }
+.content-mid .slide ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px;}
+.content-mid .slide ol li.cur {background: #FF6C00}
+.content-mid .t-focus {margin-top: 10px; border-top: 1px solid #E8E8E8; padding-top: 5px}
+.content-mid .tf-top {height: 33px; line-height: 33px;}
+.content-mid .tf-top h1 {float: left;font-family: Microsoft YaHei,simhei;font-size: 20px;}
+.content-mid .tf-top .t-date {float: left; margin: 0 20px;}
+.content-mid .tf-top ul {width: 300px; overflow: hidden; height: 33px; float: left;}
+.content-mid .tf-top ul li {float: left; width: 300px;}
+.content-mid .tf-top ul li a { color: #444}
+.content-mid .tf-top ul li a:hover { color: #f60;}
+.content-mid .tf-top .controller {background-position: -175px -34px; width: 35px; height: 18px; float: right; margin-top: 8px}
+.content-mid .tf-top .controller a {width: 17px; height: 18px; display: inline; float: right;}

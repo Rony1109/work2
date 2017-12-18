@@ -1,0 +1,56 @@
+@import url('common.css');
+
+/*img{width:100%;}*/
+.slidebox{
+  position: relative;
+}
+.slidebg{
+  width:100%;
+}
+.slidecontrol{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.scroll-lst .pic,.dfpro-lst .pic{height:0;padding-bottom:100%;}
+.pro-lst .prc{
+  height: 1.2em;
+}
+/*东盟特色*/
+.scroll-lst li{width:28%;}
+
+/*东盟美食\广西特产\地方零食*/
+.dfpro-lst li{width:33.3%;}
+.dfpro-lst .pic{border:1px solid #ededed;}
+
+/*国家馆*/
+.gjg{border-bottom:none;}
+.gjg-lst li{float:left;width:50%;padding-bottom:6px;}
+.gjg-lst a{display:block;margin-left:3px;margin-right:3px;}
+.gjg-lst img{width:100%;}
+
+/*针对各屏幕宽度做效果*/
+@media screen and (min-width:321px) and (max-width:375px){
+		
+}
+@media screen and (min-width:376px) and (max-width:414px){	
+	
+}
+@media screen and (min-width:415px) and (max-width:639px){
+	
+}
+@media screen and (min-width:640px) and (max-width:719px){
+	
+}
+@media screen and (min-width:720px) and (max-width:749px){
+	
+}
+@media screen and (min-width:750px) and (max-width:799px){
+	
+}
+@media screen and (min-width:800px){
+	
+}

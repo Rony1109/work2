@@ -1,0 +1,44 @@
+{{each data as value index}}
+<li class="fadeIn busine" style="animation-delay:{{index * 0.1}}s">
+	<header class="bus-top">
+		<div class="busleft">
+			<a data-href="shop?shopUrl={{value.shopId}}">
+				<!-- <img src="{{imgUrl}}" class="portrit" alt=""> -->
+				<div class="portritbox">
+					<img src="./images/portritimg.png" class="portrit" alt="">
+				</div>
+				<!-- <img src="./images/portritimg.png" class="portrit" alt=""> -->
+				<div class="b-info">
+					<p class="b-name">{{value.enterprise}}</p>
+					<p class="b-detail">
+						已有
+						<span class="atteners">{{value.favoriteCount}}</span>
+						人关注该商家
+					</p>
+				</div>
+			</a>
+			
+		</div>
+		<div class="b-attention">
+			{{if value.isFavorite=="N"}}
+				<button class="att-btn jatten" data-shopid="{{value.shopId}}">关注</button>
+			{{else}}
+				<button class="att-btn jatten disabled" data-shopid="{{value.shopId}}">已关注</button>
+			{{/if}}
+		</div>
+	</header>
+	<ul class="products">
+		{{each value.productList as val i}}
+		<li>
+			<a data-href="product?productId={{val.id}}">
+				<div class="proimgbox" style="background-image:url(http://img.csc86.com{{val.pic1}})">
+					<!-- <img src="http://img.csc86.com{{val.pic1}}" alt=""> -->
+				</div>
+				<p class="pdt-name">{{val.title}}</p>
+				<p class="pdt-prise">{{val.price}}</p>
+			</a>
+		</li>
+		{{/each}}
+	</ul>
+</li>
+{{/each}}

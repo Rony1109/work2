@@ -1,0 +1,17 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+ 
+ /*广告图滚动*/
+.src-img{ position:relative; height:280px; width:460px; overflow:hidden;}
+.src-img ul{ position:absolute; height:280px; width:20000px;}
+.src-img li{ float:left;}
+.src-img li img{ width:460px; height:280px;}
+.src-img ol{ position:absolute; bottom:15px; right:15px;}
+.src-img ol li{ margin-left:10px; width:20px; overflow:hidden; text-indent:-99999px; height:10px; background:#FFF;}
+.src-img ol li.cur{ background:#e94545;}

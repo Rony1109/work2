@@ -1,0 +1,41 @@
+	<!-- 三大行业类目-->			
+		 {{each data as value index}}
+		 <div class="chnbox">
+		 	{{if index=='category_01'}}
+				<a data-href="findProduct?index=0" class="chntit"><img class="lazyload" data-original="images/{{index}}.png" alt=""></a>
+		 	{{else if index=='category_05'}}
+				<a data-href="findProduct?index=1" class="chntit"><img class="lazyload" data-original="images/{{index}}.png" alt=""></a>
+		 	{{else if index=='category_27'}}
+				<a data-href="findProduct?index=2" class="chntit"><img class="lazyload" data-original="images/{{index}}.png" alt=""></a>
+		 	{{/if}}		 	
+		 	<div class="chnrightbox">		 		
+		 		<ul class="chboxchilds {{index}}">
+		 			{{each value as val l}}
+		 				{{if l<2}}
+					        <li class="{{l}}"><a data-href="searchProductList?categoryNo={{val.categoryNo}}&categoryName={{val.categoryName}}">
+						<h2>{{val.categoryName}}</h2>
+						<p class="chftit">{{val.englishName}}</p>
+						
+					</a>
+					<p class="chimgbox" style="background-image:url(http://img.csc86.com/{{val.image}})"></p>
+					</li>
+						{{/if}}
+					{{/each}}
+		 		</ul>
+ 		 		<ul class="chboxchilds {{index}}">
+ 		 			{{each value as val l}}
+ 		 				{{if l>1}}
+ 					        <li class="{{l}}"><a data-href="searchProductList?categoryNo={{val.categoryNo}}&categoryName={{val.categoryName}}">
+ 						<h2>{{val.categoryName}}</h2>
+ 						<p class="chftit">{{val.englishName}}</p>
+ 						
+ 					</a>
+						<p class="chimgbox" style="background-image:url(http://img.csc86.com/{{val.image}})"></p>
+ 					</li>
+ 						{{/if}}
+ 					{{/each}}
+ 		 		</ul>
+		 	</div>
+		 </div>
+		{{/each}}
+	

@@ -1,0 +1,55 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+ @import url('/v2/m/init/css/style.css'); 
+ @import url('/v2/m/page/style_li.css'); 
+ @import url('/v2/c/member/zhongxin/public/css/style.css'); 
+
+/*身份认证流程*/
+.sf-w{ padding-left:45px;}
+.sf-w li{width:198px; height:64px; }
+.sf-w li.fas{ width:156px;text-align:left;}
+.sf-w li.last{ width:131px;}
+.sf-w li.fas span{ padding-left:38px;}
+.sf-w li span.cur i{ font-size:0; text-indent:-1000px;background:url(../../public/css/img/lc.png) no-repeat -98px -178px;}
+
+.tab-w th{width:130px;}
+
+.idy-three th{ width:170px;}
+
+/*认证信息*/
+
+.sh-status{ height:auto;overflow:hidden;zoom:1; border:1px solid #e9e9e9;background:#9398b7;}
+.sh-status li{ float:left; padding:25px 0;}
+.sh-status li.sh-l{ width:100px;height:100%; font-size:20px; color:#fff; text-align:center;position:relative;}
+.sh-status li.sh-l i{display:inline-block;background:url(../../public/css/img/lc.png) no-repeat -240px -193px;width:10px;height:10px;position:absolute;right:-10px;top:0;}
+.sh-status li.sh-r{ background:#fff url(img/lc.png) no-repeat -166px -190px; padding-left:50px; width:688px;}
+li.sh-r p.spo{ color:#888; line-height:20px; padding-bottom:15px;}
+.sh-status .stu{font-size:14px;font-weight:700; padding-bottom:15px;}
+.stu .st{ width:160px; display:inline-block;  }
+.idy-sh th{ width:110px;}
+input.input-un{ width:120px;}
+.ity-tip{ height:26px; line-height:26px;}
+.prs-no{ color:#fc6824; line-height:24px; font-weight:700;}
+.prs-no strong{ color:#444;}
+.bot-cen,.bot-pd{padding:20px 10px;}
+.bot-cen{ text-align:center;}
+.bot-pd{ text-align:left;}
+.rz-allinfo{border:1px solid #e9e9e9; border-top:0; padding:25px;}
+h1.zr-til-h1{ font-size:14px; background:#f3f3f3; height:35px; line-height:35px; text-indent:18px;}
+.rz-allinfo h2{ font-size:14px; border-bottom:1px solid #f0f0f0; line-height:32px; text-indent:25px;}
+.sh-status li.yjj-r{padding-top:30px;padding-bottom:45px;}
+
+/*身份认证状态页*/
+.sfrz-zt .rz-til{padding-left:30px;}
+.sfrz-zt .rz-til span{text-align:left;}
+.sfrz-rzxx-bd{border:1px solid #e9e9e9;border-top:none;margin-top:-25px;padding:25px 20px 40px;}
+
+
+
+
+

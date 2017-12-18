@@ -1,0 +1,74 @@
+@import url('style.css');
+
+/*图片轮播*/
+.wp-slide,.slide-box{height:350px;}
+.wp-slide{margin-bottom:20px;}
+.slide-box,.slide-lst li{width:1440px;overflow:hidden;}
+.slide-box{margin:0 auto;text-align:center;position:relative;}
+.slide-lst{position:absolute;left:0;top:0;width:10000px;}
+.slide-lst li{float:left;}
+.slide-lst li img{max-width:1440px;max-height:800px;}
+.slide-trg{position:absolute;bottom:14px;left:50%;width:978px;margin-left:-500px;padding-right:22px;text-align:right;}
+.slide-trg a{display:inline-block;background:#dbdbdb;width:18px;height:10px;line-height:99px;margin-right:6px;overflow:hidden;}
+.slide-trg .cur{background:#f28412;height:11px;*position:relative;*top:-1px;}
+
+/*橱窗推荐*/
+.wp-cqres{margin-bottom:10px;width:1000px;overflow:hidden;}
+.wp-cqres .skin-box-hd{background:#fff url(img/cqres-hd-bg.png) no-repeat left top;height:94px;font-size:24px;color:#3e5829;}
+.wp-cqres .skin-box-hd h2{margin:51px 0 0 70px;}
+.wp-cqres .skin-box-bd{background:#fff;width:1000px;padding-bottom:15px;overflow:hidden;}
+.cqres-lst{margin-left:22px;width:1000px;}
+.cqres-lst li{float:left;width:300px;border:1px solid #e6e6e6;margin-right:25px;margin-top:15px;overflow:hidden;}
+.cqres-lst .pic .i{width:300px;height:300px;*font-size:268px;}
+.cqres-lst .i img{max-width:300px;max-height:300px;}
+.cqres-lst .itm-bd{padding:10px 10px 0;}
+.cqres-lst .title{height:18px;line-height:18px;overflow:hidden;}
+.cqres-lst .title a{color:#8c8c8c;}
+.cqres-lst .itm-bd .bd{margin-top:10px;}
+.cqres-lst .price{font-size:25px;}
+.cqres-lst .price em{font-size:22px;}
+.cqres-lst .ask{background:url(img/sf.png) no-repeat -19px 0;width:80px;height:29px;padding-right:8px;color:#fff;font:14px/29px simsun;text-align:right;}
+.cqres-lst .itm-bd .ft{border-top:1px dashed #dbdada;padding:10px 0 14px;margin-top:3px;}
+.cqres-lst .sc-opt{color:#929292;}
+.cqres-lst .sc-opt i{background-position:0 -33px;width:14px;height:13px;margin-right:4px;}
+
+/*新品中心*/
+.wp-newpro{margin-bottom:15px;}
+.wp-newpro .skin-box-bd{width:1000px;overflow:hidden;}
+.newpro-lst1,.newpro-lst2{width:1100px;}
+.newpro-lst1 li,.newpro-lst2 li{float:left;overflow:hidden;}
+.newpro-lst1 li a,.newpro-lst2 li a{display:inline-block;background:#fff;}
+.newpro-lst1 li,.newpro-lst1 li a{width:492px;height:410px;}
+.newpro-lst2 li,.newpro-lst2 li a{width:328px;height:328px;}
+.newpro-lst1 li{margin-right:17px;}
+.newpro-lst2 li{margin-right:8px;}
+.newpro-lst2{margin-top:15px;}
+
+/*产品搜索*/
+.wp-search{margin-bottom:10px;}
+.wp-search .skin-box-bd{background:#dbdbdb;padding:12px 0 12px 15px;}
+.wp-search-box .title{font-size:14px;font-weight:bold;margin-top:3px;*margin-top:5px;margin-right:60px;}
+
+/*供应产品*/
+.wp-hotpro .skin-box-bd{width:800px;*padding-bottom:22px;_padding-bottom:0;overflow:hidden;}
+.wppro-lst{margin-left:8px;width:800px;padding:3px 0 20px;}
+.wppro-lst li{float:left;background:#fff;width:258px;height:352px;margin-right:6px;margin-top:10px;overflow:hidden;}
+.wppro-lst .itm{border:1px solid #b7b7b7;}
+.wppro-lst li.hover .itm{border:1px solid #3e5829;}
+.wppro-lst .pic{background:#fff;width:250px;height:250px;padding:3px;overflow:hidden;}
+.wppro-lst .pic .i{width:250px;height:250px;*font-size:224px;}
+.wppro-lst .i img{max-width:250px;max-height:250px;}
+.wppro-lst li .itm-bd{height:79px;padding:4px 12px 6px;}
+.wppro-lst li .title{height:40px;line-height:20px;text-align:center;overflow:hidden;}
+.wppro-lst li .title a{color:#444;}
+.wppro-lst li .itm-bd .bd{margin-top:10px;}
+.wppro-lst li .price{height:24px;line-height:20px;}
+.wppro-lst .shadow{background:url(img/shadow1.png) no-repeat;height:8px;}
+.wppro-lst li.hover .shadow{display:none;}
+.wppro-lst .sc-opt,.wppro-lst .ask-opt{color:#444;}
+.wppro-lst .sc-opt{margin-right:10px;}
+.wppro-lst .sc-opt i,.wppro-lst .ask-opt i{width:22px;height:22px;margin-right:3px;}
+.wppro-lst .sc-opt i{background-position:-15px -33px;}
+.wppro-lst .sc-opt.favorited{color:#8d8d8d;}
+.wppro-lst .sc-opt.favorited i{background-position:-38px -33px;}
+.wppro-lst .ask-opt i{background-position:-61px -33px;}

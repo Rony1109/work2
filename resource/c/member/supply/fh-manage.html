@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <title>待发货订单列表 - 发货管理 - 会员中心</title>
+    <link rel="stylesheet" href="http://res.csc86.com/v2/c/member/supply/css/fh-manage.css" >
+	<script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js,js/c/memberhome/m-home.js"></script> 
+    <script src="http://res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+</head>
+
+<body>
+<!--顶部导航 start-->
+<div class="head">
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://i.csc86.com/user/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        	
+        	<a  
+        	href="http://wslm.csc86.com/member" title="微商联盟"><b class="wslm-icon"></b>微商联盟</a>
+        	
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://login.csc86.com/signout" title="退出">退出</a>
+        </div>
+    </div>
+</div>
+<!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+
+<!--主内容 start-->
+<div class="mbd clearfix">
+	<!--左侧导航 start-->
+	<div class="g-fl m-side">
+    	<h3>
+        	<strong>基础服务</strong>
+        </h3>
+        <ul class="m-nav">
+        	<li class="cate1th">
+            	<a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons supply-icon"></span>供应</a>
+                <ul>
+                    <li class="cate2th"><a href="#" class="c-a">已卖出的货物</a></li>
+                    <li class="cate2th"><a href="#" class="c-a">交易账务</a></li>
+                    <li class="cate2th"><a href="" class="c-a">提取货款</a></li>
+                    <li class="cate2th"><a href="/product/sell/category.html" class="c-a ">发布产品</a></li>
+                    <li class="cate2th"><a href="/product/sell/list.html" class="c-a">产品管理</a></li>
+                    <li class="cate2th expand">
+                        <a href="javascript:" class="c-a"><span class="arr"></span>询盘管理</a>
+                        <ul>
+                            <li><a href="/quote/list.html">收到的询盘</a></li>
+                            <li><a href="/quote/order.html">收到的意向订单</a></li>
+                            <li><a href="/quote/pricelist.html">发出的报价</a></li>
+                            <li><a href="/quote/index.html">询盘大厅</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a">买家管理</a></li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a c-cur">发货管理</a></li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a">返修退换货管理</a></li>
+            	</ul>
+            </li>
+            <li class="cate1th">
+            	<a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons buy-icon"></span>采购</a>
+                <ul>
+                    <li class="cate2th"><a href="" class="c-a">已采购到的货物</a></li>
+                    <li class="cate2th"><a href="" class="c-a">采购单</a></li>
+                    <li class="cate2th"><a href="/inquiry/openpublish.html" class="c-a">发布采购计划</a></li>
+                    <li class="cate2th expand">
+                        <a href="javascript:" class="c-a"><span class="arr"></span>采购询价管理</a>
+                        <ul>
+                            <li><a href="/inquiry/openList.html">发出的采购</a></li>
+                            <li><a href="/inquiry/list.html">发出的询盘</a></li>
+                            <li><a href="http://inquiry.csc86.com/inquiry/productlist">询盘的产品</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/quotationlist" class="c-a">收到的报价</a></li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/supplier-list" class="c-a">供应商管理</a></li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a">返修退换货服务</a></li>
+                </ul>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons statistics-icon"></span><span class="arr"></span>旺铺统计</a>
+                <ul>
+                    <li><a href="http://statistics.csc86.com/user/flowstatistics.do">流量统计</a></li>
+                    <li><a href="http://statistics.csc86.com/user/keyWordsStatistics.do">产品和询盘统计</a></li>
+                    <li><a href="http://statistics.csc86.com/user/productAndInquiryStatistics.do">关键词统计</a></li>
+                </ul>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons rss-icon"></span><span class="arr"></span>商机订阅<span class="new"></span></a>
+                <ul>
+                    <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/list">订阅商机</a></li>
+                    <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/manage_supply?name=new">商机订阅管理</a></li>
+                </ul>
+            </li>
+            <li class="cate1th">
+            	<a href="http://quan.csc86.com/member/activityManage.html" class="mtb g-fs14 c-a"><span class="n-icons activity-icon"></span>活动管理</a>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons shop-icon"></span><span class="arr"></span>旺铺管理</a>
+                <ul class="shop-nav">
+                    <li>
+                        <dl>
+                            <dt>旺铺管理</dt>
+                            <dd>
+                                <a href="/shop/decoration.html">旺铺装修</a>
+                                <a href="/shop/template.html">模板装扮</a>
+                            </dd>
+                            <dt>模板管理</dt>
+                            <dd>
+                                <a href="/shop/temp.html">我购买的模板</a>
+                                <a href="/shop/tempmarket.html">模板市场</a>
+                            </dd>
+                            <dt>公司管理</dt>
+                            <dd>
+                                <a href="/shop/introduce.html">企业资料</a>
+                                <a href="/shop/contact.html">联系方式</a>
+                                <a href="/shop/honor.html">证书荣誉</a>
+                            </dd>
+                            <dt>旺铺服务</dt>
+                            <dd>
+                                <a href="/shop/newdomain.html">旺铺域名</a>
+                                <a href="/shop/link.html">友情链接</a>
+                            </dd>
+                            <dt>公司动态</dt>
+                            <dd>
+                                <a href="/shop/publish.html">发布公司动态</a>
+                                <a href="/shop/list.html">公司动态管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </li>
+            <li class="cate1th">
+                <a href="http://i.csc86.com/user/favoriteList" class="mtb g-fs14 c-a"><span class="n-icons favorite-icon"></span>我的收藏</a>
+        	</li>
+        </ul>
+        <div class="g-h30"></div>
+        <h3>
+        	<strong>特色服务</strong>
+        </h3>
+        <ul class="m-nav">
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/yunyingguanli/cst/" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>城商通服务</a>
+            </li>
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/2014/syhn-x/syhn.html#f1" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>生意红娘服务</a>
+            </li>
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/2014/sygj/" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>生意管家服务</a>
+            </li>
+
+            <li class="cate1th">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>企业融资</a>
+            </li>
+        </ul>
+        <div class="g-h30"></div>
+        <h3>
+            <strong>客服中心</strong>
+        </h3>
+        <ul class="m-service">
+            <li class="msg">
+            	<a href="http://quan.csc86.com/?circleId=42ca5425-1809-4ce1-8bf3-1fff36448809">在线咨询</a>
+            </li>
+            <li class="phone">400-184-8666</li>
+        </ul>
+    </div>
+    <script>seajs.use("http://res.csc86.com/v2/c/member/common/js/sideNav.js");</script>
+    <!--左侧导航 end-->
+    
+    <!--右侧内容 start-->
+    <div class="af-bd fh-mng">
+    	<h2 class="af-hd">发货管理</h2>
+        <ul class="g-cf uc-tab">
+            <li class="cur"><a href="./fh-manage.html">待发货订单列表</a></li>
+            <li><a href="./fh-record.html">发货记录</a></li>
+        </ul>
+        <div class="g-h25"></div>
+        <div class="g-cf ucsrch-box">
+            <form class="jsSrchFrm" method="post" action="">
+            <ul class="g-cf ucsrch-itm">
+                <li><input id="orderNum" type="text" name="" class="ipt-txt w189"  placeholder="订单号/商品名称" /></li>
+                <li>下单时间：<input type="text" id="startTime" name="startTime" value="" class="ipt-txt date-txt" readonly> 至 <input type="text" id="endTime" name="endTime" value="" class="ipt-txt date-txt" readonly><input type="submit" class="g-ml10 srch-smt" value="查询" />
+                </li>
+            </ul>
+            </form>
+        </div>
+        <div class="g-h10"></div>
+        <table class="g-tc uc-lsttbl fh-lsttbl">
+        	<colgroup>
+                <col width="135" />
+                <col width="300" />
+                <col width="142" />
+                <col width="142" />
+                <col width="120" />
+            </colgroup>
+            <thead>
+            	<tr>
+                    <th>订单号</th>
+                    <th>订单商品</th>
+                    <th>下单时间</th>
+                    <th>约定发货时间（最晚）</th>
+                    <th class="last">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                            <li class="g-cf">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2012/06/19/thumbs/201206190100571_t0.jpg" width="20" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+                <tr>
+                    <td><a class="g-c4" href="">B1505000001</a></td>
+                    <td>
+                    	<ul class="g-ivm order-pro-lst">
+                        	<li class="g-cf frst">
+                                <p class="g-fl ibox pic"><a class="i" href="" target="_blank"><img src="http://img.csc86.com/product/2015/05/07/201505072328205.jpeg" alt=""/></a></p>
+                                <p class="g-pr t"><a href="" target="_blank">2014真皮凉鞋男休闲沙滩鞋
+    凉拖鞋 男凉鞋 男鞋</a></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><span class="time">2015-05-28 15:30:29</span></td>
+                    <td><a class="agray-xbtn" href="./fh-gofh.html"><span>去发货</span></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="g-h20"></div>
+        <div class="g-cf af-page">
+            <div class="g-fr afp-bd">
+                <div class="afp-box" style="display: none;">
+                    <form>
+                    跳转到第<input teype="text" vlaue="" class="afp-text" name="page">页
+                    <input type="submit" value="确定" class="afp-btn">
+                    </form>
+                </div>
+                <span>当前共有&nbsp;<strong class="red">0</strong>&nbsp;条信息</span>&nbsp;
+                <span>1/20</span><a href="javascript:">上一页</a><a href="javascript:">下一页</a><a class="turn" href="javascript:">跳转</a>
+            </div>
+        </div>
+    </div>
+    <!--右侧内容 end-->	
+</div>
+<!--主内容 end-->
+
+<!--公共底部 start-->
+<div class="g-h20"></div>
+<div class="g-h20"></div>
+<div class="g-o-a foot">
+    <div class="foot-link"><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/">关于华南城网</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/member.html">会员服务</a><a rel="nofollow" target="_blank" href="http://ad.csc86.com/">广告服务</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/business.html">商务合作</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/server.html">服务条款</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/laws.html">法律申明</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/privacy.html">隐私保护</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/feedback.html">意见反馈</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">帮助中心</a><a target="_blank" href="http://cncms.csc86.com/sitemap.html">网站地图</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/contact.html">联系我们</a>
+    </div>
+    <p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5
+</div>
+<!--公共底部 end-->
+<script>
+	seajs.use('http://res.csc86.com/v2/c/member/supply/js/fh-manage.js',function(m){
+		m.mng();
+	});
+</script>
+</body>
+</html>

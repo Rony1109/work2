@@ -1,0 +1,58 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('//res.csc86.com/bhf/');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+ .idx-r{ width:260px; float:right;}
+/*登录信息*/
+a{ color:#444;}
+a:hover,.log-mess a:hover{ color:#f67301;}
+.r-buy a:hover{ text-decoration:none;}
+
+.log-reg{ height:40px; line-height:40px; background:url(img/log-reg-bg.png) no-repeat; overflow:hidden;}
+.log-reg a{ display:block; width:112px; float:left; height:100%; text-indent:-1000px;}
+.log-reg a.login{ width:148px;}
+.log-mess{ border:1px solid #e9e9e9; line-height:19px; height:40px; padding:1px 0 0 0; overflow:hidden; background:url(img/log-reg-bg.png) no-repeat 0 -49px;}
+.log-mess li{ width:106px; float:left; height:38px; padding-top:1px;}
+.log-mess li.push,.log-mess li.push a{ width:44px; height:39px; overflow:hidden;display:inline-block; padding:0; float:right;}
+.log-mess li.push a{ font-size:0; text-indent:100px;}
+.log-mess li.push a:hover{background:url(img/log-reg-bg.png) no-repeat 100% -97px;}
+.log-mess a{ display:inline-block; width:92px; padding-left:15px;color:#444;}
+.log-mess em{ color:#fc6824; font-weight:700;}
+
+.r-buy{ height:40px;border:1px solid #e6e6e6; border-bottom:none;}
+.r-buy a{ height:40px; display:inline-block; float:left; padding-left:52px; line-height:40px; font-size:14px; font-family:Microsoft YaHei,simhei;}
+.r-buy a.r-b-l{ width:76px; background:#f6f8f7 url(/v2/c/home/index/css/img/r_iocl.png) no-repeat 23px -862px;}
+.r-buy a.r-b-r{ width:77px; background:#f6f8f7 url(/v2/c/home/index/css/img/r_iocl.png) no-repeat 23px -933px; border-left:1px solid #e6e6e6;}
+
+.r-sev{ width:258px; height:130px;border:1px solid #e6e6e6; border-bottom:none; margin-top:5px; overflow:hidden;}
+.tab-sev-til{ height:30px; line-height:30px;}
+.tab-sev-til a{ width:129px; height:30px; line-height:30px; text-align:center; font-size:14px; font-family:Microsoft YaHei,simhei; background:#F8F8F8; font-weight:700; display:inline-block; float:left; border-bottom:1px solid #e6e6e6;}
+.tab-sev-til a.til{ width:128px;border-right:1px solid #e6e6e6;}
+.tab-sev-til a.cur,.tab-sev-til a:hover{ background:#fff; color:#F67301; text-decoration:none; border-bottom:1px solid #fff;}
+.sev-til{display:none;}
+.r-sev .cur{ display:block;}
+.til-sl{padding:20px 0 0 0; width:258px; height:70px;}
+.til-sl li{ float:left; height:65px; width:64px; text-align:center;}
+.til-sl li a{ height:30px; line-height:30px; display:inline-block; width:64px; text-align:center;}
+.til-sl li .t{ height:32px;}
+.til-sr{ padding:6px 0 0 8px;}
+.til-sr li{ line-height:22px; height:22px; width:242px; overflow:hidden;}
+.til-sr li em{ margin-right:6px;}
+.til-sr li .ry-buy{ color:#F67301;}
+.til-sr li .s-shop{ color:#2664a2;}
+
+
+

@@ -1,0 +1,1243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员中心1</title>
+<link rel="stylesheet" href="https://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" /><script src="https://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script><link rel="stylesheet" href="https://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" /><script src="https://res.csc86.com/f=js/c/memberhome/m-home.js"></script>    <link rel="stylesheet" href="https://res.csc86.com/v2/m/init/css/style.css" />
+    <link rel="stylesheet" href="https://res.csc86.com/v2/c/member/supply/css/style.css" />
+    <script src="https://res.csc86.com/v2/l/seajs/sea.js"></script>
+    <script src="https://res.csc86.com/v2/m/init/js/init.js"></script>
+
+</head>
+<body>
+<div class="head"><!--会员中心头部 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="https://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a class="hover" href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="https://payment.csc86.com/account.index.do" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="https://i.csc86.com/user/tool" title="工具" target="_blank"><b class="tool-icon"></b>工具</a>
+            <a href="http://wslm.csc86.com/member/default.html" title="微商联盟" target="_blank"><b class="wslm-icon"></b>微商联盟</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://login.csc86.com/signout" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--会员中心头部 end--><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script><link rel="stylesheet" href="https://res.csc86.com/f=css/c/offer/style.css" />
+<script src="https://res.csc86.com/editor/"></script>
+<script src="https://res.csc86.com/swfupload/"></script>
+<script src="https://res.csc86.com/b=js&f=m/page.js,m/showFormError.js,c/offer/list.js"></script>
+
+<div class="mbd clearfix">	
+ <div class="mbd clearfix">
+        <div class="g-fl m-side">
+            <h3>
+                <strong>基础服务</strong>
+            </h3>
+            <ul class="m-nav">
+                <li class="cate1th">
+                    <a target="_blank" href="#" class="mtb g-fs14 c-a">
+                        <span class="n-icons supply-icon"></span>供应</a>
+                    <ul>
+                    	<li class="cate2th"><a  href="https://i.csc86.com/seller/sellerOrders" class="c-a c-cur">已卖出的货物</a></li>
+                    	<li class="cate2th"><a  href="https://i.csc86.com/draw/list" class="c-a">交易账务</a></li>
+                        <li class="cate2th"><a  href="https://i.csc86.com/draw/account" class="c-a">提取货款</a></li>
+                        <li class="cate2th"><a  href="http://member.csc86.com/product/sell.html" class="c-a">发布产品</a>
+                        </li>
+                        <li class="cate2th"><a  href="http://member.csc86.com/product/sell/list.html" class="c-a">产品管理</a>
+                        </li>
+                        <li class="cate2th expand" id="leftnav-xpgl">
+                            <a  href="#" class="c-a">
+                                <span class="arr"></span>询盘管理</a>
+                            <ul>
+                                <li><a  href="http://member.csc86.com/quote/list.html">收到的询盘</a>
+                                </li>                                
+                   
+                               <!-- <li><a target="_blank" href="http://member.csc86.com/quote/order.html">收到的意向订单</a> </li>-->
+
+                                <li><a  href="http://member.csc86.com/quote/pricelist.html">发出的报价</a>
+                                </li>
+                                <li><a  href="http://member.csc86.com/quote/index.html">询盘大厅</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cate2th"><a  class="c-a " href="http://inquiry.csc86.com/inquiry/purchaser-list">买家管理</a>
+                        </li>
+                        <li class="cate2th"><a  href="https://i.csc86.com/send/waitList" class="c-a">发货管理</a></li>
+                        <li class="cate2th"><a  href="https://i.csc86.com/return/list" class="c-a">返修退换货管理</a></li>
+                    </ul>
+                </li>
+                <li class="cate1th">
+                    <a target="_blank" href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons buy-icon"></span>采购</a>
+                    <ul>
+                    	<li class="cate2th"><a href="https://i.csc86.com/buyer/buyerOrder"   class="c-a">已采购到的货物</a></li>
+                    	<li class="cate2th"><a href="https://i.csc86.com/carDetail" class="c-a">采购单</a></li>
+                        <li class="cate2th"><a target="_blank" href="http://member.csc86.com/inquiry/openpublish.html" class="c-a">发布采购计划</a>
+                        </li>
+                        <li class="cate2th expand">
+                            <a href="#" class="c-a">
+                                <span class="arr"></span>采购询价管理</a>
+                            <ul>
+                                <li><a  href="http://member.csc86.com/inquiry/openList.html">发出的采购</a>
+                                </li>
+                                <li><a  href="http://member.csc86.com/inquiry/list.html">发出的询盘</a>
+                                </li>
+                                <li><a class=""  href="http://inquiry.csc86.com/inquiry/productlist">询盘的产品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cate2th"><a class="c-a "  href="http://inquiry.csc86.com/inquiry/quotationlist">收到的报价</a>
+                        </li>
+                        <li class="cate2th"><a class="c-a " href="http://inquiry.csc86.com/inquiry/supplier-list">供应商管理</a>
+                        </li>
+                        <li class="cate2th"><a class="c-a " href="https://i.csc86.com/returnRepairService/getList">返修退换货服务</a></li>
+                    </ul>
+                </li>
+                <li class="cate1th expand">
+                          <a href="javascript:" class="mtb g-fs14 c-a">
+                          <span class="n-icons statistics-icon"></span>
+                          <span class="arr"></span>旺铺统计</a>           
+					        <ul>
+					            <li>
+					            	<a target="_blank" href="http://statistics.csc86.com/user/flowstatistics.do">流量统计</a>
+					            </li>
+					            <li>
+					            	<a target="_blank" href="http://statistics.csc86.com/user/productAndInquiryStatistics.do">产品和询盘统计</a>
+					            </li>
+					            <li>
+					            	<a target="_blank" href="http://statistics.csc86.com/user/keyWordsStatistics.do">关键词统计</a>
+					            </li>
+					        </ul>
+					    </li>
+                <li class="cate1th expand">
+                    <a href="#" class="mtb g-fs14 c-a">
+                        <span class="n-icons rss-icon"></span>
+                        <span class="arr"></span>商机订阅<span class="new"></span></a>
+                    <ul>
+                        <li><a href="http://inquiry.csc86.com/inquiry/management/list">商机订阅</a>
+                        </li>
+                        <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/manage_supply?name=new">商机订阅管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cate1th">
+                    <a  href="http://quan.csc86.com/member/activityManage.html" class="mtb g-fs14 c-a">
+                        <span class="n-icons activity-icon"></span>活动管理</a>
+                </li>
+                <li class="cate1th expand jsWpMng">
+                    <a target="_blank" href="http://member.csc86.com/shop/shopinfo.html" class="mtb g-fs14 c-a">
+                        <span class="n-icons shop-icon"></span>
+                        <span class="arr"></span>旺铺管理</a>
+                </li>
+                <li class="cate1th">
+                    <a href="http://wslm.csc86.com/member/life.html" class="mtb g-fs14 c-a">
+                        <span class="n-icons weiunion-icon"></span>微生活</a>
+                </li>
+                <li class="cate1th">
+                    <a  href="https://i.csc86.com/user/favoriteList" class="mtb g-fs14 c-a">
+                        <span class="n-icons favorite-icon"></span>我的收藏</a>
+                </li>
+            </ul>
+            <div class="g-h30"></div>
+            <h3>
+                <strong>特色服务</strong>
+            </h3>
+            <ul class="m-nav">
+                <li class="cate1th">
+                    <a target="_blank" href="http://cncms.csc86.com/special/yunyingguanli/cst/" class="mtb g-fs14 c-a">
+                        <span class="n-icons special-icon"></span>城商通服务</a>
+                </li>
+                <li class="cate1th">
+                    <a target="_blank" href="http://www.csc86.com/zt/syhn/sy.html" class="mtb g-fs14 c-a">
+                        <span class="n-icons special-icon"></span>生意红娘服务</a>
+                </li>
+                <li class="cate1th">
+                    <a target="_blank" href="http://cncms.csc86.com/special/2014/sygj/" class="mtb g-fs14 c-a">
+                        <span class="n-icons special-icon"></span>生意管家服务</a>
+                </li>
+            </ul>
+            <div class="g-h30"></div>
+            <h3>
+                <strong>客服中心</strong>
+            </h3>
+            <ul class="m-service">
+                <li class="msg"><a target="_blank" href="http://quan.csc86.com/42ca5425-1809-4ce1-8bf3-1fff36448809.html">在线咨询</a>
+                </li>
+                <li class="phone">400-184-8666</li>
+            </ul>
+        </div>        <script>seajs.use("https://res.csc86.com/v2/c/member/common/js/sideNav.js");</script>
+		<script src="https://res.csc86.com/f=js/c/offer/publish.js"></script>
+		<script>csc.offer.errors = null</script>
+<div class="af-bd pro-pub ymcpro-mng">
+    <h1 class="af-hd fix-bd">已卖出的货物</h1>
+    
+<!--    <table class="paytable"  border="0" cellspacing="0" cellpadding="0">
+           <colgroup>
+         		  <col width="40">
+            	<col width="140">
+                <col width="80">
+                <col width="90">
+				<col width="130">
+                <col width="110">
+            </colgroup>
+            <thead>
+                <tr>
+               		<th colspan='2'>商品</th>
+                    <th>数量</th>
+                    <th>原单价</th>
+                    <th>修改单价</th>
+                    <th>修改后小计</th>
+                </tr>
+            </thead>
+            <tbody>
+<tr>
+	<td><input class="jsSltOne" name="lineId" type="checkbox" checked="cjecked" value="304"></td>
+    <td class="first">文具文具文具文具</td>
+    <td>100</td>
+    <td>12.8</td>
+    <td><input class="editprice" value="12.8"></td>
+    <td>1280</td>
+</tr>
+<tr>
+	<td><input class="jsSltOne" name="lineId" type="checkbox" checked="cjecked" value="304"></td>
+    <td class="first">文具文具文具文具</td>
+    <td>100</td>
+    <td>12.8</td>
+    <td><input class="editprice" value="12.8"></td>
+    <td>1280</td>
+</tr>
+<tr>
+	<td><input class="jsSltOne" name="lineId" type="checkbox" checked="cjecked" value="304"></td>
+    <td class="first">文具文具文具文具</td>
+    <td>100</td>
+    <td>12.8</td>
+    <td><input class="editprice" value="12.8"></td>
+    <td>1280</td>
+</tr>
+<tfoot>
+<tr>
+	<td  colspan='6'>原订单金额：<em class="yprice">3680</em><br>修改后订单金额：<em class="xprice">3680</em></td>
+</tr>
+</tfoot>
+</tbody>
+</table>-->
+
+      <div class="g-cf ucsrch-box">
+      <form action="">
+         <ul class="g-cf ucsrch-itm">
+         	<li><input type="text" id="orderNum" name="search" class="ipt-txt w189" value=""  placeholder="订单号/商品名称" /></li>
+			<li class="clzt">订单状态：
+	            <select name="orderStatus" class="frm-slt">
+	              	<option value="">全部订单</option>
+	              	<option value="1">待付款</option>
+	              	<option value="2">已付款</option>
+	              	<option value="10">已支付订金</option>
+	              	<option value="19">已支付尾款</option>
+	              	<option value="15">待收货</option>
+	              	<option value="11">确认现货</option>
+	              	<option value="20">确认需备货</option>
+	              	<option value="12">备货中</option>
+	              	<option value="13">备货完成</option>
+	              	<option value="3">交易完成</option>
+	              	<option value="5">交易取消</option>
+	            </select>
+	            	<script>
+	            		jQuery(".frm-slt").find("option").each(function(idx,opt){
+	            			if(jQuery(opt).val() == ""){
+	            				jQuery(opt).attr("selected",true);
+	            			}
+	            		});
+	            	</script>
+	          </li>
+	          <li>成交时间： <input type="text" id="startTime" name="startTime" value="" class="txt date" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01  01:00:00\'}',el:'startTime',onpicking:function(dp){}})"> 至 <input type="text" id="endTime" name="endTime" value="" class="txt date" readonly onclick="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01 01:00:00',el:'endTime',onpicking:function(dp){}})"><input type="submit" class="g-ml10 srch-smt fix-bg" value="查询" /></li>	
+        </ul>
+      </form>
+    </div>
+    <table class="mytable">
+      <tr>
+        <th class="first" width="220">货物信息</th>
+        <th width="70">单价</th>
+        <th width="70">数量</th>
+        <th width="80" class="fix-style">收货人</th>
+        <th class="fix-style">订单金额</th>
+        <th class="fix-style">订单状态</th>
+        <th class="fix-style">操作</th>
+      </tr>
+      
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000038">B1512000038</a></span><span>下单时间：2015-12-09 10:58:47</span><span><a href="http://tufei2yy.csc86.com">111广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509169504359.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank">APP测试产品2</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：40</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>320.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>2</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509169504359.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank">APP测试产品2</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：41</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>320.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509169504359.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank">APP测试产品2</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：42</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>320.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>2</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509169504359.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank">APP测试产品2</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>320.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">吕</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					1920.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>待付款</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+	        						<a class="fc-2664a2 tool-link jsModifyPrc" data-type={"orderId":"B1512000038"}>修改价格</a>
+        						<a target="_blank" class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000038">查看详情</a>
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000031">B1512000031</a></span><span>下单时间：2015-12-03 20:28:27</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/fbe06f06-8697-4958-b3b6-fc56c215d5d5.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/04/14/201504149952142.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/fbe06f06-8697-4958-b3b6-fc56c215d5d5.html" target="_blank">小颜14号测试1</a>
+					                   <p>
+													   <span>颜色：红色1</span> 
+													   <span>尺码：37</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>4</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/fbe06f06-8697-4958-b3b6-fc56c215d5d5.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/04/14/201504149952142.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/fbe06f06-8697-4958-b3b6-fc56c215d5d5.html" target="_blank">小颜14号测试1</a>
+					                   <p>
+													   <span>颜色：红色1</span> 
+													   <span>尺码：38</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>4</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509169504359.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/c6ca0dee-10c1-48f1-900c-b92836962117.html" target="_blank">APP测试产品2</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：42</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>320.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>7</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					2240.08           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易完成</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a target="_blank" class="fc-2664a2"target="_blank"  href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000031">查看详情</a>
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000028">B1512000028</a></span><span>下单时间：2015-12-03 11:31:53</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：40</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>14</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：40</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：41</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：42</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：白色</span> 
+													   <span>尺码：40</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：白色</span> 
+													   <span>尺码：41</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：白色</span> 
+													   <span>尺码：42</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：白色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：40</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：41</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>9</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：42</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：黑色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>1</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">吕</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					102.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000028">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000027">B1512000027</a></span><span>下单时间：2015-12-02 20:08:26</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：11</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>102</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					1.02           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000027">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000026">B1512000026</a></span><span>下单时间：2015-12-02 20:04:33</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					303.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000026">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000025">B1512000025</a></span><span>下单时间：2015-12-02 19:51:04</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					303.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000025">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000024">B1512000024</a></span><span>下单时间：2015-12-02 19:51:04</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：11</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>102</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：22</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>5</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：33</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>4</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：44</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>3</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：白</span> 
+													   <span>尺码：11</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					2.15           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000024">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000022">B1512000022</a></span><span>下单时间：2015-12-02 19:46:03</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					303.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000022">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000021">B1512000021</a></span><span>下单时间：2015-12-02 19:46:03</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：11</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>102</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：22</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>5</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：33</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>4</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：红</span> 
+													   <span>尺码：44</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>3</li>
+	        				 </ul>
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/07/02/201507025326042.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7f5defc-006f-4417-b0a7-2112e9fcbafd.html" target="_blank">在线交易产品——小颜7月2号</a>
+					                   <p>
+													   <span>颜色：白</span> 
+													   <span>尺码：11</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>0.01</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					2.15           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000021">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+      	 	 <tr>
+        		<td colspan="7" class="set-span"><span>订单编号：<a href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000019">B1512000019</a></span><span>下单时间：2015-12-02 19:45:21</span><span><a href="http://tufei2yy.csc86.com">广东省深圳市华南城网电子商务有限公司</a></span></td>
+      		 </tr>
+	      		 <tr>
+	        		<td colspan="3" class="fix-pd">
+					         	<ul class="product-intro g-cf fix-bd">
+	        				 	<li class='items-1'>
+					                  <div class="ibox g-fl"><a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank" class="i"><img src="http://img.csc86.com/product/2015/09/16/201509167149160.jpeg" data-max="60"></a></div>
+					                   <div class="pr-msg g-fl">
+					                   <a href="http://tufei2yy.csc86.com/product/a7e08d0d-0ece-4b11-ab80-93f60185da23.html" target="_blank">APP测试产品1</a>
+					                   <p>
+													   <span>颜色：红色</span> 
+													   <span>尺码：43</span> 
+					                   </p>
+					                  </div>
+					            </li>
+				                 <li class='items-2'>
+				                 	<div class="set-mid">
+					                 			<p>3.00</p>
+					                 	
+				                 	</div>
+				                 </li>
+				                 <li class='items-3'>101</li>
+	        				 </ul>
+	        		</td>
+	        		<td class="fix-style">小强哥</td>
+        			<td class="fix-style">
+        				<span class="fc-cc0000">
+        					303.00           					     					
+        				</span>
+        				
+        			</td>
+        			<td class="fix-style">
+        						<p>交易取消</p>
+        			</td>
+        			<td class="fix-style" valign="center">
+								<a class="fc-2664a2 tool-link" target="_blank" href="https://i.csc86.com/b2border/orderDetail?orderNo=B1512000019">查看详情</a>
+        					<!-- 使用优惠券的订单不能修改价格 -->
+	        	 </tr>
+    </table>
+    <div class="g-h20"></div>
+	    <div class="g-c-f af-page">
+
+
+<div class="g-t-c Spage">
+<ul>
+ 		<li class="previous hidden"><span>上一页</span></li>
+		<li class="first selected"><a href="javascript:gotoPage(1);">1</a></li>   
+	 			<li class="page"><a href="javascript:gotoPage(2);">2</a></li>
+	 			<li class="page"><a href="javascript:gotoPage(3);">3</a></li>
+	 			<li class="page"><a href="javascript:gotoPage(4);">4</a></li>
+	 	<li>...</li>
+	 	<li class="last"><a href="javascript:gotoPage(41);">41</a></li>
+	 	<li class="next"><a href="javascript:gotoPage(1 + 1);">下一页</a></li>
+ <li>共41页 </li>
+ <li><form action="" method="get" onsubmit=""><span>到</span><input data-maxPage="41" type="text" id="inPageNO" class="pageNo" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'') == '0' ? '':this.value.replace(/[^0-9]/g,'');"><span>页</span><input id="pageBut" type="button" class="submit_go" value="确定"/></form></li>
+</ul>
+</div>  
+<script>
+function gotoPage(pageNo){
+
+	var  pageUrl = window.location.href;
+	if(pageUrl.indexOf("page")>0){
+		var newPageh = pageUrl.substring(0,pageUrl.indexOf("page"));
+		var newpageUrl = pageUrl.substring(pageUrl.indexOf("page"));
+	 	var page;
+		if(newpageUrl.indexOf("&")>0){
+		    page = "page="+pageNo+newpageUrl.substring(newpageUrl.indexOf("&"));
+		}else{
+		    page = "page="+pageNo;
+		}
+		window.location = newPageh+page;
+	}else{
+		if(pageUrl.indexOf("?")>0){
+			window.location = pageUrl+"&page="+pageNo;
+		}else{
+			if(pageUrl.charAt(pageUrl.length-1)=='#'){
+	  	 		pageUrl = pageUrl.substring(0,pageUrl.length-1);
+	  	 	}
+			window.location = pageUrl+"?page="+pageNo;
+		}
+		
+	}
+}
+
+$(document).ready(function(){
+  $("#pageBut").click(function(){
+  	var $inPageNO= $("#inPageNO");
+  	var maxPage=parseInt($inPageNO.attr('data-maxPage'));
+  	var pageNo =parseInt($inPageNO .val());
+  	if(pageNo){
+  		if(pageNo>maxPage){
+  			pageNo=maxPage;
+  		}
+  		gotoPage(pageNo);
+  	}
+  });
+});
+</script>  
+	    </div>
+  </div>
+</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-h-20"></div>
+
+
+<div class="g-o-a foot">
+	<div class="foot-link">
+	        <a rel="nofollow" target="_blank" href="http://group.csc86.com">关于华南城</a>
+	        <a rel="nofollow" target="_blank" href="http://www.csc86.com/about/">华南城网</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/services/chengshangtong.html">会员服务</a>
+		<a rel="nofollow" target="_blank" href="http://ad.csc86.com/">广告服务</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/business.html">商务合作</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/terms.html">服务条款</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/legal.html">法律申明</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/privacy.html">隐私保护</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/feedback.html">意见反馈</a>
+		<a rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">帮助中心</a>
+		<a target="_blank" href="http://cncms.csc86.com/sitemap.html">网站地图</a>
+		<a rel="nofollow" target="_blank" href="http://www.csc86.com/about/contact.html">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved </p>
+	深圳华南城网电子商务有限公司 版权所有 粤ICP备14011296号-1
+	<div class="foot-lg"><span><a target="_blank" rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img alt="公共信息安全网络监察" src="https://res.csc86.com/image/c/index/sznet110wangan.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span>
+	</div>
+</div>
+<style>
+.back-top{width:100%;_position:relative}.back-top a{display:block;width:48px;height:48px;background:#ccc url(https://res.csc86.com/css/m/back-top/img/bg.png) no-repeat;text-indent:-99999px;}.back-top a:hover{background-position:0 -49px;}.back-top .bt-bd{_display:inline;_float:right;width:48px;height:48px;position:fixed;_position:absolute;bottom:30px;right:20px;}.back-top .bt-hide{display:none}
+</style>
+<div id="backTop" class="g-o-a back-top">
+<div class="bt-bd">
+<a href="#">返回顶部</a>
+</div>
+</div>
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: none repeat scroll 0% 0% rgb(255, 255, 255);"></div>
+<script>seajs.use('https://res.csc86.com/v2/c/member/supply/js/sell-out.js');</script>
+
+</body>
+</html>
+

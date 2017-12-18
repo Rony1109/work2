@@ -1,0 +1,54 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+.g-comment-top{border-bottom:solid 1px #e5e5e5;padding-bottom: 7px;margin-bottom:10px;}
+.g-comment-share{_width:115px;margin-top: -6px;}
+.g-comment-like{color:#888;_width:66px;}
+.g-comment-like span{margin-left:20px;}
+.g-comment-like strong{color:#f30}
+
+.g-comment-form-bd{padding-left:72px;}
+.g-comment-login{height:38px;padding:10px;border:solid 1px #e6e6e6;color:#888}
+.g-comment-login a{color:#2664a2}
+.g-comment-login a:hover{color:#f60}
+.g-comment-btn{width:61px;height:24px;margin-top:10px;background:url(img/comment-bg.png) no-repeat 0 0;text-align:center;line-height:23px;}
+.g-comment-textarea{width:97%;height:90px;margin-bottom:-5px;border:solid 1px #c3c3c3;padding:5px;outline:none;}
+button.g-comment-btn{color:#fff;border:0;padding-bottom:2px;cursor:pointer}
+span.g-comment-btn,button.g-comment-btn-dis{color:#888;background-position:0 -50px;cursor:default;}
+
+.g-comment-emoticons{float:left;width:17px;height:17px;margin-top:10px;background:url(img/comment-bg.png) no-repeat 0 -100px;}
+.g-comment-emoticons-show{background-position:-20px -100px;}
+
+.g-comment-let{margin-right:10px}
+.g-comment-let strong{color:#f60}
+
+.g-comment-item{padding:12px 0;border-bottom:dotted 1px #e8e8e8}
+.g-comment-info{padding-left:72px;}
+.g-comment-member a{color:#333}
+.g-comment-member a:hover{color:#f60;}
+.g-comment-content{padding:5px 0}
+.g-comment-time{color:#aaa}
+
+.g-comment-page{padding:18px 0;color:#000;text-align:right;line-height:21px}
+.g-comment-page a,.g-comment-page span{display:inline-block;padding:0 7px;color:#000;*display:inline;*zoom:1}
+.g-comment-page .cur{color:#fff;background:#e77918}
+.g-comment-page a:hover{color:#00468e;text-decoration:none}
+
+.qqFace{margin: 10px 0 0 -1px;background:#fff;padding:2px;border:1px #dfe6f6 solid;}
+.qqFace table td{padding:0px;}
+.qqFace table td img{cursor:pointer;border:1px #fff solid;}
+.qqFace table td img:hover{border:1px #0066cc solid;}

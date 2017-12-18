@@ -1,0 +1,206 @@
+<!-- 中间内容 -->
+<div class="ly-c g-fl">
+	{{if isCg === false}}
+	<div class="box company" id="companyInfo">
+		<div class="g-cf">
+			<i class="g-fl icon icon-3 g-mt5"></i>
+			{{if role === 'buyers'}} <!-- 买家企业展示 -->
+				{{if !isHasShop}}
+				<div class="g-fl g-ml15">
+					<div class="g-cf">
+						<div class="g-fl g-fwb g-fs18">您暂时未开通企业旺铺</div>
+						{{if personlACT}}
+						<div class="g-fl g-cf g-mt3">
+							<a class="icon g-fl icon-rz icon-rz-1" href="javascript:;" title="个人实名认证"></a>
+						</div>
+						{{/if}}
+					</div>
+					<div class="g-fs12 g-c8">开通旺铺，轻松获得交易</div>
+				</div>
+				<a href="{{openShopUrl}}" class="g-fr orange-btn btn-1 g-mr30 g-mt5" title="开通旺铺" target="_blank">开通旺铺</a>
+				{{else}}
+				<div class="g-fl g-ml15">
+					<div class="g-cf">
+						<div class="g-fl g-fwb g-fs18 g-mt5">{{companyInfo.name}}</div>
+						<div class="g-fl g-cf mt7">
+							{{if personlACT}}
+							<a class="icon g-fl icon-rz icon-rz-1" href="javascript:;" title="个人实名认证"></a>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/if}}
+			{{else}} <!-- 卖家企业展示 -->
+				<div class="g-fl g-ml15">
+					{{if isHasShop}}
+					<div class="g-cf">
+						<div class="g-fl g-fwb g-fs18">{{companyInfo.name}}</div>
+						<div class="g-fl g-cf g-mt3">
+							{{if companyInfo.companyACT1}}
+							<a class="icon g-fl icon-rz icon-rz-2" href="javascript:;" title="企业实名认证"></a>
+							{{else}}
+							{{if personlACT}}
+							<a class="icon g-fl icon-rz icon-rz-1" href="javascript:;" title="个人实名认证"></a>
+							{{/if}}
+							{{/if}}
+							{{if companyInfo.companyACT2}}
+							<a class="icon g-fl icon-rz icon-rz-3" href="javascript:;" title="企业身份认证"></a>
+							{{/if}}
+							{{if companyInfo.companyACT3}}
+							<a class="icon g-fl icon-rz icon-rz-4" href="javascript:;" title="企业实地认证"></a>
+							{{/if}}
+						</div>
+					</div>
+						{{if  isCST}}
+						<div class="g-fs12 g-c8">【城商通用户】{{endTime}} 到期</div>
+						{{else if isVIP}}
+						<div class="g-fs12 g-c8">【VIP用户】{{endTime}} 到期</div>
+						{{else}}
+						<div class="g-fs12 g-c8">【普通旺铺】开通城商通，享更多优质服务，
+							<a href="http://cncms.csc86.com/special/yunyingguanli/cst/" title="立即开通" class="corange" target="_blank">立即开通</a>
+						</div>
+						{{/if}}
+					{{else}}
+					<div class="g-cf">
+						<div class="g-fl g-fwb g-fs18">您暂时未开通企业旺铺</div>
+						{{if personlACT}}
+						<div class="g-fl g-cf g-mt3">
+							<a class="icon g-fl icon-rz icon-rz-1" href="javascript:;" title="个人实名认证"></a>
+						</div>
+						{{/if}}
+					</div>
+					<div class="g-fs12 g-c8">开通旺铺，轻松获得交易</div>
+					{{/if}}
+				</div>
+				{{if !isHasShop}}
+				<a href="{{openShopUrl}}" class="g-fr orange-btn btn-1 g-mr30 g-mt5" title="开通旺铺" target="_blank">开通旺铺</a>
+				{{else if !isOnlineTrade}}
+				<a href="{{openTradeUrl}}" class="g-fr orange-btn btn-1 g-mr30 g-mt5" title="开通在线交易" target="_blank">开通在线交易</a>
+				{{/if}}
+			{{/if}} <!-- end 卖家企业信息展示 -->
+		</div>
+
+		<!-- 快捷菜单 -->
+		{{if role === 'mem_Seller'}}
+		<div class="g-btd g-mt15 g-cf g-pt10 pl46">
+			{{if !!shopUrl}}
+			<a href="http://{{shopUrl}}/?static=edit" class="g-fl shutbtn" title="装修旺铺" target="_blank">
+				<span class="icon icon-shutbtn icon-wp"></span>
+				<p class="g-fs12">装修旺铺</p>
+			</a>
+			{{else}}
+			<a href="http://work.csc86.com/shop/guide.html" class="g-fl shutbtn" title="装修旺铺" target="_blank">
+				<span class="icon icon-shutbtn icon-wp"></span>
+				<p class="g-fs12">装修旺铺</p>
+			</a>
+			{{/if}}
+
+			{{if !!shopUrl}}
+			<a href="http://{{shopUrl}}" class="g-fl shutbtn" title="进入旺铺" target="_blank">
+				<span class="icon icon-shutbtn icon-jrwp"></span>
+				<p class="g-fs12">进入旺铺</p>
+			</a>
+			{{else}}
+			<a href="http://work.csc86.com/shop/guide.html" class="g-fl shutbtn" title="进入旺铺" target="_blank">
+				<span class="icon icon-shutbtn icon-jrwp"></span>
+				<p class="g-fs12">进入旺铺</p>
+			</a>
+			{{/if}}
+			
+			
+			<a href="http://{{host.member}}/product/sell.html" class="g-fl shutbtn" title="发布产品">
+				<span class="icon icon-shutbtn icon-relpro"></span>
+				<p class="g-fs12">发布产品</p>
+			</a>
+			<a href="http://{{host.member}}/shop/showcaseRecommend.html" class="g-fl shutbtn" title="橱窗推荐" target="_blank">
+				<span class="icon icon-shutbtn icon-cqtj"></span>
+				<p class="g-fs12">橱窗推荐</p>
+			</a>
+			<a href="http://search.csc86.com/user/gotoAddPayKeyword.do" class="g-fl shutbtn" title="旭日排名" target="_blank">
+				<span class="icon icon-shutbtn icon-cqtj icon-xrpm"></span>
+				<p class="g-fs12">旭日排名</p>
+			</a>            
+		</div>
+		{{/if}}
+	</div>
+	{{/if}}
+	<div class="box{{if isCg === false}} g-mt10{{/if}}">
+		<div class="g-cf lc-head">
+			<i class="g-fl icon icon-4"></i>
+			<span class="g-fl g-fs18 g-fwb g-mt5 g-ml10">我的订单</span>
+			<span class="g-fr g-fs14 g-mt5">
+				{{if role==='buyers'}}
+				<a href="https://{{host.i}}/buyer/buyerOrder" title="查看所有订单">查看全部订单</a>
+				{{else}}
+				<a href="https://{{host.i}}/seller/sellerOrders" title="查看所有订单">查看全部订单</a>
+				{{/if}}
+				<span class="corange">&gt;&gt;</span>
+			</span>
+		</div>
+		<div class="tab-header g-cf" id="ordertab">
+			{{each orderTab as v i}}
+			{{if i === 0}}
+			<a href="javascript:;" class="g-fl hover" title="{{v.text}}">{{v.text}} <span>({{v.num}})</span></a>
+			{{else}}
+			<a href="javascript:;" class="g-fl" title="{{v.text}}">{{v.text}} <span>({{v.num}})</span></a>
+			{{/if}}
+			{{/each}}
+		</div>
+		{{if role === 'mem_Seller'}}
+			{{if !isOnlineTrade}}
+			<div class="g-btd cempty g-cf">
+				<i class="icon g-fl icon-ept-4"></i>
+				<div class="g-fl g-fwb g-ml30">
+					<p>您还没有开通在线交易，不能在线下单</p>
+					<p>现在去 <a href="{{openTradeUrl}}" class="corange" title="采购商城" target="_blank">开通在线交易</a></p>
+				</div>
+			</div>
+			{{else if !isHasShop}}
+			<div class="g-btd cempty g-cf">
+				<i class="icon g-fl icon-ept-4"></i>
+				<div class="g-fl g-fwb g-ml30">
+					<p>开通企业旺铺和在线交易，才能获取订单</p>
+					<p>现在去 <a href="{{openShopUrl}}" class="corange" title="开通旺铺" target="_blank">开通旺铺</a></p>
+				</div>
+			</div>
+			{{else}}
+			<div id="orderContainer"></div>
+			{{/if}}
+		{{else}}
+		<div id="orderContainer"></div>
+		{{/if}}
+	</div>
+
+	<div class="box g-mt10" id="mybuyer">
+		<div class="g-cf lc-head">
+			<i class="g-fl icon icon-5"></i>
+			<span class="g-fl g-fs18 g-fwb g-mt5 g-ml10">
+				{{if role==='buyers'}}
+				我的采购
+				{{else}}
+				我的报价
+				{{/if}}
+			</span>
+			<span class="g-fr g-fs14 g-mt5"><a href="http://{{host.member}}/quote/index.html" title="询盘大厅">询盘大厅</a><span class="corange">&gt;&gt;</span></span>
+		</div>
+		<div class="tab-header g-cf" id="inquiryTab">
+			<a href="javascript:;" class="g-fl hover" title="待报价">待报价 <span>({{userInquiryInf.waitPendingCount || 0}})</span></a>
+			<a href="javascript:;" class="g-fl" title="已报价">已报价 <span>({{userInquiryInf.pendedCount || 0}})</span></a>
+		</div>
+		{{if role === 'mem_Seller'}}
+			{{if !isHasShop}}
+			<div class="g-btd cempty g-cf">
+				<i class="icon g-fl icon-ept-4"></i>
+				<div class="g-fl g-fwb g-ml30">
+					<p>开通企业旺铺和在线交易，才能获取订单</p>
+					<p>现在去 <a href="{{openShopUrl}}" class="corange" title="开通旺铺" target="_blank">开通旺铺</a></p>
+				</div>
+			</div>
+			{{else}}
+			<div id="inquiryContainer"></div>
+			{{/if}}
+		{{else}}
+		<div id="inquiryContainer"></div>
+		{{/if}}
+	</div>
+</div>

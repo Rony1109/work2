@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>&nbsp;</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<script src="//res.csc86.com/f=js/l/jquery.js"></script>
+    <script type="text/javascript" src="../internal.js"></script>
+	<script type="text/javascript" src="../artTemplate.js"></script>
+	<link rel="stylesheet" href="//res.csc86.com/v2/m/init/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="template.css">
+</head>
+<body>
+	<div class="wrap g-cf">
+		<div class="g-fl temp_select" id="tab">
+			<ul>
+			    <li class="g-tc"><a href="javascript:;" title="我的模板" class="temp_select_a temp_select_a_hover">我的模板</a></li>
+				<li class="g-tc"><a href="javascript:;" title="模板市场" class="temp_select_a">模板市场</a></li>
+			</ul>
+		</div>
+		<!-- 模板市场 -->
+		<div class="g-fl temp_cat ml10 g-dn" id="tablist-1">
+			<div class="temp_cat_h">
+				<label>模板类目：</label>
+				<select name="temp-cate" id="temp-cate-1">
+				    <option value="-1">--请选择--</option>
+				</select>
+				<select name="temp-cate" id="temp-cate-2" class="ml10">
+				    <option value="-1">--请选择--</option>
+				</select>
+			</div>
+		</div>
+		<!-- 我的模板 -->
+		<div class="g-fl temp_cat ml10" id="tablist-2">
+		</div>
+	</div>
+	<!-- 我的模板 -->
+	<script type="text/html" id="tpl-myTemplate">
+	    <table class="temp_myitem">
+			<thead>
+				<tr>
+					<th colspan="2">&nbsp;&nbsp;模板名称</th>
+					<th>保存时间</th>
+					<th colspan="2">&nbsp;&nbsp;操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{each data as v i}}
+					<tr class="bd-dashed tr-hack" isDefault="{{v.isDefault}}">
+						<td width="30" class="g-tc"><input tid="{{v.id}}" type="checkbox" name="c-temp" /></td>
+						<td width="130">{{v.templetName}}</td>
+						<td width="150">{{v.addTime}}</td>
+						<td>
+							<a href="javascript:;" title="预览" class="button1 tpl-preview" tid="{{v.id}}" type="1">预览</a>
+							<a href="javascript:;" title="使用" class="button1 ml10 orange-button tpl-useit" tid="{{v.id}}" type="1">使用</a>
+						</td>
+						<td class="c-999" tid="{{v.id}}">
+							<span class="g-dn">默认模板</span>
+							<a href="javascript:;" title="设为默认" class="g-dn">设为默认</a>
+							<a class="c-f9601d g-dn" href="javascript:;" title="取消默认" class="g-dn">取消默认</a>
+						</td>
+					</tr>
+				{{/each}}
+				<tr>
+					<td class="g-tc"><input type="checkbox" name="c-all-temp" /></td>
+					<td><a href="javascript:;" title="删除" class="button1" id="delete-temp">删除</a></td>
+					<td colspan="3" class="g-tr">可保存模板数 <span class="c-fd0002" id="gz-temp-count">{{data.length}}</span>/5</td>
+				</tr>
+			</tbody>
+		</table>
+	</script>
+	<!-- 模板市场 -->
+	<script type="text/html" id="tpl-scTemplate">
+	    <div class="temp_cat_items">
+			<ul class="g-cf">
+				{{each data as v i}}
+					<li tid="{{v.templetId}}" fid="{{v.id}}" class="{{if i>2}}mt10{{/if}} {{if i%3 !== 0}}ml10{{/if}}">
+						<div class="temp_cat_item">
+							<div>{{v.templetName}}</div>
+							<div><img src="http://res.csc86.com/v2/c/pro-template/{{v.templetId}}/tpl.png" width="120" height="120" alt="模板" /></div>
+							<div class="mt10">
+								<a href="javascript:;" title="预览" class="button1 tpl-preview" tid="{{v.templetId}}" type="2">预览</a>
+								<a href="javascript:;" title="使用" class="button1 tpl-useit" tid="{{v.templetId}}" type="2">使用</a>
+							</div>
+						</div>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</script>
+</body>
+</html>

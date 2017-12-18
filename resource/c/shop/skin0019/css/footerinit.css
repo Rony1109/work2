@@ -1,0 +1,112 @@
+/* 货金购 通用底部样式 */
+
+/* 底部导航 */
+.footer_bar{
+	height: 186px;
+	/*background-color: #24344b;*/
+	background-color: #232f3e;
+	margin-top: 64px;
+	padding-top: 50px;
+}
+.footer_bar .footer_nav dl{
+	width: 198px;
+	font-size: 14px;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+.footer_bar .footer_nav dl dt{ font-weight: 700 }
+.footer_bar .footer_nav dl dd{
+	line-height: 2;
+}
+.footer_bar .footer_nav dl dd a{ color:#fff;} 
+.footer_bar .footer_nav dl dd a:hover{color: #db6221}
+.footer_bar .footer_nav .footer_line{ 
+	height: 120px; 
+	width: 0px; 
+	border-left:1px solid #4e5a6a; 
+}
+
+/* 底部版权 */
+.frie-links { 
+	position: relative; 
+	height: auto; 
+	overflow: hidden; 
+	zoom: 1; 
+	text-align: center; 
+}
+/*.frie-links dt { width: 75px; height: 26px; float: left; display: inline-block; font-weight: 700; }*/
+.frie-links dd { 
+	width: 1070px; 
+	/*height: auto; float: left;*/ 
+	display: inline-block; 
+	/* padding-bottom: 6px; */
+}
+.frie-links .hide { 
+	overflow: hidden; 
+}
+.frie-links .hide span{ 
+	display: inline-block; 
+	color: #000 
+}
+.frie-links a { 
+	white-space: normal; 
+	word-warp: normal; 
+	color: #444; 
+	display: inline-block; 
+	color: #000
+}
+/*.frie-links a:hover { color: #f67301 }*/
+.frie-links dd i { 
+	color: #d8d8d8; 
+	margin: 0 5px; 
+	font-style: normal; 
+}
+.frie-links .more { 
+	position: absolute; 
+	top: 6px; 
+	right: 6px;
+}
+.frie-links .more span { 
+	display: inline-block; 
+	width: 9px; 
+	height: 9px; 
+	background: url(img/arr.png) 0 0 no-repeat; 
+	margin: 0 0 0 3px; 
+	cursor: pointer;
+	vertical-align: middle;
+	*margin-left:0;
+	_margin-top:5px; 
+}
+.frie-links .more .s1 { 
+	background-position: 0 -22px;
+}
+.link { 
+	padding-bottom: 10px; 
+	color: #444; 
+	line-height: 1.5; 
+	text-align: center 
+}
+.love-links a { 
+	color: #444; 
+	padding: 0 5px; 
+	color: #000 
+}
+/*.love-links a:hover { color: #f67301 }*/
+.link p { 
+	color: #000 
+}
+.foot-lg { 
+	padding: 15px 0; 
+}
+.foot-lg span { 
+	width: 120px; 
+	border: 1px solid #d2d2d2; 
+	margin: 0 5px; 
+	display: inline-block; 
+	*display: inline; 
+	*zoom: 1; 
+	height: 50px; 
+	text-align: center; 
+	vertical-align: top; 
+}

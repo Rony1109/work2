@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* 首页内容样式 2014.01.15 by lg */
+
+/*hot-atv*/
+.hot-atv{width:347px;height:225px;float:left;border-left:1px solid #e7e7e7;border-right:1px solid #e7e7e7;margin-left:27px;overflow:hidden;}
+.atv{width:290px;margin: 0 auto;}
+.atv h3{font-size:16px;line-height:20px;height:20px;margin:10px 0;text-align:center;width:100%;overflow:hidden;}
+.atv h3 a{color:#444;}
+.atv h3 a:hover{color:#eb3b3e;}
+.atv p{color:#888;line-height:23px;}
+
+/*东盟商机*/
+.dmsj-t{text-align:center;font-size:26px;color:#5696a2;font-family:microsoft yahei;font-weight:400;margin-top:-23px;}
+.dmsj-t span{padding:0 20px;background-color:#f2f2f2;}
+.dmsj-t sub{color:#c0c0c0;font-size:12px; vertical-align:baseline;font-family:Arial;padding-left:5px;text-shadow:1px 1px 0px #fff;}
+
+/*旅游东盟*/
+#scroll-ly{_width:50000px;_height:322px;_overflow:hidden;}
+.img-txt{float:left;width:435px;height:121px;margin-right:110px;margin-top:40px;overflow:hidden;_display:inline;}
+.img-txt .m-l161{_float:left;_margin-left:40px;_width:274px;}
+.img-txt .m-l161 h3{height:30px;overflow:hidden;}
+.img-txt .m-l161 h3 a{font-size:20px;font-family:microsoft yahei;color:#444;font-weight:400;}
+.img-txt .m-l161 h3 a:hover{color:#eb3b3e}
+.img-txt .m-l161 p.m-t5{width:99%;height:55px;overflow:hidden;}
+.img-txt .m-l161 .g-tr a,.img-txt .m-l161 .g-tr a:hover{padding:1px 3px;_padding:3px 3px 1px;background-color:#8abbc4;color:#fff;border-radius:2px;}
+.img-txt .m-l161 .g-tr a:hover{background-color:#5f99a4;text-decoration:none;}
+.img-txt .g-pr{border-radius:60px;}
+.img-txt .g-pr .txt{width:100%;height:43px;line-height:43px;font-size:18px;font-family:microsoft yahei;color:#fff;position:absolute;left:0;bottom:0;text-align:center;z-index:3;}
+.img-txt .g-pr .txt a,.img-txt .g-pr .txt a:hover{color:#fff;text-decoration:none;}
+.img-txt .g-pr .shadow{width:100%;height:43px;line-height:43px;position:absolute;left:0;bottom:0;background-color:#000;opacity:0.5;filter:alpha(opacity=50);}
+.img-txt .g-pr .mask{display:none;display:block\9;width:121px;height:0;padding-top:121px;overflow:hidden;background:url(img/arw.png) no-repeat;_background:url(img/arw-ie6.png) no-repeat;position:absolute;top:0;left:0;cursor:pointer;}
+:root .img-txt .g-pr .mask{display:none\9;}
+
+.ico-s-lt{display:none;width:24px;padding-top:42px;background-position:0 -416px;position:absolute;left:0px;top:50%;margin-top:-4px;}
+.ico-s-gt{display:none;width:24px;padding-top:42px;background-position:-28px -416px;position:absolute;right:0px;top:50%;margin-top:-4px;}
+a:hover.ico-s-lt{background-position:0 -461px;}
+a:hover.ico-s-gt{background-position:-28px -461px;}
+
+.scroll-focus{text-align:center;padding:20px 0 0;}
+.scroll-focus a.ico-focus{margin-right:5px;background-position:-58px -53px;}
+.scroll-focus a:hover.ico-focus,.scroll-focus a.hover{background-position:-58px -67px;}

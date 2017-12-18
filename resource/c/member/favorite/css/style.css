@@ -1,0 +1,36 @@
+/**
+ * 会员中心css文件
+ * 
+ */
+
+/* 会员首页依赖的模块 */
+@import url(../../common/css/m-public.css);
+@import url(../../common/css/m-top.css);
+@import url(../../common/css/m-side.css);
+@import url(../../common/css/m-foot.css);
+@import url(../../common/css/app-frame.css);
+
+/**
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+.pro-pub{font-family:microsoft yahei;}
+.af-list-bd span.red{color:red;}
+.favorite-pub .af-list-hd td{padding:0;}
+.favorite-pub td{text-align:center;}
+.favorite-pub td .g-ff-s{color:#999;}
+.favorite-pub td .gray{color:#888;}
+
+.m0auto{margin:0 auto;}
+.ml10{margin-left:10px;}
+.af-list-bd .thimg .ibox{width:60px;height:60px;background-color:#fff;padding:1px;border:1px solid #ebebeb;overflow:hidden}
+.af-list-bd .thimg .i{width:60px;height:60px;*font-size:60px;*display:block;overflow:hidden}
+.af-list-bd .thimg .i img{max-width:60px;max-height:60px;_display:none}
+.af-list-bd .t a{max-width:372px;width:372px\9}
+.af-list-bd .price{font-weight:700;color:#c00;}
+.af-list-bd .price em{color:#888}
+.shop-info{padding-top:5px;}
+.mainpro{width:250px;height:20px;margin:10px 0 0;overflow:hidden;}

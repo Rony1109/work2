@@ -1,0 +1,60 @@
+@import url('./base.css');
+
+.column-list li{background-position:-498px -1194px;}
+
+
+.slide {width: 730px; height: 250px; overflow: hidden; position: relative;}
+.slide ul li { width: 730px; height: 250px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;}
+.slide ol li.cur {background: #048a96}
+.side-news{padding: 9px;width: 242px;height: 232px;background: #f4f4f5;}
+.side-news h3 a{display: block;margin: 8px 0;height: 18px;text-align: center;line-height: 18px;overflow: hidden;font-size: 14px;color: #fa6824;-ms-word-break: break-all;word-break: break-all;}
+.side-news p{line-height: 18px;max-height: 36px;_height:expression(this.scrollHeight > 36 ? "36px" : "auto");;}
+
+.column-box{padding: 8px 11px 8px;overflow: hidden;border: 1px #e2e2e2 solid;border-top: 0;}
+
+/* 人物访谈 */
+.h-320{height: 320px;}
+.set-special h3{font-size: 14px;height: 18px;line-height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.set-special .msg{width: 203px;color: #888;}
+.set-special li{margin:1px 0 19px;overflow: hidden;}
+/* 热门词条 */
+.h-207{height: 207px;}
+.hot-key{height: 111px;overflow: hidden;border: 1px solid #e8e8e8;border-top: 0;}
+.hot-key h3{margin: 13px 0 0 15px;font-weight: bold;}
+.hot-key a{float: left;display: inline;margin:12px 0 5px 12px;width:60px;height: 20px;line-height: 20px;color: #fff;text-align: center;background: url(img/icos.gif) no-repeat 0 -396px;}
+.hot-key a.fix-key{width: 97px;background-position: -75px -396px;}
+/* 卖场动态 */
+.h318{height: 318px;}
+.mt-3{margin-top: 3px;}
+.mt-8{margin-top: 8px;}
+.super-mark{width: 148px;line-height: 18px;color: #888;}
+.super-news h3{position: relative; height:29px;line-height:29px;margin-top:-29px}
+.super-news h3 a{color:#fff;font-weight:400;}
+.super-news{padding:8px 9px}
+.super-news .bg{height:29px;margin-top:-29px;background:#000;opacity: .5;
+filter: alpha(opacity=50);}
+/* 行业专题 */
+.special-list{height: 156px;overflow: hidden;}
+.special-list ul{width: 728px;margin-left:-1px;padding-top: 5px;}
+.special-list li{float: left;display: block;margin: 0 9px 0 0px;width: 230px;}
+.special-list li a{display: block;height: 142px;text-align: center;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.special-list li a img{display: block;margin-bottom: 14px;}
+.w730{width: 730px;}
+/* 建材百科 */
+.h156{ height: 156px;}
+/* 展会报道 */
+.w684{width: 684px;}
+.msg-list{float: left;width: 240px;}
+.pic-list{margin-top: 4px;}
+.pic-list li{float: left;margin-left: 30px;width: 190px;height: 149px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.pic-list img{display: block;margin-bottom: 9px;}
+.set-bt{padding-top: 15px;border-top: 1px #e8e8e8 solid;}
+.recommend{width: 992px;}
+.recommend li{float: left;display: inline;margin:0 20px 10px 0;width: 476px;}
+.ex-news{width: 276px;color: #888;}
+.ex-news h3 a{display: block;font-size: 14px;height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.ex-news u{display: block;margin:10px 0;padding-left: 6px;height: 20px;line-height: 20px;text-decoration: none;color: #444;background: url(img/icos.gif) no-repeat 0 -464px;}
+.ex-news u span{color: #fff;padding-right: 25px;}
+.h545{height: 545px;}

@@ -1,0 +1,84 @@
+@import url('/v2/m/init/css/style.css');/*基础样式*/
+@import url('/v2/c2/newcgsc/css/newtop.css');/*统一用www.csc86.com页面的顶部导航*/
+@import url('/v2/m/newsearch/css/style.css');/*logo和搜索*/
+@import url('/v2/m/bot-rightcopy/css/style.css');/*网站底部样式*/
+
+/*base*/
+body,a{color: #333;}
+a:hover{color:#2379d1;text-decoration:none;}
+.g-corg{color:#fa5c0e;}
+.g-cblue{color:#2379d1;}
+.g-w{width:1240px;}
+
+/*顶部导航样式重写*/
+.top_bar{background: #f4f1f0;}
+.top_bar a{cursor: pointer;}
+.top_lf_nav{padding-left:10px;}
+
+/*logo样式重写*/
+.g_logo{width:auto;height:143px;}
+.g_logo h1,.g_logo .line,.g_logo h2{float:left;overflow:hidden;}
+.g_logo h1{margin-right:10px;}
+.g_logo h1 a{background:url(img/logo.jpg) no-repeat;width:310px;height:81px;}
+
+/*搜索样式重写*/
+.g_search{width:536px;margin-right:160px;font-size: 15px;font-family:Microsoft YaHei;}
+.ch_search a{width: 30px;margin-right: 8px;}
+.ch_search a:hover,.ch_search a:active,.ch_search .ared{font-weight: normal;color: #2379d1;}
+.search_txt{width:460px;height: 40px;line-height: 40px;border:1px solid #2379d1;}
+.search_txt input.txt{width:451px;line-height: 30px;font-size: 14px;font-family:Microsoft YaHei;}
+.search_k input.btn{background: #2379d1 url("img/icon.png") 0 -142px;width:74px;height: 42px;line-height: 99px;overflow: hidden;}
+
+/*底部样式重写*/
+.footer{padding-top:20px;}
+.footer_nav_wp{background: #1a4275;padding-top:30px;padding-bottom: 30px;}
+.footer_nav dl{width:150px;padding-left:85px;border-right: 1px solid #476388;}
+.footer_nav .last{border-right:none;}
+.frie-links{width: 1000px;border-bottom:none;}
+.frie-links dd{width:880px;}
+.love-links a{padding:0 9px;}
+
+/*全部商品类目*/
+.main-nav{border-bottom:1px solid #2379d1;font-family:Microsoft YaHei,simsun,Arial;}
+.nav{z-index: 2;}
+.ctgry{left: 0;}
+.ctgry,.ctgry-bd .bg,.ctgry-list{position: absolute;}
+.ctgry{width: 210px;}
+.ctgry-hd,.ctgry-hd h2{height: 36px;}
+.ctgry-hd{background-color: #2379d1;}
+.ctgry-hd h2{background: url("img/icon.png") no-repeat 0 0;line-height: 36px;margin-left:33px;padding-left: 33px;color:#fff;font-size: 16px;font-weight: normal;}
+.ctgry-bd,.ctgry-bd .bg,.ctgry-list{height: 450px;}
+.ctgry-bd{display:none;font-size: 14px;}
+.ctgry-unfold .ctgry-bd{display: block;width:208px;border:1px solid #e7dee0;}
+.ctgry-bd .bg{background:#fff;width: 100%;opacity: 0.9;filter: alpha(opacity=90);}
+.ctgry-bd a{display:inline-block;}
+.ctgry-list h3{height:22px;font-size: 15px;white-space: nowrap;overflow: hidden;}
+.ctgry-first{width:190px;height: 95px;border-bottom:1px solid #e7dee0;padding:16px 10px 0;overflow: hidden;}
+.ctgry-list .last .ctgry-first{height:114px;border-bottom:none;}
+.ctgry-list .hover .ctgry-first{background-color: #fff;/*border-left:1px solid #bad5f1;*//*border-top:1px solid #e7dee0;*//*border-bottom:1px solid #bad5f1;padding-left:9px;*//*padding-top:15px;*/position: relative;z-index: 1}
+.ctgry-list .last.hover .ctgry-first{height: 97px;}
+/*.ctgry-list .all a{display:block;height: 22px;line-height: 22px;text-align: center;background-color: #e7dee0}*/
+.ctgry-first-bd{width:200px;height: 42px;margin-top:10px;overflow: hidden;}
+.ctgry-first-bd a{margin-right: 6px;}
+.ctgry-sec{display:none;position: absolute;left:209px;top:0;width:480px;min-height:440px;padding:5px 30px;background-color: #fff;border:1px solid #e7dee0;border-top:none;line-height:25px;box-shadow:4px 4px 10px rgba(0,0,0,0.17);overflow: hidden;}
+.ctgry-unfold .ctgry-sec{left:208px;}
+.ctgry-list .hover .ctgry-sec{display: block;}
+.ctgry-sec dl{border-bottom:1px dotted #bdbdbd;padding:0 15px 10px;}
+.ctgry-sec .dl-last{border-bottom:none;}
+.ctgry-sec dt{padding-top: 8px;font-size: 16px;}
+.ctgry-sec dt a{color: #2379d1;}
+.ctgry-sec dd{margin-top:5px;}
+.ctgry-sec dd a{margin-right:10px;}
+
+/*导航栏*/
+.nav-list{margin-left:273px;height: 35px;line-height:35px;font-size:16px;overflow: hidden;}
+.nav-list li{float: left;margin-right:35px;}
+.nav-list a{color:#000;}
+.nav-list .cur a,.nav-list a:hover{color:#2379d1;}
+
+/*走进南宁华南城*/
+.go-dfz{position: absolute;right:0;top:6px;background: url("img/go-dfz.jpg") no-repeat;width: 163px;height: 21px;line-height: 99px;overflow: hidden;}
+
+/*返回头部*/
+.back-up{display:none;position:fixed;left:50%;bottom:150px;margin-left:630px;background:#2379d1 url(img/icon.png) no-repeat 0 -36px;width:44px;height:43px;line-height:999px;cursor:pointer;overflow:hidden;}
+.back-up:hover{background-color:#105eaf;text-decoration:none;}

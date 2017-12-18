@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* 旅游东盟页面样式 2014.01.16 by lg */
+.banner{}
+/*path*/
+.path{line-height:35px;font-family:simsun;}
+.path a,.path a:hover{color:#2664a2;}
+
+/*ctry*/
+.ctry{width:100%;overflow:hidden;*zoom:1;}
+.ctry a{float:left;height:23px;line-height:23px;padding:0 6px;margin-right:10px;background-color:#fff;border:1px solid #a9d5dd;color:#236b79;font-family:microsoft yahei;font-size:14px;margin-bottom: 10px;}
+.ctry a:hover,.ctry a.hover{background-color:#5696a2;border:1px solid #5696a2;text-decoration:none;color:#fff;}
+
+/*list*/
+.list ul.xdt{font-size:14px;}
+.list ul.xdt li{height:40px;line-height:40px;}
+.list ul.xdt li i.fs-10{font-size:16px;}
+.list ul.xdt li a{width:580px;}
+.list ul.xdt li span{font-size:12px;}
+
+/*Spage*/
+.Spage_blue ul li a:hover,
+.Spage_blue ul li.selected a {color:#fff; border-color:#5696a2; background-color:#5696a2; text-decoration:none;}
+.Spage_blue ul li.previous a,
+.Spage_blue ul li.next a,
+.Spage_blue ul li.previous span,
+.Spage_blue ul li.next span{background-image:url(img/bg_blue.gif); background-repeat:no-repeat;}
+
+/*tit-bg*/
+.tit-bg{height:50px;line-height:50px;}
+.tit-bg span em{font-size:20px;}
+
+/*新闻内容*/
+.news-cont{width:100%;overflow:hidden;}
+.news .news-cont img{max-width:690px;}
+
+/*旅游标题*/
+.news em.bg-5696a2{font-size:18px;color:#fff;padding:4px 10px;margin-right:8px;_vertical-align:middle;_margin-bottom:2px;_display:inline-block;}
+
+/*翻页*/
+.pn-page{height:50px;line-height:50px;font-size:14px;color:#888;border:1px solid #e9e9e9; background-color:#f6f6f6;padding:0 15px;margin-top:10px;}
+.pn-page span i{font-size:24px;font-family:simsun;vertical-align:middle;}
+.pn-page span.g-fl i{margin-right:5px;}
+.pn-page span.g-fr i{margin-left:5px;}
+.pn-page a{color:#444;}
+.pn-page a:hover{color:#eb3b3e;}
+
+/*传统节日列表 yq*/
+.fes_list dl{ padding-bottom:30px; margin-bottom:30px; border-bottom:1px dashed #dbdbdb; }
+.fes_list dt{ float:left; width:220px; }
+.fes_list dd{ float:left; width:760px;}
+.fes_list dd h3{ width:700px; overflow:hidden; height:30px; line-height:30px;position:relative; }
+.fes_list dd h3 a{ color:#444; font-size:19px; font-family:microsoft yahei; float:left; }
+.fes_list dd h3 a:hover{ color:#EB3B3E;}
+.fes_list dd h3 span{ font-weight:normal; color:#fff; background:#fc9276; width:60px; text-align:center; float:left; height:17px; line-height:17px; margin-top:5px; margin-left:10px; }
+.fes_list dd span.date{ padding:3px 0 8px; color:#888;font-family:microsoft yahei;font-size:15px;  display:block; }
+.fes_list dd span.today{  background:#ff5528; }
+.fes_list dd span.tomorrow{  background:#fd744f; }
+.fes_list dd p{ line-height:23px; height:115px; overflow:hidden; }
+
+/*传统节日详情 yq*/
+.dai_s { padding-bottom:25px; margin-bottom:25px; border-bottom:1px dashed #dbdbdb; }
+.dai_s dt{ float:left; width:140px;}
+.dai_s dd{ float:left; width:550px;}
+.dai_s dd h2 em{ float:left;}
+.dai_s dd h2 span{ font-weight:normal; color:#fff; background:#fc9276; font-size:12px; float:left; font-weight:normal; width:60px; text-align:center; height:17px; line-height:17px; margin-top:10px; margin-left:10px; }
+.dai_s dd h2 span.late{ background:#fc9276;}
+.dai_s dd h2 span.today{ background:#FF5528;}
+.dai_s dd h2 span.tomorrow{ background:#FD744F;}
+
+.dai_s dd div.time{ color:#888; font-size:15px;}
+.dai_s dd div.time em{ color:#444;}
+
+.txt-list ul li .area{ color:#236b79; margin-right:3px; }
+
+
+/*东盟品牌列表 yq*/
+.brand_list li{ float:left; display:inline; width:224px; margin-right:28px; height:195px;}
+.brand_list li.marg_r{ margin-right:0; }
+.brand_list .inner{ border:2px solid #fff; background:#fff;  }
+.brand_list li:hover .inner{ border:2px solid #EB3B3E; }
+.brand_list .tit_k{ margin:10px 0; text-align:center; overflow:hidden; height:25px; line-height:25px; }
+.brand_list a{ color:#444; }
+.brand_list a:hover{ color:#eb3b3e; }
+
+
+/*东盟品牌详情 yq*/
+.brand_dial .img{ position:relative; top:9px; width:250px; height:141px; float:left; }
+.brand_dial h2{ text-align:center; margin-bottom:30px;}
+
+
+
+/*东盟协会列表 yq*/
+ 
+.asso_list li{ float:left; display:inline; width:290px; margin-right:55px; _margin-right:50px; height:215px; }
+.asso_list li.marg_r{ margin-right:0; }
+
+.asso_list li img{ padding:1px; background:#c0c0c0;}
+.asso_list .tit_fes{ margin:5px 0 0;text-align:center; overflow:hidden; height:28px; line-height:28px; border-bottom:1px dashed #ececec;}
+.asso_list .tit_fes a{ font-size:17px; color:#444; font-family:microsoft yahei;  }
+.asso_list .tit_fes a:hover{ color:#EB3B3E; }
+
+.asso_list .phone,.asso_list .adress{ font-size:14px; color:#888; overflow:hidden; zoom:1; font-family:microsoft yahei; }
+.asso_list .phone em,.asso_list .adress em{ float:left; width:44px; }
+.asso_list .adress span{ float:left; width:240px; height:40px; line-height:20px; overflow:hidden; }
+
+
+
+/*协会详情 yq*/
+.confrat dt{ width:310px;}
+.confrat dd{ width:380px; line-height:27px; font-size:14px;}
+.confrat dd em{ color:#888;}
+.confrat dd .adress{ overflow:hidden; zoom:1; }
+.confrat dd .adress span{ float:left; width:42px; }
+.confrat dd .adress em{ float:left; width:337px; line-height:22px; height:44px; overflow:hidden; margin-top:2px; }
+
+/*商家详情 yq*/
+.merc_list li{ float:left; width:224px; margin-right:28px; background:#fff; height:180px; margin-bottom:35px; }
+.merc_list li .inner{ border:2px solid #FFF; }
+.merc_list li .inner .iol_rs a{ color:#888; }
+.merc_list li.marg_r{ margin-right:0; }
+
+.merc_list .tit_fes{ padding:5px 0;text-align:center; height:28px; line-height:28px; margin-bottom:7px;}
+.merc_list .tit_fes .fla{ font-size:12px; color:#444; font-weight:normal; float:left; width:160px; height:30px; line-height:30px; overflow:hidden; margin-left:6px; }
+.merc_list .tit_fes .fla a{ color:#444; }
+.merc_list .tit_fes .iol_rs{ font-weight:normal; color:#888; float:right; height:20px; line-height:20px; padding-left:21px; margin:5px 8px 0 0; background:url(img/wang_ioc.png) no-repeat 0 -17px; }
+.merc_list li:hover .iol_rs,.merc_list li.hover .iol_rs,.merc_list li:hover .iol_rs a,.merc_list li.hover .iol_rs a{ background-position:1px 2px; color:#eb3b3e;}
+.merc_list li:hover .inner,.merc_list li.hover .inner{ border:2px solid #eb3b3e;}
+.merc_list .tit_fes a:hover{ color:#EB3B3E; }
+
+
+

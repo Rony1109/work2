@@ -1,0 +1,382 @@
+<!-- 企业信息表单模板 start -->
+	<ul class="cominfo g-pr" id="cominfoform">
+		<li class="c-999 g-tr">带<span class="c-ce0201">*</span>符号的为必填项</li>
+		<li class="mt10"><em class="g-fs14 g-fwb">旺铺基本资料：</em></li>
+
+		<li class="g-cf mt10" valid="false" n="qymc">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">企业名称：</label>
+			</div>
+			<div class="g-fl">
+				<p>
+					<input id="cominfo-qymc" type="text" name="enterpriseName" class="cominfo-input w300" maxlength="40" />
+					<span class="c-ce0201 ml10 g-dn">企业名称不能为空</span>
+				</p>
+				<p class="c-999">必须与营业执照内的企业名称相同</p>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="qylxdz">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">企业联系地址：</label>
+			</div>
+			<div class="g-fl">
+				<p class="lh28">
+					<label><input type="radio" name="isCSCEnterprise" class="vm" id="cominfo-cscshop" value="Y" /> 华南城内商户</label>
+					<label class="ml25"><input type="radio" name="isCSCEnterprise" class="vm" checked="checked" id="cominfo-comshop" value="N" /> 城外商户</label>
+				</p>
+				<p class="mt10 g-dn">
+					<select name="csc" class="cominfo-input w140" id="cominfo-cscshop-select">
+						<option value="-1">请选择</option>
+						<option value="sz" >深圳华南城</option>
+						<option value="nc" >南昌华南城</option>
+						<option value="zz" >郑州华南城</option>
+						<option value="hrb" >哈尔滨华南城</option>
+						<option value="hf" >合肥华南城</option>
+						<option value="xa" >西安华南城</option>
+						<option value="nn" >南宁华南城</option>
+						<option value="cq" >重庆华南城</option>
+					</select>
+					<span class="c-ce0201 ml10  g-dn">请选择您所在的华南城</span>
+				</p>
+				<p class="mt10">
+					<select name="s_prov" class="cominfo-input w140" id="s_prov">
+						<option value="-1">请选择</option>
+					</select>
+					<select name="s_city" class="cominfo-input w140 ml10" id="s_city">
+						<option value="-1">请选择</option>
+					</select>
+					<select name="s_area" class="cominfo-input w140 ml10" id="s_area">
+						<option value="-1">请选择</option>
+					</select>
+					<span class="c-ce0201 ml10  g-dn">请选择您所在的华南城</span>
+				</p>
+			</div>
+		</li>
+		<li class="g-cf mt10"  valid="false" n="xxdz">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">详细地址：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-xxzd" type="text" name="address" class="cominfo-input w490" maxlength="40" />
+				<span class="c-ce0201 ml10  g-dn">详细地址不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="true" n="jjms">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">经营模式：</label>
+			</div>
+			<div class="g-fl lh28" id="cominfo-jjms">
+				<span class="c-ce0201 ml10 g-dn">请选择您的经营模式</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="zyhy">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">主营行业：</label>
+			</div>
+			<div class="g-fl g-cf g-pr">
+				<div id="cominfo-hangye" class="cominfo-input w490 g-fl g-cf">
+					<div class="g-fl g-cf">
+						<!--<span class="cominfo-selected-hy">纺织原辅料</span>-->
+					</div>
+					<div class="g-fr cominfo-button" title="选择">选择</div>
+				</div>
+				<span class="c-ce0201 ml10 gl lh28 g-dn">主营行业不能为空</span>
+				<div class="cominfo-hangye g-cf g-dn" id="cominfo-hangye-items">
+				</div>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="zycpfw">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">主营产品/服务：</label>
+			</div>
+			<div class="g-fl g-cf">
+				<div class="g-fl g-cf w498" id="cominfo-zyfu">
+					<div class="g-cf">
+						<input type="text" name="goods1" class="cominfo-input w108 g-fl" maxlength="20" />
+						<input type="text" name="goods2" class="cominfo-input w108 ml18 g-fl" maxlength="20" />
+						<input type="text" name="goods3" class="cominfo-input w108 ml18 g-fl" maxlength="20" />
+						<input type="text" name="goods4" class="cominfo-input w108 ml18 g-fl" maxlength="20" />
+						<input type="text" name="goods5" class="cominfo-input w108 g-fl mt10" maxlength="20" />
+						<input type="text" name="goods6" class="cominfo-input w108 ml18 g-fl mt10" maxlength="20" />
+						<input type="text" name="goods7" class="cominfo-input w108 ml18 g-fl mt10" maxlength="20" />
+						<input type="text" name="goods8" class="cominfo-input w108 ml18 g-fl mt10" maxlength="20" />
+					</div>
+					<p class="lh28 c-999">一个输入框限填一种主营业务，主营产品参与匹配搜索，越准确、简洁，越容易被买家搜索到</p>
+				</div>
+				<span class="c-ce0201 ml10 lh28 g-fl g-dn w108">主营产品/服务不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="qylx">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>企业类型：</label>
+			</div>
+			<div class="g-fl">
+				<select name="enterpriseTypeId" class="cominfo-input w140" id="cominfo-type">
+					<option value="-1">请选择</option>
+				</select>
+				<span class="c-ce0201 ml10 lh28 g-dn">请选择企业类型</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="gsjs">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span><label>公司介绍：</label>
+			</div>
+			<div class="g-fl">
+				<p>
+					<textarea id="description" name="description" class="wpjh-textarea"></textarea>
+					<span class="c-ce0201 ml10 g-dn">公司介绍不能为空</span>
+				</p>
+				<p class="c-999">1.请用中文详细说明贵公司的成立历史、主营产品、品牌、服务等优势；</p>
+				<p class="c-999">2.如果内容过于简短或仅填写单纯的产品介绍（50-5000字），将有可能无法通过审核；</p>
+				<p class="c-999">3.联系方式（电话，传真，手机，电子邮件）请在会员资料填写，此处请勿重复填写。</p>
+			</div>
+		</li>
+
+		<li class="mt10"><em class="g-fs14 g-fwb">联系方式：</em></li>
+
+		<li class="g-cf mt10" valid="false" n="xm">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">姓名：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-xm" type="text" name="userName" class="cominfo-input w128" maxlength="20" />
+				<label class="ml10"><input type="radio" name="sex" class="vm" checked="checked" value="男" /> 男</label>
+				<label class="ml10"><input type="radio" name="sex" class="vm" value="女" /> 女</label>
+				<span class="c-ce0201 ml10 g-dn">姓名不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="sjhm">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">手机号码：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-sjhm" type="text" name="mobile" class="cominfo-input w178" maxlength="11" />
+				<span class="c-ce0201 ml10 g-dn">手机号码不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="dzyx">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">电子邮箱：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-dzyx" type="text" name="email" class="cominfo-input w178" />
+				<span class="c-ce0201 ml10 g-dn">电子邮箱不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="gddh">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">固定电话：</label>
+			</div>
+			<div class="g-fl g-cf">
+				<div class="g-fl g-cf">
+					<div class="g-cf">
+						<input type="text" value="" name="" class="cominfo-input w108 g-fl" maxlength="4" />
+						<input id="cominfo-gddh"  type="text" name="telephone" class="cominfo-input w108 ml18 g-fl" maxlength="8" />
+						<input type="text" name="" class="cominfo-input w108 ml18 g-fl" maxlength="5" />
+					</div>
+				</div>
+				<span class="c-ce0201 ml10 lh28 g-fl g-dn">固定电话不能为空</span>
+			</div>
+		</li>
+
+		<li class="mt10"><em class="g-fs14 g-fwb">企业资质：</em></li>
+
+		<!-- <li class="g-cf mt10" valid="false" n="qymcc">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>企业名称：</label>
+			</div>
+			<div class="g-fl">
+				<p>
+					<input id="cominfo-qymcc" type="text" name="licenseEnterpriseName" class="cominfo-input w228" maxlength="40" />
+					<span class="c-ce0201 ml10 g-dn">企业名称不能为空</span>
+				</p>
+				<p class="c-999">必须与营业执照内的企业名称相同</p>
+			</div>
+		</li> -->
+		<li class="g-cf mt10" valid="false" n="yyzzzzh">
+			<div class="g-fl g-tr w110">
+				<span class="c-ce0201">*</span> <label for="">营业执照注册号：</label>
+				<br/><span class="g-f12">（社会统一信用号）</span>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-yyzzzzh"  type="text" name="licenseNumber" class="cominfo-input w228" maxlength="18" />
+				<span class="c-ce0201 ml10 g-dn">营业执照注册号不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="yyzzzcd">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>营业执照注册地：</label>
+			</div>
+			<div class="g-fl">
+				<p>
+					<select id="s_prov2" name="s_prov2" class="cominfo-input w140" id="s_prov2">
+						<option value="-1">请选择</option>
+					</select>
+					<select id="s_city2" name="s_city2" class="cominfo-input w140 ml10" id="s_city2">
+						<option value="-1">请选择</option>
+					</select>
+					<!-- <select name="s_area2" class="cominfo-input w140 ml10" id="s_area2">
+						<option value="-1">请选择</option>
+					</select> -->
+					<span class="c-ce0201 ml10  g-dn">请选择营业执照注册地</span>
+				</p>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="yyqx">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>营业期限：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-yyqx" type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" name="businessTern" class="cominfo-input w228 icon-date" maxlength="12" />
+				<span class="c-ce0201 ml10 g-dn">营业期限不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="djjg">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>登记机关：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-djjg" type="text" name="regAuhtority" class="cominfo-input w228" maxlength="50" />
+				<span class="c-ce0201 ml10 g-dn">登记机关不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="ffdbr">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>法定代表人：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-ffdbr" type="text" name="legalPerson" class="cominfo-input w228" maxlength="12" />
+				<span class="c-ce0201 ml10 g-dn">法定代表人不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="jyfw">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>经营范围：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-jyfw" type="text" name="scope" class="cominfo-input w228" maxlength="50" />
+				<span class="c-ce0201 ml10 g-dn">经营范围不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="clrq">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label>成立日期：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-clrq" type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" name="registerDate" class="cominfo-input w178 icon-date" maxlength="12" />
+				<span class="c-ce0201 ml10 g-dn">成立日期不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10"  valid="false" n="yyzzsmj">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">营业执照扫描件：</label>
+			</div>
+			<div class="g-fl g-pr">
+				<p class="lh28"><button id="cominfo-uploadbtn" class="cominfo-uploadbtn" title="点击上传">点击上传</button></p>
+				<input type="file" id="cominfo-upload-file" class="cominfo-file" name="licenseImgUrl" />
+				<div class="g-cf mt10">
+					<img id="cominfo-upload-img" class="g-fl" src="http://res.csc86.com/v2/c/member/home/images/yyzz.gif" width="200" height="160" alt="营业执照扫描件" />
+				</div>
+				<p class="c-ce0201 mt10 g-dn" id="cominfo-upload-tip"></p>
+			</div>
+		</li>
+
+		<li class="mt10"><em class="g-fs14 g-fwb">申请人资料：</em></li>
+		<li class="g-cf mt10" valid="false" n="sqr">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">申请人：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-sqr" type="text" name="proposer" class="cominfo-input w178" maxlength="30" />
+				<span class="c-ce0201 ml10 g-dn">申请人不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="sqrbm">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">申请人部门：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-sqrbm" type="text" name="proposerDep" class="cominfo-input w178" maxlength="30" />
+				<span class="c-ce0201 ml10 g-dn">申请人部门不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="sqrzw">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">申请人职位：</label>
+			</div>
+			<div class="g-fl">
+				<input id="cominfo-sqrzw" type="text" name="proposerPost" class="cominfo-input w178" maxlength="30" />
+				<span class="c-ce0201 ml10 g-dn">申请人职位不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="gddh2">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">固定电话：</label>
+			</div>
+			<div class="g-fl g-cf">
+				<div class="g-fl g-cf">
+					<div class="g-cf">
+						<input type="text" value="" name="" class="cominfo-input w108 g-fl" maxlength="4" />
+						<input id="cominfo-gddh2"  type="text" name="fixTelephone" class="cominfo-input w108 ml18 g-fl" maxlength="8" />
+						<input type="text" name="" class="cominfo-input w108 ml18 g-fl" maxlength="5" />
+					</div>
+				</div>
+				<span class="c-ce0201 ml10 lh28 g-fl g-dn">固定电话不能为空</span>
+			</div>
+		</li>
+		<li class="g-cf mt10" valid="false" n="sjhm2">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">手机号码：</label>
+			</div>
+			<div class="g-fl">
+				<p>
+					<input id="cominfo-sjhm2" type="text" name="phone" class="cominfo-input w178" maxlength="11" />
+					<span class="c-ce0201 ml10 g-dn">手机号码不能为空</span>
+				</p>
+				<p class="lh28 c-999">手机号码和固定电话必须填写一项</p>
+			</div>
+		</li>
+		<li class="g-cf mt10"  valid="false" n="sqrsfz">
+			<div class="g-fl g-tr w110 lh28">
+				<span class="c-ce0201">*</span> <label for="">申请人身份证：</label>
+			</div>
+			<div class="g-fl g-pr">
+				<p class="lh28"><button id="idCardz" class="cominfo-uploadbtn" title="正面">正面</button></p>
+				<input type="file" id="idCardzInput" class="cominfo-file" name="uploadApplicantCard" />
+				<div class="g-cf mt10">
+					<img id="idCardzInput-img" class="g-fl" src="http://res.csc86.com/v2/c/member/home/images/yyzz.gif" width="200" height="160" alt="申请人身份证正面" />
+				</div>
+				<p class="c-ce0201 mt10 g-dn" id="idCardzInput-tip"></p>
+			</div>
+			<div class="g-fl g-pr g-ml10">
+				<p class="lh28"><button id="idCardf" class="cominfo-uploadbtn" title="反面">反面</button></p>
+				<input type="file" id="idCardfInput" class="cominfo-file" name="uploadApplicantCard2" />
+				<div class="g-cf mt10">
+					<img id="idCardfInput-img" class="g-fl" src="http://res.csc86.com/v2/c/member/home/images/yyzz.gif" width="200" height="160" alt="申请人身份证反面" />
+				</div>
+				<p class="c-ce0201 mt10 g-dn" id="idCardfInput-tip"></p>
+			</div>
+		</li>
+
+		<!--
+		<li class="mt20 g-tc">
+			<a href="javascript:;" title="保存并填写激活码" class="cominfo-save">保存并填写激活码</a>
+			<a href="javascript:;" title="取消" class="c-999 ml10">取消</a>
+		</li>
+		-->
+	</ul>
+	<div class="jhm-wrap g-dn" id="cominfo-jhm">
+		<p>请输入您的旺铺激活码，如有疑问请致电400-184-8666</p>
+		<div class="g-cf jhm-box mt15">
+			<input type="text" name="" class="g-fl otl jhm-input" />
+			<a href="javascript:;" title="立即激活" class="g-fr jhm-btn" id="jh-btn">立即激活</a>
+		</div>
+		<p class="c-ce0201 mt5 g-dn">您的激活码与企业信息不符，请核对后再重新输入</p>
+		<p class="mt55"><a href="javascript:;" title="返回上一步修改资料" id="jhm-back-btn">返回上一步修改资料</a></p>
+	</div>
+	<div class="jhm-success-wrap g-tc g-dn" id="jh-success">
+		<p class="g-fs16 jhm-success"><i class="jhm-success-icon"></i> <span class="ml10 c-ef4343">恭喜您，激活成功！</span></p>
+		<p class="mt25 g-fs14">您提交的资料正在审核中，请耐心等待。审核通过前，您无法查看最新的企业资料。</p>
+		<p class="mt25"><a href="javascript:;" title="返回我的首页" class="g-fs14" id="back-home">返回我的首页</a></p>
+	</div>
+<!-- 企业信息表单模板 end -->

@@ -1,0 +1,63 @@
+/**
+ * 前端模板css文件
+ *
+ */
+
+/* 依赖的模块 */
+@import url('/v2/m/progress/css/style.css'); /*没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ *
+ */
+
+.form-wrap{line-height:28px}
+
+.form-item{margin-bottom:15px}
+.item-val{padding-left:130px}
+
+.item-key{float:left;width:130px;text-align: right;}
+.item-key .star{color:#f30}
+
+.item-txt{border:solid 1px #ccc;width:262px; height:26px}
+
+.card-img button{width:58px;height:24px;background:#eee url(img/btn-bg.png);border:solid 1px #b3b3b3;border-radius:3px}
+.card-img div.g-fl{width:200px; margin-right:20px}
+.card-img .up-btn{position: absolute; width:64px;height:30px;opacity:.01;
+filter: alpha(opacity=1);margin-left: -61px;}
+
+.form-btn{margin-right:20px;padding:6px 12px;cursor: pointer;font-weight:700;border:0;border-radius:3px}
+a.form-btn{padding:0 12px;line-height:28px;display: inline-block;*display: inline;*zoom: 1;}
+a.form-btn:hover{text-decoration: none;}
+
+.submit-btn{background:#f9601d;color:#fff;}
+.cancel-btn{color:#666;background:#eee url(img/btn-bg.png) repeat-x top;border:solid 1px #b3b3b3;}
+
+.auth-step{width:800px;margin:40px auto 30px;}
+.auth-step li{width:383px;/*根据实际需求调整*/}/* (progress宽度-34x步骤数)/(步骤数-1)+34 即 (800-34*5)/(5-1)+34 */
+.auth-step .actived .bar{width:355px;}/*li宽度-28 即192-28*/
+
+.apply-info li{float:left;margin-left:120px}
+
+.wait-info{padding:35px 30px 35px 180px; background:#e2f4ff url(img/wait-info-ico.png) no-repeat 100px 43px;border:solid 1px #e8e8e8;}
+.wait-info h3{margin-bottom:6px;}
+.wait-info a{color:#067ed4;text-decoration: underline;}
+
+.auth-status{border:solid 1px #e9e9e9;background:url(img/status-bg.png) repeat-y 0 0;}
+.auth-status .hd{position: relative; width:40px;padding: 16px 30px 0; color: #fff;}
+.auth-status .hd .arr{position: absolute;top:0;right:-9px; display: block; width:10px;height:10px;background:url(img/status-arr.png);}
+.auth-status .bd{padding: 35px 0 30px 148px;}
+.auth-status .bd ul{height:24px;}
+.auth-status .bd li{float:left;margin-right:50px}
+.auth-status .reason{line-height:28px;margin-top:5px;color:#fb6822}
+.auth-status .reason strong{color: #333;}
+
+/*新个人实名认证页面入口*/
+.new-entrance{padding-top:120px;padding-bottom:240px;text-align: center;color:#666;font-size: 14px;font-family:Microsoft YaHei;}
+.new-entrance a{display:inline-block;background-color: #f5b525;width:202px;height: 42px;line-height: 42px;margin-top:25px;color:#fff;border-radius: 3px;font-size: 16px;}
+.new-entrance a:hover{background-color: #eba406;text-decoration: none;}

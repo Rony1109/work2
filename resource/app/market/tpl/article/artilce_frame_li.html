@@ -1,0 +1,17 @@
+{{if dataarray==""}}
+  <div class="nolistmsg">
+    <p>暂无咨询</p>
+  </div>  
+{{else}}
+  {{each dataarray as value index}}
+  <li class="datali fadeIn clearfix">
+    <a href="article-detail.html?arcid={{value.id}}" data-url="article-detail.html?arcid={{value.id}}" class="pro-link" class="pro-link">
+      <div class="pro-info noimg">
+        <h3>{{value.title}}</h3>
+        <p>{{value.descript}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+{{/if}}
+

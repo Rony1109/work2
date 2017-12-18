@@ -1,0 +1,469 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>会员中心</title>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" /><script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script><link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" /><script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script>    <link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css" />
+    <link rel="stylesheet" href="http://res.csc86.com/v2/c/member/supply/css/style.css" />
+    <script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+    <script src="http://res.csc86.com/v2/m/init/js/init.js"></script>
+
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+    <div class="head-bd">
+        <div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+            <a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://i.csc86.com/user/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+            
+            <a  
+            href="http://wslm.csc86.com/member" title="微商联盟"><b class="wslm-icon"></b>微商联盟</a>
+            
+        </div>
+        <div class="index-link">
+            <a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://login.csc86.com/signout" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script><link rel="stylesheet" href="http://res.csc86.com/f=css/c/offer/style.css" />
+<script src="http://res.csc86.com/editor/"></script>
+<script src="http://res.csc86.com/swfupload/"></script>
+<script src="http://res.csc86.com/b=js&f=m/page.js,m/showFormError.js,c/offer/list.js"></script>
+
+<div class="mbd clearfix">  
+         <div class="g-fl m-side">
+            <h3>
+                <strong>基础服务</strong>
+            </h3>
+            <ul class="m-nav">
+                <li class="cate1th">
+                    <a href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons supply-icon"></span>供应</a>
+                    <ul>
+                        <li class="cate2th"><a href="http://i.csc86.com/seller/sellerOrders" class="c-a">已卖出的货物</a>
+                        </li>
+                        <li class="cate2th"><a href="http://i.csc86.com/draw/list" class="c-a">交易账务</a>
+                        </li>
+                        <li class="cate2th"><a href="http://i.csc86.com/draw/account" class="c-a">提取货款</a>
+                        </li>
+                        <li class="cate2th"><a class="c-cur" href="/product/sell/category.html" class="c-a">发布产品</a>
+                        </li>
+                        <li class="cate2th"><a href="/product/sell/list.html" class="c-a">产品管理</a>
+                        </li>
+                        <li class="cate2th expand">
+                            <a href="javascript:" class="c-a"><span class="arr"></span>询盘管理</a>
+                            <ul>
+                                <li><a href="/quote/list.html">收到的询盘</a>
+                                </li>
+                                <li><a href="/quote/pricelist.html">发出的报价</a>
+                                </li>
+                                <li><a href="/quote/index.html">询盘大厅</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a">买家管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cate1th">
+                    <a href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons buy-icon"></span>采购</a>
+                    <ul>
+                        <li class="cate2th"><a href="http://i.csc86.com/buyer/buyerOrder" class="c-a">已采购到的货物</a>
+                        </li>
+                        <li class="cate2th"><a href="http://i.csc86.com/carDetail" class="c-a" target="_blank">采购单</a>
+                        </li>
+                        <li class="cate2th"><a href="/inquiry/openpublish.html" class="c-a" target="_blank">发布采购计划</a>
+                        </li>
+                        <li class="cate2th expand">
+                            <a href="javascript:" class="c-a">
+                                <span class="arr"></span>采购询价管理</a>
+                            <ul>
+                                <li><a href="/inquiry/openList.html">发出的采购</a>
+                                </li>
+                                <li><a href="/inquiry/list.html">发出的询盘</a>
+                                </li>
+                                <li><a href="http://inquiry.csc86.com/inquiry/productlist">询盘的产品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/quotationlist" class="c-a">收到的报价</a>
+                        </li>
+                        <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/supplier-list" class="c-a">供应商管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--<li class="cate1th expand">
+                    <a href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons statistics-icon"></span>
+                        <span class="arr"></span>旺铺统计</a>
+                    <ul>
+                        <li><a href="http://statistics.csc86.com/user/flowstatistics.do">流量统计</a>
+                        </li>
+                        <li><a href="http://statistics.csc86.com/user/keyWordsStatistics.do">产品和询盘统计</a>
+                        </li>
+                        <li><a href="http://statistics.csc86.com/user/productAndInquiryStatistics.do">关键词统计</a>
+                        </li>
+                    </ul>
+                </li>-->
+                <li class="cate1th expand">
+                    <a href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons rss-icon"></span>
+                        <span class="arr"></span>商机订阅
+                        <span class="new"></span>
+                    </a>
+                    <ul>
+                        <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/list">订阅商机</a>
+                        </li>
+                        <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/manage_supply?name=new">商机订阅管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cate1th">
+                    <a href="http://quan.csc86.com/member/activityManage.html" class="mtb g-fs14 c-a">
+                        <span class="n-icons activity-icon"></span>活动管理</a>
+                </li>
+                <li class="cate1th expand jsWpMng">
+                    <a href="javascript:" class="mtb g-fs14 c-a">
+                        <span class="n-icons shop-icon"></span>
+                        <span class="arr"></span>旺铺管理</a>
+                </li>
+                <li class="cate1th">
+                    <a href="http://wslm.csc86.com/member/life.html" class="mtb g-fs14 c-a" target="_blank">
+                        <span class="n-icons weiunion-icon"></span>微生活</a>
+                </li>
+                
+                <li class="cate1th">
+                    <a href="http://i.csc86.com/user/favoriteList" class="mtb g-fs14 c-a">
+                        <span class="n-icons favorite-icon"></span>我的收藏</a>
+                </li>
+            </ul>
+            <div class="g-h30"></div>
+            <h3>
+                <strong>特色服务</strong>
+            </h3>
+            <ul class="m-nav">
+                <li class="cate1th">
+                    <a href="http://cncms.csc86.com/special/yunyingguanli/cst/" class="mtb g-fs14 c-a" target="_blank">
+                        <span class="n-icons special-icon"></span>城商通服务</a>
+                </li>
+                <li class="cate1th">
+                    <a href="http://cncms.csc86.com/special/2014/syhn-x/syhn.html#f1" class="mtb g-fs14 c-a" target="_blank">
+                        <span class="n-icons special-icon"></span>生意红娘服务</a>
+                </li>
+                <li class="cate1th">
+                    <a href="http://cncms.csc86.com/special/2014/sygj/" class="mtb g-fs14 c-a" target="_blank">
+                        <span class="n-icons special-icon"></span>生意管家服务</a>
+                </li>
+            </ul>
+            <div class="g-h30"></div>
+            <h3>
+                <strong>客服中心</strong>
+            </h3>
+            <ul class="m-service">
+                <li class="msg"><a href="http://quan.csc86.com/?circleId=42ca5425-1809-4ce1-8bf3-1fff36448809" target="_blank">在线咨询</a>
+                </li>
+                <li class="phone">400-184-8666</li>
+            </ul>
+        </div>
+        <script>seajs.use("http://res.csc86.com/v2/c/member/common/js/sideNav.js");</script><link rel="stylesheet" href="http://res.csc86.com/v2/c/member/supply/css/release-pro.css" >
+<div class="af-bd pro-pub">
+    <h2 class="g-pr af-hd">发布供应产品<a class="ask" href="http://cncms.csc86.com/special/ranking/" target="_blank">如何让产品排名靠前？</a></h2>
+    <div class="g-h10"></div>
+    <div class="release-bar">
+        <ul class="g-cf bar-lst">
+            <li class="itm1 cur">选择商品分类</li>
+            <li class="itm2">填写基本信息</li>
+            <li class="itm3">设置交易规则</li>
+            <li class="itm4">产品发布成功</li>
+        </ul>
+        <div class="step step1"></div>
+    </div>
+    <div class="g-h30"></div>
+    <div class="g-h15"></div>
+    <ul class="g-c-f af-tab">
+        <li class="cur"><a href="javascript:;">选择类目</a></li>
+        <li><a href="/product/sell/common.html">您常用的类目</a></li>
+    </ul>
+    <div class="g-h30"></div>
+    <div class="af-form">
+      <form action="" name="categoryform" method="post">
+        <input type="hidden" value="04,04037,04037252" id="cateSelected"/>
+        <ul class="af-form">
+          <li class="g-c-f aff-item">
+              <div class="aff-key">类目搜索：</div>
+              <div class="aff-value g-cf">
+                  <div class="cate-input g-fl">
+                    <input class="cate-input-text" type="text">
+                    <div class="cate-float">
+                        <div class="cate-lsit">
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label class="hover"><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 色织提花布色织提花布色提花布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                            <label><input name="cmmnClssfy" type="radio" value="">纺织 &gt; 坯布/色织提花布 &gt; 麻坯布</label>
+                        </div>
+                        <div class="cate-close">关闭</div>
+                    </div>
+                  </div>
+                  <input class="cate-search-btn" type="button" value="查找类目">
+                  <span class="g-fl g-dn"><img src="http://res.csc86.com/v2/c/member/supply/images/loading.gif" alt=""></span>
+              </div>
+          </li>
+          <li class="g-c-f aff-item">
+            <div class="aff-key"><span class="star">*</span>产品类目：</div>
+            <div class="g-f-content aff-value pro-cate">
+              <select size="6" id="cate1" name="category[0]">
+                                <option value="01">纺织</option>
+                                <option value="02">皮革</option>
+                                <option value="03">化工</option>
+                                <option value="04">橡塑</option>
+                                <option value="05">电子</option>
+                                <option value="07">建材</option>
+                                <option value="08">金属</option>
+                                <option value="09">能源</option>
+                                <option value="38">LED照明</option>
+                                <option value="10">服装服饰</option>
+                                <option value="11">箱包皮具</option>
+                                <option value="12">通信产品</option>
+                                <option value="13">礼品、工艺品</option>
+                                <option value="14">饰品、首饰</option>
+                                <option value="15">家居、酒店用品</option>
+                                <option value="16">办公、文教</option>
+                                <option value="17">数码电脑</option>
+                                <option value="18">美容、护肤</option>
+                                <option value="19">家用电器</option>
+                                <option value="20">食品、饮料</option>
+                                <option value="21">玩具</option>
+                                <option value="22">广电、传媒设备</option>
+                                <option value="23">运动、休闲</option>
+                                <option value="37">绿色有机食品</option>
+                                <option value="24">印刷</option>
+                                <option value="25">纸业</option>
+                                <option value="26">包装</option>
+                                <option value="27">五金、工具</option>
+                                <option value="28">电工电气</option>
+                                <option value="29">机械及行业设备</option>
+                                <option value="30">安防、消防</option>
+                                <option value="31">汽摩及配件</option>
+                                <option value="32">环保</option>
+                                <option value="33">交通运输</option>
+                                <option value="34">仪器仪表</option>
+                                <option value="35">商务服务</option>
+                                <option value="36">照明工业</option>
+                              </select><select size="6" id="cate2" name="category[1]"></select>
+              <div class="you-select">您当前选择的类目是：<span>尚未选择</span></div>
+            </div>
+            
+          </li>
+          <li class="g-c-f aff-item">
+            <div class="aff-key">旺铺产品分类：</div>
+            <div class="aff-value self-cate">
+              <select name="lableId">
+                                                <option value="d5103d46-3708-11e3-a2a0-6cae8b365202" selected>办公设备</option>
+                                                        <option value="7897bc9f-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指纹考勤机</option>
+                                        <option value="86c087a2-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话机</option>
+                                        <option value="02a1c165-4c3a-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;保险柜</option>
+                                        <option value="d6ec6926-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电源转换器（排插）</option>
+                                        <option value="0af6f26f-4c3a-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点钞机</option>
+                                        <option value="e25e5f9c-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;装订机</option>
+                                        <option value="2cba9d18-4c3a-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碎纸机</option>
+                                        <option value="f0cf9509-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;财务凭证装订机</option>
+                                        <option value="40a3c2ba-4c3a-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微电脑考勤机</option>
+                                        <option value="fb7a7ce7-3709-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;过胶机</option>
+                                    <option value="9312f328-3707-11e3-a2a0-6cae8b365202" >文件管理用品</option>
+                                                        <option value="b085cf0f-3707-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件管理夹</option>
+                                        <option value="e1ee3999-3707-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;索引纸</option>
+                                        <option value="006787b5-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;替芯</option>
+                                        <option value="22e23a92-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;档案盒</option>
+                                        <option value="30061d5c-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件整理夹</option>
+                                        <option value="3ceecb93-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风琴包</option>
+                                        <option value="48da2a69-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;事务包</option>
+                                        <option value="62c7b683-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名片册</option>
+                                        <option value="732e6fb5-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报告夹</option>
+                                        <option value="7e13f0d3-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件套</option>
+                                        <option value="8b010b11-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件袋</option>
+                                        <option value="9ae43b0f-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;身份知别卡</option>
+                                        <option value="c4f3c1d5-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收纳袋</option>
+                                        <option value="cdbfb23f-3708-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相册</option>
+                                        <option value="c6f509a4-399e-49a4-a67a-7fcc4d5653b2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;板夹</option>
+                                    <option value="0ea6d212-370a-11e3-a2a0-6cae8b365202" >电子文具</option>
+                                                        <option value="15092ac8-370a-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算器</option>
+                                    <option value="f8b9570e-370a-11e3-a2a0-6cae8b365202" >桌面办公文具</option>
+                                                        <option value="0190181b-370b-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订书机</option>
+                                        <option value="0df08c37-370b-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打孔机</option>
+                                        <option value="073c54f4-370e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三针一钉</option>
+                                        <option value="1660f74d-370e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;票夹</option>
+                                        <option value="25a3fc56-370e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;剪刀</option>
+                                        <option value="1e4c0640-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美工刀</option>
+                                        <option value="2cdd2e09-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切纸刀</option>
+                                        <option value="375a99ef-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;固体胶</option>
+                                        <option value="56a48e38-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;液体胶水</option>
+                                        <option value="79ac6700-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;印台印油</option>
+                                        <option value="992ff10a-3797-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;橡皮</option>
+                                        <option value="7d18f36d-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;资料架</option>
+                                        <option value="ce3bf8ef-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收纳箱/盒</option>
+                                        <option value="a034b31d-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;桌面收纳用品</option>
+                                        <option value="90b8cf43-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其它收纳用品</option>
+                                        <option value="ba23c344-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仪尺</option>
+                                        <option value="f90df90c-3798-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号码机</option>
+                                        <option value="302a5204-379c-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;会议用品</option>
+                                        <option value="38cbe42c-379c-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;包装用品</option>
+                                        <option value="c602db98-97ab-4868-aa4d-7a9b3c5d15b1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笔盒</option>
+                                    <option value="38d6424e-379d-11e3-a2a0-6cae8b365202" >办公生活用品</option>
+                                                        <option value="49ca776b-379d-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垃圾桶</option>
+                                        <option value="849d8d3b-379d-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垃圾袋</option>
+                                        <option value="b9bb8595-37a1-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纸杯</option>
+                                        <option value="d8860c36-37a2-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风扇</option>
+                                    <option value="0107f7ff-37a3-11e3-a2a0-6cae8b365202" >书写工具</option>
+                                                        <option value="0b58c80d-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中性笔</option>
+                                        <option value="179cb839-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;圆珠笔</option>
+                                        <option value="283d8573-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;白板笔</option>
+                                        <option value="314e0a06-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记号笔</option>
+                                        <option value="3bd2ae4a-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荧光笔</option>
+                                        <option value="433370b1-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笔芯</option>
+                                    <option value="4d4609bf-37a3-11e3-a2a0-6cae8b365202" >办公用纸</option>
+                                                        <option value="56e0e115-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复印纸</option>
+                                        <option value="6004ac0e-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑打印纸</option>
+                                        <option value="8a399795-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收银纸</option>
+                                        <option value="96d554b3-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传真纸</option>
+                                        <option value="b6b55614-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无碳收据</option>
+                                        <option value="c54a8e7e-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其它纸品</option>
+                                        <option value="d335872f-46d7-41e6-a184-62489bfa8bd2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送货单</option>
+                                        <option value="817b4afe-2666-4731-bc8e-4cb955a9b355" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收款收据</option>
+                                        <option value="aabe4ca0-095c-48f9-a950-967a3938041b" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入库单</option>
+                                        <option value="bfe45f80-c953-46f1-bd0c-00e144af12e9" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领料单</option>
+                                    <option value="ddc3f965-37a3-11e3-a2a0-6cae8b365202" >纸品本册</option>
+                                                        <option value="f6961a82-37a3-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纸面笔记本</option>
+                                        <option value="092b2c74-37a4-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮面笔记本</option>
+                                        <option value="3b8ffca8-37a4-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易事贴</option>
+                                        <option value="63206a70-37a4-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复写纸</option>
+                                        <option value="74f557ee-37a4-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荣誉证书</option>
+                                    <option value="a22d1f8e-37a4-11e3-a2a0-6cae8b365202" >电脑外设</option>
+                                                        <option value="cd514217-37a4-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无线鼠标</option>
+                                        <option value="6ec01965-37a5-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有线鼠标</option>
+                                        <option value="8505755d-37a5-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;键盘及键鼠套装</option>
+                                        <option value="8dd90eee-37a5-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;耳机</option>
+                                        <option value="b443d8a4-37a5-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;耳塞</option>
+                                    <option value="1f83edca-37a9-11e3-a2a0-6cae8b365202" >LED照明产品</option>
+                                                        <option value="3d84158f-37a9-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手电筒</option>
+                                        <option value="4e584600-37a9-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台灯</option>
+                                        <option value="5b7c8917-37a9-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小夜灯</option>
+                                    <option value="6d835503-37a9-11e3-a2a0-6cae8b365202" >个人用品及套装</option>
+                                                        <option value="ac522a89-37a9-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIP系列</option>
+                                        <option value="e307e873-37a9-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;锦致系列</option>
+                                        <option value="2a13ba70-37aa-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纯时代系列</option>
+                                        <option value="c7042691-37aa-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;田园系列</option>
+                                        <option value="32e0dc8e-37ab-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐活尚品系列</option>
+                                        <option value="3d9b877a-37ab-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;套装系列</option>
+                                    <option value="c186d3e6-37ab-11e3-a2a0-6cae8b365202" >学生文具</option>
+                                                        <option value="cf04a5a7-37ab-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;削笔机</option>
+                                        <option value="e2bb64de-37ab-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生文具</option>
+                                        <option value="024147f5-37ac-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生本册</option>
+                                        <option value="1810f521-37ac-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其它学生用品</option>
+                                    <option value="3dcd5c84-490e-11e3-a2a0-6cae8b365202" >劳保用品</option>
+                                                        <option value="6dac917a-490e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全鞋</option>
+                                        <option value="99844547-490e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全帽、工帽</option>
+                                        <option value="a6f2a8d0-490e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手套</option>
+                                        <option value="be339fc6-490e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;口罩</option>
+                                        <option value="dbfc175a-490e-11e3-a2a0-6cae8b365202" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;眼镜、面罩、耳塞</option>
+                                    <option value="aa211bc7-8628-4257-be63-593627fee2b6" >思高3M胶</option>
+                                                        <option value="da6e4a3f-8d65-4222-90cd-363becc88657" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;双面胶</option>
+                                        <option value="8861cd30-6dcc-4996-b9e6-a1ab1995968d" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高温胶</option>
+                                        <option value="c13e50ea-5298-4de8-a4ca-8a1fc7a2b586" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海绵双面胶</option>
+                                        <option value="b065c913-85bb-4d80-bce1-9d1847008cac" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;透明文具胶</option>
+                                        <option value="5ba3990a-a787-4ffe-a2ae-8dcf188ffab4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑打印标签合宜系列</option>
+                                        <option value="0b1d9e5a-eca8-495f-a88a-2d53eefac6ba" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴抽取式便条纸</option>
+                                        <option value="95fd783f-6aaa-45ec-9c9b-22249f4ad881" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴狠贴便条纸</option>
+                                        <option value="04859a45-3bcd-46ed-9234-90a8eb0d3d0c" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴Q型便条纸</option>
+                                        <option value="58df9493-7eaf-4c2b-9d88-f97bb8c4f814" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴经典系列便条纸</option>
+                                        <option value="395707cd-7d45-496d-b7bd-163e390a07b0" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴合宜系列便条纸</option>
+                                        <option value="ccbf3554-48cc-4310-88eb-59fa53b4f96c" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴分页标签</option>
+                                        <option value="071846ab-c5ee-43c9-b07a-255edf817cee" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴归档标签</option>
+                                        <option value="d44487f4-66b9-4498-aed4-3939aed1ec3e" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴提示标签</option>
+                                        <option value="a547f318-0695-4edf-9c32-6bc09bac1863" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴合宜系列指示标签</option>
+                                        <option value="aa0a4478-172c-4f74-adc6-b044e66da29d" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报事贴标签笔</option>
+                                        <option value="c73e8365-d25d-4eb2-8173-c42f353233c8" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;思高/神奇隐形胶带</option>
+                                        <option value="65928e45-3ffc-4875-84c3-7e84391b3585" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;胶带切割器及胶带底座</option>
+                                        <option value="865dc5af-d029-4584-b747-d08553784f1a" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;思高/高级透明胶带、透明双面胶带</option>
+                                        <option value="c3f6a4be-5df0-4e2d-bfcd-4ba83b1d2c45" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;思高/双面泡棉胶带、双面棉纸胶带、水晶贴</option>
+                                        <option value="1a6fa77a-0ce2-47ac-8fbf-eab1f41d968e" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;思高/剪刀</option>
+                                        <option value="51dd4a3e-34cc-4383-a378-2c3fab6a367a" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;思高/固体胶棒</option>
+                                        <option value="ea993069-b482-479a-90bf-6b44ccbd9e04" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3M人体工程学产品</option>
+                                        <option value="15989831-3bd1-4f47-ba85-5fb272c13e7a" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3M定制礼品</option>
+                                    <option value="471da109-490e-11e3-a2a0-6cae8b365202" >包装材料</option>
+                                                        <option value="d000bbe4-fcfb-4371-a9a3-43298e7aa240" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;封箱胶纸</option>
+                                        <option value="901cb7bc-60ae-4d14-9352-637f1b4d3781" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拉伸膜</option>
+                                        <option value="a7ffa210-2d45-4d6b-b63e-54619e4993f9" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打包带</option>
+                                        <option value="3b2f5335-89c8-4d4a-869f-1d3ffd694c76" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;封口袋</option>
+                                        <option value="b04a11b9-89c2-481c-a457-92e8ba9cbfa4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草绳</option>
+                                        <option value="9c59aa1c-1f6c-4553-88ca-5223c5a9a3af" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电线膜、保护膜</option>
+                                    <option value="5bfd75f4-490e-11e3-a2a0-6cae8b365202" >清洁用品</option>
+                                <option value="acbe3bd7-4b47-11e3-a2a0-6cae8b365202" >点验钞机</option>
+                                <option value="328783ea-4b48-11e3-a2a0-6cae8b365202" >电源转换器（排插）</option>
+                                <option value="450dff57-044b-4448-a1eb-b0c00abbd741" >包装材料</option>
+                                <option value="4bdb419c-4b48-11e3-a2a0-6cae8b365202" >装订机</option>
+                                <option value="17099a93-8e46-4ad1-a258-83469135806c" >劳保用品</option>
+                                <option value="69395913-4b48-11e3-a2a0-6cae8b365202" >财务凭证装订机</option>
+                                <option value="71d81de5-4b48-11e3-a2a0-6cae8b365202" >过胶机</option>
+                                <option value="1fa451e2-4b4a-11e3-a2a0-6cae8b365202" >索引纸</option>
+                                <option value="414205c4-4b4a-11e3-a2a0-6cae8b365202" >替芯</option>
+                                <option value="158e148f-d7e2-11e2-b282-6cae8b365202" >其他分类</option>
+                              </select>
+              <a class="gray-btn" href="/shop/defineCate.html" target="_blank">设置产品自定义分类</a>
+            </div>
+          </li>
+          <li class="g-c-f aff-item">
+            <div class="aff-value"><span class="aff-submit"><input type="submit" value="下一步，填写产品详细信息"/></span></div>
+          </li>
+        </ul>
+        <input type="hidden" name="categoryPath" value=""/>
+        <input type="hidden" name="token" value="558b6dd3dda49" />
+        <input type="hidden" name="lableName" value="办公设备"/>
+      </form>
+    </div>
+  </div>
+  <script src="http://res.csc86.com/f=js/c/offer/category.js"></script>
+  <script>csc.offer.selectCate();</script>
+  <script>seajs.use('/v2/c/member/supply/js/pub-cate')</script></div>
+<div class="g-h-20"></div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+    <div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+    </div>
+    <p class="group-link">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved </p>
+    深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+
+</body>
+</html>
+

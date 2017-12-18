@@ -1,0 +1,66 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*本页面的定制样式*/
+.list-wrapper .ph-bg{ background:none;}
+.list-wrapper .details {width: 728px; border: 1px solid #e8e8e8;}
+.list-wrapper .details .cont-wrap {padding: 25px 20px 0;}
+.list-wrapper .details .ctn-top {text-align: center;}
+.list-wrapper .details .ctn-top h1 {font-size: 24px; font-family: microsoft YaHei; font-weight: normal; color: #444; margin-bottom: 10px;}
+.list-wrapper .details .ctn-top span {margin-right: 20px;}
+.list-wrapper .details .content {border-top: 1px solid #e8e8e8; padding: 20px 0; margin-top: 10px;}
+.list-wrapper .details .content p {text-indent: 2em; line-height: 25px; margin: 20px 0; font-size: 14px;}
+.list-wrapper .details .content p.author {font-size: 12px}
+.list-wrapper .details .content .img {text-align: center;}
+.list-wrapper .details .content img {width: 500px; height: 340px; overflow: hidden;}
+.list-wrapper .details .tools {height: 40px; border-top: 1px dashed #e8e8e8; line-height: 40px; padding-left: 20px;}
+.list-wrapper .details .tools .print {padding-left: 25px; background:url(../../../spining/insfront/css/img/print.jpg) no-repeat 0 center;color: #444}
+#bdshare {margin-top: 10px; margin-left: 15px;}
+.list-wrapper .details .view-bar {height: 34px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; line-height: 34px; padding:10px 30px; background-color: #f6f6f6;}
+.list-wrapper .details .view-bar span {color: #888; font-family: simsun; font-size: 14px; width: 304px; overflow: hidden; display:inline-block; }
+
+.details .view-bar span.g-fr,.details .view-bar span.g-fl{ height:34px; overflow:hidden; line-height:34px;}
+.list-wrapper .details .view-bar span.g-fr {text-align: right;background:url(img/list.png) no-repeat 100% 9px;*+background:url(img/list.png) no-repeat 100% 10px; padding-right:15px;}
+.list-wrapper .details .view-bar span.g-fl {background:url(img/list.png) no-repeat 0 -24px;*+background:url(img/list.png) no-repeat 0 -23px; padding-left:15px;}
+.list-wrapper .details .view-bar i{ font-size:24px;font-family: microsoft YaHei; font-style:normal;}
+.list-wrapper .details .view-bar a.c-n {width: 330px; overflow: hidden; line-height:34px;}
+.list-wrapper .details .guess-u-like {padding: 20px 0 20px 20px;}
+.list-wrapper .details .guess-u-like h2 {margin-bottom: 10px;}
+.list-wrapper .details .guess-u-like .like-list li {float: left; margin-right: 26px; width: 150px; overflow: hidden;}
+.list-wrapper .details .guess-u-like .like-list li:last-child {margin-right: 0}
+.list-wrapper .details .guess-u-like .like-list img {width: 150px; height: 80px; overflow: hidden;}
+.list-wrapper .details .guess-u-like .like-list a.img-info {display: block;}
+.list-wrapper .details .guess-u-like .like-list span {width: 150px; height: 30px; line-height: 30px; overflow: hidden; text-align: center; display: block;}
+.list-wrapper .details .guess-u-like  .ulike-list {border-top: 1px dashed #e8e8e8; margin:10px 20px 0 0; padding-top: 10px;}
+.list-wrapper .details .guess-u-like  .ulike-list li {float: left; display:inline-block; width: 318px; padding-right:15px; height: 26px; line-height: 26px; overflow:hidden; background:url(../../index/css/img/r_iocl.png) no-repeat 3px -33px;}
+.list-wrapper .details .guess-u-like  .ulike-list li:nth-child(2n) {margin-right: 0}
+
+
+/*展会详情*/
+.list-wrapper .ex-content .cont-top {border-top: 1px solid #e8e8e8; padding-top: 25px;}
+.ex-content .cont-top span,.ex-content .cont-top img{width:200px; height:120px; display:inline-block;}
+.list-wrapper .ex-content .cont-top .cont {width: 460px; overflow: hidden; height: 120px; padding-top:3px;}
+.list-wrapper .ex-content .cont-top .cont p {line-height: 28px; font-size: 14px; height: 28px; overflow: hidden;}
+.list-wrapper .ex-content .cont-top .cont em { display: inline-block; margin-top: -22px; margin-left: 3em;}
+
+.list-wrapper .ex-content .cont-detail {margin-top: 20px; padding-bottom:10px;}
+.list-wrapper .ex-content .cont-detail h2 {position: relative; width: 100%}
+.list-wrapper .ex-content .cont-detail h2 i {border-top: 1px solid #e8e8e8; position: absolute; top: 12px; display: inline-block; width: 605px; left: 80px; height: 1px}
+.list-wrapper .ex-content .cont-detail p {text-indent: 2em; line-height: 25px; margin: 20px 0; font-size: 14px;}
+.list-wrapper .ex-content .cont-detail p.author {font-size: 12px}
+.list-wrapper .ex-content .cont-detail .img {text-align: center;}
+.list-wrapper .ex-content .cont-detail img {width: 500px; height: 340px; overflow: hidden;}

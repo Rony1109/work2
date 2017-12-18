@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* 旅游东盟页面样式 2014.01.16 by lg */
+
+/*东盟景点*/
+.ctry{width:100%;overflow:hidden;*zoom:1;}
+.ctry a{float:left;height:23px;line-height:23px;padding:0 6px;margin-right:10px;background-color:#fff;border:1px solid #a9d5dd;color:#236b79;font-family:microsoft yahei;font-size:14px;}
+.ctry a:hover,.ctry a.hover{background-color:#5696a2;border:1px solid #5696a2;text-decoration:none;color:#fff;}
+
+.dm-area{margin-top:25px;}
+.dm-area h3{float:left;margin-right:10px;font-family:microsoft yahei;font-weight:400;font-size:18px;}
+.dm-area h3 a{display:block;_display:inline-block;height:35px;line-height:35px;color:#fff;background-color:#5696a2;padding:0 20px;}
+.dm-area h3 a:hover{ text-decoration:none}
+.dm-area h4{font-family:microsoft yahei;font-weight:400;font-size:16px;line-height:18px;_line-height:20px;}
+.dm-area h4 a{color:#444;}
+.dm-area h4 a:hover{color:#eb3b3e;}
+.dm-area p{margin-top:15px;line-height:28px;}
+.dm-area p a,.dm-area p a:hover{text-decoration:underline;color:#2664a2;}
+
+/*Spage*/
+.Spage_blue ul li a:hover,
+.Spage_blue ul li.selected a {color:#fff; border-color:#5696a2; background-color:#5696a2; text-decoration:none;}
+.Spage_blue ul li.previous a,
+.Spage_blue ul li.next a,
+.Spage_blue ul li.previous span,
+.Spage_blue ul li.next span{background-image:url(img/bg_blue.gif); background-repeat:no-repeat;}
+
+/*玩转东盟*/
+.rec-area p{line-height:24px;margin-top:10px;}
+.rec-area p a{color:#444;}
+.rec-area p a strong{color:#236b79;}
+.rec-area p a:hover,.rec-area p a:hover strong{color:#eb3b3e;}

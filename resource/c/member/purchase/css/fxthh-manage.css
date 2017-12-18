@@ -1,0 +1,75 @@
+@import url('/v2/m/init/css/style.css');
+@import url('style.css');
+
+/*公共样式*/
+.fxthh-mng,.fxthh-dtl{font-family:simsun;}
+.fxthh-dtl{}
+
+/*加减操作*/
+.cmmn-num-opts,.cmmn-num-opts i,.cmmn-num-opts input{display:inline-block;vertical-align:middle;overflow:hidden;}
+.cmmn-num-opts i,.cmmn-num-opts input{background-color:#fff;height:26px;line-height:26px;border:1px solid #ccc;text-align:center;}
+.cmmn-num-opts i{width:16px;font-style:normal;font-size:15px;font-family:simhei;cursor:pointer;-moz-user-select:none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+.cmmn-num-opts .plut-opt,.cmmn-num-opts .no-plut-opt{border-right:none;}
+.cmmn-num-opts .add-opt,.cmmn-num-opts .no-add-opt{border-left:none;}
+.cmmn-num-opts .no-plut-opt,.cmmn-num-opts .no-add-opt{color:#ccc;cursor:not-allowed;}
+
+/*返修退换货管理列表页*/
+.fxthh-mng .ucsrch-box .clzt{margin-right:30px;}
+.fxthh-mng .ucsrch-box .clzt .frm-slt{width:auto;min-width:108px;}
+.fxthh-lsttbl .cz-lst li{height:54px;padding-top:30px;border-top:1px solid #dfdfdf;}
+.fxthh-lsttbl .cz-lst .frst{border:none;}
+.fxthh-lsttbl .order-pro-lst li{height:64px;}
+.fxthh-lsttbl .time{display:inline-block;width:70px;}
+
+/*返修退换货管理详情页*/
+.sale-dscr .dscr-hd,.fwdmx-hd{font-weight:bold;font-size:14px;padding-left:15px;padding-bottom:10px;}
+.fwdmx-box .valid-tips,.person-inftbl .valid-tips,.spfh-type .valid-tips{margin-left:10px;}
+.sale-dscr-lst{background-color:#f8f8f8;padding-top:20px;padding-bottom:30px;line-height:22px;}
+.sale-dscr-lst li{float:left;width:220px;padding-left:30px;padding-right:30px;text-align:center;overflow:hidden;}
+.sale-dscr-lst li .hd{background:url(img/fxthh-sf.png) no-repeat;width:53px;height:53px;margin-left:auto;margin-right:auto;overflow:hidden;}
+.sale-dscr-lst li .bd{font-weight:bold;margin-top:10px;}
+.sale-dscr-lst .itm1 .hd{background-position:0 0;}
+.sale-dscr-lst .itm2 .hd{background-position:0 -53px;}
+.sale-dscr-lst .itm3 .hd{background-position:0 -106px;}
+
+.order-gk-lsttbl th,.order-gk-lsttbl td{padding-left:40px;padding-right:40px;}
+.order-gk-lsttbl thead th{background-color:#f6f6f6;height:36px;border-right:1px solid #dfdfdf;}
+.order-gk-lsttbl .order-pro-lst li{padding-left:0;}
+.fwdmx-box .txt-area{width:350px;height:100px;padding:5px;overflow:auto;}
+
+.person-inftbl,.spfh-type{display:none;}
+.spfh-type{margin-bottom:15px;}
+.fxthh-dtl-bd .dtl-hd,.fxthh-dtl-frm .tt{font-size:14px;font-weight:bold;padding-bottom:10px;}
+.fxthh-dtl-bd .dtl-hd{margin-left:80px;}
+.fwdxx-lrtbl tbody th,.fwdxx-lrtbl tbody td{vertical-align:top;}
+.fxthh-dtl-frm{background-color:#f6f6f6;padding:15px 40px;margin-top:25px;margin-left:30px;border:1px solid #ddd;}
+.fxthh-dtl-frm .frm-slt{padding:5px 0;min-width:135px;}
+
+.fhxxdj-box .tt,.gzxx-box .tt{background:url(img/fxthh-sf.png) no-repeat;padding-left:20px;}
+.fhxxdj-box .tt{background-position:0 -159px;}
+.gzxx-box .tt{background-position:0 -190px;}
+.fhxxdj-box td,.fhxxdj-box th{ vertical-align:top;}
+.fhxxdj-box th{line-height:28px;}
+.fhxxdj-box .valid-tips{display:block;margin-top:5px;}
+.fhxxdj-box .valid-error{background-position:0 1px;}
+
+.gzxx-box{padding-right:20px;}
+.gzxx-tbl{width:100%;line-height:15px;word-break:break-all;margin-left:7px;margin-top:10px;}
+.gzxx-tbl td{padding:0 5px 20px;vertical-align:top;}
+.gzxx-tbl .time,.gzxx-tbl .time i{border-left:2px solid #d2d2d2;}
+.gzxx-tbl .last .time{border-left:none;}
+.gzxx-tbl .time i{position:absolute;left:-6px;background-color:#fff;width:10px;height:10px;border:2px solid #d2d2d2;border-radius:7px;overflow:hidden;}
+.gzxx-tbl .inf{text-align:left;line-height:22px;margin-top:-3px;}
+.gzxx-tbl .no-data{color:#888;}
+
+.fhxxdj-box{padding-right:0;}
+.fhxxdj-box .ipt-txt{width:120px;}
+.fhxxdj-box .cz-td{padding-top:30px;border-left:1px dotted #ccc;text-align:center;}
+
+
+/*受理成功提示页*/
+.fxthh-sl-suc{padding-top:90px;}
+.sl-suc-bd{background:url(../../common/css/img/icon-suc.png) no-repeat 0 center;padding-left:90px;margin-left:150px;font:14px/24px simsun;}
+.sl-suc-bd .hd{color:#24be68;font-size:26px;font-family:Microsoft YaHei;}
+.sl-suc-bd .bd{padding-top:10px;padding-bottom:10px;}
+.sl-suc-bd a{text-decoration:underline;margin-right:20px;}

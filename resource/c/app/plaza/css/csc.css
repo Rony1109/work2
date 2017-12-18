@@ -1,0 +1,33 @@
+/**
+ * APP 关于我们（单页面）
+ * 2014.05.29 by lg
+ */
+
+html{font-size: 62.5%;}
+body{font-size: 1.4rem;font-family: Helvetica,STHeiti,Droid Sans Fallback;}
+img{max-width: 100%;}
+
+.g-h40{height: 40px;}
+
+.tab{background-color: #f9f9f9;width: 100%;height: 40px;line-height: 40px;overflow: hidden;position: fixed;top: 0;opacity: 0.9;box-shadow: 0 0px 6px rgba(0,0,0,0.6);}
+.tab ul{width: 140%;height: 40px;position: absolute;transition:left .2s;-ms-transition:left .2s;-moz-transition:left .2s;-webkit-transition:left .2s;-o-transition:left .2s;}
+.tab ul li{float: left;width: 12.5%;height: 100%;font-size: 1.4rem;text-align: center;}
+.tab ul li:last-child{position: absolute;height: 0px;line-height: 0;border-bottom: 2px solid #ff6c00;left: 0;bottom: 0;transition:left .2s;-ms-transition:left .2s;-moz-transition:left .2s;-webkit-transition:left .2s;-o-transition:left .2s;}
+.tab ul li a{color: #333;text-decoration: none;display: block;width: 100%;height: 100%;}
+.tab ul li:nth-child(1).hover ~ li:last-child{left: 0;}
+.tab ul li:nth-child(2).hover ~ li:last-child{left: 12.5%;}
+.tab ul li:nth-child(3).hover ~ li:last-child{left: 25%;}
+.tab ul li:nth-child(4).hover ~ li:last-child{left: 37.5%;}
+.tab ul li:nth-child(5).hover ~ li:last-child{left: 50%;}
+.tab ul li:nth-child(6).hover ~ li:last-child{left: 62.5%;}
+.tab ul li:nth-child(7).hover ~ li:last-child{left: 75%;}
+.tab ul li:nth-child(8).hover ~ li:last-child{left: 87.5%;}
+
+/*txt*/
+.txt{width: 100%;overflow: hidden;}
+.txt .list{margin: 0 10px;font-size: 1.4rem;line-height: 24px;color: #444;}
+.txt h1{font-size: 1.6rem;}
+.txt>div.g-cf{width: 100%;}
+
+footer{margin: 0 10px;font-size: 1.3rem;line-height: 24px;color: #444;}
+footer h1{font-size: 1.4rem;}

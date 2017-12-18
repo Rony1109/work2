@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="single-header">
+    <div class="g-cf single-w header-bd">
+        <div class="g-fl logo">
+            <a class="csc" href=""><img src="images/logo.jpg" width="274" height="51" alt="华南城网"></a><span class="sub">登录</span>
+        </div>
+        <div class="g-fr contact">
+            <p class="tip">如有疑问，请拨打：客服中心</p>
+            <p class="uc-icon tel">400 184 8666</p>
+        </div>
+    </div>
+</div>
+
+<div class="g-pr login-main">
+    <div class="login-ads">
+        <a target="_blank" href="">
+            <img src="./images/login-img.jpg" width="1920" height="580" alt=""/>
+        </a>
+    </div>
+    <div class="login">
+        <div class="bg"></div>
+        <div class="login-c">
+            <form id="loginFrm" method="post" action="">
+                <div class="g-pr login-top">
+                    <h2>华南城网会员</h2>
+                    <a class="newreg" href="">新用户注册</a>
+                </div>
+                <ul class="login-frm">
+                    <li><input class="ipt-txt" id="userName" type="text" name="" placeholder="用户名/邮箱/手机号码" value=""></li>
+                    <li><input class="ipt-txt" id="password" type="password" name="" placeholder="密码" value=""></li>
+                    <li class="code-li">
+                        <input class="ipt-txt" id="validCode" type="text" name="" placeholder="验证码" value="">
+                        <span class="code-img"><img src="images/code-img.jpg" width="93" height="42" alt=""></span>
+                        <span class="refresh"></span>
+                    </li>
+                </ul>
+                <p class="yztips"></p>
+                <p class="login-opts"><input class="uc-btn login-smt" type="submit" name="" value="登录" disabled></p>
+                <p class="g-tr login-lk"><a class="forget-pwd" href="">忘记密码？</a></p>
+                <div class="login-three">
+                    <span class="t">用第三方帐号登录</span>
+                    <span class="qq"></span>
+                    <span class="sina"></span>
+                    <span class="weixin"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer-menu">
+        <a href="http://www.csc86.com/about/" target="_blank">关于华南城</a>
+        <a href="http://www.csc86.com/about/" target="_blank">华南城网</a>
+        <a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank">会员服务</a>
+        <a href="http://ad.csc86.com" target="_blank">广告服务</a>
+        <a href="http://www.csc86.com/about/business.html" target="_blank">商务合作</a>
+        <a href="http://www.csc86.com/about/terms.html" target="_blank">服务条款</a>
+        <a href="http://www.csc86.com/about/legal.html" target="_blank">法律申明</a>
+        <a href="http://www.csc86.com/about/privacy.html" target="_blank">隐私保护</a>
+        <a href="http://www.csc86.com/about/feedback.html" target="_blank">意见反馈</a>
+        <a href="http://www.csc86.com/help/" target="_blank">帮助中心</a>
+        <a href="http://www.csc86.com/sitemap.html" target="_blank">网站地图</a>
+        <a href="http://www.csc86.com/about/contact.html" target="_blank">联系我们</a>
+    </p>
+    <p class="copyright">Copyright © 2009-2016 China South City Holdings Limited. All Rights Reserved</p>
+    <p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+</div>
+
+<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+<script>
+    seajs.use('c2/ucenter/js/login?v=20170104',function(m){
+        m.notpop();
+    });
+</script>
+</body>
+</html>

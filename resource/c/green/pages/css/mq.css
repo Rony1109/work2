@@ -1,0 +1,91 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/register/css/style.css');
+@import url('/v2/c/green/common/css/template.css');
+
+/* 幻灯片 (500 * 275) */
+.slide{width:500px;height:275px;}
+
+.lh_box {width:500px; height:275px; overflow:hidden; position:relative;}
+.lh_box .li_lh img {display:block;width:500px; height:275px;}
+.lh_box .but {position:absolute; font-size:0; right:10px; bottom:10px;}
+.lh_box .but a {display:inline-block; *display:inline; *zoom:1; width:18px; height:10px;  text-indent:-9999; vertical-align:top; overflow:hidden; margin-right:6px; background:#FFF;}
+.lh_box .but a.s,.lh_box .but a:hover {background:#9A5826;}
+
+.common_T1{font:700 16px/36px microsoft yahei;margin:8px 0;}
+.auth_rec{width:499px;height:273px;border:solid 1px #eee;border-left:none;}
+
+/*名企认证*/
+.mq_auth{margin:0 10px;border-bottom:solid 1px #eee;padding:0 0 20px;}
+.mq_auth li{_display:inline;width:80px;height:80px;float:left;margin:0 19px;}
+.mq_auth li a{display:block;width:80px;height:80px;overflow:hidden;background:url(img/sub_icons.png) no-repeat;text-align:center;text-decoration:none;}
+.mq_auth li a img{margin:15px 0 5px;}
+.mq_auth li a:hover{background-position:-90px 0;}
+
+.mq_rec{margin:0 10px;}
+.rec_slide,.rec_slide .inner{width:480px;height:70px;position:relative;}
+.rec_slide .inner{overflow:hidden;}
+.rec_slide li{width:240px;height:70px;overflow:hidden;float:left;}
+.rec_slide .but {position:absolute; font-size:0; right:10px; top:-25px;}
+.rec_slide .but a{display:inline-block; *display:inline; *zoom:1; width:10px; height:10px;  text-indent:-9999em; vertical-align:top; overflow:hidden; margin-right:6px; background:#E9E9E9;}
+.rec_slide .but a.s,.rec_slide .but a:hover {background:#3B8301;}
+
+
+/*名企推荐*/
+.rec_slide li .pic{float:left;width:118px;height:60px;border:solid 1px #eee;}
+.rec_slide li .info{padding:0 0 0 126px;}
+.rec_slide li .info h4{font-weight:400;margin:0 0 3px;padding:0 5px 0 0;max-height:40px;line-height:20px;overflow:hidden;}
+.g-ico{display:inline-block;width:23px;height:20px;background-position:center 0;background-repeat:no-repeat;}
+.ico_cst{background-image:url(/v2/m/auth/cst20.png);}
+.ico_st{background-image:url(/v2/m/auth/st20.png);}
+.ico_ss{background-image:url(/v2/m/auth/ss20.png);}
+.ico_sm{background-image:url(/v2/m/auth/sm20.png);}
+.rec_slide li .info .g-ico{margin:0 5px 0 0;}
+
+/*名企企业连*/
+.mq_chain .n1th{_display:inline;width:226px;height:105px;padding:5px;float:left;border:solid 1px #eee;line-height:20px;color:#888;margin:0 0 0 13px;}
+.mq_chain .first{margin:0;}
+.mq_chain .n1th li h3{overflow:hidden;margin:5px 0;padding:0 0 5px 5px;font:700 14px/24px microsoft yahei;border-bottom:dashed 1px #ccc;}
+.mq_chain .n1th li h3 img{float: left;display: inline;margin-right: 10px}
+.mq_chain .n1th li h3 span{display: block;font-size: 12px;font-weight: normal;}
+.mq_chain .n1th li h3 a{display: block;width: 140px}
+.mq_chain .n1th li{padding:0 0 0 3px;}
+
+/*企业名录*/
+.directory{width:745px;}
+.directory h2{border-bottom:solid 2px #444;padding:0 0 5px;}
+.directory li{padding:4px 0 10px;margin:0 0 10px 0;border-bottom:dashed 1px #ccc;}
+.directory li .intro{width:645px;}
+.directory li .tit{line-height:20px;height:20px;margin:0 5px 0 0;float:left;font:700 14px/20px microsoft yahei;;}
+.directory li p{color:#888;clear: both;zoom:1;}
+.contact_info{position:relative;margin:12px 30px 0 0;}
+.contact_info span{padding:1px 0 0 15px;background:url(img/sub_icons.png) -289px -40px no-repeat;cursor:pointer;}
+.contact_info div{position:absolute;width:170px;padding:6px;border:solid 1px #f67301;left:-95px;top:24px;background:#fff;z-index:20;}
+.contact_info em{position:absolute;top:18px;left:30px;width:14px;height:7px;overflow:hidden;background:url(img/sub_icons.png) -255px -40px no-repeat;z-index:30;}
+.c_i_hide div,.c_i_hide em{display:none;}
+.c_i_hide span{background-position:-289px -65px;}
+
+/*企业推荐文字列表*/
+.side_rec{width:240px;}
+.rec_txt_list{background:#fafafa;border:solid 1px #eee;}
+.rec_txt_list h2{margin:6px 10px;border-bottom:solid 1px #eee;}
+.rec_txt_list ul{padding:0 10px 10px 0;}
+.rec_txt_list li{height:26px;background: url(img/dot.jpg) 10px 12px no-repeat;line-height:26px;padding:0 0 0 20px;overflow:hidden;word-break:break-all;}
+
+/*配套*/
+.supporting h2{border-bottom:solid 2px #444;padding:0 0 5px;}
+.supporting .box{padding:15px 0;}
+.supporting ul{width:740px;}
+.supporting .n1th{_display:inline;width:210px;float:left;margin:0 35px 0 0;}
+.supporting .n1th h4{font:400 18px/30px microsoft yahei;text-align:center;margin:-5px 0 15px;}
+.supporting .n1th ol li{height:24px;background:url(img/dot.jpg) 10px 12px no-repeat;line-height:24px;padding:0 0 0 20px;overflow:hidden;font:400 14px/24px microsoft yahei;}
+.img-shade{position: relative;}
+.img-shade b{position: absolute;display: block;width: 50px;height: 50px;background: url(img/my.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/my.png");top:0;left: 5px}

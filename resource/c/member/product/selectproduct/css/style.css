@@ -1,0 +1,65 @@
+@import url('/v2/m/init/css/style.css');
+@import url('/v2/m/page/style_li.css');
+
+.ipt-txt{background:#fff;border:1px solid #ccc;width:188px;height:26px;line-height:26px;padding:0 5px; vertical-align:middle;}
+
+/*按钮相关*/
+*html{background-image:url(about:blank);background-attachment:fixed;}
+.mdl-smt-box{background:#ebebeb;height:24px;padding:15px 0;position:fixed;left:0;bottom:0;_position:absolute;_top:expression(document.documentElement.clientHeight + document.documentElement.scrollTop - this.offsetHeight);width:100%;overflow:hidden;}
+.mdl-smt-box input{margin-right:15px;}
+.ok-btn,.cancel-btn,.srch-btn{background:url(img/mdl-sf.png) no-repeat;border:none;overflow:hidden;cursor:pointer;}
+.ok-btn,.cancel-btn{width:50px;height:24px;}
+.ok-btn{background-position:-50px 0;}
+.cancel-btn{background-position:-50px -25px;}
+.srch-btn{background-position:0 -38px;width:39px;height:28px; vertical-align:middle;}
+.gray-xbtn{display:inline-block;background:url(img/mdl-xbg.png) repeat-x 0 0;height:24px;line-height:24px;padding:0 12px;border:1px solid #b4b4b4;border-radius:3px;color:#333;vertical-align:middle;overflow:hidden;}
+.gray-xbtn:hover{
+    text-decoration: none;
+}
+
+/*选择图片弹窗*/
+.mdl-sltpro{width:780px;margin:0 auto;padding-top:20px;padding-bottom:54px;}
+
+.sltpro-lst{font-family:Arial;}
+.sltpro-lst li{position:relative;padding:10px 12px 8px;}
+.sltpro-lst li .gray-xbtn,.sltpro-lst li .have-slt{position:absolute;}
+.sltpro-lst li .gray-xbtn{right:16px;top:28px;}
+.sltpro-lst li .have-slt{top:28px;right:22px;}
+.sltpro-lst li .have-slt{background:none;border:none;color:#06c;}
+.sltpro-lst li .pic{width:50px;height:50px;border:1px solid #c4c4c4;}
+.sltpro-lst li .info{margin-left:64px;overflow:hidden;}
+.sltpro-lst li .info .prc{color:#f57301;}
+.sltpro-lst li .info .prc em{color:#666;}
+.sltpro-lst li .info .prc i{font-style:normal;}
+.sltpro-lst li .info .name{display:block;line-height:20px;overflow:hidden;height: 20px;}
+.sltpro-lst li .info .name a{color:#666;}
+.sltpro-lst li .info .date{color:#999;}
+
+.sltpro-c{padding:20px 0}
+
+.sltpro-hd{width:404px;padding: 0 20px;border-right:1px dotted #c4c4c4;min-height: 515px;}
+.sltpro-hd .sltpro-lst li{border-bottom:1px dotted #c4c4c4;}
+.sltpro-hd .sltpro-lst li .info{width:240px;}
+
+.sltpro-bd{width:295px;overflow:hidden;padding-left: 13px;margin-left: -1px;float: left;border-left: 1px dotted #c4c4c4;}
+.sltpro-bd .tip{font-weight:bold;margin-left:10px;}
+.sltpro-bd .total-num{color:#06c;}
+.sltpro-bd .slted-num{color:#fd0100;}
+.sltpro-bd .sltpro-lst{padding:10px 0;}
+.sltpro-bd .sltpro-lst li .info{width: 200px;}
+.sltpro-bd .sltpro-lst li .sltpro-opts{display:none;}
+.sltpro-bd .sltpro-lst .hover{background:#f6f6f6;}
+.sltpro-bd .sltpro-lst .hover .sltpro-opts{display:block;}
+
+.sltpro-opts a{display:inline-block;background:url(img/mdl-sf.png) no-repeat;overflow:hidden;position:absolute;cursor:pointer;}
+.sltpro-opts .move-up,.sltpro-opts .move-down{width:13px;height:7px;left:50%;margin-left:-6px;}
+.sltpro-opts .move-up{background-position: -16px -21px;top:-3px;}
+.sltpro-opts .no-move-up{background-position: -16px -29px;cursor:default;}
+.sltpro-opts .move-down{background-position: -30px -21px;bottom:-3px;}
+.sltpro-opts .no-move-down{background-position: -30px -29px;cursor:default;}
+.sltpro-opts .del-opt{background-position:0 -22px;width:16px;height:16px;right:9px;top:8px;}
+
+.sltpro-hd h3,.sltpro-hd .mdl-srch{margin-left:10px;}
+.mdl-srch select{width:110px;height:28px;border:1px solid #ccc;vertical-align:middle;}
+.mdl-srch .ipt-txt{border-right:none;margin-left:10px;}
+.mdl-srch .srch-btn{background-color:#ccc;background-position:1px -38px;width:40px;line-height:99px;overflow:hidden;}

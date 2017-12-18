@@ -1,0 +1,58 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('style.css');
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*交通指南*/
+.body-traffic{}
+.traffic-hd{height: 54px;margin: 0 35px;background: url(img/traffic-bg.png) no-repeat 0 17px;}
+.traffic-bd{height: 626px;overflow-y:scroll;margin: 0 20px 0 35px;padding-right: 15px;}
+.traffic-tab-hd{background:#fff;height:38px;border:solid #6e97c0;border-width:1px 0;line-height:38px}
+.traffic-tab-hd li{float:left;}
+.traffic-tab-hd a{float:left;color:#00468e;padding:0 20px 0 46px;background: url(img/traffic-bg.png) no-repeat 16px -42px;}
+.traffic-tab-hd a:hover{text-decoration:none}
+.traffic-tab-hd .bus{background-position:16px -142px}
+.traffic-tab-hd .car{background-position:16px -242px}
+.traffic-tab-hd .cur{background:#c5e6ff}
+.traffic-tab-hd .cur a{background-position:16px -92px;}
+.traffic-tab-hd .cur .bus{background-position:16px -192px}
+.traffic-tab-hd .cur .car{background-position:16px -292px}
+
+.traffic-tab-bd{position:relative;color:#fff}
+.traffic-tab-bd-bg{ position:absolute; background: #3b6f9f;height:100%;width:100%; z-index:-1;top:0;opacity:0.6;filter:alpha(opacity=60);}
+.traffic-tab-bd .free{position:relative;padding: 49px 17px;background: url(img/traffic-line.png) no-repeat 130px 59px;color:#00468e;z-index:0 }
+.traffic-tab-bd .free .start{width:108px;line-height:24px;}
+.traffic-tab-bd .start{position:relative;z-index:1}
+.traffic-tab-bd .start li{position:relative;margin-bottom: 23px;height:24px;background:url(img/traffic-bg.png) no-repeat 0 -520px;cursor:default;}
+.traffic-tab-bd .start li .line-detail{display:none; padding: 7px 12px;width: 542px;height: 90px;top: -27px;left:128px;position:absolute; color:#fff;background: #ff9935;line-height:30px;text-align:left}
+.traffic-tab-bd .start span{display:block;width:16px;height:20px;margin: 30px 0 0 -28px;background:url(img/traffic-bg.png) no-repeat -150px -520px;overflow:hidden;position:absolute;}
+.traffic-tab-bd .start .cur{color:#ff9935;}
+.traffic-tab-bd .start .cur .line-detail{display:block;}
+.traffic-tab-bd .start .ico{padding-left: 30px;background: url(img/traffic-bg.png) no-repeat -145px -544px;}
+.traffic-tab-bd .start .ico-no{background-position: -150px -640px;}
+.traffic-tab-bd .start .g-cf .ico{background-position: -150px -596px;}
+.traffic-tab-bd .end{padding:22px 0 0 570px;}
+.traffic-tab-bd .end div{ position:relative; width:157px;height:25px;background: #fff;line-height:25px}
+.traffic-tab-bd .end span{top: -5px;left:-22px;display:block;width:22px;height:43px;background:url(img/traffic-bg.png) no-repeat 0 -550px;overflow:hidden;position:absolute;}
+
+.traffic-tab-bd .bus{line-height:40px}
+.traffic-tab-bd .bus li{padding:20px}
+.traffic-tab-bd .bus div{background:url(img/traffic-bg.png) no-repeat 0 -433px;}
+.traffic-tab-bd .bus .border{border:solid #638db5;border-width:1px 0}
+.traffic-tab-bd .bus .station{width:362px;float:left;padding-left:18px;}
+.traffic-tab-bd .bus .lines{padding-left:20px; margin-left:380px; background-position: 0 -343px;}
+.traffic-tab-bd .car{padding:20px 18px;line-height:42px}
+.traffic-tab-bd .car th,.traffic-tab-bd .car td{padding:0 10px;border:solid 1px #638db5;font-weight:400}
+.traffic-tab-bd .car span{color:#3bffff;}

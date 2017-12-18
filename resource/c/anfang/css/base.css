@@ -1,0 +1,518 @@
+@import url('/v2/m/init/css/style.css');
+@import url('/v2/m/page/style_li.css');
+@import url('/css/m/zzmark/css.css');
+@import url('/v2/m/newtopnav/css/style.css');
+@import url('/v2/m/newsearch/css/style.css');
+@import url('/v2/m/bot-rightcopy/css/style.css');
+a:focus
+{
+         outline: none;
+    -moz-outline: none;
+}
+
+.hovercode{z-index: 1000;}
+.frie-links dd {width: 874px;}
+/* logo */
+.g_logo
+{
+    width: 600px;
+}
+.g_logo h1
+{
+    float: left;
+
+    width: 280px;
+}
+.g_logo h2
+{
+    float: left;
+
+    height: 38px;
+    margin: 38px 0 0 10px;
+    padding: 5px 0 0 10px;
+
+    vertical-align: bottom;
+
+    border-left: 1px solid #cecece;
+}
+.g_logo h2 a
+{
+    font-family: microsoft yahei;
+    font-size: 25px;
+    font-weight: normal;
+
+    color: #444;
+}
+.frie-links .more{width: 39px;height: 26px;line-height: 26px;}
+/*选择频道*/
+.selected_channel
+{
+    position: relative;
+
+    width: 30px;
+    margin-top: 57px;
+    margin-left: 10px;
+
+    *z-index: 3;
+    _z-index: 3;
+}
+.selected_channel .sel_chnel
+{
+    position: absolute;
+
+    width: 30px;
+    height: 20px;
+    padding-right: 10px;
+
+    text-align: center;
+
+    color: #a8a8a8;
+    border: 1px solid #fff;
+    background: url(img/city-sel.png) no-repeat 30px 8px;
+
+    _background-image: url(img/city-sel-ie6.png);
+}
+.selected_channel span.hover
+{
+    z-index: 4;
+
+    color: #656565;
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+    background-color: #f6f6f6;
+    background-position: 30px -5px;
+}
+.selected_channel .chnel_list
+{
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+
+    display: none;
+
+    width: 65px;
+
+    border: 1px solid #e3e3e3;
+    background-color: #f6f6f6;
+    z-index: 1000;
+}
+.selected_channel .chnel_list li
+{
+    padding: 2px 5px;
+}
+.selected_channel .chnel_list li a
+{
+    color: #444;
+}
+.selected_channel .chnel_list li a:hover
+{
+    color: #ff6c00;
+}
+
+a
+{
+    color: #444;
+}
+a:hover
+{
+    color: #e77918;
+}
+
+.search_k input.btn
+{
+    background: #277bd5;
+}
+.search_txt
+{
+    border-color: #277bd5;
+}
+.ch_search .ared
+{
+    color: #277bd5;
+}
+
+/* 导航 */
+.nav
+{
+    height: 37px;
+    position: relative;z-index: 99;
+    background: #277bd5 url(img/nav-bg.png) no-repeat right 0;z-index: 999;
+}
+.active
+{
+    height: 542px;
+}
+.side-nav
+{
+    left: 0;
+
+    float: left;
+
+    width: 200px;
+    height: 37px;
+}
+.side-nav ul{display: none;background: #fff;}
+.active ul{display: block;}
+.side-nav h2
+{
+    font: 16px/42px Microsoft YaHei,simhei;
+
+    position: absolute;
+    top: -5px;
+
+    width: 200px;
+    height: 42px;
+
+    text-indent: 42px;
+
+    color: #fff;
+    background: #1a67ba url(img/gather.png) no-repeat 12px 15px;
+}
+.lnk-box
+{
+    position: absolute;
+
+    width: 198px;
+    height: 497px;
+    margin-top: 37px;
+
+    border: 1px #ebebeb solid;
+    border-top: 0;z-index: 999;
+}
+.lnk-box .last
+{
+    height: 124px;
+
+    border-bottom: 0;
+}
+
+.first-lnk
+{
+    overflow: hidden;
+
+    width: 179px;
+    height: 124px;
+    margin: 0 auto;
+
+    border-bottom: 1px #c9c9c9 dashed;
+}
+.first-lnk h3
+{
+    font: 700 14px Microsoft YaHei,simhei;
+
+    margin-top: 7px;
+}
+.first-lnk a
+{
+    line-height: 22px;
+
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 85px;
+    margin-right: 8px;
+}
+.first-lnk span
+{
+    display: block;
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.first-lnk span a
+{
+    color: #6a99cc;
+}
+.first-lnk span a:hover
+{
+    color: #e77918;
+}
+.jHover
+{
+    position: relative;float: left;width: 100%;
+    z-index: 999;
+
+    height: 123px;
+    padding: 1px 0;
+}
+.lnk-box .last-li
+{
+    height: 121px;
+}
+.second-lnk
+{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 199px;
+
+    display: none;
+
+    width: 580px;
+    height: 496px;
+
+    border: 1px #eaeaea solid;
+    border-left: 0;
+    background: #fff;
+}
+.second-l
+{
+    overflow: hidden;
+
+    width: 285px;
+    margin-left: 26px;
+    padding-top: 29px;
+}
+.second-l p
+{
+    line-height: 24px;
+
+    height: 66px;
+    margin-left: -8px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #e8e8e8;
+}
+.second-l h3
+{
+    margin-bottom: 5px;
+}
+.second-l h3 a
+{
+    color: #c00;
+}
+.second-l p a
+{
+    line-height: 12px;
+
+    display: inline-block;zoom:1;
+
+    height: 12px;
+    margin-right: 7px;
+    padding-left: 7px;
+
+    border-left: 1px solid #ccc;
+}
+.second-r
+{
+    overflow: hidden;
+
+    width: 214px;
+    height: 467px;
+    padding-top: 29px;
+    padding-left: 18px;
+
+    border-left: 1px #e8e8e8 solid;
+}
+
+.lnk-img
+{
+    float: left;
+    overflow: hidden;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px #fff solid;
+    border-radius: 50px;
+}
+.second-r li
+{
+    overflow: hidden;
+    zoom: 1;
+
+    padding-bottom: 20px;
+}
+
+
+.second-r p
+{
+    float: right;
+
+    width: 130px;
+    margin-right: 13px;
+}
+.second-r p a
+{
+    font-weight: bold;
+    line-height: 18px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 18px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+.second-r p span
+{
+    line-height: 18px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 36px;
+    margin-top: 3px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+.lnk-box li.cur
+{
+    z-index: 999;
+
+    width: 198px;
+    padding: 0;
+
+    border: 1px #eaeaea solid;
+    border-right-color: #fff;
+    border-left: 0;
+}
+
+.lnk-box li.cur .first-lnk
+{
+    border-bottom: 0;
+}
+.lnk-box li.cur .second-lnk
+{
+    display: block;
+}
+/* 主导航 */
+.main-nav
+{
+    margin: 7px 0 0 22px;
+}
+.main-nav li
+{
+    display: inline;
+    float: left;
+
+    margin-right: 5px;
+}
+
+.main-nav li a
+{
+    font: 16px Microsoft YaHei,simsun;
+
+    display: inline-block;
+
+    height: 28px;
+    padding: 2px 20px 0;
+
+    color: #fff;
+}
+.main-nav li a:hover,
+.main-nav li a.cur
+{
+    text-decoration: none;
+
+    color: #277bd5;
+    background: #fff;
+}
+
+/* 带 more 标题 */
+.title-m h2
+{
+    font: 16px/26px Microsoft YaHei,simsun;
+}
+.title-m a.more
+{
+    font: 12px/26px simsun;
+
+    float: right;
+
+    width: 36px;
+
+    color: #888;
+}
+
+/* 带icon 列表 */
+.column li
+{
+    line-height: 26px;
+
+    overflow: hidden;
+
+    height: 26px;
+
+    text-indent: 9px;
+        word-break: break-all;
+    -ms-word-break: break-all;
+
+    background: url(img/gather.png) no-repeat -97px -23px;
+}
+/* 灰色框 */
+.gray-bd
+{
+    border: 1px solid #eaeaea;
+}
+
+/* 二维码 */
+
+.g-back
+{
+    position: fixed;
+    z-index: 9999;
+    bottom: 10px;
+
+    width: 60px;
+
+    background-image: url(about:blank);
+    background-attachment: fixed;
+
+    _position: absolute;
+}
+.g-back-btn
+{
+    display: block;
+    overflow: hidden;
+
+    width: 48px;
+    height: 48px;
+
+    text-indent: -999px;
+
+    background: #e94544 url(//res.csc86.com/v2/m/back-top/img/icon.png) no-repeat 12px 18px;
+
+    _background: #e94544 url(//res.csc86.com/v2/m/back-top/img/icon-ie6.png) no-repeat 12px 18px;
+}
+.g-wslm-btn
+{
+    display: block;
+    overflow: hidden;
+
+    width: 48px;
+    height: 48px;
+
+    text-indent: -999px;
+
+    background: #636363 url(//res.csc86.com/v2/m/back-top/img/icon.png) no-repeat 14px -60px;
+
+    _background: #636363 url(//res.csc86.com/v2/m/back-top/img/icon-ie6.png) no-repeat 14px -60px;
+}
+.g-code
+{
+    position: absolute;
+    z-index: 9999;
+    right: 62px;
+    bottom: 0;
+
+    width: 152px;
+    height: 175px;
+    padding: 15px 18px 16px 15px;
+
+    background: url(img/bg.png) no-repeat;
+    _background: url(img/bg-ie6.png) no-repeat;
+}
+.g-code span
+{
+    display: block;
+
+    margin-top: 5px;
+
+    color: #888;
+}
+

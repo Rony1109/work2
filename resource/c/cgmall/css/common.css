@@ -1,0 +1,23 @@
+@import url('/v2/m/init/css/style.css');
+@import url('/v2/c2/newcgsc/css/newtop.css');
+@import url('/v2/m/newsearch/css/style.css');
+@import url('/v2/m/bot-rightcopy/css/style.css');
+
+/*顶部导航重新*/
+.hoverMnu{z-index:20;}
+
+/*logo和搜索部分重写*/
+.g_logo{width:auto;}
+.g_logo  h1,.g_logo .line,.g_logo h2{float:left;overflow:hidden;}
+.g_logo  h1{margin-right:10px;}
+.g_logo .line{width:0px;height:40px;border-right:1px solid #d2d2d2;margin-top:45px;margin-right:14px;}
+.g_logo h2{background:url(img/logo.png) no-repeat;width:171px;height:48px;line-height:999px;margin-top:41px;}
+
+.ch_search .ared,.ch_search a:hover,.ch_search a:active{color:#ff500b;}
+.search_txt{border-color:#ff500b;}
+.search_k input.btn{background:#ff500b;}
+
+/*底部重写*/
+.frie-links {padding: 6px ; width:1000px;border-bottom:1px solid #e6e6e6;}
+.frie-links dd { width: 880px;}
+.link {border-top:none;}

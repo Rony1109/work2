@@ -1,0 +1,52 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('style.css');
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*办事求助*/
+.body-help{}
+.help-hd{height: 54px;margin: 0 35px;background: url(img/help-bg.png) no-repeat 0 17px;border-bottom: solid 1px #7299c2;}
+.help-bd{height: 610px;overflow-y:scroll;margin: 0 20px 0 35px;padding-right: 15px;}
+
+.help-form{color:#fff;border-bottom:solid 1px #7299c2}
+.hf-key{float:left;text-align:right;width: 64px;}
+.hf-val{padding-left:70px;}
+.help-form .text{width:149px;height:23px;border:solid 1px #ddd;background:#fff}
+.help-form .error{background:#ffffa5;}
+.help-form textarea{overflow-y:hidden;}
+.help-form label{margin-right:12px}
+.help-form label input{margin-right:3px}
+.help-form li{padding-bottom:15px}
+.help-form .btn{width:98px;height:26px;margin-right:16px;_margin-left:3px;background:#ff9935;color:#fff;font-weight:700;font-size:14px;border:0;cursor:pointer;}
+.help-form .success{display: none;position: absolute;color: #0b5f9b;margin: 108px 0 0 296px;padding: 10px 10px 10px 72px;border: solid 3px #eaf4ff;font-size:24px;background: #fff url(img/success.png) no-repeat 10px 7px;}
+
+.list-hd{height:41px;padding-left: 50px;background:url(img/help-bg.png) no-repeat 0 -100px;line-height:41px;color:#fff}
+
+.help-list .item{padding-bottom:26px}
+.help-list .icon{width:22px;height:25px;margin-left:-40px;background:url(img/help-bg.png) no-repeat 0 -150px }
+.item-hd{height:26px;padding:0 12px;*margin-bottom:-7px;color:#fff;line-height:26px;background: #0b5f9b url(img/item-hd-bg.png) repeat-y;}
+.item-hd .g-fr{padding-left:24px;background:url(img/help-bg.png) no-repeat 0 -245px;_background-position: 0 -247px}
+.item-q{padding:10px 16px  10px 56px;font-size:14px;color:#444;background:#fff;font-weight:700;line-height:24px}
+.item-a{padding:10px 16px  10px 56px;background: #eaf4ff;border:solid 1px #fff;}
+.item-a .icon{background-position:0 -200px}
+.item-a strong{font-size:14px;color:#444}
+.item-a p{padding:5px 0;color:#898989;line-height:20px}
+
+.hl-page{color:#fff;text-align: center;line-height:17px;}
+.hl-page a,.hl-page span{display:inline-block;padding:0 4px;color:#fff;*display: inline;*zoom:1;}
+.hl-page .cur{color: #00468e;background: #fff;}
+.hl-page a:hover{color:#fff;text-decoration:none}
+
+.top-page{margin-top: -20px;}

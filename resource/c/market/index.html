@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<title>逛市场</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css"/>
+	<link rel="stylesheet" href="http://res.csc86.com/v2/c/market/css/index.css"/>
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script src="http://res.csc86.com/v2/m/init/js/init.js"></script>
+</head>
+<body class="body-map">
+	<div class="top-bar g-cf">
+		<div class="g-fl top-sign-info">
+			进入<a href="http://www.csc86.com/" rel="nofollow">华南城网</a>，让世界看见你！
+			<!-- <a href="http://member.csc86.com/" target="_blank" id="J_signEd" rel="nofollow">名字</a>！消息<a href="http://member.csc86.com/membercenter/messageall/" target="_blank" class="top-msg-num" rel="nofollow">47</a><span class="v-line">|</span><a href="http://member.csc86.com/login/logout" rel="nofollow">退出</a> -->
+			<a href="http://member.csc86.com/login/phone/" rel="nofollow">登录</a><span class="v-line">|</span><a href="http://member.csc86.com/register/phonereg" target="_blank" rel="nofollow">免费注册</a>
+		</div>
+		<div class="g-fr top-quick-link">
+			<ul class="g-cf">
+				<li class="item"><a href="http://cncms.csc86.com/help/" target="_blank">客服中心</a></li>
+				<li class="item top-my-account">
+					<div class="hd">我的账户<span class="arr"></span></div>
+					<div class="g-cf bd">
+						<ul class="csc-bd">
+							<li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+							<li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+							<li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+							<li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+						</ul>
+						<!-- <ul class="yesmore-bd">
+							<li><a href="http://my.csc86.com/userorders" target="_blank" rel="nofollow">我的订单</a></li>
+							<li><a href="http://cart.csc86.com/cart" target="_blank" rel="nofollow">购物车</a></li>
+							<li><a href="http://sale.csc86.com/seckill" target="_blank" rel="nofollow">抢购秒杀</a></li>
+							<li><a href="http://tuan.csc86.com/" target="_blank" rel="nofollow">我的团购</a></li>
+						</ul> -->
+					</div>
+				</li>
+				<li class="item top-into-group">
+					<div class="hd"><a href="http://group.csc86.com" target="_blank">走进华南城<span class="arr"></span></a></div>
+					<div class="bd">
+						<ul>
+							<li><a href="http://sz.csc86.com" target="_blank">深圳</a></li>
+							<li><a href="http://nn.csc86.com" target="_blank">南宁</a></li>
+							<li><a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a></li>
+							<li><a href="http://xa.csc86.com" target="_blank">西安</a></li>
+							<li><a href="http://zz.csc86.com" target="_blank">郑州</a></li>
+							<li><a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="layout-search">
+		<div class="search">
+			<form action="http://market.csc86.com/shop/search" method="get" id="J_search">
+				<input type="text" name="q" autocomplete="off" class="txt"/>
+				<input type="submit" class="btn" value=""/>
+				<input type="hidden" name="start" value="0"/>
+				<input type="hidden" name="pageSize" value="7"/>
+			</form>
+		</div>
+		<div class="g-dn search-result">
+			<!-- <ul class="sr-list">
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+				<li>
+					<a href="javascript:">深圳市金发纺织品有限公司</a>
+					<p class="g-e">
+						主营行业：纺织、塑胶、橡胶
+						<br/>
+						商铺号：皮革市场L011102
+					</p>
+				</li>
+			</ul>
+			<div class="g-cf sr-page">
+				<span>上一页</span>
+				<span class="cur">1</span>
+				<a href="javascript:">2</a>
+				<a href="javascript:">3</a>
+				<a href="javascript:">4</a>
+				<span>...</span>
+				<a href="javascript:">144</a>
+				<a href="javascript:">下一页</a>
+			</div> -->
+		</div>
+	</div>
+	<div class="layout-left">
+		<div class="logo">
+			<h2><a href="http://www.csc86.com/"><img src="http://res.csc86.com/v2/c/market/image/logo.png" width="182" height="43" alt="实体商圈，可信交易。"/></a></h2>
+			<h1><a href="http://market.csc86.com/" class="g-ffy">逛市场</a></h1>
+		</div>
+		<div class="nav">
+			<ul class="nav-items">
+				<li class="J_navMarket"><a href="javascript:">主题市场<span>Topic Market</span></a></li>
+				<li class="dis"><a href="javascript:">饮食男女<span>Eat Drink Man Woman</span></a></li>
+				<li class="dis"><a href="javascript:">品牌风暴<span>Brand Storm</span></a></li>
+			</ul>
+			<div class="J_navMarket nav-items-bd">
+				<ul>
+					<li class="active"><a href="http://market.csc86.com/outlets">奥特莱斯购物中心</a></li>
+					<li><a href="http://market.csc86.com/led">光园国际LED照明产业</a></li>
+					<li><a href="http://market.csc86.com/industrial">电子商务产业园</a></li>
+					<li><a href="http://market.csc86.com/spmall">春天时尚购物中心</a></li>
+					<li><a href="http://market.csc86.com/tea">国际茶业交易中心</a></li>
+					<li><a href="http://market.csc86.com/hualijia">华利嘉电子市场</a></li>
+					<li><a href="http://market.csc86.com/leather">皮革原辅料市场</a></li>
+					<li><a href="http://market.csc86.com/spinning">纺织原辅料市场</a></li>
+					<li><a href="http://market.csc86.com/ecprinting">电子印刷包装市场</a></li>
+					<li><a href="http://market.csc86.com/plastic">五金塑胶化工市场</a></li>
+				</ul>
+				<div class="nav-items-bg"></div>
+			</div>
+			<div class="g-cf nav-btn">
+				<a href="http://market.csc86.com/service" target="_blank" class="help">办事求助</a>
+				<a href="http://market.csc86.com/traffic" target="_blank" class="traffic">交通指南</a>
+			</div>
+		</div>
+		<ul class="g-cf quick">
+			<li class="dining"><a href="javascript:">餐饮</a><span>X</span></li>
+			<li class="bank"><a href="javascript:">银行</a><span>X</span></li>
+			<li class="hotel"><a href="javascript:">酒店</a><span>X</span></li>
+			<li class="enter"><a href="javascript:">休闲</a><span>X</span></li>
+		</ul>
+		<div class="copy">
+			<div class="icon">
+				<a href="http://cncms.csc86.com/about/feedback.html" title="意见反馈" target="_blank" class="msg"></a>
+				<a href="http://cncms.csc86.com/about/contact.html" title="联系我们" target="_blank" class="tel"></a>
+				<a href="http://cncms.csc86.com/sitemap.html" title="网站地图" target="_blank" class="map"></a>
+				<a href="http://cncms.csc86.com/about/contact.html" title="邮箱" target="_blank" class="email"></a>
+			</div>
+			<div class="txt">
+				<a href="http://cncms.csc86.com/sitemap.html" target="_blank">关于华南城</a><a href="http://cncms.csc86.com/about/member.html" target="_blank">会员服务</a><br/>
+				<a href="http://ad.csc86.com" target="_blank">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank">服务条款</a>
+			</div>
+			<p class="right">Copyright©2009-2013 China South City<br/>
+				Holdings Limited. All Rights Reserved</p>
+			<a href="http://www.miibeian.gov.cn/" class="mii" target="_blank">粤ICP备12062577号-5</a>
+		</div>
+	</div>
+	<div class="layout-left-bg"></div>
+	<div id="map" class="map layout-map">
+		<!-- <div class="map-tag g-dn tag-market">
+			<div class="item" style="left:700px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="110" height="100"/></a></div>
+						<div class="info">
+							<h3>1号交易广场</h3>
+							<div class="g-cf">
+								<a href="javascript:">申请入驻</a>
+								<a href="javascript:">我要买铺</a>
+								<a href="javascript:">进入市场</a>
+								<a href="javascript:">观感打分</a>
+							</div>
+						</div>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item active" style="left:700px;top:200px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="110" height="100"/></a></div>
+						<div class="info">
+							<h3>1号交易广场</h3>
+							<div class="g-cf">
+								<a href="javascript:">申请入驻</a>
+								<a href="javascript:">我要买铺</a>
+								<a href="javascript:">进入市场</a>
+								<a href="javascript:">观感打分</a>
+							</div>
+						</div>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div>
+		<div class="map-tag g-dn tag-eat">
+			<div class="item" style="left:0;top:0">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item active" style="left:150px;top:160px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div>
+		<div class="map-tag g-dn tag-bank">
+			<div class="item" style="left:200px;top:400px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item active" style="left:300px;top:400px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div>
+		<div class="map-tag g-dn tag-hotel">
+			<div class="item" style="left:300px;top:450px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item active" style="left:400px;top:620px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div>
+		<div class="map-tag g-dn tag-enter">
+			<div class="item" style="left:500px;top:500px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item active" style="left:700px;top:400px">
+				<div class="panel">
+					<div class="g-cf">
+						<div class="g-fl thumb"><a href="javascript:"><img src="http://res.csc86.com/v2/m/init/image/img.png" alt="" width="80" height="80"/></a></div>
+						<ul class="info">
+							<li>配套名称：配套名称配套名称</li>
+							<li>位　　置：位置位置位置位置位置</li>
+							<li>联系电话：000-0000000</li>
+							<li>特　　色：特色 特色 特色特</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div> -->
+		<div class="map-tag tag-station">
+			<div class="item" style="left:135px;top:335px">
+				<div class="panel">
+					<h3>华南城西门站</h3>
+					<p>
+						322；881；B743；M300；<br/>M311；M412
+					</p>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item" style="left:345px;top:150px">
+				<div class="panel" style="width:274px">
+					<h3>华南城北门站</h3>
+					<p>
+						322；363；977；979；M228；M265<br/>M267；M269；M302；M356
+					</p>
+					<div class="bg" style="width:260px"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item" style="left:450px;top:205px">
+				<div class="panel" style="width:248px">
+					<h3>华南城交易中心</h3>
+					<p>
+						322；363；398；M302；M323；<br/>M356；M412；机场4线
+					</p>
+					<div class="bg" style="width:234px"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+			<div class="item" style="left:290px;top:360px">
+				<div class="panel">
+					<h3>华南城西门站</h3>
+					<p>
+						363；398；977；979；<br/>M356；
+					</p>
+					<div class="bg"></div>
+					<div class="arr"></div>
+				</div>
+				<div class="icon"></div>
+			</div>
+		</div>
+	</div>
+	<div class="csc-style">
+		<h2 class="g-fs14 g-ffy">华南城风采</h2>
+		<span class="close"></span>
+		<div><embed src="http://player.youku.com/player.php/sid/XNjU5Mzg2MzEy/v.swf" allowFullScreen="true" quality="high" width="260" height="180" align="middle" wmode="opaque" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></div>
+	</div>
+	<script>seajs.use('c/market/js/index');</script>
+	<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

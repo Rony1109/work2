@@ -1,0 +1,73 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/* @import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/**/
+.af-nav h2{background-image:url(/css/c/buyoffer/img/buyoffer-ico.png)}
+
+a{color:#2864a2}
+a:hover{color:#f67301;text-decoration:none}
+
+.box{}
+.box .hd{font-size:16px;font-weight:700;margin-bottom:10px; padding-left: 30px;background: url(img/bg.png) no-repeat 6px 4px;}
+.box .bd{margin-bottom: 30px;}
+.tips{position:relative;height:21px; padding: 6px 16px;background:#ffffe9;border:solid 1px #dddddd;}
+.tips-close{position:absolute;display:block;width:10px;height:10px; top: 6px;right: 6px;overflow:hidden;background:url(img/bg.png) no-repeat 0 -50px;}
+
+.tabs{}
+.tabs-hd{height:29px;font-weight:700;position:relative}
+.tabs-hd li{float:left;height:27px;margin-right:8px; padding:0 14px; line-height:27px; background:#f3f3f3;border:solid 1px #ddd;cursor:pointer}
+.tabs-hd .cur{height:28px;background:#fff;border-bottom:0;cursor:default}
+.tabs-bd{display:none;border:solid 1px #ddd;margin-top:-1px;}
+.tabs-bd-cur{display:block}
+
+.table td,.table th{border:solid 1px #ddd;text-align:center;padding:9px;}
+.table thead td{background:#f6f6f6;font-weight:700;}
+.table tbody th{font-weight:400;}
+.table .bg td,.table .bg th{background:#f7f7f7;}
+
+
+/*流量统计页*/
+.help{position:relative}
+.help-ico{width:16px;height:16px;background:url(img/bg.png) no-repeat 0 -100px;overflow:hidden;}
+.help-bd{position:absolute;display:none; top:-8px;left:20px;width: 338px;height: 60px; padding: 10px 14px;line-height:28px;font-weight:400;background:#fff;box-shadow:2px 2px 9px #aaa;border:solid 1px #ddd\9;}
+:root .help-bd{border:0}
+.help-hover .help-bd{display:block}
+
+.flow-table{height:45px;line-height:45px;padding:0 15px; border:solid 1px #ddd;margin-bottom:-1px;}
+.flow-table .down{background: url(img/bg.png) no-repeat 0 -137px;padding-left: 29px;}
+
+.flow-line-hd{margin: 10px 30px 0;}
+.flow-line-hd span{overflow:hidden;width:15px;height:8px;background:#afd436;}
+.flow-line-hd .uv-color{background:#2d91dc;}
+.flow-line-hd .active-color{background:#db7e2c;}
+.flow-line-hd .other-color{background:#f15959;}
+.flow-line-hd .outside-color{background:#e459f1;}
+.flow-donut-hd{line-height:24px;margin:20px 100px 0 40px;}
+.flow-donut-hd span{width:20px;height:12px;margin-right:3px;vertical-align:middle}
+.flow-line{height:340px;margin:20px}
+.flow-line-day{width:100px}
+.flow-line-day li{height:20px}
+.flow-donut{height:260px;margin:20px auto;}
+
+.keysords .tabs-hd{height:28px;overflow:hidden}
+.keysords .tabs-hd li{border-bottom:0;height:}
+.keysords .tabs-bd{border:0;margin-top:0;}
+.keysords th{width:128px}
+
+.product th{width:168px}
+
+.empty{padding:10px; text-align:center}

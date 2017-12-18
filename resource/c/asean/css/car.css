@@ -1,0 +1,90 @@
+@import url('base.css');
+.banner .g-o{z-index: 999}
+.side-nav{position: absolute;left: 0;top: 0;width: 200px;height: 380px;background: #fff;z-index: 999}
+.side-nav h2{padding-top: 4px;margin-bottom: 12px;height: 39px;font: 24px Microsoft YaHei,simsun;color: #fff;text-indent: 13px;background: #383838 url(img/car-nav-title.png) no-repeat right 0;}
+.side-nav h2 span{font-size: 16px;}
+.side-nav b{display: block;text-indent: 15px;}
+.side-nav-link{width: 172px;margin: 10px auto 0;overflow: hidden;zoom:1;}
+.side-nav-link a{float: left;display: inline;margin:0 5px 10px 0;width: 50px;height: 16px;line-height: 16px;font-family: Microsoft YaHei,simsun;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.nav-link-box{width: 180px;}
+.slide {position: relative;float: right;display: inline;width: 100%; height: 380px; overflow: hidden; position: relative;z-index: 0}
+.slide ul li { width: 100%; height: 380px;overflow: hidden;zoom:1;}
+.slide ul li img{display: none;}
+.slide ul li a{display: block;overflow: hidden;width: 100%;height: 380px;text-indent: -9999px;}
+.slide ol {position: absolute; bottom: 8px; right: 350px;zoom:1;z-index: 999;}
+.slide ol li {width: 20px; height: 20px;line-height: 20px; float: left; margin-right: 5px;overflow: hidden;text-align: center; color: #fff;background: url(img/banner-nav-off.png) no-repeat;_background:none;_filter:_bacground:nne;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="csc/img/banner-nav-off.png");}
+.slide ol li.cur {background: #ff7300;color: #fff;background: url(img/car-banner-nav-non.png) no-repeat;_background:none;_filter:progid.DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/car-banner-nav-non.png');}
+
+.con-l{width: 720px;overflow: hidden;}
+.car-title{position: relative;height: 40px;font: 20px/40px Microsoft YaHei,simsun;border-bottom: 3px #b5b5b5 solid;}
+.car-title span{position: absolute;display: block;bottom: -3px;left: 0;width: 105px;text-align: center;color: #c00202;background: url(img/icos.gif) no-repeat 50px -1066px;border-bottom: 3px #c00202 solid;}
+
+.car-list{margin-top: 7px;width:732px;}
+.car-list li{position: relative;float: left;display: inline;margin-right: 14px;width: 230px;height: 258px;}
+.bg-cfb2a8{background: #cfb2a8;}
+.bg-d05e6f{background: #d05e6f;}
+.bg-cdc093{background: #cdc093;}
+
+.car-list a{display: block;margin: 6px auto 0;width: 216px;font: 15px Microsoft YaHei,simsun;color: #fff;}
+.car-list a span{display: block;margin: 10px 0 0 18px;width: 154px;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.car-list a:hover{text-decoration: none;}
+.car-list a.btn{position: absolute;left: 0;bottom: 0;width: 230px;height: 34px;line-height: 34px;text-align: center;}
+.car-list a.btn-1{background: #bc9485}
+.car-list a.btn-2{background: #bb5060}
+.car-list a.btn-3{background: #b1a57e}
+.car-list a:hover{text-decoration: underline;}
+
+.con-r{width: 260px;}
+.fix-fz a{line-height: 40px;}
+.fix-fz h2{font-size: 20px;font-weight: normal;height: 40px;line-height: 40px;}
+
+.quotation{padding: 8px 10px 0;}
+.quotation li{height: 26px;line-height: 26px;}
+
+.title{height: 40px;line-height: 40px;font-size: 20px;font-weight: normal;}
+.bargain{padding: 14px;overflow: hidden;}
+.bargain ul{width: 992px;}
+.bargain li{float: left;display: inline;height: 208px;width: 220px;margin-right: 28px;}
+.bargain li a{display: block;height: 156px;overflow: hidden;text-align: center;-ms-word-break: break-all;word-break: break-all;font: 14px Microsoft YaHei,simsun;}
+.bargain li a img{display: block;margin-bottom: 10px;}
+
+.price-intro{margin-top: 8px;height: 45px;background: #f2f2f2;}
+.price-intro a{float: left;display: inline;padding: 0 13px 0 7px;margin-right: 5px;width: 33px;height: 45px;font: 16px/20px Microsoft YaHei,simsun;color: #fff;background: url(img/icos.gif) no-repeat 0 -1227px;}
+.price-intro a:hover{text-decoration: none;}
+.price-intro span{display: block;height: 22px;overflow: hidden;font:14px/22px Microsoft YaHei,simsun ;-ms-word-break: break-all;word-break: break-all;}
+.fc-be0002{color: #be0002;font-size: 16px;}
+
+.fix-car-title{height: 32px;line-height: 32px;}
+.show{margin-top: 7px;overflow: hidden;}
+.show ul{width: 1009px;}
+.show li{position: relative;float: left;display: inline;margin:0 3px 3px 0;}
+.show li span{position: absolute;display: block;bottom: 0;height: 38px;width: 220px;font: 12px/38px simsun;text-align: center;color: #fff}
+.show li span.bg{background: #000;opacity: 0.7;filter:alpha(opacity=70);}
+
+.show li.key-word{width: 237px;padding: 0 9px;height: 256px;background: #f2f2f2;}
+.show li.key-word a{position: absolute;display: block;top:13px;padding: 0 3px;max-width:227px;_width:expression(this.scrollWeight > 227 ? "227px" : "auto");height: 28px;width: auto;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 12px/28px Microsoft YaHei,simsun;color: #fff;background: #bb9c92}
+
+.sociality{border-top: 2px #b5b5b5 solid;}
+.sociality h2{margin-top: 5px;font-size: 16px;font-weight: normal;}
+
+.social-l{width: 188px;margin-left: 8px;overflow: hidden;}
+.social-mid{width: 480px;margin: 0 15px 0 10px;}
+.social-r{width: 290px;}
+
+.quanz li{margin:7px 0 3px;overflow: hidden;zoom:1;}
+.quanz a.qz-logo {position: relative;display: block;width: 60px;height: 60px;}
+.quanz a.qz-logo img{width: 60px;height: 60px;}
+.quanz a.qz-logo span{position: absolute;display: block;width: 60px;height: 60px;top:0;left:0;background: url(img/round.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/round.png");}
+.quanz p{float: right;display: inline;margin-right: 3px;width: 117px;}
+.quanz p a{display: block;height: 18px;overflow: hidden;word-break:break-all;font:700 12px Microsoft YaHei,simsun;}
+.quanz p span{display: block;margin-top: 3px;height: 31px;line-height: 15px;overflow: hidden;line-height: 15px;color: #888;word-break:break-all;}
+
+.fix-special li p{width: 386px}
+.special-items li{float: left;display: inline;margin-right: 15px;width: 220px;height: 24px;text-indent: 9px;font: 13px/24px Microsoft YaHei,simsun;}
+.encyclopedia{width:257px;}
+.encyclopedia li{ height: 24px;line-height: 24px;text-indent: 8px;}
+
+.love-car{margin-top: 5px;}
+
+.hot-tuan{width: 280px;}
+.bt-e8e8e8{margin-top: 10px;padding-top: 10px;border-top: 1px #e8e8e8 dashed;}

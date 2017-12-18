@@ -1,0 +1,95 @@
+/* 工具页依赖的模块 */
+@import url(../../common/css/m-public.css);
+@import url(../../common/css/m-top.css);
+@import url(../../common/css/m-side.css);
+@import url(../../common/css/m-foot.css);
+
+/**
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+@charset "utf-8";
+/* 企业会员中心改版 2013.08.19 by lg */
+/*m-left*/
+.m-left{float:left;width:149px;border-right:1px solid #ebebeb; background-color:#f2f2f2;}
+
+/*头像*/
+.head-pic{width:120px;height:120px;border:2px solid #fff;border-radius:2px;overflow:hidden;margin:20px 13px;}
+.head-pic a{display:block;width:120px;height:120px;line-height:120px;text-align:center;position:relative;overflow:hidden;}
+.head-pic a #infoimg{width:auto;height:auto;max-width:120px;max-height:120px;}
+.head-pic a span{display:none;}
+.head-pic a:hover span{display:block;width:120px;height:120px;opacity:0.7;filter:alpha(opacity=70);position:absolute;top:0;left:0;z-index:1;background:url(../../common/css/img/mem-upload.png) no-repeat;}
+.head-pic a span .chg-hed-icon{margin-bottom:2px;margin-right:6px;}
+.head-pic a object{position:absolute;top:0;left:0;z-index:2;filter:alpha(opacity=0);opacity:0;}
+
+/*名字*/
+.m-name{float: left; padding-left:13px;width:86px;}
+.m-name a{font-size:17px;color:#444;font-family:Microsoft YaHei,SimHei;}
+.m-name a:hover{color:#F67301;}
+
+/*验证图标*/
+.verified{float: right;width:50px;margin-top:3px;}
+.verified a{color:#444;font-family:Microsoft YaHei,SimHei;}
+.verified a b{cursor:pointer}
+.verified a:hover{color:#F67301;}
+.verified a .phone-icon,.verified a .phone-l-icon{margin-left:3px;}
+
+/*左侧菜单*/
+.m-menu{border-bottom:1px solid #ebebeb;height:122px;padding:15px 0;}
+.m-menu li{height:42px;position:relative;}
+.m-menu li a{display:block;height:40px;line-height:40px;padding:1px 0 1px 50px;font-size:14px;font-family:Microsoft YaHei,SimHei;color:#444;margin-top:-1px;}
+.m-menu li a:hover,.m-menu li a.hover{padding:0 0 0 50px;border-top:1px solid #ebebeb;border-bottom:1px solid #ebebeb;background-color:#fff;color:#3b405e;}
+.m-menu li a span.num{position:absolute;height:18px;line-height:18px;padding:0 3px;border-radius:2px;background-color:#e6e6e6;color:#7b7b7b;font-size:11px;top:13px;right:12px;}
+.m-menu li a:hover span.num,.m-menu li a.hover span.num{background-color:#a6acd1;color:#fff;}
+.m-menu li a b{left:12px;position:absolute;top:10px;}
+.m-menu li a b sup{position:absolute;top:-1px;right:-2px;}
+.m-menu li a:hover .fd-icon,.m-menu li a.hover .fd-icon{width:25px;padding-top:25px;background-position:-23px -103px;}
+.m-menu li a:hover .msg-icon,.m-menu li a.hover .msg-icon{width:25px;padding-top:19px;background-position:-23px -129px;}
+.m-menu li a:hover .card-icon,.m-menu li a.hover .card-icon{width:23px;padding-top:25px;background-position:-24px -151px;}
+.m-menu li a .d{position:absolute;top:8px;left:35px;}
+.m-menu li a:hover .d{background-position:-40px -10px;}
+.m-menu li a.hover .d{display:none;}
+.m-menu li a .l{display:none;}
+.m-menu li a.hover .l{display:block;width:4px;padding-top:28px;background-color:#3b405e;position:absolute;right:-4px;top:0;}
+
+/*金额*/
+.cash{margin-top:25px;padding-left:5px;color:#444;font-size:12px;font-family:Microsoft YaHei,SimHei;}
+.cash span{color:#f67301;font-size:18px;margin:0 3px 0 2px;}
+.cash span a,.cash span a:hover{color:#f67301;text-decoration:none;}
+.cash span sub{font-size:10px;_font-size:13px;vertical-align:inherit;*vertical-align:baseline;}
+	
+/*充值按钮*/
+.pay-btn{float:left;margin-left:5px;margin-right:5px;}
+a:hover.pay-btn{background-position:-50px -276px;}
+a:hover.open-btn{background-position:-126px -276px;}
+
+/*其它功能*/
+.ofun{border-bottom:1px solid #EBEBEB;border-top:1px solid #EBEBEB;margin-top:30px;}
+.ofun a{float:left;width:74px;height:78px;text-align:center;color:#444;font-family:Microsoft YaHei,SimHei;}
+.ofun a:hover{color:#3b405e}
+.ofun a.msg-c{border-right:1px solid #ebebeb;position:relative;}
+.ofun a .msgc-icon{margin-top:20px;margin-bottom:5px;}
+.ofun a .acc-icon{margin-top:20px;margin-bottom:5px;}
+.ofun a:hover .msgc-icon{background-position:-104px -42px;}
+.ofun a:hover .acc-icon{background-position:-132px -42px;}
+.ofun a.msg-c sup.msg-tips{position:absolute;left:43px;top:3px;font-size:9px;font-style:normal;font-family:Arial;line-height:18px;padding-left:7px;color:#fff;}
+
+/*客服中心*/
+.s-c{padding:20px 0px 40px 15px;margin-top:30px;border-top:1px solid #EBEBEB;position:relative;}
+.s-c h3{background-color:#F2F2F2;color:#444444;font-family:Microsoft YaHei,SimHei;font-size:14px;font-weight:400;left:0;padding-right:5px;position:absolute;text-align:right;top:-12px;width:71px;}
+.s-c a{margin-bottom:8px;}
+
+
+.tool-list{padding:10px 20px}
+.tool-list li{padding:20px 15px;border-bottom:1px solid #EEE;overflow:hidden;zoom:1}
+.tool-list dl,.tool-list dt,.tool-list dd{float:left}
+.tool-list li img{margin-right:15px}
+.tool-list dl{width:359px}.tool-list dl.r{margin-left:20px}
+.tool-list dd{width:240px}
+.tool-list dd.tit a{font-size:14px;font-weight:700;color:#2664A2;}
+.tool-list dd.tit span{float:right;color:#888}
+.tool-list dd a.use{float:left;width:52px;height:21px;margin-top:10px;cursor:default;line-height:20px;text-align:center;text-decoration:none;color:#888;background:url(/css/c/membercenter/img/use-bg.png) repeat-x 0 -22px}
+.tool-list dd a.cur{cursor:pointer;background-position:0 0;color:#FFF;cursor:default}

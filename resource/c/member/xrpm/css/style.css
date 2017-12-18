@@ -1,0 +1,130 @@
+@import url('//res.csc86.com/v2/m/init/css/style.css');
+@import url('//res.csc86.com/v2/c/member/common/css/m-public.css');
+@import url('//res.csc86.com/v2/c/member/common/css/m-top.css');
+@import url('//res.csc86.com/v2/c/member/common/css/m-foot.css');
+@import url('//res.csc86.com/v2/c/member/common/css/app-frame.css');
+
+/*重新样式*/
+.app-frame{padding-bottom:20px;background:url(/css/c/membercenter/img/mem_nav_bg.png) repeat-y 20px 0}
+.xrpm-nav h2{background:url(/css/c/memberhome/m-collect.css/../img/xr-mem.gif) no-repeat 0 8px;}
+.xrpm-nav .nav-items{font-family:simsun;}
+.xrpm-nav li{width:auto;*width:148px;}
+.af-nav .cur a{color:#2664a2;}
+.af-hd{margin-bottom:23px;}
+
+/***基础公共样式***/
+.g-c8{color:#888;}
+.g-cred{color:#cb0000;}
+.g-ml20{margin-left:20px;}
+.xrpm-bd{min-height:470px;padding-bottom:30px;font-family:simsun;}
+
+/*表单相关样式*/
+.ipt-txt{background:#fff;border:1px solid #ccc;height:26px;line-height:26px;color:#454545;}
+.org-smt{background:#f9601d;height:28px;padding:0 15px;*padding:0 8px;border:none;border-radius:3px;color:#fff;cursor:pointer;}
+.xrpm-slt{height:23px;border:1px solid #abadb3;vertical-align:middle;}
+
+/*旭日排名灰色tab*/
+.xrpm-tab{border-bottom:1px solid #ebebeb;}
+.xrpm-tab li{float:left;border:1px solid #ebebeb;position:relative;bottom:-1px;margin-right:10px;}
+.xrpm-tab li a{display:inline-block;background:#f3f3f3;height:28px;padding:0 13px;color:#454545;font:14px/28px simsun;}
+.xrpm-tab .cur{border-bottom:1px solid #fff;}
+.xrpm-tab .cur a{background:#fff;font-weight:bold;}
+
+/*公用提示框*/
+.tip-box1{border:1px solid #e9e9e9;padding:90px 0 90px 135px;margin-bottom:180px;font:bold 16px/28px simsun;}
+.tip-box1 a{color:#fa6500;}
+.rt-ico{background:#f3f3f3 url(img/rt.jpg) no-repeat 720px bottom;}
+.we-ico{background:#f3f3f3 url(img/we.png) no-repeat 696px bottom;}
+
+/*列表表格*/
+.xrpm-lst-tbl{width:100%;}
+.xrpm-lst-tbl th,.xrpm-lst-tbl td{border-bottom:1px solid #e8e8e8;}
+.xrpm-lst-tbl th{padding:10px 5px;}
+.xrpm-lst-tbl td{padding:15px 5px;}
+.xrpm-lst-tbl tbody tr.hover{background:#f6f6f6;}
+.xrpm-no-data{padding:50px 0;font-weight:bold;}
+
+/***购买付费关键词***/
+.wxtip-box{background:#f7f7f7;border:1px solid #f0f0f0;color:#676767;line-height:32px;padding:0 10px;}
+.buy-ffkey .wxtip-box{margin-top:23px;}
+.buy-ffkey-bd{padding:35px 0 0 25px;}
+
+.shwprc-box{padding-bottom:13px;}
+.shwprc-box .ipt-txt{width:260px;padding:0 5px;margin-right:10px;}
+
+.frnd-tip{margin-left:15px;line-height:32px;color:#333;font-size:14px;}
+
+.ffkey-inf{background:#fafafa;height:24px;padding:20px 25px;margin:8px 0 11px;font-size:14px;font-weight:bold;overflow:hidden;}
+.ffkey-inf span{margin-right:100px;}
+.ffkey-inf .buy-smt{background:url(img/sf.png) no-repeat 0 0;border:none;width:74px;height:23px;line-height:99px;vertical-align:middle;cursor:pointer;overflow:hidden;}
+
+.relate-key{background:#fafafa;padding:10px;margin-top:15px;}
+.relate-key dt{padding-left:5px;color:#333;font-weight:bold;}
+.relate-key .ley-lst{padding-top:6px;}
+.relate-key .ley-lst li{float:left;border:1px solid #d5dae6;padding:3px 7px;margin-right:5px;margin-top:5px;color:#2664a2;white-space:nowrap;}
+
+/***已购买关键词***/
+.gray-abtn1,.gray-abtn1 span{display:inline-block;background:url(img/abtn-bg1.png) no-repeat;height:23px;line-height:23px;color:#454545;overflow:hidden;}
+.gray-abtn1{background-position:left center;padding-left:15px;}
+.gray-abtn1 span{background-position:right center;padding-right:15px;}
+.org-abtn{display:inline-block;background:#f9601d;height:28px;line-height:28px;padding:0 15px;border-radius:3px;color:#fff;font-size:14px;}
+.org-abtn:hover{opacity:0.9;filter:alpha(opacity=90);}
+
+.keysrch-box{padding:15px 3px;overflow:hidden;}
+.keysrch-box select{width:115px;height:23px;border:1px solid #abadb3;}
+.keysrch-box .gray-abtn1,.keysrch-box .org-abtn{position:absolute;right:3px;}
+.keysrch-box .gray-abtn1{top:15px;}
+.keysrch-box .org-abtn{top:12px;}
+.keysrch-smt{background:url(img/sf.png) no-repeat -75px 0;border:none;width:42px;height:22px;cursor:pointer;}
+
+/***添加关键词排名***/
+.addkey-tab{padding-left:28px;padding-bottom:25px;margin-top:-3px;}
+.addkey-tab li{float:left;margin-right:60px;font-size:14px;}
+
+.add-ffkey .tip-box1{margin-bottom:0;}
+.add-ffkey-bd{padding-left:28px;padding-right:28px;}
+.sltbnd-key-dl dt,.sltbnd-pro-dl dt{font-weight:bold;height:40px;line-height:40px;padding-bottom:8px;}
+.sltbnd-key-lst{padding:0 10px;}
+.sltbnd-key-lst li{float:left;margin-right:65px;}
+
+/*选个产品绑定*/
+.sltbnd-pro-box{position:relative;}
+.sltbnd-pro-box .box-bd{width:375px;}
+.sltbnd-pro-box .org-smt{width:78px;position:absolute;left:385px;top:0;}
+.sltbnd-pro-ipt,.sltbnd-pro-box .pro-lst{border:1px solid #ccc;width:363px;}
+.sltbnd-pro-ipt{background:#fff url(img/jt.png) no-repeat 358px center;height:26px;line-height:26px;padding:0 5px;margin-right:10px;cursor:pointer;}
+.sltbnd-pro-ipt .sltbnd-pro-inf{width:346px;}
+.sltbnd-pro-box .pro-lst{padding:5px;border-top:none;display:none;}
+.sltbnd-pro-box .hover .pro-lst{display:block;}
+.sltbnd-pro-box .pro-lst .pic{display:none;margin-right:10px;}
+.sltbnd-pro-box .pro-lst li{height:24px;line-height:24px;cursor:pointer;overflow:hidden;}
+.sltbnd-pro-inf{width:363px;}
+.sltbnd-pro-inf .title{width:230px;}
+.sltbnd-pro-box .pro-lst .hover{height:40px;line-height:40px;}
+.sltbnd-pro-box .pro-lst .hover .pic{display:block;}
+.sltbnd-pro-box .pro-lst .hover .sltbnd-pro-inf{width:303px;}
+.bndPro-pop{text-align:center;}
+.bndPro-pop .hd{color:#000;font:bold 14px Microsoft YaHei;}
+.bndPro-pop .hd img{margin-right:15px;}
+.bndPro-pop .bd{margin-top:25px;}
+.bndPro-pop .bd .org-abtn{background:#f9601d;height:28px;line-height:28px;margin:0 15px;}
+
+/*看看大家*/
+.show-others{margin-top:17px;font-family:Microsoft YaHei;}
+.show-others .hd{border-top:1px solid #e8e8e8;padding-top:20px;font-size:14px;}
+.show-others .hd .jt{background:url(img/jt2.png) no-repeat;width:15px;height:7px;position:absolute;left:38px;top:-1px;overflow:hidden;}
+.show-others .hd em{color:#cb0000;}
+.show-others .bd{margin-top:5px;}
+.show-others .xrpm-lst-tbl th{background:#f3f3f3;padding:7px 5px;}
+.show-others .xrpm-lst-tbl td{padding:20px 5px;}
+
+/*关键词名额*/
+.yxq-box{padding-top:35px;padding-bottom:25px;}
+
+.sltkey-box .ipt-txt{width:260px;padding:0 5px;margin-right:10px;}
+.add-ffkey-bd .frnd-tip{margin-left:0;padding:13px 0;}
+.add-ffkey-bd .relate-key{margin-top:2px;}
+.add-ffkey-bd .sltbnd-pro-box{padding-bottom:15px;} 
+
+/***排名管理***/
+.cnclpm-pop{line-height:24px;}

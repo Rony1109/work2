@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>设置热卖商品</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+    <link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css" >
+    <link rel="stylesheet" href="css/mdl-sethotpro.css" >
+</head>
+
+<body>
+<div class="mdl-setpro-autoslt">
+	<form class="jsSetHotFrm" action="">
+    <div class="isshow-box">
+    	<input id="showMdlRdo" name="isShowRdo" type="radio" value="" checked > <label for="showMdlRdo">显示此模块</label><input id="hideMdlRdo" class="g-ml50" name="isShowRdo" type="radio" value=""> <label for="hideMdlRdo">隐藏此模块</label>
+    </div>
+    <div class="set-mdl-title">
+    	版块标题设置：<input class="ipt-txt" type="text" name="mdlTitle" value="" placeholder=""/><span class="g-c8 valid-tip">最多6个字</span><span class="show-mdl-ttl"><input id="showMdlTtl" name="showMdlTtl" type="checkbox" value="" checked><label for="showMdlTtl"> 显示版块标题栏</label></span>
+    </div>
+    <div class="setpro-itm">
+    	<h3>产品设置</h3>
+        <p class="g-h15"></p>
+        <div class="sjzs-type">
+            <span>数据展示方式：</span><input id="xyMdlRdo" name="dataShowType" type="radio" value="" checked > <label for="xyMdlRdo">自动选取</label>
+        </div>
+        <p class="g-h20"></p>
+        <div class="setpro-bd zd-slt-bd">
+        	选择产品：<a class="gray-xbtn jsSltPro" href="" data-url="http://res.csc86.com/v2/c/shop/module/mdl-sltpro.html">选择产品</a><span class="slt-num jsSltNum">已选择<em class="slted">0</em>/<em class="ttl">4</em>个产品</span>
+        </div>
+    </div>
+    <div class="g-h20"></div>
+    <div class="g-h20"></div>
+    <div class="g-tr mdl-smt-box">
+    	<input class="ok-btn jsOkBtn" type="submit" name="" value="确认"/><input class="cancel-btn jsCnclBtn" type="button" name="" value="取消"/>
+    </div>
+    </form>
+</div>
+<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+<script src="http://res.csc86.com/v2/c/shop/js/seajs-config.js"></script>
+<script>seajs.use('http://res.csc86.com/v2/c/shop/module/js/mdl-sethotpro.js');</script>
+</body>
+</html>

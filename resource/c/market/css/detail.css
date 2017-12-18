@@ -1,0 +1,88 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('style.css');
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*市场详情*/
+.w850{width:850px}
+.layout-left{position:relative;z-index:2}
+.body-detail{position:relative;z-index:1}
+
+.detail-hd{height:34px;margin-left: 25px;padding-top: 20px;background:url(img/detail-bg.png) no-repeat 0 20px;font-weight:400}
+.detail-hd span{padding:0 8px 0 34px;color:#fff;font-size:22px;color:#fff;}
+.detail-hd .see-map{height:23px;padding:0 7px;font-size:14px;color:#00468e;background:#fff;border-radius:2px;line-height:23px}
+.detail-hd .see-map:hover{text-decoration:none}
+
+.detail-bd{*position:relative;height: 611px;width:516px;*overflow-x:hidden; overflow-y:scroll;padding:0 20px 0 25px;color:#fff;}
+@media screen and (-webkit-min-device-pixel-ratio:0){.detail-bd{width:506px;} } 
+
+
+.banner{position:relative;overflow:hidden;width:500px;height:270px;z-index:0;background:#fff}
+.banner ul li{position:absolute;display:none}
+.banner ul li.cur{display:block}
+.banner ol{position:absolute;right:6px;bottom:8px;z-index:3}
+.banner ol li{float:left;width:13px;height:13px;margin-right:6px;color:#ff4e00; text-indent:-9999pt; background:#00468e;border-radius:6px;cursor:default;overflow:hidden;}
+.banner ol li.cur{background:#fff}
+
+.des,.top-sale{border-bottom:solid 1px #9dcedf}
+.des .info li{float:left;padding:0 0 10px 36px; height:24px;background:url(img/detail-bg.png) no-repeat 0 -200px;line-height:24px}
+.des .info .time{width: 160px;background-position:0 -100px}
+.des .info .place{width: 248px;background-position:0 -150px}
+.des .info .tel{width:260px}
+.des a{color:#fff;}
+.des .g-dib{padding:0 7px;margin-right:12px;color:#024593;background:#fff;border-radius:2px;font-weight:400;line-height:20px}
+
+.ts-bd{width: 500px;overflow:hidden;}
+.ts-bd ul{width: 534px;}
+.ts-bd li{width:150px;float:left;margin-right: 25px;}
+.ts-bd a{display:block;margin:5px 0 3px;color:#fff;font-size:14px;text-align:center;}
+.ts-bd .thumb img{border:solid 1px #fff}
+.ts-bd .s{width:56px;height:17px;margin-left: 20px;margin-right:6px;padding-left:4px;line-height:17px;background:url(img/detail-bg.png) no-repeat 0 -50px;color:#00468e;overflow:hidden}
+.ts-bd .p{color:#fff000;font-size:16px}
+
+.promotions a{float:left;width: 243px;height:31px;background:#fff;margin:0 1px 1px 0;color:#00468e;line-height:31px}
+.promotions a:hover{text-decoration:none}
+
+.detail-link a{width:102px;height:47px;padding-left:47px;background:#f08a26 url(img/detail-bg-2.png) no-repeat 0 -100px;font-size:22px;color:#fff;line-height:47px}
+.detail-link a:hover{text-decoration:none}
+.detail-link a.h{margin: 0 16px;_margin:0 20px;}
+.detail-link a.m{background-position:0 -50px}
+.detail-link a.t{background-position:0 -150px}
+
+.detail-list{_display:inline;width:252px;margin-right:25px;color:#fff;overflow:hidden}
+.list-hd{height:38px;font-size:18px;font-weight:400;background:#ffa73d url(img/detail-bg-2.png) no-repeat 0 0;line-height:38px}
+.list-bd,.list-bd-bg{height:556px;}
+.list-bd,.list-empty{position:relative;z-index:1}
+.list-bd-bg{margin-top:-556px;background:#fff;opacity:0.3;filter:alpha(opacity=30);}
+.list-items{margin:0 16px;line-height:30px}
+.list-items li{padding: 11px 0;border-bottom:dashed 1px #afc8de}
+.list-items a{*display:block;width:220px; font-size:14px;color:#fff;overflow:hidden;}
+.list-empty{height:516px;font-size:14px;text-align:center;padding:20px 0}
+
+.dl-page{padding: 20px 0 15px 0;color:#fff;text-align: center;line-height:17px;}
+.dl-page a,.dl-page span{display:inline-block;padding:0 4px;color:#fff;*display: inline;*zoom:1;}
+.dl-page .cur{color: #00468e;background: #fff;}
+.dl-page a:hover{color:#fff;text-decoration:none}
+
+.venuesimage{position:relative;overflow:hidden;width:1100px;height:700px;margin: -700px 0 0 245px;z-index:0;background:#fff;}
+.venuesimage ul li{position:absolute;display:none}
+.venuesimage ul li.cur{display:block}
+.venuesimage ol{position:absolute;right:6px;bottom:8px;z-index:3}
+.venuesimage ol li{float:left;width:19px;height:19px;margin-right:19px;color:#ff4e00; text-indent:-9999pt; background:#00468e;border-radius:9px;cursor:default;overflow:hidden;}
+.venuesimage ol li.cur{background:#fff}
+
+.close-arr,.show-info{position:absolute; background:url(img/detail-bg.png) no-repeat -50px -300px;overflow:hidden;cursor:pointer}
+.close-arr{width:10px;height:105px;margin: -431px 0 0 1085px;z-index: 1;}
+.show-info{width:32px;height:105px;background-position:0 -300px;margin: -430px 0 0 245px;}

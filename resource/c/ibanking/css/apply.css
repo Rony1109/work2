@@ -1,0 +1,56 @@
+@import url('style.css');
+
+/*进度条*/
+.progress-step{width:627px;margin:0 auto;}
+.progress-step .bg-bar{margin-top:23px; height:2px;overflow: hidden;background:#e1e1e1;border-top:solid 1px #d7d7d7;border-bottom: solid 7px #e6e6e6;}
+.progress-step .steps{margin-top:-23px}
+.progress-step .step{float:left; width:34px;height:34px;overflow: hidden;line-height:34px;text-align: center;color:#888; font-family:Arial;font-size:18px;font-weight:700;background:url(img/progress-bg.png) no-repeat 0 0;}
+.progress-step li{width:297px;position: relative; float:left;}
+.progress-step li .bar{float:left; display: none; position: relative; height:4px;margin: 16px 0 -21px -6px; background:#e94544;overflow: hidden;}
+.progress-step li .title{font-weight:700;position:absolute;top:-24px;left:-33px;}
+.progress-step .last{width:auto;float: right;margin-left:-34px;}
+.progress-step .last .title{text-align: right;left:-8px;white-space: nowrap;}
+.progress-step .actived{width:auto;}
+.progress-step .active .step,.progress-step .actived .step{background-position:0 -100px;text-indent:-999px}
+.progress-step .first .step{background-position:0 -50px}
+.progress-step .active .bar{display:block;width:50%;}
+.progress-step .actived .bar{width:269px;display:block;}
+.progress-step .last .bar{display: none}
+.progress-step .last-active .step{background-position:0 -150px}
+
+.g-cred{color:#f30;}
+.g-ccd{color:#cdcdcd;}
+.frm-slt,.ipt-txt,.txt-area{border:1px solid #ccc;vertical-align:middle;}
+.frm-slt{width:300px;padding:4px 0;}
+.ipt-txt{width:292px;height:26px;line-height:26px;padding:0 3px;}
+.frm-btn{height:32px;padding:0 15px;*padding:0 5px;margin-right:15px;font-size:16px;font-family:Microsoft YaHei;border-radius:5px;cursor:pointer;}
+.red-btn,.blue-btn{border:none;color:#fff;}
+.red-btn{background:#e94544;}
+.blue-btn{background:#87a1c4;}
+.gray-btn{border:1px solid #b4b4b4;background:-moz-linear-gradient(top, #fefefe, #ececec);background:-o-linear-gradient(top, #fefefe, #ececec);background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#ececec)); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fefefe,endcolorstr=#ececec,gradientType=0);
+background:linear-gradient(top, #fefefe, #ececec);color:#888;}
+
+/*表单验证*/
+.valid-tip{display:none;margin-left:5px;background:url(img/verify-icon.png) no-repeat;padding-left:22px;vertical-align:middle;}
+.valid-error{display:inline-block;background-position:0 1px;color:#ff5f5f;}
+
+.apply-box{width:998px;border:1px solid #ebebeb;}
+.apply-box .box-hd{background:#ebebeb;height:31px;line-height:32px;overflow:hidden;}
+.apply-box .box-hd h2{font-size:15px;margin-left:18px;}
+.apply-box .box-bd{padding-top:58px;}
+.apply-tbl{width:720px;margin:50px auto 80px;}
+.apply-tbl caption{text-align:left;color:#555;font-size:15px;font-weight:bold;padding-bottom:15px;margin-left:10px;}
+.apply-tbl th{text-align:right;width:130px;font-weight:normal;}
+.apply-tbl th,.apply-tbl td{padding:8px 0;}
+.apply-tbl .tip th,.apply-tbl .tip td{padding:0;}
+.apply-tbl .line{border-top:1px solid #ebebeb;margin:10px 0 5px;height:1px;}
+.apply-tbl .jkje .ipt-txt{width:90px;margin-right:5px;}
+.frm-opt{padding-top:12px;}
+.apply-tbl .txt-area{width:330px;height:90px;padding:3px;resize:none;}
+.apply-tbl .valid-tr th,.apply-tbl .valid-tr td{padding:0;}
+/*.apply-tbl .red-brd{border:1px solid #ff5f5f;}*/
+
+.apply-step3{background:#e2f4ff;width:786px;margin:50px auto 150px;padding:35px 0;border:1px solid #e8e8e8;}
+.apply-step3 .step3-bd{background:url(img/suc-icon.png) no-repeat left top;width:300px;margin:0 auto;padding-left:75px;line-height:25px;}
+.apply-step3 .step3-bd h2{font-size:15px;}
+

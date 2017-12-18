@@ -1,0 +1,960 @@
+@import url('base.css');
+.first-screen
+{
+    overflow: hidden;
+
+    width: 975px;display: inline;
+}
+
+.w720
+{
+    width: 720px;overflow: hidden;
+}
+/* 轮播 */
+.slide
+{
+    position: relative;
+    z-index: 1;
+
+    display: inline;
+    float: left;
+    overflow: hidden;
+    zoom: 0;
+
+    height: 300px;
+}
+
+.slide ul li
+{
+    width: 720px;
+    height: 300px;
+}
+.slide ol
+{
+    position: absolute;
+    z-index: 9;
+    right: 5px;
+    bottom: 8px;
+
+    zoom: 1;
+}
+.slide ol li
+{
+    float: left;
+    overflow: hidden;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+
+    text-indent: 15px;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+.slide ol .cur
+{
+    border-color: #f67301;
+    background: #f67301;
+}
+.slide .ctr-l,
+.slide .ctr-r
+{
+    position: absolute;
+    z-index: 999;
+    top: 140px;
+
+    display: none;
+
+    width: 34px;
+    height: 54px;
+
+    cursor: pointer;
+    -moz-user-select: none;
+}
+.slide .ctr-l
+{
+    z-index: 9;
+    left: 0;
+
+    background: url(img/banner-ctr-l.png) no-repeat;
+}
+.slide .ctr-r
+{
+    z-index: 9;
+    right: 0;
+
+    background: url(img/banner-ctr-r.png) no-repeat;
+}
+.w358
+{
+    width: 358px;
+}
+.w339
+{
+    width: 339px;
+}
+.w240
+{
+    width: 240px;overflow: hidden;
+}
+.log-reg
+{
+    line-height: 40px;
+
+    height: 40px;
+
+    background: url(img/icos.gif) -33px -39px no-repeat;
+}
+.log-reg a
+{
+    float: left;
+
+    width: 120px;
+    height: 100%;
+
+    text-indent: -9999px;
+}
+.islog ul
+{
+    overflow: hidden;
+
+    height: 40px;
+
+    background: url(img/icos.gif) -33px -79px no-repeat;
+}
+
+.log-mess
+{
+    line-height: 19px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    height: 40px;
+    padding: 1px 0 0 0;
+
+    background: url(img/icos.gif) -33px -79px no-repeat;
+}
+.log-mess li
+{
+    font-family: Arial,simsun;
+
+    float: left;
+    overflow: hidden;
+
+    width: 100px;
+    height: 38px;
+    margin-left: 8px;
+    padding-top: 1px;
+
+    white-space: nowrap;
+
+    _display: inline;
+}
+.log-mess li.push
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.log-mess li.push
+{
+    display: block;
+    overflow: hidden;
+
+    width: 46px;
+    height: 39px;
+    padding: 0;
+}
+.log-mess li.push a
+{
+    line-height: 24px;
+    line-height: 15px;
+
+    display: block;
+    overflow: hidden;
+
+    width: 32px;
+    height: 34px;
+    padding: 5px 4px 0 8px;
+
+    text-align: center;
+    white-space: normal;
+    letter-spacing: 2px;
+
+    color: #fff;
+}
+.log-mess li.push a:hover
+{
+    text-decoration: none;
+}
+.log-mess a
+{
+    line-height: 19px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 19px;
+
+    color: #444;
+}
+.log-mess em
+{
+    font-weight: 700;
+
+    color: #fc6824;
+}
+
+
+.tab-set
+{
+    height: 30px;
+    margin-top: 10px;
+
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+}
+.tab-set ul li
+{
+    font-family: Microsoft YaHei,simhei;
+    font-size: 14px;
+    line-height: 30px;
+
+    float: left;
+
+    width: 120px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+}
+.tab-set ul li a
+{
+    text-decoration: none;
+
+    color: #747474;
+}
+.tab-set ul li.b-line
+{
+    width: 117px;
+
+    border-right: 1px solid #e8e8e8;
+}
+.tab-set ul li.cur
+{
+    border-bottom: none;
+    background-color: #fff;
+}
+.tab-set ul li.cur a
+{
+    cursor: default;
+
+    color: #444;
+}
+.tab-inner
+{
+    clear: both;
+    overflow: hidden;
+    overflow: hidden;
+
+    width: 238px;
+    height: 98px;
+
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-bottom: none;
+}
+.tab-inner ul.hyfw
+{
+    width: 260px;
+    padding-top: 25px;
+}
+.tab-inner ul.hyfw li
+{
+    display: inline;
+    float: left;
+
+    width: 50px;
+    height: 70px;
+    margin: 0 4px 0 5px;
+
+    text-align: center;
+}
+.tab-inner ul.hyfw li:last-child
+{
+    margin-right: 0;
+}
+.tab-inner ul.hyfw li a
+{
+    white-space: nowrap;
+
+    color: #444;
+}
+.tab-inner ul li a.t
+{
+    display: inline-block;
+
+    width: 32px;
+    height: 37px;
+}
+.f-sale
+{
+    height: 40px;
+
+    background: url(img/icos.gif) no-repeat -33px -175px;
+}
+.f-sale a
+{
+    font: normal 14px/40px 'Microsoft YaHei',simhei;
+
+    float: left;
+
+    width: 120px;
+    height: 40px;
+
+    text-indent: 45px;
+}
+.sev-help
+{
+    line-height: 24px;
+
+    width: 234px;
+    padding: 6px 0 0 10px;
+}
+.sev-help li
+{
+    overflow: hidden;
+
+    width: 234px;
+    height: 24px;
+}
+.sev-help .ry-buy,
+.sev-help .s-shop
+{
+    margin-right: 10px;
+}
+.sev-help .ry-buy
+{
+    color: #fc6824;
+}
+.sev-help .s-shop
+{
+    color: #2664a2;
+}
+/* 热门供求 */
+.supply-demand
+{
+    border: 1px solid #e8e8e8;
+    border-bottom: 0;
+    background: url(img/line.gif) repeat-x 0 32px;
+}
+
+.supply-demand li
+{
+    font: 14px/33px Microsoft YaHei,simsun;
+
+    float: left;
+
+    width: 90px;
+    height: 33px;
+
+    text-align: center;
+
+    border-right: 1px #e8e8e8 solid;
+    border-bottom: 1px solid #e8e8e8;
+    background: #f6f6f6;
+}
+
+
+.supply-demand li.cur
+{
+    background: #fff;border-bottom: 1px #fff solid;
+}
+.s-d-content
+{
+    height: 209px;
+    padding: 9px 12px 4px;
+
+    border: 1px #e8e8e8 solid;
+    border-top: 0;
+}
+
+.s-d-content .img-box
+{
+    display: inline-block;
+
+    width: 70px;
+    height: 70px;
+}
+.s-d-content .intro
+{
+    line-height: 24px;
+
+    width: 138px;
+
+    color: #888;
+}
+.s-d-content .intro a
+{
+    display: block;
+}
+.s-d-content .intro a.a-t
+{
+    line-height: 15px;
+
+    overflow: hidden;
+
+    height: 15px;
+    margin-bottom: 2px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+.s-d-content .intro a.more
+{
+    color: #888;
+}
+.s-d-content .intro span
+{
+    font-weight: bold;
+
+    color: #fa6824;
+}
+.s-d-content ul
+{
+    margin-top: 8px;
+}
+.s-d-content ul li
+{
+    line-height: 26px;
+}
+.s-d-content ul li span
+{
+    float: right;
+
+    padding-left: 10px;
+
+    color: #fa6824;
+}
+.s-d-content ul li a
+{
+    display: block;
+    *display: inline-block;
+    overflow: hidden;
+
+    height: 26px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+
+/* 橱窗产品 */
+.floor-box
+{
+    border: 1px #e8e8e8 solid;
+    border-top: 2px #277bd5 solid;
+    overflow: hidden;
+    width: 1188px;
+}
+.t-rmd
+{
+    font: 18px/39px Microsoft YaHei,simsun;
+
+    height: 39px;
+
+    text-indent: 12px;
+
+    color: #000;
+    border-bottom: 1px #e8e8e8 solid;
+    background: #f1f1f1;
+}
+.side-ad
+{
+    width: 200px;
+}
+.prd-main{float: left;}
+.prd-main li
+{
+    display: inline;
+    float: left;
+
+    width: 160px;
+    height: 235px;
+    padding: 20px 18px;
+
+    color: #c00;
+    border-left: 1px #e8e8e8 solid;
+    font: 700 14px/20px Arial;
+}
+
+
+.prd-main li a
+{
+    font-size: 12px;
+    font-weight: bold;
+
+    display: block;
+    overflow: hidden;
+
+    height: 215px;
+    margin: 0 auto;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+
+.prd-main li img
+{
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+/* 品牌馆 */
+.cutting
+{
+    overflow: hidden;
+
+    width: 966px;
+}
+
+.brand
+{
+    width: 1235px;
+}
+.brand li
+{
+    float: left;
+
+    width: 160px;
+    height: 207px;
+    margin: 22px 38px 0 0;
+}
+.brand li a
+{
+    display: block;
+    overflow: hidden;
+
+    height: 207px;
+    padding: 0 9px;
+
+    background: #f3f3f3;
+}
+
+
+.brand li a i
+{
+    display: block;
+    overflow: hidden;
+
+    width: 80px;
+    height: 80px;
+    margin: 15px auto 0;
+
+    border-radius: 80px;
+}
+.brand li a b
+{
+    font: 700 14px Microsoft YaHei,simsun;
+
+    display: block;
+    overflow: hidden;
+
+    height: 37px;
+    margin: 10px 0 5px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+.brand li a span
+{
+    color: #888;
+}
+.brand li a span span
+{
+    display: block;
+    overflow: hidden;
+
+    height: 36px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+.brand li a:hover
+{
+    text-decoration: none;
+
+    background: #277bd5;
+}
+
+.brand li a:hover b,
+.brand li a:hover span
+{
+    color: #fff;
+}
+
+/* 视频监控 */
+.set-b
+{
+    border-bottom: 0;
+    border-left: 0;
+}
+.f-t-l
+{
+    width: 200px;
+}
+
+.f-t-l a.more
+{
+    font: 700 12px/18px simsun;
+
+    float: right;
+
+    width: 48px;
+    height: 18px;
+    margin-top: 8px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background: #a3a3a3;
+}
+.f-t-l h2
+{
+    font: bold 18px/30px Microsoft YaHei,simsun;
+
+    color: #000;
+}
+.f-t-l h2 span
+{
+    padding-right: 14px;
+
+    color: #fa6824;
+}
+.copany-lnk
+{
+    line-height: 30px;
+
+    overflow: hidden;
+}
+
+.copany-lnk a
+{
+    line-height: 12px;
+
+    overflow: hidden;
+
+    height: 14px;
+    margin: 0 5px;
+    padding-right: 10px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+
+    border-right: 1px #444 solid;
+}
+.copany-lnk a.last
+{
+    margin-right: 3px;
+    padding-right: 0;
+
+    border-right: 0;
+}
+
+
+
+.floor-side
+{
+    width: 200px;
+}
+
+.keyword
+{
+    overflow: hidden;
+
+    height: 127px;
+
+    background: #f0f0f0;
+}
+
+.keyword h3
+{
+    margin: 17px 0 5px;
+
+    text-indent: 11px;
+}
+
+.keyword p
+{
+    margin: 0 10px;;
+}
+.keyword p a
+{
+    line-height: 25px;
+
+    float: left;
+    overflow: hidden;
+
+    width: 61px;
+    height: 25px;
+    margin-right: 19px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+.floor-content
+{
+    width: 751px;
+    height: 345px;
+
+    border-bottom: 1px #e8e8e8 solid;
+    overflow: hidden;
+}
+
+
+.t-t
+{
+    font: 16px/40px Microsoft YaHei,simsun;
+
+    height: 40px;
+
+    text-indent: 12px;
+
+    background: #f3f3f3;
+}
+.prd-list li
+{
+    display: inline;
+    float: left;
+
+    width: 160px;
+    margin: 22px 9px 0 18px;
+}
+
+.prd-list li a
+{
+    font-weight: bold;
+    line-height: 20px;
+    line-height: 20px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 213px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+.prd-list li img
+{
+    display: block;
+
+    margin-bottom: 10px;
+}
+.prd-list li b,
+.prd-list li span
+{
+    display: block;
+}
+.prd-list li b
+{
+    line-height: 25px;
+
+    color: #c00;
+    font: 700 14px/25px Arial;
+}
+
+.prd-list li span
+{
+    color: #888;
+}
+.prd-list li span i
+{
+    font: 12px simsun;
+}
+
+.floor-side-r
+{
+    overflow: hidden;
+
+    width: 236px;
+    height: 345px;
+
+    border-bottom: 1px #e8e8e8 solid;
+    border-left: 1px #e8e8e8 solid;
+    background: #f9f9f9;
+}
+
+.floor-side-r ul
+{
+    margin-top: 10px;
+}
+
+.floor-side-r li
+{
+    margin: 0 8px;
+    padding: 10px 0;
+
+    border-bottom: 1px #eaeaea dashed;
+}
+.floor-side-r li.last
+{
+    border-bottom: 0;
+}
+.floor-side-r li a
+{
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+.floor-side-r li a,
+.floor-side-r li span
+{
+    line-height: 16px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 16px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+
+/* 人物专访 */
+.h-280
+{
+    height: 280px;
+}
+.person
+{
+    width: 400px;
+    margin-left: 6px;
+}
+.t-t-b
+{
+    position: relative;
+
+    margin-top: -3px;
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid #ececec;
+}
+
+.t-t-b h2
+{
+    font-weight: bold;
+
+    color: #000;
+}
+
+
+
+.person ul a.img-box
+{
+    width: 90px;
+    height: 90px;
+}
+.person li
+{
+    clear: both;
+    overflow: hidden;
+
+    margin: 18px 0 0 10px;
+}
+
+.person .intro
+{
+    width: 287px;
+}
+.person .intro p
+{
+    line-height: 20px;
+
+    color: #888;
+}
+.person .intro p a.more
+{
+    color: #227dd7;
+}
+
+.person .intro a.a-t
+{
+    font-weight: bold;
+    line-height: 16px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 16px;
+    margin-bottom: 8px;
+
+        word-break: break-all;
+    -ms-word-break: break-all;
+}
+/* 展会活动 */
+.ex-main
+{
+    overflow: hidden;
+
+    width: 503px;
+    height: 250px;
+    margin-left: 17px;
+    padding: 0 10px 0 17px;
+
+    border-right: 1px #e8e8e8 solid;
+    border-left: 1px #e8e8e8 solid;
+}
+.ex-main ul
+{
+    width: 524px;
+}
+.ex-main li
+{
+    float: left;
+
+    margin: 16px 22px 2px 0;
+}
+/* 安防周报 */
+.week-news
+{
+    width: 215px;
+    margin-right: 8px;display: inline;zoom:1;
+}
+.week-news ul
+{
+    margin: 10px 0 0 5px;
+}
+.patner-box{width: 1190px;overflow: hidden;zoom:1;}
+.patner-box ul
+{
+    width: 1204px;
+}
+.patner-box li
+{
+    float: left;
+
+    width: 160px;
+    height: 70px;
+    margin: 19px 12px 0 0;
+}
+.patner-title
+{
+    font: 700 16px/40px Microsoft YaHei,simsun;
+
+    height: 40px;
+
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+}

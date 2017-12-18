@@ -1,0 +1,44 @@
+@import url('style.css');
+
+.g-ml12{margin-left:12px;}
+.banner{background:#c6e9ff url(img/problem.png) no-repeat center top;height:230px;}
+
+.problem{background-color:#f6f6f6;font-family:simsun;}
+.problem-lf{width:760px;padding:0 10px;background:#fff;}
+.problem-rt{width:200px;}
+.search-txt,.blue-btn,.yllw-btn{display:inline-block;border-radius:5px;vertical-align:middle;}
+.search-txt{width:275px;height:29px;line-height:29px;padding:0 5px;border:1px solid #ddd;}
+.blue-btn,.yllw-btn{height:31px;line-height:31px;padding:0 12px;border:none;color:#fff;font-size:14px;font-family:simsun;cursor:pointer;}
+.blue-btn{background-color:#2b87ad;}
+.blue-btn:hover{background-color:#257fa4;}
+.yllw-btn{background-color:#f7820d;}
+.yllw-btn:hover{text-decoration:none;background-color: #ed7b09;}
+
+.problem-search,.problem-list li{border-bottom:1px solid #e3e3e3;}
+.problem-search{padding-bottom:27px;}
+.problem-search .hd{padding-left:13px;padding-top:15px;}
+.problem-search .hd h2{color:#20789d;font:bold 16px/30px Microsoft YaHei;}
+.problem-search .bd{padding-left:20px;}
+.problem-search .yllw-btn{position:absolute;right:15px;top:0;}
+
+.problem-list h2{font-weight:normal;}
+.problem-list li{padding:23px 0 23px 23px;line-height:22px;position:relative;*zoom:1;}
+.problem-list .itm-bd{width:580px;}
+.problem-list .itm-bd p{display:block;margin-top:15px;overflow:hidden;}
+.problem-list .itm-bd p span{color:#026a95;}
+.problem-list li .time,.problem-list li .opt{position:absolute;right:35px;}
+.problem-list li .time{top:23px;}
+.problem-list li .opt{display:inline-block;background:url(img/problem-icon.png) no-repeat right 0;padding-right:12px;bottom:23px;color:#444;}
+.problem-list li .opt:hover{text-decoration:none;}
+.problem-list li .unfold{background-position:right -23px;}
+
+/*分页*/
+.Spage {padding:35px 0 45px;}
+
+/*我要提问弹窗*/
+.ask-pop{width:360px;padding:0 25px;margin:0 auto;}
+.ask-pop textarea{display:block;width:348px;height:94px;padding:5px;border:1px solid #ccc;resize:none;margin-bottom:13px;}
+.ask-pop input{background:#fa6320;background:-moz-linear-gradient(top, #ff873d, #fa6320);background:-o-linear-gradient(top, #ff873d, #fa6320);background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff873d), to(#fa6320)); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff873d,endcolorstr=#fa6320,gradientType=0);
+background:linear-gradient(top, #ff873d, #fa6320);border:none;border-radius:3px;height:24px;text-align:center;color:#fff;cursor:pointer;margin-right:2px;padding:0 15px;}
+
+

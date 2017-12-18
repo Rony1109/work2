@@ -1,0 +1,321 @@
+@import url('reset.css');
+@import url('topinit.css');
+@import url('footerinit.css');
+@import url('prosoperation.css');
+@import url('ajaxpage.css');
+
+/* 
+ * reset.css 重置样式和基础通用样式
+ * topinit.css 公共头部样式
+ * footerinit.css 公共底部样式
+ * prosoperation.css 商品操作样式
+ */
+
+/* 产品列表页公共样式 */
+body{ 
+	font-family: 'Microsoft Yahei'; 
+	min-width: 1200px; 
+	margin: 0 auto; 
+	background-color: #f1f1f1; 
+}
+
+/* 商品操作样式详见prosoperation.css  以下为部分重写样式*/
+
+/* 左侧商品分类及热销产品样式 */
+.proslist_icon{
+	background: url(img/proslist_icon.png) no-repeat;
+}
+.proslist_cl{
+	width: 228px;
+}
+.proslist_cl .skin-box-hd{
+	background:#dcdee0; 
+	height:44px;
+	color:#24344b;
+	overflow:hidden;
+	line-height:44px;
+	border-bottom: 1px solid #d3d4d6;
+}
+.proslist_cl .skin-box-hd h2{
+	font-size: 16px;
+	padding-left: 24px;
+}
+.proslist_cl .hot_pros .skin-box-hd h2{	
+	border-bottom: 1px solid #e7e6e6;
+}
+.skin-box-hd .more{
+	color:#fff;
+	margin-right:10px;
+}
+.skin-box-bd{
+	background:#f7f7f7;
+	border:1px solid #e7e6e6;
+	border-bottom: none;
+	border-top: none;
+}                                                                                                                                                                                                                                                            
+.catnav_lst li.itm{
+	overflow:hidden;
+}
+.catnav_lst li.itm a{
+	display:inline-block;
+	color: #555452;
+	font-weight:bold;
+}
+.catnav_lst li.itm h3.hd{
+	padding-left:24px;
+	height:41px;
+	line-height: 41px;
+	background-color: #fff;
+	border-bottom:1px solid #f1f1f1;
+	overflow:hidden;
+}
+.catnav_lst li.itm h3.hover{
+	height: 44px;
+	line-height: 44px;
+}
+.catnav_lst li.last h3.hd{
+	border-bottom:none;
+}
+.catnav_lst .itm h3.hd a{
+	width: 178px;
+	font-size: 14px;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.catnav_lst .itm h3.hd a:hover{ color:#f2681c}
+.catnav_lst .itm h3.hd i{
+	width: 8px;
+	height: 6px;
+	display: inline-block;
+	background-position: -9px -45px;
+}
+.catnav_lst .itm .hd .ihover{
+	background-position: -9px -52px;
+}
+.catnav_lst .itm .bd{
+	/*height: 130px;*/
+	padding: 10px 0 9px 24px;
+	display:none;
+	border-bottom: 1px solid #f1f1f1;
+}
+.catnav_lst .itm .bd li{
+	height: 26px;
+	line-height: 26px;
+}
+.catnav_lst .itm .bd li a{
+	color:#333;
+	font-weight:normal;
+	font-size: 14px;
+	text-decoration: none;
+}
+.catnav_lst .itm .bd li a:hover{
+	color: #f2681c;
+}
+.catnav_lst .unfold .bd{
+	display:block;
+}
+
+/* 热销商品 */
+.hot_pros ul{
+	padding: 0 10px 0 21px; 
+	border: 1px solid #e7e6e6;
+	border-top: none;
+	background-color: #fff;
+	overflow: hidden;
+}
+.hot_pros ul li{
+	height: 103.4px;
+	padding-top: 24px;
+	border-bottom: 1px dashed #cbcbcb;
+	position: relative; 
+}
+.hot_pros ul .last{
+	border-bottom: none;
+}
+.hot_pros .hot_con a.hot_limg{
+	width: 70px;
+	height: 70px;
+	display: table-cell;
+    font-family: simsun;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.hot_pros .hot_con .hot_limg img{
+	/*max-width: 70px;
+	max-height: 70px;*/
+	width: 70px;
+	height: 70px;
+	display: inline;
+}
+.hot_pros .hot_con .hot_ldet{
+	padding-left: 3px
+}
+.hot_con .hot_ldet h3{
+	font-weight: 400;
+}
+.hot_con .hot_ldet h3 a{
+	color: #1b509d;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.5;
+	height: 34px;
+	display: block;
+	overflow: hidden;
+	transition-property: color;
+}
+.hot_con .hot_ldet span{
+	display: block;
+}
+.hot_con .hot_ldet span.price{
+	font-size: 20px;
+	line-height: 1.8;
+	color: #f2681c;
+}
+.hot_con .hot_ldet span.sales{
+	font-size: 14px;
+	line-height: 1;
+	color: #999;
+}
+.hot_pros .hot_ranking{
+	width: 21px;
+	height: 23px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	line-height: 1.2;
+	position: absolute;
+	top: -1px;
+	left: -21px;
+}
+.hot_pros .gray_bg{
+	width: 22px;
+	color: #999;
+	background-position: 0 -23px;
+}
+
+  /* 以下为部分重写样式 */
+.proslist_cl{
+	width: 190px;
+}
+.proslist_cl .skin-box-hd h2, .catnav_lst li.itm h3.hd, .catnav_lst .itm .bd{
+	padding-left: 12px;
+}
+.catnav_lst .itm h3.hd a{
+	width: 148px; padding-right:10px; height:44px;
+}
+
+/* 热销商品样式重写 */
+.hot_pros ul{
+	padding-right: 8px; 
+}
+.hot_pros ul li{
+	height: 109px;
+	padding-top: 0;
+}
+.hot_pros li:hover .hot_ldet>h3>a{
+	color: #db6221;
+	transition: color .5s linear; 
+}
+.hot_pros .hot_con{
+	padding-top: 20px;
+}
+.hot_pros .hot_con .hot_limg{
+	width: 70px;
+	height: 70px;
+}
+.hot_pros .hot_con .hot_ldet{
+	width: 86px;
+}
+.hot_con .hot_ldet h3 a{
+	font-size: 12px;
+	width: 89px;
+}
+.hot_con .hot_ldet span.sales{
+	font-size: 12px;
+	width: 100px;
+}
+.hot_con .hot_ldet span.price{
+	font-size: 16px;
+}
+/* 左侧商品分类及热销商品 end */
+
+/* 右侧成交商品信息 */
+.pros_msg{
+	width: 800px;
+}
+.pros_msg .skin-box-bd{
+	border: none;
+	background: none;
+}
+.prodtl-attr{
+	background-color: #fff;
+}
+
+
+.xj-ls{
+	width:700px;
+	height:166px;
+	margin:auto
+}
+
+.xj-ls .xj-img{
+	float:left;
+	width:119px;
+	height:166px
+}
+
+.xj-ls .xj-txt{
+	float:left;
+	width:500px;
+	height:166px;
+	margin-left:50px
+}
+
+.xj-ls .xj-txt .xj-tlt{
+	font-family:'微软雅黑';
+	font-size:14px;
+	font-weight:700;
+	line-height:25px
+}
+
+.xj-ls .xj-txt li{
+	font-family:'微软雅黑';
+	font-size:12px;
+	color:#333;
+	line-height:24px
+}
+
+.xj-ls .xj-txt li a{
+	color:#2664a2;
+	text-decoration:underline
+}
+
+.xj-ls .xj-txt li em{
+	color:#2664a2
+}
+
+.prodtl-tab-c{
+	background-color: #fff;
+}
+.prodtl-tab-c .prodtl-info{
+	background-color: #f1f1f1 
+}
+
+/* 以下各模板详情页特有样式 */
+.wp-nav{margin-bottom:0;}
+
+/* 成交记录 分页样式 */
+.ajax-page2{height:45px;line-height:45px;font-size:14px;font-family:Microsoft YaHei;color:#ccc;margin-top:30px;text-align:center}
+.ajax-page2 a,.ajax-page2 span{border:1px solid #e8e8e8;margin-left:5px;padding:5px 10px;text-decoration:none;color:#444}
+.ajax-page2 .itm:hover{color:#F60}.ajax-page2 .cur{background:#F60;color:#fff;border:1px solid #FF5C0F}
+.ajax-page2 .no-next,.ajax-page2 .no-prev{color:#CCC;background:0 0}
+.ajax-page2 .total{border:none;color:#888} 
+
+/* 重写底部样式 */
+.g-w{
+	width: 1200px;
+}
+.g-mt104{margin-top:104px;}

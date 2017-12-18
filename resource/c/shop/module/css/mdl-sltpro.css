@@ -1,0 +1,45 @@
+@import url('style.css');
+@import url('/v2/m/page/style_li.css');
+
+.mdl-sltpro{width:780px;margin:0 auto;padding-top:20px;padding-bottom:54px;}
+
+.sltpro-lst{font-family:Arial;}
+.sltpro-lst li{position:relative;padding:10px 12px 8px;}
+.sltpro-lst li .gray-xbtn,.sltpro-lst li .have-slt{position:absolute;}
+.sltpro-lst li .gray-xbtn{right:16px;top:28px;}
+.sltpro-lst li .have-slt{top:28px;right:22px;}
+.sltpro-lst li .have-slt{background:none;border:none;color:#06c;}
+.sltpro-lst li .pic{width:50px;height:50px;border:1px solid #c4c4c4;}
+.sltpro-lst li .info{margin-left:64px;overflow:hidden;}
+.sltpro-lst li .info .prc{color:#f57301;}
+.sltpro-lst li .info .prc em{color:#666;}
+.sltpro-lst li .info .prc i{font-style:normal;}
+.sltpro-lst li .info .name{display:block;line-height:20px;overflow:hidden;max-height:40px;}
+.sltpro-lst li .info .name a{color:#666;}
+.sltpro-lst li .info .date{color:#999;}
+
+.sltpro-hd{width:404px;padding:0 20px;border-right:1px dotted #c4c4c4;}
+.sltpro-hd .sltpro-lst li{border-bottom:1px dotted #c4c4c4;}
+.sltpro-hd .sltpro-lst li .info{width:240px;}
+
+.sltpro-bd{width:295px;overflow:hidden;}
+.sltpro-bd .tip{font-weight:bold;margin-left:10px;}
+.sltpro-bd .total-num{color:#06c;}
+.sltpro-bd .slted-num{color:#fd0100;}
+.sltpro-bd .sltpro-lst{padding:10px 0;}
+.sltpro-bd .sltpro-lst li .info{width:185px;}
+.sltpro-bd .sltpro-lst li .sltpro-opts{display:none;}
+.sltpro-bd .sltpro-lst .hover{background:#f6f6f6;}
+.sltpro-bd .sltpro-lst .hover .sltpro-opts{display:block;}
+
+.sltpro-opts a{display:inline-block;background:url(img/mdl-sf.png) no-repeat;overflow:hidden;position:absolute;cursor:pointer;}
+.sltpro-opts .move-up,.sltpro-opts .move-down{width:13px;height:7px;left:50%;margin-left:-6px;}
+.sltpro-opts .move-up{background-position:-16px -22px;top:-3px;}
+.sltpro-opts .no-move-up{background-position:-16px -30px;cursor:default;}
+.sltpro-opts .move-down{background-position:-30px -22px;bottom:-3px;}
+.sltpro-opts .no-move-down{background-position:-30px -30px;cursor:default;}
+.sltpro-opts .del-opt{background-position:0 -22px;width:16px;height:16px;right:9px;top:8px;}
+
+.sltpro-hd h3,.sltpro-hd .mdl-srch{margin-left:10px;}
+.mdl-srch select{width:210px;height:28px;border:1px solid #ccc;vertical-align:middle;}
+.mdl-srch .srch-btn{background-color:#ccc;background-position:1px -38px;width:40px;line-height:99px;overflow:hidden;}

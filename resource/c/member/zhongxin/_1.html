@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>1企业身份认证第一步</title>
+<link rel="stylesheet" href="https://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/member.css,css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" />
+<script src="https://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+<link rel="stylesheet" href="https://res.csc86.com/b=css&f=c/membercenter/compaccredit.css"/>
+</head>
+<body>
+<script src="https://res.csc86.com/f=js/c/memberhome/m-home.js"></script>
+<div class="head"><!--会员中心头部 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="https://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a   href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="https://payment.csc86.com/account.index.do" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a   href="http://member.csc86.com/membercenter/tool" title="工具" target="_blank"><b class="tool-icon"></b>工具</a>
+            <a href="http://wslm.csc86.com/member/default.html" title="微商联盟" target="_blank"><b class="wslm-icon"></b>微商联盟</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://member.csc86.com/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--会员中心头部 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script><div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+
+<h2>
+	<a href="http://member.csc86.com/accreditation/accreditation/index.html">认证服务</a>
+</h2>
+	<ul class="nav-items">
+		<li class="bg-none item">
+			<a href="http://approve.csc86.com/user/personInfo?approveType=person">个人实名认证</a>
+		</li>
+		<li class="bg-none item">
+			<a href="http://approve.csc86.com/user/realInfo">企业实名认证</a>
+		</li>
+		<li class="bg-none item cur">
+			<a href="http://approve.csc86.com/user/approveIndex?approveType=prove">企业身份认证</a>
+		</li>
+		<li class="bg-none item ">
+			<a href="http://approve.csc86.com/user/localIndex?approveType=local">企业实地认证</a>
+		</li>
+	</ul>
+</div>
+<script>seajs.use('https://res.csc86.com/v2/c/member/zhongxin/public/js/datadeitor');</script>
+
+<link rel="stylesheet" href="https://res.csc86.com/v2/c/member/zhongxin/shidi/css/style.css"/>
+<div class="af-bd zxrz-first">
+
+   <h1 class="af-hd">企业身份认证</h1>
+	<p class="rz-po">企业身份认证由华南城网联合政府授权和委托机构— —众信网，核实认证企业工商注册信息和授权申请人信息真实性，特别打造的真实身份权威认证。</p>
+    <div class="g-h20"></div>
+	<div class="g-h20"></div>
+   
+   	
+   
+    <ul class="wirt-lc sf-w">
+    	<li class="fas"><span class="cur"><i>1</i></span>填写企业基本信息</li>
+        <li><span><i>2</i></span>填写企业对公账号信息</li>
+        <li><span><i>3</i></span>填写打入对公账号的金额</li>
+        <li class="last"><span><i>4</i></span>认证成功</li>
+   	</ul>
+    <div class="g-h5"></div>
+    <h1 class="rz-til"><span>企业工商信息：</span></h1>
+    <div class="g-h10"></div>
+    <form action="approveSave" method="post" data-type="identity">
+    <input type="hidden" name="approveType" value="prove" />
+    <table class="idy-tab tab-w" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th><span>*</span>企业属地：</th>
+        <td><select class="ity-ads" name="provinceId" >
+        	<option value="">请选择省</option>
+        	    <option value="932BB78E-85B6-43A3-AFB7-65B2A75F4AC4" >吉林</option>
+        	    <option value="3B0E07C7-95F7-411F-9E70-68204FDE96E9" >青海</option>
+        	    <option value="1D7F164D-480D-4EAB-96E5-596A3DC660D5" >内蒙古</option>
+        	    <option value="F3F0D8D7-D550-49F0-B3E7-5A6921989B3E" >西藏</option>
+        	    <option value="93E6AF46-020D-4D6C-8287-6EE6A70EBF91" >上海</option>
+        	    <option value="4138CAAB-4597-426A-BED9-81B18B6D14A2" >安徽</option>
+        	    <option value="398EC423-AD30-4D98-B3FB-912FD6ABEDB1" >湖北</option>
+        	    <option value="1DB6B636-55BD-49BD-93FF-9953E65E0DE2"  selected>广东</option>
+        	    <option value="9554CCA2-4A81-40B2-BACC-961C7C3DE80D" >天津</option>
+        	    <option value="FE8F5187-803C-4D39-8D23-9418093E789C" >台湾</option>
+        	    <option value="6758E2AE-6532-4D96-9936-9F92352A2F6C" >河南</option>
+        	    <option value="1D7086C6-10A5-4E34-B2FB-9EC732409056" >香港</option>
+        	    <option value="12662CA3-D0DC-4FE1-A1AB-394C7A888AEB" >山西</option>
+        	    <option value="3AD9719A-4F06-45E3-BED3-475E0BA651A1" >江苏</option>
+        	    <option value="ED42E998-1F3C-4241-8FA3-4546BB65C44A" >陕西</option>
+        	    <option value="2ABE7AF5-61AB-4062-A56D-4992EF4064EA" >云南</option>
+        	    <option value="082ADAA5-86B8-4B22-9D0A-4CCFC9F0FEB6" >河北</option>
+        	    <option value="342D3233-12C2-4037-9DC1-1414858FAB7D" >浙江</option>
+        	    <option value="A66D1F3D-8EE4-4773-ACDE-1A760FD3D466" >海南</option>
+        	    <option value="DFD5ED79-4736-4103-9E2E-1A808ACC09A6" >北京</option>
+        	    <option value="F23F4D04-4762-4CED-97DC-26B62DBEC2E9" >黑龙江</option>
+        	    <option value="8FE37D55-1969-4B2E-B0B5-21A4DBA3E802" >湖南</option>
+        	    <option value="F425168B-E19C-4636-B76A-0BCC6835591B" >四川</option>
+        	    <option value="2AAEF687-A3F6-4011-9FAB-0E4BB2C4FFD6" >江西</option>
+        	    <option value="F12A16CE-A540-4BA6-A59E-B46F772845BA" >新疆</option>
+        	    <option value="C8CDDBFF-449A-4031-9D5F-AA66AD878F8D" >重庆</option>
+        	    <option value="B950770F-3AB7-4211-8C90-A75624BD894C" >甘肃</option>
+        	    <option value="15830E2A-9D93-4FEB-A050-CB25563EE733" >广西</option>
+        	    <option value="3220BE8D-1DBB-4E2D-BFAA-F56CF7AD5F22" >福建</option>
+        	    <option value="E315F563-4961-44DB-AA83-EE6740BF0C89" >山东</option>
+        	    <option value="FA6D641A-1C77-4D57-8276-FF58BD970F68" >辽宁</option>
+        	    <option value="5A88D331-F216-448E-B712-FC497156E67E" >宁夏</option>
+        	    <option value="F5DAEB22-E0D2-42D7-9674-FB8272A269B9" >澳门</option>
+        	    <option value="889E1994-8CC0-4D20-A73E-FB229E6194DC" >贵州</option>
+        </select>
+        <input type="hidden" name="province" value="广东" />
+        <input type="hidden" name="city" value="中山" />
+   		<input type="hidden" name="area" value="" />
+        <select class="ity-ads" name="cityId" ><option  value="0BC46451-194D-430F-BFAF-6AFDADBF2A60">中山</option>
+        </select><select class="ity-ads" name="areaId" ><option  value=""></option></select><span class="ity-tip right">请选择所属地址</span></td>
+      </tr>
+      <tr>
+        <th><!--<span>*</span>-->组织机构代码号：</th>
+        <td><input class="input-w" name="regNo" maxlength="20" type="text" placeholder="请输入工组织机构代码号" value="12345678910567"/>
+        <span class="ity-tip right">请输入完整的代码号，代码号中的短横线不用输入</span><span class="po">请输入完整的代码号，代码号中的短横线不用输入</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>营业执照号：</th>
+        <td><input class="input-w" name="licenseNo" maxlength="18" type="text" placeholder="请输入工商营业执照号" value="123" /><span class="ity-tip right">请输入完整的执照号</span></td>
+      </tr>
+       <tr>
+        <th><span>*</span>登记机关：</th>
+        <td><input class="input-w" name="regOffice" maxlength="20" type="text" placeholder="请输入登记机关" value="深圳test" /><span class="ity-tip right">请输入登记机关</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>企业名称：</th>
+        <td><input class="input-w" name="name" maxlength="25" type="text" placeholder="请输入企业名称" value="BigTips"  maxlength="100"/><span class="ity-tip right">请输入企业名称</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>法人姓名：</th>
+        <td><input class="input-w" name="lerep" maxlength="10" type="text" value="BigTips" /><span class="ity-tip right">请输入法人姓名</span></td>
+      </tr>
+      <tr>
+        <th><!--<span>*</span>-->注册资本：</th>
+        <td><input class="input-w" name="regCap" maxlength="6" type="text" value="10"  onkeyup="this.value=this.value.replace(/[^.0-9]/g,'')"/>&nbsp;万元<span class="ity-tip right">请输入注册资本</span></td>
+      </tr>
+       <tr>
+        <th><span>*</span>注册地址：</th>
+        <td><input class="input-w" name="regAddress" maxlength="30" type="text" value="深证平湖" /><span class="ity-tip right">请输入注册地址</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>成立日期：</th>
+        <td>
+        <input id="d4311" name="estDate"  class="input-w Wdate" type="text"  readonly onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'d4312\')||\'3050-10-01\'}'})"  value="2015-12-23"/> <span class="ity-tip right">请输入成立日期</span>
+        </td>
+      </tr>
+      <tr>
+        <th><span>*</span>营业期限：</th>
+        <td>
+        <input id="d4312" name="licExpDate"  class="input-w Wdate" type="text"  readonly   onFocus="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')}',maxDate:'3050-10-01'})" value="2017-12-23"/> <span class="ity-tip right">请输入营业期限</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>企业类型：</th>
+        <td>
+         <label><input type="radio" name="entType" value="1"  >生产型</label>
+         <label><input type="radio" name="entType" value="0" checked >服务型</label>
+         <label><input type="radio" name="entType" value="2"  >贸易型</label>
+         <span class="ity-tip right">请选择企业类型</span>
+        </td>
+      </tr>
+       <tr>
+        <th><span>*</span>主营行业：</th>
+        <td>
+        	<div class="aff-value">
+                <div class="main-indu setindu-hy">
+                    <div class=" selec-con  indusse-all" >
+                    	 <span>机械及行业设备 <input type="hidden" name="tradeIds[]" value="10201" /></span>              	
+                    	 <span>通信 <input type="hidden" name="tradeIds[]" value="10205" /></span>              	
+                    	 <span>机械及行业设备 <input type="hidden" name="tradeIds[]" value="10201" /></span>              	
+                    </div>
+                    <input name="tradeIds" type="button" class="btn" value="选择"   />
+                    <input type="hidden" name="" value="" />
+                    <div class="all-sele-con indus-con conhy-all" >
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10201">
+                            机械及行业设备</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10407">
+                            货运代理</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10204">
+                            电子元器件（LED)</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10205">
+                            通信</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20502">
+                            家饰软装</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21001">
+                            运营商</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21101">
+                            图书</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10208">
+                            照明</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20702">
+                            童装童鞋</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20605">
+                            保健食品 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20407">
+                            箱包</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10109">
+                            能源</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="204">
+                            珠宝配饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21002">
+                            电子支付</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10406">
+                            贸易</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21105">
+                            生活团购</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="101">
+                            原材料</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20701">
+                            母婴用品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10604">
+                            办公文教</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20804">
+                            户外用品 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="2">
+                            网商分类(B2C)</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10305">
+                            计算机软硬件</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21201">
+                            医药保健</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20601">
+                            酒饮冲调</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20703">
+                            玩具学习</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20401">
+                            珠宝首饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="106">
+                            小商品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10408">
+                            装潢设计</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10108">
+                            布料纺织 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21202">
+                            办公耗材</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="205">
+                            家居装饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20603">
+                            生鲜食品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10210">
+                            汽摩及配件</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="207">
+                            母婴用品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10606">
+                            特色货源</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10203">
+                            电工电气</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20406">
+                            珠宝团购 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21204">
+                            日用百货</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20806">
+                            彩票</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="206">
+                            食品保健</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="105">
+                            家居百货</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10512">
+                            母婴</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21102">
+                            网络社区</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="102">
+                            工业品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10102">
+                            橡胶制品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20604">
+                            地方特产</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10105">
+                            建材装饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20203">
+                            内衣</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10510">
+                            箱包</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10409">
+                            教育培训</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10511">
+                            家纺</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21104">
+                            演出票务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="210">
+                            虚拟产品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20503">
+                            家纺</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20805">
+                            汽车租赁</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10501">
+                            服饰鞋帽</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="104">
+                            商务服务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21103">
+                            图片分享</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10601">
+                            饰品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10307">
+                            数码配件</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21203">
+                            礼品鲜花</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10507">
+                            钟表</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10401">
+                            管理（信息）咨询</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20302">
+                            专业卖场</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20304">
+                            家用电器 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10106">
+                            加工（模具）</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10107">
+                            包装材料</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20802">
+                            酒店</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10508">
+                            礼品饰品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10302">
+                            电脑产品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10404">
+                            投资咨询</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10405">
+                            广告（策划)</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="209">
+                            美容化妆</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20405">
+                            配饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10209">
+                            智能自动化</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10502">
+                            家装</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20202">
+                            鞋</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20904">
+                            美丽团购 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="21003">
+                            充值</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20902">
+                            美丽连锁</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10207">
+                            节能环保</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10505">
+                            日化清洁</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20403">
+                            钟表</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10607">
+                            汽车内饰</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10506">
+                            食品（酒水）</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20801">
+                            票务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="212">
+                            日用百货</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10402">
+                            公共服务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10412">
+                            办公耗材</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="1">
+                            原材料分类(B2B)</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10206">
+                            仪器仪表</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="202">
+                            服装鞋帽</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20803">
+                            旅游</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10101">
+                            塑料制品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20303">
+                            通讯产品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10411">
+                            招聘中介</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10509">
+                            健身养生</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20903">
+                            美丽分享</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10303">
+                            手机</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="201">
+                            综合商城</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20402">
+                            奢侈品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10301">
+                            消费电子</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20404">
+                            眼镜 </label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10608">
+                            汽车电子</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20305">
+                            通讯服务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20301">
+                            数码网购</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10211">
+                            五金</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10413">
+                            翻译服务</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10414">
+                            网站建设</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10503">
+                            家具</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20201">
+                            服装</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10304">
+                            3C数码</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10602">
+                            礼品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="208">
+                            机彩旅游</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10504">
+                            美容护肤</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10403">
+                            文化活动</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10306">
+                            系统集成</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20501">
+                            家具建材</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10605">
+                            文具</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20901">
+                            美容化妆</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10603">
+                            玩具</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="103">
+                            通信数码</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="20602">
+                            休闲食品</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="203">
+                            数码家电</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10103">
+                            化工材料</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10104">
+                            生物医药</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="211">
+                            文化娱乐</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10202">
+                            安防监控</label>
+                        <label>
+                           	 <input name="industry[]" type="checkbox" value="10410">
+                            电商运营</label>
+                    </div>
+                </div>
+            </div>
+       	 	<span class="ity-tip right">请选择主营行业</span>
+        </td>
+      </tr>
+      <tr>
+        <th><span>*</span>经营范围：</th>
+        <td><textarea name="bizScope" maxlength="80" >测试数据fdsqf</textarea><span class="ity-tip right">请输入经营范围</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>营业执照扫描件：</th>
+        <td>
+       <!-- <form id="upFileForm" target="_blank" action="uploadImg?imgType=license" method="post" enctype="multipart/form-data" accept-charset="utf-8">-->
+        	<span class="downimg">点击上传<br /><input id="fileuploadyy" value="上传" type="file" name="file" class="fileuploadsf" data-url="http://approve.csc86.com/user/uploadImg?imgType=license" ></span>
+            <span class="ity-tip right">请上传营业执照</span><span class="po">支持jpg、png格式图片，大小不超过200KB</span>
+            <div class="g-h20"></div>
+            <input type="hidden" name="licenseImg" value="/567b58e5e4b07aa367c995ee" />
+            <input type="hidden" name="licenseImgType" value="png" />
+        	<ul class="license"> 
+            	<li class="lce-img"><span><img src="http://img.csc86.com/567b58e5e4b07aa367c995ee" alt=""  width="200" height="160"/></span></li>
+                <li class="lce-info">一、电子版证照的要求
+                	<ol>
+                    	<li>提交的证件必须为彩色原件电子版（数码相机拍摄件），证件图片涂改后无效。</li>
+                        <li>证件需在有效期以内，营业执照需要带有齐全的年检记录。</li>
+                    </ol>
+                </li>
+                <li class="lce-lat">二、营业执照不符合审核规定的原因有以下6种
+                	<ol>
+                    	<li>证件无效、虚假 (发现将冻结账户)</li>
+                        <li>证件不完整或不清晰</li>
+                        <li>非国家认可的机构</li>
+                        <li>有效期不足三个月</li>
+                        <li>无年检章</li>
+                        <li>无工商局的章</li>
+                    </ol>
+                </li>
+            </ul>
+             <!-- </form>-->
+        </td>
+      </tr>
+    </table>
+    <h1 class="rz-til"><span>联系人信息：</span></h1>
+    <div class="g-h25"></div>
+	<table class="idy-tab  tab-w" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th><span>*</span>联系人姓名：</th>
+        <td><input class="input-w" name="linkName" maxlength="10" type="text" value="bigtipss" /><span class="ity-tip right">请输入联系人姓名</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>联系人电话：</th>
+        <td><input class="input-w" name="phone" maxlength="13" type="text" value="18675646754" maxlength="11" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')" /><span class="ity-tip right">请输入联系人电话</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>联系人邮箱：</th>
+        <td><input class="input-w" name="email" maxlength="25" type="text" value="791943571@qq.com"/><span class="ity-tip right">请输入联系人邮箱</span></td>
+      </tr>
+    </table>
+    <h1 class="rz-til"><span>旺铺信息：</span></h1>
+    <div class="g-h25"></div>
+    <table class="idy-tab tab-w" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th>旺铺名称：</th>
+        <td>深圳明鑫数码通讯<input type="hidden" name="websiteName" value="深圳明鑫数码通讯" /></td>
+      </tr>
+      <tr>
+        <th>旺铺域名：</th>
+        <td>http://1h218a.b2b.csc86.com<input type="hidden" name="submain" value="1h218a.b2b" /></td>
+      </tr>
+      <tr>
+        <th>旺铺开通时间：</th>
+        <td>2013-06-09<input type="hidden" name="createTime" value="2013-06-09" /></td>
+      </tr>
+      <tr>
+       <!--<form id="upFileLogoForm" target="_blank" action="uploadImg" method="post" enctype="multipart/form-data" accept-charset="utf-8">-->
+         <th><span>*</span>旺铺LOGO：</th>
+        <td>
+        	<span class="downimg">点击上传<br /><input id="fileuploadwp" value="上传" type="file" class="fileuploadsf" name="file" data-url="http://approve.csc86.com/user/uploadImg?imgType=logo"  /></span>
+            <span class="ity-tip right">请上传旺铺LOGO</span><span class="po">仅支持jpg、png格式图片，大小100KB以内，建议尺寸120*120</span>
+            <div class="g-h20"></div>
+            <input type="hidden" name="logo" value="/567a6ac0e4b07aa367c9955b" />
+            <input type="hidden" name="logoType" value="png" />
+        	<ul class="license">
+            	<li class="lce-img"><span>
+            	<img src="http://img.csc86.com/567a6ac0e4b07aa367c9955b" alt="" width="120" height="120" /></span></li>
+            </ul>
+        </td>
+       <!-- </form>-->
+      </tr>
+      <tr>
+        <th>&nbsp;</th>
+        <td>
+        	<div class="g-h15"></div>
+        	<input class="sub-info" type="submit" value="保存并下一步" />
+        </td>
+      </tr>
+    </table>
+    </form>
+    <div class="g-h15"></div>
+    <div class="g-h30"></div>
+    	<p class="bot-po"><strong>企业身份认证</strong>是华南城网针对企业会员推出的<strong>免费认证服务</strong>，同一家企业名称只可认证一次，通过企业身份认证后，会在平台展示真实企业身份和<strong>认证标识</strong>，帮助您更好地获得买家的信赖。</p>
+</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a rel="nofollow" target="_blank" href="http://group.csc86.com">关于华南城</a>
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a>
+		<a href="http://www.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a>
+		<a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank" rel="nofollow">会员服务</a>
+		<a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a>
+		<a href="http://www.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a>
+		<a href="http://www.csc86.com/about/terms.html" target="_blank" rel="nofollow">服务条款</a>
+		<a href="http://www.csc86.com/about/legal.html" target="_blank" rel="nofollow">法律申明</a>
+		<a href="http://www.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a>
+		<a href="http://www.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a>
+		<a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a>
+		<a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a>
+		<a href="http://www.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved </p>
+	<div class="foot-lg"><span><a target="_blank" rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img alt="公共信息安全网络监察" src="https://res.csc86.com/image/c/index/sznet110wangan.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span>
+    </div>
+<style>
+.back-top{width:100%;_position:relative}.back-top a{display:block;width:48px;height:48px;background:#ccc url(https://res.csc86.com/css/m/back-top/img/bg.png) no-repeat;text-indent:-99999px;}.back-top a:hover{background-position:0 -49px;}.back-top .bt-bd{_display:inline;_float:right;width:48px;height:48px;position:fixed;_position:absolute;bottom:30px;right:20px;}.back-top .bt-hide{display:none}
+</style>
+<div id="backTop" class="g-o-a back-top">
+<div class="bt-bd">
+<a href="#">返回顶部</a>
+</div>
+</div>
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: none repeat scroll 0% 0% rgb(255, 255, 255);"></div>
+<script>seajs.use('https://res.csc86.com/v2/c/member/zhongxin/shidi/js/init');</script>
+<div style="display:none"><script src="https://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-cn">
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>采购单1</title>
+	<link rel="stylesheet" href="https://res.csc86.com/v2/c/order/css/purchase-order.css" type="text/css" >
+	<script src="https://res.csc86.com/v2/l/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script src="https://res.csc86.com/v2/c/order/js/seajs-config.js"></script>
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<div class="top-bar">
+	<div class="g-o">
+		<div class="top-csc-group">
+			<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+			<a target="_blank" href="http://sz.csc86.com">深圳</a>
+			<a target="_blank" href="http://nn.csc86.com">南宁</a>
+			<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+			<a target="_blank" href="http://xa.csc86.com">西安</a>
+			<a target="_blank" href="http://zz.csc86.com">郑州</a>
+			<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+		</div>
+		<div class="server-r">
+			<a title="" rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a><span class="v-line t-w"></span><a class="sethome" href="#">设置首页</a><span class="v-line t-w"></span><a class="addfav" href="#">收藏</a>
+		</div>
+		<span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd"><a href="http://pay.csc86.com/account/index.html" target="_blank">我的账户</a></div>
+			<div class="g-c-f bd w-193">
+			<ul class="csc-bd">
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，<span class="bd">欢迎光临华南城网！<a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span><span class="v-line"></span>
+		</div>
+	</div>
+</div>
+<div class="head">
+	<div class="g-o">
+		<a href="http://www.csc86.com/" class="g-fl csc" target="_blank"><img width="280" height="57" alt="实体商圈，可信交易。" src="https://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+	</div>
+</div><!-- 网站顶部  end -->
+<!-- 进度条 start-->
+<div class="g-o prgrss-box prgrss-five-step">
+	<ul class="g-cf prgrss-lst">
+    	<li class="itm1 cur">我的采购单</li>
+        <li class="itm2">确认订单信息</li>
+        <li class="itm3">付款</li>
+        <li class="itm4">确认收货</li>
+        <li class="itm5">完成</li>
+    </ul>
+    <div class="step step1"></div>
+</div>
+<!-- 进度条 end-->
+
+<!-- 商品清单 start-->
+<div id="prchsOrderMain" class="order-main">
+	<div class="g-o g-ivm prchs-box">
+    	<div class="prchs-hd">
+        	<h2>商品清单</h2>
+        </div>
+        
+        <!--清单表头 start-->
+        <table class="prchs-tbl-hd">
+            <colgroup>
+            	<col width="66" />
+                <col />
+                <col width="149" />
+                <col width="98" />
+                <col width="272" />
+                <col width="123" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input class="_jsSltAll" name="" checked="checked" type="checkbox"><span>全选</span></th>
+                    <th>货品</th>
+                    <th>单价（元）</th>
+                    <th>数量</th>
+                    <th>小计（元）</th>
+                    <th>操作</th>
+                </tr>
+            </thead>	
+         </table>
+         <!--清单表头 end-->
+         
+         <!--清单列表 start-->
+         
+            
+            		<form class="jsPrchsFrm" action="https://i.csc86.com/carOrder/orderDetail" method="get">
+			        
+			        
+        			 </form>                     			  
+        
+        <!--清单列表 start-->
+         
+        <!--分页 start-->
+        <div class="g-tr Spage">
+
+<!--
+<div class="g-t-c Spage">
+<ul>
+ <li>共1页 </li>
+ <li><form action="" method="get" onsubmit=""><span>到</span><input data-maxPage="1" type="text" id="inPageNO" class="pageNo" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'') == '0' ? '':this.value.replace(/[^0-9]/g,'');"><span>页</span><input id="pageBut" type="button" class="submit_go" value="确定"/></form></li>
+</ul>
+</div>  
+<script>
+function gotoPage(pageNo){
+
+	var  pageUrl = window.location.href;
+	if(pageUrl.indexOf("page")>0){
+		var newPageh = pageUrl.substring(0,pageUrl.indexOf("page"));
+		var newpageUrl = pageUrl.substring(pageUrl.indexOf("page"));
+	 	var page;
+		if(newpageUrl.indexOf("&")>0){
+		    page = "page="+pageNo+newpageUrl.substring(newpageUrl.indexOf("&"));
+		}else{
+		    page = "page="+pageNo;
+		}
+		window.location = newPageh+page;
+	}else{
+		if(pageUrl.indexOf("?")>0){
+			window.location = pageUrl+"&page="+pageNo;
+		}else{
+			if(pageUrl.charAt(pageUrl.length-1)=='#'){
+	  	 		pageUrl = pageUrl.substring(0,pageUrl.length-1);
+	  	 	}
+			window.location = pageUrl+"?page="+pageNo;
+		}
+		
+	}
+}
+
+$(document).ready(function(){
+  $("#pageBut").click(function(){
+  	var $inPageNO= $("#inPageNO");
+  	var maxPage=parseInt($inPageNO.attr('data-maxPage'));
+  	var pageNo =parseInt($inPageNO .val());
+  	if(pageNo){
+  		if(pageNo>maxPage){
+  			pageNo=maxPage;
+  		}
+  		gotoPage(pageNo);
+  	}
+  });
+});
+</script>  -->
+        </div>
+        <!--分页 end-->
+        
+    </div>
+</div>
+<!-- 商品清单 end-->
+
+<!-- 网站底部  start -->
+<div class="g-o link">
+	<div class="g-h10"></div>
+	<div class="love-links">
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="p1">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved</p>
+	<p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+	<div class="foot-lg">
+		<span><a target="_blank"  rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank" rel="nofollow"><img src="https://res.csc86.com/image/c/index/sznet110wangan.png" alt="公共信息安全网络监察"></a></span><span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span>
+	</div>
+</div>
+<!-- 统计代码 start -->
+<script>seajs.use('https://res.csc86.com/v2/c/order/js/purchase-order.js');</script>
+<div style="display:none"><script src="https://res.csc86.com/f=js/m/statistics.js"></script></div>
+<!-- 统计代码 end --><!-- 网站底部 end -->
+
+</body>
+</html>

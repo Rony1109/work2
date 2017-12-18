@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<title>交易汇</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<link rel="stylesheet" href="/v2/m/init/css/style.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script src="/v2/l/seajs/sea.js"></script>
+<script src="/v2/m/init/js/init.js"></script>
+</head>
+<body>
+<!--start 头部-->
+<div class="top-bar">
+  <div class="g-o">
+    <div class="top-csc-group"> <a target="_blank" href="http://group.csc86.com">走进华南城</a> <a target="_blank" href="http://sz.csc86.com">深圳</a> <a target="_blank" href="http://nn.csc86.com">南宁</a> <a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a> <a target="_blank" href="http://xa.csc86.com">西安</a> <a target="_blank" href="http://zz.csc86.com">郑州</a> <a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a> </div>
+    <div class="server-r"> <a rel="nofollow" title="" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a> <span class="v-line t-w"></span> <a rel="nofollow" class="sethome" href="#">设置首页</a> <span class="v-line t-w"></span> <a rel="nofollow" class="addfav" href="#">收藏</a> </div>
+    <span class="v-line sev-r"></span>
+    <div class="top-my-account">
+      <div class="hd"><a rel="nofollow" target="_blank" href="//payment.csc86.com">我的账户</a></div>
+      <div class="g-c-f bd w-193">
+        <ul class="csc-bd">
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+        </ul>
+        <ul class="yesmore-bd">
+          <li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-sign-info"> 您好， <span class="bd">欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a> <span class="v-line"></span> <a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a> </span> <span class="v-line"></span> </div>
+  </div>
+</div>
+<div class="web-search">
+    <div class="g-o">
+        <div class="logo-box">
+            <a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com">
+                <img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+        </div>
+        <div class="m-search">
+            <form action="http://search.csc86.com/selloffer/products.html" method="get">
+                <ul class="g-c-f">
+                    <li class="first cur">
+                        <a rel="nofollow" href="http://search.csc86.com/selloffer/products.html">产品</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="http://search.csc86.com/company/company.html">公司</a>
+                    </li>
+                </ul>
+                <div class="g-cf">
+                    <div class="ss-txt">
+                        <div style="display:none;" id="comp-ol" class="ss-select">
+                            <span class="arr"></span>
+                            <ol>
+                                <li class="cur">
+                                    <a href="javascript:">公司名称</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">主营产品</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <input type="text" class="txt" name="q" placeholder="请输入产品名称" value="" maxlength="35" autocomplete="off" id="search-txt"></div>
+                    <input type="submit" value="搜索" id="searchbtn" class="btn"></div>
+                <ol class="g-cf hot-keys">
+                    <li>
+                        <a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%82%E6%96%99">涂料</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%97%A0%E7%BA%BA%E5%B8%83">无纺布</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a>
+                    </li>
+                </ol>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end  头部--> 
+<!--start 导航-->
+<div class="idx-nav">
+  <div class="g-o">
+    <div class="jnb-vip"> 
+      <script src="http://api.csc86.com/g/check.html?id=80c81ed2-4f1f-4f8b-94ba-92bab7837f84&amp;adtype=2" type="text/javascript"></script> 
+    </div>
+    <ul id="hotnav" class="g-c-f">
+      <li class="first cur"><a href="http://www.csc86.com" title="首页">首页</a></li>
+      <li><a target="_blank" href="http://map.csc86.com/" title="供求库">供求库</a></li>
+      <li><a target="_blank" href="http://quan.csc86.com" title="交易汇">交易汇</a></li>
+      <li><a target="_blank" href="http://mall.csc86.com" title="品牌榜">品牌榜</a></li>
+      <li><a target="_blank" href="http://tuan.csc86.com" title="知商讯">知商讯</a></li>
+      <li><a target="_blank" href="http://tuan.csc86.com" title="益多商城">益多商城</a></li>
+      <li><a target="_blank" href="http://tuan.csc86.com" title="逛市场">逛市场</a></li>
+      <li><a class="new" target="_blank" href="http://info.csc86.com" title="生意圈">生意圈</a></li>
+    </ul>
+  </div>
+</div>
+<div class="g-o hot-ity"><span>热门行业：&nbsp;&nbsp;</span> <a href="javascript:;" target="_blank" title="皮革频道">皮革频道</a><i>|</i> <a href="javascript:;" target="_blank" title="纺织频道">纺织频道</a><i>|</i> <a href="javascript:;" target="_blank" title="电子频道">电子频道</a><i>|</i> <a href="javascript:;" target="_blank" title="化工频道">化工频道</a><i>|</i> <a href="javascript:;" target="_blank" title="塑胶频道">塑胶频道</a><i>|</i> <a href="javascript:;" target="_blank" title="印刷频道">印刷频道</a><i>|</i> <a href="javascript:;" target="_blank" title="包装频道">包装频道</a><i>|</i> <a href="javascript:;" target="_blank" title="汽配频道">汽配频道</a><i>|</i> <a href="javascript:;" target="_blank" title="五金频道">五金频道</a><i>|</i> <a href="javascript:;" target="_blank" title="所有行业">所有行业</a> </div>
+<!--end-->
+<div class="g-h10"></div>
+<div class="g-o"> 
+  <!--start 交易汇-->
+  <div class="tra_i_list">
+    <div class="i_list_inner">
+      <dl>
+        <dt><a href="javascript:;" title="广告" target="_blank"><img width="200" height="40" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+        <dd>已有<em>300</em>家采购商参加，日供应商报价<em>300</em>次</dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;" title="广告" target="_blank"><img width="200" height="40" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+        <dd>已有<em>300</em>家采购商参加，日供应商报价<em>300</em>次</dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;" title="广告" target="_blank"><img width="200" height="40" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+        <dd>已有<em>300</em>家采购商参加，日供应商报价<em>300</em>次</dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;" title="广告" target="_blank"><img width="200" height="40" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+        <dd>已有<em>300</em>家采购商参加，日供应商报价<em>300</em>次</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="tra_mid_img">
+  	<div class="src-bann">
+        <div class="src-img">
+           <ul>
+           <script type="text/javascript" src="http://api.csc86.com/g/check.html?id=e61c93bf-f79c-4ed6-b283-443c13e77fab&adtype=1"></script>
+           </ul>
+        </div>
+    </div>
+   
+    <div class="g-h10"></div>
+    <div class="list_t_mid">
+      <dl>
+        <dt><a href="javascript:;" target="_blank">更多&gt;</a>
+          <h2>热点采购</h2>
+        </dt>
+        <dd>
+          <ul class="g-cf">
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜农业每日价格涨跌排行榜行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑"><em>[排行]</em>农业每日价格涨跌排行榜</a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div class="tra_tab_list">
+    <div class="tab_inner">
+      <ul class="g-cf tab">
+        <li class="cur"><a class="tab_tit first" href="javascript:">供应商服务</a>
+          <div class="tab_item tab_sup">
+            <p>今日有<em>8</em>场活动正在征集供应商，千万元曝光量，已有<em>80</em>家供应商报名</p>
+            <div class="link_diag"><a href="javascript:" target="_blank" title="我是供应商,我要报名">我是供应商,我要报名&gt;&gt;</a></div>
+            <div class="g-cf go_b"><a class="btn_sup" target="_blank" href="javascript:">发布供应信息</a><a style="display:none;" class="btn_sup btn_shop" target="_blank" href="javascript:">免费开通旺铺</a><span class="f_push">已发布<em>34</em>个产品</span></div>
+          </div>
+        </li>
+        <li><a class="tab_tit" href="javascript:">采购商服务</a>
+          <div class="tab_item tab_cai">
+            <p>本月成功举办<em>8</em>场采购供需对接会，已有<em>80</em>个优质供应商参与报价，交易额突破<em>80</em>万</p>
+            <div class="link_diag"><a href="javascript:" target="_blank" title="我是采购商,我要报名">我是采购商,我要报名&gt;&gt;</a></div>
+            <div class="g-cf go_b"><a class="btn_sup" target="_blank" href="javascript:">发布采购信息</a><a class="btn_sup btn_shop" target="_blank" href="javascript:">免费注册会员</a><span style="display:none;" class="f_push">已发布<em>34</em>采购信息</span></div>
+          </div>
+        </li>
+      </ul>
+      <ol class="g-cf">
+        <li>旺铺总数<em>443333</em></li>
+        <li>产品总数<em>443333</em></li>
+      </ol>
+    </div>
+  </div>
+  <!--start 广告-->
+  <div class="g-h10"></div>
+  <div class="banner"><a href="javascript:;" title="广告" target="_blank"><img width="1000" height="40" src="../../../m/init/image/img.png" alt="广告"></a></div>
+  <div class="g-h10"></div>
+  <div class="g-cf tra_speic">
+    <h2 class="fix-title"><ul class="tab-nav g-cf">
+      <li class="cur"></li>
+      <li></li>
+      <li></li>
+    </ul><a href="" target="_blank" title="【精选好货源】">【精选好货源】</a></h2>
+    <div class="g-cf spei_con tab-c">
+    	<div class="sp-sig">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+      <div class="g-h10"></div>
+        <ul class="sp-list">
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+       </ul>
+    </div>
+    <div class="g-cf spei_con tab-c g-dn">
+      <div class="sp-sig">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+      <div class="g-h10"></div>
+        <ul class="sp-list">
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+       </ul>
+    </div>
+    <div class="g-cf spei_con tab-c g-dn">
+      <div class="sp-sig">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+      <div class="g-h10"></div>
+        <ul class="sp-list">
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+       </ul>
+    </div>
+  </div>
+  <!--start 广告-->
+  <div class="g-h10"></div>
+  <div class="banner"><a href="javascript:;" title="广告" target="_blank"><img width="1000" height="40" src="../../../m/init/image/img.png" alt="广告"></a></div>
+  <div class="g-h10"></div>
+  <div class="tra_fair">
+    <h2><a href="javascript:;"  target="_blank">更多&gt;</a>交易会</h2>
+    <div class="g-cf fair_con">
+      <ul class="g-cf u_list">
+        <li class="item">
+          <div class="li_adv"><a href="javascript:;" title="广告" target="_blank"><img width="100" height="70" src="../../../m/init/image/img.png" alt="广告"></a><span class="bg"></span><span>韩国东大门</span></div>
+          <ol>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;" target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+          </ol>
+        </li>
+        <li class="item">
+          <div class="li_adv"><a href="javascript:;" title="广告" target="_blank"><img width="100" height="70" src="../../../m/init/image/img.png" alt="广告"></a><span class="bg"></span><span>韩国东大门</span></div>
+          <ol>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+          </ol>
+        </li>
+        <li class="item">
+          <div class="li_adv"><a href="javascript:;" title="广告" target="_blank"><img width="100" height="70" src="../../../m/init/image/img.png" alt="广告"></a><span class="bg"></span><span>韩国东大门</span></div>
+          <ol>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+          </ol>
+        </li>
+        <li class="item">
+          <div class="li_adv"><a href="javascript:;" title="广告" target="_blank"><img width="100" height="70" src="../../../m/init/image/img.png" alt="广告"></a><span class="bg"></span><span>韩国东大门</span></div>
+          <ol>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+            <li><a href="javascript:;"   target="_blank" title="届中国国际建筑">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="adv_img"><a href="javascript:;" title="广告" target="_blank"><img width="240" height="80" src="../../../m/init/image/img.png" alt="广告"></a><a href="javascript:;" title="广告" target="_blank"><img width="240" height="80" src="../../../m/init/image/img.png" alt="广告"></a></div>
+    </div>
+  </div>
+  <!--start 广告-->
+  <div class="g-h10"></div>
+  <div class="banner"><a href="javascript:;" title="广告" target="_blank"><img width="1000" height="40" src="../../../m/init/image/img.png" alt="广告"></a></div>
+  <div class="g-h10"></div>
+  <!--end 广告--> 
+  <!--start 展会集锦-->
+  <div class="exhi_high">
+    <div class="high_inner">
+      <div class="tit">
+        <h2>展会集锦</h2>
+        <ul>
+          <li class="first cur"><a href="javascript:;">进行中</a></li>
+          <li><a href="javascript:;">展会预告</a></li>
+        </ul>
+      </div>
+      <!--start 展会集锦tab内容-->
+      <div class="high_con"> 
+      	<!--start 展会进行中...tab内容-->
+        <div class="g-cf tab_exhi tab_ing  cur">
+          <div class="ing_outer">
+            <div class="src-two-img">
+                <ul>
+                   <li style="display: list-item;"><a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;"><img width="510" height="210" alt="2013年网商网货" src="http://img.csc86.com/5292f4540cf2c18fb597193d"></a>
+                   <span class="src-bg"></span>
+                   <span class="src-til"><a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;">2013年网商网货1</a></span>
+                   </li>
+                   <li>
+                   <a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;"><img width="510" height="210" alt="2013年网商网货" src="http://img.csc86.com/526e18be6922f06d4bde045d"></a>
+                   <span class="src-bg"></span>
+                   <span class="src-til"><a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;">2013年网商网货2</a></span>
+                   </li>
+                   <li>
+                   <a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;"><img width="510" height="210" alt="2013年网商网货" src="http://img.csc86.com/5292f4540cf2c18fb597193d"></a>
+                   <span class="src-bg"></span>
+                   <span class="src-til"><a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;">2013年网商网货3</a></span>
+                   </li>
+                   <li>
+                   <a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;"><img width="510" height="210" alt="2013年网商网货" src="http://img.csc86.com/527b459f0cf2c340d58ee42e"></a>
+                   <span class="src-bg"></span>
+                   <span class="src-til"><a rel="nofollow" title="2013年网商网货" target="_blank" href="javascript:;">2013年网商网货4</a></span>
+                   </li>
+                </ul>
+            </div>
+          </div>
+          <div class="fon_list">
+            <dl>
+              <dt><a href="javascript:;" target="_blank" title="届中国国际建筑">五届中国国际建筑装饰博览会五届中国国际建筑装饰博览</a></dt>
+              <dd>开始时间：2013年11月16日-21日<br />
+                举办地点：深圳会展中心<br />
+                联系电话：0755-82848885<br />
+                展品范围：IT、电子、新能源、节能环保、光电平板显示</dd>
+            </dl>
+            <ul>
+              <li><em>2012-22-21</em><a href="javascript:;" target="_blank" title="届中国国际建筑">2013第十五届中国国际建筑装饰博览会 </a></li>
+              <li><em>2012-22-21</em><a href="javascript:;" target="_blank" title="届中国国际建筑">2013第十五届中国国际建筑装饰博览会2013第十五届中国国际建筑装饰博览会 </a></li>
+              <li><em>2012-22-21</em><a href="javascript:;" target="_blank" title="届中国国际建筑">2013第十五届中国国际建筑装饰博览会 </a></li>
+              <li><em>2012-22-21</em><a href="javascript:;" target="_blank" title="届中国国际建筑">2013第十五届中国国际建筑装饰博览会2013第十五届中国国际建筑装饰博览会 </a></li>
+              <li><em>2012-22-21</em><a href="javascript:;" target="_blank" title="届中国国际建筑">2013第十五届中国国际建筑装饰博览会 </a></li>
+            </ul>
+          </div>
+        </div>
+        <!--start 展会预告tab内容-->
+        <div class="tab_exhi tab_her">
+          <div class="g-cf ex_l">
+            <dl class="g-cf">
+              <dt><a href="javascript:;" title="广告" target="_blank"><img width="100" height="100" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+              <dd class="dit"><a href="javascript:;" target="_blank" title="届中国国际建筑">五届中国国际建筑装饰博览会五届中国国际建筑装饰博览</a></dd>
+              <dd>开始时间：2013年11月16日-21日<br />
+                举办地点：深圳会展中心<br />
+                联系电话：0755-82848885<br />
+                <a class="more" href="javascript:;" title="广告" target="_blank">[查看详细]</a> </dd>
+            </dl><dl class="g-cf">
+              <dt><a href="javascript:;" title="广告" target="_blank"><img width="100" height="100" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+              <dd class="dit"><a href="javascript:;" target="_blank" title="届中国国际建筑">五届中国国际建筑装饰博览会五届中国国际建筑装饰博览</a></dd>
+              <dd>开始时间：2013年11月16日-21日<br />
+                举办地点：深圳会展中心<br />
+                联系电话：0755-82848885<br />
+                <a class="more" href="javascript:;" title="广告" target="_blank">[查看详细]</a> </dd>
+            </dl>
+           
+          </div>
+          <div class="ex_r">
+             <ul class="g-cf l_list">
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中进行中预告</a></li>
+              <li><em>2011-22-22</em><a href="javascript:;" target="_blank" title="届中国国际建筑">展会展会预告展会预告展会预告展会预告展会预告展会预告展会预告预告</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--start 展会检索-->
+  <div class="exhi_retri">
+    <div class="retri_inner">
+      <h2 class="tit">展会检索</h2>
+      <div class="retri_con">
+        <form target="_blank" action="" method="get">
+          <ul class="sear_li">
+            <li class="g-cf">
+              <label>按行业查询</label>
+              <select name="f">
+                <option value="">第一级</option>
+              					<option value="2">纺织</option>
+                                <option value="24">皮革</option>
+                                <option value="36">化工</option>
+                                <option value="82">橡塑</option>
+                                <option value="131">电子</option>
+                                <option value="165">医药、医疗、保养</option>
+                                <option value="200">建材</option>
+                                <option value="269">金属</option>
+                                <option value="300">能源</option>
+                                <option value="320">服装服饰</option>
+                                <option value="342">箱包皮具</option>
+                                <option value="365">通信产品</option>
+                                <option value="394">礼品、工艺品</option>
+                                <option value="420">饰品、首饰</option>
+                                <option value="436">家居、酒店用品</option>
+                                <option value="463">办公、文教</option>
+                                <option value="493">数码电脑</option>
+                                <option value="512">美容、护肤</option>
+                                <option value="530">家用电器</option>
+                                <option value="547">食品、饮料</option>
+                                <option value="566">玩具</option>
+                                <option value="582">广电、传媒设备</option>
+                                <option value="599">运动、休闲</option>
+                                <option value="648">印刷</option>
+                                <option value="663">纸业</option>
+                                <option value="676">包装</option>
+                                <option value="698">其他化学面料、里料</option>
+                                <option value="699">其他绣花布</option>
+                                <option value="700">其他功能性面料</option>
+                                <option value="701">其他发光材料</option>
+                                <option value="707">五金、工具</option>
+                                <option value="753">电工电气</option>
+                                <option value="785">机械及行业设备</option>
+                                <option value="869">安防、消防</option>
+                                <option value="904">汽摩及配件</option>
+                                <option value="935">环保</option>
+                                <option value="957">交通运输</option>
+                                <option value="983">仪器仪表</option>
+                                <option value="1029">商务服务</option>
+                                <option value="1042">照明工业</option>
+                                <option value="1055">其他未分类小商品</option>
+                                              </select>
+<!--              <select name="c" class="w_rev">
+                <option value="">第二级</option>
+              </select>-->
+            </li>
+            <li class="g-cf">
+              <label>按地区查询</label>
+              <select name="p">
+                <option value="">选择省</option>
+                				                <option value="1057">北京市</option>
+                                <option value="1058">天津市</option>
+                                <option value="1059">上海市</option>
+                                <option value="1060">重庆市</option>
+                                <option value="1061">浙江省</option>
+                                <option value="1062">广东省</option>
+                                <option value="1063">四川省</option>
+                                <option value="1064">云南省</option>
+                                <option value="1065">广西省</option>
+                                <option value="1066">黑龙江省</option>
+                                <option value="1067">吉林省</option>
+                                <option value="1068">辽宁省</option>
+                                <option value="1069">河北省</option>
+                                <option value="1070">河南省</option>
+                                <option value="1071">山西省</option>
+                                <option value="1072">山东省</option>
+                                <option value="1073">江苏省</option>
+                                <option value="1074">江西省</option>
+                                <option value="1075">湖南省</option>
+                                <option value="1076">湖北省</option>
+                                <option value="1077">贵州省</option>
+                                <option value="1078">福建省</option>
+                                <option value="1079">陕西省</option>
+                                <option value="1080">青海省</option>
+                                <option value="1081">甘肃省</option>
+                                <option value="1082">安徽省</option>
+                                <option value="1083">海南省</option>
+                                <option value="1084">内蒙古</option>
+                                <option value="1085">新疆维吾尔自治区</option>
+                                <option value="1086">西藏自治区</option>
+                                <option value="1087">宁夏回族自治区</option>
+                                <option value="1088">香港</option>
+                                <option value="1089">澳门</option>
+                                <option value="1090">台湾</option>
+                                              </select>
+<!--              <select name="a">
+                <option value="">选择市</option>
+              </select>-->
+            </li>
+            <li class="g-cf">
+              <label>按时间查询</label>
+              <input type="text" name="st" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}'})" class="time-text" id="startTime"> <span class="s">&nbsp;到</span>
+<input type="text" name="et" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2020-10-01'})" class="time-text" id="endTime">
+            </li>
+            <!--<li class="g-cf"> <a href="javascript:;" class="btn_sub">查询</a> <span class="warning">无查询结果，请重新查询！</span> </li>-->
+			<li class="g-cf"><button type="submit" class="btn_sub">查询</button> </li>
+          </ul>
+        </form>
+        <div  style="display:none;" class="search_result">
+          <ul class="g-cf l_list">
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+            <li><a href="javascript:"  target="_blank" title="届中国国际建筑"><em>[服装]</em>倒卖5万九成新设备 开价倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900倒卖5万九成新设备 开价900 </a></li>
+          </ul>
+          <div class="res_btn"><a href="javascript:" onClick="research();">重新查询</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--start 广告-->
+  <div class="g-h10"></div>
+  <div class="banner"><a href="javascript:;" title="广告" target="_blank"><img width="1000" height="40" src="../../../m/init/image/img.png" alt="广告"></a></div>
+  <div class="g-h10"></div>
+  <!--end 广告-->
+  <div class="tra_fair">
+    <h2 class="fix-title"><ul class="tab-nav-1 g-cf">
+      <li class="cur"></li>
+      <li></li>
+      <li></li>
+    </ul><a href="" target="_blank" title="好货源底价批">好货源底价批</a></h2>
+    <div class="g-cf spei_con tab-c-1">
+      <div class="sp-sig bb-n">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+    </div>
+    <div class="g-cf spei_con tab-c-1 g-dn">
+      <div class="sp-sig bb-n">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+    </div>
+    <div class="g-cf spei_con tab-c-1 g-dn">
+      <div class="sp-sig bb-n">
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+          <dl>
+            <dt><a href="javascript:;" title="广告" target="_blank"><img width="233" height="90" src="../../../m/init/image/img.png" alt="广告"></a></dt>
+            <dd class="tit">潮货市场，韩国东大门新款上架八种大针织外套，流苏、镂空、糖果色等引领秋季</dd>
+          </dl>
+      </div>
+    </div>
+  </div>
+  <!--start 广告-->
+  <div class="g-h10"></div>
+  <div class="banner"><a href="javascript:;" title="广告" target="_blank"><img width="1000" height="40" src="../../../m/init/image/img.png" alt="广告"></a></div>
+  <div class="g-h10"></div>
+  <!--end 广告-->
+  <div class="tra_fair">
+    <h2><a href="javascript:;"  target="_blank">更多&gt;</a>合作资源联盟</h2>
+    <div class="g-cf fair_con huo_inner">
+      <ul class="g-cf">
+        <li><a href="javascript:;" title="广告" target="_blank"><img width="170" height="60" src="../../../m/init/image/img.png" alt="广告"></a>
+          <h3><a href="javascript:;" target="_blank" title="届中国国际建筑">届中国国际建筑届中国国际建筑届中国国际建筑</a></h3>
+          <div>2013第十五届中国国际建筑装饰博览会</div>
+        </li>
+        <li><a href="javascript:;" title="广告" target="_blank"><img width="170" height="60" src="../../../m/init/image/img.png" alt="广告"></a>
+          <h3><a href="javascript:;" target="_blank" title="届中国国际建筑届中国国际建筑届中国国际建筑">届中国国际建筑届中国国际建筑届中国国际建筑</a></h3>
+          <div>2013第十五届中国国际建筑装饰博览会</div>
+        </li>
+        <li><a href="javascript:;" title="广告" target="_blank"><img width="170" height="60" src="../../../m/init/image/img.png" alt="广告"></a>
+          <h3><a href="javascript:;" target="_blank" title="届中国国际建筑届中国国际建筑届中国国际建筑">届中国国际建筑届中国国际建筑届中国国际建筑</a></h3>
+          <div>2013第十五届中国国际建筑装饰博览会</div>
+        </li>
+        <li><a href="javascript:;" title="广告" target="_blank"><img width="170" height="60" src="../../../m/init/image/img.png" alt="广告"></a>
+          <h3><a href="javascript:;" target="_blank" title="届中国国际建筑届中国国际建筑届中国国际建筑">届中国国际建筑届中国国际建筑届中国国际建筑</a></h3>
+          <div>2013第十五届中国国际建筑装饰博览会</div>
+        </li>
+        <li><a href="javascript:;" title="广告" target="_blank"><img width="170" height="60" src="../../../m/init/image/img.png" alt="广告"></a>
+          <h3><a href="javascript:;" target="_blank" title="届中国国际建筑届中国国际建筑届中国国际建筑">届中国国际建筑届中国国际建筑届中国国际建筑</a></h3>
+          <div>2013第十五届中国国际建筑装饰博览会</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="g-h25"></div>
+<div class="g-o foot">
+  <ul class="g-cf">
+    <li>
+      <h3 class="new-entry">新手入门</h3>
+      <div><a href="http://member.csc86.com/register/phonereg/" target="_blank" rel="nofollow">登录注册</a><a href="http://cncms.csc86.com/help/list8.html" target="_blank" rel="nofollow">如何开店</a><a href="http://cncms.csc86.com/help/zhaochanping/2012/1205/85162.html" id="f-top" target="_blank" rel="nofollow">搜索产品</a></div>
+    </li>
+    <li>
+      <h3 class="integrity">诚信与认证</h3>
+      <div><a href="http://cncms.csc86.com/special/chengxintuan/index.html" target="_blank" rel="nofollow">诚信供应团 </a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/accreditation/Accreditation/" target="_blank" rel="nofollow">认证服务</a></div>
+    </li>
+    <li>
+      <h3 class="services">企业服务</h3>
+      <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">旺铺管理</a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a><a href="#" target="_blank" rel="nofollow">招商中心</a></div>
+    </li>
+    <li>
+      <h3 class="community">社区互动</h3>
+      <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/sns/home/friends.html" target="_blank">好友</a><a href="http://member.csc86.com/sns/circle/default.html" target="_blank">圈子</a></div>
+    </li>
+  </ul>
+</div>
+<dl class="g-o frie-links">
+	<dt>合作伙伴：</dt>
+    <dd>
+    <a href="http://www.shoes.net.cn" target="_blank">环球鞋网</a><i>|</i><a href="http://www.eszmall.com" target="_blank">深商网</a><i>|</i><a href="http://www.53info.com/" target="_blank">沃搜网</a> <i>|</i> <a href="http://www.dgs6.com/" target="_blank">塑商网</a><i>|</i> <a href="http://www.jinbaowang.cn/" target="_blank">进包网</a><i>|</i> <a href="http://www.bainawang.com/" target="_blank">百纳网</a><i>|</i><a href="http://www.hangye5.com/" target="_blank">行业网</a><i>|</i> <a href="http://china.zyw.com/index.html" target="_blank">B2B资源网</a> <i>|</i><a href="http://www.cpp1.cn/" target="_blank">中国印刷网</a><i>|</i><a href="http://www.huangye88.com/ " target="_blank">免费发布信息网</a><i>|</i><a href="http://www.kuaidi100.com/all/sf.shtml" target="_blank">顺丰快递查询</a><i>|</i><a href="http://q.115.com/" target="_blank">115圈子</a><i>|</i><a href="http://www.pvc123.com/" target="_blank">塑料化工</a><i>|</i><a href="http://cn.gaotie.cn/" target="_blank">中国高铁</a><i>|</i><a href="http://www.51kids.com" target="_blank">中国童装网</a><i>|</i><a href="http://www.hot178.com/" target="_blank">178商机网</a>
+    </dd>
+</dl>
+<div class="g-o link">
+  <div class="g-h10"></div>
+  <div class="love-links"><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">About csc86.com</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+  <p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+  <p>华南城控股有限公司 版权所有</p>
+  <div class="foot-lg"><span><a target="_blank" title="" href="http://szgabm.qq.com/"><img alt="" src="http://res.csc86.com/image/c/index/b01.png"></a></span><span><a target="_blank" title="" href="https://cert.ebs.gov.cn/24773903-dda8-4158-ab39-3b36005dc280"><img alt="" src="http://res.csc86.com/image/c/index/b03.png"></a></span></div>
+</div>
+<script>seajs.use('./js/init');</script>
+</body>
+</html>

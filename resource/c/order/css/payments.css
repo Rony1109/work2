@@ -1,0 +1,118 @@
+@import url('style.css');
+/*@import url('/v2/m/newtopnav/css/style.css');*/
+@import url('/v2/c/order/css/payments-foot.css');
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+.g-o{ width:1190px;}
+.head{border-bottom:1px solid #ff6700; }
+.head .csc{padding-right:12px;}
+.head .sx{ margin-top:40px;  border-right:1px solid #cecece;  height:25px;}
+.head .channel{font-size:18px;line-height:56px;color:#444; margin-top:25px; margin-left:12px; font-family:微软雅黑}
+.order-main{border-top:none}
+.page-qrorder{padding:0; width:1190px;}
+.payments-hd{line-height:28px;padding:20px 55px;border-bottom:1px solid #ddd;height:56px;}
+.payments-hdbefor{ width: 70%; float:left; }
+.payments-hdafter{ width: 30%; float:right;  height:56px;   display: table; line-height:56px;}
+.payments-hdafter .price{ color:#666;font-size:16px;font-family:微软雅黑;vertical-align: middle;display: table-cell; text-align:right}
+.payments-hdafter .price .s1,.payments-hdafter .price .s2{ color:#ff6700; font-size:22px;  }
+.payments-hd .g-cred{color:#888; font-size:12px}
+.payments-hd .pay-static{color:#444;font-size:16px;font-family:微软雅黑}
+.payments-hdbefor a{ color:#22aadd}
+.g-c8{font-size:14px;font-family:微软雅黑}
+
+.payments-bd{}
+.payments-bd h2{font-size:14px;}
+
+.payments-itm{margin-top:22px; padding:0px 55px 25px; border-bottom:1px solid #ebebeb}
+.payments-itm.pd{ padding:0px 0px 0px;}
+.payments-itm dt .qx{ float:right; font-size:25px; line-height:25px; margin-right:10px; font-weight:bold; color:#8e8e8e; width:50px;}
+.payments-itm dt.qytitle{ padding:0px 55px 20px; height:25px; cursor:pointer}
+.payments-itm dt.qytitle .title{ float: left}
+.payments-itm dt.qytitle .nocompay{ color: #ff6700}
+.payments-itm dt{padding-bottom:15px;font-family:微软雅黑; font-size:16px;}
+.payments-itm .menu{border-bottom:1px solid #ebebeb; width:100%}
+.payments-itm .menu li{ line-height:45px; float:left;list-style:none; padding:0px 50px; margin-right:20px; margin-bottom:-1px;font-size:16px;font-family:微软雅黑; background:#f3f3f3;border:1px solid #f3f3f3; border-bottom:1px solid #ebebeb ;border-radius:5px 5px 0px 0px; cursor:pointer}
+.payments-itm .menu li.active{background:#fff; border-bottom:1px solid #fff;  }
+.payments-lst{ padding-top:5px; }
+.payments-lst.qy{ background:#f3f3f3; padding:10px 55px 20px; display:none}
+.payments-lst.none{ display:none}
+.payments-lst li{float:left;margin-right:10px;margin-top:10px;height:60px; width:170px;}
+.payments-lst li.mr30{ margin-right:30px; margin-top:0px;}
+.payments-lst li input,.payments-lst li span{vertical-align:middle;}
+.payments-lst li span{background:#fff;display:inline-block;padding:4px 10px;border:1px solid #ebebeb;}
+.payments-lst li span:hover{ border:1px solid #ff6700}
+.payments-lst li span.nonebor:hover{ border:1px solid #ebebeb}
+.payments-lst li span.pd{ padding:4px 20px;}
+.payments-lst li span img{display:inline-block;width:148px;height:48px; cursor:pointer}
+.payments-lst li span em{ float:right; color:#6ba35e; border:1px solid #ebebeb; margin-top:12px; padding:1px 5px; display:none}
+.payments-lst li.w span img{  float:left}
+.payments-lst li.w{ width:200px; margin-right:20px;}
+.payments-lst li .re{ line-height:58px; font-size:14px;font-family:微软雅黑;}
+.payments-lst li .re em{ margin-right:3px;}
+.payments-lst li .re a{ color:#22aadd}
+.payments-lst li .re a:hover{ text-decoration:none}
+.red-abtn{ background:#fe6904}
+.red-abtn:hover{ background:#ff871d}
+.wxzf{ width:1080px; height:435px; background:url(//res.csc86.com/v2/c/order/image/payments/wxsm.png) no-repeat center top; display:none}
+.wxzf .ewm{ width:264px; border:1px solid #ebebeb; padding:17px; position:relative; left:176px;top:10px;}
+.jspayFrm{ display:none}
+.payments-bd .frm-btns{ padding:23px 55px; float:right}
+.xxzfk{padding:23px 55px;font-family:微软雅黑; display: none;}
+.xxzfk .skmx p{ font-size: 15px; line-height: 25px; color: #666;}
+.xxzfk .skmx span{  color: #333; }
+.xxzfk .skts{ position: relative; padding-left: 50px; margin-top: 20px; font-size: 14px; color: #666;}
+.xxzfk .skts span{color: #e94545; display: inline-block; width: 60px; height: 47px; position: absolute; left: 0px; top: 0px;}
+.xxzfk .skts p{ line-height: 22px;}
+.xxzfk .fklsh{ padding: 20px 0px; font-size: 15px;}
+.xxzfk .fklsh span{ color: #333;}
+.xxzfk .fklsh em{  color: #e94545; }
+.xxzfk .fklsh input{ width: 360px; line-height: 25px; border: 1px solid #d4d4d4; padding-left: 5px;}
+.xxzfk .scpz{ height: 40px; line-height: 40px;}
+.xxzfk .scpz .scbutton{ width: 141px; display: inline-block; height: 40px; position: relative;margin-right: 10px; }
+.xxzfk .scpz .s1{ background: #22aadd; border-radius: 3px;   padding: 10px 33px; font-size: 15px; color: #fff;  }
+.xxzfk .scpz .fileUploadBtn{position: absolute;  top: 0;  right: 0;  margin: 0;  opacity: 0;    filter:alpha(opacity=0);  direction: ltr; width:141px; height: 40px; margin-right: 0px; cursor: pointer; background: none; border: none }
+.xxzfk .scpz .s2{ color: #999; font-size: 14px;}
+.xxzfk .nullimg{ padding-top: 25px; position: relative}
+.xxzfk .nullimg .imgsrc{ max-width: 144px;  max-height:105px;}
+.xxzfk .nullimg .xxzfbtn{ background: #ff6700 ; font-size: 15px; color: #fff; padding: 10px 55px; border-radius: 3px; position: absolute; right: 0px; bottom: 0px; cursor: pointer}
+    /*支付失败弹窗*/
+.aui_titleBar .aui_title{min-width:200px;}
+.payment-fail-pop{width:366px;padding-top:60px;}
+.payment-fail-pop .bd{background:url(//res.csc86.com/v2/l/artDialog/4.1.7/skins/icons/mem-w.png) no-repeat left top;padding-left:34px;font-size:14px;color:#333;line-height:24px;margin-left:60px;margin-right:65px;}
+.payment-fail-pop .ft{background:#ebebeb;height:30px;padding-top:6px;padding-right:5px;text-align:right;overflow:hidden;margin-top:76px;}
+.payment-fail-pop .repay-btn,.payment-fail-pop .cancel-btn{display:inline-block;color:#fff;text-decoration:none;height:24px;line-height:24px;border-radius:3px;}
+.payment-fail-pop .repay-btn,.payment-fail-pop .cancel-btn{display:inline-block;padding:0 13px;margin-right:8px;}
+.payment-fail-pop .repay-btn{background:#f9601d;}
+.payment-fail-pop .cancel-btn{background:#aeaeae;}
+
+.paytable{ border-collapse:collapse; text-align:center; margin:10px 0px;}
+.paytable td,.paytable th{ border:#ddd solid 1px;  height:35px;}
+
+/*新增余额支付*/
+.balance_payForm{width:1080px;font-family:"微软雅黑","Times New Roman",Georgia,Serif;display: none}
+.balance_payFormC:after{content: "";display:block;clear: both}
+.balance_payFormC{width: 530px;}
+.info_column,.word_column{float: left;font-size: 14px;color: #444444;padding: 15px 0;}
+.word_column.security{padding: 10px 0 15px 0}
+.info_column{width:130px;text-align: right}
+.word_column{width:400px;}
+.balance_payFormC .money{color:#e94545}
+.account-basic,.account-main{margin-right:8px}
+.account-basic{margin-left: 30px}
+.security-code{width: 84px;height: 34px;border: 1px solid #ccc;padding: 0 10px;font-family:"微软雅黑","Times New Roman",Georgia,Serif;}
+.security-btn{min-width: 84px;height: 34px;padding: 0 10px;font-family:"微软雅黑","Times New Roman",Georgia,Serif;color:#fff;background: #e94545;border: none;outline: none;cursor: pointer;margin-left:8px}
+.security-btn.disabled{color:#444;background: #d4d4d4;}
+
+.pppz{ width:180px; float:right; height:70px; position: relative; padding-top:30px; margin-left:30px}
+.pppz .gwc{ width:178px; height:38px; line-height:42px;border:1px solid #f67301; background:#ffffff url(img/cart-new1.png) no-repeat  center;text-align:center; font-size:14px; font-family:Microsoft YaHei;transition:border-color  500ms; color:#f67301}
+.pppz .gwc.orange{ border:1px solid #ff6700;background:#ff6700 url(img/cart-new2.png) no-repeat  center;color:#fff}
+.pppz  a:hover{text-decoration:none; }
+.pppz .num{ background: url(img/cart-new3.png) center; position:absolute; top:28px; left:52px; width:16px; height:16px; line-height:16px; text-align:center; color:#fff; display: none;}
+.pppz .num.orangeNum{ background: url(img/cart-new4.png) center; color: #ff6700;}
+
+.dht-all{background-color: #fff; border-bottom: 1px solid #CCC;}
+.dht-all .dht-list{height: 40px; line-height:40px; font-family: '微软雅黑'; font-size: 16px; color: #333;}
+.dht-all .dht-list .sy1{float:left; margin-left:120px;}
+.dht-all .dht-list .sy2{float:left; margin-left:145px;}
+.dht-all .dht-list .sy3{float:left; margin-left:170px;}
+.dht-all .dht-img{text-align: center; height:45px;}
+.dht-all .dht-data{padding-left:320px; font-size: 12px; color: #999999; font-family: '微软雅黑';}

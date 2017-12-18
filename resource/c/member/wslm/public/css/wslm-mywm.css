@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* 
+ * 微盟V1.1  公用样式
+ * 会员中心
+ * 2014.05.14 by lg
+ */
+body{font-family: microsoft yahei;}
+/*public*/
+.m-l-142{margin-left: 142px;}
+
+/*左侧导航*/
+.af-nav h2{ background: url('img/ico.gif') no-repeat 0px 7px;}
+.af-nav .cur a{color:#2664A2;}
+
+/*灰色内容框*/
+.wmform{border: 1px solid #ddd;background-color: #fafafa;padding:30px 20px;}
+
+/*FORM表单*/
+.wmtable li{padding:6px 0;}
+.wmtable li span{display: inline-block;width: 120px;text-align: right;}
+.wmtable li input.input{width: 256px;height: 26px;border: 1px solid #ccc;padding: 0 2px;}
+.wmform input.button,.wmbtn input.button{width: 120px;height: 100%;border:0;background: none;cursor: pointer;color: #fff;font-weight: 700;}
+.wmform a.uu-btn,.wmbtn a.uu-btn{padding-right: 2px;}
+.wmform a.uu-btn em,.wmbtn a.uu-btn em{padding-left: 2px;}
+
+/*取消 删除 返回类按钮*/
+.unbtn{display:inline-block;width: 49px;margin-right: 10px;text-align: center;height: 24px;line-height: 24px;background: url(img/back-bg.png) no-repeat 0 0;color: #333;}
+a:hover.unbtn{text-decoration: none;}

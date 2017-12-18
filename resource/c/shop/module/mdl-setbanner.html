@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>设置店招</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+    <link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css" >
+    <link rel="stylesheet" href="http://res.csc86.com/v2/c/shop/module/css/mdl-setbanner.css" >
+</head>
+
+<body>
+<div class="g-w660 mdl-setbnnr">
+	<form class="jsSetBnnrFrm" action="">
+	<div class="sjzs-type">
+    	<span>数据展示方式：</span><input id="xyMdlRdo" name="dataShowType" type="radio" value="" checked> <label for="xyMdlRdo">现有模板</label><input id="scPicRdo" class="g-ml50" name="dataShowType" type="radio" value=""> <label for="scPicRdo">上传图片</label>
+    </div>
+    <p class="g-h30"></p>
+    <div class="setbnnr-bd">
+    	<h3>请设置旺铺LOGO</h3>
+        <p class="g-h15"></p>
+        <div class="g-cf set-logo-bd">
+        	<div class="g-fl hd jsLogoPic"><img src="http://res.csc86.com/v2/c/shop/module/image/no-img120.png" alt=""/></div>
+            <div class="g-pr bd">
+            	<p class="g-c8"><strong>旺铺logo：</strong>提升企业形象从上传logo做起~</p>
+                <div class="upld-box">
+                	<input class="ipt-txt" type="text" name="" value="" size="" /><span class="gray-xbtn">浏览<input class="upld-btn jsLogoUpld" type="file" name="" data-url=""></span>
+                </div>
+                <p class="g-c8"><em class="g-cred">*</em>仅支持jpg，png，gif格式图片，大小2M以内，建议尺寸120*120</p>
+            </div>
+        </div>
+    </div>
+    <div class="g-dn setbnnr-bd">
+    	<h3>请选择并上传图片</h3>
+        <p class="g-c8 bnnr-size jsBnnrSize">仅支持jpg，png，gif格式图片，建议尺寸宽<em class="w">1440</em>*高<em class="h">120</em>。</p>
+        <p class="g-h20"></p>
+        <div class="setpic-box">
+        	<table class="setpic-tbl">
+            	<thead>
+                	<tr>
+                    	<th>图片地址</th>
+                        <th>链接地址<span class="g-c8">（只能输入华南城网站内地址）</span></th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+						<td class="g-h10" colspan="3"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<td>
+                        	<div class="upld-box">
+                                <input class="ipt-txt" type="text" name="" value="" /><span class="gray-xbtn">浏览<input class="upld-btn jsPicUpld" type="file" name="" data-url=""></span>
+                            </div>
+                        </td>
+                        <td><input class="ipt-txt jsHref" type="text" name="" value="" /></td>
+                        <td class="td-last">
+                        	<span class="g-cf mdl-cz-box">
+                            	<a class="move-up no-move-up jsMoveUp" href="">上移</a>
+                                <a class="move-down no-move-down jsMoveDown" href="">下移</a>
+                                <a class="del-opt jsDelOpt" class="" href="">删除</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="g-h20"></div>
+    <div class="g-h20"></div>
+    <div class="g-tr mdl-smt-box">
+    	<input class="ok-btn jsOkBtn" type="submit" name="" value="确认"/><input class="cancel-btn jsCnclBtn" type="button" name="" value="取消"/>
+    </div>
+    </form>
+</div>
+<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+<script src="http://res.csc86.com/v2/c/shop/js/seajs-config.js"></script>
+<script>seajs.use('http://res.csc86.com/v2/c/shop/module/js/mdl-setbanner.js');</script>
+</body>
+</html>

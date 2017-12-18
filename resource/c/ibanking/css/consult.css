@@ -1,0 +1,25 @@
+@import url('//res.csc86.com/v2/m/init/css/style.css');
+html{overflow-y: auto;}
+.g-cred{color:#f30;}
+.g-ccd{color:#cdcdcd;}
+.ipt-txt,.txt-area{border:1px solid #ccc;vertical-align:middle;}
+.ipt-txt{width:200px;height:26px;line-height:26px;padding:0 3px;}
+.ipt-smt{display:inline-block;background:#fa6320;background:-moz-linear-gradient(top, #ff873d, #fa6320);background:-o-linear-gradient(top, #ff873d, #fa6320);background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff873d), to(#fa6320)); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff873d,endcolorstr=#fa6320,gradientType=0);
+background:linear-gradient(top, #ff873d, #fa6320);border:none;border-radius:3px;padding:0 15px;height:24px;text-align:center;color:#fff;cursor:pointer;margin-right:2px;}
+
+
+.cnsltBox{width:550px;margin:15px auto 0;}
+.apply-tbl{width:100%;}
+.apply-tbl th{text-align:right;width:300px;font-weight:normal;}
+.apply-tbl th,.apply-tbl td{padding:8px 0;}
+.apply-tbl .tip th,.apply-tbl .tip td{padding:0;}
+.apply-tbl .jkje .ipt-txt{width:70px;margin-right:5px;}
+.apply-tbl .txt-area{width:330px;height:90px;padding:3px;resize:none;}
+.apply-tbl .valid-jkje th,.apply-tbl .valid-jkje td{padding:0;}
+.cnsltBox .frm-opt{width:455px;}
+.cnsltBox .frm-opt .g-fl{padding-left:128px;}
+.cnsltBox .frm-opt .g-fr{margin-top:12px;}
+
+/*表单验证*/
+.valid-tip{display:none;margin-left:5px;background:url(img/verify-icon.png) no-repeat;padding-left:22px;vertical-align:middle;}
+.valid-error{display:inline-block;background-position:0 1px;color:#ff5f5f;}

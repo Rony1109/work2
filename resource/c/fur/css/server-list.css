@@ -1,0 +1,72 @@
+@import url('base.css');
+.Spage{width: 550px;margin: 0 auto;}
+
+.con-l{width: 682px;padding: 16px 18px;}
+.con-l p{line-height: 24px;}
+.con-l img{display: block;margin: 0 auto;}
+.tab-nav{width: 689px;float: left;border-bottom: 1px #dadada solid;}
+.tab-nav li{float: left;display: inline;margin-right: 22px;padding: 0 12px;height: 23px;line-height: 23px;}
+.tab-nav li.cur{background: #8e0500;color: #fff;}
+.tab-nav li.cur a{color: #fff;}
+
+.server-list{margin-top: 33px;width: 684px;}
+.list-main img{float: left;display: inline;}
+.list-main li{overflow: hidden;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px #ccc dashed;}
+.server-intro{float: right;display: inline;width:410px;}
+.shop-name{text-align: right;padding-bottom: 2px;margin-bottom: 10px;line-height: 40px;border-bottom: 1px #ccc solid;}
+.shop-name i{display: inline-block;*display: inline;zoom: 1;margin:10px 0 0 13px;line-height: 28px;font-style: normal;background: url(img/gather.png) no-repeat 0 -1872px;}
+.shop-name span{display: inline-block;*display: inline;zoom: 1;margin-left: 5px;padding-right: 5px;height: 28px;font: 14px/28px Microsoft YaHei,simsun;color: #fff;background: url(img/gather.png) no-repeat right -1872px;}
+.server-intro{overflow: hidden;zoom:1;}
+.server-intro p{overflow: hidden;zoom: 1;margin-bottom: 10px;line-height: 24px;}
+.server-intro p a{float: right;display: inline;width: 79px;height: 28px;text-align: center;color: #fff;font: 700 14px/28px Microsoft YaHei,simsun;background: url(img/gather.png) no-repeat 0 -1823px;}
+.detail-intro img{float: left;}
+.text-main{max-height: 90px;__height:expression(this.scrollHeight > 90 ? "90px" : "auto");overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.server-list .more{display: block;height: 30px;font: 14px/30px Microsoft YaHei,simsun;text-align: center;background: #f3e6e5;}
+
+.con-r{padding: 10px;width: 238px;}
+.con-r li{padding-bottom: 18px;margin-bottom: 18px;width: 220px;border-bottom: 1px #dbdbdb dashed;}
+.con-r li.last{border-bottom: 0;}
+.con-r li a{display: block;height: 235px;overflow: hidden;}
+.con-r li a span{display: block;height: 20px;font-size: 14px;color: #666;}
+.con-r li a img{display: block;margin: 10px 0;}
+/* 详情 */
+.detail-txt{width: 325px;}
+.detail-txt img{display: block;margin-bottom: 15px;float: none;clear: both;margin-left: 0;}
+.detail-txt span{display: block;clear:both;margin-bottom: 10px;height: 16px;overflow: hidden;color: #666;-ms-word-break: break-all;word-break: break-all;}
+.detail-title{position: relative;margin: 49px 0 25px;height: 1px;font-size: 0;line-height: 0;border-top: 1px #e8e8e8 solid;}
+.detail-title span{position: absolute;display: block;left: 0;top: -13px;padding-right:15px;font:700 18px/22px Microsoft YaHei,simsun;height: 22px;background: #fff;}
+.small-t{margin-left: 16px;font-size: 14px;font-weight: normal;color: #000;text-indent: 15px;background: url(img/gather.png) no-repeat -193px -1704px;}
+.tip{width: 646px;padding: 10px;margin: 12px auto 0;background: #fffde8;border: 1px #efefe5 solid;}
+.tip p{font: 15px Microsoft YaHei,simsun;}
+.tip b{font-size: 16px;}
+.tip strong{display: block;margin-bottom: 5px;font:700 18px Microsoft YaHei,simsun;}
+.rule li{text-indent: 14px;font-size: 16px;color: #666;background: url(img/gather.png) no-repeat -194px -1765px;}
+
+/* 团购详情新增 */
+.detail-txt p{color: #666;}
+.detail-txt p i{font-style: normal;font: 25px Microsoft YaHei,simsun;color: #8e0500}
+.detail-txt p span{display: inline;font: 35px Tahoma;color: #8e0500;}
+.tuan-title{height: 63px;overflow: hidden;font: 22px/32px Microsoft YaHei,simsun;}
+.detail-txt  ul{padding: 14px 0;margin-top: 10px;border-top: 1px #bbb dashed;border-bottom: 1px #bbb dashed;}
+.detail-txt li{float: left;display: inline;width: 107px;line-height:24px ;text-align: center;border-right: 1px #ebebeb solid;}
+.detail-txt li del,.detail-txt li b{display: block;font:700 20px Arial;}
+.detail-txt li.last{border-right: 0;}
+
+.time{margin-top: 15px;height: 24px;line-height: 24px;text-indent: 29px;font: 700 14px Microsoft YaHei,simsun;background: url(img/gather.png) no-repeat -179px -2179px;}
+.bs-about .small-t{margin:0 0 15px 0;font: 14px Microsoft YaHei,simsun;}
+.bs-about p{padding-left: 16px;}
+.bs-about p span{display: block;font-size: 14px;font-weight: bold;color: #8e0500;}
+.bs-about .m-t40{margin-top: 40px;}
+
+.tuan-side li{position: relative;height: 258px;}
+.tuan-side li a{margin-bottom: 10px;height: 188px;text-decoration: none;}
+.tuan-side li p {line-height: 22px;}
+.tuan-side li p i{font-style: normal;color: #8e0500;}
+.tuan-side li span{display: block;margin-bottom: 4px;height: 16px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.tuan-side li a.tuan-btn{position: absolute;right: 0;bottom:10px;width: 80px;height: 29px;line-height: 29px;text-align: center;color: #fff;background: #8e0500;}
+.tuan-side-title{margin-bottom: 10px;font:700 14px Microsoft YaHei,simsun;}
+
+/*免责声明 start*/
+.ssclmr{background-color:#f6f6f6;padding:10px 15px;margin:30px 0 40px;color:#888;line-height:22px;font-family:simsun;}
+.ssclmr dt{font-weight:normal;}
+/*免责声明 end*/

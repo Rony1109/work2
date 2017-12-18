@@ -1,0 +1,27 @@
+/*
+	mdl-setAdpic.html,mdl-sethotpro.html,mdl-setpro-autoslt.html 这三页面的样式都在此文件
+	mdl-setAdpic.html 设置广告位
+	mdl-sethotpro.html 设置广告位和产品（自动和手动）
+	mdl-setpro-autoslt.html 设置产品（自动）
+*/
+
+@import url('style.css');
+
+.mdl-sethotpro{padding-bottom:54px;}
+.set-mdl-title{padding:27px 0 27px 41px;}
+.set-mdl-title .valid-tip{margin-left:12px;}
+
+.setadr-itm{padding:27px 0;border-bottom:1px solid #e5e5e5;border-top:1px solid #e5e5e5;}
+.setadr-itm h3,.setpro-itm h3{margin-left:41px;}
+
+.setpro-itm{padding-top:27px;}
+.setpro-bd .slt-num{margin-left:15px;}
+.zd-slt-bd{padding-left:60px;}
+.setpro-guiz{margin-left:60px; height:30px; line-height:30px;}
+
+/*设置产品（自动）*/
+.mdl-setpro-autoslt .set-mdl-title{border-bottom:1px solid #e5e5e5;}
+
+
+/*设置供应产品*/
+.mdl-set-gypro .setpro-itm{padding-top:15px;}

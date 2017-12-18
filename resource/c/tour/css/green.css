@@ -1,0 +1,22 @@
+@import url('base.css');
+.slide {width: 760px; height: 300px; overflow: hidden; position: relative;}
+.slide ul li { width: 760px; height: 300px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px;background: url(img/gather.png) no-repeat 0 -382px; overflow: hidden;}
+.slide ol li.cur {background-position: 0 -338px;}
+
+.intro{width: 230px;height: 300px;background: #f0f0f0;}
+.intro h2{height: 48px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 700 18px/48px Microsoft YaHei,simsun;color: #fff;text-align: center;background: #ea5505;}
+.intro p{margin: 13px;height: 214px;line-height: 24px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+
+.products{overflow: hidden;margin-top: 13px;height: 464px;}
+.products ul{width: 1050px}
+.products li{float: left;display: inline;margin:0 50px 25px 0;width: 160px;}
+.products li a{display: block;height: 218px;overflow: hidden;line-height: 21px;}
+.products li img{display: block;margin-bottom: 15px;}
+
+.recommend{margin-top: 14px;}
+.recommend li{float: left;display: inline;width: 190px;margin-right: 12px;}
+.recommend li.last{margin-right: 0;}
+.recommend li a{display: block;height: 110px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;text-align: center;}
+.recommend li img{display: block;margin-bottom: 10px;border: 1px #ececec solid;}

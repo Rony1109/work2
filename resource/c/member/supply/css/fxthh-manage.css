@@ -1,0 +1,49 @@
+@import url('/v2/m/init/css/style.css');
+@import url('style.css');
+
+/*公共样式*/
+.fxthh-mng,.fxthh-dtl{font-family:simsun;}
+
+/*返修退换货管理列表页*/
+.fxthh-mng .af-hd{border-bottom:none;}
+.fxthh-mng .ucsrch-box .clzt{margin-right:30px;}
+.fxthh-mng .ucsrch-box .clzt .frm-slt{width:auto;min-width:108px;}
+.order-pro-lst li{padding:10px 20px;border-top:1px solid #dfdfdf;}
+.order-pro-lst .frst{border:none;}
+.order-pro-lst .pic{padding:1px;border:1px solid #ebebeb;}
+.order-pro-lst .pic,.order-pro-lst .pic .i{width:60px;height:60px;}
+.order-pro-lst .pic .i{*font-size:53px;}
+.order-pro-lst .pic .i img{max-width:60px;max-height:60px;_width:60px;_height:60px;}
+.order-pro-lst .t{margin-left:75px;padding-top:8px;text-align:left;}
+
+/*返修退换货管理详情页*/
+.fxthh-dtl .ipt-txt{width:120px;}
+.fxthh-dtl-bd .dtl-hd,.fxthh-dtl-frm .tt{font-size:14px;font-weight:bold;padding-bottom:10px;}
+.fxthh-dtl-bd .dtl-hd{margin-left:80px;}
+.fwdxx-lrtbl tbody th,.fwdxx-lrtbl tbody td{vertical-align:top;}
+.fxthh-dtl-frm{background-color:#f6f6f6;padding:15px 40px;margin-top:25px;margin-left:30px;border:1px solid #ddd;}
+.fxthh-dtl-frm .frm-slt{padding:5px 0;min-width:135px;}
+.fxthh-dtl-frm .uc-lrtbl{line-height:28px;}
+.addr-lst li{padding:8px 0;}
+.addr-lst li input{position:relative;top:-2px;}
+.addr-lst li label{margin-right:10px;}
+.addr-lst li a{display:none;}
+.addr-lst .cur a{display:inline-block;}
+.qrsl-czbox .valid-tips{margin-left:10px;}
+
+.fxthh-pop-tip1{background: url(//res.csc86.com/v2/l/artDialog/4.1.7/skins/icons/mem-w.png) no-repeat 48px center;padding:40px 60px 40px 88px;margin-bottom:20px;color:#333;font:14px/24px simsun;}
+
+.fxthh-dtl .imgsrc{max-width: 400px; max-height: 200px;}
+
+.clz-czbox{padding-bottom:30px;}
+.clz-czbox .uc-lrtbl{line-height:28px;}
+.clz-czbox .uc-lrtbl tbody th,.clz-czbox .uc-lrtbl tbody td{ vertical-align:top;}
+.clz-czbox .uc-lrtbl tbody td{*position:relative;}
+.clz-czbox .valid-tips{display:block;position:absolute;*left:0;*top:38px;*width:300px;}
+
+/*受理成功提示页*/
+.fxthh-sl-suc{padding-top:90px;}
+.sl-suc-bd{background:url(../../common/css/img/icon-suc.png) no-repeat 0 center;padding-left:90px;margin-left:150px;font:14px/24px simsun;}
+.sl-suc-bd .hd{color:#24be68;font-size:26px;font-family:Microsoft YaHei;}
+.sl-suc-bd .bd{padding-top:10px;padding-bottom:10px;}
+.sl-suc-bd a{text-decoration:underline;margin-right:20px;}

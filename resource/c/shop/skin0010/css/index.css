@@ -1,0 +1,75 @@
+@import url('style.css');
+
+/*导航*/
+.wp-nav{margin-bottom:10px;}
+
+/*图片轮播*/
+.wp-slide,.slide-box{height:350px;}
+.wp-slide .skin-box-bd{background:none;}
+.slide-box,.slide-lst li{width:1440px;overflow:hidden;}
+.slide-box{margin:0 auto;text-align:center;position:relative;}
+.slide-lst{position:absolute;left:0;top:0;width:7300px;}
+.slide-lst li{float:left;}
+.slide-lst li img{max-width:1440px;max-height:800px;}
+.slide-page{position:absolute;left:50%;margin-left:-500px;top:50%;margin-top:-29px;display:none;}
+.slide-page a{display:inline-block;background-color:#dbdbdb;/*background:url(img/sf.png) no-repeat 0 -210px\9;_background:#dbdbdb;*/width:45px;height:45px;border-radius:23px;text-align:center;color:#639f35;font:bold 20px/45px simsun;overflow:hidden;position:absolute;}
+.slide-page a:hover{background-color:#619e32;/*background:url(img/sf.png) no-repeat 0 -255px\9;_background:#619e32;*/color:#fff;text-decoration:none;}
+.slide-page .prev{left:0;}
+.slide-page .next{right:0;}
+
+/*新品上市*/
+.wp-newpro .skin-box-bd{position:relative;width:1000px;padding-top:6px;padding-bottom:6px;overflow:hidden;}
+.wp-newpro h3{background:url(img/xpss.png) no-repeat;width:256px;height:255px;line-height:999px;overflow:hidden;position:absolute;left:6px;top:6px;}
+.newpro-lst li{float:left;}
+.newpro-lst li a{display:block;overflow:hidden;}
+.newpro-lst1{margin-left:246px;}
+.newpro-lst1 li a{width:374px;height:255px;}
+.newpro-lst2{margin-left:6px;}
+.newpro-lst2 li{margin-right:6px;}
+.newpro-lst2 li a{width:243px;height:404px;border:1px solid #cfcfcf;margin-top:6px;}
+.newpro-lst2 .itm1 a{width:238px;height:198px;}
+
+/*橱窗产品*/
+.wp-cqres .skin-box-bd{padding:15px 0;}
+.cqres-scroll{width:978px;height:330px;margin:0 auto;overflow:hidden;}
+.cqres-lst{width:24700px;position:absolute;left:0;top:0;}
+.cqres-lst li{float:left;width:235px;border:1px solid #ebebeb;margin-right:10px;}
+.cqres-lst .pic .i{width:235px;height:235px;*font-size:211px;}
+.cqres-lst .i img{max-width:235px;max-height:235px;}
+.cqres-lst .itm-bd{background-color:#ebebeb;height:83px;padding:10px 10px 0;position:relative;}
+.cqres-lst .buy{display:block;background-color:#ebebeb;/*background:url(img/sf.png) no-repeat 0 -210px\9;_background:#ebebeb;*/width:45px;height:45px;border-radius:23px;text-align:center;color:#fff;line-height:30px;position:absolute;left:95px;top:-22px;}
+.cqres-lst .buy span{display:none;}
+.cqres-lst .buy i{display:inline-block;background:url(img/sf.png) no-repeat 0 -165px;width:27px;height:45px;}
+.cqres-lst .title{margin-top:8px;height:40px;line-height:20px;text-align:center;overflow:hidden;}
+.cqres-lst .title a{color:#000;}
+.cqres-lst .sc-opt{line-height:22px;_margin-top:5px;}
+.cqres-lst .hover{border-color:#619e32;}
+.cqres-lst .hover .itm-bd{background-color:#619e32;}
+.cqres-lst .hover .buy{background-color:#619e32;/*background:url(img/sf.png) no-repeat 0 -255px\9;_background:#619e32;*/}
+.cqres-lst .hover .buy span{display:inline-block;}
+.cqres-lst .hover .buy i{display:none;}
+.cqres-lst .hover .price{color:#fff;}
+.cqres-lst .hover .title a,.cqres-lst .hover .sc-opt{color:#fff;}
+.cqres-lst .hover .sc-opt i{background-position:-34px -165px;}
+.cqres-lst .hover .favorited i{background-position:-34px -180px;}
+
+
+/*产品搜索*/
+.wp-search .skin-box-bd{padding:20px;}
+
+/*热门产品*/
+.wp-hotpro .skin-box-bd{width:800px;padding-bottom:20px;overflow:hidden;}
+.wppro-lst{margin-left:8px;}
+.wppro-lst li{float:left;width:254px;height:340px;margin-right:8px;margin-top:20px;border:1px solid #ccc;overflow:hidden;}
+.wppro-lst .hover{border-color:#619e32;}
+.wppro-lst .pic{padding:2px;}
+.wppro-lst .pic .i{width:250px;height:250px;*font-size:224px;}
+.wppro-lst .i img{max-width:250px;max-height:250px;}
+.wppro-lst .title,.wppro-lst .ft{margin:0 10px;}
+.wppro-lst .title{margin-top:7px;height:40px;line-height:20px;text-align:center;overflow:hidden;}
+.wppro-lst .title a{color:#444;}
+.wppro-lst .ft{margin-top:6px;}
+.wppro-lst .price{width:90px;height:25px;overflow:hidden;}
+.wppro-lst .opts{margin-top:3px;_margin-top:5px;}
+.wppro-lst .sc-opt{margin-left:15px;}
+.wppro-lst .sc-opt i,.wppro-lst .buy-opt i{vertical-align:top;}

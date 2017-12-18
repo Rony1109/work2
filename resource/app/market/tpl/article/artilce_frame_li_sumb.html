@@ -1,0 +1,11 @@
+{{each dataarray as value index}}
+<li class="datali fadeIn clearfix">
+	<a href="article-detail.html?arcid={{value.id}}" data-url="article-detail.html?arcid={{value.id}}" class="pro-link">
+            <img src="{{value.thumb}}" alt="{{value.title}}" class="pro-sumb" alt="">
+		<div class="pro-info">
+			<h3>{{value.title}}</h3>
+			<p>{{value.descript}}</p>
+		</div>
+	</a>
+</li>
+{{/each}}

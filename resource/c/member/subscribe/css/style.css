@@ -1,0 +1,53 @@
+/**
+ * 会员中心css文件
+ * 
+ */
+
+/* 会员首页依赖的模块 */
+@import url(../../common/css/m-public.css);
+@import url(../../common/css/m-top.css);
+@import url(../../common/css/m-side.css);
+@import url(../../common/css/m-foot.css);
+@import url(../../common/css/app-frame.css);
+
+/**
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+.ml30{margin-left:30px;}
+.ml15{margin-left:15px;}
+.w90{width:90px;}
+.w150{width:150px;}
+.pro-pub{font-family:microsoft yahei;}
+.subscribe .af-list-hd td{padding:0;}
+.subscribe td{text-align:center;}
+.subscribe td .g-ff-s{color:#999;}
+.subscribe .tips{position:relative;border:solid 1px #e9e9e9;padding:10px;background:#f3f3f3;}
+.subscribe .tips p{line-height:22px;padding:5px 15px 0 15px;}
+.subscribe .fold{position:absolute;top:10px;right:10px;width:13px;height:13px;background:url(img/sprites.png) -87px -39px no-repeat;cursor:pointer;}
+.subscribe .unfold{background-position:-87px 0;}
+.s_info{background:#ffffe9;border-top:solid 1px #e9e9e9;border-bottom:solid 1px #e9e9e9;padding:10px 15px;}
+.pdl30{padding-left:30px;}
+.s_info a{margin-left:30px;}
+.rss_add,.rss_m{_display:inline;float:right;width:76px;height:29px;background:url(img/sprites.png) 0 0 no-repeat;color:#fff;line-height:29px;text-align:center;text-decoration:none;font-size:14px;margin-left:10px;}
+.rss_m{background-position:0 -39px;}
+.af-hd2{margin-bottom:15px;}
+.rss_cate{padding:5px 0 12px;border-bottom:solid 3px #e8e8e8;}
+.rss_cate strong{padding:5px 0 0 5px;}
+.rss_cate ul{padding-left:100px;}
+.rss_cate ul li{width:138px;float:left;margin-bottom:10px;margin-right:10px;_display:inline;}
+.rss_cate ul li a{display:block;height:30px;line-height:30px;background:#f3f3f3;color:#2664a2;float:left;padding:0 10px;}
+.rss_cate ul li .cur,.rss_cate ul li a:hover{background:#8a92c3;color:#fff;}
+.rss_cate ul li a span{margin-right:3px;}
+.af-list-bd .thimg .ibox{width:60px;height:60px;background-color:#fff;padding:1px;border:1px solid #ebebeb;overflow:hidden;margin:0 auto;}
+.af-list-bd .thimg .i{width:60px;height:60px;*font-size:60px;*display:block;overflow:hidden}
+.af-list-bd .thimg .i img{max-width:60px;max-height:60px;_display:none}
+.longbtn{display:inline-block;width:155px;height:28px;line-height:28px;text-align:center;text-decoration:none;color:#444;background:url(img/longbtn.png) no-repeat;}
+.pro-cate select{width:176px;height:167px;margin-right:10px;}
+.rss_form select{padding:3px;width:170px;margin-right:10px;}
+.af-txt2{width:90px;}
+.you-select strong span{color:#f60;}
+.rss_form .btn,.codebtn{width:81px;height:27px;background:url(img/sprites.png) 0 -78px no-repeat;line-height:29px;text-align:center;border:none;cursor:pointer;outline:none;}

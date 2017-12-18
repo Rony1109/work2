@@ -1,0 +1,63 @@
+/**
+* 前端模板css文件
+* 
+*/
+
+/* 依赖的模块 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+@import url('/v2/m/register/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+/**
+* 建议的书写顺序
+* 标签样式
+* 公共样式
+* 模块样式
+* 具体内容
+* 
+*/
+
+/* 搜索 */
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #684628;}
+.m-search .ss-txt{border-color: #684628;}
+.m-search div .btn{background: url(img/gather.png) no-repeat 0 -384px;}
+/* 导航 */
+.navigation{padding-top: 5px;height: 30px;background: #684628 url(img/nav-bg.jpg) no-repeat center 0}
+.navigation li{position: relative;float: left;margin-right: 10px;width: 105px;height: 30px;}
+.navigation li a{position: absolute;bottom: -1px;display: block;padding-top: 2px;width: 105px;height: 29px;font: 16px Microsoft YaHei,simsun;text-align: center;color: #fff;}
+.navigation li a:hover,.navigation li a.active{background: #fff;color: #6f5529;text-decoration: none;}
+.sub-nav{height: 26px;line-height: 26px;border: 1px #bdb19c solid;}
+.sub-nav a{float: left;display: inline;margin-right: 26px;color: #666;}
+.sub-nav a:hover{color: #f67301;}
+/* 带逗点列表 */
+.all-list li{height: 26px;line-height: 26px;text-indent: 7px;overflow: hidden;background: url(img/gather.png) no-repeat -398px -125px;}
+/* 边框 */
+.column{border: 1px #e8e8e8 solid;}
+/* 标题 */
+.title-m{height: 30px;line-height: 30px;}
+.title-m h2{font: 16px/30px Microsoft YaHei,simsun;}
+.title-m a{float: right;display: inline;font: 12px/30px simsun;color: #888;}
+.title-m a:hover{color: #f67301;}
+/*网页底部信息栏*/
+.foot {border-top-color: #684628}
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:11px;  color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{position: relative;display:inline-block;*top:-2px;width:9px;height:9px;background:url(img/gather.png) no-repeat -152px -553px;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:-152px -572px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+/*回到顶部*/
+.toolbar-up {position: fixed; bottom: 148px; right: 130px; margin-left:50%; _position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50)); display: none; z-index: 100}
+.toolbar-up a {width: 48px; height: 48px; background: url(img/icon_top.gif) no-repeat;  display: block;}
+.toolbar-up a:hover, .toolbar-up a:active {background: url(img/icon_top_hover.gif) no-repeat;}
+
+/* 分页居中 */
+.Spage{margin: 0 auto;text-align: center;}
+.Spage ul{display: inline;}

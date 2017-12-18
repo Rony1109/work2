@@ -1,0 +1,11 @@
+{{each rowset as value a}}
+{{if value.product_id!=""}}
+<li class="swiper-slide">
+	<a data-href="product?productId={{value.product_id}}">
+		<p class="pic lazyload" data-original="{{value.thumb}}"></p>
+		<p class="t">{{value.title}}</p>
+		<p class="prc">&yen; {{value.desc}}</p>
+	</a>
+</li>
+{{/if}}
+{{/each}} 

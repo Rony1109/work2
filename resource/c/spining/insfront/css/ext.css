@@ -1,0 +1,122 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/c/spining/common/css/template.css');
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*本页面的定制样式*/
+h1.c-n {font-size: 16px; color: #444; font-family: microsoft yahei;}
+h2.c-n {font-size: 14px; color: #444;}
+h1.c-t {padding-bottom: 5px; font-size: 16px; float: left;}
+a.c-n {color: #444}
+a.c-n:hover {color: #f60; text-decoration: none;}
+p.c-n {color: #888}
+p.c-info {background: url(img/icon_li.gif) no-repeat 3px 10px; _background-position: 3px 8px; padding-left: 10px;}
+div.c-title {height: 30px; border-bottom: 2px solid #e8e8e8; line-height: 25px}
+a.c-more {color: #888; padding-right: 10px; background: url(img/icon-group.png) no-repeat -718px -504px; _background: url(img/icon-group-ie6.png) no-repeat -718px -504px; float: right;}
+a.c-more:hover {color: #f60}
+.adverst {margin: 20px auto}	/*广告*/
+
+.main-ext {margin-top: 10px;}
+.main-ext .col-cont {width: 730px; overflow: hidden;}
+.col-cont .top-slide {height: 200px; overflow: hidden; background-color: #f6f6f6; position: relative;}
+.col-cont .top-slide img {width: 500px; height: 200px; overflow: hidden;}
+.col-cont .top-slide li {height: 200px; display:inline;}
+.col-cont .top-slide .inner-info {margin-left: 10px; width: 210px; padding: 5px}
+.col-cont .top-slide .inner-info h1 {height: 50px; overflow: hidden;}
+.col-cont .top-slide .inner-info p {line-height: 22px; height: 110px; overflow: hidden;}
+.col-cont .top-slide .inner-info p.addr {color: #888; line-height: 25px; height: 25px;}
+.col-cont .top-slide .inner-info p.addr span.g-fl {font-family: simsun}
+.col-cont .top-slide ol {position: absolute; bottom: 10px; right: 5px}
+.col-cont .top-slide ol li {margin-right: 3px; width: 10px; height: 3px; _display: inline-block; background-color: #ccc; float: left; text-indent: -9999px; cursor: pointer; overflow: hidden;}
+.col-cont .top-slide ol li.cur {background-color: #FF6600}
+.col-cont .hot-guide {margin-top: 20px;}
+.col-cont .hot-guide .list {margin: 15px 0; width: 730px;}
+.hot-guide .list ul li { width: 345px; height: 145px; border-bottom: 1px dashed #e8e8e8; border-right: 1px solid #e8e8e8; padding-right: 15px; padding-bottom: 15px; display:inline; overflow:hidden; float: left;}
+.hot-guide .list ul li p.c-n {height: 55px; overflow: hidden;}
+.ext-recom div.c-title{ height:28px;}
+.hot-guide .list ul li:nth-child(2n) {border-right: none;padding-right: 0; padding-left: 15px;}
+.hot-guide .list ul li:nth-child(3n) {padding-top: 15px; padding-bottom: 0; border-bottom: none;}
+.hot-guide .list ul li:nth-child(4n) {padding-top: 15px; padding-bottom: 0; border-bottom: none;}
+.hot-guide .list ul li .l-top {margin-bottom: 10px; height: 80px; overflow: hidden;}
+.hot-guide .list ul li .l-top a.g-fl {width: 153px; height: 80px; overflow: hidden;}
+.hot-guide .list ul li .inner-info {margin-left: 10px; width: 166px}
+.hot-guide .list ul li .inner-info h1 {width: 165px;height:22px; _display: inline-block; font-size: 14px;}
+.hot-guide .list ul li .inner-info p {line-height: 22px; font-family: simsun}
+.ext-recom .list li {width: 230px; height: 170px; overflow: hidden; float: left; margin-right: 20px; margin-top: 19px; _margin-top: 21px;}
+.ext-recom .list li:nth-child(3n) {margin-right: 0}
+.ext-recom .list li .info {background-color: #f6f6f6; padding:4px 5px; line-height: 20px}
+.ext-recom .list li .info {background-color: #f6f6f6; line-height: 20px; text-indent: 5px;}
+.ext-recom .list li .info h2{width:220px;height:20px;}
+.ext-recom .list li .info p.c-n {font-family: simsun}
+.ext-recom .list li .info i {color: #888; margin: 0 8px;}
+.ext-recom .list li .img {width: 230px; height: 120px; overflow: hidden; display: block;}
+.main-ext .col-aside {width: 238px; padding: 10px; background-color: #f6f6f6; border: 1px solid #e8e8e8; _overflow: hidden;}
+.col-aside .ext-search {border-bottom: 1px dashed #e8e8e8; padding: 10px 0;}
+.col-aside .ext-search li {height: 30px; margin-bottom: 5px;}
+.col-aside .ext-search input.text {width: 228px; height: 15px; padding: 5px; border: 1px solid #bbb;}
+.col-aside .ext-search select {border: 1px solid #bbb; color: #888; margin-right: 5px; height: 22px;}
+.col-aside .ext-search input.submit {margin-left: 5px; padding: 4px 15px; *padding: 3px 10px 2px; background-color: #F60; border: none; border-radius: 1px; color: #fff; letter-spacing: 2px; cursor: pointer;}
+.col-aside .ext-search input.submit.hover, .col-aside .ext-search input.submit:hover {background-color: #f40}
+.col-aside .ac-pro dd a.img { display:block;width: 220px; height: 115px; overflow: hidden;}
+.col-aside .ac-pro dd h2.c-n{ height:27px; line-height:27px; font-size:12px; overflow:hidden;}
+.col-aside .ac-pro dt {margin: 15px 0 10px;}
+.col-aside .ac-pro dt span {position: relative; padding: 5px; color: #fff; display: inline-block; width: 48px; height: 10px; line-height: 10px;}
+.col-aside .ac-pro dt span.p-now {background-color: #f60;}
+.col-aside .ac-pro dt span.p-ready {background-color: #FFA66B;}
+.col-aside .ac-pro dt span.p-his {background-color: #888;}
+.col-aside .ac-pro dt em {position: absolute; top: -8px; right: -12px; width: 9px; height: 14px; display: inline-block; background: url(img/icon_hot.gif) no-repeat;}
+.col-aside .ac-pro dd {background-color: #fff; padding:5px 10px 10px; border: 1px solid #e8e8e8; margin-bottom: 15px;}
+.col-aside .ac-pro dd:last-child {margin-bottom: 0}
+.col-aside .ac-pro dd p { margin-bottom: 5px; font-family: simsun}
+.col-aside .ac-pro dd i {color: #888; margin: 0 8px;}
+
+.hot-special .list {margin-top: 15px; margin-bottom: 20px;}
+.hot-special .list img {width: 320px; height: 100px; overflow: hidden;}
+.hot-special .list .details {margin-top: 10px;}
+.hot-special .list ul.fot-ul {margin-top: 10px;}
+.hot-special .list ul.fot-ul li:nth-child(3n) {margin-right: 0}
+.hot-special .list li {float: left; width: 320px; margin-right: 19px; overflow: hidden;}
+.hot-special .list li:last-child {margin-right: 0}
+.hot-special .list li p {line-height: 22px;height:22px;}
+.hot-special .list li a {color: #444}
+.hot-special .list li a:hover {color: #f60; text-decoration: underline;}
+
+.myDate {width: 240px; position: relative; padding: 12px 0; border-bottom: 1px dashed #e8e8e8; margin-left: -1px; z-index: 3}
+.myDate .title {height: 25px; line-height: 25px; margin-bottom: 10px;}
+.myDate .title span {margin-right: 10px;font-size: 12px; color: #888; vertical-align: 2px; cursor: pointer; line-height: 20px;}
+.myDate .title span.cur {color: #fff; background: #FF6600 url(img/icon_date.png) no-repeat 22px 1px; *background-position: 23px 3px; _background-image: url(img/icon_date1.png); padding: 1px 15px 1px 3px;}
+.myDate .title span.dwCur {color: #fff; background: #FF6600 url(img/icon_date.png) no-repeat 25px 1px; *background-position: 26px 3px; _background-image: url(img/icon_date1.png); padding: 1px 11px 1px 3px;}
+.myDate b {font: bold 16px 'microsoft yahei'; margin-right: 5px; line-height: 25px;}
+.myDate table {border-collapse: collapse; width: 100%; text-align: center; border: 1px solid #ccc}
+.myDate table td {border: 1px solid #ccc; height: 20px; font: bold 12px 'microsoft yahei'; background-color: #E5E5E5; padding: 3px; cursor: default;}
+.myDate table td.active {background-color: #FF6600; color: #fff}
+.myDate table td.old {color: #B4B3B3; background-color: #f0f0f0}
+/*
+.myDate table td.today {background-color: #fff; color: #444}*/
+
+.myDate table thead td {color: #AFAFAF; border: none; background-color: #f3f3f3; font-size: 10px; font-weight: normal;}
+.myDate .date_msg {position: absolute; width: 200px; height: auto; border: 1px solid #CACACA; border-radius: 1px; box-shadow: 0 0 5px #ccc; padding: 5px; top: 50px; background-color: #fff; display: none;}
+.myDate .date_msg p {color: #444; line-height: 22px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; margin-bottom: 5px;}
+.myDate .date_msg p a {color: #444}
+.myDate .date_msg p a:hover {color: #f60; text-decoration: underline;}
+.myDate .date_msg p.hover a {color: #f60;}
+.myDate .date_msg i {width: 12px; height: 6px; background: url(img/icon_date.png) no-repeat -9px -16px; _background: url(img/icon_date-ie6.png) no-repeat -9px -16px; display: block; top: -6px; left: 50px; position: absolute; overflow: hidden;}
+
+
+
+

@@ -1,0 +1,87 @@
+/**
+ * 皮革专业市场
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('pg-base.css'); /*皮革公用*/
+
+.pg-sc{margin-top:10px;padding:0 0 20px;}
+.sc-sec1{margin:0 0 20px;}
+/*图片轮播*/
+.sc-slide{width:410px;height:250px;}
+/**## 幻灯片 (410 * 250)##**/
+.lh_box2 {width:410px; height:250px; overflow:hidden; position:relative;}
+.lh_box2 .li_lh img {display:block;width:410px; height:250px;}
+.lh_box2 .but {position:absolute; font-size:0; right:10px; bottom:10px;}
+.lh_box2 .but a {display:inline-block; *display:inline; *zoom:1; width:18px; height:10px;  text-indent:-9999; vertical-align:top; overflow:hidden; margin-right:6px; background:#FFF;}
+.lh_box2 .but a.s,.lh_box2 .but a:hover{background:#9A5826;}
+
+/*新闻*/
+.sc-news{_display:inline;width:328px;height:228px;border:solid 1px #e2e2e2;padding:10px;margin:0 0 0 10px;}
+.sc-news h3{font:700 15px "microsoft yahei";}
+.sc-news li{line-height:26px;height:26px;width:318px;background:url(img/dot.gif) 0 11px no-repeat;padding:0 0 0 10px;}
+.sc-news .first{padding:10px 0 5px;}
+.sc-news .first h5{width:328px;height:24px;font-size:16px;text-align:center;color:#a45518;}
+.sc-news .first h5 a{color:#a45518;}
+.sc-news .first p{color:#888;line-height:22px;height:66px;overflow:hidden;}
+
+/*供求*/
+.sc-busi{width:218px;height:248px;overflow:hidden;border:solid 1px #e2e2e2;}
+.sc-busi ul li{position:relative;left:-1px;float:left;height:32px;width:108px;text-align:center;font:700 15px/32px "microsoft yahei";cursor:pointer;border-left:solid 1px #e2e2e2;border-bottom:solid 1px #e2e2e2;background:#f6f6f6;color:#747474;}
+.sc-busi ul .cur{border-bottom:none;background:#fff;color:#444;}
+.sc-busi ol{padding:5px 5px 0 10px;}
+.sc-busi ol li{width:193px;height:26px;background:url(img/dot.gif) 0 11px no-repeat;padding:0 0 0 10px;line-height:26px;}
+
+/*通用大板块*/
+.sc-common{height:465px;border-bottom:solid 1px #e2e2e2;}
+.sc-common2{height:420px;}
+.sc-common h3{line-height:34px;height:34px;border-bottom:solid 2px #e2e2e2;}
+.sc-common h3 strong{text-align:center;font:18px/34px "Microsoft YaHei";border-bottom:solid 2px #aa6d3e;padding:0 8px;}
+
+/*一共用标题*/
+.sc-c-top{line-height:34px;border-bottom:solid 1px #e2e2e2;padding:0 5px;position:relative;}
+.sc-c-top span{position:absolute;left:15px;top:34px;width:13px;height:7px;background:url(img/arrs.png) 0 -84px no-repeat;overflow:hidden;}
+.sc-c-top h4{float:left;font:700 16px/34px "microsoft yahei";color:#a45518;}
+.sc-c-top a{padding:0 5px 0 0;color:#888;}
+.sc-c-top a:hover{color:#f60;}
+.bmn{border-bottom:none;}
+
+/*通用大板块-左*/
+.sc-c-l{width:215px;border-right:dotted 1px #e2e2e2;padding:10px 10px 10px 0;}
+.sc-scdt .first{padding:20px 0 6px;}
+.sc-scdt .first h5{width:215px;height:18px;margin:0 0 6px;}
+.sc-scdt .first .pic{_display:inline;width:112px;height:84px;margin:0 8px 0 0;}
+.sc-scdt .first p{line-height:22px;color:#888;height:88px;overflow:hidden;}
+.sc-scdt ul li{width:205px;height:27px;background:url(img/dot.gif) 0 11px no-repeat;padding:0 0 0 10px;line-height:27px;}
+.sc-c-l-ad{width:215px;height:70px;overflow:hidden;}
+.sc-common2 .sc-c-l-ad{margin:5px 0 0;}
+
+/*通用大板块-中*/
+.sc-c-m{width:470px;padding:10px 15px 10px;border-right:dotted 1px #e2e2e2;}
+.sc-zysc ul li{_display:inline;float:left;margin:15px 13px 0;}
+.sc-zysc ul li a.pic{display:block;width:130px;height:170px;position:relative;overflow:hidden;text-decoration:none;color:#fff;}
+.sc-zysc ul li a.pic .t{position:absolute;bottom:0;left:0;display:block;width:120px;padding:0 5px;height:28px;background:url(img/yellow.8.png) repeat;color:#fff;text-align:center;font:700 14px/28px microsoft yahei;}
+.sc-zysc ul li a.pic .p{display:none;position:absolute;top:0;left:0;width:110px;height:150px;padding:10px;overflow:hidden;background:url(img/yellow.8.png) repeat;text-align:justify;}
+.sc-zysc ul li a.pic .p strong{display:block;margin:0 0 5px;font:700 14px "microsoft yahei";text-align: center;}
+.sc-zysc ul .hover a.pic .t{display:none;}
+.sc-zysc ul .hover a.pic .p{display:block;}
+
+.sc-zysc2 ul li{margin:15px 3px 0;}
+.sc-zysc2 ul li a.pic{width:150px;height:240px;}
+.sc-zysc2 ul li a.pic .t{width:140px;}
+.sc-zysc2 ul li a.pic .p{width:130px;height:220px;line-height:20px;}
+.sc-zysc2 ol li{_display:inline;float:left;margin:0 3px;}
+.sc-zysc2 ol li a{display:block;width:110px;height:33px;line-height:33px;border:solid 1px #e2e2e2;padding:0 0 0 38px;text-decoration:none;background:#fbfbfb url(img/i-icons.png) 17px -263px no-repeat;border-top:none;}
+
+/*通用大板块-右*/
+.sc-c-r{width:260px;padding:10px 0 10px;}
+.sc-yzsj {border-bottom:solid 1px #e2e2e2;padding:0 0 10px;}
+.sc-yzsj ul li{_display:inline;float:left;width:113px;height:57px;overflow:hidden;margin:10px 6px 0;border:solid 1px #e2e2e2;}
+.sc-yzsj ul li a{display:block;width:113px;height:57px;overflow:hidden;position:relative;color:#fff;text-decoration:none;}
+.sc-yzsj ul li a span{display:none;position:absolute;top:0;left:0;padding:5px;width:103px;height:47px;overflow:hidden;line-height:23px;background:url(img/yellow.8.png) repeat;text-align:center;}
+.sc-yzsj ul .hover a span{display:block;}
+
+.sc-jghq ul{padding:0 0 0 10px;}
+.sc-jghq ul li{width:225px;height:25px;background:url(img/dot.gif) 0 11px no-repeat;padding:0 0 0 10px;line-height:25px;}
+.sc-common2 .sc-yzsj{padding:5px 0 15px;}

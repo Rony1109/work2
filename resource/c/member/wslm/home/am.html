@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>公告</title>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" />
+<link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css,v2/c/member/wslm/public/css/wslm-mywm.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+<div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+  <h2>微商联盟</h2>
+  <ul class="nav-items">
+    <li class="bg-none item cur"><a href="#">我的微盟</a></li>
+    <li class="bg-none item"><a href="#">自定义回复</a></li>
+    <li class="bg-none item"><a href="#">自定义菜单</a></li>
+    <li class="bg-none item"><a href="#">微营销</a></li>
+    <li class="bg-none item"><a href="#">微盟相册管理</a></li>
+    <li class="bg-none item"><a href="#">使用指南</a></li>
+  </ul><script>seajs.use(csc.url("res","/f=js/m/statusTab"),function (){csc.statusTab("ul.nav-items>li.item>a");});</script>
+</div>
+<div class="af-bd">
+    <h1 class="af-hd">公告</h1>
+    <div class="amlist">
+      <ul>
+        <li><span class="g-fl"><a href="">公告</a></span><span class="g-fr">10天前</span></li>
+        <li><span class="g-fl"><a href="">公告</a></span><span class="g-fr">10天前</span></li>
+        <li><span class="g-fl"><a href="">公告</a></span><span class="g-fr">10天前</span></li>
+        <li><span class="g-fl"><a href="">公告</a></span><span class="g-fr">10天前</span></li>
+      </ul>
+    </div>
+    <div class="g-h-25"></div>
+    <div class="Spage" style="padding:10px">
+      <ul class="g-tc">
+        <li class="previous hidden"><span>上一页</span></li>
+        <li class="previous"><a href="/favorites/page.html?cscdebug=bug&amp;page=2">上一页</a></li>
+        <li class="first"><a href="/favorites/page.html?cscdebug=bug">1</a></li>
+        <li><a href="/favorites/page.html?cscdebug=bug&amp;page=2">2</a></li>
+        <li class="selected"> <a href="/favorites/page.html?cscdebug=bug&amp;page=3">3</a></li>
+        <li><a href="/favorites/page.html?cscdebug=bug&amp;page=4">4</a></li>
+        <li>...</li>
+        <li><a href="/favorites/page.html?cscdebug=bug&amp;page=9">9</a></li>
+        <li class="last"><a href="/favorites/page.html?cscdebug=bug&amp;page=10">100</a></li>
+        <li class="next"><a href="/favorites/page.html?cscdebug=bug&amp;page=4">下一页</a></li>
+        <li class="next hidden"><span>下一页</span></li>
+        <li>共10页</li>
+        <li>
+          <form action="" method="get" onsubmit="return $PHP_pageto_submit('page',this,3);">
+            <span>到</span><input type="text" name="page" class="pageNo" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"><span>页</span>
+            <input type="submit" class="submit_go" value="确定" />
+          </form>
+        </li>
+      </ul>
+    </div>
+</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+	深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>
+

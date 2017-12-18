@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<title>纺织百科</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="/v2/m/init/css/style.css"/>
+	<link rel="stylesheet" href="css/baike.css"/>
+	<script src="/v2/l/seajs/sea.js"></script>
+	<script src="/v2/m/init/js/init.js"></script>
+</head>
+<body initFlag="baike">
+	<!-- 通用顶部 -->
+	<div class="top-bar">
+		<div class="g-o">
+			<div class="top-csc-group">
+				<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+				<a target="_blank" href="http://sz.csc86.com">深圳</a>
+				<a target="_blank" href="http://nn.csc86.com">南宁</a>
+				<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+				<a target="_blank" href="http://xa.csc86.com">西安</a>
+				<a target="_blank" href="http://zz.csc86.com">郑州</a>
+				<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+			</div>
+		<div class="server-r">
+			<a title="" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a>
+			<span class="v-line t-w"></span>
+			<a class="sethome" href="javascript:">设置首页</a>
+			<span class="v-line t-w"></span>
+			<a class="addfav" href="javascript:">收藏</a>
+		</div>
+		<span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-cf bd w-193">
+				<ul class="csc-bd">
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+				</ul>
+				<ul class="yesmore-bd">
+					<li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，
+			<span class="bd">欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a>
+			<span class="v-line"></span>
+			<a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a>					</span>
+			<span class="v-line"></span>
+		</div>
+	</div>
+	</div>
+	<!-- 搜索 -->
+	<div class="web-search">
+		<div class="g-o">
+			<h1>
+				<a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com">
+					<img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+			</h1>
+			<h2>
+				<a href="javascript:">纺织频道</a>
+			</h2>
+			<div class="g-fl">
+				<div class="selected_channel">
+					<span class="sel_chnel">更多</span>
+					<div class="chnel_list">
+						<ul>
+							<li><a href="javascript:">纺织频道</a></li>
+							<li><a href="javascript:">皮革频道</a></li>
+							<li><a href="javascript:">电子频道</a></li>
+							<li><a href="javascript:">其他频道</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="m-search">
+				<form action="http://search.csc86.com/selloffer/products.html" method="get">
+					<ul class="g-cf">
+						<li class="first cur">
+							<a href="http://search.csc86.com/selloffer/products.html">产品</a>
+						</li>
+						<li>
+							<a href="http://search.csc86.com/company/company.html">公司</a>
+						</li>
+					</ul>
+					<div class="g-cf">
+						<div class="ss-txt">
+							<div style="display:none;" id="comp-ol" class="ss-select">
+								<span class="arr"></span>
+								<ol>
+									<li class="cur">
+										<a href="javascript:">公司名称</a>
+									</li>
+									<li>
+										<a href="javascript:">主营产品</a>
+									</li>
+								</ol>
+							</div>
+							<input type="text" class="txt" name="q" placeholder="请输入产品名称" value="" maxlength="35" autocomplete="off" id="search-txt"></div>
+						<input type="submit" value="搜索" id="searchbtn" class="btn"></div>
+					<ol class="g-cf hot-keys">
+						<li>
+							<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a>
+						</li>
+						<li>
+							<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a>
+						</li>
+						<li>
+							<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:">涂料</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:">无纺布</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a>
+						</li>
+					</ol>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- 导航菜单 -->
+	<div class="nav-banner">
+		<div class="g-o">
+			<ul class="g-cf">
+				<li><a href="javascript:">首页</a></li>
+				<li><a href="javascript:">行情前线</a></li>
+				<li><a href="javascript:">展会活动</a></li>
+				<li><a href="javascript:">访谈导购</a></li>
+				<li class="cur"><a href="javascript:">访谈百科</a></li>
+				<li><a href="javascript:">惠纺织</a></li>
+				<li><a href="javascript:">供爆款</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 通用顶部 -->
+
+	<!-- 推荐热词 -->
+	<div class="f-recommend">
+		<div class="g-o"><a href="http://cncms.csc86.com/special/fangzhi/shipin/" target="_blank" class=“c-n”>“201饰”让我们靓起来</a>
+		<a href="http://cncms.csc86.com/special/fangzhi/bbqn/" target="_blank" class=“c-n”>爸爸去哪儿</a>
+		<a href="http://cncms.csc86.com/special/fangzhi/gbk/one/" target="_blank" class=“c-n”>秋冬爆款 面料直达</a>
+		</div>
+	</div>
+	<div class="g-h10"></div>
+	<div class="g-o">
+		<div class="g-fl box-main">
+			<div class="g-fl baike-focus">
+				<ul>
+					<li><a href="javascript:"><img src="/v2/m/init/image/img.png" alt="" width="450" height="260"/></a></li>
+					<li><a href="javascript:"><img src="/v2/m/head-search/css/img/logo.png" alt="" width="450" height="260"/></a></li>
+					<li><a href="javascript:"><img src="/v2/m/head-search/css/img/search-btn.png" alt="" width="450" height="260"/></a></li>
+				</ul>
+				<ol></ol>
+			</div>
+			<div class="ins-hot">
+				<h2 class="g-ffy"><a href="" target="_blank" title="更多&gt;&gt;" class="more">更多&gt;&gt;</a>电商领航</h2>
+				<ul>
+					<li>
+						<a href="javascript:" title="" target="_blank">2013香港时装节本月14日举行</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">2013香港时装节本月14日举行</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">华南城网“电商先锋 旺货酬宾”活</a>
+					</li>
+					<li>
+						<a href="javascript:" title="2012深圳华南城年货展隆重开展2012深圳华南城年货展隆重开展" target="_blank">2012深圳华南城年货展隆重开展2012深圳华南城年货展隆重开展</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">2013香港时装节本月14日举行</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">华南城网“电商先锋 旺货酬宾”活</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">2012深圳华南城年货展隆重开展</a>
+					</li>
+					<li>
+						<a href="javascript:" title="" target="_blank">2013香港时装节本月14日举行</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-fr box-sub">
+			<div class="baike-keys">
+				<h2 class="g-ffy baike-sub-hd">行业热点</h2>
+				<ul>
+					<li>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/135.html" target="_blank" title="人造革">人造革</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/134.html" target="_blank" title="兔皮">兔皮</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1214/92.html" target="_blank" title="皮革">皮革</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/128.html" target="_blank" title="皮革化学品">皮革化学品</a>
+					</li>
+					<li class="bg">
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/132.html" target="_blank" title="毛皮机">毛皮机</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/128.html" target="_blank" title="皮革化学品">皮革化学品</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/126.html" target="_blank" title="压花机">压花机压花机压花机</a>
+					</li>
+					<li>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/118.html" target="_blank" title="手机皮套">手机皮套</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/115.html" target="_blank" title="皮带">皮带</a>
+					</li>
+					<li class="bg">
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/109.html" target="_blank" title="人造毛皮">人造毛皮</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/111.html" target="_blank" title="绵羊皮">绵羊皮</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/105.html" target="_blank" title="PU皮革">PU皮革</a>
+					</li>
+					<li>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/102.html" target="_blank" title="牛皮">牛皮</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/120.html" target="_blank" title="皮裙">皮裙</a>
+						<a href="http://pige.csc86.com/baike/citiao/2013/1216/123.html" target="_blank" title="皮革清洁剂">皮革清洁剂</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o baike-floor">
+		<div class="g-cf bf-hd">
+			<h2 class="g-fl g-ffy hd-txt">
+				1F<span>纺织原料百科</span>
+			</h2>
+			<div class="g-fr g-tr hd-a">
+				<a href="javascript:" target="_blank">新鑫旺绒布业</a>|
+				<a href="javascript:" target="_blank">达发纺织达发达发纺织</a>|
+				<a href="javascript:" target="_blank">蠡县三东毛纺有</a>|
+				<a href="javascript:" target="_blank">山东莘县伟业织造有限公司</a>|
+				<a href="javascript:" target="_blank">河北泰兴羊绒纺织有限公司</a>
+			</div>
+		</div>
+		<div class="g-cf bf-bd g-fl">
+			<div class="g-h15"></div>
+				<div class="g-fl box-main">
+					<div class="g-fl bm-img">
+							<div class="bm-img">
+						<a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="280" height="120"/></a>
+					</div>
+					<div class="g-h30"></div>
+						<ul class="g-cf g-tc">
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+						</ul>
+					</div>
+					<ul class="g-fr bm-txt">
+						<li>
+							<h3 class="g-ffy fc-ff6600"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<div class="g-fr side-ad">
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="120" /></a>
+			<div class="g-h30"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+			<div class="g-h17"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+		</div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o">
+		<div><a href="javascript:"><img src="/v2/m/init/image/img.png" alt="" width="1000" height="40"/></a></div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o baike-floor">
+		<div class="g-cf bf-hd">
+			<h2 class="g-fl g-ffy hd-txt">
+				2F<span>纺织面料百科</span>
+			</h2>
+			<div class="g-fr g-tr hd-a">
+				<a href="javascript:" target="_blank">新鑫旺绒布业</a>|
+				<a href="javascript:" target="_blank">达发纺织达发达发纺织</a>|
+				<a href="javascript:" target="_blank">蠡县三东毛纺有</a>|
+				<a href="javascript:" target="_blank">山东莘县伟业织造有限公司</a>|
+				<a href="javascript:" target="_blank">河北泰兴羊绒纺织有限公司</a>
+			</div>
+		</div>
+		<div class="g-cf bf-bd g-fl">
+			<div class="g-h15"></div>
+				<div class="g-fl box-main">
+					<div class="g-fl bm-img">
+							<div class="bm-img">
+						<a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="280" height="120"/></a>
+					</div>
+					<div class="g-h30"></div>
+						<ul class="g-cf g-tc">
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+						</ul>
+					</div>
+					<ul class="g-fr bm-txt">
+						<li>
+							<h3 class="g-ffy fc-ff6600"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<div class="g-fr side-ad">
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="120" /></a>
+			<div class="g-h30"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+			<div class="g-h17"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+		</div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o">
+		<div><a href="javascript:"><img src="/v2/m/init/image/img.png" alt="" width="1000" height="40"/></a></div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o baike-floor">
+		<div class="g-cf bf-hd">
+			<h2 class="g-fl g-ffy hd-txt">
+				3F<span>纺织辅料百科</span>
+			</h2>
+			<div class="g-fr g-tr hd-a">
+				<a href="javascript:" target="_blank">新鑫旺绒布业</a>|
+				<a href="javascript:" target="_blank">达发纺织达发达发纺织</a>|
+				<a href="javascript:" target="_blank">蠡县三东毛纺有</a>|
+				<a href="javascript:" target="_blank">山东莘县伟业织造有限公司</a>|
+				<a href="javascript:" target="_blank">河北泰兴羊绒纺织有限公司</a>
+			</div>
+		</div>
+		<div class="g-cf bf-bd g-fl">
+			<div class="g-h15"></div>
+				<div class="g-fl box-main">
+					<div class="g-fl bm-img">
+							<div class="bm-img">
+						<a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="280" height="120"/></a>
+					</div>
+					<div class="g-h30"></div>
+						<ul class="g-cf g-tc">
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+						</ul>
+					</div>
+					<ul class="g-fr bm-txt">
+						<li>
+							<h3 class="g-ffy fc-ff6600"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<div class="g-fr side-ad">
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="120" /></a>
+			<div class="g-h30"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+			<div class="g-h17"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+		</div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o">
+		<div><a href="javascript:"><img src="/v2/m/init/image/img.png" alt="" width="1000" height="40"/></a></div>
+	</div>
+	<div class="g-h20"></div>
+	<div class="g-o baike-floor">
+		<div class="g-cf bf-hd">
+			<h2 class="g-fl g-ffy hd-txt">
+				4F<span>服装家纺百科</span>
+			</h2>
+			<div class="g-fr g-tr hd-a">
+				<a href="javascript:" target="_blank">新鑫旺绒布业</a>|
+				<a href="javascript:" target="_blank">达发纺织达发达发纺织</a>|
+				<a href="javascript:" target="_blank">蠡县三东毛纺有</a>|
+				<a href="javascript:" target="_blank">山东莘县伟业织造有限公司</a>|
+				<a href="javascript:" target="_blank">河北泰兴羊绒纺织有限公司</a>
+			</div>
+		</div>
+		<div class="g-cf bf-bd g-fl">
+			<div class="g-h15"></div>
+				<div class="g-fl box-main">
+					<div class="g-fl bm-img">
+							<div class="bm-img">
+						<a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="280" height="120"/></a>
+					</div>
+					<div class="g-h30"></div>
+						<ul class="g-cf g-tc">
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+							<li><a href="javascript:" target="_blank"><img src="/v2/m/init/image/img.png" alt="" width="130" height="110"/></a><a href="javascript:" target="_blank">批发40D小玫瑰蕾丝黑色</a></li>
+						</ul>
+					</div>
+					<ul class="g-fr bm-txt">
+						<li>
+							<h3 class="g-ffy fc-ff6600"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+						<li>
+							<h3 class="g-ffy"><a href="javascript:" target="_blank">爆料：商家告诉你：为何双11不再低价了？</a></h3>
+							<p>天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了。天猫双11卖了350亿，惊叹，神奇，颠覆，无数的光圈罩在他头上。似乎，人们已经忘记他也有缺失。双11刚结束，亿邦动力网收到一封天猫老卖家的信。他说，他爱天猫，这次双11生意也大卖了...
+							</p>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<div class="g-fr side-ad">
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="120" /></a>
+			<div class="g-h30"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+			<div class="g-h17"></div>
+			<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="260" height="135" /></a>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="g-h20"></div>
+	<div class="g-o foot">
+	    <ul class="g-cf">
+	        <li>
+	            <h3 class="new-entry">新手入门</h3>
+	            <div><a href="http://member.csc86.com/register/phonereg/" target="_blank" rel="nofollow">登录注册</a><a href="http://cncms.csc86.com/help/list8.html" target="_blank" rel="nofollow">如何开店</a><a href="http://cncms.csc86.com/help/zhaochanping/2012/1205/85162.html" id="f-top" target="_blank" rel="nofollow">搜索产品</a></div>
+	        </li>
+	        <li>
+	            <h3 class="integrity">诚信与认证</h3>
+	            <div><a href="http://cncms.csc86.com/special/chengxintuan/index.html" target="_blank" rel="nofollow">诚信供应团 </a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/accreditation/Accreditation/" target="_blank" rel="nofollow">认证服务</a></div>
+	        </li>
+	        <li>
+	            <h3 class="services">企业服务</h3>
+	            <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">旺铺管理</a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a><a href="javascript:" target="_blank" rel="nofollow">招商中心</a></div>
+	        </li>
+	        <li>
+	            <h3 class="community">社区互动</h3>
+	            <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/sns/home/friends.html" target="_blank">好友</a><a href="http://member.csc86.com/sns/circle/default.html" target="_blank">圈子</a></div>
+	        </li>
+	    </ul>
+	</div>
+	<div class="g-o link">
+	    <div class="g-h10"></div>
+	    <div class="love-links"><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">About csc86.com</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+	    <p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+	    <p>华南城控股有限公司 版权所有</p>
+	</div>
+	<div class="toolbar-up">
+		<a href="javascript:" title="返回顶部"></a>
+	</div>
+	<script>seajs.use('./js/init');</script>
+</body>
+</html>

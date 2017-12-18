@@ -1,0 +1,69 @@
+{{if colData.length === 0 && type === 1}}
+	<div class="g-btd cempty g-cf">
+		<i class="icon g-fl icon-ept-2"></i>
+		<div class="g-fl g-fwb g-ml30">
+			<p class="g-fs18">您还没有采购货物，这里空空一片，快去采购需要的货物！</p>
+			<p>现在去 <a href="http://www.csc86.com/purchase/" class="corange g-fs18" title="采购商城" target="_blank">采购商城</a></p>
+		</div>
+	</div>  
+{{else if colData.length === 0 && type !== 1}}
+	{{if role === 'buyers'}}
+	<div class="g-btd cempty g-cf">
+		<i class="icon g-fl icon-ept-2"></i>
+		<div class="g-fl g-fwb g-ml30">
+			<p class="g-fs18">更多询盘可以获得更多的采购价格</p>
+			<p>现在去 <a href="http://{{host.member}}/inquiry/openpublish.html" class="corange g-fs18" title="发布采购计划" target="_blank">发布采购计划</a></p>
+		</div>
+	</div>
+	{{else}}
+	<div class="g-btd cempty g-cf">
+		<i class="icon g-fl icon-ept-3"></i>
+		<div class="g-fl g-fwb g-ml30">
+			<p class="g-fs18">没有匹配到询盘记录，您可以通过下面操作，获取更多询盘！</p>
+			<p>现在去 <a href="http://{{host.inquiry}}/inquiry/management/list" class="corange" title="订阅商机">订阅商机</a> 或 <a href="http://{{host.member}}/quote/index.html" class="corange g-fs18" title="询盘大厅">询盘大厅</a></p>
+		</div>
+	</div>
+	{{/if}}
+{{else}}
+<table class="table">
+	<tr>
+		{{each colNames as v i}}
+		<th width="{{v.width}}">{{v.text}}</th>
+		{{/each}}
+	</tr>
+	{{each colData as v i}}
+	<tr>
+		{{each v as k q}}
+			{{if k.isPro}}
+			<td class="g-cf">
+				<a href="{{k.link}}" class="g-fl" target="_blank"><img src="//img.csc86.com{{k.imgurl}}" height="65" width="65" class="g-db"></a>
+				<a href="{{k.link}}" class="g-fl a" title="{{k.text}}" target="_blank">
+					{{k.text}}
+				</a>
+			</td>
+			{{else if k.isBtn}}
+			<td>
+				{{if type === 1}} <!-- 订单操作 -->
+				<a payhref="{{k.data.olderHref}}" href="javascript:;" title="{{k.text}}" class="corange op">{{k.text}}</a>
+				<div class="g-dn">
+					{"productId":"{{k.data.orderDetails[0].productId}}","orderNo":"{{k.data.orderNo}}","orderTime":"{{k.data.creatTime}}","buyNum":"{{k.data.orderDetails.length}}","showImgs":"{{k.data.orderDetails[0].image}}","consumerAddress":"{{k.data.address}}","link":"{{k.data.orderDetails[0].link}}","proName":"{{k.data.orderDetails[0].productName}}","proImg":"//img.csc86.com{{k.data.orderDetails[0].image}}", "shopid": "{{k.data.shopId}}", "nu": "{{k.data.logisticsNO}}", "deliveryType": "{{k.data.deliveryType}}", "remark": "{{k.data.remark}}", "linkTel": "{{k.data.linkTel}}"}
+				</div>
+				{{else}}
+				<a inquiryhref="{{k.data.inquiryHref}}" href="javascript:;" title="{{k.text}}" class="corange op">{{k.text}}</a>
+				<div class="g-dn">
+					{"productId":"{{k.data.productId}}","inquiryId":"{{k.data.inquiryId}}","showImgs":"{{k.data.productImgUrl}}","productName":"{{k.data.productName}}"}
+				</div>
+				{{/if}}
+			</td>
+			{{else if k.isLink}}
+			<td>
+				<a href="{{k.link}}" title="{{k.text}}" target="_blank">{{k.text}}</a>
+			</td>
+			{{else}}
+			<td>{{k.text}}</td>
+			{{/if}}
+		{{/each}}
+	</tr>
+	{{/each}}
+</table>
+{{/if}}

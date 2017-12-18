@@ -1,0 +1,88 @@
+/**
+ * 皮革百科
+ *
+ */
+
+/* 依赖的模块 */
+@import url('pg-base.css'); /*皮革公用*/
+
+.pg-bk{margin-top:10px;padding:0 0 20px;}
+.bk-sec1{margin:0 0 20px;}
+/*图片轮播*/
+.bk-slide{width:490px;height:250px;background:#ccc;}
+/**## 幻灯片 (490 * 250)##**/
+.lh_box1 {width:490px; height:250px; overflow:hidden; position:relative;}
+.lh_box1 .li_lh img {display:block;width:490px; height:250px;}
+.lh_box1 .but {position:absolute; font-size:0; right:10px; bottom:10px;}
+.lh_box1 .but a {display:inline-block; *display:inline; *zoom:1; width:18px; height:10px;  text-indent:-9999; vertical-align:top; overflow:hidden; margin-right:6px; background:#FFF;}
+.lh_box1 .but a.s,.lh_box1 .but a:hover{background:#9A5826;}
+
+
+.bk-box1{padding:5px 10px;border:solid 1px #e2e2e2;height:240px;}
+.bk-box1 h3{font:700 15px "Microsoft YaHei";padding:5px 0;}
+
+/*新闻列表推荐*/
+.bk-news{_display:inline;width:248px;margin:0 0 0 10px;}
+.bk-news li{width:238px;height:26px;background:url(img/dot.gif) 0 11px no-repeat;line-height:26px;padding:0 0 0 10px;}
+
+/*热门词条*/
+.bk-hotkey{width:198px;}
+.bk-hotkey li{width:198px;height:34px;line-height:34px;overflow:hidden;}
+.bk-hotkey li a{margin:0 8px;}
+.bk-hotkey .bg{background:#f8f8f8;}
+
+/*百科通用模块*/
+.bk-common{border-bottom:solid 1px #e2e2e2;}
+.bk-common .t{line-height:34px;height:34px;border-bottom:solid 2px #e2e2e2;}
+.bk-common .t h3{_display:inline;width:125px;margin:0 10px 0 0;text-align:center;font:18px/34px "Microsoft YaHei";border-bottom:solid 2px #aa6d3e;}
+.bk-common .t span{color:#888;}
+.bk-common .t span a{margin:0 10px;}
+.bk-common .t .more{padding:0 5px 0 0;color:#888;}
+.bk-common .t .more:hover{color:#f60;}
+
+.bk-i-l{width:710px;}
+.bk-i-r{width:280px;}
+.bk-i-r h3{font:700 15px "microsoft yahei";margin:0 0 5px;}
+.p-t-hot{padding:10px 5px;width:700px;}
+.p-t-hot .pic{_display:inline;float:left;width:280px;height:210px;overflow:hidden;*margin:0 20px 0 0;}
+.p-t-hot .txt{padding:0 0 0 300px;width:380px;*padding:0;}
+.p-t-hot .txt h4{margin:0 0 10px;font-size:16px;line-height:24px;max-height:48px;_height:48px;overflow:hidden;color:#a45518;}
+.p-t-hot .txt h4 a{color:#a45518;}
+.p-t-hot .txt p{text-indent:24px;color:#888;line-height:22px;}
+.p-t-hot .txt .note{margin:10px 0 0;color:#888;}
+
+/*图文列表*/
+.p-t-list{clear:both;}
+.p-t-list .piclist{padding:2px 0 0;width:300px;border-top:dotted 1px #bbb;}
+.p-t-list .piclist li{float:left;width:132px;margin:8px 10px 0 5px;}
+.p-t-list .piclist li .pic{display:block;width:132px;height:99px;margin:0 0 5px;overflow:hidden;}
+.p-t-list .piclist li .txt{display:block;width:132px;height:18px;text-align:center;}
+
+.p-t-list .txtlist{float:left;width:400px;}
+.p-t-list .txtlist li{padding:12px 10px;border-top:dotted 1px #bbb;}
+.p-t-list .txtlist li h4{font:700 15px "microsoft yahei";margin:0 0 5px;width:400px;height:20px;_width:370px;}
+.p-t-list .txtlist li p{color:#888;line-height:22px;height:44px;overflow:hidden;}
+
+/*百科人物*/
+.bk-rw{padding:10px 0 0;}
+.bk-rw ul{padding:10px 0 0;}
+.bk-rw li{margin:0 0 20px;}
+.bk-rw li .pic{width:96px;height:72px;overflow:hidden;}
+.bk-rw li .intro{padding:0 0 0 106px;}
+.bk-rw li .intro h5{color:#b37b4f;margin:5px 0;}
+.bk-rw li .intro p{line-height:22px;height:44px;overflow:hidden;}
+
+/*排行榜*/
+.bk-phb{border-top:solid 2px #e2e2e2;}
+.bk-phb h3{padding:10px 0;}
+.bk-phb ul li{position:relative;width:220px;padding:0 0 0 30px;margin:0 0 10px;}
+.bk-phb ul li.g-e{height:18px;}
+.bk-phb ul li span{position:absolute;top:4px;left:4px;width:15px;height:9px;overflow:hidden;background:url(img/i-icons.png) 0 -196px no-repeat;text-indent:-9999em;}
+.bk-phb ul .n2 span{background-position:0 -215px;}
+.bk-phb ul .n3 span{background-position:0 -234px;}
+.bk-phb ul .n4 span{background-position:0 -253px;}
+.bk-phb ul .n1 .pic{_display:inline;float:left;width:48px;height:48px;overflow:hidden;border:solid 1px #e2e2e2;*margin:0 12px 0 0;}
+.bk-phb ul .n1 .txt{padding:0 0 0 60px;width:155px;*padding:0;_width:155px;}
+.bk-phb ul .n1 .txt h5{width:155px;height:18px;font-weight:400;}
+.bk-phb ul .n1 .txt p{color:#888;height:36px;overflow:hidden;}
+

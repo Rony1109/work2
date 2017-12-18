@@ -1,0 +1,118 @@
+/**
+ * 会员中心css文件
+ * 
+ */
+
+/* 会员首页依赖的模块 */
+@import url(../../common/css/m-public.css);
+@import url(../../common/css/m-top.css);
+@import url(../../common/css/m-foot.css);
+
+
+/**
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+
+ /*会员中心左边导航css yq*/
+/*个人资料css yq*/
+#container{/*background:url(img/mem_nav_bg.png) repeat-y 20px 0;*/}
+.mem-nav dl{ padding:10px;}
+.mem-nav{ width:150px;}
+.mem-nav dl{ padding:10px 9px;}
+.mem-nav dt,.mem-nav dd{ float:left; width:55px;}
+.mem-nav dt{ width:90px; height:90px; margin-right:10px;}
+.mem-nav dd.username{ width:72px; height:22px; margin-bottom:40px; overflow:hidden;white-space: nowrap; font-size:14px; font-weight:700; color:#666;text-overflow:ellipsis; -o-text-overflow:ellipsis; word-wrap:normal;}
+
+.mem-nav li{ height:26px; line-height:26px; padding:4px 0 4px 25px; background:url(/css/m/app-frame/img/app-ico.png) no-repeat 0 6px;}
+.mem-nav h2{ height:35px; border-top:1px solid #e8e8e8; line-height:35px;font-family: Microsoft YaHei,simhei;font-size:15px; }
+.mem-nav .left-ad{ margin-top:5px; padding-top:15px; border-top:1px solid #E8E8E8;}
+.mem-nav .left-ad img{ width:140px; height:60px;}
+/*全部应用css yq*/
+.tools{ padding-top:5px;}
+.tools  h2{ border-top:none; }
+.mem-nav em,.af-nav em,.acv_num{float:right;margin:4px 10px 0 0; height:18px; line-height:18px;background:url(img/msg-iocl.png) no-repeat 0 0px; padding-left:3px;}
+.mem-nav i,.af-nav i,.acv_num i{ float:left; padding:0 8px 0 3px; text-align:center; height:18px; line-height:18px;  background:url(img/msg-iocl.png) no-repeat right 0; color:#FFF; font-size:12px; font-weight:700; font-size:12px; font-style:normal; text-align:center;}
+.mem-nav li.cur{ background-color:#f0f0f0;}
+.mem-nav li a{ display:block; width:90px; font-size:14px; color:#404040; }
+.mem-nav li a:hover{ text-decoration:none; }
+/*个人社区css yq*/
+.info h2{padding-left:26px; font-size:14px; color:#067ED4; font-weight:normal; background:url(img/help.png) no-repeat 0 8px;}
+.info li.bus-cir{ background:url(img/bus-cir.png) no-repeat 0 4px;}
+.info li.firen{  background:url(img/firen.png) no-repeat 0 7px;}
+.info li.firmsg{ background:url(img/firmsg.png) no-repeat 0 7px; }
+.info li.card{  background:url(img/card.png) no-repeat 2px 5px;}
+.info li.mem-club{ background:url(img/mem-club.png) no-repeat 0 5px; }
+.info li.firmsg:hover{ background-position:0 -93px;}
+.info li.card:hover{ background-position:2px -95px;}
+.info li.mem-club:hover{ background-position:0 -95px;}
+.info li.firen:hover{ background-position:0 -93px;}
+.info li.bus-cir:hover{ background-position:0 -96px;}
+.info li a{ font-size:13px; color:#888; }
+.mem-nav li:hover a{ color:#067ED4;}
+/*工具导航css yq*/
+.mem-nav h2 a{ float:right; height:20px; width:20px; margin:6px 12px; background:url(img/nav-t-bg.png) no-repeat 0 0;}
+.mem-nav h2 a:hover{ text-decoration:none; background-position:-1px -61px;}
+.mem-nav li.offer{ background-image:url(/css/c/offer/img/off-ico.png); background-position:0 9px;}
+.mem-nav li.buyoffer{background-image:url(/css/c/buyoffer/img/buyoffer-ico.png);}
+.mem-nav li.quote{background-image:url(/css/c/buyoffer/img/quote-ico.png);}
+.mem-nav li.accred{background-image:url(img/accred-ico.png); background-position:-2px 6px; }
+.mem-nav li.mem-shop{ background-image:url(/css/c/shopmember/img/mem-shop.png);}
+.mem-nav li.coll-mem{background-image:url(/css/c/collect/img/coll-mem.png);  background-position:0 9px;}
+.mem-nav li.item08{ background-position:0 -287px; }
+.mem-nav li.item09{ background-position:0 -323px; }
+.mem-nav li.item10{ background-position:0 -357px; }
+.mem-nav li.item11{ background-position:0 -392px; }
+.mem-nav li.offer:hover{ background-position:-1px -91px;}
+.mem-nav li.buyoffer:hover{ background-position:0 -95px;}
+.mem-nav li.quote:hover{ background-position:0 -91px;}
+.mem-nav li.coll-mem:hover{ background-position:0 -88px;}
+.mem-nav li.accred:hover{ background-position:-1px -87px;}
+.mem-nav li.mem-shop:hover{ background-position:0 -92px;}
+.tools h2{ color:#067ED4;}
+.info li.cur{ background-color:#FFF; margin-right:0; border-bottom:1px solid #dfdfdf; border-top:1px solid #dfdfdf;}
+
+/*消息中心css yq*/
+.msg-nav h2{ height:30px; line-height:30px; padding-left:35px; background:#f6f4f4;background: url(/css/c/shopmember/img/mem-shop.png) no-repeat 10px -45px;}
+.msg-nav li{ padding:1px 0;}
+.msg-nav li a{ padding-left:35px;line-height:27px;}
+
+/*消息列表css yq*/
+.msg-list{ padding:20px 15px;}
+.msg-con h2 a{ float:right; font-weight:700; font-size:12px; margin-right:15px;}
+.msg-list ul{ padding:0 20px;}
+.msg-list li{ padding:10px; border-bottom:1px solid #eee; color:#888; overflow:hidden; zoom:1;}
+.msg-list li.cur,.msg-list li.cur a{ color:#333; }
+.msg-list li em{ float:right;}
+.msg-list li a{ float:left; padding-left:25px; width:420px; margin-right:30px;color:#888; background:url(img/msg-way.png) no-repeat 3px 3px;}
+.msg-list li span{float:left;}
+.msg-list li.cur a{ color:#333; background:url(img/del-icol.png) no-repeat 3px 3px;}
+.msg-con .up .check-all-msg{float:left;margin-top:3px;margin-right:10px;margin-left:19px;}
+.msg-list li .msg-of-check{float:left;margin-right:10px;margin-top:3px;*margin-top:0;}
+.msg-con .up .num-page{float:right;margin-right:10px;}
+.msg-con .up .jmp-page{float:right;margin-right:15px;}
+.m-t-3{margin-top:3px;}
+/*消息详情css yq*/
+.msg-tc h2{ background:#FFFFE6; border:none; height:30px; line-height:30px; padding-left:20px;}
+.msg-con .up,.msg-con .down{height:30px; border:1px solid #e4e4e4; padding:5px 5px 0;background:#f3f3f3;}
+.msg-con .cancel,.msg-con .del{ float:left; width:49px; margin-right:10px; text-align:center; height:24px; line-height:24px; background:url(img/back-bg.png) no-repeat 0 0; color:#333;}
+.msg-con .show-up{ margin-left:10px;margin-right:10px;}
+.msg-con .show-up,.msg-con .show-down{ float:right; }
+.msg-con .cancel:hover,.msg-con .del:hover{ text-decoration:none; color:#333;}
+.msg-con .cancel{float:left;}
+/*消息内容css yq*/
+.msg-tc .msg-conn{ margin:10px 25px; line-height:22px; min-height:200px;_height:200px;}
+.msg-tc h4{ line-height:55px;}
+.msg-tc div p{ text-indent:2em;}
+.msg-tc .msg-time{ margin-left:25px;}
+.msg-tc .msg-time span{ display:block;}
+
+.mem-nav em.e2,.af-nav em.e2,.acv_num{background-position:0 -38px;}
+.mem-nav em.e2 i,.af-nav em.e2 i,.acv_num em.e2 i{background-position:right -38px;}
+.mem-nav em.e3,.af-nav em.e3,.acv_num{background-position:0 -57px;}
+.mem-nav em.e3 i,.af-nav em.e3 i,.acv_num em.e3 i{background-position:right -57px;}
+.af-nav .cur{border-left:solid 3px #474D75;}
+.has-children .cur a{padding-left:32px;}

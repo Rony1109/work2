@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="css/bind-phone.css">
+</head>
+<body>
+<div class="single-header">
+    <div class="g-cf single-w header-bd">
+        <div class="g-fl logo">
+            <a class="csc" href=""><img src="images/logo.jpg" width="274" height="51" alt="华南城网"></a><span class="sub">手机验证</span>
+        </div>
+        <div class="g-fr contact">
+            <p class="tip">如有疑问，请拨打：客服中心</p>
+            <p class="uc-icon tel">400 184 8666</p>
+        </div>
+    </div>
+</div>
+
+<div class="single-main">
+    <div class="single-w main-bd">
+        <p class="bind-phone-tips">我们注意到你尚未对手机号码进行验证，基于安全的考虑和国家最新法律法规的要求，只有对手机号码进行验证后，才可以正常登录，只需15秒即可完成。</p>
+        <div class="bind-phone-bd">
+            <form id="bindPhoneFrm" method="post" action="">
+                <table class="uc-lrtbl">
+                    <colgroup>
+                        <col width="250">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th><em class="g-cred">*</em>手机号码</th>
+                            <td><input class="g-w260 ipt-txt" id="phone" type="text" name="" value=""></td>
+                        </tr>
+                        <tr class="valid-code">
+                            <th><em class="g-cred">*</em>验证码</th>
+                            <td><input class="ipt-txt ipt-txt-code" id="validCode" type="text" name="" value="">
+                                <input id="getCodeBtn" class="uc-btn qgray-btn" type="button" value="获取验证码"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><input class="uc-btn yllw-btn" type="submit" name="" value="提交"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer-menu">
+        <a href="http://www.csc86.com/about/" target="_blank">关于华南城</a>
+        <a href="http://www.csc86.com/about/" target="_blank">华南城网</a>
+        <a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank">会员服务</a>
+        <a href="http://ad.csc86.com" target="_blank">广告服务</a>
+        <a href="http://www.csc86.com/about/business.html" target="_blank">商务合作</a>
+        <a href="http://www.csc86.com/about/terms.html" target="_blank">服务条款</a>
+        <a href="http://www.csc86.com/about/legal.html" target="_blank">法律申明</a>
+        <a href="http://www.csc86.com/about/privacy.html" target="_blank">隐私保护</a>
+        <a href="http://www.csc86.com/about/feedback.html" target="_blank">意见反馈</a>
+        <a href="http://www.csc86.com/help/" target="_blank">帮助中心</a>
+        <a href="http://www.csc86.com/sitemap.html" target="_blank">网站地图</a>
+        <a href="http://www.csc86.com/about/contact.html" target="_blank">联系我们</a>
+    </p>
+    <p class="copyright">Copyright © 2009-2016 China South City Holdings Limited. All Rights Reserved</p>
+    <p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+</div>
+
+<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+<script>
+    seajs.use('c2/ucenter/js/bind-phone');
+</script>
+</body>
+</html>

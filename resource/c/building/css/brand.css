@@ -1,0 +1,87 @@
+@import url('./base.css');
+.title-m h2.set-fc{color:#444}
+
+.column-list li{background-position:-498px -1194px;}
+
+.slide {width: 360px; height: 260px; overflow: hidden; position: relative;}
+.slide ul li { width: 360px; height: 260px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;}
+.slide ol li.cur {background: #048a96}
+
+/* 前沿快报 */
+.mid-news{padding: 9px 9px 6px 9px;margin: 0 10px;height: 243px;width: 340px;}
+.set-time span{float: right;display: inline;width: 80px;color: #888;}
+.set-time li{height: 28px;line-height: 28px;}
+.head-line-title{margin-bottom: 10px;}
+.head-line-title a{display: block;height: 20px;text-align: center;font:700 16px/20px simsun;color: #fa6824;}
+.head-line-intro{padding-bottom: 10px;margin-bottom: 8px;color: #888;text-indent: 24px;line-height: 18px;border-bottom: 1px #e8e8e8 dashed;}
+
+/* 最新供应 */
+.supply{width: 258px;height: 258px;}
+.supply h2{height: 38px;text-indent: 9px;font: 700 17px/38px Microsoft YaHei,simsun;background: #f4f4f4;}
+.set-supply{margin: 5px 9px;}
+.set-supply li{background: none;text-indent: 0;}
+.set-supply li span{float: right;display: inline;color: #fa6824;}
+.set-supply li a{display: block;padding-right: 10px;}
+
+/* 企业访谈 */
+.column-box{padding: 11px 11px 5px;height: 245px;overflow: hidden;border: 1px #e2e2e2 solid;border-top: 0;}
+.set-interview li{margin-bottom: 14px;overflow: hidden;}
+.set-interview li img{float: left;}
+.msg{float: right;width: 255px;}
+.msg h3{margin-bottom: 5px;height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.msg span{line-height: 18px;color: #888;}
+/* 精彩活动 */
+.set-special h3{font-size: 14px;height: 18px;line-height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.set-special .msg{width: 225px;color: #888;}
+.set-special li{margin-bottom: 15px;overflow: hidden;}
+/* 品牌榜 */
+.set-li li{height: 30px;line-height: 30px;text-indent: 21px;}
+.column-list li.items01{background-position:-486px -947px;}
+.column-list li.items02{background-position:-486px -978px;}
+.column-list li.items03{background-position:-486px -1008px;}
+.column-list li.items04{background-position:-486px -1038px;}
+.column-list li.items05{background-position:-486px -1068px;}
+.column-list li.items06{background-position:-486px -1099px;}
+.column-list li.items07{background-position:-486px -1124px;}
+.column-list li.items08{background-position:-486px -1151px;}
+/* 供应商 */
+.supply-company{height: 228px;overflow: hidden;border: 1px #e8e8e8 solid;border-top: 0;}
+.supply-company ul{width: 360px;}
+.supply-company li{padding-top: 10px;position: relative;float: left;width: 119px;height: 104px;border-right: 1px #e8e8e8 solid;border-bottom: 1px #e8e8e8 solid;}
+.supply-company li img{display: block;margin: 5px auto;}
+.supply-company li span{display: block;height: 16px;line-height: 16px;text-align: center;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.supply-company a{position: absolute;display: none;top: 0;left: 0;width: 117px;height: 114px;color: #444;text-decoration: none;}
+.supply-company a img{margin-top: 10px;}
+.supply-company li span.bg{position: absolute;display: none;left: 0;top:0;width: 117px;height: 114px;background: #fff;opacity: .9;filter:alpha(opacity=90);}
+.supply-company li:hover a,.supply-company .cur a,.supply-company li:hover .bg,.supply-company .cur .bg{display: block;}
+/* 热门产品 */
+.w630{width: 630px;}
+.hop-products{height: 228px;border: 1px #e8e8e8 solid;border-top: 0;}
+.hop-products li{float: left;display: inline;padding-top: 17px;width: 157px;height: 211px;text-align: center;}
+.hop-products li span{display: block;height: 16px;margin: 8px 10px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.hop-products li a{text-decoration: none;color: #444;}
+.hop-products li b{font: 16px Tahoma;color: #cf0000;}
+.hop-products li:hover,.hop-products li.cur{background: #dfedee}
+/* 招商引资 */
+.capital-attraction{height: 305px;padding:0 11px;overflow: hidden;border: 1px #e8e8e8 solid;border-top: 0;}
+.capital-attraction .title-m{margin: 10px 0 5px;}
+/* 加盟宝典 */
+.pt-0{padding-top: 0;}
+.w355{width: 344px;}
+.join{width: 225px;line-height: 22px;color: #888;}
+.join h3{display: block;margin-bottom: 10px;height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+/* 招商动态 */
+.capital-news{margin: 0 10px;padding: 0 10px;width: 349px;height: 305px;border-right: 1px #e8e8e8 solid;border-left: 1px #e8e8e8 solid;}
+/* 生意红娘 */
+.w220{width: 220px;}
+.set-matchmaker{padding-left: 9px;padding-right:9px}
+.set-matchmaker li{overflow: hidden;height:115px; margin-bottom: 9px;}
+.set-matchmaker .bg{height:29px;background:#000;margin-top:-29px;opacity:.5;
+filter: alpha(opacity=50);}
+.set-matchmaker .t{position: relative;margin-top:-29px}
+.set-matchmaker .t a{color: #fff;display: block;line-height:29px}
+.set-matchmaker .t a:hover{text-decoration: none;}
+.matchmaker{margin-right: ;width: 120px;height: 60px;overflow: hidden;}
+.matchmaker a{display: block;height: 16px;overflow: hidden;-ms-word-break:break-all;word-break:break-all;font-weight: bold;margin-bottom: 5px;}

@@ -1,0 +1,111 @@
+<!--广告轮播 start-->
+<div class="slidebox">
+	<img src="images/bannerEmpty.jpg" class="slidebg" alt="">
+	<div id="slide" class="slide slidecontrol swiper-container swiper-container-horizontal">
+		<ul class="swiper-wrapper">
+			{{each forcePicAds as value index}}
+			<li class="swiper-slide">
+				<a data-slidehref="{{if value.product_id}}product?productId={{value.product_id}}{{else}}cyclePage?href={{value.url}}{{/if}}"><img src="http://www.1668dm.com/{{value.thumb}}" alt=""/></a>
+			</li>
+			{{/each}}
+		</ul>
+		<div class="swiper-pagination swiper-pagination-white"></div>
+	</div>
+</div>
+
+<!--广告轮播 end-->
+
+<!--东盟特色 start-->
+{{if dmCharacteristic.total>2}}
+<div class="flr">
+	<h2>东盟特色</h2>
+	<div class="flr-bd">
+		<div id="scroll" class="swiper-container swiper-container-horizontal">
+			<ul class="g-cf pro-lst scroll-lst swiper-wrapper">
+				{{each dmCharacteristic.product as value index}}
+				<li class="swiper-slide">
+					<a data-slidehref="product?productId={{value.product_id}}">
+						<p class="pic lazyload" data-original="http://www.1668dm.com/{{value.thumb}}"></p>
+						<p class="t">{{value.title}}</p>
+						<p class="prc">{{if value.desc!='价格面议'}}&yen; {{/if}}{{value.desc}}</p>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
+{{/if}}
+<!--东盟特色 end-->
+
+<!--东盟美食 start-->
+<div class="flr">
+	<h2>东盟美食</h2>
+	<div class="flr-bd">
+		<ul class="g-cf pro-lst dfpro-lst">
+			{{each dmFood as value index}}
+			<li>
+				<a data-href="product?productId={{value.product_id}}">
+					<p class="pic lazyload" data-original="http://www.1668dm.com/{{value.thumb}}"></p>
+					<p class="t">{{value.title}}</p>
+					<p class="prc">{{if value.desc!='价格面议'}}&yen; {{/if}}{{value.desc}}</p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<!--东盟美食 end-->
+
+<!--广西特产 start-->
+<div class="flr">
+	<h2>广西特产</h2>
+	<div class="flr-bd">
+		<ul class="g-cf pro-lst dfpro-lst">
+			{{each gxProduct as value index}}
+			<li>
+				<a data-href="product?productId={{value.product_id}}">
+					<p class="pic lazyload" data-original="http://www.1668dm.com/{{value.thumb}}"></p>
+					<p class="t">{{value.title}}</p>
+					<p class="prc">{{if value.desc!='价格面议'}}&yen; {{/if}}{{value.desc}}</p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<!--广西特产 end-->
+
+<!--地方零食 start-->
+<div class="flr">
+	<h2>地方零食</h2>
+	<div class="flr-bd">
+		<ul class="g-cf pro-lst dfpro-lst">
+			{{each saleGoods as value index}}
+			<li>
+				<a data-href="product?productId={{value.product_id}}">
+					<p class="pic lazyload" data-original="http://www.1668dm.com/{{value.thumb}}"></p>
+					<p class="t">{{value.title}}</p>
+					<p class="prc">{{if value.desc!='价格面议'}}&yen; {{/if}}{{value.desc}}</p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<!--地方零食 end-->
+
+<!--国家馆 start-->
+<div class="flr gjg">
+	<h2>国家馆</h2>
+	<div class="flr-bd">
+		<ul class="g-cf gjg-lst">
+			{{each nationalMuseum as value index}}
+			<li>
+				<a data-href="getDmProductList?country={{value.title}}"><img class="lazyload" data-original="http://www.1668dm.com/{{value.thumb}}" src="images/bannerEmpty.jpg" title="{{value.title}}" alt=""/></a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<!--国家馆 end-->

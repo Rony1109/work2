@@ -1,0 +1,90 @@
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+@import url('/v2/m/register/css/style.css');
+a{color: #444}
+a:hover{color: #8e0500;}
+.web-search h1, .web-search .logo-box{width: 249px}
+.web-search h2{clear: both;float: none;padding: 0;margin: 0;height: auto;color: #8e0500;border-left: 0;}
+.web-search h2 a{color: #8e0500;font:bold 20px Microsoft YaHei,simsun;}
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #8e0500}
+.m-search .ss-txt{border-color: #8e0500;}
+.m-search div .btn{background: url(img/search-btn.gif) no-repeat;}
+.m-search div .txt{font-size: 12px;}
+.hot-keys a:hover{color: #8e0500}
+.sub-logo{margin-top: 15px;padding-left: 10px;border-left: 1px solid #CECECE}
+.sub-logo span{font: 14px Microsoft YaHei,simsun;color: #888;}
+.bt-none{border: none;}
+/* 导航 */
+.navigation{min-width:1000px;height: 35px;overflow: hidden;background: #8e0500 url(img/nav-bg.jpg) no-repeat center bottom;}
+.navigation a{color: #fff}
+.main-nav li{float: left;width: 100px;margin-right: 18px;}
+.main-nav li a{float: left;width: 100px;zoom:1;margin-top: 5px;padding-top: 2px;height: 30px;text-align: center;font: 16px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #8e0500;text-decoration: none;background: #fff;}
+.sub-nav{min-width:998px;height: 23px;line-height: 23px;border: 1px #e9dddd solid;border-top: 0;}
+.sub-nav a{padding: 0 15px 0 5px;}
+/* 标题 */
+.title-m{height: 34px;}
+.title-m h2{font:700 14px/34px Microsoft YaHei,simsun;}
+.title-m a{float: right;display: inline;width: 30px;font: 12px/34px simsun;color: #888;}
+.title{height: 44px;font: 16px/44px Microsoft YaHei,simsun;border-bottom: 2px #888 solid;}
+.set-bg{display: block;width: 137px;text-align: center;color: #fff;background:url(img/gather.png) no-repeat 0 -660px;}
+.set-new{text-indent: 66px;background: url(img/gather.png) no-repeat -133px -1313px;}
+.set-hot{text-indent: 66px;background: url(/v2/c/fur/css/img/gather.png) no-repeat 0 -49px;}
+/* 带逗点列表 */
+.list li{overflow: hidden;height: 24px;line-height: 24px;text-indent: 8px;-ms-word-break: break-all;word-break: break-all;background: url(img/icos.gif) no-repeat -497px -887px;}
+
+/* 标题带英文字 */
+.set-en{background: url(img/gather.png) no-repeat 60px 9px;}
+/* 带边框栏目 */
+.column{border: 1px #e6e6e6 solid;}
+
+/* 页脚 */
+.partner-title{position: relative;height: 25px;font:700 16px Microsoft YaHei,simsun;border-bottom: 2px  #e2e2e2 solid;}
+.partner-title span{position: absolute;display: block;left: 0;top: 0;width: 87px;height: 26px;text-align: center;border-bottom: 2px #8e0500 solid;}
+
+.partner{margin-top: 28px;}
+.partner li{float: left;display: inline;margin-right: 18px;width: 125px;height: 64px;border: 1px #cdcdcd solid;}
+.partner li.last{margin-right: 0;}
+
+.foot{border-top-color: #8e0500;}
+.dz_h_box5 {overflow:hidden;}
+.hzhb_list {width:1200px; padding:15px 0 10px 2px;}
+.hzhb_list li {float:left; _display:inline; width:125px; height:64px; margin-right:20px;}
+.hzhb_list li img {width:125px; height:64px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:10px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;overflow: hidden;background:url(img/icos.gif) 0 -182px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -214px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+/* 面包屑 */
+.crumbs{font: 12px simsun;}
+.crumbs span{padding: 0 10px;color: #ccc;}
+
+/* 分页居中 */
+.Spage{margin: 0 auto;text-align: center;}
+.Spage ul{display: inline;}
+
+
+/* 对话框 */
+ .mytable textarea.fc-444{color: #444;}
+ .all-title h2{font: 15px Microsoft YaHei,simsun;}
+ .dailog{position: absolute;top: 200px;left: 200px;background: #fff;width: 561px;border: 3px solid #585858;padding: 15px 0;z-index: 21}
+ .close{float: right;;display: inline;font-size: 18px;cursor: pointer;}
+ .dailog .all-title{border-bottom: 1px #cecece solid;padding: 0 15px 5px;}
+ .dailog-shade{background:#000;opacity: 0.40;filter:alpha(opacity=40);position: absolute;z-index: 20;left: 0;top:0;}
+ .tip{color: #c40712;font: 14px/60px Microsoft YaHei,simhei;text-align: center;}
+ .mytable{width: 372px;margin: 0 auto;}
+ .mytable span{color: #fe0000}
+ .mytable span.fc-888{color: #888;}
+ .mytable textarea{width: 360px;color: #999}
+ .mytable td{padding-bottom: 10px}
+ .input-text{width: 208px;height:28px;border:1px #ccc solid;}
+ .submit{background: url(img/list-style.png) 0 -68px;width: 76px;height: 32px;border: 0}

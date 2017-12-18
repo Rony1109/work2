@@ -1,0 +1,207 @@
+@import url('gstyle.css');
+@import url('reset.css');
+@import url('topinit.css');
+@import url('footerinit.css');
+@import url('page/style_li.css');
+/* panzt 2016/07/28
+ * reset.css 重置样式和基础通用样式
+ * topinit.css 公共头部样式
+ * footerinit.css 公共底部样式
+ */
+
+
+/* 产品列表页公共样式 */
+body{ 
+	font-family: 'Microsoft Yahei'; 
+	min-width: 1200px; 
+	margin: 0 auto; 
+	background-color: #f1f1f1; 
+}
+
+/*重写分页*/
+.Spage{
+	margin-top: 44px;
+}
+.Spage ul li{
+	/*margin-right: -1px;*/
+	margin: 0 5px;
+	vertical-align: middle;
+}
+.Spage ul li a{
+	width: 43px;
+	height: 32px;
+	line-height: 32px;
+	color: #999; 
+}
+.Spage ul .previous, .Spage ul .next{
+	width: 72px;
+	/*margin: 0 10px;*/
+	font-size: 14px;
+}
+.Spage ul .previous a,.Spage ul .next a{
+	background-image: none;
+}
+.Spage_blue ul a:hover, .Spage_blue ul .selected a{
+	border-color:#456fc7;
+	color:#456fc7;
+	position: relative;
+	z-index: 1
+}
+.Spage ul li i{
+	width: 8px;
+	height: 15px;
+	display: inline-block;
+	background-position: 0 -61px;
+	position: relative;
+	left: 5px;
+	top: 3px; 
+}
+.Spage .previous i{
+	/*background-position: -10px -61px;*/
+	left: -5px;
+	display: none;
+}
+
+
+.Spage ul li.hidden span{
+	height: 32px;
+	line-height: 32px;
+	background: url(img/ajaxpage_arr.png) no-repeat;
+	vertical-align: middle;
+}
+.Spage ul li.previous span{
+	background-position: 7px 11px;
+}
+.Spage ul li.next span{
+	background-position: 56px -15px;
+}
+
+.Spage_blue ul li.previous a, .Spage_blue ul li.next a{
+	background: url(img/ajaxpage_arr.png) no-repeat;
+}
+
+.Spage_blue ul li.previous a{
+	background-position: 7px 11px;
+	
+}
+.Spage_blue ul li.previous a:hover{
+	background-position: 7px -40px;
+}
+.Spage_blue ul li.next a{
+	background-position: 56px -15px;
+}
+.Spage_blue ul li.next a:hover{
+	background-position: 56px -65px;
+}
+.Spage input.pageNo{
+	width: 39px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.Spage input.submit_go{
+	margin-left: 5px;
+	width: 62px;
+	height: 34px;
+	cursor: pointer;
+}
+.Spage .submit_go:hover{
+	border:none;
+	color: #fff;
+	background: url(img/btnbg.jpg);	
+}
+
+/* 侧面工具 aside_tools */
+.aside_tools{
+	width: 35px;
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	display:none;
+	z-index: 2;
+}
+.aside_tools a{
+	width: 35px;
+	height: 35px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 15px;
+	background: url(img/aside_tools.png) no-repeat 0 0; 
+}
+.aside_tools a.aside_msg{
+	background-position: 0 -36px;
+}
+.aside_tools .aside_evm{
+	position: relative;
+}
+.aside_tools .aside_evm .evm{
+	width: 178px;
+	height: 172px;
+	position: absolute;
+	top: -127px;
+	left: -178px;
+	display:none
+}
+.aside_tools a.aside_ewyard{
+	background-position: 0 -72px;
+}
+.aside_tools a.aside_top{
+	background-position: 0 -108px;
+}
+
+.aside_tools a em{
+	padding: 3px 5px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	background-color: #ed7d19;  
+	position: relative;
+	top: -5px;
+	left: 25px;
+}
+
+
+
+
+/*五金垂直商城*/
+.jxrxls li{float:left; margin-right:15px; width:283px; border:1px solid #dcdcdc; background-color:#fff;margin-top:20px;}
+.jxrxls li:hover{border:1px solid #5c8ee5;}
+.jxrxls li .jxrximg{margin: 10px; position: relative; width: 263px; height: 265px;}
+.jxrxls li .jxrximg .jxrxicon{position: absolute;left: 0px; top: 0px;}
+.jxrxls li .jxrxtit{height: 48px; line-height: 24px; padding:5px 10px 0px 10px ; font-size: 16px; font-family: '微软雅黑'; color: #1b509d; overflow: hidden;}
+.jxrxls li .jxrxtit a{color: #1b509d; text-decoration: none;}
+.jxrxls li .jxrxmoney{color:#db6221; font-family: '微软雅黑'; padding: 0px 10px;}
+.jxrxls li .jxrxmoney em{font-size: 12px;}
+.jxrxls li .jxrxmoney span{font-size: 22px;}
+.jxrxls li .jxrxslpl{color: #666666;font-family: '微软雅黑';overflow: hidden; padding: 0px 10px 10px 10px; font-size: 14px; }
+.jxrxls li .jxrxslpl .pl{float: left;}
+.jxrxls li .jxrxslpl .pr{float: right;}
+
+/*特价专区*/
+.jxrxls li .tjzqxiad{background-color:#24344b; height:40px; color:#f9e00c;}
+.jxrxls li .tjzqxiad .sp1{float:left; padding-left:10px;height:40px; line-height:40px;}
+.jxrxls li .tjzqxiad .sp1 .em12{font-size:12px;}
+.jxrxls li .tjzqxiad .sp1 .em24{font-size:24px;}
+.jxrxls li .tjzqxiad .sp2{font-size:12px;text-decoration:line-through; height:15px; padding-top:2px; float:left;}
+.jxrxls li .tjzqxiad .sp3{float:right; background: url('../image/tjzqxd.png') no-repeat; color:#fff; line-height:40px; font-size:18px; height:40px; width:107px; text-align:center;}
+.jxrxls li .tjzqxiad .sp3 a{color:#fff; text-decoration: none;}
+/*.jxrxls li .tjzqxiad .sp3 a:hover{text-decoration:none;}*/
+
+/*品牌专区*/
+.ppzqsort{background-color:#fff; margin-top:20px; overflow:hidden;}
+.ppzqsort .sortlf{float:left; width:150px; padding:20px; color:#333; font-family: '微软雅黑';}
+.ppzqsort .sortlf .sp1{float:left; margin-top:-1px;}
+.ppzqsort .sortlf .sp2{float:left;padding-left:20px; font-size:18px; line-height:18px;}
+.ppzqsort .sortrt{float:left; width:900px; padding:10px 10px; font-family: '微软雅黑'; font-size:18px;line-height:18px;}
+.ppzqsort .sortrt li{float:left; padding:10px 20px; cursor: pointer;}
+.ppzqconter{margin-top:20px; background-color:#fff;}
+.ppzqconter .conterlf{padding:30px 20px 20px 20px; overflow:hidden;}
+.ppzqconter .conterlf .conterbq{float:left; width:5px; height:20px; background-color:#153665;}
+.ppzqconter .conterlf .contertit{float:left; line-height:20px; margin-left:9px; font-size:20px;color:#24344b; font-family: '微软雅黑';}
+.ppzqconter .conterrt{padding:0px 20px 30px 20px; overflow:hidden;}
+.ppzqconter .conterrt li{border: 1px solid #e1e1e1;transition-property:border-color;transition-duration:0s ;transition-timing-function:linear;float:left;width:230px; text-align:center; background-color:#fff; margin-right:-1px; margin-bottom:-1px;}
+.ppzqconter .conterrt li:hover{ border-width: 1px;border-style: solid;position: relative;z-index: 1;border-color: #5c8ee5;transition: border-color .5s; cursor: pointer;}
+
+.g-mt104{margin-top:104px; overflow: hidden;}

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>批量-确认订单信息</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="http://res.csc86.com/v2/c/order/css/submit-order.css" type="text/css" >
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<div class="top-bar">
+	<div class="g-o">
+		<div class="top-csc-group">
+			<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+			<a target="_blank" href="http://sz.csc86.com">深圳</a>
+			<a target="_blank" href="http://nn.csc86.com">南宁</a>
+			<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+			<a target="_blank" href="http://xa.csc86.com">西安</a>
+			<a target="_blank" href="http://zz.csc86.com">郑州</a>
+			<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+		</div>
+		<div class="server-r">
+			<a title="" rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a><span class="v-line t-w"></span><a class="sethome" href="#">设置首页</a><span class="v-line t-w"></span><a class="addfav" href="#">收藏</a>
+		</div>
+		<span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd"><a href="//payment.csc86.com" target="_blank">我的账户</a></div>
+			<div class="g-c-f bd w-193">
+			<ul class="csc-bd">
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，<span class="bd">欢迎光临华南城网！<a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span><span class="v-line"></span>
+		</div>
+	</div>
+</div>
+<!-- 网站顶部  end -->
+
+<!-- 头部  start -->
+<div class="head">
+	<div class="g-o">
+		<a href="http://www.csc86.com/" class="g-fl csc" target="_blank"><img width="280" height="57" alt="实体商圈，可信交易。" src="image/csc.png"></a>
+	</div>
+</div>
+<!-- 头部  end -->
+
+<!-- 进度条 start-->
+<div class="g-o prgrss-box prgrss-four-step">
+	<ul class="g-cf prgrss-lst">
+        <li class="itm1 cur">确认订单信息</li>
+        <li class="itm2">付款</li>
+        <li class="itm3">确认收货</li>
+        <li class="itm4">完成</li>
+    </ul>
+    <div class="step step1"></div>
+</div>
+<!-- 进度条 end-->
+
+<!-- 确认订单信息 start-->
+<div id="smtOrderMain" class="order-main">
+	<div class="g-o page-qrorder">
+    	<!--收货人信息 start-->
+    	<div class="wrtaddr">
+        	<div class="wrtaddr-hd">
+            	<h2>收货人信息</h2>
+            </div>
+            <div class="g-h10"></div>
+            <div class="wrtaddr-bd">
+           	  	<ul class="addr-lst jsAddrLst">
+                	<li class="cur"><label><input name="addrRadio" type="radio" value=""> 代东华 广东省深圳市龙岗区平湖华南城1号广场六楼H区 186****7321</label><a class="jsEdit" href="">编辑</a></li>
+                	<li class="new"><label><input name="addrRadio" type="radio" value=""> 使用新地址</label></li>
+                </ul>
+                <div class="g-pr newAddr-box">
+                	<form class="jsNewAddrFrm" method="post">
+                	<table class="newAddr-tbl">
+                        <colgroup>
+                        	<col width="70"/>
+                            <col/>
+                        </colgroup>
+                        <tbody>
+                        	<tr>
+                                <th><em class="g-cred">* </em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</th>
+                                <td><input class="ipt-txt" id="consignee" name="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>所在地区：</th>
+                                <td>
+                                	<div class="areaSlt-box jsAreaSlt">
+                                        <select id="province" class="frm-slt" name="">
+                                          <option value="">请选择</option>
+                                        </select>
+                                        <!--<select id="city" class="frm-slt" name="">
+                                          <option value="">请选择</option>
+                                        </select>
+                                        <select id="district" class="frm-slt" name="">
+                                          <option value="">请选择</option>
+                                        </select>-->
+                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>详细地址：</th>
+                                <td><span class="jsSsq"></span><input class="ipt-txt" id="address" name="" type="text" style="width:392px;"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>手机号码：</th>
+                                <td><input class="ipt-txt" id="phone" name="" type="text" style="width:248px;"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>固定电话：</th>
+                                <td><input class="g-mr10 ipt-txt" id="areaCode" name="" type="text" placeholder="区号" style="width:51px;"><input class="g-mr10 ipt-txt" id="tel" name="" type="text" placeholder="电话号码" style="width:102px;"><input class="ipt-txt" id="extnsn" name="" type="text" placeholder="分机号" style="width:51px;"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">&nbsp; </em>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>
+                                <td><input class="ipt-txt" id="post" name="" type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="phone-tel-tip">
+                    	<span class="fk"></span><span>至少填写一项</span>
+                    </div>
+                    <div class="frm-btns"><a class="newaddr-abtn" href="">保存收货人信息</a></div>
+                    <div class="g-h10"></div>
+                    </form>
+                </div>
+                <div class="g-h15"></div>
+            </div>
+        </div>
+        <!--收货人信息 end-->
+        
+        <form class="jsSmtOrderFrm">
+        <!--商品清单 start-->
+        <div class="probill-box">
+        	<div class="probill-hd">
+            	<h2>商品清单</h2>
+            </div>
+            <div class="probill-bd">
+            	<table class="order-tbl probill-tbl" data-proInf='{"totalNum":"","deposit":"30%","priceRange":[[1,127.00],[12,119.00],[120,114.00]],"isDj":0}'>
+                    <colgroup>
+                        <col />
+                        <col width="194" />
+                        <col width="209" />
+                        <col width="213" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <div class="g-c8 g-tl g-ml15">卖家：<a href="" target="_blank">石狮市摩雳思顿服装有限公司</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<th class="frst">货品</th>
+                            <th>单价（元）</th>
+                            <th>数量</th>
+                            <th class="last">小计（元）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="g-cf order-proitm">
+                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="" target="_blank"><img src="demo/60-60.jpg" height="30" alt=""/></a></div>
+                                    <div class="g-pr proitm-bd">
+                                        <p class="title"><a href="" target="_blank" title="">厂家直销 现货批发加绒加厚保暖衬衫男士长袖保暖牛仔衬衣冬新款</a></p>
+                                        <p class="inf">
+                                            <span>颜色：棕色</span> 
+                                            <span>尺码：42</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="jsOnePrc">65.00</span></td>
+                            <td>
+                                <div class="order-num-opts jsNumOpts">
+                                    <span class="plut-opt">-</span><input class="num-ipt" type="text" name="" value="0"data-controll="true" /><span class="add-opt">+</span>
+                                </div>
+                            </td>
+                            <td><span class="prc jsOneTprc">650.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="g-cf order-proitm">
+                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="" target="_blank"><img src="demo/60-60.jpg" alt=""/></a></div>
+                                    <div class="g-pr proitm-bd">
+                                        <p class="title"><a href="" target="_blank" title="">厂家直销 现货批发加绒加厚保暖衬衫男士长袖保暖牛仔衬衣冬新款</a></p>
+                                        <p class="inf">
+                                            <span>颜色：棕色</span> 
+                                            <span>尺码：42</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="jsOnePrc">65.00</span></td>
+                            <td>
+                                <div class="order-num-opts jsNumOpts">
+                                    <span class="plut-opt">-</span><input class="num-ipt" type="text" name="" value="0"data-controll="true" /><span class="add-opt">+</span>
+                                </div>
+                            </td>
+                            <td><span class="prc jsOneTprc">650.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="g-cf order-proitm">
+                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="" target="_blank"><img src="demo/60-60.jpg" alt=""/></a></div>
+                                    <div class="g-pr proitm-bd">
+                                        <p class="title"><a href="" target="_blank" title="">厂家直销 现货批发加绒加厚保暖衬衫男士长袖保暖牛仔衬衣冬新款</a></p>
+                                        <p class="inf">
+                                            <span>颜色：棕色</span> 
+                                            <span>尺码：42</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="jsOnePrc">65.00</span></td>
+                            <td>
+                                <div class="order-num-opts jsNumOpts">
+                                    <span class="plut-opt">-</span><input class="num-ipt" type="text" name="" value="0"data-controll="true" /><span class="add-opt">+</span>
+                                </div>
+                            </td>
+                            <td><span class="prc jsOneTprc">650.00</span></td>
+                        </tr>
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+        <!--商品清单 end-->
+        
+        <!--给卖家留言 start-->
+        <div class="lvmssg-box">
+        	<span class="g-c8">给卖家留言：</span><input id="lvmssgIpt" class="ipt-txt" name="" type="text" placeholder="可以告诉卖家你的特殊要求，50个字以内" style="width:430px;"><span class="numtip">还可以输入<em>50</em>字</span>
+        </div>
+        <!--给卖家留言 start-->
+        
+        <div class="sprt-box"></div>
+        
+        <!--汇总信息 start-->
+        <div class="ttlInf-box">
+        	<div class="ttlInf-hd"><span>货品种类：<em class="jsTypeNum">3</em>种</span><span>数量总计：<em class="jsAllTnum">30</em>件</span></div>
+            
+            <!--优惠券 start-->
+            <div class="g-mt25 cpn-box">
+            	<h3 class="box-hd"><i></i><span>使用优惠劵（代金劵/现金劵）</span></h3>
+                <div class="box-bd">
+                    <ul class="g-cf g-mt10 cpn-tab">
+                        <li class="cur">可用优惠劵（3）</li>
+                        <li>不可用优惠劵（3）</li>
+                    </ul>
+                    <div class="cpn-tab-c jsKycpn">
+                        <!--有可用 start-->
+                        <ul class="cpn-lst">
+                            <li data-cpnprc="5000" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                            <li data-cpnprc="500" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                            <li data-cpnprc="500" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                        </ul>
+                        <!--有可用 end-->
+                        
+                        <!--无可用 start-->
+                        <p class="no-cpn">
+                            此订单暂无可用的优惠券！您可以<a href="" target="_blank">查看所有优惠券</a>了解使用限制！<br/>
+                            如果您有优惠券号或者实体券，需要先<a href="" target="_blank">激活绑定</a>才能使用！
+                        </p>
+                        <!--无可用 end-->
+                    </div>	
+                    <div class="g-dn cpn-tab-c jsBkycpn">
+                        <!--有不可用 start-->
+                        <ul class="cpn-lst">
+                            <li><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span><span class="g-cred">此订单中没有符合条件的商品</span></li>
+                            <li><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span><span class="g-cred">此券有效期为2015-08-07至2015-09-30</span></li>
+                            <li><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span><span class="g-cred">此券仅限在XXX使用</span></li>
+                        </ul>
+                        <!--有不可用 end-->
+                        
+                        <!--无有效 start-->
+                        <p class="no-cpn">
+                            您的账户中暂无有效优惠券，如有优惠券号或者实体券，请先<a href="" target="_blank">激活绑定</a>!
+                        </p>
+                        <!--无有效 end-->
+                    </div>
+                </div>	
+            </div>
+            <!--优惠券 end-->
+            
+            <div class="ttlInf-bd">
+            	<p>订单总金额：<strong class="g-fs16 jsAllTPrc">1,950.00</strong> 元</p>
+                <p>用劵抵扣金额：<strong class="g-fs16">- <em class="jsCpnPrc">0.00</em></strong> 元</p>
+                <p class="yfTtl-prc jsYfTtlPrc">应付总额：<em class="g-cred g-fs16 jsPayAllTPrc">1,950.00</em> <span>元</span></p>
+                <p class="g-h15"></p>
+                <p><a class="red-abtn jsOrderSmt">提交订单</a></p>
+            </div>
+        </div>
+        <!--汇总信息 end-->
+        </form>
+    </div>
+</div>
+<!-- 确认订单信息 end-->
+
+<!-- 网站底部  start -->
+<div class="g-o link">
+	<div class="g-h10"></div>
+	<div class="love-links">
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+	<p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+	<div class="foot-lg">
+		<span><a target="_blank"  rel="nofollow" href="http://szgabm.qq.com/"><img alt="深圳市网络警察" src="http://res.csc86.com/image/c/index/b01.png"></a></span><span><a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403600900531" target="_blank" rel="nofollow"><img src="http://res.csc86.com/image/c/index/sznet110wangan.png" alt="公共信息安全网络监察"></a></span><span><a rel="nofollow" target="_blank" href="https://cert.ebs.gov.cn/24773903-dda8-4158-ab39-3b36005dc280"><img alt="广东省网络工商" src="http://res.csc86.com/image/c/index/b03.png"></a></span>
+	</div>
+</div>
+<!-- 网站底部 end -->
+<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+<script src="http://res.csc86.com/v2/c/order/js/seajs-config.js"></script>
+<script>seajs.use('http://res.csc86.com/v2/c/order/js/submit-order.js');</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* 
+ * 微盟V1.1  自定义菜单
+ * 会员中心
+ * 2014.05.27 by lg
+ */
+
+ @import url('/v2/m/init/css/style.css');
+ @import url('../../public/css/wslm-mywm.css');
+
+ /*public*/
+.ico-fold,.ico-unfold,.ico-extend,.ico-up,.ico-down,.ico-dis-up,.ico-dis-down
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;font-size:0;overflow:hidden;vertical-align: middle;background-image:url(img/ico.png);background-repeat:no-repeat;}/*icon*/
+.ico-fold{width: 11px;padding-top: 11px;cursor: pointer;}
+.ico-unfold{width: 11px;padding-top: 11px; background-position:0 -12px;cursor: pointer;}
+.ico-extend{width: 20px;padding-top: 8px; background-position:0 -73px;}
+.ico-down{width: 11px;padding-top: 11px; background-position:0 -24px;cursor: pointer;}
+.ico-up{width: 11px;padding-top: 11px; background-position:0 -49px;cursor: pointer;}
+.ico-dis-down{width: 11px;padding-top: 11px; background-position:0 -36px;}
+.ico-dis-up{width: 11px;padding-top: 11px; background-position:0 -61px;}
+
+.menu-list li div:after{display:block;clear:both;content:".";visibility:hidden;height:0;}/*clear*/
+.menu-list li div{zoom:1;}/*clear*/
+.menu-list li div{padding: 16px 0;border-bottom: 1px dotted #ccc;height: 30px;line-height: 26px;}
+.menu-list li div:hover,.menu-list li div.hover,.menu-list li div.li-child:hover,.menu-list li div.li-child.hover{background-color:#f1f1f1;}
+.menu-list li div.li-th{padding:0;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background-color: #ffffe9;height: 30px;line-height: 30px;font-weight: 700;}
+.menu-list li div input{width: 70%;border: 1px solid #ccc;height: 26px;line-height: 26px;margin-right: 6px;padding: 0 4px;}
+.menu-list li div span{float: left;overflow: hidden;height:30px;}
+.menu-list li div span.node{width: 4%;text-align: center;}
+.menu-list li div.li-child{padding: 16px 0;border-bottom: 1px dotted #ccc;height: 26px;line-height: 26px;background-color:#f7f7f7;}
+.menu-list li div.li-child span.node{width: 6%;}
+.menu-list li div span.name{width: 33%;}
+.menu-list li div span.addnode{width: 12%;text-align: center;}
+.menu-list li div.li-child span.addnode{width: 10%;}
+.menu-list li div span.addnode em{color: #2664A2;cursor: pointer;}
+.menu-list li div span.sort{width: 10%;text-align: center;}
+.menu-list li div span.link{width: 30%;}
+.menu-list li div span.option{width: 10%;text-align: center;}
+.menu-list li div span.option em{color: #2664A2;cursor: pointer;}

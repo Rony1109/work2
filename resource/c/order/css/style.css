@@ -1,0 +1,130 @@
+@import url('//res.csc86.com/v2/m/init/css/style.css');
+@import url('//res.csc86.com/v2/c2/newcgsc/css/newtop.css');/*统一用www.csc86.com页面的顶部导航*/
+@import url('//res.csc86.com/v2/m/foot/css/style.css');
+
+/*部分样式重写*/
+a{color:#2664A2;}
+.link{border-top:none;padding-top:2px;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;}
+
+/*头部*/
+.head{height:108px;border-bottom:2px solid #ff6700;}
+.head .csc{margin-top:25px;}
+
+/*基础公用*/
+input{vertical-align:middle;}
+.frm-slt,.ipt-txt{background:#fff;border:1px solid #dcdcdc;height:26px;line-height:26px;}
+.ipt-txt{padding:0 5px;}
+.ipt-txt.error{border:1px solid #ff7300;}
+.red-abtn,.org-abtn{display:inline-block;border:none;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-align:center;color:#fff;font-family:Microsoft YaHei;cursor:pointer;}
+.red-abtn:hover,.org-abtn:hover{text-decoration:none;}
+.red-abtnleft{ padding-right:40px}
+.org-abtn{background:#f9601d;font-size:14px;}
+.red-abtn{background:#ff6700;font-size:16px;height:48px;line-height:48px;padding:0 53px;}
+.red-abtn:hover{background:#ff871d;}
+.org-abtn:hover{background:#d25118;}
+.g-c8{color:#888;}
+.g-cc{color:#ccc;}
+.g-cred{color:#ff6700;}
+.g-mr10{margin-right:10px;}
+.g-ml10{margin-left:10px;}
+.g-ml15{margin-left:15px;}
+
+/*主体内容*/
+.order-main{padding:10px 0;}
+.page-qrorder{background:#fff;width:998px;padding-top:20px;border:1px solid #ddd; font-family: Microsoft YaHei;}
+
+/*进度条*/
+.prgrss-box{padding:26px 0 35px;}
+.prgrss-box .step,.prgrss-box .step-pass{width:627px;height:34px;margin:8px auto 0;overflow:hidden;}
+.prgrss-five-step .step{background:url(img/step-bg1.png) no-repeat;}
+.prgrss-five-step .step-pass{background:url(img/step-pass-bg1.png) no-repeat;}
+.prgrss-four-step .step{background:url(img/step-bg2.png) no-repeat;}
+.prgrss-four-step .step-pass{background:url(img/step-pass-bg2.png) no-repeat;}
+.prgrss-box .step1{background-position:0 0;}
+.prgrss-box .step2{background-position:0 -34px;}
+.prgrss-box .step3{background-position:0 -68px;}
+.prgrss-box .step4{background-position:0 -102px;}
+.prgrss-box .step5{background-position:0 -136px;}
+.prgrss-lst{width:627px;margin:0 auto;color:#888;overflow:visible;}
+.prgrss-lst li{float:left;text-align:center;position:relative;}
+.prgrss-lst .cur{font-weight:bold;}
+.prgrss-five-step .prgrss-lst li{width:125px;}
+.prgrss-five-step .prgrss-lst .itm1{left:-45px;}
+.prgrss-five-step .prgrss-lst .itm2{left:-21px;}
+.prgrss-five-step .prgrss-lst .itm3{left:2px;}
+.prgrss-five-step .prgrss-lst .itm4{left:25px;}
+.prgrss-five-step .prgrss-lst .itm5{left:47px;}
+.prgrss-four-step .prgrss-lst li{width:156px;}
+.prgrss-four-step .prgrss-lst .itm1{left:-62px;}
+.prgrss-four-step .prgrss-lst .itm2{left:-20px;}
+.prgrss-four-step .prgrss-lst .itm3{left:22px;}
+.prgrss-four-step .prgrss-lst .itm4{right:-63px;}
+
+/***主体内容***/
+.order-main{background:#f3f3f3;border-top:1px solid #ebebeb;border-bottom:1px solid #ddd;}
+.order-tbl{background:#fff;width:100%;text-align:center;color:#666;}
+.order-tbl tbody td{padding:18px 0;}
+.order-tbl tbody td span{font-size: 14px;}
+.order-tbl tbody .bd{border-bottom:1px dotted #e3e3e3;}
+.order-tbl .prc{color:#cc0000;font-size:16px;font-weight:bold;}
+.order-tbl .prc.no{ color:#666; font-size:14px; font-weight:normal}
+
+
+/*加减产品数量*/
+.order-num-opts{width:152px;margin:0 auto; height:39px; line-height:39px;}
+.order-num-opts span,.order-num-opts .num-ipt{display:inline-block;height:38px; line-height:38px;vertical-align:middle;}
+.order-num-opts span{background:#fff;width:38px;border:1px solid #b7b7b7; text-align:center;color:#6f7071;font-size:15px;cursor:pointer;-moz-user-select:none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+.order-num-opts .plut-opt,.order-num-opts .no-plut-opt{font-family:simhei;}
+.order-num-opts .num-ipt{width:70px;border:1px solid #b7b7b7; border-left:0px; border-right:0px;text-align:center;}
+.order-num-opts .hover{}
+.order-num-opts .plut-opt{border-right:0px; color: #757575; font-size: 18px;}
+.order-num-opts .add-opt{border-left:0px; color: #757575; font-size: 18px;}
+.order-num-opts .plut-opt.hover,.order-num-opts .add-opt.hover{ background-color: #dcdcdc;}
+.order-num-opts .no-plut-opt,.order-num-opts .no-plut-opt:hover,.order-num-opts .no-add-opt,.order-num-opts .no-add-opt:hover{color:#6f7071;cursor:not-allowed;}
+.order-num-opts .no-plut-opt{border-right: 0px; font-size: 18px; color:#757575}
+.order-num-opts .no-plut-opt:hover,.order-num-opts .no-add-opt:hover{}
+
+
+/*表格中商品信息*/
+.order-proitm .proitm-hd{width:78px;height:78px;}
+.order-proitm .proitm-hd .i{width:78px;height:78px;*font-size:60px;}
+.order-proitm .proitm-hd .i img{max-width:78px;max-height:78px;_width:100%;_height:100%;}
+.order-proitm .proitm-bd{margin-left:100px;text-align:left; height:44px; padding-top:17px;}
+.order-proitm .proitm-bd .inf{margin-top:2px;}
+
+/*提交订单/支付 成功/失败*/
+.status-box{ height:520px; background-color: #fff;}
+.status-box .status-tip{padding-top:215px;height:88px;padding-left:90px;margin-left:355px;}
+.status-box .status-tip h2{font:26px/24px Microsoft YaHei;margin-bottom:8px;}
+.status-box .status-tip p{font:14px/28px '新宋体';}
+.status-box .status-tip .new{ width:435px;}
+.status-box .status-tip a{text-decoration:none; color: #424242;}
+.status-box .status-tip a:hover{color: #ff6700}
+.status-box .success-tip{background:url(img/success.png) no-repeat left 200px;}
+.status-box .success-tip h2{color:#424242;  padding-left:20px;}
+.status-box .fail-tip{background:url(img/fail.png) no-repeat left 200px;}
+.status-box .fail-tip h2{color:#444; padding-left:20px;}
+.status-box .success-num{padding-left:20px;}
+.status-box .error-num{padding-left:20px;}
+
+/*
+.status-box{padding:230px 0 280px;}
+.status-box .status-tip{padding-top:3px;height:60px;padding-left:90px;margin-left:355px;}
+.status-box .status-tip h2{font:26px/24px Microsoft YaHei;margin-bottom:8px;}
+.status-box .status-tip p{font:14px/28px '新宋体';}
+.status-box .status-tip .new{ width:435px;}
+.status-box .status-tip a{text-decoration:underline;}
+.status-box .success-tip{background:url(img/success.png) no-repeat left top;}
+.status-box .success-tip h2{color:#24be68;}
+.status-box .fail-tip{background:url(img/fail.png) no-repeat left top;}
+.status-box .fail-tip h2{color:#444;}
+*/
+/*未开通在线交易时提示*/
+.notrade-tip{padding-right:20px;}
+.notrade-tip h2{font-size:18px;}
+.notrade-tip p{color:#888;}
+
+
+

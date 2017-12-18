@@ -1,0 +1,43 @@
+@import url('common.css');
+
+/*img{width:100%;}*/
+.slidebox{
+  position: relative;
+}
+.slidebg{
+  width:100%;
+}
+.slidecontrol{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.scroll-lst .pic,.ctpro-lst .pic{height:0;}
+.scroll-lst .pic{padding-bottom:100%;}
+.ctpro-lst .pic,.brnd-lst .pic{margin-left:auto;margin-right:auto;width:80%;padding-bottom:80%;background-size:contain;background-repeat:no-repeat;background-position:center center;}
+
+/*皮草惠*/
+.scroll-lst li{width:28%;}
+
+/*女士皮衣、男士皮衣、箱包皮具、女士皮革、男士皮革,名品汇*/
+.ctpro-bd,.brnd-bd{padding:0 13px 15px;}
+.ctpro-lst,.brnd-lst{border-left:1px solid #ededed;border-top:1px solid #e4e4e4;}
+.ctpro-lst li,.brnd-lst li{float:left;text-align:center;overflow:hidden;}
+.ctpro-lst a,.brnd-lst a{display:block;border-right:1px solid #ededed;border-bottom:1px solid #ededed;}
+.ctpro-lst .t,.ctpro-lst .s,.brnd-lst .t{width:90%;margin-left:auto;margin-right:auto;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.ctpro-lst .t,.brnd-lst .t{color:#444;}
+
+.ctpro-lst li{width:33.3%;}
+.ctpro-lst a{padding-top:10px;}
+.ctpro-lst .pic,.brnd-lst .pic{margin-top:10px;}
+.ctpro-lst img{display:inline-block;/*max-width:80%;*/}
+.ctpro-lst .t{color:#444;font-size:14px;}
+.ctpro-lst .s{color:#888;margin-top:3px;}
+
+.brnd-lst li{width:25%;}
+.brnd-lst a{padding:10px 5px;}
+.brnd-lst img{width:100%;}
+.brnd-lst .t{margin-top:5px;}

@@ -1,0 +1,53 @@
+@import url('//res.csc86.com/v2/m/init/css/style.css');
+@import url('/v2/m/newtopnav/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/c/member/common/css/uc-common.css');
+
+/*底部样式重构*/
+.link{border-top:none;padding-top:2px;}
+
+/*头部*/
+.head{height:108px;border-bottom:2px solid #e94545;}
+.head .csc{margin-top:25px;}
+
+/*进度条*/
+.prgrss-box{padding:26px 0 35px;color:#888;font-weight:bold;}
+.prgrss-box .step{background:url(img/step-bg.png) no-repeat;width:424px;height:34px;margin:8px auto 0;overflow:hidden;}
+.prgrss-box .step1{background-position:0 0;}
+.prgrss-box .step2{background-position:0 -34px;}
+.prgrss-lst{width:579px;margin-left:auto;margin-right:auto;}
+.prgrss-lst li{width:193px;float:left;text-align:center;position:relative;}
+
+/*主内容*/
+.apply-zxjy{background-color:#f3f3f3;border-top:1px solid #ebebeb;border-bottom:1px solid #ddd;padding:20px 0;}
+.apply-zxjy-bd{background-color:#fff;width:998px;border:1px solid #dedede;padding-bottom:35px;}
+.apply-zxjy-bd .ipt-txt{width:238px;}
+.prvw-box{width:220px;height:157px;}
+.prvw-box img{max-width:220px;max-height:157px;}
+.upld-box .agray-xbtn{position:relative;overflow:hidden;}
+.upld-box .upld-btn{position:absolute;width:100%;height:24px;right:0;top:0;opacity:.01;filter:alpha(opacity=0);cursor:pointer;}
+
+/*企业基本资料*/
+.apply-step1 .tt{font-size:14px;font-weight:bold;margin-left:48px;margin-top:30px;}
+.idcard-box{padding-top:5px;padding-bottom:8px;}
+.idcard-lst li{float:left;margin-right:35px;}
+.crdnts-sm{line-height:24px;}
+.phone-tel-tip{position:absolute;color:#b5b5b5;left:400px;top:110px;*top:115px;}
+.phone-tel-tip span{display:inline-block;vertical-align:middle;}
+.phone-tel-tip .fk{background:#fff;border:1px solid #bbb;border-left:none;width:8px;height:40px;margin-right:11px;overflow:hidden;}
+.apply-step1 .valid-tips{display:block;margin-top:8px;}
+
+/*申请人认证*/
+.apply-step2 .uc-tab{border-bottom:1px solid #e1e1e1;margin-top:10px;margin:35px 40px 0 40px;}
+.apply-step2 .uc-tab li{width:120px;font-size:12px;font-weight:bold;text-align:center;cursor:pointer;border-color:#e1e1e1;font-family:simsun;}
+.apply-step2 .uc-tab .cur{border-bottom:1px solid #fff;}
+.apply-tabc{padding-top:20px;}
+.dlr-apply .block-tr .valid-tips,.fr-apply .valid-tips{display:block;margin-top:8px;}
+
+/*在线交易申请提交成功*/
+.apply-suc{padding-top:90px;padding-bottom:130px;}
+.apply-suc-bd{background:url(../../common/css/img/icon-suc.png) no-repeat left 20px;margin-left:195px;padding-left:90px;}
+.apply-suc-bd .hd{color:#24be68;font-size:26px;font-family:Microsoft YaHei;}
+.apply-suc-bd .bd{font-size:14px;margin-top:3px;}
+.apply-suc-bd .ft{font-weight:bold;margin-top:15px;}
+.apply-suc-bd .ft span{margin-right:40px;}

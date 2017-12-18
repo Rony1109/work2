@@ -1,0 +1,90 @@
+@import url('style.css');
+
+::-webkit-scrollbar-track-piece{background:#deb46b}
+.scrollbar{
+scrollbar-arrow-color:#fff;
+_scrollbar-arrow-color:#deb46b;
+scrollbar-face-color:#fff;
+scrollbar-darkshadow-color:#deb46b;
+scrollbar-highlight-color:#deb46b;
+scrollbar-3dlight-color:#deb46b;
+scrollbar-shadow-color:#deb46b;
+scrollbar-track-color:#deb46b;
+}
+.go-back{ margin-left: 853px;height:26px;background: #e8cb98 url(img/brand-bg.png) no-repeat 0 0;}
+
+.body-brand{width:960px;position:relative;z-index:1}
+.layout-left{position:relative;z-index:2}
+.layout-right-bd-bg{width:960px;background: #deb46b;}
+.brand-bd{width:918px;height:650px;margin-left:15px;padding-right:8px;}
+
+.banner-box{background:#efdab5;padding:8px}
+
+.banner{position:relative;overflow:hidden;width:645px;height:255px;background:#fff;}
+.banner ul li{position:absolute;display:none}
+.banner ul li.cur{display:block}
+.banner ol{position:absolute;right: 270px;bottom:8px;z-index:3}
+.banner ol li{float:left;width:14px;height:14px;margin-right:15px;color:#ff4e00; text-indent:-9999pt; background:#ff9034;border-radius:7px;cursor:default;overflow:hidden;}
+.banner ol li.cur{background:#fff}
+
+
+.brand-logo{width:210px;margin-right:12px;_margin-right:6px;}
+.brand-author{margin: 18px 0 20px;}
+.brand-author span{width: 100px;height:19px; position:relative;top: -2px; margin-left: 4px;padding-left: 5px; color:#fff;background:url(img/brand-bg.png) no-repeat 0 -100px;}
+.brand-history{position:relative;width:210px;height:35px;white-space:nowrap;line-height:34px;border: solid 1px #e3cfad;border-top:0;border-bottom-color:#d8c5a4;background: #f7f7f7 url(img/brand-bg.png) no-repeat 186px -44px;text-align:left}
+.brand-history-cur{background-position:186px -134px;}
+.brand-history ol{display:none;margin-left: -1px;width: 198px;padding:0 6px;background:#f7f7f7;position:absolute;border: solid 1px #e3cfad;border-width: 0 1px;height:210px;overflow-y:scroll;}
+.brand-history-cur ol{display:block}
+.brand-history li{height:35px;overflow:hidden;border-bottom:dashed 1px #e1e1e1}
+.brand-history .last{border:0;text-align:center}
+.brand-history a{width: 160px;height: 36px;padding-left:15px;color:#333;display:block;overflow: hidden;white-space: pre-wrap;}
+.brand-history ol a{padding-left:10px}
+.brand-history a:hover{text-decoration:none;}
+
+.brand-main{width:620px;margin-left:12px;color:#333}
+.brand-sub{width:235px}
+
+.special-title{font-size:28px;text-align: center;color:#212121}
+.special-title-small{margin-top: 35px;background: url(img/brand-bg.png) no-repeat 0 -200px;height: 35px;line-height: 35px;font:normal 22px 'Microsoft YaHei';}
+.special-title-small span{display: block;border-bottom: 1px #000 solid;height: 34px;line-height: 34px;margin-left: 38px;}
+
+.lead-text{line-height:22px;margin-bottom:50px;height:66px;overflow:hidden}
+
+.special-text{ line-height: 26px;font-size: 14px;}
+.special-text-img{width: 220px;position:relative;}
+.special-text-img a,.special-text-img .bg{display:block;position: absolute;bottom: 0;left: 0;text-align: center;width: 100%;height: 30px;line-height: 30px;color: #fff;z-index:1}
+.special-text-img .bg{background-color:#000;opacity: 0.67;filter:alpha(opacity=67);z-index:0}
+.special-text .g-fl{margin-right: 15px;}
+.special-text .g-fr{margin-left: 10px;}
+
+.end-text{padding:20px;border:solid #000;border-width:5px 0 1px}
+
+.special-zan li{width:165px;height:76px}
+.special-zan li span{color: #fc6824;}
+.special-zan .m{margin:0 auto}
+.zan_btn{background:#f0f0f0 url(../image/icon.gif) no-repeat;display: block;width: 165px;height: 55px;}
+.zan_bn1{background-position: 22px -66px}
+.zan_bn2{background-position: 22px 5px}
+.zan_bn3{background-position: 22px -139px}
+
+.comment-title{margin-bottom: -22px;}
+.g-comment-login{background:#fff}
+.g-comment-info .g-comment-time{color:#fff;}
+
+.special-side-title{background: url(../image/icon-1.gif) no-repeat; display: block;width: 89px;height: 28px;color: #fff;line-height: 28px;text-indent: 28px;font-weight:400}
+.tit_1{background-position: 0 -217px;}
+.tit_2{background-position: 0 -323px;}
+.tit_3{background-position: 0 -382px;}
+
+.special-add li{display: block;margin-bottom: 15px}
+
+.random_list{width:235px;overflow:hidden;}
+.random_list ul{width:250px}
+.random_list li{width: 110px;height: 110px;float: left;/* display: inline; */margin: 15px 15px 0 0;}
+
+.brandimage{position:relative;overflow:hidden;width:1100px;height:700px;margin: -700px 0 0 245px;z-index:0;background:#fff;}
+.brandimage ul li{position:absolute;display:none}
+.brandimage ul li.cur{display:block}
+.brandimage ol{position:absolute;right:6px;bottom:8px;z-index:3}
+.brandimage ol li{float:left;width:19px;height:19px;margin-right:19px;color:#ff4e00; text-indent:-9999pt; background:#ff9034;border-radius:9px;cursor:default;overflow:hidden;}
+.brandimage ol li.cur{background:#fff}

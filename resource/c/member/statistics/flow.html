@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<title>前端模板</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="/v2/m/init/css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="/v2/l/seajs/sea.js"></script>
+	<script src="/v2/m/init/js/init.js"></script>
+</head>
+<div class="g-o">
+	<div style="width:840px;margin:60px 0 0 230px"><!-- 在旧版基础上开发 -->
+		<div class="box">
+			<h2 class="hd">流量统计（2014-04-24）<div class="g-di help"><span class="g-dib help-ico"></span><div class="help-bd g-fs14">流量统计帮助您整体了解店铺情况，提供重点指标趋势<br/>图，并从来源、访客等分析维度提供统计数据。</div></div></h2>
+			<div class="bd">
+			<div class="flow-table"><a href="javascript:" class="g-fr down">下载报表</a>统计开通日期：2014-05-08 </div>
+			<table width="100%" class="table">
+				<thead>
+					<tr>
+						<td width="128">时间</td>
+						<td width="238">旺铺浏览次数(次）</td>
+						<td width="238">访客数(人）</td>
+						<td width="238">人均浏览页数(页）</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>昨日</th>
+						<td>30</td>
+						<td>30</td>
+						<td>3.6</td>
+					</tr>
+					<tr>
+						<th>最近7天</th>
+						<td>300</td>
+						<td>300</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<th>最近30天</th>
+						<td>300</td>
+						<td>300</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<th>总计</th>
+						<td>300</td>
+						<td>300</td>
+						<td>300</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+		<div class="box">
+			<h2 class="hd">流量趋势图</h2>
+			<div class="bd tabs">
+				<div class="tips g-fs14">您的流量有点低哦，<a href="javascript:">报名参加活动</a>有助于流量提升。<a href="javascript:" class="tips-close"></a></div>
+				<div class="g-h15"></div>
+				<ul class="tabs-hd">
+					<li class="cur" data-flow="true">最近7天</li>
+					<li data-line="true">最近30天</li>
+				</ul>
+				<div class="tabs-bd tabs-bd-cur">
+					<div class="g-tr flow-line-hd">
+						<span class="g-dib pv-color"></span> 浏览次数&nbsp; &nbsp;
+						<span class="g-dib uv-color"></span> 访客数
+					</div>
+					<div id="flowTrend7" class="flow-line"></div>
+				</div>
+				<div class="tabs-bd">
+					<div class="g-tr flow-line-hd">
+						<span class="g-dib pv-color"></span> 浏览次数&nbsp; &nbsp;
+						<span class="g-dib uv-color"></span> 访客数
+					</div>
+					<div id="flowTrend30" class="flow-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<h2 class="hd">访客来源分布</h2>
+			<div class="bd tabs">
+				<ul class="tabs-hd">
+					<li class="cur" data-flow="true">最近7天</li>
+					<li data-donut="true">最近30天</li>
+				</ul>
+				<div class="tabs-bd tabs-bd-cur">
+					<!-- <div class="g-fr flow-line-hd flow-donut-hd">
+						<span class="g-dib uv-color"></span> 产品搜索页<br/>
+						<span class="g-dib pv-color"></span> 店铺搜索页<br/>
+						<span class="g-dib active-color"></span> 活动页面<br/>
+						<span class="g-dib other-color"></span> 站内其它<br/>
+						<span class="g-dib outside-color"></span> 站外
+					</div> -->
+					<div id="product7" class="flow-donut"></div>
+				</div>
+				<div class="tabs-bd">
+					<!-- <div class="g-fr flow-line-hd flow-donut-hd">
+						<span class="g-dib uv-color"></span> 产品搜索页<br/>
+						<span class="g-dib pv-color"></span> 店铺搜索页<br/>
+						<span class="g-dib active-color"></span> 活动页面<br/>
+						<span class="g-dib other-color"></span> 站内其它<br/>
+						<span class="g-dib outside-color"></span> 站外
+					</div> -->
+					<div id="product30" class="flow-donut"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>seajs.use('./js/flow',function(f){
+	f.init({
+		trend:{
+			'7':{
+				pv:[100,123,232,200,189,240,300],
+				uv:[90,53,32,20,89,40,100],
+				date:['05月02日', '05月03日', '05月04日', '05月05日', '05月06日', '05月07日', '05月08日']
+			},
+			'30':{
+				pv:[100,123,232,123,232,200,189,123,232,123,232,200,200,189,240,123,232,123,232,200,123,200,189,123,232,123,232,200,240,300],
+				uv:[90,53,32,20,89,40,100,123,232,200,189,240,300,32,20,89,40,100,123,232,200,189,240,300,123,232,200,189,240,300],
+				date:['04月09日','04月10日','04月11日','04月12日', '04月13日', '04月14日', '04月15日', '04月16日', '04月17日','04月18日','04月19日','04月20日', '04月21日','04月22日', '04月23日', '04月24日', '04月25日', '04月26日', '04月27日','04月28日','04月29日','04月30日', '05月01日','05月02日', '05月03日', '05月04日', '05月05日', '05月06日', '05月07日', '05月08日']
+			}
+		},
+		product:{
+			'7':[
+				['产品搜索页',45],
+				['店铺搜索页',26],
+				['活动页面',12],
+				['站内其它',8],
+				['站外',6]
+			],
+			'30':[
+				['店铺搜索页',450],
+				['产品搜索页',268],
+				['站内其它',128],
+				['活动页面',85],
+				['站外',62]
+			]
+		}
+	});
+});</script>
+</body>
+</html>

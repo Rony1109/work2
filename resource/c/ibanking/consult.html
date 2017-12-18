@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>我要咨询</title>
+	<meta name="keywords" content=""/><!-- seo 关键字 -->
+	<meta name="description" content=""/><!-- seo 网页描述 -->
+	<!-- 详细阅读基础样式文件 base-reset -->
+	<link rel="stylesheet" href="http://res.csc86.com/v2/c/ibanking/css/consult.css" type="text/css" >
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+</head>
+
+<body>
+<div class="cnsltBox">
+    <form class="jsCnsltForm" name="" action="">
+    <table class="apply-tbl">
+        <tr>
+            <th><em class="g-cred">*</em> 真实姓名：</th>
+            <td colspan="3">
+                <input id="realName" class="ipt-txt" type="text" name="" value="" data-valid='{"minNum":1,"maxNum":5,"nullTxt":"请填写真实姓名","errorTxt":"请输入正确的姓名"}'/>
+                <span class="valid-tip"></span>
+            </td>
+        </tr>
+        <tr>
+            <th><em class="g-cred">*</em> 联系电话：</th>
+            <td colspan="3">
+                <input id="phoneNum" class="ipt-txt" type="text" name="" value="" data-valid='{"nullTxt":"请填写联系电话"}'/>
+                <span class="valid-tip"></span>
+            </td>
+        </tr>
+        <tr class="tip">
+            <th></th>
+            <td colspan="3"><span class="g-ccd">请填写正确联系电话，银行客户经理将在72小时内联系您</span></td>
+        </tr>
+        <tr class="jkje">
+            <th><em class="g-cred">*</em> 借款金额：</th>
+            <td width="160"><input id="jkJe" class="ipt-txt" type="text" name="" value="" data-valid='{"nullTxt":"请填写相关信息"}'/> 万元</td>
+            <td width="90" align="right"><em class="g-cred">*</em> 周期：</td>
+            <td width="350"><input id="zhouQi" class="ipt-txt" type="text" name="" value="" data-valid='{"nullTxt":"请填写相关信息"}'/> 月</td>
+        </tr>
+        <tr class="valid-jkje">
+            <th>&nbsp;</th>
+            <td width="160"><span class="valid-tip jsJkJeTip"></span></td>
+            <td width="90" align="right">&nbsp;</td>
+            <td width="350"><span class="valid-tip jsZhouQiTip"></span></td>
+        </tr>
+        <tr>
+            <th valign="top"><em class="g-cred">*</em> 借款用途：</th>
+            <td colspan="3"><textarea id="jkYt" placeholder="最多输入100个字" class="txt-area" name="" cols="" rows=""data-valid='{"maxNum":100,"nullTxt":"请填写相关信息","errorTxt":"请输入正确的信息"}'></textarea></td>
+        </tr>
+    </table>
+    <div class="g-cf frm-opt">
+        <div class="g-fl"><span class="valid-tip jsJkytTip"></span></div>
+        <input class="g-fr ipt-smt" type="submit" name="" value="提交"/>
+    </div>
+    </form>
+</div>
+<script>
+seajs.use('http://res.csc86.com/v2/c/ibanking/js/consult.js');
+</script>
+</body>
+</html>

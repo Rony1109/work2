@@ -1,0 +1,34 @@
+@import url('base.css');
+
+.con-l{width: 655px;}
+
+.items{margin-top: 16px;}
+.items li{position: relative;float: left;display: inline;margin-right: 35px;width: 310px;}
+.items li.last{margin-right: 0;}
+.items-1{width: 690px;}
+.items-1 li{height: 220px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.items-1 span{display: block;}
+.items-1 span.time{position: absolute;top: 6px;left: -5px;width: 117px;height: 20px;text-indent: 9px;font: 14px/20px Microsoft YaHei,simsun;color: #fff;background: #e94545;}
+.icon{position: absolute;left: 0;bottom: -5px;width: 5px;height: 5px;line-height: 0;font-size: 0;background: url(img/gather.png) no-repeat 0 -189px;}
+.items-1 li a{display: block;font: 14px Microsoft YaHei,simsun}
+.ex-title{margin: 18px 0 6px;height: 20px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+
+.con-r{width: 310px;}
+.m-t10{margin-top: 10px;}
+.items-2 span.bg{position: absolute;left: 0;bottom: 0;display: block;width: 310px;height: 40px;background: #000;opacity: .7;filter:alpha(opacity=70);}
+.items-2 p{position: absolute;left: 0;bottom: 0;display: block;width: 310px;height: 40px;overflow: hidden;text-decoration: none;}
+.items-2 a{display: block;margin: 0 10px;height: 150px;overflow: hidden;text-decoration: none;color: #fff;}
+.items-2 a b{display: block;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 14px/40px Microsoft YaHei,simsun;text-indent: 50px}
+.items-2 a b span{position: absolute;display: block;top: 10px;left: 10px;width: 39px;height: 48px;;background: url(img/icon.png) no-repeat;_background: none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon.png");}
+
+.img-scroll{position: relative;margin-top: 16px;overflow: hidden;}
+.scroll-box{overflow: hidden;}
+.scroll-box ul{width: 9999px}
+.scroll-box li{position: relative;float: left;display: inline;width: 490px;margin-right: 22px;}
+.ctr-l,.ctr-r{position: absolute;display: block;top: 90px;width: 22px;height: 45px;z-index: 999;cursor: pointer}
+.ctr-l{left: 0;background: url(img/ctr-r.png) no-repeat;}
+.ctr-r{right: 0;background: url(img/ctr-l.png) no-repeat;}
+.img-scroll a span{position: absolute;z-index: 90;left: 0;bottom: 0;display: block;width: 490px;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 14px/40px Microsoft YaHei,simsun;color: #fff;text-align: center;}
+.img-scroll a span.bg{z-index: 80;background: #000;opacity: 0.4;filter:alpha(opacity=40);}
+.img-scroll a:hover span.bg{background: #fff;}
+.img-scroll a:hover span{text-decoration: none;color: #444}

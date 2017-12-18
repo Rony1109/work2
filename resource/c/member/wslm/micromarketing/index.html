@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>会员中心-微营销-大转盘列表</title>
+  <meta name="keywords" content=""/><!-- seo 关键字 -->
+  <meta name="description" content=""/><!-- seo 网页描述 -->
+  <link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css">
+  <link rel="stylesheet" type="text/css" href="/v2/c/member/wslm/micromarketing/css/mkt.css">
+  <script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+  <link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css">
+  <script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script>
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+  <div class="head-bd">
+      <div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+          <a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        </div>
+        <div class="index-link">
+          <a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+<div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+  <h2>微商联盟</h2>
+  <ul class="nav-items">
+    <li class="bg-none item"><a href="#">我的微盟</a></li>
+    <li class="bg-none item"><a href="#">自定义回复</a></li>
+    <li class="bg-none item"><a href="#">自定义菜单</a></li>
+    <li class="bg-none item cur"><a href="#">微营销</a></li>
+    <li class="bg-none item"><a href="#">微盟相册管理</a></li>
+    <li class="bg-none item"><a href="#">使用指南</a></li>
+  </ul><script>seajs.use(csc.url("res","/f=js/m/statusTab"),function (){csc.statusTab("ul.nav-items>li.item>a");});</script>
+</div>
+<div class="af-bd">
+    <h1 class="af-hd">微营销</h1>
+    <ul class="g-c-f af-tab">
+      <li class="cur"><a href="">大转盘</a></li>
+      <li><a href="">刮刮乐</a></li>
+      <li><a href="">水果达人</a></li>
+    </ul>
+    <div class="g-c-f af-page">
+      <ul class="g-f-l afp-option">
+        <li class="select-all">
+          <label>
+            <input name="all" type="checkbox" value="">全选</label>
+        </li>
+        <li class="item">
+          <a href="javascript://">添加活动</a>
+        </li>
+        <li class="item">
+          <a href="javascript://">删除</a>
+        </li>
+      </ul>
+      <div class="g-f-r afp-bd">
+        <div class="afp-box">
+          <form onsubmit="csc.page(this);return false;">
+            跳转到第
+            <input teype="text" vlaue="" class="afp-text" name="page">
+            页
+            <input type="submit" value="确定" class="afp-btn"></form>
+        </div>
+        <span>
+          1/
+          <span class="p-total">2</span>
+          页
+        </span>
+        <a href="?status=A&amp;page=2">下一页</a>
+        <a href="javascript:" onclick="csc.afPage(this)">跳转</a>
+        <script src="http://res.csc86.com/f=js/m/page.js"></script>
+      </div>
+    </div>
+    <div class="af-list">
+      <table width="100%">
+        <thead class="af-list-hd g-t-c">
+          <tr>
+            <td width="5%"></td>
+            <td align="center" width="20%">活动名称</td>
+            <td align="center" width="15%">关键词</td>
+            <td align="center" width="15%">活动时间</td>
+            <td align="center" width="15%">状态</td>
+            <td align="center" width="">链接地址</td>
+            <td align="center" width="12%">操作</td>
+          </tr>
+        </thead>
+        <tbody class="af-list-bd">
+          <tr>
+            <td class="c"><input name="" type="checkbox" value=""></td>
+            <td align="center">大转盘活动开始了</td>
+            <td align="center">大转盘</td>
+            <td align="center">2014-04-30 9:54:43<br>2014-05-01 9:54:43</td>
+            <td align="center" class="c-319400">进行中</td>
+            <td align="center">http://www.csc86.com</td>
+            <td align="center"><a href="javascript://">编辑</a>&nbsp;<a href="javascript://">获奖用户</a></td>
+        </tr>
+        <tr>
+            <td class="c"><input name="" type="checkbox" value=""></td>
+            <td align="center">大转盘活动开始了</td>
+            <td align="center">大转盘</td>
+            <td align="center">2014-04-30 9:54:43<br>2014-05-01 9:54:43</td>
+            <td align="center" class="c-888">已结束</td>
+            <td align="center">http://www.csc86.com</td>
+            <td align="center"><a href="javascript://">编辑</a>&nbsp;<a href="javascript://">获奖用户</a></td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    <div class="g-c-f af-page">
+    <ul class="g-f-l afp-option">
+    <li class="select-all">
+      <label>
+        <input name="all" type="checkbox" value="">全选</label>
+    </li>
+    <li class="item">
+      <a href="/product/sell/delete/">删除</a>
+    </li>
+    <li class="item">
+      <a href="/product/sell/Groundings/">批量上架</a>
+    </li>
+    </ul>
+    <div class="g-f-r afp-bd">
+    <div class="afp-box">
+      <form onsubmit="csc.page(this);return false;">
+        跳转到第
+        <input teype="text" vlaue="" class="afp-text" name="page">    
+        页
+        <input type="submit" value="确定" class="afp-btn"></form>
+    </div>
+    <span>
+      1/
+      <span class="p-total">2</span>
+      页
+    </span>
+    <a href="">下一页</a>
+    <a href="javascript://" onclick="csc.afPage(this)">跳转</a>
+    <script src="http://res.csc86.com/f=js/m/page.js"></script>
+    </div>
+    </div>
+    
+</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+  <div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+  </div>
+  <p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+  深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>
+

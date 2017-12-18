@@ -1,0 +1,16 @@
+{{if status}}
+<div class="slidebox">
+  <div id="adslide" class="adslide swiper-container swiper-container-horizontal">
+    <ul class="swiper-wrapper">
+      {{each data as value index}}
+        <li class="swiper-slide">
+          <a data-slidehref="cyclePage?href={{value.href}}" data-cn={{index}} >
+            <img src="http://img.csc86.com/{{value.image}}" alt="{{value.name}}"/>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+{{/if}}
+<!--广告轮播 /advertising/listPage  end-->

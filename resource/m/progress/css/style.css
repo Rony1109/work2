@@ -1,0 +1,40 @@
+/**
+ * 前端模板css文件
+ *
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ *
+ */
+.progress{}
+
+.progress-step{width:80%;margin:0 auto;}
+.progress-step .bg-bar{margin-top:23px; height:2px;overflow: hidden;background:#e1e1e1;border-top:solid 1px #d7d7d7;border-bottom: solid 7px #e6e6e6;}
+.progress-step .steps{margin-top:-23px}
+.progress-step .step{float:left; width:34px;height:34px;overflow: hidden;line-height:34px;text-align: center; font-family:Arial;font-size:18px;font-weight:700;background:url(img/bg.png) no-repeat 0 0;}
+.progress-step li{position: relative; float:left;}
+.progress-step li .bar{float:left; display: none; position: relative; height:4px;margin: 16px 0 -21px -6px; background:#fc6824;overflow: hidden;}
+.progress-step li .title{margin:40px 0 0 -20px;font-weight:700;color:#888}
+.progress-step .last{width:34px; float: right;margin-left:-34px}
+.progress-step .last .title{position: absolute;text-align: right;right:-20px;white-space: nowrap;}
+.progress-step .active .step,.progress-step .actived .step{background-position:0 -100px;text-indent:-999px}
+.progress-step .first .step{background-position:0 -50px}
+.progress-step .active .bar{display:block;width:50%;}
+.progress-step .actived .bar{display:block;}
+.progress-step .last .bar{display: none}
+.progress-step .last-active .step{background-position:0 -150px}
+
+.demo-5 li{width:192px;/*根据实际需求调整*/}/* (progress宽度-34x步骤数)/(步骤数-1)+34 即 (800-34*5)/(5-1)+34 */
+.demo-5 .actived .bar{width:164px;}/*li宽度-28 即192-28*/
+
+.demo-3 li{width:383px;}/*(800-34*3)/(3-1)+34*/
+.demo-3 .actived .bar{width:355px;}/*383-28*/

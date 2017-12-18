@@ -1,0 +1,84 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+ .g-fl,.g-fr{display: inline;}
+ body{font-family: simsun;}
+ a{color: #444}
+ a:hover{color: #FA6824}
+.m-search div .btn{background: #49b63d;text-indent: 0;color: #fff;font: 14px Microsoft YaHei,simsun;}
+.m-search .ss-txt{border-color: #49b63d}
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #49b63d}
+
+/* nav */
+.g-h6{height: 6px;overflow: hidden;font-size: 0;line-height: 0}
+.t-hide{overflow: hidden;height: 24px;line-height: 24px;word-break:break-all;display: block;}
+.nav{background: #49b63d url(img/nav-bg.png) no-repeat right 0;height: 36px;}
+.nav ul li{float: left;display: inline;}
+.nav ul li a{color: #fff;display: block;width: 105px;height: 31px;font: 16px/31px Microsoft YaHei,simsun;text-align: center;margin: 5px 5px 0 0;}
+.nav ul li a:hover,.nav ul li a.cur{background: #fff;color: #49b63d;text-decoration: none;}
+.sub-nav{border-bottom: 1px #49b63d solid;height: 26px;line-height: 26px;}
+.sub-nav li{float: left;display: inline;margin: 0 10px}
+.sub-nav li a{color: #666}
+/* puplic */
+.p-10{padding: 0 10px}
+.title a{float: right;display: inline;height: 40px;line-height: 40px;font-family: simsun;color: #888}
+.title h2{height: 40px;font:700 16px/40px Microsoft YaHei,simsun;}
+.main-title{border-bottom: 2px #49b63d solid;}
+.main-title h2{height:30px;font: 700 16px/30px Microsoft YaHei,simsun }
+.main-title a{color: #888;float: right;display: inline;font-family: simsun;height: 27px;line-height: 27px;padding-top: 3px;color: #888}
+.list li{background: url(img/icos.gif) no-repeat -497px -876px;text-indent: 8px;line-height: 26px;height: 26px;overflow: hidden;word-break:break-all;}
+
+.column{border: 1px #e8e8e8 solid;border-top:0;}
+.m-t10-b5{margin:10px 0 5px;}
+.m-t8{margin-top: 8px}
+.g-hide{overflow: hidden;}
+
+.main-intro{float: right;display: inline;}
+.fc_ad{color: #adabab}
+.msg-list{margin: 15px 0 5px;padding-bottom: 20px;border-bottom: 1px #e8e8e8 dashed;overflow: hidden;float: left;width: 100%}
+.main-intro dt a{display: block;overflow: hidden;height: 24px;line-height: 24px;word-break:break-all;font: 18px Microsoft YaHei,simsun;}
+.main-intro dd{line-height: 22px;}
+.main-intro dd p{max-height: 66px;overflow: hidden;word-break:break-all;_height:66px;}
+.main-intro dd a{padding-right: 15px;color: #2465a2;float: left;display: inline;}
+.share{float: right;display: inline;}
+.share span{height: 25px;line-height: 25px;color: #adabab}
+
+.foot{border-color: #49b63d}
+.foot-title{border-bottom: 1px #e8e8e8 solid;}
+.dz_h_box5 {overflow:hidden;}
+.hzhb_list {width:1200px; padding:15px 0 10px 2px;}
+.hzhb_list li {float:left; _display:inline; width:125px; height:64px; margin-right:20px;}
+.hzhb_list li img {width:125px; height:64px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:10px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;background:url(img/icos.gif) -2px -133px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -154px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+.title-b{background: #f7f7f7;height: 35px;overflow: hidden;}
+.title-b h2{margin-top: 8px;height: 27px;text-indent: 9px;font:700 16px Microsoft YaHei,simsun;}
+.title-b a{float: right;display: inline;margin:10px 10px 0 0;color: #888}
+.w750{width: 750px}
+.w530{width: 530px}
+.Spage{padding:10px 0 0 13px}

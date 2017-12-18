@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员中心</title>
+<link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/membercenter/mem-foot.css" />
+<link rel="stylesheet" type="text/css" href="css/wslm-photo.css">
+<script src="http://res.csc86.com/js/l/jquery.js"></script>
+<script src="http://res.csc86.com/js/p/seajs/1.2.0/dist/sea.js"></script>
+<script src="http://res.csc86.com/js/m/config.js"></script>
+<script src="http://res.csc86.com/js/c/membercenter/member.js"></script>
+<script src="http://res.csc86.com/js/c/memberhome/m-home.js"></script>
+<script src="http://res.csc86.com/swfupload/"></script>
+<script src="/js/c/wslm/uploadimg.js"></script>
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+<div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+  <h2>微商联盟</h2>
+  <ul class="nav-items">
+    <li class="bg-none item cur"><a href="/product/sell/category.html">微盟相册管理</a></li>
+  </ul><script>seajs.use(csc.url("res","/f=js/m/statusTab"),function (){csc.statusTab("ul.nav-items>li.item>a");});</script>
+</div>
+<div class="af-bd wxphoto">
+    <h1 class="af-hd">相册管理</h1>
+    <div class="upinto">
+      <input id="" type="text" name="">
+      <a id="upload00" href="javascript:">上传相册图片</a>
+      <p><span>&nbsp;*&nbsp;</span>仅支持jpg，png，gif格式图片，大小100K以内，建议图片尺寸为正文形</p>
+    </div>
+    <div class="upimage">
+      <ul id="upImgList" class="clearfix">
+        <li><div class="upimg"><img src="http://res.csc86.com/image/img.png" width="175" height="175"></div><div class="upbtn clearfix"><span id="123" class="g-f-l"><a href="javascript:">重新上传</a></span><span class="g-f-r"><a class="btn" href="javascript:">删除</a></span></div></li>
+        <li><div class="upimg"><img src="http://res.csc86.com/image/img.png" width="175" height="175"></div><div class="upbtn clearfix"><span id="456" class="g-f-l"><a href="javascript:">重新上传</a></span><span class="g-f-r"><a class="btn" href="javascript:">删除</a></span></div></li>
+      </ul>
+    </div>
+</div>
+</div>
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+	深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+<script type="text/javascript" src="/js/c/wslm/photouploadimg.js"></script>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>
+

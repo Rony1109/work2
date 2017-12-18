@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>逛市场 app 行情资讯</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="http://res.csc86.com/v2/m/mobile/css/reset.css">
+<link rel="stylesheet" href="css/swiper.3.1.2.min.css">
+<link href="css/style.css?v=112730s9" rel="stylesheet">
+<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="top">
+			<div class="nav-view  jnav">
+				<ul class="clearfix nav swiper-wrapper"  id="thnav">
+					<li class="swiper-slide active" data-id="79">编辑精选</li>
+					<li class="swiper-slide" data-id="71">大视野</li>
+					<li class="swiper-slide" data-id="69">生意管家</li>
+					<li class="swiper-slide" data-id="67">今日行情</li>
+					<li class="swiper-slide" data-id="68">资本变数</li>
+					<li class="swiper-slide" data-id="74">行业风向</li>
+					<li class="swiper-slide" data-id="70">电商导师</li>
+					<li class="swiper-slide" data-id="77">订单见面会</li>
+					<li class="swiper-slide" data-id="72">品牌之星</li>
+					<li class="swiper-slide" data-id="75">精品导购</li>
+					<li class="swiper-slide" data-id="76">中国好企业</li>
+
+					<span class="bar"></span>
+				</ul>				
+				<div class="pagination" style="display: none;"></div>		
+				<div class="menu jmcont">
+					<p>全部频道</p>
+					<ul class="clearfix expnav" id="jmenuall">
+						<li><i>编辑精选</i></li>
+						<li><i>大视野</i></li>
+						<li><i>生意管家</i></li>
+						<li><i>今日行情</i></li>
+						<li><i>资本变数</i></li>
+						<li><i>行业风向</i></li>
+						<li><i>电商导师</i></li>
+						<li><i>订单见面会</i></li>
+						<li><i>品牌之星</i></li>
+						<li><i>精品导购</i></li>
+						<li><i>中国好企业</i></li>
+					</ul>
+				</div>		
+			</div>
+			<a href="javascript:;" class="nav-btn jmenu"><img src="image/arr.png" alt=""></a>
+			
+		</header>
+		<div class="banner"></div>
+		<div class="swiper-container newlist" id="scrolWrap">
+			<div class="refresh" id="refresh">
+				<div class="load-circle" id="loadcir"></div>
+				<p id="rollup">松开刷新</p>
+			</div>
+			<div class="datalate" id="deatlate">
+				<p>加载中...</p>
+			</div>
+			<div class="swiper-wrapper " id="hqcnt">
+				<!-- 1 -->
+				<!-- <ul class="clearfix swiper-slide" >
+					<li>
+						<a href="#" class="pro-link">
+							<img src="image/sumb.png" class="pro-sumb" alt="">
+							<div class="pro-info">
+								<h3>编辑精选</h3>
+								<p>图说：西安市贸促会副会长张庚元在开幕式上发表讲话。 千人聚首，共鉴盛事！</p>
+							</div>
+						</a>
+					</li>					
+				</ul> -->
+				<ul class="clearfix swiper-slide slidecn" data-cn="79">
+					<div class="chimg channel-focus1">					
+						<div class="channel-pagin channel-pagin1"></div>				
+					</div>
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="71">					
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="69">
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="67">					
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="68">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="74">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="70">			
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="77">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="72">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="75">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+				<ul class="clearfix swiper-slide slidecn" data-cn="76">				
+					<div class="loadbox jload">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+						<div class="load">加载中...</div>
+					</div>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<!-- <div id="temview" style="position:fixed;top:0;width:100%">123</div> -->
+    <script>seajs.use(['./js/init.js?v=1201'+~(-new Date()/36e5)]);</script>
+</body>
+</html>

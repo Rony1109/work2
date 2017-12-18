@@ -1,0 +1,82 @@
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+@import url('/v2/m/register/css/style.css');
+.Spage ul{display: inline;}
+.Spage{text-align: center;}
+a{color: #444}
+a:hover{color: #f57301;}
+.link{padding-top: 5px;}
+.m-search div .btn{background: url(img/search-btn.gif) no-repeat;}
+.m-search .ss-txt{border-color: #048a96;}
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #048a96;}
+.hot-keys a:hover{color: #f57301}
+.sub-logo{margin-top: 15px;padding-left: 10px;border-left: 1px solid #CECECE}
+.sub-logo span{font: 14px Microsoft YaHei,simsun;color: #888;}
+.g-h18{height: 18px;overflow: hidden;clear: both;}
+/* 导航 */
+.navigation{min-width:1000px;height: 36px;overflow: hidden;background: #048a96 url(img/nav-bg.jpg) no-repeat center bottom;}
+.navigation a{color: #fff}
+.main-nav li{float: left;width: 100px;margin-right: 22px;}
+.main-nav li a{float: left;width: 100px;zoom:1;margin-top: 5px;padding-top: 2px;height: 31px;text-align: center;font: 16px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #048a96;text-decoration: none;background: #fff;}
+.sub-nav{min-width:998px;height: 26px;line-height: 26px;border-bottom: 1px #10909b solid;}
+.sub-nav a{padding: 0 15px 0 5px;color: #666;}
+.sub-nav a:hover{color: #f57301;}
+
+/* 图文 */
+.img-msg a img{float: left;display: inline;}
+.img-msg p{float: right;display: inline;}
+
+/* 标题 */
+.title-m{height: 34px;overflow: hidden;}
+.title-m h2{font: 16px/34px Microsoft YaHei,simsun;}
+.title-m a{float: right;display: inline;font: 12px/34px simsun;color: #888;}
+.title-m a:hover{color: #f57301;}
+.title-m h2.g-fwb{font-weight: bold;}
+.title-m h2.set-fc{color: #048a96;font-weight: bold;}
+.set-bd{border-bottom: 1px #048a96 solid;}
+
+.floor-title{border-bottom: 2px #048a96 solid;}
+.floor-title h2{font: 18px/30px Microsoft YaHei,simsun;}
+/* 灰色点列表 */
+.column-list li{height: 26px;line-height: 26px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;text-indent: 7px;background: url(img/icos.gif) no-repeat -498px -910px;}
+
+/* 边框 */
+.column{border: 1px #e8e8e8 solid;}
+
+/* 页脚 */
+.partner-title{position: relative;height: 36px;font:18px/36px Microsoft YaHei,simsun;border-bottom: 2px  #e2e2e2 solid;}
+
+.partner{margin-top: 13px;}
+.partner li{float: left;display: inline;margin-right: 18px;width: 125px;height: 64px;border: 1px #cdcdcd solid;}
+.partner li.last{margin-right: 0;}
+
+.foot{border-top-color: #048a96;}
+.dz_h_box5 {overflow:hidden;}
+.hzhb_list {width:1200px; padding:15px 0 10px 2px;}
+.hzhb_list li {float:left; _display:inline; width:125px; height:64px; margin-right:20px;}
+.hzhb_list li img {width:125px; height:64px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:10px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;overflow: hidden;background:url(img/icos.gif) -2px -133px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -154px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+/* 宽度 */
+.w360{width: 360px;}
+.w260{width: 260px;}
+.w240{width: 240px;}
+/* 间距 */
+.set-m{margin: 0 10px;}
+
+/*回到顶部*/
+.toolbar-up {position: fixed; bottom: 148px; right: 130px; margin-left:50%; _position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50)); display: none; z-index: 100}
+.toolbar-up a {width: 48px; height: 48px; background: url(img/icon_top.gif) no-repeat;  display: block;}
+.toolbar-up a:hover, .toolbar-up a:active {background: url(img/icon_top_hover.gif) no-repeat;}

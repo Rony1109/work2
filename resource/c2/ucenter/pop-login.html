@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>弹窗登录</title>
+    <link rel="stylesheet" href="//res.csc86.com/v2/c2/ucenter/css/pop-login.css">
+</head>
+<body>
+<div class="login">
+    <div class="bg"></div>
+    <div class="login-c">
+        <form id="loginFrm" method="post" action="">
+            <div class="g-pr login-top">
+                <h2>华南城网会员</h2>
+                <a class="close">关闭</a>
+            </div>
+            <ul class="login-frm">
+                <li><input class="ipt-txt" id="userName" type="text" name="" placeholder="用户名/邮箱/手机号码" value=""></li>
+                <li><input class="ipt-txt" id="password" type="password" name="" placeholder="密码" value=""></li>
+                <li class="code-li">
+                    <input class="ipt-txt" id="validCode" type="text" name="" placeholder="验证码" value="">
+                    <span class="code-img"><img src="images/code-img.jpg" width="93" height="42" alt=""></span>
+                    <span class="refresh"></span>
+                </li>
+            </ul>
+            <p class="yztips"></p>
+            <p class="login-opts"><input class="uc-btn login-smt" type="submit" name="" value="登录"></p>
+            <p class="g-cf login-lk">
+                <a class="g-fl" href="//i.csc86.com/reg/index">新用户注册</a>
+                <a class="g-fr" href="">忘记密码？</a>
+            </p>
+            <div class="login-three">
+                <span class="t">用第三方帐号登录</span>
+                <span class="qq"></span>
+                <span class="sina"></span>
+                <span class="weixin"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+<script>
+    seajs.use('c2/ucenter/js/login',function(m){
+        m.pop();
+    });
+</script>
+</body>
+</html>

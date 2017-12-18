@@ -1,0 +1,126 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/c/spining/common/css/template.css');
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+/*本页面的定制样式*/
+.c-icon {background-image: url(img/icon-sprite.png); _background-image: url(img/icon-sprite-ie6.png);}
+h1.c-n {font-size: 18px; color: #444; font-family: microsoft yahei;}
+h2.c-n {font-size: 16px; color: #444; font-family: microsoft yahei;}
+h3.c-n {font-size: 14px; color: #444; font-family: microsoft yahei;}
+h4.c-n {font-size: 12px; color: #444; font-family: microsoft yahei;}
+h1.c-t {padding-bottom: 5px; border-bottom: 2px solid #e8e8e8; font-size: 16px}
+a.c-n {color: #444}
+a.c-n:hover {color: #f60; text-decoration: none;}
+p.c-n {color: #888}
+.c-mask {background-color: #000000; bottom: 0; height: 25px; left: 0; opacity: 0.6; filter: alpha(opacity=60); position: absolute; width: 100%;}
+a.c-info {bottom: 0; color: #FFFFFF; height: 25px; left: 0; line-height: 25px; position: absolute; text-align: center; width: 100%;}
+ul li.c-n { padding-left: 10px;}
+.adverst {margin: 15px auto}	/*广告*/
+div.c-title {padding-bottom: 3px; border-bottom: 2px solid #e8e8e8}
+div.c-title span {float: left; margin: 0 8px -2px 0;}
+div.c-title span a {color: #FF6C00; font-size: 18px; text-decoration: none;}
+div.c-title h1 a {color: #444; font-family: "Microsoft YaHei",SimHei,"WenQuanYi Micro Hei",STHeiti; font-size: 18px; font-weight: bold;}
+a.c-more {color: #888; padding-right: 10px; background: url(img/icon-group.png) no-repeat -718px -504px; _background: url(img/icon-group-ie6.png) no-repeat -718px -504px; float: right;}
+a.c-more:hover {color: #f60; text-decoration: underline;}
+
+.main {margin-top: 10px;}
+.main .col-inter {width: 730px; overflow: hidden;}
+.col-inter .i-top {height: 260px; overflow: hidden;}
+.col-inter .slide {width: 290px; height: 260px; overflow: hidden; position: relative;}
+.col-inter .slide ul li {width: 290px; height: 260px; float: left;}
+.col-inter .slide a.c-info {text-align: left; text-indent: 5px; width: auto}
+.col-inter .slide ol {position: absolute; bottom: 9px; right: 7px; z-index: 2}
+.col-inter .slide ol li {float: left; text-indent: -9999px; width: 6px; height: 6px; background: url(img/controller.png) no-repeat; _background: url(img/controller-ie6.png) no-repeat; margin-right: 3px; overflow: hidden;}
+.col-inter .slide ol li.cur {background-position: 0 -9px;}
+.col-inter .slide img {width: 290px; height: 260px; overflow: hidden;}
+.col-inter .slide span.info {width: 210px; height: 25px; overflow: hidden; position: absolute; bottom: 0; left: 0; line-height: 25px;}
+.col-inter .slide span.info a {color: #fff; font-weight: 700; padding-left: 5px;}
+.col-inter .firm-inter {width: 430px; overflow: hidden;}
+.col-inter .firm-inter h2 {height: 25px; overflow: hidden;}
+.col-inter .firm-inter .row1 {height: 100px; overflow: hidden; padding-bottom: 19px; border-bottom: 1px dashed #e8e8e8}
+.col-inter .firm-inter .title {height: 25px; line-height: 25px; margin-bottom: 5px;}
+.col-inter .firm-inter .ctn1 {width: 320px; height: 100px; overflow: hidden;}
+.col-inter .firm-inter img {width: 100px; height: 100px; overflow: hidden;}
+.col-inter .firm-inter .row2 .title {margin: 12px 0; height: 25px; line-height: 25px;}
+.col-inter .firm-inter .row2 img {height: 60px;}
+.col-inter .firm-inter .list {height: 60px;}
+.col-inter .firm-inter .list ul li {float: left; width: 210px; margin-right: 8px;}
+.col-inter .firm-inter .list ul li:last-child {margin-right: 0}
+.col-inter .firm-inter .list .cont-l {width: 100px; overflow: hidden;}
+.col-inter .firm-inter .list h3 {height: 22px; overflow: hidden;}
+.col-inter .firm-inter .list p.c-n {margin-top: 3px;}
+.col-inter .goods-show {margin-top: 15px;}
+.col-inter .goods-show .quality {border: 1px solid #e8e8e8; padding: 10px; width: 268px; height: 113px; overflow: hidden;}
+.col-inter .goods-show .quality .title {height: 25px; line-height: 25px;}
+.col-inter .goods-show .quality img {width: 70px; height: 80px; overflow: hidden;}
+.col-inter .goods-show .quality a.img-toggle {display: none;}
+.col-inter .goods-show .quality a.cur {display: block;}
+.col-inter .goods-show .quality .img-ctn {margin-top: 5px;}
+.col-inter .goods-show .quality .cont-r {width: 190px; height: 80px; overflow: hidden;}
+.col-inter .goods-show .quality .cont-r a {color: #444; height: 20px; line-height: 20px; vertical-align: text-bottom; padding-left: 10px; width: 170px; display: block;}
+.col-inter .goods-show .quality .cont-r a.cur {background: url(img/icon-sprite.png) no-repeat -5px -106px; _background: url(img/icon-sprite-ie6.png) no-repeat -5px -106px; color: #f60}
+.col-inter .goods-show .list {width: 398px; height: 103px; overflow: hidden; border: 1px solid #e8e8e8; padding: 20px 15px 10px}
+.col-inter .goods-show .mall {position: relative; width: 398px; height: 100px; overflow: hidden;}
+.col-inter .goods-show .mall .ml-bock {position: relative; left: 15px; width: 368px; overflow: hidden; height: 100px;}
+.col-inter .goods-show .mall span {width: 15px; height: 103px; position: absolute; top: 30px;}
+.col-inter .goods-show .mall .prev {left: 0;}
+.col-inter .goods-show .mall .next {right: 0; text-align: right;}
+.col-inter .goods-show .mall .prev a {width: 10px; height: 16px; background-position: -60px -24px; display: inline-block;}
+.col-inter .goods-show .mall .prev a.disable {background-position: -60px -2px;}
+.col-inter .goods-show .mall .next a {width: 10px; height: 16px; background-position: -85px -2px; display: inline-block;}
+.col-inter .goods-show .mall .next a.disable {background-position: -85px -22px;}
+.col-inter .goods-show .list ul {position: absolute;width:99999px;left:0}
+.col-inter .goods-show .list ul li {width: 80px; height: 100px; overflow: hidden; float: left; text-align: center; margin-right: 15px;}
+.col-inter .goods-show .list ul li h4 {height: 18px; overflow: hidden;}
+.col-inter .goods-show .list ul li p {font-family: microsoft yahei}
+.main .col-mer {width: 260px; overflow: hidden;}
+.main .col-mer h3 {font-size: 15px; color: #fff; height: 36px; line-height: 36px; text-indent: 5px; background: url(img/top-title.png) no-repeat;}
+.col-mer .cont {border: 1px solid #e8e8e8; border-top: none; padding: 5px; height: 363px;}
+.col-mer .cont ul {margin-top: 5px;}
+.col-mer .cont li {position: relative; width: 248px; height: 102px; overflow: hidden; background-color: #f6f6f6; padding-top: 8px; margin-bottom: 14px; _margin-bottom: 10px;}
+.col-mer .cont li:last-child {margin-bottom: 0}
+.col-mer .cont li .v-line {height: 40px; overflow: hidden; margin-left: 10px;}
+.col-mer .cont li h2 {width: 148px; font: normal 14px 'microsoft yahei';}
+.col-mer .cont li .line { margin-left: 10px; margin-top: -2px;}
+.col-mer .cont li .pk {position: absolute; top: 0; left: 0; width: 24px; height: 24px; background-position: -3px -25px}
+.col-mer .cont .v-line img {width: 80px; height: 40px; overflow: hidden;}
+
+.pro-mod .pro-ind {margin-bottom: 20px;}
+.pro-mod .content {margin-top: 15px; height: 230px; overflow: hidden;}
+.pro-mod .col-story {width: 290px; overflow: hidden;}
+.pro-mod .col-story h2 {color: #fff; background: url(img/title_bg.png) no-repeat; width: 86px; height: 20px; line-height: 20px; text-indent: 4px; margin-bottom: 12px;}
+.pro-mod .col-story li {height: 80px; overflow: hidden; border-bottom: 1px dashed #e8e8e8; padding-bottom: 17px; margin-bottom: 15px;}
+.pro-mod .col-story li .cont-r {width: 200px;}
+.pro-mod .col-story li .cont-r p.c-n {height: 57px; overflow: hidden; line-height: 20px;}
+.pro-mod .col-story li h3 {line-height: 18px; margin-bottom: 5px; height: 18px; overflow: hidden;}
+.pro-mod .col-story li img {width: 80px; height: 80px; overflow: hidden;}
+.pro-mod .col-list {width: 430px; overflow: hidden; margin-left: 10px;}
+.pro-mod .col-list .list-img li {width: 130px; height: 150px; overflow: hidden; text-align: center; margin-right: 20px; float: left;}
+.pro-mod .col-list .list-img li:last-child {margin-right: 0}
+.pro-mod .col-list .list-img li span {height: 40px; line-height: 40px;}
+.pro-mod .col-list .list-img img {width: 130px; height: 110px; overflow: hidden;}
+.pro-mod .col-list .mar-guide {height: 80px; overflow: hidden;}
+.pro-mod .col-list .mar-guide .m-title {width: 22px; height: 65px;word-wrap:break-word; display: inline-block; background-color: #C6C6C6; font-size: 14px; color: #fff; text-align: center; line-height: 15px; overflow: hidden; font-family: "Microsoft YaHei"; float: left; padding: 10px 0 5px}
+.pro-mod .col-list .mar-guide ul {background-color: #f6f6f6; width: 408px; height: 80px}
+.pro-mod .col-list .mar-guide ul li {float: left; width: 184px; margin-left: 10px; height: 25px; line-height: 25px;}
+.pro-mod .col-list .mar-guide ul li a.c-n:hover {color: #f60; text-decoration: underline;}
+.pro-mod .col-images {margin-left: 10px; width: 260px; overflow: hidden;}
+.pro-mod .col-images a {width: 260px; height: 70px; overflow: hidden; display: block; margin-bottom: 10px;}
+
+

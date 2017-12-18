@@ -1,0 +1,51 @@
+/**
+ * APP 关于我们（单页面）
+ * 2014.05.29 by lg
+ */
+
+html{font-size: 62.5%;}
+body{font-size: 1.4rem;font-family: Helvetica,STHeiti,Droid Sans Fallback;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;user-select: none;}
+
+html,body,.glb{height: 100%;}
+
+/*font size*/
+.g-fs13{font-size: 1.3rem;}
+.g-fs12{font-size: 1.2rem;}
+.f-w400{font-weight: 400;}
+
+/*color*/
+.c-888{color: #888;}
+
+/*bg color*/
+.bg-f4{background-color: #f4f4f4}
+
+/*margin padding*/
+.m-8{margin: 8px;}
+.p-8{padding: 8px;}
+.m-l5{margin-left: 5px;}
+.m-r5{margin-right: 5px;}
+.m-t5{margin-top: 5px;}
+
+/*border*/
+.b-radius-3{border-radius: 3px;}
+.b-l-1-b8b7b7{border-left: 1px solid #b8b7b7;}
+.b-1-ccc{border:1px solid #ccc;}
+
+/*clear*/
+.o-hid{overflow: hidden;}
+
+/*ico*/
+.ico-goreturn
+{display:inline-block;height:0px;background-repeat:no-repeat;background-size:100% 100%;vertical-align:middle;overflow:hidden;}
+.ico-goreturn{width:23px;padding-top:10px;background-image:url(img/ico-goreturn.png);}
+
+ /*box flex*/
+.box{display:-moz-box;display:-webkit-box;display:-o-box;display:box;}
+.box-flex{-moz-box-flex:1;-webkit-box-flex:1;-o-box-flex:1;box-flex:1;}
+
+/*top-tab*/
+.top-tab{font-size:1.4rem;overflow: hidden;-webkit-column-count: 2;column-count: 2;-webkit-column-width:50%;column-width:50%;-webkit-column-gap:0px;column-gap:0px;}
+.top-tab li{padding:10px 0;border-bottom:1px solid #b8b7b7;height: 24px;line-height: 24px;vertical-align: middle;overflow: hidden;}
+.top-tab li.hover{border-bottom: 3px solid #cc0000;height: 22px;line-height: 24px;color:#cc0000; }
+.top-tab span{display: list-item;text-align: center;}

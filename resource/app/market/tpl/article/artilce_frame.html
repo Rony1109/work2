@@ -1,0 +1,46 @@
+<header class="top">
+	<div class="nav-view  jnav">
+		<ul class="clearfix nav swiper-wrapper"  id="thnav">
+			{{each channelInfo as value index}}
+			<li class="swiper-slide" data-id="{{value.id}}">{{value.name}}</li>
+			{{/each}}
+			<span class="bar"></span>
+		</ul>				
+		<div class="pagination" style="display: none;"></div>		
+		<div class="menu jmcont">
+			<p>全部频道</p>
+			<ul class="clearfix expnav" id="jmenuall">
+				{{each channelInfo as value index}}
+				<li><i>{{value.name}}</i></li>
+				{{/each}}
+			</ul>
+		</div>	
+		<div class="menubg" id="menubg"></div>	
+	</div>
+	<a href="javascript:;" class="nav-btn jmenu"><img src="images/arr.png" alt=""></a>	
+</header>
+	<div class="newlist" id="scrolWrap">
+		<!-- <div class="refresh" id="refresh">
+			<div class="load-circle" id="loadcir"></div>
+			<p id="rollup">松开刷新</p>
+		</div>
+		 -->
+		 
+		<div class="news-wrapper" id="hqcnt">
+			{{each channelInfo as value index}}
+			<ul class="slidecn Jbusul" id="news{{value.id}}">				
+				<div class="loadbox jload">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+					<div class="load">加载中...</div>
+				</div>
+							
+			</ul>		
+			{{/each}}
+		</div>
+		<!-- <div class="datalate" id="getMore">
+			<p>加载中...</p>
+		</div> -->
+	</div>

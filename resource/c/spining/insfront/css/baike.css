@@ -1,0 +1,99 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/c/spining/common/css/template.css');
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+
+.box-main{width:720px}
+.box-sub{width:260px}
+.baike-sub-hd{height:35px;padding-left:10px;background:#f4f4f4;font-size:16px;line-height:35px;}
+
+.bm-img{width:280px;_margin-bottom:-120px}
+.bm-img ul{width:300px;height: 286px;line-height: 40px;overflow: hidden;}
+.bm-img li{float:left;width:130px;height:150px;overflow:hidden;margin-right:20px;}
+.bm-img img{*display:block;}
+.bm-img a{color:#444;}
+.bm-img a:hover{color:#f60;}
+
+.bm-txt{width: 415px;}
+.admin_piao .bm-txt{width:415px;float:left;margin-left:25px}/*管理后台碎片*/
+ul.bm-txt{height:440px;overflow:hidden;_margin-top:-166px;}
+
+.bm-txt li{border-bottom:dashed 1px #e8e8e8;padding-bottom: 18px;margin-bottom: 18px;}
+.bm-txt h3{width:415px; height:22px; font-size:16px;margin-bottom:10px;overflow:hidden;}
+.bm-txt h3 a{color:#444;}
+.bm-txt h3.fc-ff6600 a{font-size: 18px;color: #ff6600;}
+.bm-txt h3 a:hover{color:#f60;}
+.bm-txt p{height:88px;color:#888;line-height:22px;overflow:hidden;}
+
+div.bm-txt h3{font-size:18px;height:25px;}
+
+.baike-focus{width:450px;height:260px;overflow:hidden; position: relative;}
+.baike-focus ul li {width: 450px; height: 260px}
+.baike-focus ol {position: absolute; bottom: 8px; right: 5px}
+.baike-focus ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;}
+.baike-focus ol li.cur {background: #f60}
+/*行业指点*/
+.ins-hot{height:258px;margin-left:450px;padding-left:20px;border:solid 1px #e8e8e8;border-left:0;}
+.ins-hot h2{margin: 10px 0;font-size:16px}
+.ins-hot h2 a{float: right;display: inline;margin-right: 8px;font: 12px/24px simsun;color: #888;}
+.ins-hot ul{width:240px;line-height:26px;overflow:hidden;}
+.ins-hot li{height:26px;padding-left:7px;background:url(img/icon_li.gif) no-repeat 0 12px;overflow:hidden;}
+.ins-hot a{color:#444;}
+.ins-hot a:hover{color:#f60;}
+
+/*热门词条*/
+.baike-keys{height:258px;border:solid 1px #e8e8e8}
+.baike-keys a{color:#444;margin-right: 20px;}
+.baike-keys a:hover{color:#f60;}
+.baike-keys ul{margin-top:6px;line-height:42px}
+.baike-keys li{height: 42px;padding-left:10px;overflow: hidden;}
+.baike-keys .bg{background:#f4f4f4;}
+
+/*百科楼层*/
+.baike-floor{}
+	.bf-hd{padding-bottom:5px;border-bottom:solid 2px #e8e8e8;}
+	.bf-hd .hd-txt{color:#f60;font-size:18px;line-height:20px}
+	.bf-hd .hd-txt span{margin-left:8px;color:#444}
+	.bf-hd .hd-a{width: 720px;height: 18px;color:#ccc;padding-top:2px;overflow:hidden}
+	.bf-hd .hd-a a{margin:0 7px 0 5px;color:#888;}
+	.bf-bd{width: 720px;}
+	.bf-bd .line{background:#e8e8e8;}
+	.side-ad{margin-top: 15px;width: 260px;}
+	.side-ad a{display: block;width: 260px;overflow: hidden;}
+	.g-h17{height: 17px;overflow: hidden;zoom:1;}
+/*行业名企*/
+.ins-star{}
+.is-bd{line-height:20px;color:#888;}
+.is-bd a{color:#444;}
+.is-bd a:hover{color:#f60;}
+.is-bd h3{line-height:18px;max-height:36px;_height:36px;overflow:hidden;}
+.is-bd div{margin-left:90px;}
+.is-bd p{height:40px;margin-top:3px;overflow:hidden;}
+
+/*时尚解密*/
+.fashion-decry ul{padding:8px 0;line-height:22px;height:110px}
+.fashion-decry a{color:#444;}
+.fashion-decry a:hover{color:#f60;}
+.fashion-decry li{height:22px;padding-left:10px;background:url(img/icon_li.gif) no-repeat 3px 10px;overflow:hidden;}
+
+/*热词动态*/
+.floor-keys{height:123px;border:solid 1px #e8e8e8;}
+.floor-keys ul{padding: 12px 0 0 18px;line-height:32px}
+.floor-keys a{color:#444;margin-right:24px;}
+.floor-keys a:hover{color:#f60;}

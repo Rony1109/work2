@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 
+ * 微盟V1.1.3  会员中心
+ * 微营销
+ * 2014.06.25 by lg
+ */
+@import url('/v2/c/member/wslm/public/css/wslm-mywm.css');
+
+/*public*/
+.c-319400{color: #319400;}
+.c-888{color: #888;}
+.c-666{color: #666;}
+.m-t5{margin-top:5px;}
+.m-t10{margin-top:10px;}
+.m-l10{margin-left:10px;}
+.m-l20{margin-left:20px;}
+.m-r5{margin-right:5px;}
+.m-r10{margin-right:10px;}
+.c-ef0000{color: #ef0000}
+.c-888{color: #888}
+.v-t{vertical-align: top;}
+
+/*活动列表*/
+.af-list-hd td{text-align: center;}
+.af-list-bd td{padding: 20px 0}
+
+/*中奖用户列表*/
+.get-status{width: 65%;background-color: #f6f6f6;border:1px solid #ccc;line-height: 24px;position: relative;}
+.get-status a{display: block;color: #666666;text-align: left;padding-left: 10px;}
+.get-status a.hid{display: none;position:absolute;z-index: 10;border:1px solid #ccc;width: 85%;left:-1px;background-color: #f6f6f6;}
+.get-status a:hover{background-color: #fff;color: #2664A2}
+.get-status:hover a.hid,.get-status.hover a.hid{display:block;}
+.ico-sj{width: 0;height: 0;border-left: 4px solid transparent;border-right: 4px solid transparent;border-top: 5px solid #898989;border-bottom: 0;position: absolute;right:10px;top:10px;}
+
+/*添加活动*/
+input.input-text{width:250px;border:1px solid #dcdcdc;height: 26px;line-height: 26px;padding: 0 5px;}
+input.input-text-mid{width:150px;border:1px solid #dcdcdc;height: 26px;line-height: 26px;padding: 0 5px;}
+input.input-text-small{width:103px;border:1px solid #dcdcdc;height: 26px;line-height: 26px;padding: 0 5px;}
+input.input-text-little{width:50px;border:1px solid #dcdcdc;height: 26px;line-height: 26px;padding: 0 5px;}
+textarea.input-textarea{width: 470px;height: 80px;resize: none;border:1px solid #dcdcdc;padding:5px;}
+input.wdate{background: url(img/date.gif) no-repeat right;}
+	/*活动内容*/
+.ac-cont li{overflow: hidden;*zoom:1;margin-bottom: 10px;}
+.ac-cont li:after{display:block;visibility:hidden;clear:both;height:0;content:'\20'}
+.ac-cont li span{float: left;line-height: 28px;}
+.ac-cont li span.ac-th{width:10%;text-align: right;padding: 0 5px;color: #444;}
+.ac-cont li span label.upimg{display: inline-block;position: relative;overflow: hidden;margin: 0 41px;}
+.ac-cont li span label.upimg input{position: absolute;top: 0;right: 0;width: 100%;height: 100%;opacity: 0;}
+
+	/*奖项设置*/
+.set-prize li{overflow: hidden;*zoom:1;padding: 18px 0;border-bottom: 1px solid #dcdcdc;}
+.set-prize li:after{display:block;visibility:hidden;clear:both;height:0;content:'\20'}
+.set-prize li span{float: left;line-height: 28px;}
+.set-prize li span.prz-th{width:14%;text-align: right;padding: 0 5px;color: #444;}
+	/*中奖概率设置*/
+.set-win li{overflow: hidden;*zoom:1;margin-bottom: 10px;}
+.set-win li:after{display:block;visibility:hidden;clear:both;height:0;content:'\20'}
+.set-win li span{float: left;line-height: 28px;}
+.set-win li span.winum-th{width:18%;text-align: right;padding: 0 5px;color: #444;}
+.set-win li span .dt{display: inline-block;line-height: 18px;vertical-align: middle;}

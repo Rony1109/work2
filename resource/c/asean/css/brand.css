@@ -1,0 +1,58 @@
+@import url('base.css');
+
+body{background: #f2f2f2}
+.web-search{background: #fff}
+.slide {float: left;display: inline;width: 720px; height: 300px; overflow: hidden; position: relative;}
+.slide ul li { width: 720px; height: 300px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 20px; height: 20px;line-height: 20px; float: left; margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;text-align: center; background: url(img/banner-nav.png) no-repeat;_background:none;_filter:_bacground:nne;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="csc/img/banner-nav.png");}
+.slide ol li.cur {background: #ff7300;color: #fff}
+
+.attention{width: 280px;height: 300px;background: #fff}
+.attention h2{text-indent: 11px;padding-right: 11px;font-size: 16px;font-weight: normal;}
+.attention li{float: left;display: inline;margin:0 0 20px 20px;width: 100px;height: 64px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.attention li img{display: block;width: 100px;height: 40px;margin-bottom: 8px}
+.attention ul {margin-top: 15px;width: 320px;}
+.brand-log{overflow: hidden;}
+
+.brand-box{background: #fff;}
+.re-brand{width: 930px;margin: 40px auto 0;padding-bottom: 40px;overflow: hidden;zoom:1;}
+.re-brand li{float: left;display: inline;margin-right: 30px;width: 130px;height: 85px;overflow: hidden;text-align: center;-ms-word-break: break-all;word-break: break-all;}
+.re-brand li img{display: block;margin:0 auto 15px;}
+.re-brand li.last{margin-right: 0;}
+.fix-title{padding: 0 10px;height: 40px;border-bottom: 1px #e4e4e4 solid;}
+.fix-title h2{line-height: 40px;font-size: 20px;font-weight: normal;}
+.fix-title a{line-height: 40px;}
+
+.img-scroll{position: relative;}
+.scroll-box{position: relative;overflow: hidden;zoom:1;width: 956px;margin: 23px auto 0;padding-bottom: 15px;}
+.scroll-box ul{width: 9999px;}
+.scroll-box li{float: left;display: inline;width: 130px;padding: 0 15px;height: 202px;border-right: 1px #eee solid;}
+.scroll-box li a.img-msg{display: block;width: 130px;height: 98px;margin: 0 auto;overflow: hidden;text-align: center;-ms-word-break: break-all;word-break: break-all;font: 12px Microsoft YaHei,simsun;}
+.scroll-box li a.img-msg img{display: block;margin:0 auto 15px;}
+.scroll-box li h3{margin: 10px 0 5px;padding-top: 5px;font: 14px Microsoft YaHei,simsun;border-top: 1px #ddd dashed;}
+.scroll-box li p {height: 40px;overflow: hidden;}
+.scroll-box li p span{display: inline-block;*display: inline;zoom:1;white-space:nowrap;margin-right: 13px;line-height: 20px;}
+.scroll-box li a,.scroll-box span{color: #888}
+.ctr-l,.ctr-r{position: absolute;top:80px;display: block;width: 45px;height: 55px;cursor:pointer;background: url(img/ctr-brand.png) no-repeat;}
+.ctr-l{left: -45px;}
+.ctr-r{right: -45px;background-position: right 0;}
+
+.person{width: 978px;margin: 15px auto 0;padding-bottom: 20px;}
+.person li{float: left;display: inline;margin-right: 22px;width: 310px;}
+.person li p{width: 136px;color: #888}
+.person li.last{margin-right: 0;}
+.person img{float: left;display: inline;}
+
+.brand-list{position: relative;width: 290px;margin:15px 0 0 28px;}
+.brand-list li{height: 28px;line-height: 28px;background-position: -498px -876px}
+.brand-prduct{margin:20px 0 0 28px;padding-left: 18px;width: 290px;overflow: hidden;border-left: 1px #f1f1f1 solid;}
+.brand-prduct li{float: left;display: inline;width: 130px;height: 125px;margin:0 30px 20px 0;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.brand-prduct li.last{margin-right: 0;}
+.brand-prduct li img{margin-bottom: 6px;}
+.brand-prduct ul{width:320px ;}
+.person-story{margin:20px 0 0 18px;}
+.person-story li{margin-bottom: 24px;overflow: hidden;}
+.person-story p{width: 137px;margin-left: 15px;line-height: 20px;}
+.person-story p a{display: block;margin-bottom: 12px;max-height: 30px;_height:expression(this.scrollHeight > 30 ? "38px" : "auto");font-weight: bold;}
+.person-story{width: 313px;}

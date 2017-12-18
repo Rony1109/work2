@@ -1,0 +1,74 @@
+@import url('style.css');
+
+/*图片轮播*/
+.wp-slide,.slide-box{height:350px;}
+.wp-slide{margin-bottom:20px;}
+.slide-box,.slide-lst li{width:1440px;overflow:hidden;}
+.slide-box{margin:0 auto;text-align:center;position:relative;}
+.slide-lst{position:absolute;left:0;top:0;width:10000px;}
+.slide-lst li{float:left;}
+.slide-lst li img{max-width:1440px;max-height:800px;}
+.slide-trg{position:absolute;bottom:14px;left:50%;width:978px;margin-left:-500px;padding-right:22px;text-align:center;}
+.slide-trg a{display:inline-block;background:#a3080e;width:17px;height:17px;line-height:99px;margin-right:6px;overflow:hidden;border-radius: 100%;}
+.slide-trg .cur{background:#f70303;height:17px;*position:relative;*top:-1px;}
+
+/*橱窗推荐*/
+.wp-cqres{margin-bottom:10px;width:1000px;overflow:hidden;}
+.wp-cqres .skin-box-hd{background:#fff url(img/cqres-hd-bg.png) no-repeat left top;height:86px;font-size:24px;color:#3e5829;}
+.wp-cqres .skin-box-hd h2{margin:0px 0 0 25px;height: 86px;line-height: 86px;color: #fff;font-size: 43px;}
+.wp-cqres .skin-box-bd{background:#fff;width:1000px;overflow:hidden;}
+.cqres-lst{padding:10px 11px 10px;width:1000px;background-color: #eedfdf;}
+.cqres-lst li{float:left;width:237px;margin-right:10px;overflow:hidden;background-color: #fff;}
+.cqres-lst .pic .i{width:237px;height:237px;*font-size:213px;}
+.cqres-lst .i img{max-width:237px;max-height:237px;}
+.cqres-lst .itm-bd{padding:10px 10px 0;background-color: #424242;}
+.cqres-lst .title{height:18px;line-height:18px;overflow:hidden;}
+.cqres-lst .title a{color:#fff;}
+.cqres-lst .itm-bd .bd{margin-top:10px;}
+.cqres-lst .price{font-size:25px;}
+.cqres-lst .price em{font-size:22px;}
+.cqres-lst .ask{background:url(img/sf.png) no-repeat -19px 4px;width:80px;height:32px;padding-right:8px;color:#fff;font:0px/0px simsun;text-align:right;}
+.cqres-lst .itm-bd .ft{border-top:1px dashed #dbdada;padding:10px 0 14px;margin-top:3px;}
+.cqres-lst .sc-opt{color:#929292;}
+.cqres-lst .sc-opt i{background-position:0 -33px;width:14px;height:13px;margin-right:4px;}
+
+/*新品中心*/
+.wp-newpro{margin-bottom:15px;}
+.wp-newpro .skin-box-hd{background:#fff url(img/cqres-hd-bg.png) no-repeat left top;height:86px;font-size:24px;color:#3e5829;}
+.wp-newpro .skin-box-hd h2{margin:0px 0 0 25px;height: 86px;line-height: 86px;color: #fff;font-size: 43px;}
+.wp-newpro .skin-box-bd{width:1000px;overflow:hidden;background-color: #eedfdf;}
+.newpro-lst1{float: left;padding-top: 10px;}
+.newpro-lst2{width:660px;float: left;padding-top: 10px;}
+.newpro-lst1 li,.newpro-lst2 li{float:left;overflow:hidden;margin-left:10px;margin-bottom: 10px;}
+.newpro-lst1 li a,.newpro-lst2 li a{display:inline-block;background:#fff;}
+.newpro-lst1 li,.newpro-lst1 li a{width:320px;height:650px;}
+.newpro-lst2 li,.newpro-lst2 li a{width:320px;height:320px;}
+
+/*产品搜索*/
+.wp-search{margin-bottom:10px;}
+.wp-search .skin-box-bd{background:#dbdbdb;}
+.wp-search-box .title{font-size:14px;font-weight:bold;margin-top:3px;*margin-top:5px;margin-right:60px;}
+
+/*供应产品*/
+.wp-hotpro .skin-box-bd{width:800px;*padding-bottom:22px;_padding-bottom:0;overflow:hidden;}
+.wppro-lst{margin-left:8px;width:800px;padding:3px 0 20px;}
+.wppro-lst li{float:left;background:#fff;width:258px;height:352px;margin-right:6px;margin-top:10px;overflow:hidden;}
+.wppro-lst .itm{background-color: #d5d5d5;overflow: hidden;}
+.wppro-lst li.hover .itm{background-color: #d00509;}
+.wppro-lst .pic{background:#fff;width:250px;height:250px;padding:2px;border:1px solid #fff;overflow:hidden;margin-left: 1px;margin-top: 1px;}
+.wppro-lst .pic .i{width:250px;height:250px;*font-size:224px;}
+.wppro-lst .i img{max-width:250px;max-height:250px;}
+.wppro-lst li .itm-bd{height:74px;}
+.wppro-lst li .title{height:40px;line-height:40px;text-align:center;overflow:hidden;padding: 0 5px;}
+.wppro-lst li .title a{color:#444;}
+.wppro-lst li.hover .pic{border:1px solid #d00509;}
+.wppro-lst li.hover .itm a,.wppro-lst li.hover .itm a:hover{color: #fff;text-decoration: none;}
+.wppro-lst li .itm-bd .bd{background: url(img/bd-bg.png) no-repeat;height: 35px;line-height: 35px;padding: 0 5px;overflow:hidden;}
+.wppro-lst .shadow{background:url(img/shadow1.png) no-repeat;height:8px;}
+.wppro-lst .sc-opt,.wppro-lst .ask-opt{color:#fff;}
+.wppro-lst .sc-opt{margin-right:10px;}
+.wppro-lst .sc-opt i,.wppro-lst .ask-opt i{width:22px;height:22px;margin-right:3px;}
+.wppro-lst .sc-opt i{background-position:-15px -33px;}
+.wppro-lst .sc-opt.favorited{color:#8d8d8d;}
+.wppro-lst .sc-opt.favorited i{background-position:-38px -33px;}
+.wppro-lst .ask-opt i{background-position:-61px -33px;}

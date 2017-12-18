@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>会员中心-微营销-添加活动</title>
+  <meta name="keywords" content=""/><!-- seo 关键字 -->
+  <meta name="description" content=""/><!-- seo 网页描述 -->
+  <!-- 此外应为旧头部公用代码 start -->
+  <link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css">  
+  <script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+  <link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css">
+  <script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script>
+  <!-- 此外应为旧头部公用代码 end -->
+  <link rel="stylesheet" type="text/css" href="/v2/c/member/wslm/micromarketing/css/mkt.css"><!-- 此为会员中心->微营销的所有页面样式 -->
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+  <div class="head-bd">
+      <div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+          <a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://member.csc86.com/membercenter/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        </div>
+        <div class="index-link">
+          <a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<div class="g-o-a app-frame offer">
+<div id="apply" class="af-nav">
+  <h2>微商联盟</h2>
+  <ul class="nav-items">
+    <li class="bg-none item"><a href="#">我的微盟</a></li>
+    <li class="bg-none item"><a href="#">自定义回复</a></li>
+    <li class="bg-none item"><a href="#">自定义菜单</a></li>
+    <li class="bg-none item cur"><a href="#">微营销</a></li>
+    <li class="bg-none item"><a href="#">微盟相册管理</a></li>
+    <li class="bg-none item"><a href="#">使用指南</a></li>
+  </ul><script>seajs.use(csc.url("res","/f=js/m/statusTab"),function (){csc.statusTab("ul.nav-items>li.item>a");});</script>
+</div>
+<div class="af-bd">
+    <h1 class="af-hd">微营销</h1>
+    <ul class="g-c-f af-tab">
+      <li class="cur"><a href="javascript://">活动内容</a></li>
+      <li><a href="javascript://">奖项设置</a></li>
+    </ul>
+    <div class="g-h-30"></div>
+    <div class="">
+      <form method="post" action="#">
+        <div><!--活动内容 start-->
+          <ul class="ac-cont">
+            <li>
+              <span class="ac-th">关键词：</span>
+              <span class="ac-td">
+                <input class="input-text" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>只能写一个关键词，用户输入此关键词将会触发此活动</font>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">活动图片：</span>
+              <span class="ac-td">
+                <img src="css/img/0.jpg">
+                <a class="uu-btn-gray m-l20 m-r10 v-t" href="javascript://"><em>点击上传</em></a>
+                <font class="v-t c-888">（尺寸：宽720像素，高400像素）小于200k；</font>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">活动名称：</span>
+              <span class="ac-td">
+                <input class="input-text" maxlength="50" type="text" name="" >
+                <font class="v-t c-888"><b class="m-l10 m-r5 c-ef0000">*</b>请不要多于50字! </font>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">兑奖信息：</span>
+              <span class="ac-td">
+                <input class="input-text" maxlength="100" type="text" name="" >
+                <font class="v-t c-888"><b class="m-l10 m-r5 c-ef0000">*</b>请不要多于100字! 这个设定但用户输入兑奖时候的显示信息! </font>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">活动时间：</span>
+              <span class="ac-td">
+                <input class="input-text-small m-r10" type="text" name="" >至<input class="input-text-small m-l10" type="text" name="" >
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">简介：</span>
+              <span class="ac-td">
+                <textarea class="input-textarea" name="" ></textarea>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">活动说明：</span>
+              <span class="ac-td">
+                <textarea class="input-textarea" name="" ></textarea>
+              </span>
+            </li>
+            <li>
+              <span class="ac-th">未中奖回复：</span><span class="ac-td"><input class="input-text" type="text" name="" ></span></li>
+            <li class="m-t10">
+              <span class="ac-th">&nbsp;</span><span><a class="uu-btn" href="javascript://"><em>&nbsp;&nbsp;下一步,填写奖项设置&nbsp;&nbsp;</em></a></span></li>
+          </ul>
+        </div><!--活动内容 end-->
+        <div><!--奖项设置 start-->
+          <ul class="set-prize">
+            <li>
+              <span class="prz-th">奖项1（特等奖）：</span>
+              <span>
+                <em class="c-666 m-l10">奖项名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">奖品名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <em class="c-666 m-l10">实际数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必填项</font>
+              </span>
+            </li>
+            <li>
+              <span class="prz-th">奖项1（特等奖）：</span>
+              <span>
+                <em class="c-666 m-l10">奖项名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">奖品名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <em class="c-666 m-l10">实际数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必填项</font>
+              </span>
+            </li>
+            <li>
+              <span class="prz-th">奖项1（特等奖）：</span>
+              <span>
+                <em class="c-666 m-l10">奖项名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">奖品名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <em class="c-666 m-l10">实际数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必填项</font>
+              </span>
+            </li>
+            <li>
+              <span class="prz-th">奖项1（特等奖）：</span>
+              <span>
+                <em class="c-666 m-l10">奖项名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">奖品名称</em><input class="input-text-small m-l10" type="text" name="" >
+                <em class="c-666 m-l10">数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <em class="c-666 m-l10">实际数量</em><input class="input-text-little m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必填项</font>
+              </span>
+            </li>
+          </ul>
+          <div class="g-h-20"></div>
+          <ul class="set-win">
+            <li>
+              <span class="winum-th">预计活动的人数：</span>
+              <span>
+                <input class="input-text-small m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b><em class="dt">预估活动人数直接影响抽奖概率：中奖概率 = 实际奖品总数/(预估活动人数*每人抽奖次数) <br>如果要确保任何时候都100%中奖建议设置为1人参加!</em></font>
+              </span>
+            </li>
+            <li>
+              <span class="winum-th">每人最多允许抽奖总次数：</span>
+              <span>
+                <input class="input-text-small m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必须大于0无上限</font>
+              </span>
+            </li>
+            <li>
+              <span class="winum-th">每天最多抽奖次数：</span>
+              <span>
+                <input class="input-text-small m-l10" type="text" name="" >
+                <font class="c-888"><b class="m-l10 m-r5 c-ef0000">*</b>必须小于总抽奖次数！ 0 为不限制 抽完总数就不能抽了! 可以抽奖天数 = 总数/每天抽奖次数! </font>
+              </span>
+            </li>
+            <li class="m-t10">
+              <span class="winum-th">&nbsp;</span>
+              <span><a class="uu-btn m-l10" href="javascript://"><em>&nbsp;&nbsp;&nbsp;&nbsp;提交&nbsp;&nbsp;&nbsp;&nbsp;</em></a></span>
+            </li>
+          </ul>
+        </div><!--奖项设置 end-->
+      </form>
+    </div>
+
+  </div>
+</div>
+    
+<div class="g-h-20"></div>
+<div class="g-o-a foot">
+  <div class="foot-link"><a href="http://group.csc86.com" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com/" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">客服中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+  </div>
+  <p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved </p>
+  深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>
+

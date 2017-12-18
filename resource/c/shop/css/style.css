@@ -1,0 +1,103 @@
+/*以下为所有模板中所有页面的公用样式*/
+
+/***头部***/
+#header{background:#fff;height:49px;border-bottom:1px solid #acacac;}
+.top-bar a{color:#2664a2;}
+
+.top-bar .logo{margin-top:9px;}
+
+.top-sign{margin-top:15px;padding-left:27px;}
+.top-sign .msg{background:#0d82d5;color:#fff;padding:1px 3px;margin-left:5px;}
+.top-sign .sprt{color:#d8d8d8;margin:0 10px;}
+
+.top-mycnt .hd a,.top-mycnt .hd a i,.top-search .hd i{display:inline-block;}
+.top-mycnt .hd a i,.top-search .hd i{background:url(img/top-sf.png) no-repeat;vertical-align:middle;overflow:hidden;}
+
+.top-mycnt{margin-left:-12px;padding-left:1px;position:relative;margin-top:14px;*margin-top:15px;_margin-top:17px;z-index:20;}
+.top-mycnt .hd{border:1px solid #fff;border-bottom:none;}
+.top-mycnt .hd a{width:62px;padding:0 12px;}
+.top-mycnt .hd a i{background-position:0 0;width:9px;height:5px;margin-left:5px;}
+.top-mycnt-hover .hd a i{background-position:0 -5px;}
+.top-mycnt .bd{display:none;}
+.top-mycnt-hover{margin-left:-13px;margin-top:9px;*margin-top:10px;_margin-top:7px;}
+.top-mycnt-hover .hd,.top-mycnt-hover .bd{border:1px solid #e6e6e6;}
+.top-mycnt-hover .hd a,.top-mycnt-hover .bd{width:62px;padding:0 13px;}
+.top-mycnt-hover .hd{position:relative;z-index:10;background-color:#fff;border-bottom:none;padding-top:5px;_padding-top:10px;}
+.top-mycnt-hover .bd{display:block;background:#fff;width:62px;padding-top:10px;padding-bottom:8px;position:absolute;margin-top:-1px;}
+.top-mycnt-hover .bd h2{padding-bottom:3px;}
+.top-mycnt-hover .bd li{height:26px;line-height:26px;overflow:hidden;}
+.top-mycnt-hover .bd li a{color:#444;}
+.top-mycnt-hover .bd li a:hover{color:#2664a2;}
+
+.top-search{width:344px;height:18px;padding:4px 0;border:1px solid #e4e4e4;margin-top:10px;position:relative;z-index:20;}
+.top-search .hd{width:60px;height:18px;position:relative;overflow:hidden;}
+.top-search .hd ul,.top-search .hd i{position:absolute;}
+.top-search .hd ul{background:#fff;}
+.top-search .hd li{display:none;}
+.top-search .hd .cur{display:block;}
+.top-search .hd li a{display:block;background:#fff;padding-left:12px;padding-top:0px;}
+.top-search .hd .cur a{color:#222;}
+.top-search .hd li a:hover{text-decoration:none;}
+.top-search .hd i{background-position:0 -10px;width:8px;height:4px;right:8px;top:7px;}
+.top-search .hd-hover{overflow:visible;}
+.top-search .hd-hover ul{border:1px solid #d9d9d9;width:60px;left:-1px;top:-5px;*padding-top:1px;}
+.top-search .hd-hover i{background-position:0 -14px;}
+.top-search .hd-hover li,.top-search .hd-hover li a{display:block;background:#fff;height:26px;overflow:hidden;}
+.top-search .hd-hover li a{padding:4px 12px;color:#666;}
+.top-search .hd-hover li a:hover{background:#f1f1f1;}
+.top-search .hd-hover .cur a:hover{background:#fff;}
+.top-search .bd .ipt-txt{background:#fff;width:203px;border:none;border-left:1px solid #d9d9d9;height:18px;padding:0 5px;overflow:hidden;}
+.top-search .srch-smt{background:#e94545;border:none;width:71px;height:28px;_height:30px;color:#fff;cursor:pointer;position:absolute;right:-1px;top:-1px;}
+
+
+/***底部***/
+#footer{background:#fff;/* overflow: auto;*/}
+.footer-bd{text-align:center;padding:12px 0;}
+.footer-bd a,.footer-bd .inf{display:inline-block;vertical-align:middle;line-height:20px;}
+.footer-bd .inf{border-left:1px solid #e6e6e6;padding-left:25px;margin-left:20px;text-align:left;}
+.footer-bd .foot-logo{ padding-top: 10px }
+.footer-bd .foot-logo .img{ width: 120px; height: 50px; background: url("//res.csc86.com/image/c/index/b03.png") no-repeat;}
+.footer-bd .foot-logo .img .dimg{ opacity: 0; filter:alpha(opacity=0); /*IE6~IE8*/ }
+.footer-bd .foot-logo .img span{ width:120px; height:50px; display: block; overflow: hidden; }
+
+
+/***模板主体***/
+#content,#hd,#bd,#ft{width:100%;}
+#content{position:relative;overflow:hidden;padding-bottom:20px;}
+.wp-lyt img{vertical-align:top;}
+.wp-lyt-sm .wp-colsub{float:left;width:190px;}
+.wp-lyt-sm .wp-colmain{float:right;width:800px;}
+
+/*通栏*/
+.wp-tgln{position:relative;}
+.wp-tgln .skin-box-hd,.wp-tgln .skin-box-bd{position:absolute;width:3000px;left:50%;margin-left:-1500px;}
+
+/*图片垂直水平居中*/
+.wp-ivm .i{display:table-cell;text-align:center;vertical-align:middle;*display:block;*font-family:Arial;*zoom:1;overflow:hidden;}
+.wp-ivm .i img{max-width:100%;max-height:100%;*float:none;_width:100%;_height:100%;vertical-align:middle;_vertical-align:top;}
+
+/*左侧浮动二维码*/
+.flyqr{font-size: 12px;color: #878787;position: fixed;right: 20px;bottom: 20px;background-color: #fff;z-index:20;}
+.flyqr .tsimg{ position:relative; margin-top:-45px; text-align:right; padding-bottom:5px;}
+.flyqr .tsimg img{ margin:0px;}
+.flyqr .ewm{ border: 1px solid #ebebeb;}
+.flyqr img{margin: 15px;}
+.flyqr span{border-top: 1px dotted #ebebeb;line-height: 18px;text-align: center;padding:10px 0;}
+
+.flyqr .ts{ width:148px; padding:10px;padding-bottom:10px; line-height:22px; color:#444; width:126px; border: 1px solid #ebebeb; margin-bottom:20px;}
+.flyqr .ts em{ color: #ff923a}
+
+
+/*隐藏电话号码*/
+.wp-mdl .skin-box-hd.posirel{ position:relative; cursor:pointer}
+.wp-mdl .skin-box-hd.posirel .sjfh{
+width: 0;height: 0;overflow: hidden;border: solid transparent;border-width:6px;_border-color:#fff;border-top-color:#fff;vertical-align:middle;position: absolute; right:8px; top:10px;*margin-right:0
+	}
+.wp-mdl .wp-contact .skin-box-bd.hide{ display:none}
+.viewcontact a{ color:#333}
+
+.gsall{margin-top:10px; margin-bottom:10px; height:40px; border: 1px solid #ccc; font-family: '微软雅黑'; background-color: #fff;}
+.gsall .sp1{display:block;float:left; margin-left:10px; line-height:40px;}
+.gsall .sp2{float:left; display: block; line-height:40px; margin-left:10px;}
+.gsall .sp3{font-size: 14px; color: #666666; float:left; display: block; line-height:42px; margin-left:10px; width: 910px;}
+.gsall .sp3 em{ color:#e94545;}

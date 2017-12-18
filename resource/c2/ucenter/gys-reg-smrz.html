@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>企业实名认证</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+<div class="single-header">
+    <div class="g-cf single-w header-bd">
+        <div class="g-fl logo">
+            <a class="csc" href=""><img src="images/logo.jpg" width="274" height="51" alt="华南城网"></a><span class="sub">注册</span>
+        </div>
+        <div class="g-fr contact">
+            <p class="tip">如有疑问，请拨打：客服中心</p>
+            <p class="uc-icon tel">400 184 8666</p>
+        </div>
+    </div>
+</div>
+
+<div class="single-main">
+    <p class="single-w hasreg">已注册？<a href="">马上登录</a><i class="uc-icon sjt-icon"></i></p>
+    <div class="single-w main-bd">
+        <ul class="g-cf reg-process">
+            <li class="itm itm1 cur">1<span>企业实名认证</span></li>
+            <li class="bar"></li>
+            <li class="itm itm2">2<span>开通旺铺</span></li>
+            <li class="bar"></li>
+            <li class="itm itm3"><i class="uc-icon right-icon"></i><span>注册成功</span></li>
+        </ul>
+
+        <div class="reg-bd reg-smrz">
+            <form id="smrzFrm" method="post" action="">
+                <table class="uc-lrtbl smrz-lrtbl">
+                    <colgroup>
+                        <col width="150">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th><em class="g-cred">*</em>企业类型</th>
+                            <td>
+                                <input id="gtgsh" type="radio" name="enterpriseType" value="">
+                                <label class="g-mr15" for="gtgsh">个体工商户</label>
+                                <input id="qy" type="radio" name="enterpriseType" value="">
+                                <label for="qy">企业</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th valign="top"><em class="g-cred">*</em>企业名称</th>
+                            <td>
+                                <p><input class="g-w330 ipt-txt" id="qyName" type="text" name="" value=""></p>
+                                <p class="g-cc5 g-mt5">请填写在工商局注册的公司名全称，如xxx股份有限公司</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>营业执照注册号<br><span class="g-c9">(社会统一信用号)</span></th>
+                            <td><input class="g-w330 ipt-txt" id="yyzzRegNum" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>营业执照注册地</th>
+                            <td>
+                                <select id="province" class="g-mr5 frm-slt">
+                                    <option value="">请选择省</option>
+                                </select>
+                                <!--<select id="city" class="frm-slt">
+                                    <option value="">请选择市</option>
+                                </select>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>营业期限</th>
+                            <td class="yyqx-td">
+                                <span class="g-pr"><input class="g-w290 ipt-txt" id="yyqx" type="text" name="" value=""><i class="uc-icon date-icon"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>登记机构</th>
+                            <td><input class="g-w290 ipt-txt" id="djjg" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>企业法人</th>
+                            <td>
+                                <input class="g-w130 g-mr10 ipt-txt" id="frName" type="text" name="" value="">
+                                <label class="g-mr10"><input type="radio" name="frRdo" value=""> 先生</label>
+                                <label><input type="radio" name="frRdo" value=""> 女士</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>身份证号码</th>
+                            <td><input class="g-w290 ipt-txt" id="idcardNum" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th valign="top"><em class="g-cred">*</em>法人身份证</th>
+                            <td class="idcard-td">
+                                <p class="g-c9">支持jpg、png格式图片，大小不超过5M</p>
+                                <ul class="g-cf g-mt20 idcard-lst">
+                                    <li>
+                                        <p class="upload-box">
+                                            <span class="upload-fbtn"><span>正面</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                        </p>
+                                        <p class="g-mt20 preview-box">
+                                            <img src="images/card-img1.jpg" width="200" height="129" alt=""/>
+                                            <input name="" id="frIdcardImg1" type="hidden" value="">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="upload-box">
+                                            <span class="upload-fbtn"><span>反面</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                        </p>
+                                        <p class="g-mt20 preview-box">
+                                            <img src="images/card-img2.jpg" width="200" height="129" alt=""/>
+                                            <input name="" id="frIdcardImg2" type="hidden" value="">
+                                        </p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th valign="top"><em class="g-cred">*</em>营业执照扫描件</th>
+                            <td>
+                                <p class="upload-box">
+                                    <span class="upload-fbtn"><span>点击上传</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                    <span class="g-c9 g-ml10">仅支持jpg、png、gif格式图片，大小5M以内，确保图片清晰</span>
+                                </p>
+                                <p class="g-mt20 preview-box">
+                                    <img src="images/yyzz-img.jpg" width="194" height="136" alt=""/>
+                                    <input name="" id="yyzzImg" type="hidden" value="">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <input id="frApply" type="radio" name="proposerType" value="" checked>
+                                <label class="g-mr10" for="frApply">法人申请</label>
+                                <input id="dlrApply" type="radio" name="proposerType" value="">
+                                <label for="dlrApply">代理人申请</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="jsApplyC">
+                        <tr>
+                            <th><em class="g-cred">*</em>联系手机</th>
+                            <td><input class="g-w290 ipt-txt" id="frPhone" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th>联系邮箱</th>
+                            <td><input class="g-w290 ipt-txt" id="frEmail" type="text" name="" value=""></td>
+                        </tr>
+                    </tbody>
+                    <tbody class="g-dn jsApplyC">
+                        <tr>
+                            <th><em class="g-cred">*</em>申请人姓名</th>
+                            <td><input class="g-w290 ipt-txt" id="dlrName" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>申请人部门</th>
+                            <td><input class="g-w290 ipt-txt" id="dlrPart" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>申请人职位</th>
+                            <td><input class="g-w290 ipt-txt" id="dlrZw" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th>固定电话</th>
+                            <td><input class="g-w290 ipt-txt" id="dlrTel" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th><em class="g-cred">*</em>手机号</th>
+                            <td><input class="g-w290 ipt-txt" id="dlrPhone" type="text" name="" value=""></td>
+                        </tr>
+                        <tr>
+                            <th valign="top"><em class="g-cred">*</em>申请人身份证</th>
+                            <td class="idcard-td">
+                                <p class="g-c9">支持jpg、png格式图片，大小不超过5M</p>
+                                <ul class="g-cf g-mt20 idcard-lst">
+                                    <li>
+                                        <p class="upload-box">
+                                            <span class="upload-fbtn"><span>正面</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                        </p>
+                                        <p class="g-mt20 preview-box">
+                                            <img src="images/card-img1.jpg" width="200" height="129" alt=""/>
+                                            <input name="" id="dlrIdcardImg1" type="hidden" value="">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="upload-box">
+                                            <span class="upload-fbtn"><span>反面</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                        </p>
+                                        <p class="g-mt20 preview-box">
+                                            <img src="images/card-img2.jpg" width="200" height="129" alt=""/>
+                                            <input name="" id="dlrIdcardImg2" type="hidden" value="">
+                                        </p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th valign="top"><em class="g-cred">*</em>授权书扫描件</th>
+                            <td>
+                                <p class="upload-box">
+                                    <span class="upload-fbtn"><span>点击上传</span><input class="upload-btn jsUploadBtn" type="file" name="" data-url=""></span>
+                                    <span class="g-c9 g-ml10">手写或打印皆可，需盖章或手写签名。支持jpg、png格式图片，大小不超过5M。<a class="g-cblue" href="">下载授权书模板</a></span>
+                                </p>
+                                <p class="g-mt20 preview-box">
+                                    <img src="images/yyzz-img.jpg" width="194" height="136" alt=""/>
+                                    <input name="" id="sqsImg" type="hidden" value="">
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="g-tc g-pt15 frm-opts">
+                    <p class="g-c9">认证一旦审核通过，不可更改。</p>
+                    <p class="g-mt20"><input class="uc-btn yllw-btn" type="submit" name="" value="下一步"> </p>
+                    <p class="g-mt15 agreement"><input class="ipt-chk" id="readChk" type="checkbox" name="" value=""> 我已阅读并同意<a class="g-cblue" href="" target="_blank">《华南城网在线交易服务协议》</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer-menu">
+        <a href="http://www.csc86.com/about/" target="_blank">关于华南城</a>
+        <a href="http://www.csc86.com/about/" target="_blank">华南城网</a>
+        <a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank">会员服务</a>
+        <a href="http://ad.csc86.com" target="_blank">广告服务</a>
+        <a href="http://www.csc86.com/about/business.html" target="_blank">商务合作</a>
+        <a href="http://www.csc86.com/about/terms.html" target="_blank">服务条款</a>
+        <a href="http://www.csc86.com/about/legal.html" target="_blank">法律申明</a>
+        <a href="http://www.csc86.com/about/privacy.html" target="_blank">隐私保护</a>
+        <a href="http://www.csc86.com/about/feedback.html" target="_blank">意见反馈</a>
+        <a href="http://www.csc86.com/help/" target="_blank">帮助中心</a>
+        <a href="http://www.csc86.com/sitemap.html" target="_blank">网站地图</a>
+        <a href="http://www.csc86.com/about/contact.html" target="_blank">联系我们</a>
+    </p>
+    <p class="copyright">Copyright © 2009-2016 China South City Holdings Limited. All Rights Reserved</p>
+    <p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+</div>
+<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/m/init/js/init.js"></script>
+<script>
+    seajs.use('c2/ucenter/js/gys-reg-smrz');
+</script>
+</body>
+</html>

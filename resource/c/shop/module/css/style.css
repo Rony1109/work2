@@ -1,0 +1,61 @@
+/*基础样式*/
+body{font-family:simsun;color:#333}
+.g-ml50{margin-left:50px;}
+.g-cred{color:#F00;}
+.g-c8{color:#888;}
+.g-w660{width:660px;margin:0 auto;}
+.g-h54{height:54px;clear:both;overflow:hidden}
+
+/*表单*/
+.ipt-txt{background:#fff;border:1px solid #ccc;width:188px;height:26px;line-height:26px;padding:0 5px; vertical-align:middle;}
+
+/*图片垂水平直居中(wp-ivm-list的为有多张图片时)*/
+.wp-ivm,.wp-ivm-lst li{display:table-cell;text-align:center;vertical-align:middle;*display:block;*font-family:Arial;*zoom:1;_overflow:hidden;}
+.wp-ivm img,.wp-ivm-lst li img{max-width:100%;max-height:100%;_width:100%;_height:100%;vertical-align:middle;}
+
+/*按钮相关*/
+*html{background-image:url(about:blank);background-attachment:fixed;}
+.mdl-smt-box{background:#ebebeb;height:24px;padding:15px 0;position:fixed;left:0;bottom:0;_position:absolute;_top:expression(document.documentElement.clientHeight + document.documentElement.scrollTop - this.offsetHeight);width:100%;overflow:hidden;}
+.mdl-smt-box input{margin-right:15px;}
+.ok-btn,.cancel-btn,.srch-btn{display:inline-block;border:none;cursor:pointer;overflow:hidden;}
+.srch-btn{background:url(img/mdl-sf.png) no-repeat;}
+.ok-btn,.cancel-btn{width:72px;height:24px;color:#fff;border-radius:3px;}
+.ok-btn{background-color:#f9601d;}
+.cancel-btn{background-color:#aeaeae;}
+.srch-btn{background-position:0 -38px;width:39px;height:28px; vertical-align:middle;}
+.gray-xbtn{display:inline-block;background:url(img/mdl-xbg.png) repeat-x 0 0;height:24px;line-height:24px;padding:0 12px;border:1px solid #b4b4b4;border-radius:3px;color:#333;vertical-align:middle;overflow:hidden;}
+
+/*上传图片相关*/
+.upld-box .ipt-txt{margin-right:5px;}
+.upld-box .gray-xbtn{position:relative;}
+.upld-box .upld-btn{position:absolute;width:100%;height:24px;right:0;top:0;opacity:.01;filter:alpha(opacity=0);}
+
+/*上传后的可移动的图片列表*/
+.setpic-box{margin:0 27px;}
+.setpic-tbl{width:100%;text-align:left;}
+.setpic-tbl thead th{font-weight:normal;border-bottom:1px solid #e5e5e5;padding:0 15px 2px;text-align:left;}
+.setpic-tbl tbody{margin-top:10px;}
+.setpic-tbl tbody td{padding:5px 15px;}
+.setpic-tbl tbody .td-last{padding:5px 15px 5px 0;}
+
+/*相关操作*/
+.mdl-cz-box{display:inline-block;}
+.mdl-cz-box a{float:left;background:url(img/mdl-sf.png) no-repeat;margin:0 5px;text-indent:-999px;cursor:pointer;overflow:hidden;}
+.mdl-cz-box .move-up,.mdl-cz-box .move-down{width:9px;height:10px;}
+.mdl-cz-box .move-up{background-position:0 -10px;}
+.mdl-cz-box .no-move-up{background-position:0 0;cursor:default;}
+.mdl-cz-box .move-down{background-position:-19px -10px;}
+.mdl-cz-box .no-move-down{background-position:-19px 0;cursor:default;}
+.mdl-cz-box .del-opt{background-position:-38px 0;width:9px;height:9px;}
+
+/*数据展示方式*/
+.sjzs-type{background:#f7f7f7;padding:30px 0 30px 60px;}
+
+/*显示和隐藏模块*/
+.isshow-box{border-bottom:1px solid #e5e5e5;padding:12px 0 12px 75px;}
+
+/*显示版块标题*/
+.show-mdl-ttl{margin-left:30px;}
+.show-mdl-ttl input{ vertical-align:middle;}
+
+.setpro-guiz{margin-left:60px; height:30px; line-height:30px;}

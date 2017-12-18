@@ -1,0 +1,37 @@
+/**
+ * 会员中心css文件
+ * 
+ */
+
+/* 会员首页依赖的模块 */
+@import url(../../common/css/m-public.css);
+@import url(../../common/css/m-top.css);
+@import url(../../common/css/m-side.css);
+@import url(../../common/css/m-foot.css);
+@import url(../../common/css/app-frame.css);
+
+/**
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+.c-ccc{color: #ccc;}
+
+.af-hd{margin: 10px 0 5px;}
+.b-list table{width:100%;border-collapse: collapse;line-height:22px;text-align: center;}
+.b-list table td,.b-list table th{border-bottom: 1px solid #e8e8e8;height:50px;}
+.b-list table .prblm-t{text-align:left;padding:0 8px;margin:10px 0;overflow:hidden;}
+.b-list table td div.answer{position: relative;background-color: #f2f2f2;overflow: hidden;top: -1px;margin-bottom: 15px;padding:15px;}
+/*.b-list table td div.answer p{margin: 20px 80px 20px 20px;overflow: hidden;height: 22px;line-height: 22px;}*/
+.b-list table td div.answer p{width:680px;overflow: hidden;line-height: 22px;}
+.b-list table td div.answer a.opt{position: absolute;right: 20px;bottom:15px;display:none;}
+.b-list table td div.answer a.opt span{font-family: simsun;margin-left: 5px;color: #444;}
+
+.info-list table{width:100%;border-collapse: collapse;line-height: 35px;}
+.info-list table td{padding-left:20px;}
+.info-list table th{width: 25%;text-align: right;}
+.i{border-bottom: 1px solid #e8e8e8}
+.info-list .line{border-top:1px solid #e8e8e8;}
+.back-btn{display:inline-block;width: 77px;height:24px;line-height:24px;text-align:center;cursor:pointer;margin-right:2px;color:#444;position:absolute;right:0;top:15px;background: url(img/btn.gif) no-repeat;}

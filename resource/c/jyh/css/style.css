@@ -1,0 +1,50 @@
+@import url('/v2/m/init/css/style.css');
+@import url('/v2/m/newtopnav/css/style.css');
+@import url('/v2/m/newsearch/css/style.css');
+@import url('/v2/m/newnav/css/style.css');
+@import url('/v2/m/bot-rightcopy/css/style.css');
+
+/*返回头部重新*/
+.g-back-btn{background-color:#e93059 !important;margin-bottom:5px;}
+.g-back-btn:hover{background-color:#f64a70 !important;}
+
+/*logo重写样式*/
+.g_logo{width:auto;}
+.g_logo  h1,.g_logo .line,.g_logo h2{float:left;overflow:hidden;}
+.g_logo  h1{margin-right:10px;}
+.g_logo .line{width:0px;height:22px;border-right:1px solid #d2d2d2;margin-top:50px;margin-right:12px;}
+.g_logo h2{background:url(img/jyh-logo.png) no-repeat;width:96px;height:27px;line-height:99px;margin-top:48px;}
+
+/*头部搜索重写样式*/
+.ch_search .ared,.ch_search a:hover,.ch_search a:active{color:#e93058;}
+.search_txt{border-color:#e93058;}
+.search_k input.btn{background:#e93058;}
+
+/*导航重写样式*/
+.g-nav{background:#e93058;}
+.g-nav-bd a:hover{background:#e3244d}
+.g-nav-bd .active,.g-nav-bd .active a:hover{background:#d90533}
+
+/***公用样式***/
+.g-o{width:1190px;}/*重新g-o宽度*/
+.g-h50{height:50px;clear:both;overflow:hidden;}
+
+/*图片垂直居中*/
+.jyh-ivm .i{display:table-cell;text-align:center;vertical-align:middle;*display:block;*font-family:Arial;*zoom:1;overflow:hidden;}
+.jyh-ivm .i img{max-width:100%;max-height:100%;_width:100%;_height:100%;vertical-align:middle;_vertical-align:top;}
+
+/*价格*/
+.price{font-size:18px;color:#cc0000;font-family:Arial;font-weight:bold;}
+.price em,.price i{font-style:normal;}
+.price em{font-size:14px;font-family:Microsoft YaHei;}
+
+/*产品列表*/
+.pro-lst li{float:left;/*width:220px;margin-right:22px;*/}
+.pro-lst .pic,.pro-lst .pic i{width:220px;height:220px;overflow:hidden;}
+.pro-lst .pic .i{*font-size:198px;}
+.pro-lst .pic .i img{max-width:220px;max-height:220px;}
+.pro-lst .t{height:40px;line-height:20px;margin-top:5px;word-break:break-all;overflow:hidden;}
+.pro-lst .t a{color:#444;word-break:break-all;}
+.pro-lst .t a:hover{color:#e93058;}
+.pro-lst .price{margin-top:5px;}
+

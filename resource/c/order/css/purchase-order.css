@@ -1,0 +1,97 @@
+@import url('style.css');
+@import url('/v2/m/page/style_li.css');
+
+.order-main{padding:0; font-family:'微软雅黑'; }
+.prchs-hd{height:45px;line-height:45px;}
+.prchs-hd h2{font-size:14px;margin-left:10px;}
+.prchs-tbl-hd{width:100%;text-align:center;}
+.prchs-tbl-hd th{background:#fff;height:45px; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;color:#333;font-weight:normal; text-align: center;}
+.prchs-tbl-hd th span{ margin-left:5px;}
+.prchs-order-tbl{}
+.prchs-order-tbl thead tr .g-c8 a{color:#333333;}
+.prchs-order-tbl thead tr{background-color: #f7fafe;}
+.prchs-order-tblfoot{ border:none; margin-top:15px; margin-bottom:30px;}
+.prchs-order-tblfoot tr{border-top:1px solid #ccc; border-bottom: 1px solid #ccc;}
+.prchs-order-tblfoot.fx{ position:fixed; bottom:0px; width:1190px; margin-bottom: 0px;}
+.prchs-order-tbl thead td{height:42px;}
+.prchs-order-tbl tfoot tr{background-color: #fff;}
+.prchs-order-tbl tfoot td{background:#fff9f1;padding:16px 0;color:#444;}
+.prchs-order-tblfoot tfoot td{color:#444; text-align: center; height:66px; line-height:66px;}
+.prchs-order-tblfoot tfoot td ._span{ margin-left:5px; font-size: 14px;}
+.prchs-order-tbl tbody tr.noSlt{background:#f9f9f9;}
+.prchs-order-tbl tbody tr.noSlt .order-num-opts span{cursor:default;border:1px solid #eee;color:#aaa;}
+.prchs-order-tbl tbody tr.noSlt .order-num-opts .num-ipt{border:1px solid #eee;color:#aaa;}
+.prchs-order-tbl tbody tr .g-c8 a{color:#333333;}
+.prchs-order-tbl tbody tr .g-c8 a:hover{color:#ff6700; text-decoration: none;}
+.prchs-order-tbl tbody tr .prchs-opts a{color:#999999}
+.prchs-order-tbl tbody tr .prchs-opts a:hover{color:#ff6700; text-decoration: none;}
+.prchs-opts{line-height:22px;}
+
+.total-opts a{margin-left:15px; color: #666;font-size: 14px;}
+
+.total-opts a:hover{ color:#ff6700; text-decoration: none;}
+.total-inf{padding-right:190px;position:relative;}
+.total-inf span{margin-left:30px; font-size: 14px; font-family: '微软雅黑'; color: #666;}
+.total-inf .qrxd-smt{width:162px;height:68px;line-height:68px;position:absolute;right:0px;top:0px;}
+.total-inf .qrxd-smt:hover{background: #ff871d; color: #fff;}
+.org-abtn, .red-abtn{-webkit-border-radius:0px;}
+
+/*分页*/
+.prchs-box .Spage{padding:10px 0px; position:relative}
+
+/*采购单为空时*/
+.prchs-blank-box{padding:155px 0 284px;}
+.blank-tip{background:url(img/blank-bg.png) no-repeat left top;padding-left:172px;padding-top:35px;height:100px;margin-left:340px;font-size:14px;line-height:28px;}
+.g-fl{float:left;}
+.g-m20{margin:20px;}
+.g-h30{height:30px;}
+/*进货车 唐勇start*/
+.pppz{ width:180px; float:right; height:70px; position: relative; padding-top:30px; margin-left:30px}
+.pppz .gwc{ width:178px; height:38px; line-height:42px;border:1px solid #f67301; background:#ffffff url(img/cart-new1.png) no-repeat  center;text-align:center; font-size:14px; font-family:Microsoft YaHei;transition:border-color  500ms; color:#f67301}
+.pppz .gwc.orange{ border:1px solid #ff6700;background:#ff6700 url(img/cart-new2.png) no-repeat  center;color:#fff}
+.pppz  a:hover{text-decoration:none; }
+.pppz .num{ background: url(img/cart-new3.png) center; position:absolute; top:28px; left:52px; width:16px; height:16px; line-height:16px; text-align:center; color:#fff; display: block;}
+.pppz .num.orangeNum{ background: url(img/cart-new4.png) center; color: #ff6700;}
+
+.gwc-all{background-color: #f5f5f5; overflow: hidden;}
+.gwc-all .gwc-top{background-color: #ffffff; margin-top:40px; height: 380px;}
+.gwc-all .gwc-im{display: block;float: left; margin-top:50px; margin-left:270px;}
+.gwc-all .gwc-null{color:#b0b0b0; font-size: 30px; margin-top:150px; margin-left:50px;}
+.gwc-all .gwc-btn1{color: #fff; margin-top:10px; background-color: #ff6700; font-size: 20px; width: 150px; height:40px; line-height:40px; text-align: center; margin-left:50px;}
+.gwc-all .gwc-btn1:hover{ background-color: #ff871d; cursor: pointer}
+.gwc-all .gwc-btn1 a{color: #fff;}
+.gwc-all .gwc-btn1 a:hover{text-decoration: none}
+.gwc-all .gwc-x{margin-top:20px; height:45px;}
+.gwc-all .gwc-x .x-lf{float:left; height: 45px; line-height:45px;}
+.gwc-all .gwc-x .x-cen{float:left; width: 500px;  color:#757575; font-family: '微软雅黑'; text-align: center; font-size: 26px; height: 45px; line-height: 45px;}
+.gwc-all .gwc-x .x-rt{float:left; height: 45px; line-height:45px;}
+.gwc-all .gwc-cen{}
+.gwc-all .gwc-cen ul{ display: inline-block;}
+.gwc-all .gwc-cen ul li{float:left; background-color: #fff; width: 224px; margin-left:15px;border:1px solid #fff; height: 307px; margin-top:20px;}
+.gwc-all .gwc-cen ul li:hover{border:1px solid #ff6700;}
+.gwc-all .gwc-cen ul li.g-ml0{margin-left:0px;}
+.gwc-all .gwc-cen ul li .g-centxt{margin-left:10px;height:30px;}
+.gwc-all .gwc-cen ul li .g-centxt .g-mon{float:left; height:27px; line-height:27px;color: #ff6904; font-family:'微软雅黑'; font-size: 18px; font-weight: 500;}
+.gwc-all .gwc-cen ul li .g-centxt .g-cjs{float:right;height:27px; line-height:27px;color: #666666; font-family:'微软雅黑'; font-size: 14px; margin-right:10px;}
+.gwc-all .gwc-cen ul li .g-tit{height:26px; line-height:26px; margin-left:10px; color: #333333; font-family:'微软雅黑'; font-size: 16px; overflow: hidden;}
+.gwc-all .gwc-cen ul li .g-tit a{color: #333333;}
+.gwc-all .gwc-cen ul li .g-tit a:hover{ text-decoration: none; color: #fe6904;}
+.gwc-all .gwc-cen ul li .g-tis{margin-left:10px;height:20px;color: #999999;  font-family: '微软雅黑';font-size: 14px; line-height:20px; overflow: hidden;}
+
+.dht-all{background-color: #fff;}
+.dht-all .dht-list{height: 40px; line-height:40px; font-family: '微软雅黑'; font-size: 16px; color: #333;}
+.dht-all .dht-list .sy1{float:left; margin-left:120px;}
+.dht-all .dht-list .sy2{float:left; margin-left:145px;}
+.dht-all .dht-list .sy3{float:left; margin-left:170px;}
+.dht-all .dht-img{text-align: center; height:70px;}
+
+
+
+.order-proitm{margin-left:30px; width:430px;}
+.order-proitm .proitm-bd{margin-left:120px;text-align:left; color: #999999;}
+.order-tbl .prc{color:#ff6700;font-size:14px;}
+.order-tbl .jsAllTPrc{font-size: 18px; padding-left:4px;}
+.order-tbl .org-moey{color:#ff6700;font-size:18px;margin-left:5px; font-weight: bold;}
+
+
+.order-tbl tbody tr.tbm{border-bottom:1px solid #ccc;}

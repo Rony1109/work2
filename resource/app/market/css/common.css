@@ -1,0 +1,130 @@
+/*base*/
+html{font-size:12px}
+body{background-color:#eee;color:#444;font-family:arial,simsun,"Microsoft YaHei";}
+img{display:block;height:auto;}
+/*loading*/
+.spinner {
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-30px;
+	margin-left:-30px;
+	width: 60px;
+	height: 60px;
+}
+ 
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e94545;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+   
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/*楼层头部通用样式*/
+.flr{background-color:#fff;margin-top:10px;padding-top:12px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.flr h2:before{float:left;background-color:#e94545;width:3px;height:18px;margin-right:7px;content:"";overflow:hidden;}
+.flr h2{margin-left:15px;color:#444;font-size:15px;overflow:hidden;}
+.flr-bd{margin-top:12px;padding:0 10px 5px;}
+.more{position:absolute;right:12px;top:12px;background:url(img/icon.png) no-repeat 0 0;background-size:75% 75%;width:12px;height:21px;opacity:0.8;font-family:simsun;}
+
+/*左右排列商品列表通用样式*/
+.pro-lst li{float:left;}
+.pro-lst li{padding-bottom:10px;}
+.pro-lst a{display:block;margin-left:3px;margin-right:3px;}
+.pro-lst .t,.pro-lst .prc{color:#666;white-space:nowrap;overflow:hidden;}
+.pro-lst .t{width:100%;margin-top:6px;text-overflow:ellipsis;}
+.pro-lst .prc{margin-top:5px;}
+.pro-lst .pic{background-size:contain;background-repeat:no-repeat;background-position:center center;}
+
+/*广告轮播图触点*/
+/*.slide .swiper-pagination-bullet{width:10px;height:10px;opacity:1;}
+.slide .swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
+.slide .swiper-pagination .swiper-pagination-bullet-active{opacity:1;background: #e94546;}*/
+.swiper-pagination .swiper-pagination-bullet{
+	width: 15px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 4px;
+	background: #fff;
+	opacity: .6;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+	opacity: 1;
+	background: #e94546;
+}
+.swiper-slide img{
+	max-width: 100%;
+	width:100%;
+}
+
+/*针对各屏幕宽度做效果*/
+@media screen and (max-width:320px){
+		
+}
+@media screen and (min-width:321px) and (max-width:375px){
+		
+}
+@media screen and (min-width:376px) and (max-width:414px){	
+	
+}
+@media screen and (min-width:415px) and (max-width:639px){
+	html{font-size:15px}
+	.flr h2:before{width:4px;height:26px;margin-right:10px;}
+	.flr h2{font-size:24px;}
+}
+@media screen and (min-width:640px) and (max-width:719px){
+	html{font-size:20px}
+	.flr h2:before{width:5px;height:32px;margin-right:12px;}
+	.flr h2{font-size:28px;}
+}
+@media screen and (min-width:720px) and (max-width:749px){
+	html{font-size:22.5px}
+	.flr h2:before{width:5px;height:33px;margin-right:12px;}
+	.flr h2{font-size:30px;}
+}
+@media screen and (min-width:750px) and (max-width:799px){
+	html{font-size:23.5px}
+	.flr h2:before{width:5px;height:36px;margin-right:12px;}
+	.flr h2{font-size:32px;}
+}
+@media screen and (min-width:800px){
+	html{font-size:25px}
+	.flr h2:before{width:8px;height:46px;margin-right:15px;}
+	.flr h2{font-size:40px;}
+}
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    html{font-size:14px}
+}

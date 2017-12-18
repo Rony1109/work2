@@ -1,0 +1,29 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url(''); /* 没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+.foot{border-top:2px solid #aa6d3e;padding-top:20px}
+.foot ul{padding-bottom:10px}
+.foot li{display:inline;float:left;width:190px;padding-left:60px;line-height:27px}
+.foot li h3{padding-left:35px;background:url(img/foot_icol.png) no-repeat 0 0;color:#888;font-size:15px;font-family:Microsoft YaHei,simhei}
+.foot li h3.integrity{background-position:0 -48px}
+.foot li h3.services{background-position:0 -86px}
+.foot li h3.community{background-position:0 -128px}
+.foot li a{display:block;padding-left:35px;line-height:23px;color:#888}
+
+.link{padding-bottom:10px;border-top:1px solid #ebebeb;color:#444;line-height:26px;text-align:center}
+.love-links a{color:#444;padding:0 10px}
+.link p{color:#888}

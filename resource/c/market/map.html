@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>市场地图</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css"/>
+	<link rel="stylesheet" href="css/map.css"/>
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script src="http://res.csc86.com/v2/m/init/js/init.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<div class="g-o">
+			<div class="top-csc-group">
+				<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+				<a target="_blank" href="http://sz.csc86.com">深圳</a>
+				<a target="_blank" href="http://nn.csc86.com">南宁</a>
+				<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+				<a target="_blank" href="http://xa.csc86.com">西安</a>
+				<a target="_blank" href="http://zz.csc86.com">郑州</a>
+				<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+			</div>
+			<div class="server-r">
+				<a title="" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a>
+				<span class="v-line t-w"></span>
+				<a class="sethome" href="#">设置首页</a>
+				<span class="v-line t-w"></span>
+				<a class="addfav" href="#">收藏</a>
+			</div>
+			<span class="v-line sev-r"></span>
+			<div class="top-my-account">
+				<div class="hd">我的账户</div>
+				<div class="g-c-f bd w-193">
+					<ul class="csc-bd">
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-sign-info">
+				您好，
+				<span class="bd">欢迎光临华南城网！ <a rel="nofollow" href="http://login.csc86.com/" class="tit">登录</a>
+				<span class="v-line"></span>
+				<a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span>
+				<span class="v-line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="g-cf logo-search">
+		<div class="g-fl logo">
+			<h1 class="g-fr"><a href="http://market.csc86.com/">逛市场</a></h1>
+			<h2 class="g-fl"><a href="http://www.csc86.com/"><img src="http://res.csc86.com/v2/c/market/image/csc-logo.png" alt="实体商圈，可信交易。" width="225" height="46" /></a></h2>
+		</div>
+		<div class="g-fl search">
+			<form action="search">
+				<input type="text" name="q" class="g-fl txt"/>
+				<button type="submit"><span class="g-fl g-dn">搜索</span></button>
+			</form>
+		</div>
+	</div>
+	<div class="g-cf csc-body">
+		<div class="g-fl csc-content" id="cscContent">
+			<a href="javascript:" class="content-close"></a>
+			<div id="contentBd">
+				<!-- 交通指南
+				<div class="content-bd g-ffy content-search">
+					<div class="g-cf content-hd">
+						<h2 class="g-fl">交通指南</h2>
+						<a href="#" class="g-fr back">返回</a>
+					</div>
+					<div class="left-scroll">
+						<div class="traffic-bd">
+							<ul class="g-cf g-fs14 traffic-tab">
+								<li class="active">免费班车</li>
+								<li class="bus">公交</li>
+								<li class="car">自驾</li>
+							</ul>
+							<div class="traffic-tab-bd traffic-tab-bd-active">
+								<ul class="tarffic-free">
+									<li class="active">
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">华强北</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											8:00、9:00、10:00、11:00、13:00、14:00、15:00、16:00、17:00、18:00<br/>
+											<br/>
+											华强北发车时间：<br/>
+											9:00、10:00、11:00、13:00、14:00、15:00、16:00、17:00、18:00、19:00
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">布吉地铁站</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											10:00、11:00、12:00、14:00、15:00、16:00、17:00、18:00、19:00、20:00<br/>
+											<br/>
+											布吉地铁站发车时间：<br/>
+											9:00、10:00、11:00、12:00、14:00、15:00、16:00、17:00、18:00、19:00
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">丽湾酒店</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											8:00、10:00、13:30、16:00、18:30<br/>
+											<br/>
+											丽湾酒店发车时间：<br/>
+											9:00、11:00、14:30、17:00
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">凤凰大道</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											9:30、10:30、13:30、15:30、18:30<br/>
+											<br/>
+											凤凰大道发车时间：<br/>
+											9:00、10:00、11:30、14:30、16:30
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">山厦村委</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											9:30、10:30、13:30、15:30、18:30<br/>
+											<br/>
+											山厦村委发车时间：<br/>
+											9:00、10:00、11:30、14:30、16:30
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">慢城、龙园意境</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											9:30、11:00、14:00、16:00、17:00、19:00<br/>
+											<br/>
+											慢城、龙园意境发车时间：<br/>
+											9:00、10:00、12:00、15:00、16:30、18:00
+										</div>
+									</li>
+									<li>
+										<div class="g-cf free-line-hd">
+											<div class="g-fl">辅城坳</div>
+											<div class="g-fr">华南城</div>
+										</div>
+										<div class="free-line-bd">
+											华南城发车时间：<br/>
+											9:40、11:20、14:00、16:00、18:30<br/>
+											<br/>
+											辅城坳发车时间：<br/>
+											9:00、10:30、12:00、15:00、17:00
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="g-cf get-line traffic-tab-bd">
+								<form action="">
+									<div class="g-fl get-line-form">
+										<div class="g-cf"><span>起</span><input name="from" type="text"/></div>
+										<div class="g-h15"></div>
+										<div class="g-cf end"><span>终</span><input name="to" type="text"/></div>
+										<div class="g-h15"></div>
+										<button type="sbumit">获取路线</button>
+									</div>
+								</form>
+								<a href="javascript:" class="g-fl exchange"></a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- 搜索列表页
+				<div class="content-bd g-ffy content-search">
+					<div class="g-cf content-hd">
+						<h2 class="g-fl">共20条搜索结果</h2>
+						<a href="#" class="g-fr back">返回</a>
+					</div>
+					<div class="left-scroll items-list">
+						<ol class="search-result">
+							<li>
+								<div class="item-ico item-ico-1"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-2"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-3"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-4"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-5"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-6"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-7"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-8"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-9"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+							<li>
+								<div class="item-ico item-ico-10"></div>
+								<div class="search-item">
+									<a href="javascript:">深圳巨联<strong>纺织</strong></a>
+									<p>经营范围：纺织</p>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<div class="g-tc g-fs14 search-empty">没有找到相匹配信息</div>
+				</div> -->
+				<!-- 首页 -->
+				<div class="content-bd left-scroll g-ffy">
+					<div class="content-box">
+						<div class="g-h10"></div>
+						<h2><a href="#!action=market"><img src="http://res.csc86.com/v2/c/market/image/market.jpg" width="380" height="66" alt="主题市场"/></a></h2>
+						<div class="g-cf g-fs14 help-traffic">
+							<a href="#!view=service" class="help g-fl">办事求助</a><a href="#!action=traffic" class="traffic g-fr">交通指南</a>
+						</div>
+						<div class="g-h10"></div>
+						<div class="home-special g-tc">
+							<ul class="g-cf">
+								<li><a href="#!action=special&type=1"><img src="http://res.csc86.com/v2/c/market/image/eat-logo.png" width="84" height="84" alt=""><br/>饮食男女</a></li>
+								<li><a href="#!action=special&type=2"><img src="http://res.csc86.com/v2/c/market/image/brand-logo.png" width="84" height="84" alt=""><br/>品牌风暴</a></li>
+								<li><a href="javascripdt:"><img src="http://res.csc86.com/v2/c/market/image/eat-logo.png" width="84" height="84" alt=""><br/>饮食男女</a></li>
+								<li><a href="javascript:"><img src="http://res.csc86.com/v2/c/market/image/brand-logo.png" width="84" height="84" alt=""><br/>品牌风暴</a></li>
+							</ul>
+						</div>
+						<div class="g-h20"></div>
+						<div class="home-services g-tc">
+							<ul class="g-cf">
+								<li><a href="#!action=support&c=dining"><span></span>餐饮</a></li>
+								<li class="play"><a href="#!action=support&c=enter"><span></span>休闲</a></li>
+								<li class="hotal"><a href="#!action=support&c=hotel"><span></span>酒店</a></li>
+								<li class="bank"><a href="#!action=support&c=bank"><span></span>银行</a></li>
+							</ul>
+						</div>
+						<div class="g-h20"></div>
+						<div>
+							<script src="http://api.csc86.com/g/check.html?id=f2c054fc-c21b-411a-8335-a2a9c3632985&adtype=2"></script>
+							<!-- <a href="javascript:"><img src="http://res.csc86.com/image/img.png" width="380" height="50" alt=""/></a> -->
+						</div>
+						<div class="g-h10"></div>
+						<div>
+							<script src="http://api.csc86.com/g/check.html?id=f19f8869-4c54-4029-95ad-dba101fbbbfb&adtype=2"></script>
+							<!-- <a href="javascript:"><img src="http://res.csc86.com/image/img.png" width="380" height="50" alt=""/></a> -->
+						</div>
+						<div class="g-h10"></div>
+						<div>
+							<script src="http://api.csc86.com/g/check.html?id=fc500a2b-9ccc-4e0c-a394-cbd71e90d51a&adtype=2"></script>
+							<!-- <a href="javascript:"><img src="http://res.csc86.com/image/img.png" width="380" height="50" alt=""/></a> -->
+						</div>
+						<div class="g-h10"></div>
+						<div>
+							<script src="http://api.csc86.com/g/check.html?id=eb1664df-9504-4d4e-a321-3b436ac2dcbc&adtype=2"></script>
+							<!-- <a href="javascript:"><img src="http://res.csc86.com/image/img.png" width="380" height="110" alt=""/></a> -->
+						</div>
+						<div class="g-h15"></div>
+					</div>
+					<div class="home-copy g-tc">
+						<a href="http://group.csc86.com/" target="_blank">关于华南城</a> | <a href="http://www.csc86.com/about/contact.html" target="_blank">联系我们</a> | <a href="http://www.csc86.com/about/business.html" target="_blank">商务合作</a> | <a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a> | <a href="http://www.csc86.com/about/feedback.html" target="_blank">意见反馈</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="csc-map-bar-bg"></div>
+		<div class="g-cf csc-map-bar">
+			<div class="g-fl location">
+				当前位置：<strong>广东省 &gt; 深圳市</strong>
+			</div>
+			<div class="g-fr tool">
+				<a href="javascript:" class="ranging">测距</a>
+				<a href="javascript:" class="traffic">实时路况</a>
+				<a href="javascript:" class="full">全屏</a>
+			</div>
+		</div>
+		<div class="csc-map" id="cscMap"></div>
+	</div>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=a7763e0cab021d965921a649619d608e"></script>
+	<script>seajs.use('c/market/js/map');</script>
+	<div style="display:none"><script src="http://res.csc86.com/
+	js/m/statistics.js"></script></div>
+</body>
+</html>

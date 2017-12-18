@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="http://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/mem-foot.css,css/c/membercenter/member.css,css/m/zzmark/css.css" />
+	<script src="http://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+    <link rel="stylesheet" href="http://res.csc86.com/f=css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" />
+	<script src="http://res.csc86.com/f=js/c/memberhome/m-home.js"></script>    
+    <link rel="stylesheet" href="http://res.csc86.com/v2/m/init/css/style.css" />
+    <link rel="stylesheet" href="http://res.csc86.com/v2/c/member/supply/css/style.css" />
+    <script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+    <script src="http://res.csc86.com/v2/m/init/js/init.js"></script>
+</head>
+<body>
+<div class="head"><!--顶部导航 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="http://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a class="hover" href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="//payment.csc86.com" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a href="http://i.csc86.com/user/tool" title="工具" target="_self"><b class="tool-icon"></b>工具</a>
+        	
+        	<a  
+        	href="http://wslm.csc86.com/member" title="微商联盟"><b class="wslm-icon"></b>微商联盟</a>
+        	
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://login.csc86.com/signout" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--顶部导航 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+
+<!--主内容 start-->
+<div class="mbd clearfix">
+	<!--左侧导航 start-->
+	<div class="g-fl m-side">
+    	<h3>
+        	<strong>基础服务</strong>
+        </h3>
+        <ul class="m-nav">
+        	<li class="cate1th">
+            	<a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons supply-icon"></span>供应</a>
+                <ul>
+                    <li class="cate2th"><a href="#" class="c-a">已卖出的货物</a></li>
+                    <li class="cate2th"><a href="#" class="c-a">交易账务</a></li>
+                    <li class="cate2th"><a href="" class="c-a">提取货款</a></li>
+                    <li class="cate2th"><a href="/product/sell/category.html" class="c-a ">发布产品</a></li>
+                    <li class="cate2th"><a href="/product/sell/list.html" class="c-a">产品管理</a></li>
+                    <li class="cate2th expand">
+                        <a href="javascript:" class="c-a"><span class="arr"></span>询盘管理</a>
+                        <ul>
+                            <li><a href="/quote/list.html">收到的询盘</a></li>
+                            <li><a href="/quote/order.html">收到的意向订单</a></li>
+                            <li><a href="/quote/pricelist.html">发出的报价</a></li>
+                            <li><a href="/quote/index.html">询盘大厅</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/purchaser-list" class="c-a">买家管理</a></li>
+            	</ul>
+            </li>
+            <li class="cate1th">
+            	<a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons buy-icon"></span>采购</a>
+                <ul>
+                    <li class="cate2th"><a href="" class="c-a">已采购到的货物</a></li>
+                    <li class="cate2th"><a href="" class="c-a">采购单</a></li>
+                    <li class="cate2th"><a href="/inquiry/openpublish.html" class="c-a">发布采购计划</a></li>
+                    <li class="cate2th expand">
+                        <a href="javascript:" class="c-a"><span class="arr"></span>采购询价管理</a>
+                        <ul>
+                            <li><a href="/inquiry/openList.html">发出的采购</a></li>
+                            <li><a href="/inquiry/list.html">发出的询盘</a></li>
+                            <li><a href="http://inquiry.csc86.com/inquiry/productlist">询盘的产品</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/quotationlist" class="c-a">收到的报价</a></li>
+                    <li class="cate2th"><a href="http://inquiry.csc86.com/inquiry/supplier-list" class="c-a">供应商管理</a></li>
+                </ul>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons statistics-icon"></span><span class="arr"></span>旺铺统计</a>
+                <ul>
+                    <li><a href="http://statistics.csc86.com/user/flowstatistics.do">流量统计</a></li>
+                    <li><a href="http://statistics.csc86.com/user/keyWordsStatistics.do">产品和询盘统计</a></li>
+                    <li><a href="http://statistics.csc86.com/user/productAndInquiryStatistics.do">关键词统计</a></li>
+                </ul>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons rss-icon"></span><span class="arr"></span>商机订阅<span class="new"></span></a>
+                <ul>
+                    <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/list">订阅商机</a></li>
+                    <li><a target="_blank" href="http://inquiry.csc86.com/inquiry/management/manage_supply?name=new">商机订阅管理</a></li>
+                </ul>
+            </li>
+            <li class="cate1th">
+            	<a href="http://quan.csc86.com/member/activityManage.html" class="mtb g-fs14 c-a"><span class="n-icons activity-icon"></span>活动管理</a>
+            </li>
+            <li class="cate1th expand">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons shop-icon"></span><span class="arr"></span>旺铺管理</a>
+                <ul class="shop-nav">
+                    <li>
+                        <dl>
+                            <dt>旺铺管理</dt>
+                            <dd>
+                                <a href="/shop/decoration.html">旺铺装修</a>
+                                <a href="/shop/template.html">模板装扮</a>
+                            </dd>
+                            <dt>模板管理</dt>
+                            <dd>
+                                <a href="/shop/temp.html">我购买的模板</a>
+                                <a href="/shop/tempmarket.html">模板市场</a>
+                            </dd>
+                            <dt>公司管理</dt>
+                            <dd>
+                                <a href="/shop/introduce.html">企业资料</a>
+                                <a href="/shop/contact.html">联系方式</a>
+                                <a href="/shop/honor.html">证书荣誉</a>
+                            </dd>
+                            <dt>旺铺服务</dt>
+                            <dd>
+                                <a href="/shop/newdomain.html">旺铺域名</a>
+                                <a href="/shop/link.html">友情链接</a>
+                            </dd>
+                            <dt>公司动态</dt>
+                            <dd>
+                                <a href="/shop/publish.html">发布公司动态</a>
+                                <a href="/shop/list.html">公司动态管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </li>
+            <li class="cate1th">
+                <a href="http://i.csc86.com/user/favoriteList" class="mtb g-fs14 c-a"><span class="n-icons favorite-icon"></span>我的收藏</a>
+        	</li>
+        </ul>
+        <div class="g-h30"></div>
+        <h3>
+        	<strong>特色服务</strong>
+        </h3>
+        <ul class="m-nav">
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/yunyingguanli/cst/" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>城商通服务</a>
+            </li>
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/2014/syhn-x/syhn.html#f1" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>生意红娘服务</a>
+            </li>
+            <li class="cate1th">
+                <a href="http://cncms.csc86.com/special/2014/sygj/" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>生意管家服务</a>
+            </li>
+            <li class="cate1th">
+                <a href="javascript:" class="mtb g-fs14 c-a"><span class="n-icons special-icon"></span>企业融资</a>
+            </li>
+        </ul>
+        <div class="g-h30"></div>
+        <h3>
+            <strong>客服中心</strong>
+        </h3>
+        <ul class="m-service">
+            <li class="msg">
+            	<a href="http://quan.csc86.com/?circleId=42ca5425-1809-4ce1-8bf3-1fff36448809">在线咨询</a>
+            </li>
+            <li class="phone">400-184-8666</li>
+        </ul>
+    </div>
+    <script>seajs.use("http://res.csc86.com/v2/c/member/common/js/sideNav.js");</script>
+    <!--左侧导航 end-->
+    
+    <!--右侧内容 start-->
+    <link rel="stylesheet" href="http://res.csc86.com/v2/c/member/supply/css/release-pro.css" > 
+    <div class="af-bd release-pro">
+    	<h2 class="g-pr af-hd">发布供应产品<a class="ask" href="" target="_blank">如何让产品排名靠前？</a></h2>
+        <div class="g-h10"></div>
+        <div class="release-bar">
+        	<ul class="g-cf bar-lst">
+            	<li class="itm1">选择商品分类</li>
+                <li class="itm2">填写基本信息</li>
+                <li class="itm3 cur">设置交易规则</li>
+                <li class="itm4">产品发布成功</li>
+            </ul>
+            <div class="step step3"></div>
+        </div>
+		<div class="g-h25"></div>
+        <form class="jsSetRlFrm">
+        <ul class="frm-box">
+        	<li class="g-cf frm-itm">
+            	<div class="frm-key"><em class="star">*</em>计量单位：</div>
+                <div class="frm-value">
+                	<select class="g-w170 frm-slt" name="units">
+                        <option value="s">单位</option>
+                        <option value="1">刀刀刀刀</option>
+                    </select>
+                </div>
+            </li>
+            <li class="g-cf frm-itm pro-prc">
+            	<div class="frm-key"><em class="star">*</em>价格：</div>
+                <div class="frm-value prc-tab">
+                	<label for="cstmPrc"><input id="cstmPrc" name="speak" type="radio" value="N"> 自定义价格区间</label>
+                    <label for="myPrc"><input id="myPrc" name="speak" type="radio" value="Y"> 面议</label>
+                    <div class="g-dn g-pr cmmn-gray-box jsCstmProDtl">
+                    	<div class="g-cf">
+                            <table class="prc-table">
+                                <col width="240" />
+                                <thead>
+                                    <tr>
+                                        <th>采购数量</th>
+                                        <th>产品单价</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="ipt-txt jsCgNum" type="text" name="productCustomprices[0][minimum]" value="" maxlength="6"> <span><em class="jsUnit">单位</em>(含)以上</span></td>
+                                        <td><input class="ipt-txt jsPriceTxt" type="text" name="productCustomprices[0][price]" value=""> <span>元/<em class="jsUnit">单位</em></span></td>
+                                    </tr>                            
+                                </tbody>
+                            </table>
+                            <span class="add-btn jsAddPrc"><i>添加价格区间</i> <em>( 最多还可添加2组 )</em></span>
+                        </div>
+                        <p>
+                            <label for="haveTax"><input id="haveTax" name="includetax" type="radio" value="" checked> 含税</label>
+                            <label class="no-tax" for="noTax"><input id="noTax" name="includetax" type="radio" value=""> 不含税</label>
+                            <span class="g-c8">（为了便于直接线上交易，建议填写含税价格。）</span>
+                    	</p>
+                    </div>
+                </div>
+            </li>
+            <li class="g-cf frm-itm fare-set">
+            	<div class="frm-key"><em class="star">*</em>运费设置：</div>
+                <div class="frm-value cmmn-gray-box">
+                	<p><input id="fareSet1" name="" type="radio" value="" checked> <label for="fareSet1">商品价格已包含运费（选择此项时请记得将运费分摊至商品单价里）</label></p>
+                    <p><input id="fareSet2" name="" type="radio" value=""> <label for="fareSet2">选择合适的物流公司运输，运费到付（不需要在产品单价里加运费，买家根据实际费用支付）</label></p>
+                    <p><input id="fareSet3" name="" type="checkbox" value=""> <label for="fareSet3">同城可送货上门</label></p>
+                </div>	
+            </li>
+            <li class="g-cf frm-itm gh-type">
+            	<div class="frm-key"><em class="star">*</em>供货方式：</div>
+                <div class="frm-value cmmn-gray-box">
+                	<ul class="gh-type-lst">
+                    	<li>
+                        	<input class="g-fl ipt-rdo" id="xh" name="supplymode[]" type="checkbox" value="">
+                            <div class="g-pr bd">
+                                <label for="xh"> 现货</label>
+                                <span>（现货供应，在线支付全款，付款后 </span>
+                                <select class="frm-slt" name="supplyRatio[]">
+                                    <option value="24">24</option>
+                                    <option value="48" selected>48</option>
+                                    <option value="72">72</option>
+                                </select>
+                                <span>小时内发货，买家采购数量 ≤ 库存数量时适用）</span>
+                            </div>
+                        </li>
+                        <li>
+                        	<input class="g-fl ipt-rdo" id="yd" name="supplymode[]" type="checkbox" value="" checked >
+                            <div class="g-pr bd">
+                        		<label for="yd"> 预订</label>
+                                <span>（需调货或下单生产，在线支付订金，确认现货或备货完成支付尾款，尾款支付完成后48小时内发货，买家采购数量 > 库存数量时适用）</span>
+                                <div class="g-h10"></div>
+                                <div>
+                                	定金比例：<select class="frm-slt" name="supplyRatio[]">
+                                        <option value="10%">10%</option>
+                                        <option value="20%">20%</option>
+                                        <option value="30%" selected>30%</option>
+                                        <option value="40%">40%</option>
+                                        <option value="50%">50%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>	
+            </li>
+            <li class="g-cf frm-itm">
+            	<div class="frm-key"><em class="star">*</em>库存数量：</div>
+                <div class="frm-value">
+                	<input class="g-w80 ipt-txt" type="text" name="supplyquantity" value="" maxlength="10" disabled> <em class="jsUnit">单位</em>
+                    <label class="g-ml15" for="unlimited"><input id="unlimited" name="unlimited" type="checkbox" value="" checked> 不限</label>
+                </div>
+            </li> 	
+        </ul>
+        
+        <div class="sample-set">
+            <ul class="frm-box">
+            	<li class="g-cf frm-itm">
+                    <div class="frm-key"><em class="star">*</em><strong>样品设置：</strong></div>
+                    <div class="frm-value sample-tab">
+                        <label for="yesSample"><input id="yesSample" name="isOfferSample" type="radio" value="Y"> 提供样品</label>
+                        <label for="noSample"><input id="noSample" name="isOfferSample" type="radio" value="N"> 不提供样品</label>
+                    </div>
+                </li>
+            </ul>
+            <ul class="g-dn frm-box jsYesSmplDtl">
+            	<li class="g-cf frm-itm">
+                    <div class="frm-key"><em class="star">*</em>样品单价：</div>
+                    <div class="frm-value">
+                    	<input class="g-w80 ipt-txt" type="text" name="sample[price]" value=""> 元/<em>份</em>    
+                    </div>
+                </li>
+                <li class="g-cf frm-itm">
+                    <div class="frm-key"><em class="star">*</em>样品数量：</div>
+                    <div class="frm-value">
+                    	<input class="g-w80 ipt-txt" type="text" name="sample[count]" value="" maxlength="6"> <em>份</em>    
+                    </div>
+                </li>
+                <li class="g-cf frm-itm">
+                    <div class="frm-key"><em class="star">*</em>样品运费：</div>
+                    <div class="frm-value">
+                    	<input class="g-w80 ipt-txt" type="text" name="sample[freight]" value=""> 元   
+                    </div>
+                </li>	
+            </ul>
+        </div>
+        <div class="g-h5"></div>
+        <ul class="frm-box">
+            <li class="g-cf frm-itm sh-explain">
+                <div class="frm-key"><em class="star">*</em>售后说明：</div>
+                <div class="frm-value cmmn-gray-box">
+                	<dl class="g-cf">
+                    	<dt>退货：</dt>
+                        <dd>
+                        	<p><input name="returns" type="radio" value="N" checked> 特殊商品，一经签收非质量问题不予退货</p>
+                            <p class="nocheck"><input name="returns" type="radio" value="Y"> 确认收货后 <span class="cmmn-num-opts"><i class="plut-opt">-</i><input class="g-w50 ipt-txt" type="text" name="returnDays" value="7" disabled><i class="add-opt">+</i></span> 日内可与卖家协商退货，可能需要扣除部分货款作为卖家的损失</p>
+                        </dd>
+                    </dl>
+                    <dl class="g-cf">
+                    	<dt>换货：</dt>
+                        <dd>
+                        	<p><input name="changes" type="radio" value="N" checked> 特殊商品，一经签收非质量问题不予换货</p>
+                            <p class="nocheck"><input name="changes" type="radio" value="Y"> 确认收货后 <span class="cmmn-num-opts"><i class="plut-opt">-</i><input class="g-w50 ipt-txt" type="text" name="changeDays" value="15" disabled><i class="add-opt">+</i></span> 日内可与卖家协商换货，换货过程中可能会产生一些额外费用</p>
+                        </dd>
+                    </dl>
+                    <dl class="g-cf">
+                    	<dt>质保：</dt>
+                        <dd>
+                            <p>质保期限 <span class="cmmn-num-opts jsNumOpts"><i class="plut-opt">-</i><input class="g-w50 ipt-txt" type="text" name="warranty" value="3"><i class="add-opt">+</i></span> 个月</p>
+                            <p>如有任何售后问题请尽量在质保期内联系卖家协商处理，超过质保期卖家不保证受理，请知悉！</p>
+                        </dd>
+                    </dl>      
+                </div>
+            </li>
+            
+            <!--是否开通在线交易 start-->
+            <li class="g-cf frm-itm">
+                <div class="frm-key"></div>
+                <div class="frm-value">
+                    是否开通在线交易
+                    <label class="g-ml15" for="yesZxjy"><input id="yesZxjy" name="isTrade" type="radio" value=""> 是</label>
+                    <label class="g-ml15" for="noZxjy"><input id="noZxjy" name="isTrade" type="radio" value="" checked> 否</label>  
+                </div>
+            </li>
+            <!--是否开通在线交易 end-->	
+        </ul>
+        
+        <div class="frm-opts">
+        	<input class="frm-btn org-btn jsRlsBtn" type="button" name="" value="发布产品">
+            <input class="frm-btn qorg-btn jsBackBtn" type="button" name="" value="返回上一步">
+            <input class="frm-btn blue-btn jsReviewBtn" type="button" name="" value="预览产品">
+            <input class="frm-btn qblue-btn jsScgBtn" type="button" name="" value="保存草稿">
+        </div>
+        </form>
+    </div>
+    <!--右侧内容 end-->
+</div>
+<!--主内容 end-->
+
+<!--公共底部 start-->
+<div class="g-h20"></div>
+<div class="g-h20"></div>
+<div class="g-o-a foot">
+    <div class="foot-link"><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/">关于华南城网</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/member.html">会员服务</a><a rel="nofollow" target="_blank" href="http://ad.csc86.com/">广告服务</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/business.html">商务合作</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/server.html">服务条款</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/laws.html">法律申明</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/privacy.html">隐私保护</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/feedback.html">意见反馈</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">帮助中心</a><a target="_blank" href="http://cncms.csc86.com/sitemap.html">网站地图</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/contact.html">联系我们</a>
+    </div>
+    <p class="group-link">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5
+</div>
+<!--公共底部 end-->
+<script>
+seajs.use('http://res.csc86.com/v2/c/member/supply/js/release-pro-step3.js');
+</script>
+</body>
+</html>

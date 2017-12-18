@@ -1,0 +1,48 @@
+.app-frame{background:none;}
+.m-side{float:left;width:149px;border-right:solid 1px #ebebeb;background:url(img/side_ry1.png) right 0 repeat-y;padding:25px 0 20px;font-family:simsun;padding-bottom:80px;}
+.m-side h3{font-size:14px;border-top:solid 1px #ebebeb;}
+.m-side h3 strong{background:#fff;position:relative;top:-10px;}
+
+/*导航菜单*/
+.m-nav{line-height:27px;}
+.m-nav a{color:#444;display:block;}
+.m-nav a:hover{color:#f60;}
+.m-nav .n-icons{float:left;width:20px;height:20px;overflow:hidden;vertical-align:middle;background:url(img/navigation.png) no-repeat;margin:4px 10px 0 7px;}
+.m-nav .expand .n-icons{/*margin-right:4px;*/}
+.m-nav .buy-icon{background-position:0 -28px;}
+.m-nav .statistics-icon{background-position:0 -51px;}
+.m-nav .rss-icon{background-position:0 -74px;}
+.m-nav .activity-icon{background-position:0 -97px;}
+.m-nav .shop-icon{background-position:0 -123px;}
+.m-nav .favorite-icon{background-position:0 -148px;}
+.m-nav .special-icon{background-position:0 -171px;}
+.m-nav .weiunion-icon{background-position:0 -377px;}
+.m-nav .c-a{border-top:solid 1px #fff;border-bottom:solid 1px #fff;}
+.m-nav .mtb{margin:5px 0;}
+.m-nav .cate2th{margin:3px 0;}
+.m-nav .cate2th a{padding-left:37px;}
+.m-nav .expand{position:relative;z-index:100;}
+.m-nav .expand .c-a{border-top:solid 1px #fff;border-bottom:solid 1px #fff;position:relative;zoom:1;}
+.m-nav .expand .c-a .arr{background:url(img/navigation.png) 98% -260px no-repeat;display:inline-block;height:27px;width:15px;position:absolute;*top:0;left:130px;}
+.m-nav .expand2 .c-a .arr{_display:inline;float:right;background:url(img/navigation.png) 98% -326px no-repeat;height:27px;width:15px;margin-right:3px;}
+.m-nav .expand ul{position:absolute;width:115px;top:0;left:150px;display:none;border:solid 1px #eee;border-left:0;padding:6px 0;box-shadow:1px 1px 2px #ccc;z-index:100;background:#fff;}
+.m-nav .expand ul li a{padding-left:15px;}
+.m-nav .expand2 ul li a{padding-left:50px;}
+.m-nav .expand:hover ul{display:inline-block;}
+.m-nav .c-cur,.m-nav .c-a:hover{border-top:solid 1px #eee;border-bottom:solid 1px #eee;background:#fff url(img/navigation.png) 0 -290px no-repeat;position:relative;width:150px;color:#f60;}
+.m-nav .expand .c-hover{border-top:solid 1px #eee;border-bottom:solid 1px #eee;background:#fff url(img/navigation.png) 0 -290px no-repeat;width:150px;color:#f60;}
+.m-nav .cate2th .c-a:hover,.m-nav .cate2th .c-cur,.m-nav .cate2th .c-hover{width:113px;}
+.m-nav .expand2 li a:hover,.m-nav .expand2 .c-cur{width:100px;}
+.m-nav .expand2 .c-a:hover .arr{margin-right:4px;}
+.m-nav .expand .shop-nav{top:-190px;}
+.shop-nav dl{padding-left:12px;}
+.shop-nav dl dt{font-weight:700;}
+
+/*客服中心*/
+.m-service li{font-family:microsoft yahei;background:url(img/navigation.png) 0 -202px no-repeat;line-height:24px;padding-left:25px;margin-left:10px;}
+.m-service li.phone{background-position:0 -228px;font-style:italic;font-weight:700;}
+.m-service li a{color:#333;}
+.new{display:inline-block;width:30px;height:13px;vertical-align:middle;background:url(img/new.gif) no-repeat;margin-bottom:3px;}
+
+/* new小图标 */
+.icon-news{position:absolute;left:85px;top:-5px;background:url(img/new.png) no-repeat 0 0;width:18px;height:12px;}

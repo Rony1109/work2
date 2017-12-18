@@ -1,0 +1,30 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+ 
+ /*广告图滚动*/
+.src-bann{width:500px; height:180px; overflow:hidden;}
+.src-img{ position:relative; height:180px; width:500px; overflow:hidden;}
+.src-img ul{ position:absolute; height:180px; width:20000px;}
+.src-img li{ float:left;}
+.src-img li img{ width:500px; height:180px;}
+.src-img ol{ position:absolute; bottom:15px; right:15px;}
+.src-img ol li{ margin-left:10px; width:20px; overflow:hidden; text-indent:-99999px; height:10px; background:#FFF;}
+.src-img ol li.cur{background:#e94545;}
+
+.src-two-img{ position:relative; height:245px; width:245px; overflow:hidden;}
+.src-two-img ul{ position:absolute; height:245px; width:20000px;}
+.src-two-img li{ float:left; display:none;}
+.src-two-img li img{ width:245px; height:245px;}
+.src-two-img ol{ position:absolute; bottom:15px;*+bottom:12px;_bottom:12px; left:0;*+left:75px;_left:75px; text-align:center; display:block; height:8px; width:245px;}
+.src-two-img ol li{ margin:0 5px; width:8px; overflow:hidden; text-indent:-99999px; height:8px; background:#FFF; display:inline-block; float:none;*+float:left;_float:left; border-radius:5px;}
+.src-two-img ol li.cur{ background:#f67301; display:inline-block;}
+.src-two-img .src-bg,.src-two-img .src-til{height:50px; width:245px;position:absolute;top:195px; left:0; display:block;}
+.src-bg{  background:#000; filter:alpha(opacity=55);opacity:0.55; }
+.src-til{ font-size:14px; color:#fff; text-align:center; line-height:38px; }
+.src-til a{ color:#fff;height:38px; overflow:hidden; display:block;}

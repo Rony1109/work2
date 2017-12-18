@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url('base.css');
+
+.w360{width: 360px;}
+.slide {width: 360px; height: 220px; overflow: hidden; position: relative;}
+.slide ul li { width: 360px; height: 220px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 12px; height: 12px; background: url(img/banner-nav-bg.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/banner-nav-bg.png"); float: left;  margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;font:11px/12px tahoma;text-align: center;}
+.slide ol li.cur {background: #ff6c00;color: #fff}
+.slide ul li a{position: relative;display: block;}
+.slide ul li a span{position: absolute;display: block;height: 30px;line-height: 30px;left: 0;bottom:0;width: 224px;padding-right: 138px;color: #fff;text-indent: 10px;overflow: hidden;word-break:break-all;}
+.slide ul li a span.tx-bg{background: #000;opacity: .6;filter:alpha(opacity=60);}
+.slide ul li a img{width: 360px;height: 220px}
+
+.interviews{padding: 3px 10px 0;overflow: hidden;zoom: 1;}
+.personage{border-bottom: 1px dashed #e8e8e8;padding-bottom: 22px;margin:8px 0 14px;clear:both;width: 100%;display: inline-block;*display: inline;zoom:1;}
+.intro{float: right;display: inline;width: 258px}
+.intro a{display: block;font: 16px Microsoft YaHei;height: 22px;overflow: hidden;zoom:1;}
+.intro p{max-height: 42px;height: 42px;overflow: hidden;word-break:break-all;margin-top: 5px;line-height: 22px;}
+.interviews .last{border-bottom: 0;padding-bottom: 0}
+
+.daily{width: 358px;height: 469px;border:1px #49b63d solid;margin-left: 10px;padding: 0 10px;}
+.msg{border-bottom: 1px #e8e8e8 dashed;line-height: 22px;padding-bottom: 10px;margin-bottom: 10px;}
+.msg a{font:700 16px Microsoft YaHei,simsun;color: #bf0909;display: block;height: 22px;word-break:break-all;overflow: hidden;}
+.msg-t{margin: 17px 0 6px}
+.msg-t h3{font-weight: normal;font-size: 12px;background:url(img/t-bg-red.gif) no-repeat;color: #fff;width: 58px;height: 21px;line-height: 21px;text-align: center;}
+.msg-t a{float: right;display: inline;height: 21px;line-height: 21px}
+
+.product-news span{color: #888}
+.product-news li{text-indent: 11px;}
+
+.company{border:1px #e8e8e8 solid;width: 238px;height: 469px;overflow: hidden;}
+.log-show{height:435px;width: 218px;margin: 0 auto; }
+.log-show li{border-bottom: 1px #e8e8e8 dashed;padding:13px 0 13px;overflow: hidden;}
+.log-show a{float: left;display: inline;margin: 0 4px}
+
+.industry-trends{width: 750px;}
+.side-ad{width: 240px;}
+.link-box{background: #eee;clear: both;zoom:1;text-align: center;height: 25px;line-height: 25px}
+.re-border{border-bottom: 0}
+
+.w473{width: 473px}
+.w690{width: 690px;}
+.hot-product{border: 1px #e8e8e8 solid;width: 278px;height: 468px;}
+.key-word{background: #49b63d;height: 35px;width: 100%;overflow: hidden;}
+.key-word p{margin-left: -1px;}
+.key-word a{font:14px Microsoft YaHei,simsun;float:left;display:inline;border-right: 1px #85ce7d solid;border-left: 1px #85ce7d solid;height: 15px;line-height: 15px;padding: 0 9px;margin-top: 9px;color: #fff}
+.side-ad-280{width: 280px;margin-top: 40px}
+
+.author-key{color: #adabab;height: 27px;line-height: 27px}
+.author-key b{padding-right: 13px;font-weight: normal;}
+.author-key a{color: #2465a2;padding: 0 14px 0 5px}
+.article h2{height: 53px;font:bold 20px/53px Microsoft YaHei,simsun;}
+.article p{font-size: 14px;line-height: 24px;}
+.article img{display:block;margin: 15px 0 8px;}
+.article .more{color: #2465a2;}
+
+.product-list{margin: 3px 10px 0;}
+.product-list li{border-bottom: 1px #e8e8e8 dashed;padding: 13px 0}
+.product-list p{float: right;display: inline;width: 166px;line-height: 22px}
+.product-list span,.product-list a{display: block;}
+.product-list span{color: #888}
+.product-list b{color: #fc0000;font: 16px Arial;}
+.product-list p a{font: 14px Microsoft YaHei,simsun;margin-bottom: 5px}
+.product-list li.last{border-bottom: 0;padding-bottom: 10px}
+.w280{width: 280px;}

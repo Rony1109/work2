@@ -1,0 +1,78 @@
+@import url('base.css');
+
+.con-l{width: 688px;}
+.crumbs{margin: 5px 0;}
+.ex-title{height: 76px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font:700 22px/76px Microsoft YaHei,simsun;text-align: center;border-bottom: 1px #e8e8e8 solid;}
+.bd-ececec{border:1px #ececec solid;}
+.intro{margin-top: 26px;}
+.intro p{float: right;display: inline;width: 408px;margin-right: 15px;}
+.intro p span{display: block;height: 22px;line-height: 22px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.intro strong{display: block;height: 21px;overflow: hidden;font:bold 16px Microsoft YaHei,simsun;}
+.title-detail{position: relative;margin-top: 32px;font:700 18px Microsoft YaHei,simsun;}
+.title-detail hr{position: absolute;top: 12px;right: 0;width: 606px;border: 0;border-top: 1px #f0f0f0 solid;}
+
+.description{margin-top: 15px;}
+.description img{display: block;margin: 26px auto;}
+.description p{margin-bottom: 20px;line-height: 24px;font-size: 14px;text-indent: 28px;}
+
+.detail-change{margin-top: 50px;height: 50px;font-size: 14px;background: url(img/line.gif) repeat-y center 0;border: 1px #ebebeb solid;}
+.detail-change p{height: 50px;line-height: 50px;overflow: hidden;color: #333;-ms-word-break: break-all;word-break: break-all;background: url(img/gather.png) no-repeat;}
+.detail-change p.pre{float: left;display: inline;width: 288px;background-position: 25px -436px;text-indent: 53px;}
+.detail-change p.next{float: right;display: inline;width: 261px;text-align: right;background-position: 285px -487px;padding-right: 54px;margin-right: 10px;}
+.detail-change p a{float: right;display: inline;width: 180px}
+.detail-change p.pre a{width: 176px;text-align: left;text-indent: 0;}
+
+.related{margin-top: 20px;overflow: hidden;}
+.related h2{height: 40px;font: 16px/40px Microsoft YaHei,simsun;}
+.related ul{width: 728px;}
+.related li{float: left;display: inline;width: 254px;margin-right: 110px;line-height: 26px;}
+
+.con-r{width: 258px;}
+.con-r h2{height: 36px;line-height: 36px;font: 16px/36px Microsoft YaHei,simsun;text-indent: 8px;}
+.bd-eaeaea{border: 1px #eaeaea solid;overflow: hidden;}
+
+.pic-list{width: 260px;margin-top:10px;}
+.pic-list li{position: relative;float: left;display: inline;margin:0 9px 0 10px;width: 110px;}
+.pic-list span,.side-ad span{position: absolute;left: 0;bottom:0;display: block;width: 110px;height: 20px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 12px/20px simsun;color: #fff;text-align: center;}
+.pic-list span.bg,.side-ad span.bg{background: #000;opacity: .6;filter:Alpha(opacity=60);}
+
+.all-link{margin: 0 10px 10px;}
+
+.ex-list{margin: 0 12px;border-bottom: 1px #e8e8e8 dashed;padding-bottom: 20px;margin-top: 20px;}
+.ex-list p{float: right;display: inline;width: 364px;padding-right: 10px;}
+.ex-list p a{display: block;margin-bottom: 5px;height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font:700 16px Microsoft YaHei,simsun;mb}
+.ex-list span{display: block;line-height: 22px;}
+.ex-list span.last{height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.ex-list span.last b{float: left;display: inline;height: 36px;}
+
+.fix-bd{border-bottom-style: solid;}
+
+.side-ad{position: relative;display: block;margin: 0 auto;width: 240px;}
+.side-ad span{width: 240px;height: 30px;line-height: 30px;}
+a:hover span{color: #000}
+a:hover span.bg{background: #fff;}
+
+/* tour detail */
+.tour-title h1{margin-bottom: 5px;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font:700 26px/40px Microsoft YaHei,simsun;}
+.tour-title{padding-bottom: 20px;margin-bottom: 32px;border-bottom: 1px #e8e8e8 solid;}
+.tour-l,.bs-detail{padding: 16px;width: 696px;border: 1px #ececec solid;}
+.img-intro{display: block;margin-top: 15px;font-size: 14px;}
+.bs-detail,.news-detail{padding: 16px 0;width: 728px;border: 1px #ececec solid;}
+.bs-detail .intro{margin-top: 0;}
+.bs-detail .detail-change,.news-detail .detail-change{border-right: 0;border-left: 0;}
+.cor-l-box{margin: 0 16px;}
+.bs-detail .related,.news-detail .related{margin: 20px 16px 0;}
+.bs-detail .intro p{width: 438px;}
+.bs-detail .intro span{color: #888}
+.bs-detail .description p{margin-bottom: 5px;font-size: 14px;line-height: 30px;text-indent: 0;}
+/* news detail */
+.news-title {padding-bottom: 20px;margin-bottom: 32px;border-bottom: 1px #e8e8e8 solid;}
+.news-title h1{margin-bottom: 5px;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font:700 26px/40px Microsoft YaHei,simsun;}
+.news-title{text-align: center;}
+.news-title span{font:12px simsun;color: #888}
+.news-title span span{font-family: Tahoma}
+.fc-888{color: #888}
+.fc-333{color: #333}
+
+.all-msg{position: relative;margin: -5px 10px 10px;}
+.all-msg li{line-height: 26px;}

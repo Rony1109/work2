@@ -1,0 +1,25 @@
+html{font-size:62.5%;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;line-height: 1.5;}
+body{width: 100%;margin: 0;padding: 0;font-size:1.4rem;color:#444;background-color: #eee;}
+ul,li{margin: 0;padding: 0;list-style: none;}
+.g-h10{height: 10px;}
+.g-h15{height: 15px;}
+.g-o{width: 90%;margin: 0 auto;}
+.step{width: 80%;height: 30px;background-size:100%;position: relative;height: 30px;margin: 20px auto;z-index: 1;}
+.step li{position: absolute;top: 0;width: 20px;height: 20px;line-height: 20px;border-radius: 100%;text-align: center;background-color: #bbb;z-index: 2;font-size: 1.4rem;font-weight: bold;color: #fff;text-shadow:0px 2px 1px rgba(0,0,0,0.24);}
+.step li span{display: block;position: absolute;top:25px;width: 100px;font-size: 1.1rem;font-weight: normal;color: #888;left: 50%;margin-left: -50px;text-shadow:0 0 0 rgba(0,0,0,0);}
+.step li:nth-child(1){box-shadow:inset 0px 2px 1px rgba(0,0,0,0.24);}
+.step li:nth-child(2){left: 50%;margin-left: -10px;box-shadow:inset 0px 2px 1px rgba(0,0,0,0.24);}
+.step li:nth-child(3){right: 0;box-shadow:inset 0px 2px 1px rgba(0,0,0,0.24);}
+.step li:nth-child(4){width: 100%;height: 20%;line-height: 0;background-color: #bbb;border-radius: 0;z-index: 0;top:22%;box-shadow: inset 1px 1px 1px rgba(0,0,0,0.24);}
+.step li:last-child{width: 30%;height: 20%;line-height: 0;background-color: #ff6d00;border-radius: 0;z-index: 1;top:22%;box-shadow: inset 1px 1px 1px rgba(0,0,0,0.24);transition:left .3s;-ms-transition:left .3s;-moz-transition:left .3s;-webkit-transition:left .3s;-o-transition:left .3s;}
+.step li:nth-child(1).hover,.step li:nth-child(2).hover,.step li:nth-child(3).hover{background-color: #ff6d00;}
+.step li:nth-child(1).hover ~ li:last-child{left: 0%;}
+.step li:nth-child(2).hover ~ li:last-child{left: 33.33%;}
+.step li:nth-child(3).hover ~ li:last-child{right:0;}
+.fm .ipt{;margin: 0 auto;border: 1px solid #ddd;background-color: #fff;}
+.fm .ipt input{display: block;width: 98%;height: 30px;line-height: 30px;margin: 0 auto;padding: 0;border: 0;outline: none;}
+.fm .btn input{display: block;width: 100%;height: 30px;line-height: 30px;padding: 0;margin: 0 auto;background-color: #ff6d00;border: 0;outline: none;font-size: 1.4rem;color: #fff;}
+.djs{font-size: 1.3rem;text-align: center;color: #444;height: 30px;line-height: 30px;border: 1px solid #ccc;}
+.tip{font-size: 1.4rem;text-align: center;color: #888;}
+.tip i{color: #444;padding: 5px;font-style: normal;}
+.errtip{font-size: 1.3rem;text-align: center;color: #cc0003;}

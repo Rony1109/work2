@@ -1,0 +1,43 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+
+
+a{color: #444}
+a:hover{color: #ea5505}
+.head{height: 113px;padding-top: 5px;}
+.head a.logo-l{float: left;display:inline;width: 267px;height: 109px;overflow: hidden;text-indent: -999px;background: url(img/logo-l.png) no-repeat;}
+.head a.logo-r{float: right;display:inline;width: 457px;height: 113px;overflow: hidden;text-indent: -999px;background: url(img/logo-r.png) no-repeat;}
+.nav{height: 33px;background: #ea5505;overflow: hidden;}
+.nav-box{width: 816px;float: left;display: inline;margin-top: 5px;}
+.nav-box li{float: left;display: inline;height: 28px;}
+.nav-box li a{float: left;height: 28px;padding: 0 34px;color: #fff;font: 700 15px/28px Microsoft YaHei,simsun;text-decoration: none;}
+.nav-box li a:hover,.nav-box li a.active{color: #ea5505;text-decoration: none;background: #fff;zoom:1;}
+.ls-link{float: right;display: inline;width: 184px;text-indent: 10px;font: 14px/33px Microsoft YaHei,simsun;color: #fff;background: url(img/gather.png) no-repeat 0 -122px;}
+a.ls-link:hover{color: #fff}
+.title{position: relative;height: 40px;border-bottom:1px #e3e3e3 solid;}
+.title h2{position: absolute;top:5px;left: 0;height: 35px;font: 18px/35px Microsoft YaHei,simsun;border-bottom: 1px #f29100 solid;}
+.title a{float: right;display: inline;margin-top:10px ;height: 30px;font: 12px/30px simsun;color: #888}
+.title a:hover{color: #ea5505}
+
+.list li{height: 23px;overflow: hidden;line-height: 23px;-ms-word-break: break-all;word-break: break-all; text-indent: 7px;background: url(img/gather.png) no-repeat 0 -156px;}
+
+.footer{margin-top: 45px;height: 99px;text-align: center;background: #f4f4f4;border-top:1px #e3e3e3 solid;}
+
+.footer p.footer-link{margin-top: 20px;}
+.footer-link a{display: inline-block;*display: inline;zoom:1;margin-left: -1px;padding: 0 16px;height: 12px;line-height: 12px;border-right: 1px #cbcbcb solid;}
+.footer-link a.last{border-right: 0;}
+
+.footer p{margin: 5px;}
+.footer p span{padding: 0 15px 0 8px;}
+.fc-acacac{color: #acacac}
+
+.crumbs{height: 41px;font: 12px/41px simsun;}
+.crumbs a{color: #2664a2}

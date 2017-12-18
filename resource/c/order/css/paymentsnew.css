@@ -1,0 +1,70 @@
+@import url('style.css');
+/*@import url('/v2/m/newtopnav/css/style.css');*/
+@import url('/v2/c/order/css/payments-foot.css');
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+.g-o{ width:1190px;}
+.head{border-bottom:1px solid #dedede}
+.head .csc{padding-right:12px;}
+.head .sx{ margin-top:40px;  border-right:1px solid #cecece;  height:25px;}
+.head .channel{font-size:18px;line-height:56px;color:#444; margin-top:25px; margin-left:12px; font-family:微软雅黑}
+.order-main{border-top:none}
+.page-qrorder{padding:0; width:1190px;}
+.payments-hd{line-height:28px;padding:20px 55px;border-bottom:1px solid #ddd;height:56px;}
+.payments-hdbefor{ width: 70%; float:left; }
+.payments-hdafter{ width: 30%; float:right;  height:56px;   display: table; line-height:56px; }
+.payments-hdafter .price{ color:#666;font-size:16px;font-family:微软雅黑;vertical-align: middle;display: table-cell; text-align:right}
+.payments-hdafter .price .s1,.payments-hdafter .price .s2{ color:#e94545; font-size:22px; font-weight:bold;  }
+.payments-hd .g-cred{color:#888; font-size:12px}
+.payments-hd .pay-static{color:#444;font-size:16px;font-family:微软雅黑}
+.payments-hdbefor a{ color:#22aadd}
+.g-c8{font-size:14px;font-family:微软雅黑}
+
+.payments-bd{}
+.payments-bd h2{font-size:14px;}
+
+.payments-itm{margin-top:22px; padding:0px 55px 0px; }
+.payments-itm.pd{ padding:0px 0px 0px;}
+.payments-itm dt .qx{ float:right; font-size:25px; line-height:25px; margin-right:10px; font-weight:bold; color:#8e8e8e; width:50px;}
+.payments-itm dt.qytitle{ padding:0px 55px 20px; height:25px; cursor:pointer}
+.payments-itm dt.qytitle .title{ float: left}
+.payments-itm dt{padding-bottom:15px;font-family:微软雅黑; font-size:16px;}
+.payments-itm .menu{border-bottom:1px solid #ebebeb; width:100%}
+.payments-itm .menu li{ line-height:45px; float:left;list-style:none; padding:0px 50px; margin-right:20px; margin-bottom:-1px;font-size:16px;font-family:微软雅黑; background:#f3f3f3;border:1px solid #f3f3f3; border-bottom:1px solid #ebebeb ;border-radius:5px 5px 0px 0px; cursor:pointer}
+.payments-itm .menu li.active{background:#fff; border-bottom:1px solid #fff;  }
+.payments-lst{ padding-top:5px; }
+.payments-lst.qy{ background:#f3f3f3; padding:10px 55px 20px; display:none}
+.payments-lst.none{ display:none}
+.payments-lst li{float:left;margin-right:10px;margin-top:10px;height:60px; width:170px;}
+.payments-lst li.mr30{ margin-right:30px; margin-top:0px;}
+.payments-lst li input,.payments-lst li span{vertical-align:middle;}
+.payments-lst li span{background:#fff;display:inline-block;padding:4px 10px;}
+.payments-lst li span.pd{ padding:4px 20px;}
+.payments-lst li span img{display:inline-block;width:148px;height:48px; }
+.payments-lst li span em{ float:right; color:#6ba35e; border:1px solid #ebebeb; margin-top:12px; padding:1px 5px}
+.payments-lst li.w span img{ padding-right:90px; float:left}
+.payments-lst li.w{ width:320px; margin-right:20px;}
+.payments-lst li .re{ line-height:58px; font-size:14px;font-family:微软雅黑;}
+.payments-lst li .re em{ margin-right:3px;}
+.payments-lst li .re a{ color:#22aadd}
+.payments-lst li .re a:hover{ text-decoration:none}
+.red-abtn{ background:#666}
+.red-abtn:hover{ background:#666}
+.wxzf{ width:1080px; height:435px; background:url(//res.csc86.com/v2/c/order/image/payments/wxsm.png) no-repeat center top; }
+.wxzf .ewm{ width:264px; border:1px solid #ebebeb; padding:17px; position:relative; left:176px;top:10px;}
+.jspayFrm{ }
+.payments-bd .frm-btns{ padding:0px 55px ; float:right}
+
+/*支付失败弹窗*/
+.aui_titleBar .aui_title{min-width:200px;}
+.payment-fail-pop{width:366px;padding-top:60px;}
+.payment-fail-pop .bd{background:url(//res.csc86.com/v2/l/artDialog/4.1.7/skins/icons/mem-w.png) no-repeat left top;padding-left:34px;font-size:14px;color:#333;line-height:24px;margin-left:75px;}
+.payment-fail-pop .ft{background:#ebebeb;height:30px;padding-top:6px;padding-right:5px;text-align:right;overflow:hidden;margin-top:76px;}
+.payment-fail-pop .repay-btn,.payment-fail-pop .cancel-btn{display:inline-block;color:#fff;text-decoration:none;height:24px;line-height:24px;border-radius:3px;}
+.payment-fail-pop .repay-btn,.payment-fail-pop .cancel-btn{display:inline-block;padding:0 13px;margin-right:8px;}
+.payment-fail-pop .repay-btn{background:#f9601d;}
+.payment-fail-pop .cancel-btn{background:#aeaeae;}
+
+.paytable{ border-collapse:collapse; text-align:center; margin:10px 0px;}
+.paytable td,th{ border:#ddd solid 1px;  height:35px;}
+
+

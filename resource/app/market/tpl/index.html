@@ -1,0 +1,49 @@
+{{include './public/slide'}}
+	<!-- 三大行业类目-->	
+		{{each data as value a}}
+		<div class="chn">
+			<a href="#" class="chntit"><img src="/v2/app/common/images/blank.gif"  class="lazyload" data-original="images/{{a}}.png"  alt=""></a>
+			<div class="chnright {{a + 1}}">
+				<ul class="chchilds {{a}}">
+					{{each value as val l}}
+					        <li><a href="gsc:searchProductList?categoryNo={{val.categoryNo}}" data-href="searchProductList?categoryNo={{val.categoryNo}}">
+						<h2>{{val.categoryName}}</h2>
+						<p class="chftit">{{val.englishName}}{{l + 1}}</p>
+						<p class="chimgbox" style="background-image:url(http://192.168.0.125/{{val.image}})"></p>
+					</a></li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		 {{/each}} 	
+	<!-- {{include './public/slide'}} -->
+	<!-- 特色市场 -->
+	<div class="jstj tssc">
+		<h2 class="tjtit g-cf"><span class="g-fl tjtitxt bordertit">特色市场</span></h2>
+		<div class="flr-bd tsscbox">
+			<ul class="g-cf tsul ">
+				<li class="lssp">
+					<a href="#">
+						<h2>绿色食品</h2>
+						<p>有机生态健康行</p>
+						<img  class="lazyload" data-original="images/tsimg1.jpg" src="/v2/app/common/images/blank.gif" alt="123">
+					</a>
+				</li>
+				<li class="dmg">
+					<a href="#">
+						<h2>东盟购</h2>
+						<p>好货汇聚东南亚</p>
+						<img  class="lazyload" data-original="images/tsimg2.jpg" src="/v2/app/common/images/blank.gif" alt="">
+					</a>
+				</li>
+				<li class="pcc">
+					<a href="#">
+						<h2>皮草城</h2>
+						<p>北国冰城好货源</p>
+						<img  class="lazyload" data-original="images/tsimg3.jpg" src="/v2/app/common/images/blank.gif" alt="123">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	<!-- 特色市场end -->

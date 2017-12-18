@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit|ie-stand|ie-comp">
+	<title>前端html模板</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+
+	<!-- 引入公共的 css-->
+	<link rel="stylesheet" href="//res.csc86.com/f=v2/m/init/css/style.css,v2/m/init/css/common.css"/>
+	<!-- 引入本页的 css-->
+</head>
+<body>
+	<div class="wrap">
+		网页内容....
+	</div>
+
+	<!-- 引入seajs 及其配置 -->
+	<!-- 其他js文件请务必在init.js中以require发方式引入，保持页面整齐 -->
+	<script src="//res.csc86.com/f=v2/l/seajs/sea.js,v2/c2/seaconfig.js"></script>
+	<script>
+		// 本页单独的js文件，命名和html文件名相同。
+		seajs.use('c2/template/js/src/index/index2');
+
+	</script>
+</body>
+</html>

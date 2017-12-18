@@ -1,0 +1,175 @@
+<input type="hidden" id="importUserStatus" value="{{importUserStatus}}"><!-- 郑州城商通旺铺是否激活判断 -->
+<!-- 菜单 -->
+<div class="navbar">
+	<div class="wwrap g-o g-cf">
+		<div class="g-fl g-ml30"><a href="//{{host.i}}" class="g-db" title="会员中心首页"><img src="//res.csc86.com/v2/c2/uc/images/logo.png" height="50" width="204" alt="华南城网" class="g-db"></a></div>
+		{{if isCg === false}}
+		<div class="navmenu g-fl g-cf" id="navmenu">
+			{{if role === 'mem_Seller'}}
+			<a href="#buyers" class="g-fl a" title="我是买家">我是买家</a>
+			<a href="#mem_Seller" class="g-fl hover a" title="我是卖家">我是卖家</a>
+			{{else}}
+			<a href="#buyers" class="g-fl hover a" title="我是买家">我是买家</a>
+			<a href="#mem_Seller" class="g-fl a" title="我是卖家">我是卖家</a>
+			{{/if}}
+			<a href="//payment.csc86.com" class="g-fl ts" title="钱包" target="_blank">钱包</a>
+            <span class="ts"><div class="tscon"><p class="an"><span class="s1">我知道了</span><span class="s2">立即体验>></span></p></div></span>
+		<!-- <a href="//i.csc86.com" title="返回旧版" class="g-fr gotold">返回旧版&gt;&gt;</a> -->
+		</div>
+		{{/if}}
+	</div>
+</div>
+
+
+<div class="bgcontainer g-pt15 g-pb30">
+	<div class="wwrap g-o g-cf">
+		<!-- 左侧导航 -->
+		<div class="ly-l g-fl">
+			<div class="box">
+				<div class="usr">
+					<!-- 用户名称和头像 -->
+					<div class="g-cf">
+						<a href="javascript://" class="g-fl g-pr figupload g-mt10">
+							<img id="infoimg" src="{{usrData.figimg}}" width="65" height="65" />
+							<span id="infoloadimg"></span>
+							<span></span>
+							<input type="hidden" name="" id="imgurl">
+						</a>
+						<!-- <a href="javascript:;" class="g-fl g-pr">
+							<img src="{{usrData.figimg}}" height="65" width="65" class="g-db">
+							<input type="file" name="figimg" id="figupload">
+						</a> -->
+						<div class="g-fr g-mt10">
+							<p class="g-fs16 g-cf">
+								<a class="g-e g-fl g-w50" href="http://{{host.member}}/membercenter/userinfo" title="{{usrData.name}}">{{usrData.name}}</a><span class="g-fl">,您好<span class="corange g-ffs g-fs16 g-fwb">&gt;&gt;</span></span>
+							</p>
+							<div class="g-cf g-ml3 g-mt10">
+								{{if usrData.phone}}
+								<a href="http://{{host.member}}/membercenter/userinfo" class="g-fl icon icon-ph-2"></a>
+								{{else}}
+								<a href="http://{{host.member}}/membercenter/userinfo" class="g-fl icon icon-ph-1"></a>
+								{{/if}}
+								{{if usrData.email}}
+								<a href="http://{{host.member}}/membercenter/userinfo" class="g-fl icon icon-em-2 mt7 g-ml10"></a>
+								{{else}}
+								<a href="http://{{host.member}}/membercenter/userinfo" class="g-fl icon icon-em-1 mt7 g-ml10"></a>
+								{{/if}}
+							</div>
+						</div>
+					</div>
+					<!-- 货款和订单数量 -->
+					<div class="g-mt30 g-fs14 g-fwb">
+						{{if isCg === false}}
+						<p>可提货款：<a class="corange" href="https://{{host.i}}/draw/list">{{usrData.money}}</a>&nbsp;元</p>
+						{{/if}}
+						{{if role === 'buyers'}}
+						<p>本月订单：<a class="corange" href="https://{{host.i}}/buyer/buyerOrder">{{usrData.order}}</a>&nbsp;单</p>
+						{{else}}
+						<p>本月订单：<a class="corange" href="https://{{host.i}}/seller/sellerOrders">{{usrData.order}}</a>&nbsp;单</p>
+						{{/if}}
+					</div>
+				</div>
+			</div>
+			<!-- 菜单 -->
+			<div class="box g-mt10">
+				<ul class="leftmenu">
+					<li class="g-c8 t g-pr">{{leftMenuData.header}} <i class="icon icon icon-1"></i></li>
+					{{each leftMenuData.menus as v i}}
+						{{if v.type === 1}}
+						<li>
+							<p><a href="{{v.href}}" title="{{v.text}}" target="{{v.target}}">{{v.text}}</a></p>
+						</li>
+						{{/if}}
+						{{if v.type === 2}}
+						<li class="g-c8 b g-pr">{{v.text}} <div class="icon-2"></div></li>
+						{{/if}}
+						{{if v.type === 3}}
+						<li>
+							{{each v.items as t k}}
+							<p><a href="{{t.href}}" title="{{t.text}}" target="{{t.target}}">{{t.text}}</a></p>
+							{{/each}}
+						</li>
+						{{/if}}
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		{{include './tpl_index_center'}}
+		<!-- 右侧咨询 -->
+		<div class="ly-r g-fr">
+			{{if isCg === false}}
+			<div class="box">
+				<div class="g-cf g-bbd g-pt5 g-pb5">
+					<i class="icon g-fl icon-6 g-ml15 g-mt5"></i>
+					<div class="r-h">玩转电商</div>
+				</div>
+				<ul class="r-list">
+					{{each playBuzzs as v i}}
+					<li class="g-cf"><i class="g-fl icon-dot"></i><a href="{{v.link}}" title="{{v.name}}" class="g-e" target="_blank">{{v.name}}</a></li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="box g-mt10">
+				<div class="g-cf g-bbd g-pt5 g-pb5">
+					<i class="icon g-fl icon-8 g-ml15 g-mt3"></i>
+					<div class="r-h">服务</div>
+					<a href="https://payment.csc86.com/serve.index.do" class="g-fr g-fs12 g-mr10 g-mt3" title="更多" target="_blank">更多&gt;&gt;</a>
+				</div>
+				<div class="g-cf g-bbd g-tc">
+					<div class="g-fl g-brd g-pw50 ml-1 g-pt10 g-pb10">
+						<a href="http://www.csc86.com/zt/cst" class="g-db icon icon-s icon-s-1" title="城商通" target="_blank"></a>
+						<div><a href="http://www.csc86.com/zt/cst" title="诚商通" class="g-fs14" target="_blank">城商通</a></div>
+					</div>
+					<div class="g-fr g-pw50  g-pt10 g-pb10">
+						<a href="http://quan.csc86.com" class="g-db icon icon-s icon-s-2" title="生意圈" target="_blank"></a>
+						<div><a href="http://quan.csc86.com" title="生意圈" class="g-fs14" target="_blank">生意圈</a></div>
+					</div>
+				</div>
+				<div class="g-cf g-bbd g-tc">
+					<div class="g-fl g-brd g-pw50 ml-1 g-pt10 g-pb10">
+						<a href="http://quan.csc86.com/cards/index" class="g-db icon icon-s icon-s-3" title="生意红娘" target="_blank"></a>
+						<div><a href="http://quan.csc86.com/cards/index" title="名片墙" class="g-fs14" target="_blank">名片墙</a></div>
+					</div>
+					<div class="g-fr g-pw50  g-pt10 g-pb10">
+						<a href="http://{{host.approve}}/user/approveInfo?approveType=prove" class="g-db icon icon-s icon-s-6" title="身份认证" target="_blank"></a>
+						<div><a href="http://{{host.approve}}/user/approveInfo?approveType=prove" title="身份认证" class="g-fs14" target="_blank">身份认证</a></div>
+					</div>
+				</div>
+				<div class="g-cf g-tc">
+					<div class="g-fl g-brd g-pw50 ml-1 g-pt10 g-pb10">
+						<a href="http://{{host.member}}/accreditation/enterpriserealnamefirstauthentication/index.html" class="g-db icon icon-s icon-s-5" title="实名认证" target="_blank"></a>
+						<div><a href="http://{{host.member}}/accreditation/enterpriserealnamefirstauthentication/index.html" title="实名认证" class="g-fs14" target="_blank">实名认证</a></div>
+					</div>
+					<div class="g-fr g-pw50  g-pt10 g-pb10">
+						<a href="http://{{host.approve}}/user/localIndex?approveType=local" class="g-db icon icon-s icon-s-4" title="实地认证" target="_blank"></a>
+						<div><a href="http://{{host.approve}}/user/localIndex?approveType=local" title="实地认证" class="g-fs14" target="_blank">实地认证</a></div>
+					</div>
+				</div>
+			</div>
+			{{/if}}
+			<div class="box{{if isCg === false}} g-mt10{{/if}}">
+				<div class="g-cf g-bbd g-pt5 g-pb5">
+					<i class="icon g-fl icon-9 g-ml15"></i>
+					<div class="r-h">客服中心</div>
+				</div>
+				<div class="g-bbd g-pt10 g-pb10 g-pl15 g-pr10">
+					<p class="g-fs14">热线电话</p>
+					<div class="g-cf g-pl15 g-mt5">
+						<i class="icon g-fl icon-10 g-mt3"></i>
+						<span class="g-fl corange g-fwb g-ml5">400-184-8666</span>
+					</div>
+				</div>
+				<div class="g-pt10 g-pb10 g-pl15 g-pr10">
+					<p class="g-fs14">在线咨询</p>
+					<div class="g-cf g-pl15 g-mt5">
+						<i class="icon g-fl icon-11 g-mt3"></i>
+						<a class="g-fl corange g-fwb g-ml5" href="http://help.csc86.com/service" target="_blank">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="//res.csc86.com/f=js/m/config.js,js/c/memberhome/m-home.js,js/c/membercenter/member.js"></script>
+<script src="//res.csc86.com/f=js/p/SWFUpload/v2.2.0.1/swfupload.js,js/m/handlers.js,js/c/memberhome/uploadimg.js,js/c/memberhome/infouploadimg.js"></script>

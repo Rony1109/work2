@@ -1,0 +1,2086 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<title>电子频道首页</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<link rel="stylesheet" href="/v2/m/init/css/style.css"/>
+<link rel="stylesheet" href="/v2/c/electron/css/base.css"/>
+<link rel="stylesheet" href="/v2/c/electron/css/index.css"/>
+<script src="/v2/l/seajs/sea.js"></script>
+<script src="/v2/m/init/js/init.js"></script>
+</head>
+<body>
+
+<div class="top-bar">
+	<div class="g-o">
+		<div class="top-csc-group">
+			<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+			<a target="_blank" href="http://sz.csc86.com">深圳</a>
+			<a target="_blank" href="http://nn.csc86.com">南宁</a>
+			<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+			<a target="_blank" href="http://xa.csc86.com">西安</a>
+			<a target="_blank" href="http://zz.csc86.com">郑州</a>
+			<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+		</div>
+		<div class="server-r">
+			<a title="" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a>
+			<span class="v-line t-w"></span>
+			<a class="sethome" href="#">设置首页</a>
+			<span class="v-line t-w"></span>
+			<a class="addfav" href="#">收藏</a>
+		</div>
+		<span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-c-f bd w-193">
+				<ul class="csc-bd">
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+				</ul>
+				<ul class="yesmore-bd">
+					<li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，
+			<span class="bd">欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a>
+			<span class="v-line"></span>
+			<a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a>					</span>
+			<span class="v-line"></span>
+		</div>
+	</div>
+</div>
+<script>define(function(require, exports, module) {
+	
+		require('m/top-bar/js/init');
+})</script>
+<div class="web-search">
+	<div class="g-o">
+		<h1>
+			<a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com">
+				<img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+		</h1>
+		<h2>
+			<a href="/">电子频道</a>
+		</h2>
+		<div class="g-fl">
+			<div class="selected_channel">
+				<span class="sel_chnel">更多</span>
+				<div class="chnel_list">
+					<ul>
+						<li><a href="#">纺织频道</a></li>
+						<li><a href="#">皮革频道</a></li>
+						<li><a href="#">电子频道</a></li>
+						<li><a href="#">其他频道</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="m-search">
+			<form action="http://search.csc86.com/selloffer/products.html" method="get">
+				<ul class="g-cf">
+					<li class="first cur">
+						<a href="http://search.csc86.com/selloffer/products.html">产品</a>
+					</li>
+					<li>
+						<a href="http://search.csc86.com/company/company.html">公司</a>
+					</li>
+				</ul>
+				<div class="g-cf">
+					<div class="ss-txt">
+						<div style="display:none;" id="comp-ol" class="ss-select">
+							<span class="arr"></span>
+							<ol>
+								<li class="cur">
+									<a href="javascript:">公司名称</a>
+								</li>
+								<li>
+									<a href="javascript:">主营产品</a>
+								</li>
+							</ol>
+						</div>
+						<input type="text" class="txt" name="q" placeholder="请输入产品名称" value="" maxlength="35" autocomplete="off" id="search-txt"></div>
+					<input type="submit" value="搜索" id="searchbtn" class="btn"></div>
+				<ol class="g-cf hot-keys">
+					<li>
+						<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a>
+					</li>
+					<li>
+						<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a>
+					</li>
+					<li>
+						<a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">涂料</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">无纺布</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a>
+					</li>
+				</ol>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script>define(function(require, exports, module) {
+	require('m/head-search/js/init');
+})</script>
+<!--导航条-->
+<div class="m-nav dz_nav">
+	<div class="g-o">
+		<ul class="g-ffy g-tc">
+			<li class="s"><a href="index.html">首　页</a></li>
+			<li><a href="zixun.html">商情资讯</a></li>
+			<li><a href="daogou.html">精品导购</a></li>
+			<li><a href="pinpai.html">品牌专题</a></li>
+			<li><a href="huodong.html">活动展会</a></li>
+			<li><a href="jishu.html">技术前沿</a></li>
+		</ul>
+	</div>
+</div>
+<!--导航条1-->
+<div class="dz_nav1">
+	<div class="g-o">
+		<a href="#">5A商家大全</a>
+		<a href="#">官方推荐4A优质商家</a>
+		<a href="#">LED包邮领样专场</a>
+		<a href="#">电子品牌大联展</a>
+	</div>
+</div>
+<div class="g-h10"></div>
+<!--第一大块 (分类导航等)-->
+<div class="g-o dz_h_box1">
+	<!-- 分类列表 -->
+	<div class="g-fl box_navlist">
+		<h2 class="box_navlist_t">所有分类</h2>
+		<div class="fl_box">
+			<dl class="navlist_dl">
+				<dt class="navlist_dt"><h3><a href="#" target="_blank">电子元器件</a></h3></dt>
+				<dd class="list_l1">
+					<a href="#" target="_blank">集成电路（IC）</a>
+					<a href="#" target="_blank">二三极管</a>
+					<a href="#" target="_blank">连接器</a>
+					<a href="#" target="_blank">电阻电容电感</a>
+					<a href="#" target="_blank">传感器</a>
+					<a href="#" target="_blank">变频器</a>
+					<a href="#" target="_blank">继电器</a>
+					<a href="#" target="_blank">PCB电路板</a>
+				</dd>
+				<dd class="list_l2 g-ub">
+					<a href="#" target="_blank">虎门女装</a>
+					<a href="#" target="_blank">虎门女装</a>
+				</dd>
+			</dl>
+			<div class="list_r g-cf">
+				<div class="g-fl">
+					<div class="g-h10"></div>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl nob">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<div class="g-h20"></div>
+				</div>
+				<div class="g-fr">
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<div class="g-h20"></div>
+				</div>
+			</div>
+		</div>
+		<div class="fl_box">
+			<dl class="navlist_dl">
+				<dt class="navlist_dt"><h3>电子元器件</h3></dt>
+				<dd class="list_l1">
+					<a href="#" target="_blank">集成电路（IC）</a>
+					<a href="#" target="_blank">二三极管</a>
+					<a href="#" target="_blank">连接器</a>
+					<a href="#" target="_blank">电阻电容电感</a>
+					<a href="#" target="_blank">传感器</a>
+				</dd>
+				<dd class="list_l2 g-ub">
+					<a href="#" target="_blank">虎门女装</a>
+					<a href="#" target="_blank">虎门女装</a>
+				</dd>
+			</dl>
+			<div class="list_r g-cf">
+				<div class="g-fl">
+					<div class="g-h20"></div>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl nob">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<div class="g-h30"></div>
+				</div>
+				<div class="g-fr">
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="fl_box">
+			<dl class="navlist_dl">
+				<dt class="navlist_dt"><h3>电子元器件</h3></dt>
+				<dd class="list_l1">
+					<a href="#" target="_blank">集成电路（IC）</a>
+					<a href="#" target="_blank">二三极管</a>
+					<a href="#" target="_blank">连接器</a>
+					<a href="#" target="_blank">电阻电容电感</a>
+					<a href="#" target="_blank">传感器</a>
+					<a href="#" target="_blank">变频器</a>
+					<a href="#" target="_blank">继电器</a>
+					<a href="#" target="_blank">PCB电路板</a>
+				</dd>
+				<dd class="list_l2 g-ub">
+					<a href="#" target="_blank">虎门女装</a>
+					<a href="#" target="_blank">虎门女装</a>
+				</dd>
+			</dl>
+			<div class="list_r g-cf">
+				<div class="g-fl">
+					<div class="g-h10"></div>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl nob">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<div class="g-h20"></div>
+				</div>
+				<div class="g-fr">
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<div class="g-h20"></div>
+				</div>
+			</div>
+		</div>
+		<div class="fl_box">
+			<dl class="navlist_dl">
+				<dt class="navlist_dt"><h3>电子元器件</h3></dt>
+				<dd class="list_l1">
+					<a href="#" target="_blank">集成电路（IC）</a>
+					<a href="#" target="_blank">二三极管</a>
+					<a href="#" target="_blank">连接器</a>
+					<a href="#" target="_blank">电阻电容电感</a>
+					<a href="#" target="_blank">传感器</a>
+				</dd>
+				<dd class="list_l2 g-ub">
+					<a href="#" target="_blank">虎门女装</a>
+					<a href="#" target="_blank">虎门女装</a>
+				</dd>
+			</dl>
+			<div class="list_r g-cf">
+				<div class="g-fl">
+					<div class="g-h20"></div>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<dl class="type_dl nob">
+						<dt><a href="#" target="_blank">集成电路（IC）</a></dt>
+						<dd>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+							<i>|</i>
+							<a href="#" target="_blank">贴片IC</a>
+						</dd>
+					</dl>
+					<div class="g-h30"></div>
+				</div>
+				<div class="g-fr">
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+					<dl class="type_dl_tj">
+						<dt><a href="#" target="_blank" title="商家名称">商家名称</a></dt>
+						<dd class="sj_logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd><span>主营：</span><em>手机IC</em><em>电脑IC</em><em>贴片IC</em></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="box_navlist_b">
+			<a href="#" target="_blank">查看所有分类</a>
+		</div>
+	</div>
+	<!-- 中部,今日聚焦 -->
+	<div class="g-fl box_c">
+		<div id="lh_box" class="lh_box">
+			<ul class="li_lh">
+				<!-- 540*220 轮换广告 -->				
+				<li>
+					<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank"><img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="540" height="220" alt="" /></a> 
+				</li>
+				<li>
+					<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="540" height="220" alt="" /></a> 
+				</li>
+				<li>
+					<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="540" height="220" alt="" /></a> 
+				</li>
+				<li>
+					<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="540" height="220" alt="" /></a> 
+				</li>
+				<li>
+					<a title="生意真经拉单技巧尽在对外贸易商圈" href="http://quan.csc86.com/c20d7130-2a3b-41c4-a6c6-72301f4415e5.html" target="_blank"><img src="http://img.csc86.com/526f200b6922f06d4bde43b1" width="540" height="220" alt="" /></a> 
+				</li>
+				<li>
+				<a title="深圳市万盛达电线电缆经营部" href="http://quan.csc86.com/thread/detail/0e4781e6-47cf-4c01-bfa1-d193b9c53811.html" target="_blank"><img src="http://img.csc86.com/527369f20cf2c340d58cf98a"  width="540" height="220" alt="" /></a> 
+				</li>
+				<!-- 540*220 轮换广告 end -->
+			</ul>
+			<div class="but"></div>
+		</div>
+		<div class="box_jrjj">
+			<h2 class="title_jrjj">今日聚焦</h2>
+			<div class="databox1 g-cf">
+				<div id="lh_box1" class="lh_box1 g-fl">
+					<ul class="li_lh">
+						<!-- 160*120 轮换广告 -->				
+						<li>
+							<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank">
+                               <img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="160" height="150" alt="" /></a> 
+						</li>
+						<!--<li>
+							<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="160" height="120" alt="" /></a> 
+						</li>
+						<li>
+							<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="160" height="120" alt="" /></a> 
+						</li>
+						<li>
+							<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="160" height="120" alt="" /></a> 
+						</li>-->
+						<!-- 160*120 轮换广告 end -->
+					</ul>
+					<div class="txtbg"></div>
+					<div class="txt"><a href="#" target="_blank" title="深圳市万盛达电线电缆线电缆">深圳市万盛达电线电缆线电缆</a></div>
+					<!--<div class="but"></div>-->
+				</div>
+				<div class="g-fr">
+					<h3><a href="#" target="_blank" title="集成电路芯片国产化推芯片国产化推">集成电路芯片国产化推芯片国产化推</a></h3>
+					<!--<h4><a href="#" target="_blank">[LED产业勿成下一个光伏]</a>&nbsp;&nbsp;<a href="#" target="_blank">[光伏市场将启“玻璃门”]</a></h4>-->
+                    
+                    <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					<ul class="jrjj_ul text_type1">
+						<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+						<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+						<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+						<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+						<li class="type1"><span>访谈</span><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+						<li class="type1"><span>展会</span><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="databox2">
+				<dl class="jrjj_dl text_type1 g-fl">
+					<dt><a href="http://ec.csc86.com/xinpin/" target="_blank" title="更多&gt;">更多 &gt;</a>产品导购<i></i></dt>
+					<dd class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+				</dl>
+				<dl class="jrjj_dl text_type1 text_nodp g-fr">
+					<dt><a href="" target="_blank" title="更多&gt;">更多 &gt;</a>行情数据<i></i></dt>
+					<dd><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+					<dd><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 登陆,执门供求 -->
+	<div class="g-fr box_r">
+		<div id="dz_user_box" class="dz_user_box">
+		<!-- 登录服务 start -->
+			<!--未登陆-->
+			<div class="log-reg icon-img">
+				<a target="_blank" class="login" href="http://member.csc86.com/login/phone">登 录</a>
+				<a target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a>
+			</div>
+			<!--未登陆 结束-->
+			<!--已登陆-->
+			<!-- <div class="islog">
+				<ul class="log-mess">
+					  <li><a target="_blank" href="http://member.csc86.com/inquiry/list.html">收到的报价(<em>0</em>)</a><a target="_blank" href="//payment.csc86.com">账户中心(<em>0.00</em>)</a></li>
+					  <li><a target="_blank" href="http://member.csc86.com/membercenter/messagelist/">未读消息(<em>0</em>)</a><a target="_blank" href="http://member.csc86.com/">进入会员中心</a></li>
+					  <li class="push"><a target="_blank" href="http://member.csc86.com/">发布供求</a></li>
+				</ul>
+			</div> -->
+			<!--已登陆 结束-->
+			
+			<div class="tab-set">
+				<ul>
+					<li class="b-line cur"><a href="#">会员服务</a></li>
+					<li class=""><a href="#">买卖入门</a></li>
+				</ul>
+			</div>
+			<div class="tab-inner">
+				<div style="display:block;">
+					<ul class="hyfw g-cf sev-comp">	
+						<li>
+							<a rel="nofollow" target="_blank" href="#" class="t">
+								<img width="30" height="34" src="/v2/c/electron/css/img/icon01.png" alt="">
+							</a>
+							<a rel="nofollow" target="_blank" href="#">VIP会员</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank" class="t">
+								<img width="30" height="34" src="/v2/c/electron/css/img/icon02.png" alt="">
+							</a>
+							<a href="#" rel="nofollow" target="_blank">实体认证</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank" class="t">
+								<img width="30" height="34" src="/v2/c/electron/css/img/icon03.png" alt="">
+							</a>
+							<a href="#" rel="nofollow" target="_blank">实名认证</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank" class="t">
+								<img width="32" height="37" src="/v2/c/electron/css/img/icon04.png" alt="">
+							</a>
+							<a href="#" rel="nofollow" target="_blank">诚信认证</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display:none;">
+					<ul class="sev-help">
+						<li class=""><em class="ry-buy">[买家入门]</em><a href="http://help.csc86.com/2013/1016/89222.html" rel="nofollow" target="_blank">如何在华南城网寻找供应商？</a></li>
+						<li><em class="ry-buy">[买家入门]</em><a href="http://help.csc86.com/2013/1016/89228.html" rel="nofollow" target="_blank">如何发布优质的询价单？</a></li>
+						<li class=""><em class="s-shop">[卖家入门]</em><a href="http://help.csc86.com/2013/1016/89295.html" rel="nofollow" target="_blank">如何开通旺铺？</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="f-sale">
+				<a href="#" class="w-buy">我要买</a>
+				<a href="#" class="w-sell">我要卖</a>
+			</div>
+		<!-- 登录服务 end -->
+		</div>
+		<p class="g-h20"></p>
+		<div id="tab1" class="tab_box databox">
+			<div class="tab_tbox">
+				<span class="tab_t">
+					<a class="s" href="javascript:;">热门供应<i></i></a>
+					<a href="javascript:;">热门求购<i></i></a>
+				</span>
+				<span class="more">
+					<a href="#" title="查看更多供应信息">1更多&nbsp;&gt;</a>
+					<a href="#" title="查看更多求购信息">2更多&nbsp;&gt;</a>
+				</span>
+			</div>
+			<div class="tab_d1" style="display:block;">
+				<div class="nodp">
+					<dl>
+						<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+						<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd>价格：<em>¥12.90</em>/个</dd>
+						<dd><a href="#" target="_blank">更多同类产品&gt;</a></dd>
+					</dl>
+				</div>
+				<ul class="text_type1">
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥1130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥1130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				</ul>
+			</div>
+			<div class="tab_d1" style="display:block;">
+				<div class="nodp">
+					<dl>
+						<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+						<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="50" height="50" alt="商家名称"/></a></dd>
+						<dd>价格：<em>¥12.90</em>/个</dd>
+						<dd><a href="#" target="_blank">更多同类产品&gt;</a></dd>
+					</dl>
+				</div>
+				<ul class="text_type1">
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">2aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥1130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">2aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥1130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="1集成电路芯片国产化推" target="_blank">1集成电路芯片国产化推化推产化推化推产化推化推</a></li>
+					<li><em>¥130</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--第二大块 (精品橱窗)-->
+<div class="g-o dz_h_box2">
+	<h2>精品橱窗</h2>
+	<div class="jpcc_main g-cf">
+		<ul class="ul_img1 g-fl">
+			<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="190" height="290"></a></li>
+			<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="190" height="80"></a></li>
+		</ul>
+		<ul class="ul_img2 g-fl">
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120"><span>ZP普通整流</span>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120"><span>ZP普通整流</span><i class="ico_hot"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span><i class="ico_new"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span><i class="ico_hot"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span><i class="ico_new"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span><i class="ico_hot"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span><i class="ico_new"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			<li>
+				<a href="#" target="_blank" title="介绍">
+					<img src="../css/img/DDDDDD_3.gif" width="120" height="120">
+					<span>ZP普通整流</span></i><i class="ico_hot"></i>
+				</a>
+				<p>批发价：<em>118.00</em></p>
+			</li>
+			
+		</ul>
+		<div class="box2_ppsj g-fr">
+			<h3 class="g-ffy g-fwn g-fs16">品牌商家</h3>
+			<dl>
+				<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="80" height="80" alt="商家名称"/></a></dd>
+				<dd><strong>主营：</strong>电动工具;气动工具;电焊机;手电钻...</dd>
+				<dd><strong>经销模式：</strong>经销批发</dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="80" height="80" alt="商家名称"/></a></dd>
+				<dd><strong>主营：</strong>电动工具;气动工具;电焊机;手电钻...</dd>
+				<dd><strong>经销模式：</strong>经销批发</dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="80" height="80" alt="商家名称"/></a></dd>
+				<dd><strong>主营：</strong>电动工具;气动工具;电焊机;手电钻...</dd>
+				<dd><strong>经销模式：</strong>经销批发</dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="商家名称">3月17日PTA高位调整回</a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="80" height="80" alt="商家名称"/></a></dd>
+				<dd><strong>主营：</strong>电动工具;气动工具;电焊机;手电钻...</dd>
+				<dd><strong>经销模式：</strong>经销批发</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--横条广告1-->
+<div class="g-o"><a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" height="60" width="1000"></a></div>
+<div class="g-h20"></div>
+<!--1楼 电子元品件-->
+<div class="g-o dz_h_floors">
+	<div class="title">
+		<div class="g-fl"><h2><i>1F</i>电子元器件</h2><a class="more" href="#" target="_blank">全部&gt;</a></div>
+		<div class="g-fr">特别推荐：<a href="#" target="_blank">深圳市伟创捷</a> | <a href="#" target="_blank">深圳市伟创捷</a></div>
+	</div>
+	<div class="floors_main g-cf">
+		<div class="floors_l1 g-fl">
+			<div class="floors_lhbox lh_box2">
+				<ul class="li_lh">
+					<!-- 160*120 轮换广告 -->				
+					<li>
+						<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank"><img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="200" height="210" alt="" /></a> 
+					</li>
+					<!-- 160*120 轮换广告 end -->
+				</ul>
+				<div class="but"></div>
+			</div>
+			<!--<div class="l1_1">
+				<div class="adbox g-cf">
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+				</div>
+				<h3>热门产品</h3>
+				<div class="rmcp_box g-cf">
+					<a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a>
+				</div>
+			</div>-->
+		</div>
+		<div class="floors_l2 g-fl">
+			<div id="lh_box3" class="lh_box3">
+				<div class="li_lh">
+					<ul class="lh3_item">
+						<li><div>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+							
+						</div></li>
+						<li><div>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</div></li>
+						<li><div>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+							
+						</div></li>
+						<li><div>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</div></li>
+					</ul>
+					<!--<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>-->
+				</div>
+				<!--<div class="but"></div>-->
+			</div>
+			<ul class="text_type1">
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+			</ul>			
+		</div>
+		<div class="floors_l3 g-fr">
+			<h3>优质供应商排行榜</h3>
+			<ol class="ol_text_type1">
+				<li class="top_h">
+					<i>1</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>2</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国路芯片国路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>3</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<!--<li>
+					<i>4</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>5</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>-->
+			</ol>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--横条广告2-->
+<div class="g-o"><a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" height="60" width="1000"></a></div>
+<div class="g-h20"></div>
+<!--2楼 LED-->
+<div class="g-o dz_h_floors">
+	<div class="title">
+		<div class="g-fl"><h2><i>2F</i>LED</h2><a class="more" href="#" target="_blank">全部&gt;</a></div>
+		<div class="g-fr">特别推荐：<a href="#" target="_blank">深圳市伟创捷</a> | <a href="#" target="_blank">深圳市伟创捷</a></div>
+	</div>
+	<div class="floors_main g-cf">
+		<div class="floors_l1 g-fl">
+			<div class="floors_lhbox lh_box2">
+				<ul class="li_lh">
+					<!-- 160*120 轮换广告 -->				
+					<li>
+						<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank"><img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="200" height="210" alt="" /></a> 
+					</li>
+					<!-- 160*120 轮换广告 end -->
+				</ul>
+				<div class="but"></div>
+			</div>
+			<div class="l1_1">
+				<div class="adbox g-cf">
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+				</div>
+				<h3>热门产品</h3>
+				<div class="rmcp_box g-cf">
+					<a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a>
+				</div>
+			</div>
+		</div>
+		<div class="floors_l2 g-fl">
+			<div id="lh_box3" class="lh_box3">
+				<div class="li_lh">
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="but"></div>
+			</div>
+			<ul class="text_type1">
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+			</ul>			
+		</div>
+		<div class="floors_l3 g-fr">
+			<h3>优质供应商排行榜</h3>
+			<ol class="ol_text_type1">
+				<li class="top_h">
+					<i>1</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>2</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国路芯片国路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>3</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>4</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>5</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--横条广告3-->
+<div class="g-o"><a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" height="60" width="1000"></a></div>
+<div class="g-h20"></div>
+<!--3楼 电工电器-->
+<div class="g-o dz_h_floors">
+	<div class="title">
+		<div class="g-fl"><h2><i>3F</i>电工电器</h2><a class="more" href="#" target="_blank">全部&gt;</a></div>
+		<div class="g-fr">特别推荐：<a href="#" target="_blank">深圳市伟创捷</a> | <a href="#" target="_blank">深圳市伟创捷</a></div>
+	</div>
+	<div class="floors_main g-cf">
+		<div class="floors_l1 g-fl">
+			<div class="floors_lhbox lh_box2">
+				<ul class="li_lh">
+					<!-- 160*120 轮换广告 -->				
+					<li>
+						<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank"><img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="200" height="210" alt="" /></a> 
+					</li>
+					<!-- 160*120 轮换广告 end -->
+				</ul>
+				<div class="but"></div>
+			</div>
+			<div class="l1_1">
+				<div class="adbox g-cf">
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+				</div>
+				<h3>热门产品</h3>
+				<div class="rmcp_box g-cf">
+					<a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a>
+				</div>
+			</div>
+		</div>
+		<div class="floors_l2 g-fl">
+			<div id="lh_box3" class="lh_box3">
+				<div class="li_lh">
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="but"></div>
+			</div>
+			<ul class="text_type1">
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+			</ul>			
+		</div>
+		<div class="floors_l3 g-fr">
+			<h3>优质供应商排行榜</h3>
+			<ol class="ol_text_type1">
+				<li class="top_h">
+					<i>1</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>2</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国路芯片国路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>3</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>4</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>5</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--横条广告4-->
+<div class="g-o"><a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" height="60" width="1000"></a></div>
+<div class="g-h20"></div>
+<!--4楼 消费电子-->
+<div class="g-o dz_h_floors">
+	<div class="title">
+		<div class="g-fl"><h2><i>4F</i>消费电子</h2><a class="more" href="#" target="_blank">全部&gt;</a></div>
+		<div class="g-fr">特别推荐：<a href="#" target="_blank">深圳市伟创捷</a> | <a href="#" target="_blank">深圳市伟创捷</a></div>
+	</div>
+	<div class="floors_main g-cf">
+		<div class="floors_l1 g-fl">
+			<div class="floors_lhbox lh_box2">
+				<ul class="li_lh">
+					<!-- 160*120 轮换广告 -->				
+					<li>
+						<a title="(2013第三届)中国网商网货交易会 B2C内贸电商渠道商洽" href="http://quan.csc86.com/thread/detail/abd3750a-37ba-4e16-af98-e5c841173d25.html" target="_blank"><img src="http://img.csc86.com/528b19450cf2c18fb5959764" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="2013（第三届）中国网商网货交易会" href="http://quan.csc86.com/c7691e80-e667-4338-af14-efe247710c76.html" target="_blank"><img src="http://img.csc86.com/527dfae06922f06d4be2c315" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="伙伴们，认证服务全面升级啦！" href="http://quan.csc86.com/thread/detail/df2b22f5-ed44-4b46-a607-42ca9eedb901.html" target="_blank"><img src="http://img.csc86.com/5270c0c96922f06d4bdf14c2" width="200" height="210" alt="" /></a> 
+					</li>
+					<li>
+						<a title="晒订单分享采购经验 赢“金牌采购商”特权" href="http://quan.csc86.com/thread/detail/c7f3ebda-e8c2-4dbd-b46c-09982e3e7cfe.html" target="_blank"><img src="http://img.csc86.com/525e25480cf2c340d5868e8a" width="200" height="210" alt="" /></a> 
+					</li>
+					<!-- 160*120 轮换广告 end -->
+				</ul>
+				<div class="but"></div>
+			</div>
+			<div class="l1_1">
+				<div class="adbox g-cf">
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+					<a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="98" height="48"></a>
+				</div>
+				<h3>热门产品</h3>
+				<div class="rmcp_box g-cf">
+					<a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a><a href="#" target="_blank">热门产品</a>
+				</div>
+			</div>
+		</div>
+		<div class="floors_l2 g-fl">
+			<div id="lh_box3" class="lh_box3">
+				<div class="li_lh">
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+					<ul class="lh3_item">
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="介绍">
+								<img src="../css/img/DDDDDD_3.gif" width="120" height="110" alt="">
+								<span>ZP普通整流</span>
+							</a>
+							<p>价格：<em>118.00</em>/个</p>
+							<p>发货地：广东 深圳</p>
+							<p><a href="#" target="_blank">更多同类产品&gt;</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="but"></div>
+			</div>
+			<ul class="text_type1">
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成电路芯片国产化推化推</a></li>
+				<li class="type1"><em>[访谈]</em><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></li>
+			</ul>			
+		</div>
+		<div class="floors_l3 g-fr">
+			<h3>优质供应商排行榜</h3>
+			<ol class="ol_text_type1">
+				<li class="top_h">
+					<i>1</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>2</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国路芯片国路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li class="top_h">
+					<i>3</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>4</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+				<li>
+					<i>5</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+					<p>关注数:<em>123456</em></p>
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div class="g-h20"></div>
+<!--横条广告5-->
+<div class="g-o"><a href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" height="60" width="1000"></a></div>
+<div class="g-h20"></div>
+<!--第四大块 (人物,专题,展会)-->
+
+
+ <div class="g-o">
+        <div class="list-type-b">
+            <h3 class="g-cf"><strong>电子周报</strong><a href="#" class="more">更多&gt;</a> </h3>
+            <div class="inner">
+            <ul class="fix">
+                <li><a href="#" title="2013第十六届北京国际热处理展览会 参与可赢取大奖2013第十六届北京国际热处理展览会 参与可赢取大奖" target="_blank">2013第十六届北京国际热处理展览会 参与可赢取大奖2013第十六届北京国际热处理展览会 参与可赢取大奖</a></li>
+                <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                   <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="list-type-b">
+            <h3 class="g-cf"><strong>精彩专题</strong><a href="#" class="more">更多&gt;</a> </h3>
+            <div class="inner">
+                <!--<ol class="g-cf">
+                    <li><a href="#" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="160" height="93"/></a></li>
+                    <li><a href="#" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="160" height="93"/></a></li>
+                    <li><a href="#" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="160" height="93"/></a></li>
+                    <li><a href="#" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="160" height="93"/></a></li>
+                </ol>-->
+                <div class="g-ctp">
+                	<a href="#" target="_blank" title="图片广告"><img src="css/img/thumb-img1.jpg" height="176" width="340"></a>
+                </div>
+                <ul>
+                    <li><a href="#" title="2013第十六届北京国际热处理展览会 参与可赢取大奖2013第十六届北京国际热处理展览会 参与可赢取大奖" target="_blank">2013第十六届北京国际热处理展览会 参与可赢取大奖2013第十六届北京国际热处理展览会 参与可赢取大奖</a></li>
+                    <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                    <li><a href="#" title="全国名优特农副产品（上海）交易博览会 参与可赢取大奖" target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                    <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                    <li><a href="#" title="深圳国际手机产业展览会研讨会 参与可赢取大奖" target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="g-fr pgsns">
+            <h3 class="g-cf"><strong>企业专访</strong><a href="#" class="more">更多&gt;</a> </h3>
+            <div class="inner">
+            	<div class="qy-tp">
+            		<a href="#" target="_blank"><img src="css/img/slide-img.jpg" width="242" height="150"></a>
+                </div>
+                <p class="p1"><a href="#" target="_blank">中泰皮业乘华南城网互联网+飓风</a></p>
+                <p class="p2">
+                	2015年,友谊可感受大师傅时代感到是萨芬阿士大夫阿士大夫阿..啥地方萨芬
+                	<a href="#" target="_blank">[详细]</a>
+                </p>
+                <ul>
+                	<li><a href="#"  target="_blank">2013第十六届北京国际热处理展览会 参与可赢取大奖2013第十六届北京国际热处理展览会 参与可赢取大奖</a></li>
+                    <li><a href="#"  target="_blank">深圳国际手机产业展览会研讨会 参与可赢取大奖</a></li>
+                    <li><a href="#"  target="_blank">全国名优特农副产品（上海）交易博览会 参与可赢取大奖</a></li>
+                </ul>
+           <!-- <div class="snsbox">
+                <div class="p-t">
+                    <a href="#" class="pic" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="70" height="66"/></a>
+                    <h5><a href="#" target="_blank" title="华南城网皮革行业商圈">华南城网皮革行业商圈</a></h5>
+                    <p><a href="#" target="_blank" title="皮革行业前景的看法？">皮革行业前景的看法？</a></p>
+                    <a href="#" class="g-dib join" title="我要参与">我要参与</a>
+                </div>
+                <ul>
+                    <li class="g-e"><a href="#" title="[价格]同样是皮草,价格差异为何这么大?" target="_blank">[价格]同样是皮草,价格差异为何这么大[价格]同样是皮草,价格差异为何这么大?</a></li>
+                    <li class="g-e"><a href="#" title="[穿搭]百搭皮衣各路女星演绎潮流感穿法!" target="_blank">[穿搭]百搭皮衣各路女星演绎潮流感穿法!</a></li>
+                    <li class="g-e"><a href="#" title="[价格]同样是皮草,价格差异为何这么大?" target="_blank">[价格]同样是皮草,价格差异为何这么大?</a></li>
+
+                </ul>
+            </div>
+                <div class="snsbox">
+                    <div class="p-t">
+                        <a href="#" class="pic" target="_blank" title="图片广告"><img src="../../m/init/image/img.png" width="70" height="66"/></a>
+                        <h5><a href="#" target="_blank" title="华南城网皮革行业商圈">华南城网皮革行业商圈</a></h5>
+                        <p><a href="#" target="_blank" title="皮革行业前景的看法？">皮革行业前景的看法？</a></p>
+                        <a href="#" class="g-dib join" title="我要参与">我要参与</a>
+                    </div>
+                    <ul>
+                        <li class="g-e"><a href="#" title="[价格]同样是皮草,价格差异为何这么大?" target="_blank">[价格]同样是皮草,价格差异为何这么大[价格]同样是皮草,价格差异为何这么大?</a></li>
+                        <li class="g-e"><a href="#" title="[穿搭]百搭皮衣各路女星演绎潮流感穿法!" target="_blank">[穿搭]百搭皮衣各路女星演绎潮流感穿法!</a></li>
+                        <li class="g-e"><a href="#" title="[价格]同样是皮草,价格差异为何这么大?" target="_blank">[价格]同样是皮草,价格差异为何这么大?</a></li>
+
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    
+<!--<div class="g-o dz_h_box3">
+	<div class="box3_l1 g-fl">
+		<div class="title"><h2>人物专访</h2><a title="点击查看更多" class="more" href="#">更多&gt;</a></div>
+		<div class="box3_main g-cf">
+			<dl>
+				<dt><a href="#" target="_blank" title="谭风涛：成功不能预见 ">谭风涛：成功不能预见 </a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="67" height="67" alt="商家名称"></a></dd>
+				<dd>一个产品的品牌优秀与否渠道商的服务直接影响顾客的与否渠秀与否渠道商的...&nbsp;&nbsp;<a href="#" target="_blank" title="点击查看详情">[详情]</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="谭风涛：成功不能预见 ">谭风涛：成功不能预见 </a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="67" height="67" alt="商家名称"></a></dd>
+				<dd>一个产品的品牌优秀与否渠道商的服务直接影响顾客的与否渠秀与否渠道商的...&nbsp;&nbsp;<a href="#" target="_blank" title="点击查看详情">[详情]</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="谭风涛：成功不能预见 ">谭风涛：成功不能预见 </a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="67" height="67" alt="商家名称"></a></dd>
+				<dd>一个产品的品牌优秀与否渠道商的服务直接影响顾客的与否渠秀与否渠道商的...&nbsp;&nbsp;<a href="#" target="_blank" title="点击查看详情">[详情]</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#" target="_blank" title="谭风涛：成功不能预见 ">谭风涛：成功不能预见 </a></dt>
+				<dd class="logo"><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="67" height="67" alt="商家名称"></a></dd>
+				<dd>一个产品的品牌优秀与否渠道商的服务直接影响顾客的与否渠秀与否渠道商的...&nbsp;&nbsp;<a href="#" target="_blank" title="点击查看详情">[详情]</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="box3_l2 g-fl">
+		<div class="title"><h2>专题策划</h2><a title="点击查看更多" class="more" href="#">更多&gt;</a></div>
+		<div class="box3_main g-cf">
+			<ul class="box3_imglist g-cf">
+				<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="160" height="95"></a></li>
+				<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="160" height="95"></a></li>
+				<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="160" height="95"></a></li>
+				<li><a href="#" target="_blank" title="介绍"><img src="../css/img/DDDDDD_3.gif" width="160" height="95"></a></li>
+			</ul>
+			<ul class="text_type1">
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="box3_l3 g-fr">
+		<div class="title"><h2>展会信息</h2><a title="点击查看更多" class="more" href="#">更多&gt;</a></div>
+		<div class="box3_main g-cf">
+			<div class="ad-box3">
+				<a href="" target="_blank"><img src="http://res.csc86.com/image/img.png" alt="" width="240" height="95" /></a>
+				<ul class="text_type1">
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+				<li><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推推化推</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+</div>-->
+<!--第五大块 (社区,行业)-->
+<!--<div class="g-h20"></div>
+ <div class="g-o dz_h_box4">
+	<div class="box4_l1 g-fl">
+		<div class="title"><h2>社区话题</h2></div>
+		<div class="box4_main g-cf">
+			<div class="g-fl">
+				<dl class="dl_2l_b">
+					<dt><a title="谈恋爱和做业务都一样，不吹牛行么？" href="#" target="_blank">谈恋爱和做业务都一样，不吹牛行么？</a></dt>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处属干 好处属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+				<dl class="dl_2l">
+					<dt><a title="脏活累活下属干 好处奖励老板拿" href="#" target="_blank"><span>[管理]</span>脏活累活下属干 好处奖励老板拿</a></dt>
+					<dd title="华南城网皮革行业"><a href="" target="_blank">华南城网皮革行业</a></dd>
+				</dl>
+			</div>
+			<div class="g-fr">
+				<dl class="dl_pic1">
+					<dt>
+						<a title="网商网货官方生意圈" href="http://quan.csc86.com/f37a1ddb-d160-46b3-9bff-e90b4ddbc449.html" target="_blank">网商网货官方生意圈</a> 
+					</dt>
+					<dd class="pic">
+						<img src="http://img.csc86.com/529441700cf2c18fb597806d"><a href="http://quan.csc86.com/f37a1ddb-d160-46b3-9bff-e90b4ddbc449.html" target="_blank"></a> 
+					</dd>
+					<dd>
+						成员：135
+					</dd>
+					<dd>
+						华南城网网商网货官方圈子。
+					</dd>
+				</dl>
+				<dl class="dl_pic1">
+					<dt>
+						<a title="网商网货官方生意圈" href="http://quan.csc86.com/f37a1ddb-d160-46b3-9bff-e90b4ddbc449.html" target="_blank">网商网货官方生意圈</a> 
+					</dt>
+					<dd class="pic">
+						<img src="http://img.csc86.com/529441700cf2c18fb597806d"><a href="http://quan.csc86.com/f37a1ddb-d160-46b3-9bff-e90b4ddbc449.html" target="_blank"></a> 
+					</dd>
+					<dd>
+						成员：135
+					</dd>
+					<dd>
+						华南城网网商网货官方圈子。
+					</dd>
+				</dl>
+				<ul class="ul_2l g-cf">
+					<li>
+						<a title="电子商务营销圈" href="#" target="_blank">电子商务营销圈</a> 
+					</li>
+					<li>
+						<a title="业鸿焊锡生意圈" href="#" target="_blank">电子商务营销圈</a> 
+					</li>
+					<li>
+						<a title="电子商务营销圈" href="#" target="_blank">电子商务营销圈</a> 
+					</li>
+					<li>
+						<a title="电子商务营销圈" href="#" target="_blank">电子商务营销圈</a> 
+					</li>
+				</ul>
+				<ul class="ul_pic">
+					<li>
+						<a title="华南城网纺织行业" href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="65" height="65"></a> 
+					</li>
+					<li>
+						<a title="华南城网纺织行业" href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="65" height="65"></a> 
+					</li>
+					<li>
+						<a title="华南城网纺织行业" href="#" target="_blank"><img src="../css/img/DDDDDD_3.gif" width="65" height="65"></a> 
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="box4_l2 g-fr">
+		<div class="title"><h2>行业TOP10</h2></div>
+			<div class="box4_main g-cf">
+				<ol class="ol_text_type1">
+				<li class="top_h">
+					<i>1</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推集成</a></p>
+				</li>
+				<li class="top_h">
+					<i>2</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国路芯片国路芯片国产化推化推</a></p>
+				</li>
+				<li class="top_h">
+					<i>3</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>4</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>5</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>6</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>7</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>8</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>9</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+				<li>
+					<i>10</i>
+					<p><a href="#" title="集成电路芯片国产化推" target="_blank">集成电路芯片国产化推化推</a></p>
+				</li>
+			</ol>
+			</div>
+		</div>
+	</div> -->
+</div>
+<div class="g-h10"></div>
+<!--合作伙伴-->
+<div class="g-o dz_h_box5">
+	<div class="title"><h2>合作伙伴</h2></div>
+	<ul class="hzhb_list g-cf">
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+		<li><a href="#" target="_blank"><img src="/v2/m/init/image/img.png" width="125" height="64" alt="商家名称"></a></li>
+	</ul>
+</div>
+<div class="g-h10"></div>
+<div class="g-o">
+	<div class="dz_f_links">
+		<strong>友情链接：</strong>
+        <div class="more"><a href="#" target="_blank">更多</a><span></span></div>
+		<span><a href="http://www.csc86.com/" target="_blank">华南城网</a>|<a href="http://chengdu.mop.com/" target="_blank">猫扑成都互动门户</a>| <a href="http://www.szeca.com.cn/ " target="_blank">深圳市电子商务协会</a>| <a href="http://www.szaaci.com/" target="_blank">深圳市工艺礼品行业协会</a>|<a href="http://www.qjy168.com/bbs/" target="_blank">勤加缘社区</a>|<a href="http://www.csc86.com/" target="_blank">华南城网</a>|<a href="http://chengdu.mop.com/" target="_blank">猫扑成都互动门户</a>| <a href="http://www.szeca.com.cn/ " target="_blank">深圳市电子商务协会</a>| <a href="http://www.szaaci.com/" target="_blank">深圳市工艺礼品行业协会</a>|<a href="http://www.qjy168.com/bbs/" target="_blank">勤加缘社区</a></span>
+	</div>
+</div>
+<div class="g-h30"></div>
+<div class="g-h30"></div>
+<div class="g-o foot">
+    <ul class="g-cf">
+        <li>
+            <h3 class="new-entry">新手入门</h3>
+            <div><a href="http://member.csc86.com/register/phonereg/" target="_blank" rel="nofollow">登录注册</a><a href="http://cncms.csc86.com/help/list8.html" target="_blank" rel="nofollow">如何开店</a><a href="http://cncms.csc86.com/help/zhaochanping/2012/1205/85162.html" id="f-top" target="_blank" rel="nofollow">搜索产品</a></div>
+        </li>
+        <li>
+            <h3 class="integrity">诚信与认证</h3>
+            <div><a href="http://cncms.csc86.com/special/chengxintuan/index.html" target="_blank" rel="nofollow">诚信供应团 </a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/accreditation/Accreditation/" target="_blank" rel="nofollow">认证服务</a></div>
+        </li>
+        <li>
+            <h3 class="services">企业服务</h3>
+            <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">旺铺管理</a><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a><a href="#" target="_blank" rel="nofollow">招商中心</a></div>
+        </li>
+        <li>
+            <h3 class="community">社区互动</h3>
+            <div><a href="http://member.csc86.com/login/phone?done=http://member.csc86.com/sns/home/friends.html" target="_blank">好友</a><a href="http://member.csc86.com/sns/circle/default.html" target="_blank">圈子</a></div>
+        </li>
+    </ul>
+</div>
+<div class="g-o link">
+    <div class="g-h10"></div>
+    <div class="love-links"><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">About csc86.com</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+    <p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+    <p>华南城控股有限公司 版权所有</p>
+</div>
+<script>
+//http://dianzi.csc86.com
+seajs.use('c/electron/js/init');
+</script>
+</body>
+</html>

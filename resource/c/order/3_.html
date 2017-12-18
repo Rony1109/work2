@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+		<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>批量1-确认订单信息</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="https://res.csc86.com/v2/c/order/css/submit-order.css" type="text/css" >
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<div class="top-bar">
+	<div class="g-o">
+		<div class="top-csc-group">
+			<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+			<a target="_blank" href="http://sz.csc86.com">深圳</a>
+			<a target="_blank" href="http://nn.csc86.com">南宁</a>
+			<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+			<a target="_blank" href="http://xa.csc86.com">西安</a>
+			<a target="_blank" href="http://zz.csc86.com">郑州</a>
+			<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+		</div>
+		<div class="server-r">
+			<a title="" rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a><span class="v-line t-w"></span><a class="sethome" href="#">设置首页</a><span class="v-line t-w"></span><a class="addfav" href="#">收藏</a>
+		</div>
+		<span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd"><a href="http://pay.csc86.com/account/index.html" target="_blank">我的账户</a></div>
+			<div class="g-c-f bd w-193">
+			<ul class="csc-bd">
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="top-sign-info">
+			您好，<span class="bd">欢迎光临华南城网！<a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span><span class="v-line"></span>
+		</div>
+	</div>
+</div>
+<div class="head">
+	<div class="g-o">
+		<a href="http://www.csc86.com/" class="g-fl csc" target="_blank"><img width="280" height="57" alt="实体商圈，可信交易。" src="https://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+	</div>
+</div><!-- 头部  end -->
+
+<!-- 进度条 start-->
+<div class="g-o prgrss-box prgrss-four-step">
+	<ul class="g-cf prgrss-lst">
+        <li class="itm1 cur">确认订单信息</li>
+        <li class="itm2">付款</li>
+        <li class="itm3">确认收货</li>
+        <li class="itm4">完成</li>
+    </ul>
+    <div class="step step1"></div>
+</div>
+<!-- 进度条 end-->
+
+<!-- 确认订单信息 start-->
+<div id="smtOrderMain" class="order-main">
+	<div class="g-o page-qrorder">
+    	<!--收货人信息 start-->
+    	<div class="wrtaddr">
+        	<div class="wrtaddr-hd">
+            	<h2>收货人信息</h2>
+            </div>
+            <div class="g-h10"></div>
+            <div class="wrtaddr-bd">
+           	  	<ul class="addr-lst jsAddrLst">
+                					<li class="cur"><label>
+                					<input checked="checked" name="addrRadio" type="radio" value="2903f480-f583-4948-ab54-58469740a7c1"> 
+                				fqf &nbsp;北京市北京市东城区123123
+                					138****5678
+                				</label><a class="jsEdit" href="">编辑</a></li>
+                	
+                		<li class="new"><label><input name="addrRadio" type="radio" value=""> 使用新地址</label></li>
+                </ul>
+                <div class="g-pr newAddr-box">
+                	<form class="jsNewAddrFrm" action="https://i.csc86.com/memaddress/saveMemberAddress" methed="post">
+                	<input type="hidden" name="isDefault" value="Y"/>
+                	<input type="hidden" name="addressId" value=""/>
+                	<table class="newAddr-tbl">
+                        <colgroup>
+                        	<col width="70"/>
+                            <col/>
+                        </colgroup>
+                        <tbody>
+                        	<tr>
+                                <th><em class="g-cred">* </em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</th>
+                                <td><input class="ipt-txt" id="consignee" name="consignee" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>所在地区：</th>
+                                <td>
+                                	<div class="areaSlt-box jsAreaSlt">
+                                        <select id="province" class="frm-slt" name="provinceId">
+                                          <option value="">请选择</option>
+                                        </select>
+                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>详细地址：</th>
+                                <td><span class="jsSsq"></span><input class="ipt-txt" id="address" name="address" type="text" style="width:392px;"></td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">* </em>手机号码：</th>
+                                <td><input class="ipt-txt" id="phone" name="mobile" type="text" style="width:248px;"></td>
+                            </tr>
+                            <tr>
+                                <th><!--<em class="g-cred">* </em>-->固定电话：</th>
+                                <td>
+                                	<input class="g-mr10 ipt-txt" id="areaCode" name="areaCode" type="text" placeholder="区号" style="width:51px;"><input class="g-mr10 ipt-txt" id="tel" name="tel" type="text" placeholder="电话号码" style="width:102px;"><input class="ipt-txt" id="extnsn" name="ext" type="text" placeholder="分机号" style="width:51px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><em class="g-cred">&nbsp; </em>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>
+                                <td><input class="ipt-txt" id="post" name="email" type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--
+                    <div class="phone-tel-tip">
+                    	<span class="fk"></span><span>至少填写一项</span>
+                    </div>
+                    -->
+                    <div class="frm-btns"><a class="newaddr-abtn" href="">保存收货人信息</a></div>
+                    <div class="g-h10"></div>
+                    </form>
+                </div>
+                <div class="g-h15"></div>
+            </div>
+        </div>
+        <!--收货人信息 end-->
+        
+        <form class="jsSmtOrderFrm" action="https://i.csc86.com/pay/orderPay" method="post">
+        	<input type="hidden" name="type" value="car"/>
+        	<input type="hidden" id="mem_address_id" value="2903f480-f583-4948-ab54-58469740a7c1" name="mem_address_id"/>
+        <!--商品清单 start-->
+        <div class="probill-box">
+        	<div class="probill-hd">
+            	<h2>商品清单</h2>
+                
+                
+                
+                <table class="order-tbl probill-tbl">
+                    <colgroup>
+                        <col width="303">
+                        <col width="143">
+                        <col width="105">
+                        <col width="160">
+                        <col width="104">
+                       
+                    </colgroup>
+                    <thead>
+                        
+                        <tr>
+                        	<th class="frst">货品</th>
+                            <th>单价（元）</th>
+                            <th>数量</th>
+                            <th>小计（元）</th>
+                            <th class="last">订单类型</th>
+                           
+                        </tr>
+                    </thead>
+                    
+                 </table>
+                 
+                 
+            </div>
+            <div class="probill-bd">
+            	<table class="order-tbl probill-tbl">
+                    <colgroup>
+                        <col width="303" />
+                        <col width="143" />
+                        <col width="105" />
+                        <col width="160" />
+                        <col width="104" />
+                       
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td colspan="5">
+                                <div class="g-c8 g-tl g-ml15">供应商：<a href="http://dailinijiafang.b2b.csc86.com" target="_blank">新郑市龙湖镇黛丽妮家纺商行</a></div>
+	                                	<input type="hidden" name="shopId" value="2ba1f5a1-08e0-439c-ab48-04f06cb2f2a8"/>
+	                                	<input type="hidden" name="carId" value="177"/>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+	                    			<tr>
+                                    <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1601"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="321"/>
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""/></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.5米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td><span class="jsOnePrc">180.00</span></td>
+			                            <td>
+			                                <div class="order-num-opts jsNumOpts">
+            											2
+			                                </div>
+			                            </td>
+			                            <td><span class="prc jsOneTprc no">360.00</span></td>
+                                        <td rowspan="2" class="bd2l bd">现货</td>
+                                        
+			                        </tr>
+	                    			<tr>
+                                    <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1600"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="322"/>
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""/></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.8米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td class="bd"><span class="jsOnePrc">180.00</span></td>
+			                            <td class="bd">
+			                                <div class="order-num-opts jsNumOpts">
+            											<span  class="num-ipt bdno"  data-controll="true">2</span>
+			                                </div>
+			                            </td>
+			                            <td class="bd"><span class="prc jsOneTprc no">360.00</span></td>
+			                        </tr>
+                                   
+                    </tbody>
+                 </table>
+        <!--给卖家留言 start-->
+        <div class="lvmssg-box">
+        	<span class="nums">1,950.00 <em>元</em></span><span class="numsinfo">货品总金额：</span><span class="g-c8">给卖家留言：</span><input name="message" id="lvmssgIpt" class="ipt-txt lvmssgIpt"  type="text" placeholder="可以告诉卖家你的特殊要求，50个字以内" style="width:430px;"><span class="numtip">还可以输入<em>50</em>字</span>
+        </div>
+        <!--给卖家留言 start-->
+        
+        <div class="sprt-box"></div>                 
+            </div>
+
+<div class="probill-bd">
+            	<table class="order-tbl probill-tbl">
+                    <colgroup>
+                        <col width="303">
+                        <col width="143">
+                        <col width="105">
+                        <col width="160">
+                        <col width="104">
+                       
+                    </colgroup>
+                    <thead>
+                        
+                        
+                        
+                        <tr>
+                            <td colspan="5">
+                                <div class="g-c8 g-tl g-ml15">供应商：<a href="http://dailinijiafang.b2b.csc86.com" target="_blank">新郑市龙湖镇黛丽妮家纺商行</a></div>
+	                                	<input type="hidden" name="shopId" value="2ba1f5a1-08e0-439c-ab48-04f06cb2f2a8">
+	                                	<input type="hidden" name="carId" value="177">
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+	                    			<tr>
+                                     <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1601"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="321">
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.5米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td><span class="jsOnePrc">180.00</span></td>
+			                            <td>
+			                                <div class="order-num-opts jsNumOpts">
+            											<span class="num-ipt bdno" data-controll="true">2</span>
+			                                </div>
+			                            </td>
+			                            <td><span class="prc jsOneTprc no">360.00</span></td>
+                                        <td rowspan="4"  class="bd2l bd">预定</td>
+                                       
+			                        </tr>
+	                    			<tr>
+                                     <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1601"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="322">
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.8米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td><span class="jsOnePrc">180.00</span></td>
+			                            <td>
+			                                <div class="order-num-opts jsNumOpts">
+            											<span class="num-ipt bdno" data-controll="true">2</span>
+			                                </div>
+			                            </td>
+			                            <td><span class="prc jsOneTprc no">360.00</span></td>
+			                        </tr>
+                                
+                                    
+                  			<tr>
+                             <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1601"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="321">
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.5米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td><span class="jsOnePrc">180.00</span></td>
+			                            <td>
+			                                <div class="order-num-opts jsNumOpts">
+            											<span class="num-ipt bdno" data-controll="true">2</span>
+			                                </div>
+			                            </td>
+			                            <td><span class="prc jsOneTprc no">360.00</span></td>
+                                        
+                                       
+			                        </tr>
+	                    			<tr>
+                                    <input type="hidden" name="productId" value="a7f5defc-006f-4417-b0a7-2112e9fcbafd"/>
+		                         	<input type="hidden" name="catid" value="01986104"/>
+		                         	<input type="hidden" name="shopId" value="60a940a9-55c2-4b5b-ae6d-268cd3bd097b"/>
+		                         	<input type="hidden" name="price" value="1601"/>
+			                            <td class="bd">
+			                            		<input type="hidden" name="lineIds" value="322">
+			                                <div class="g-cf order-proitm">
+			                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank"><img src="http://img.csc86.com/product/2015/08/24/201508246254341.jpeg" alt=""></a></div>
+			                                    <div class="g-pr proitm-bd">
+			                                        <p class="title"><a href="http://dailinijiafang.b2b.csc86.com/product/46739a32-eaf6-4190-8fd2-da7d5257898f.html" target="_blank" title="">高档时尚纯棉双拼四件套</a></p>
+			                                        <p class="inf">
+															   <span></span> 
+															   <span>尺码：1.8米床</span> 
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </td>
+			                            <td class="bd"><span class="jsOnePrc">180.00</span></td>
+			                            <td class="bd">
+			                                <div class="order-num-opts jsNumOpts">
+            											<span class="num-ipt bdno" data-controll="true">2</span>
+			                                </div>
+			                            </td>
+			                            <td class="bd"><span class="prc jsOneTprc no">360.00</span></td>
+			                        </tr>                  
+                                    
+                    </tbody>
+                  
+                    
+                 </table>
+        <!--给卖家留言 start-->
+        <div class="lvmssg-box">
+        	<span class="nums">1,950.00</span><span class="numsinfo">货品总金额：</span><span class="g-c8">给卖家留言：</span><input name="message" id="lvmssgIpt" class="ipt-txt lvmssgIpt" type="text" placeholder="可以告诉卖家你的特殊要求，50个字以内" style="width:430px;"><span class="numtip">还可以输入<em>50</em>字</span>
+        </div>
+        <!--给卖家留言 start-->
+        
+        <div class="sprt-box"></div>                 
+            </div>
+            
+        </div>
+        <!--商品清单 end-->
+        
+
+        
+        <!--汇总信息 start-->
+        <div class="g-cf ttlInf-box">
+        	<div class="ttlInf-hd"><span>货品种类：<em class="jsTypeNum">1</em>种</span><span>数量总计：<em class="jsAllTnum">4</em>件</span>
+        	</div>
+ 
+<div class="g-mt25 cpn-box">
+<input type="hidden" id="cuproduct" name="cuproduct" value="">
+            	<h3 class="box-hd"><i></i><span>使用优惠劵（代金劵/现金劵）</span></h3>
+                <div class="box-bd">
+                    <ul class="g-cf g-mt10 cpn-tab">
+                        <li class="cur">可用优惠劵（3）</li>
+                        <li>不可用优惠劵（3）</li>
+                    </ul>
+                    <div class="cpn-tab-c jsKycpn">
+                    <!--ul class="cpn-lst"><li data-max="1" data-cpnprc="1"><input type="checkbox" value="018b548e-766e-4adf-ae2a-6d0fd375c3eb" name="cpn[]" class="g-ml20"><input type="hidden" name="canuse[]" value="412d4363-397c-4847-8f55-be03c3fcf0fd,14c05083-c45c-4e57-8fbf-47cb88584020,fbe06f06-8697-4958-b3b6-fc56c215d5d5,fbe06f06-8697-4958-b3b6-fc56c215d5d5,c6ca0dee-10c1-48f1-900c-b92836962117"><input type="hidden" name="cpnid[]" value="20151124001"><span class="prc">1-1</span><span class="desc">合并下单</span><span class="type">代金券</span><span class="date">有效期至2017-11-30</span></li><li data-max="0" data-cpnprc="2"><input type="checkbox" value="2740200c-07a6-4330-a046-5c0151a699e8" name="cpn[]" class="g-ml20" disabled="disabled"><input type="hidden" name="canuse[]" value="fbe06f06-8697-4958-b3b6-fc56c215d5d5,fbe06f06-8697-4958-b3b6-fc56c215d5d5,c6ca0dee-10c1-48f1-900c-b92836962117"><input type="hidden" name="cpnid[]" value="20151125001"><span class="prc">2</span><span class="desc">广东省深圳市华南城网电子商务有</span><span class="type">现金劵</span><span class="date">有效期至2016-12-31</span></li></ul-->
+                    <!--p class="loading">加载失败，请刷新页面后重试！</p-->
+                    
+                    
+                    </div>	
+                    <div class="g-dn cpn-tab-c jsBkycpn"><p class="loading">加载失败，请刷新页面后重试！</p></div>
+                </div>	
+                 <div class="box-bd text">
+                特别说明：合并下单使用优惠券的，订单取消仅退实际支付金额，优惠券不可退，请慎重使用！
+                </div>
+            </div>
+                        
+            <div class="g-fr ttlInf-bd">
+	            						<p>订单总金额：<strong class="g-fs14 jsAllTPrc">1440.00</strong> 元</p>
+                                        <p>用券抵扣金额：<strong class="g-fs14 jsAllpreference">1440.00</strong> 元</p>
+                						<p class="yfTtl-prc jsYfTtlPrc">应付总额：<em class="g-cred g-fs16">1440.00</em> <sapn style="font-weight:normal;">元</span></p>
+		            	
+                <p class="g-h15"></p>
+                <p><a class="red-abtnleft" href="https://i.csc86.com/carDetail">返回采购单修改</a><a id="jsOrderSmt" class="red-abtn jsOrderSmt">提交订单</a></p>
+            </div>
+        </div>
+        <!--汇总信息 end-->
+        </form>
+    </div>
+</div>
+<!-- 确认订单信息 end-->
+
+<!-- 网站底部  start -->
+<div class="g-o link">
+	<div class="g-h10"></div>
+	<div class="love-links">
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="p1">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved</p>
+	<p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+	<div class="foot-lg">
+		<span><a target="_blank"  rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank" rel="nofollow"><img src="https://res.csc86.com/image/c/index/sznet110wangan.png" alt="公共信息安全网络监察"></a></span><span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span>
+	</div>
+</div>
+<!-- 统计代码 start -->
+<div style="display:none"><script src="https://res.csc86.com/f=js/m/statistics.js"></script></div>
+<!-- 统计代码 end --><!-- 网站底部 end -->
+<script src="https://res.csc86.com/v2/l/seajs/sea.js"></script>
+<script src="https://res.csc86.com/v2/c/order/js/seajs-config.js"></script>
+<script>seajs.use('https://res.csc86.com/v2/c/order/js/submit-order.js');</script>
+</body>
+</html>

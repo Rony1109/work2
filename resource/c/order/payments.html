@@ -1,0 +1,352 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>支付方式</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="http://res.csc86.com/v2/c/order/css/payments.css" type="text/css" >
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script src="http://res.csc86.com/v2/c/order/js/seajs-config.js"></script>
+	<script src="http://res.csc86.com/v2/l/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<!-- 网站顶部  start -->
+<div class="top_bar">
+	<div class="top_nav g-cf g-w" style="width:1190px;">
+		<div class="top_lf_nav">
+			<span class="wel">欢迎光临华南城网！</span>
+        <span class="dl J_guest">             
+  		<a href="//login.csc86.com/" class="navhover">登录</a>
+        <a href="//i.csc86.com/reg/index" class="navhover zc">免费注册</a>
+
+        </span>
+			<span class="J_member g-dn"></span>
+		</div>
+
+		<div class="top_rg_nav">
+            <span class="g-dib hoverMnu hoverMnu-u hyzxsp">
+                <a href="http://i.csc86.com" class="navhover" target="_blank">会员中心</a>
+                <i class="g-dib down_up_icon"></i>
+                <div class="dorp_menu dorp_menuwk">
+					<div class="left after">
+						<p class="title">买家中心</p>
+						<ul>
+							<li><a href="http://i.csc86.com/buyer/buyerOrder" target="_blank">已采购货物</a></li>
+							<li><a href="http://member.csc86.com/inquiry/list.html" target="_blank">我的询盘</a></li>
+							<li><a href="http://i.csc86.com/user/favoriteList" target="_blank">我的收藏</a></li>
+							<li><a href="http://member.csc86.com/membercenter/userinfo" target="_blank" rel="nofollow">账号管理</a></li>
+						</ul>
+					</div>
+
+					<div class="right after">
+						<p class="title">卖家中心</p>
+						<ul>
+							<li><a href="http://i.csc86.com/seller/sellerOrders" target="_blank">已卖出货物</a></li>
+							<li><a href="http://member.csc86.com/product/sell.html" target="_blank">发布产品</a></li>
+							<li><a href="http://member.csc86.com/product/sell/list.html" target="_blank">管理产品</a></li>
+							<li><a href="http://member.csc86.com/shop/shopinfo.html" target="_blank">我的旺铺</a></li>
+						</ul>
+					</div>
+				</div>
+                
+            </span>
+            <span class="user_chioce">
+                <a  href="http://www.csc86.com/jyh/" target="_blank" >我是采购商</a>
+                <a href="http://www.csc86.com/wsgys/" target="_blank" >我是供应商</a>
+            </span>
+
+			<!--付费服务项目 start-->
+            <span class="g-dib hoverMnu hoverMnu-ff">
+            <a href="" class="navhover" target="_blank">付费服务项目</a>
+            <i class="g-dib down_up_icon"></i>
+            <ul class="dorp_menu">
+				<!--<li><a href="http://www.csc86.com/zt/cst" target="_blank">城商通服务</a></li>-->
+				<li><a href="http://www.csc86.com/zt/bgqy" target="_blank">标杆企业服务</a></li>
+			</ul>
+            </span>
+			<!--付费服务项目 end-->
+            <span class="g-dib hoverMnu hoverMnu-m">
+                <i class="g-dib cellicon"></i>
+                <a href="javascript:;" class="navhover cellphonea">手机端</a> &nbsp;&nbsp;
+                <div class="hovercode">
+					<div class="g-h1 t-line"></div>
+					<h4 class="g-fs14">逛市场</h4>
+					<p>下载客户端，逛市场更轻松</p>
+					<p class="g-cf">
+						<img class="g-fl" src="//res.csc86.com/v2/c/home/newindex/image/qr-ios.png" alt="Iphone" width="150" height="150">
+						<img class="g-fr" src="//res.csc86.com/v2/c/home/newindex/image/qr-apk.png" alt="Android" width="150" height="150">
+					</p>
+				</div>
+            </span>
+			<!--i class="v-line">|</i-->
+			<a href="http://cncms.csc86.com/help/" class="navhover kfzx" target="_blank">客服中心&nbsp;<span class="s1">400-184-8666</span></a>
+			<!--i class="v-line">|</i-->
+
+		</div>
+	</div>
+</div>
+<!-- 网站顶部  end -->
+<script>seajs.use('//res.csc86.com/v2/c2/newcgsc/js/newtop.js');</script>
+<script src="//res.csc86.com/v2/c2/uc/js/src/hostSetup.js"></script>
+<!--顶部导航 end-->\
+
+<div class="head">
+	<div class="g-w">
+		<a href="http://www.csc86.com/" class="g-fl csc" target="_blank"><img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+		<div class="pppz">
+			<a href="http://i.csc86.com/carDetail" target="_blank"><div class="gwc">进货车</div></a>
+			<a href="http://i.csc86.com/carDetail" target="_blank"><div class="num">12</div></a>
+		</div>
+	</div>
+</div>
+<!-- 头部  end -->
+
+<!-- 订单详情页 start-->
+<div class="order-main">
+	<div class="g-o page-qrorder">
+		<div class="dht-all">
+			<div class="g-h20"></div>
+			<div class="dht-list">
+				<div class="sy1">查看进货车</div>
+				<div class="sy2">提交订单</div>
+				<div class="sy3">支付</div>
+				<div class="sy3">确认收货</div>
+				<div class="sy3">评价</div>
+			</div>
+
+			<div class="dht-img">
+				<img src="./css/img/1-3.jpg" height="31" width="1090">
+			</div>
+			<div class="dht-data">
+				2017-07-04 11:14:20
+			</div>
+			<div class="g-h20 cpn-tab">
+			</div>
+		</div>
+
+		<div class="payments-hd after">
+			<div class="payments-hdbefor after">
+				<p class="pay-static">请您及时付款，以便订单尽快处理！</p>
+				<!-- 服务订单不需要展示 add wangbo20160401 -->
+				<p class="g-c8">请您在提交订单后<strong class="g-fs14 g-cred">72</strong>小时内完成支付，否则订单会自动取消。
+					<a href="http://i.csc86.com/b2border/orderDetail?orderNo=B1708001024">查看订单</a>
+				</p>
+			</div>
+			<div class="payments-hdafter after">
+				<p class="price">应付金额：<span class="s1">￥</span><span class="s2">22.00</span></p>
+			</div>
+		</div>
+
+		<div class="payments-bd">
+
+			<dl class="g-cf payments-itm jspayitm">
+				<dt class="jstit">第三方支付</dt>
+				<dd>
+					<ul class="g-cf payments-lst jspaylst"  data-type="第三方" >
+						<ul>
+							<li class="mr30"><label for="alipay"><input id="alipay" name="defaultbank" type="hidden"  data-plant="" value="alipay" ><span class="pd"><img alt="支付宝" src="http://res.csc86.com/v2/c/order/image/payments/img1.png" width="148" height="48"></span></label></li>
+							<li class="mr30 wxsm"><label for="wxpcpay"><input id="wxpcpay" name="defaultbank" type="hidden" data-plant="" value="wxpcpay"><span class="pd"><img src="http://res.csc86.com/v2/c/order/image/payments/img2.png" width="148" height="48" alt=""/></span></label></li>
+							<li class="mr30 xxzf"><label for="xxzfpay"><input id="xxzfpay" name="defaultbank" type="hidden" data-plant="" value="xxzfpay"><span class="pd"><img src="http://res.csc86.com/v2/c/order/image/payments/img0.png" width="148" height="48" alt=""/></span></label></li>
+
+						</ul>
+					</ul>
+				</dd>
+			</dl>
+
+			<dl class="g-cf payments-itm sroll jspayitm">
+				<dt  class="jstit">个人银行支付</dt>
+				<dd>
+					<ul class="g-cf payments-lst jspaylst" data-type="储蓄卡" >
+						<ul>
+							<li><label for="icbc"><input id="icbc" name="defaultbank" type="hidden" data-plant="1000000008" value="C203"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-zg.png" width="148" height="48" alt="中国银行"/></span></label></li>
+							<li><label for="boc"><input id="boc" name="defaultbank" type="hidden" data-plant="1000000008" value="C102"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-ny.png" width="148" height="48" alt="中国农业银行"/></span></label></li>
+							<li><label for="ccb"><input id="ccb" name="defaultbank" type="hidden" data-plant="1000000008" value="C204"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-js.png" width="148" height="48" alt="中国建设银行"/></span></label></li>
+							<li><label for="abc"><input id="abc" name="defaultbank" type="hidden" data-plant="1000000008" value="C201"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-gs.png" width="148" height="48" alt="中国工商银行"/></span></label></li>
+							<li><label for="cmb"><input id="cmb" name="defaultbank" type="hidden" data-plant="1000000008" value="C106"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-jt.png" width="148" height="48" alt="交通银行"/></span></label></li>
+							<li><label for="postgc"><input id="postgc" name="defaultbank" type="hidden" data-plant="1000000008" value="C105"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-yz.png" width="148" height="48" alt="中国邮政"/></span></label></li>
+							<li><label for="comm"><input id="comm" name="defaultbank" type="hidden" data-plant="1000000008" value="C113"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-zs.png" width="148" height="48" alt="招商银行"/></span></label></li>
+							<li><label for="spa"><input id="spa" name="defaultbank" type="hidden" data-plant="1000000008" value="C112"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-pa.png" width="148" height="48" alt="平安银行"/></span></label></li>
+							<li><label for="ceb"><input id="ceb" name="defaultbank" type="hidden" data-plant="1000000008" value="C115"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-pf.png" width="148" height="48" alt="浦发银行"/></span></label></li>
+							<li><label for="citic"><input id="citic" name="defaultbank" type="hidden" data-plant="1000000008" value="C122"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-sh.png" width="148" height="48" alt="上海银行"/></span></label></li>
+							<li><label for="cmbc"><input id="cmbc" name="defaultbank" type="hidden" data-plant="1000000008" value="C111"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-gf.png" width="148" height="48" alt="广发银行"/></span></label></li>
+							<li><label for="sdb"><input id="sdb" name="defaultbank" type="hidden" data-plant="1000000008" value="C114"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-xy.png" width="148" height="48" alt="兴业银行"/></span></label></li>
+							<li><label for="cib"><input id="cib" name="defaultbank" type="hidden" data-plant="1000000008" value="C208"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-gd.png" width="148" height="48" alt="光大银行"/></span></label></li>
+							<li><label for="BJBANK"><input id="BJBANK" name="defaultbank" type="hidden" data-plant="1000000008" value="C123"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-bj.png" width="148" height="48" alt="北京银行"/></span></label></li>
+							<li><label for="CITIC-DEBIT"><input id="CITIC-DEBIT" name="defaultbank" type="hidden" data-plant="1000000008" value="C207"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-zx.png" width="148" height="48" alt="中信银行"/></span></label></li>
+							<li><label for="CMBC"><input id="CMBC" name="defaultbank" type="hidden" data-plant="1000000008" value="C110"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-ms.png" width="148" height="48" alt="民生银行"/></span></label></li>
+						</ul>
+					</ul>
+				</dd>
+			</dl>
+
+			<dl class="g-cf payments-itm pd jspayitm">
+				<dt class="qytitle jsqy"><span class="title jstit">企业银行支付</span><span class="qx">∨</span></dt>
+				<dd>
+					<ul class="g-cf payments-lst jspaylst qy"  data-type="企业" >
+						<ul>
+							<li><label for="icbc"><input id="icbc" name="defaultbank" type="hidden" data-plant="1000000008" value="B103"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-zg.png" width="148" height="48" alt="中国银行"/></span></label></li>
+							<li><label for="boc"><input id="boc" name="defaultbank" type="hidden" data-plant="1000000008" value="B102"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-ny.png" width="148" height="48" alt="中国农业银行"/></span></label></li>
+							<li><label for="ccb"><input id="ccb" name="defaultbank" type="hidden" data-plant="1000000008" value="B104"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-js.png" width="148" height="48" alt="中国建设银行"/></span></label></li>
+							<!-- 屏蔽工行 wangbo
+                            <li><label for="abc"><input id="abc" name="defaultbank" type="hidden" data-plant="1000000008" value="B101"><span><img src="https://res.csc86.com/v2/c/order/image/payments/bank-gs.png" width="148" height="48" alt="中国工商银行"/></span></label></li>
+                            -->
+							<li><label for="cmb"><input id="cmb" name="defaultbank" type="hidden" data-plant="1000000008" value="B106"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-jt.png" width="148" height="48" alt="交通银行"/></span></label></li>
+							<li><label for="postgc"><input id="postgc" name="defaultbank" type="hidden" data-plant="1000000008" value="B113"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-zs.png" width="148" height="48" alt="招商银行"/></span></label></li>
+							<li><label for="comm"><input id="comm" name="defaultbank" type="hidden" data-plant="1000000001" value="434"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-tj.png" width="148" height="48" alt="天津银行"/></span></label></li>
+							<li><label for="spa"><input id="spa" name="defaultbank" type="hidden" data-plant="1000000008" value="B112"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-pa.png" width="148" height="48" alt="平安银行"/></span></label></li>
+							<li><label for="ceb"><input id="ceb" name="defaultbank" type="hidden" data-plant="1000000008" value="B115"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-pf.png" width="148" height="48" alt="浦发银行"/></span></label></li>
+							<li><label for="citic"><input id="citic" name="defaultbank" type="hidden" data-plant="1000000001" value="304"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-hx.png" width="148" height="48" alt="华夏银行"/></span></label></li>
+							<li><label for="cmbc"><input id="cmbc" name="defaultbank" type="hidden" data-plant="1000000001" value="306"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-gf.png" width="148" height="48" alt="广发银行"/></span></label></li>
+							<li><label for="sdb"><input id="sdb" name="defaultbank" type="hidden" data-plant="1000000001" value="309"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-xy.png" width="148" height="48" alt="兴业银行"/></span></label></li>
+							<li><label for="cib"><input id="cib" name="defaultbank" type="hidden" data-plant="1000000008" value="B108"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-gd.png" width="148" height="48" alt="光大银行"/></span></label></li>
+							<li><label for="bj"><input id="bj" name="defaultbank" type="hidden" data-plant="1000000001" value="403"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-bj.png" width="148" height="48" alt="北京银行"/></span></label></li>
+							<!-- 屏蔽中信  wangbo
+                            <li><label for="zx"><input id="zx" name="defaultbank" type="hidden" data-plant="1000000001" value="302"><span><img src="https://res.csc86.com/v2/c/order/image/payments/bank-zx.png" width="148" height="48" alt="中信银行"/></span></label></li>
+                            -->
+							<li><label for="ms"><input id="ms" name="defaultbank" type="hidden" data-plant="1000000001" value="305"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-ms.png" width="148" height="48" alt="民生银行"/></span></label></li>
+							<!-- 屏蔽宁波  wangbo
+                            <li><label for="nb"><input id="nb" name="defaultbank" type="hidden" data-plant="1000000001" value="408"><span><img src="https://res.csc86.com/v2/c/order/image/payments/bank-nb.png" width="148" height="48" alt="宁波银行"/></span></label></li>
+                            -->
+							<li><label for="hs"><input id="hs" name="defaultbank" type="hidden" data-plant="1000000001" value="440"><span><img src="http://res.csc86.com/v2/c/order/image/payments/bank-hs.png" width="148" height="48" alt="徽商银行"/></span></label></li>
+						</ul>
+				</dd>
+			</dl>
+
+			<form class="jsPymntFrm" method="post" action="http://i.csc86.com/B2BPay/toB2BPay">
+				<input type="hidden" value="15036260847478718860335595121176" name="conPayToken"/>
+				<input type="hidden" name="orderId" value="B1708001024">
+				<input type="hidden" name="isEnterprise" value="">
+				<dl class="g-cf payments-itm jspayFrm">
+					<dt class="jszftit">第三方支付</dt>
+					<dd>
+						<ul class="g-cf payments-lst">
+							<li  class="w jseditli"><label for="default"><input id="default" name="defaultbank" type="hidden"  value="" > <input type="hidden" name="plantId" value=""><span class="nonebor"><img alt="" src="http://res.csc86.com/v2/c/order/image/payments/bank-img8.png" width="148" height="48"><em></em></span></label></li>
+							<li><p class="re jsre"><a href="#"><em>〈</em> 选择其他支付方式</a></p></li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="xxzfk">
+					<div class="skmx">
+						<p><span>收款人名称：</span>深圳华南城网科技有限公司</p>
+						<p><span>收款人账号：</span>4000 0509 1910 0253 478</p>
+						<p><span>收款人开户行：</span>工行深圳华南城支行</p>
+					</div>
+					<div class="skts">
+						<span>提示：</span>
+						<p>1.请上传汇款凭证（注明交易订单号）及填写相应交易流水号；</p>
+						<p>2.我司将于你汇款时间起24小时之后审核。</p>
+					</div>
+					<div class="fklsh">
+						<em>*</em><span>付款流水号：</span><input  name="xxzflshinp" value="">
+					</div>
+					<div class="scpz">
+						<div class="scbutton"><span class="s1">请上传凭证 </span><input  class="fileUploadBtn" type="file" name="files[]" multiple></div><span class="s2">产品图片格式为jpg、png、gif，文件大小不得超过5M，否则将无法上传。</span>
+					</div>
+					<div class="nullimg">
+						<p><img class="imgsrc" src="//res.csc86.com/v2/c/order/image/pay/nullimg.jpg"></p>
+						<input type="hidden" name="xxzfimginp" value="">
+						<span class="xxzfbtn">提交</span>
+					</div>
+				</div>
+				<div class="frm-btns after">
+					<div class="wxzf">
+						<div class="ewm"><img class="wximg" src="http://res.csc86.com/v2/c/order/image/payments/loading.gif"  width="264" height="264"></div>
+					</div>
+					<a class="red-abtn jsPaySmt" data-pay="0">确认支付</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- 订单详情页 end-->
+
+<!-- 网站底部  start -->
+<dl class="g-w frie-links">
+	<div class="more">
+		<a href="http://www.csc86.com/hwlink/" target="_blank">更多</a>
+		<span></span>
+	</div>
+	<dt>合作伙伴：</dt>
+	<dd class="hide">
+		<a href="http://www.aolaigo.com/" target="_blank" title="奥莱购">奥莱购</a>
+		<i>|</i>
+		<a href="http://ls.csc86.com/" target="_blank" title="绿色有机食品">绿色有机食品</a>
+		<i>|</i>
+		<a href="http://www.askci.com" target="_blank" title="中商情报网">中商情报网</a>
+		<i>|</i>
+		<a href="http://shike.gaotie.cn" target="_blank" title="高铁网">高铁网</a>
+		<i>|</i>
+		<a href="http://www.pvc123.com" target="_blank" title="环球塑化网">环球塑化网</a>
+		<i>|</i>
+		<a href="http://www.caigou.com.cn" target="_blank" title="教育装备采购网">教育装备采购网</a>
+		<i>|</i>
+		<a href="http://www.lvmae.com" target="_blank" title="绿蚂蚁物流">绿蚂蚁物流</a>
+		<i>|</i>
+		<a href="http://guangzhou.8684.cn" target="_blank" title="广州公交查询">广州公交查询</a>
+		<i>|</i>
+		<a href="http://qicai.fengniao.com" target="_blank" title="蜂鸟网">蜂鸟网</a>
+		<i>|</i>
+		<a href="http://guangzhou.anjuke.com" target="_blank" title="广州房产网">广州房产网</a>
+		<i>|</i>
+		<a href="http://ee.ofweek.com" target="_blank" title="电子工程网">电子工程网</a>
+		<i>|</i>
+		<a href="http://www.53info.com" target="_blank" title="网商之窗">网商之窗</a>
+		<i>|</i>
+		<a href="http://www.hangye5.com" target="_blank" title="行业网">行业网</a>
+		<i>|</i>
+		<a href="http://www.eechina.com" target="_blank" title="电子工程网">电子工程网</a>
+		<i>|</i>
+		<a href="http://www.51kids.com" target="_blank" title="中国童装网">中国童装网</a>
+		<i>|</i>
+		<a href="http://www.meilele.com/jiaju/" target="_blank" title="深圳家具">深圳家具</a>
+		<i>|</i>
+		<a href="http://www.jimei.com.cn" target="_blank" title="集美家居">集美家居</a>
+		<i>|</i>
+		<a href="http://product.91.com" target="_blank" title="91手机大全站">91手机大全站</a>
+		<i>|</i>
+		<a href="http://www.he-nan.com" target="_blank" title="河南网">河南网</a>
+		<i>|</i>
+		<a href="www.ca-maimai.com" target="_blank" title="中国电子合同">中国电子合同</a>
+		<i>|</i>
+		<a href="http://www.stuhack.com" target="_blank" title="学生技术联盟">学生技术联盟</a>
+		<i>|</i>
+		<a href="http://www.hot178.com" target="_blank" title="178商机网">178商机网</a>
+		<i>|</i>
+		<a href="familydoctor.com" target="_blank" title="家庭医生在线">家庭医生在线</a>
+		<i>|</i>
+		<a href="www.ttuu.com" target="_blank" title="推优网">推优网</a>
+		<i>|</i>
+		<a href="http://fuzhou.xcar.com.cn" target="_blank" title="福州车市">福州车市</a>
+		<i>|</i>
+		<a href="http://www.gk-z.com" target="_blank" title="易展工控网">易展工控网</a>
+		<i>|</i>
+		<a href="http://www.cntronics.com" target="_blank" title="电子元件技术网">电子元件技术网</a>
+		<i>|</i>
+		<a href="http://rizhao.focus.cn" target="_blank" title="日照房地产">日照房地产</a>
+		<i>|</i>
+		<a href="http://www.icycn.com" target="_blank" title="创业中国">创业中国</a>
+	</dd>
+</dl>
+<div class="g-o link">
+	<div class="g-h10"></div>
+	<div class="love-links">
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="p1">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved</p>
+	<p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+	<div class="foot-lg">
+		<span><a target="_blank"  rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="http://res.csc86.com/image/c/index/b01.png"></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank" rel="nofollow"><img src="https://res.csc86.com/image/c/index/sznet110wangan.png" alt="公共信息安全网络监察"></a></span><span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span><span><a href="https://cert.ebs.org.cn/24773903-dda8-4158-ab39-3b36005dc280.html" rel="nofollow" target="_blank"><img alt="众信验证" height="50" src="http://www.csc86.com/uploadfile/2015/0408/20150408045446770.gif" width="120"></a></span>
+	</div>
+</div>
+<!-- 网站底部 end -->
+<script>seajs.use('http://res.csc86.com/v2/c/order/js/payments.js');</script>
+<!-- 统计代码 start -->
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+<!-- 统计代码 end -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<header class="mdtop">
+	<div class="nav-view jnav" id="nav">
+		<ul class="clearfix wrapnav swiper-wrapper" id="thnav">
+			{{each data as value index}}
+				<li class="swiper-slide"><span>{{value.cateLabel}}</span></li>
+			{{/each}}
+			<span class="bar"></span>
+		</ul>
+		<!-- <div class="pagination" style="display: none;"></div> -->
+		<div class="menu jmcont">
+			<div class="jmscroll">
+				<p>全部分类</p>
+				<ul class="clearfix expnav" id="jmenuall">
+					{{each data as value index}}
+						<li><span>{{value.cateLabel}}</span></li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>			
+	<div class="jmenu menuarr nav-btn"><i class="arr"></i></div>
+</header >
+<div class="pr-container">
+	<div class="busicont" id="hqcnt">
+		{{each data as value index}}
+		<ul class="clearfix busul Jbusul" id="ul{{value.cateId}}">
+			<div class="datalate">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		</ul>
+		{{/each}}
+	</div>
+</div>

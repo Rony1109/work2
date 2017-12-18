@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<title>圈子api演示</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="/v2/m/init/css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="/v2/l/seajs/sea.js"></script>
+	<script src="/v2/m/init/js/init.js"></script>
+</head>
+<body>
+	<form action="">
+		<dl>
+			<dt>接口类型：</dt>
+			<dd>
+				<select name="api">
+					<option value="grouptopic">指定圈子的话题列表</option>
+					<option value="topiccomment">指定话题的评论列表</option>
+					<option value="grouptopiccomment">指定圈子的所有话题评论</option>
+					<option value="groupactcomment">指定圈子的所有活动评论</option>
+				</select>
+			</dd>
+			<dt class="J_id">
+				圈子Id：
+			</dt>
+			<dd>
+				<input type="text" name="id" value="6412db06-b1b6-43f8-a918-73ec80b555ee" class="txt" style="width:300px"/>
+			</dd>
+			<dt>
+				页数：
+
+			</dt>
+			<dd>
+				<input type="text" name="start" value="0" class="txt"/>
+				<span>起始行，默认为0，第N页时应传入(N-1)*pn，例如第1页为0，第2页为10</span>
+			</dd>
+			<dt>
+				每页显示条数：
+			</dt>
+			<dd>
+				<input type="text" name="pn" value="10" class="txt"/>
+				<span>默认为10，最大为30，每页显示条数</span>
+			</dd>
+			<dt>排序方式：</dt>
+			<dd>
+				<select name="orderType">
+					<option value="date,desc">创建时间</option>
+					<option value="date,asc">时间顺排</option>
+					<option value="like,desc">赞数量倒排</option>
+					<option value="like,asc">赞数量顺排</option>
+					<option value="hot,desc">评论数量倒排</option>
+					<option value="hot,asc">评论数量顺排</option>
+				</select>
+			</dd>
+			<dt></dt>
+			<dd><input type="submit" value="测试接口" class="btn"/></dd>
+		</dl>
+	</form>
+	<div class="g-h20"></div>
+	<div class="J_data"></div>
+	<script>seajs.use('./js/init');</script>
+</body>
+</html>

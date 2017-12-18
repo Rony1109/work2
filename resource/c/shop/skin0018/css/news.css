@@ -1,0 +1,19 @@
+@import url('style.css');
+@import url('/v2/m/page/style_li.css');
+
+/*重写分页*/
+.Spage{padding-top:15px;}
+
+/*公司动态列表*/
+.sub-gsdt .skin-box-bd{padding-top:12px;padding-bottom:40px;}
+.sub-gsdt-lst{margin-left:32px;margin-right:35px;border-bottom:1px dashed #dcdcdc;padding:12px 0;}
+.sub-gsdt-lst li{background:url(img/sf.png) no-repeat left -92px;height:26px;line-height:26px;overflow:hidden;padding-left:12px;}
+.sub-gsdt-lst li .hd{float:left;width:495px;overflow:hidden;}
+.sub-gsdt-lst li .hd a{color:#444;}
+.sub-gsdt-lst li .hd a:hover{color:#c00;}
+.sub-gsdt-lst li .bd{float:right;}
+.sub-gsdt-lst li .bd .read em{color:#888;}
+.sub-gsdt-lst li .bd .time{margin-left:54px;color:#888;}
+.sub-gsdt .last{border-bottom:none;}
+
+.no-gsdt{padding:40px 0 100px;color:#666;text-align:center;}

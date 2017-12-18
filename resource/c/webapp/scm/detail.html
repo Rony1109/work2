@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="http://res.csc86.com/v2/m/mobile/css/reset.css">
+<style>
+	html{
+		font-size: 62.5%
+	}
+	body {
+		font-family:"Microsoft Yahei";
+		font-size: 1.6rem;
+		background-color: #fff;
+	}
+	@media(-webkit-min-device-pixel-ratio:2){
+		body {
+			font-family:"Microsoft Yahei";
+			font-size: 1.6rem;
+			background-color: #fff;
+		}
+	}
+	ul,ol,li{
+		list-style: none;
+	}
+	.wrap{
+		max-width: 640px;
+		width:100%;
+		margin:0 auto;
+		position: relative;
+	}
+	.detail{
+		padding:0 10px 20px;
+	}
+	.detail h1{
+		font-size: 1.2em;
+		padding:.5em 0;
+		line-height: 1.5em;
+	}
+	.futit{
+		color: #ababab;
+	}
+	.futit .time{
+		margin-left:10px;
+	}
+	.article{
+		line-height: 1.5em;
+		padding:10px 0;
+	}
+	.article p{
+	}
+	.article img{
+		max-width:100%;
+		display: block;
+		margin:10px auto;
+	}
+	.det-loading{
+		position: fixed;
+		width:100%;
+		height: 100%;
+		top:0;
+		left:0;
+	}
+	.load-txt{
+		position: absolute;
+		top:50%;
+		text-align: center;
+		width:100%;
+		margin-top:30px;
+	}
+	/*loading*/
+	.spinner {
+		position: absolute;
+		left:50%;
+		top:50%;
+		margin-top:-30px;
+		margin-left:-30px;
+		width: 60px;
+		height: 60px;
+	}
+	 
+	.double-bounce1, .double-bounce2 {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 50%;
+	  background-color: #e94545;
+	  opacity: 0.6;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	   
+	  -webkit-animation: bounce 2.0s infinite ease-in-out;
+	  animation: bounce 2.0s infinite ease-in-out;
+	}
+	 
+	.double-bounce2 {
+	  -webkit-animation-delay: -1.0s;
+	  animation-delay: -1.0s;
+	}
+	 
+	@-webkit-keyframes bounce {
+	  0%, 100% { -webkit-transform: scale(0.0) }
+	  50% { -webkit-transform: scale(1.0) }
+	}
+	 
+	@keyframes bounce {
+	  0%, 100% {
+	    transform: scale(0.0);
+	    -webkit-transform: scale(0.0);
+	  } 50% {
+	    transform: scale(1.0);
+	    -webkit-transform: scale(1.0);
+	  }
+	}
+</style>
+<script src="http://res.csc86.com/v2/l/zepto/1.1.6/zepto.min.js?v=22"></script>
+</head>
+<body>
+	<div class="wrap detail" id="artdetail">
+		<div class="det-loading" id="detloading">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+			<div class="load-txt">加载中...</div>
+		</div>
+	</div>
+	<script>
+	$(function(){
+		function GetQueryString(name) {//获取地址数数
+		   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+		   var r = window.location.search.substr(1).match(reg);
+		   if (r!=null) return (r[2]); return null;
+		}
+		if (window.WebViewJavascriptBridge) {
+			window.WebViewJavascriptBridge.callHandler('showBackBtn');
+		}
+		var id=GetQueryString("arcid"),html,catgory={
+			"79":"编辑精选",
+			"71":"大视野",
+			"69":"生意管家",
+			"71":"今日行情",
+			"68":"资本变数",
+			"74":"行业风向",
+			"70":"电商导师",
+			"77":"订单见面会",
+			"72":"品牌之星",
+			"75":"精品导购",
+			"76":"中国好企业"
+		};
+		$.ajax({
+			type:"get",
+			url:"http://info.csc86.com/api.php",
+			data:{
+				op:"market_news_detail",
+				id:id
+			},
+			dataType:"jsonp",
+			success:function(data){
+				if(data.status==1){
+					// console.log(data)
+					var regRplace=new RegExp("\\[page\\]","g");//替换[page]
+					var title=data.data.title,time=data.data.updatetime,content=data.data.content.replace(regRplace,""),description=data.data.description,catid=data.data.catid,copyfrom=data.data.copyfrom;
+
+					html='<h1 id="title">'+title+'</h1>\
+							<p class="futit"><span class="channel">'+copyfrom+'</span><span class="time">'+time+'</span></p>\
+							<div class="article" id="article">'+content+'</div>';
+					document.title=title;
+					$(html).appendTo($("#artdetail"));
+					$("img").each(function(){
+						$(this).css("height","auto");
+					});
+					$("#detloading").hide();
+				}
+				else{
+					
+				}
+				
+			},
+			error:function(){//请求失败
+
+			}
+		})
+	});
+	</script>
+</body>
+</html>

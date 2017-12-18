@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>2企业身份认证第二步</title>
+<link rel="stylesheet" href="https://res.csc86.com/f=css/base-reset.css,css/m/app-frame/style.css,css/c/membercenter/member.css,css/c/memberhome/m-public.css,css/c/memberhome/m-top.css,css/c/memberhome/m-left.css,css/c/memberhome/m-right.css,css/c/memberhome/m-mid.css,css/c/memberhome/m-foot.css" />
+<script src="https://res.csc86.com/f=js/l/jquery.js,js/p/seajs/1.2.0/dist/sea.js,js/m/config.js,js/c/membercenter/member.js"></script>
+<script type="text/javascript">
+	<!-- 银行区域信息效验处理 -->
+	function vaidataBankRegion(removeid){
+		var validata=document.getElementById(removeid);
+		if(validata){
+			validata.parentNode.removeChild(validata); 
+		}
+	}
+</script>
+<link rel="stylesheet" href="https://res.csc86.com/b=css&f=c/membercenter/compaccredit.css"/>
+</head>
+<body>
+<script src="https://res.csc86.com/f=js/c/memberhome/m-home.js"></script>
+<div class="head"><!--会员中心头部 start-->
+	<div class="head-bd">
+    	<div class="logo"><a href="http://member.csc86.com" title="会员中心"><img src="https://res.csc86.com/css/c/memberhome/img/logo.gif" width="84" height="20"></a></div>
+        <div class="head-nav">
+        	<a   href="http://member.csc86.com" title="首页" target="_self"><b class="home-icon"></b>首页</a>
+            <a href="http://member.csc86.com/shop/shopinfo.html" title="企业" target="_blank"><b class="compay-icon"></b>企业</a>
+            <a href="https://payment.csc86.com/account.index.do" title="账户" target="_blank"><b class="account-icon"></b>账户</a>
+            <a   href="http://member.csc86.com/membercenter/tool" title="工具" target="_blank"><b class="tool-icon"></b>工具</a>
+            <a href="http://wslm.csc86.com/member/default.html" title="微商联盟" target="_blank"><b class="wslm-icon"></b>微商联盟</a>
+        </div>
+        <div class="index-link">
+        	<a href="http://www.csc86.com" title="进入华南城网首页" target="_blank">华南城网首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<a href="http://cncms.csc86.com/help/" title="客服中心" target="_blank">客服中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://member.csc86.com/login/logout?done=http://member.csc86.com/" title="退出">退出</a>
+        </div>
+    </div>
+</div><!--会员中心头部 end-->
+<script>
+ csc.ie6&&seajs.use(csc.url("res","/f=js/m/hover"),function (){
+  csc.hover("div.head li.user,div.head li.apply,div.head li.msg");
+ });
+</script>
+<div class="g-o-a app-frame offer">
+
+<div id="apply" class="af-nav">
+
+<h2>
+	<a href="http://member.csc86.com/accreditation/accreditation/index.html">认证服务</a>
+</h2>
+	<ul class="nav-items">
+		<li class="bg-none item "">
+			<a href="http://approve.csc86.com/user/personInfo?approveType=person">个人实名认证</a>
+		</li>
+		<li class="bg-none item">
+			<a href="http://approve.csc86.com/user/realInfo">企业实名认证</a>
+		</li>
+		<li class="bg-none item cur">
+			<a href="http://approve.csc86.com/user/approveIndex?approveType=prove">企业身份认证</a>
+		</li>
+		<li class="bg-none item ">
+			<a href="http://approve.csc86.com/user/localIndex?approveType=local">企业实地认证</a>
+		</li>
+	</ul>
+ </div>
+<link rel="stylesheet" href="https://res.csc86.com/v2/c/member/zhongxin/identity/css/style.css"/>
+<div class="af-bd">
+    <h1 class="af-hd">企业身份认证</h1>
+	<p class="rz-po">企业身份认证由华南城网联合政府授权和委托机构— —众信网，核实认证企业工商注册信息和授权申请人信息真实性，特别打造的真实身份权威认证。</p>
+    <div class="g-h25"></div>
+    <ul class="wirt-lc sf-w">
+    	<li class="fas"><span class="cur"><i>1</i></span>填写企业基本信息</li>
+        <li><span class="cur"><i>2</i></span>填写企业对公账号信息</li>
+        <li><span><i>3</i></span>填写打入对公账号的金额</li>
+        <li class="last"><span><i>4</i></span>认证成功</li>
+   	</ul>
+    <div class="g-h25"></div>
+    <p class="bot-po">温馨提示：我们将在两个工作日内向您输入的银行账号中转入1元以下的任意金额及转账附言，请您在五个工作日内查询您的账号信息，得到转账附言和款项信息后，登录到企业会员中心，在企业身份认证页面填上附言信息和款项信息即可完成认证。</p>
+    <div class="g-h25"></div>
+    <form action="saveBank?approveType=prove" method="post" data-type="idy-two">
+    <table class="idy-tab idy-three" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th><span>*</span>账户开户行：</th>
+        <td><input class="input-w" name="bank" type="text" value="中国深圳" maxlength="25"/><span class="ity-tip right">请输入开户行</span></td>
+      </tr>
+      <!-- 开户行所在区域begin -->
+      <tr>
+        <th><span>*</span>开户行区域：</th>
+        <td >
+	        <select class="ity-ads" name="provinceId" onchange="vaidataBankRegion('bankregion_validata_id');">
+	        	<option value="">请选择省</option>
+	        	    <option value="932BB78E-85B6-43A3-AFB7-65B2A75F4AC4" >吉林</option>
+	        	    <option value="3B0E07C7-95F7-411F-9E70-68204FDE96E9"  selected>青海</option>
+	        	    <option value="1D7F164D-480D-4EAB-96E5-596A3DC660D5" >内蒙古</option>
+	        	    <option value="F3F0D8D7-D550-49F0-B3E7-5A6921989B3E" >西藏</option>
+	        	    <option value="93E6AF46-020D-4D6C-8287-6EE6A70EBF91" >上海</option>
+	        	    <option value="4138CAAB-4597-426A-BED9-81B18B6D14A2" >安徽</option>
+	        	    <option value="398EC423-AD30-4D98-B3FB-912FD6ABEDB1" >湖北</option>
+	        	    <option value="1DB6B636-55BD-49BD-93FF-9953E65E0DE2" >广东</option>
+	        	    <option value="9554CCA2-4A81-40B2-BACC-961C7C3DE80D" >天津</option>
+	        	    <option value="FE8F5187-803C-4D39-8D23-9418093E789C" >台湾</option>
+	        	    <option value="6758E2AE-6532-4D96-9936-9F92352A2F6C" >河南</option>
+	        	    <option value="1D7086C6-10A5-4E34-B2FB-9EC732409056" >香港</option>
+	        	    <option value="12662CA3-D0DC-4FE1-A1AB-394C7A888AEB" >山西</option>
+	        	    <option value="3AD9719A-4F06-45E3-BED3-475E0BA651A1" >江苏</option>
+	        	    <option value="ED42E998-1F3C-4241-8FA3-4546BB65C44A" >陕西</option>
+	        	    <option value="2ABE7AF5-61AB-4062-A56D-4992EF4064EA" >云南</option>
+	        	    <option value="082ADAA5-86B8-4B22-9D0A-4CCFC9F0FEB6" >河北</option>
+	        	    <option value="342D3233-12C2-4037-9DC1-1414858FAB7D" >浙江</option>
+	        	    <option value="A66D1F3D-8EE4-4773-ACDE-1A760FD3D466" >海南</option>
+	        	    <option value="DFD5ED79-4736-4103-9E2E-1A808ACC09A6" >北京</option>
+	        	    <option value="F23F4D04-4762-4CED-97DC-26B62DBEC2E9" >黑龙江</option>
+	        	    <option value="8FE37D55-1969-4B2E-B0B5-21A4DBA3E802" >湖南</option>
+	        	    <option value="F425168B-E19C-4636-B76A-0BCC6835591B" >四川</option>
+	        	    <option value="2AAEF687-A3F6-4011-9FAB-0E4BB2C4FFD6" >江西</option>
+	        	    <option value="F12A16CE-A540-4BA6-A59E-B46F772845BA" >新疆</option>
+	        	    <option value="C8CDDBFF-449A-4031-9D5F-AA66AD878F8D" >重庆</option>
+	        	    <option value="B950770F-3AB7-4211-8C90-A75624BD894C" >甘肃</option>
+	        	    <option value="15830E2A-9D93-4FEB-A050-CB25563EE733" >广西</option>
+	        	    <option value="3220BE8D-1DBB-4E2D-BFAA-F56CF7AD5F22" >福建</option>
+	        	    <option value="E315F563-4961-44DB-AA83-EE6740BF0C89" >山东</option>
+	        	    <option value="FA6D641A-1C77-4D57-8276-FF58BD970F68" >辽宁</option>
+	        	    <option value="5A88D331-F216-448E-B712-FC497156E67E" >宁夏</option>
+	        	    <option value="F5DAEB22-E0D2-42D7-9674-FB8272A269B9" >澳门</option>
+	        	    <option value="889E1994-8CC0-4D20-A73E-FB229E6194DC" >贵州</option>
+	        </select>
+	        <input type="hidden" name="province" value="青海" />
+	        <input type="hidden" name="city" value="果洛藏族自治州" />
+	         <select class="ity-ads" name="cityId" onchange="vaidataBankRegion('bankregion_validata_id');"><option value="D15983DC-C4C3-479D-9EA7-C9C646F6C63E">果洛藏族自治州</option></select>
+        </td>
+      </tr>
+       <!-- 开户行所在区域end -->
+      <tr>
+        <th><span>*</span>企业开户银行账号：</th>
+        <td><input class="input-w" name="account" type="text" value="4115221986090275733" maxlength="22"/><span class="ity-tip right">请输入开户银行账号</span></td>
+      </tr>
+      
+      <tr>
+        <th><span>*</span>确认企业开户银行账号：</th>
+        <td><input class="input-w" name="confirmAccount" type="text" value="4115221986090275733" maxlength="22"/><span class="ity-tip right">请输入确认开户银行账号</span></td>
+      </tr>
+      <tr>
+        <th><span>*</span>手机号码：</th>
+        <td><input class="input-w" name="phone" type="text" value="18675646754" maxlength="11" onkeyup="this.value=this.value.replace(/[^_0-9]/g,'')"/><span class="ity-tip right">请输入手机号码</span></td>
+      </tr>
+      <tr>
+        <th>&nbsp;</th>
+        <td>
+        	<div class="g-h15"></div>
+        	<input class="sub-info" type="submit" value="提交" /><a class="sub-up" href="javascript:history.back();">返回上一步</a>
+        </td>
+      </tr>
+    </table>
+    <div class="g-h25"></div>
+    </form>
+    <div class="g-h15"></div>
+</div>
+</div>
+<script>seajs.use('https://res.csc86.com/v2/c/member/zhongxin/identity/js/init');</script>
+
+<div class="g-h-20"></div>
+<div style="display:none"><script src="https://res.csc86.com/f=js/m/statistics.js"></script></div>
+<div class="g-o-a foot">
+	<div class="foot-link"><a rel="nofollow" target="_blank" href="http://group.csc86.com">关于华南城</a>
+		<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a>
+		<a href="http://www.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a>
+		<a href="http://www.csc86.com/about/services/chengshangtong.html" target="_blank" rel="nofollow">会员服务</a>
+		<a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a>
+		<a href="http://www.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a>
+		<a href="http://www.csc86.com/about/terms.html" target="_blank" rel="nofollow">服务条款</a>
+		<a href="http://www.csc86.com/about/legal.html" target="_blank" rel="nofollow">法律申明</a>
+		<a href="http://www.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a>
+		<a href="http://www.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a>
+		<a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a>
+		<a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a>
+		<a href="http://www.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+	</div>
+	<p class="group-link">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved </p>
+	<div class="foot-lg"><span><a target="_blank" rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img alt="公共信息安全网络监察" src="https://res.csc86.com/image/c/index/sznet110wangan.png"></a></span>
+      <span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span>
+    </div>
+<style>
+.back-top{width:100%;_position:relative}.back-top a{display:block;width:48px;height:48px;background:#ccc url(https://res.csc86.com/css/m/back-top/img/bg.png) no-repeat;text-indent:-99999px;}.back-top a:hover{background-position:0 -49px;}.back-top .bt-bd{_display:inline;_float:right;width:48px;height:48px;position:fixed;_position:absolute;bottom:30px;right:20px;}.back-top .bt-hide{display:none}
+</style>
+<div id="backTop" class="g-o-a back-top">
+<div class="bt-bd">
+<a href="#">返回顶部</a>
+</div>
+</div>
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: none repeat scroll 0% 0% rgb(255, 255, 255);"></div>
+</body>
+</html>
+

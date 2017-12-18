@@ -1,0 +1,105 @@
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+@import url('/v2/m/top-bar/css/style.css');
+@import url('/v2/m/head-search/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/register/css/style.css');
+@import url('/v2/c/green/common/css/template.css');
+@import url('/v2/m/page/style_li.css');
+
+.common_T2{font:700 16px/36px microsoft yahei;margin:5px 0;border-bottom:solid 2px #444;}
+.common_T2 .more{font-weight:400;color:#888;font-size:12px}
+.f_factory a{text-align: center;}
+
+/*农业示范区*/
+.f_example .pics{width:740px;height:385px;position:relative;}
+.f_example .pics li{display:none;position:absolute;top:0;left:0;width:740px;height:385px;overflow:hidden;}
+.f_example .pics .cur{display:block;}
+.f_e_side{width:260px;}
+.f_e_side h3{margin:0 0 2px;}
+.f_e_side ul{background:#f1f1f1;padding:0 0 6px;}
+.f_e_side li{position:relative;height:38px;line-height:38px;padding:0 15px;cursor:pointer;}
+.f_e_side li .arr{display:none;position:absolute;left:-6px;top:13px;width:6px;height:15px;overflow:hidden;background:url(img/sub_icons.png) -263px -64px no-repeat;}
+.f_e_side .cur{background:#3b8301;color:#fff;}
+.f_e_side .cur .arr{display:block;}
+.f_e_side .more{display:block;height:28px;line-height:28px;background:#ddd;color:#888;text-align:center;text-decoration:none;}
+
+/*基地*/
+.f_base{width:720px;}
+.f_base .common_T2{font-weight:700;font-size:18px;margin-bottom:15px;}
+.f_base .pics{width:720px;height:395px;position:relative;}
+.f_base .pics li{display:none;position:absolute;top:0;left:0;width:720px;height:395px;overflow:hidden;}
+.f_base .pics .cur{display:block;}
+.f_b_list{width:640px;height:52px;line-height:52px;padding:0 40px; position:relative;}
+.f_b_list li{width:117px;height:50px;padding:0 5px;background:#f1f1f1;border-bottom:solid 2px #f1f1f1;border-left:solid 1px #e2e2e2;float:left;text-align:center;font-size:14px;font-family:microsoft yahei;color:#888;cursor:pointer;}
+.f_b_list .cur{border-bottom-color:#3b8301;color:#444;}
+.f_b_list li:hover{color:#444;}
+.f_b_list .l,.f_b_list .r{position:absolute;display:inline-block;width:40px;height:52px;background:url(img/sub_icons.png) 0 -100px no-repeat;}
+.f_b_list .l{left:0;}
+.f_b_list .r{right:0;background-position:-40px -100px;}
+.f_b_list .l:hover{background-position:-90px -100px;}
+.f_b_list .r:hover{background-position:-130px -100px;}
+.f_b_list .inner{width:640px;height:52px;overflow:hidden;position:relative;}
+.f_b_list ul{position:absolute;}
+.f_sec1_side{width:260px;}
+.f_news li{height:26px;background: url(img/dot.jpg) 10px 12px no-repeat;line-height:26px;padding:0 5px 0 20px;overflow:hidden;}
+.f_factory .txt{display:block; width:260px;height:26px;line-height:26px;overflow:hidden;font-size:14px;font-family:microsoft yahei;}
+.f_factory .pic{display:block;margin:10px 0 6px;}
+
+/*详情页*/
+.details {width: 728px; border: 1px solid #e8e8e8;}
+.details .cont-wrap {padding: 25px 20px 0;}
+.details .ctn-top {text-align: center;}
+.details .ctn-top h1 {font-size: 24px; font-family: microsoft YaHei; font-weight: normal; color: #444; margin-bottom: 10px;}
+.details .ctn-top span {margin-right: 20px;}
+.news_summary{line-height:28px;padding:15px 20px;background:#f5f7fc;font-size:14px;margin:0 0 10px;}
+.details .content {border-top: 1px solid #e8e8e8; padding: 20px 0; margin-top: 10px; font-size: 14px;}
+.details .content p {text-indent: 2em; line-height: 25px; margin: 20px 0; font-size: 14px;}
+.details .content p.author {font-size: 12px;text-indent: 0}
+.details .content .img {text-align: center;}
+.details .content img {overflow: hidden; max-width: 680px;}
+.details .tools {height: 40px; border-top: 1px dashed #e8e8e8; line-height: 40px; padding-left: 20px;}
+.details .tools .print {text-indent: 15px; background: url(img/print.png) no-repeat 0 center; color: #007dd6}
+.bdsharebuttonbox {float: left;margin-top: 6px; padding-left: 15px;width: 230px;}
+.details .view-bar {background: url(img/line_03.png) repeat-y center 0;;height: 54px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; line-height: 54px; padding: 0 10px; background-color: #f6f6f6;}
+.details .view-bar span {color: #888; font-family: simsun; font-size: 14px; width: 334px; overflow: hidden; height: 54px;-ms-text-overflow: clip;text-overflow:clip;white-space: nowrap;word-wrap: normal;}
+.details .view-bar span.g-fr {text-align: right;}
+.details .view-bar span.g-fr a.c-n {width: 330px; overflow: hidden;}
+.details .view-bar span.pre{background: url(img/l.png) no-repeat 0 center;text-indent: 20px}
+.details .view-bar span.next{background: url(img/r.png) no-repeat right center;padding-right: 20px}
+.details .guess-u-like {padding: 20px;}
+.details .guess-u-like h2 {margin-bottom: 10px;font:700 16px "microsoft yahei";}
+.details .guess-u-like .like-list {width: 688px; height: 122px; overflow: hidden;}
+.details .guess-u-like .like-list ul {width: 9999px;}
+.details .guess-u-like .like-list li {float: left; margin-right: 16px; width: 160px; overflow: hidden;}
+
+.details .guess-u-like .like-list li:last-child {margin-right: 0}
+.details .guess-u-like .like-list a.img-info {display: block; width: 160px; height: 100px; overflow: hidden;}
+.details .guess-u-like .like-list span {width: 160px; height: 22px; line-height: 22px; overflow: hidden; text-align: center; display: block;}
+.details .guess-u-like  .ulike-list {padding-top:5px;}
+.details .guess-u-like  .ulike-list li {float: left;  display:inline; padding-left:15px; width: 300px; padding-right:15px; height: 25px; line-height: 25px; overflow:hidden;background: url(img/dot.jpg) no-repeat 3px 13px;}
+.details .guess-u-like  .ulike-list li:nth-child(2n) {margin-right: 0}
+
+/*图片推荐区*/
+.side-items{border: 1px #eee solid;margin-top: 17px}
+.side-items .all-title{margin: 0 12px}
+.pic-msg span{display:block;height:33px;line-height:16px;overflow:hidden;}
+
+/*农场列表*/
+.farm-list{border:solid 1px #e2e2e2;}
+.farm-list ul li{padding:20px;border-bottom:dotted 1px #e2e2e2;}
+.farm-list ul li .pic{float:left;width:260px;height:135px;overflow:hidden;}
+.farm-list ul li .txt{padding:0 50px 0 275px;}
+.farm-list ul li .txt h5{font-size:16px;width:365px;height:24px;overflow:hidden;font-family:microsoft yahei;}
+.farm-list ul li .txt p{line-height:21px;max-height:63px;overflow:hidden;_height:63px;margin:10px 0;color:#888;}
+.farm-list ul li .txt .more{color:#2664a2;}
+
+.contact{border-bottom: 1px #dbdbdb dashed;padding-bottom: 20px;margin-bottom: 15px}
+.contact span{color: #888}
+.fc_888{color: #888}
+.fc_333{color: #333}
+
+ /*免责声明 start*/
+.ssclmr{background-color:#f6f6f6;padding:10px 15px;margin:30px 20px 20px;color:#888;line-height:22px;font-family:simsun;}
+.ssclmr dt{font-weight:normal;}
+/*免责声明 end*/

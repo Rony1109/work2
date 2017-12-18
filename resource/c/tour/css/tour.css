@@ -1,0 +1,21 @@
+@import url('base.css');
+
+.items{margin-top: 16px;}
+.items li{position: relative;float: left;display: inline;margin-right: 35px;width: 310px;}
+.items li.last{margin-right: 0;}
+
+.items-2 span.bg{position: absolute;left: 0;bottom: 0;display: block;width: 310px;height: 40px;background: #000;opacity: .7;filter:alpha(opacity=70);}
+.items-2 p{position: absolute;left: 0;bottom: 0;display: block;width: 310px;height: 40px;overflow: hidden;text-decoration: none;}
+.items-2 a{display: block;margin: 0 10px;height: 150px;overflow: hidden;text-decoration: none;color: #fff;}
+.items-2 a b{display: block;height: 40px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 14px/40px Microsoft YaHei,simsun;text-indent: 50px}
+.items-2 a b span{position: absolute;display: block;top: 10px;left: 10px;width: 39px;height: 48px;;background: url(img/icon.png) no-repeat;_background: none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon.png");}
+
+.icon-1{text-indent: 42px;background: url(img/gather.png) no-repeat 0 -214px;}
+.icon-2{text-indent: 40px;background: url(img/gather.png) no-repeat 2px -278px;}
+.tour-box{width: 722px;height: 448px;}
+.tour-box ul{width: 741px}
+.tour-box li{float: left;display: inline;margin:0 17px 28px 0;width: 230px;}
+.tour-box li a{display: block;height: 225px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font: 14px Microsoft YaHei,simsun;}
+.tour-box li img{display: block;margin-bottom: 10px;}
+
+.m-t29{margin-top: 29px;}

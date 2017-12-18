@@ -1,0 +1,127 @@
+@import url('base.css');
+
+/* 全局 */
+.list li{height: 26px;line-height: 26px;text-indent: 10px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;background: url(img/icos.gif) no-repeat -497px -898px;}
+a.more{float: right;display: inline;margin-right: 8px;font: 12px simsun;color: #888;}
+a.more:hover{color: #fa6824;}
+/* 热点资讯 */
+.hot-msg{width: 358px;height: 487px;overflow: hidden;border: 1px #55679b solid;}
+.hot-msg-t{height: 34px;background: #55679b;}
+.hot-msg-t h2{float: left;margin-left: 10px;color: #fff;font: 18px/34px Microsoft YaHei,simsun;}
+.hot-msg-t span{float: left;margin-left: 10px;line-height: 34px;text-indent: 10px;color: #d3def1;background: url(img/icos.gif) no-repeat -497px -946px;}
+.hot-msg-t span a{color: #d3def1;cursor: pointer;}
+.hot-msg h3{margin:15px 9px;height: 20px;line-height: 20px;overflow: hidden;text-align: center;font-size: 16px;-ms-word-break: break-all;word-break: break-all;}
+.hot-msg h3 a{color: #fa6824;}
+.pic-msg{padding: 0 9px 12px;border-bottom: 1px #d3def1 dashed;}
+.pic-msg p{float: right;display: inline;width: 250px;overflow: hidden;color: #888;text-indent: 24px;-ms-word-break: break-all;word-break: break-all;}
+.hot-msg ul{margin: 9px;}
+.hot-msg ul li{padding: 7px 0;height: 14px;overflow: hidden;font: 14px/14px simsun;-ms-word-break: break-all;word-break: break-all;}
+.hot-msg ul li a span{display: inline-block;*display: inline;zoom:1;padding-right: 10px;margin-right: 10px;height: 14px;color: #888;border-right: 1px #dcdddd solid;}
+/* 幻灯片 */
+.other-msg{width: 629px;}
+.slide { position: relative;float: left;width: 360px; height: 220px; overflow: hidden;border-bottom: 1px #e6e6e6 solid;}
+.slide ul li { width: 360px; height: 220px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li { float: left; margin-right: 5px;width: 8px; height: 8px;overflow: hidden;text-indent: -9999px; background:url(img/icos.gif) no-repeat -13px -245px;  box-shadow: 0 0 5px #888; border-radius: 10px}
+.slide ol li.cur {background: url(img/icos.gif) no-repeat 0 -245px ;}
+.slide img{width: 360px;height: 220px}
+/* 汽车知识 */
+.column{width: 258px;border: 1px #d4dff1 solid;}
+.h-218{height: 218px;}
+.column-t{height: 34px;background: #f5f7fc;}
+.column-t a.more{line-height: 34px;}
+.j-tab a{display: none;}
+.j-tab a.cur{display: block;}
+.tab-nav{width: 158px;}
+.tab-nav li{position: relative;float: left;display: inline;width: 79px;height: 32px;line-height: 32px;text-align: center;cursor: default;}
+.tab-nav li span{position: absolute;display: none;left: 35px;bottom: -8px;width: 9px;height: 5px;line-height: 0;font-size: 0;background: url(img/icos.gif) no-repeat 0 -293px;}
+.tab-nav li.cur{color: #fff;background: #55679b;}
+.tab-nav li.cur span{display: block;}
+.tab-content{margin: 15px 9px 0;}
+/* 车型评测 */
+.evaluation{width: 360px;overflow: hidden;}
+.elt-t{position: relative;height: 22px;border-bottom: 2px #f2f5fb solid;}
+.elt-t a{line-height: 22px;}
+.elt-t h2{position: absolute;padding: 0 11px 0 3px;font: 700 16px/22px Microsoft YaHei,simsun;border-bottom: 2px #fa6824 solid;}
+.elt-hot{margin-top: 7px;width: 370px;}
+.elt-hot li{float: left;display: inline;margin-right: 10px;width: 175px;}
+.elt-hot li a{position: relative;display: block;width: 175px;height: 120px;}
+.elt-hot li a span{position: absolute;display: block;z-index: 99;left: 0;bottom: 0;width: 175px;height: 21px;line-height: 21px;overflow: hidden;color: #fff;text-align: center;-ms-word-break: break-all;word-break: break-all;}
+.elt-hot li a span.bg{z-index: 0;background: #55679b;opacity: .60;filter:Alpha(opacity=60);}
+.elt-other {padding-top: 8px;width: 370px;}
+.elt-other li{float: left;margin-right: 10px;width: 175px;}
+.column-t h2{text-indent: 9px;font: 700 16px/34px Microsoft YaHei,simsun;}
+.h-248{height: 248px;}
+/* 人物访谈 */
+.person-hot{width: 240px}
+.person-hot a.pic{float: left;display: inline;width: 110px;}
+.person-hot a img{float: left;}
+.person-other,.person-hot{margin: 6px 9px;}
+.ps-intro{float: right;display: inline;width: 117px;}
+.ps-intro a{display: block;height: 18px;line-height: 18px;overflow: hidden;font-weight: bold;-ms-word-break: break-all;word-break: break-all;}
+.ps-intro p{line-height: 18px;height: 70px;overflow: hidden;color: #888;-ms-word-break: break-all;word-break: break-all;}
+/* 精彩车图 */
+.pic-t{position: relative;height: 37px;border-bottom: 2px #c3c3c3 solid;}
+.pic-t h2{position: absolute;padding: 0 10px 0 5px;height: 37px;color: #2a2a2a;font: 18px/37px Microsoft YaHei,simsun;border-bottom: 2px #55679b solid;}
+.pic-t a.more{line-height: 37px;}
+.pic-main{overflow: hidden;}
+.pic-main{width: 1005px;}
+.pic-main li{float: left;margin-right: 5px;}
+.pic-main li.items-1,.pic-main li.items-1 a,.pic-main li.items-1 a span{width: 280px;}
+.pic-main li.items-2,.pic-main li.items-2 a,.pic-main li.items-2 a span{width: 215px;}
+.pic-main li.items-3,.pic-main li.items-3 a,.pic-main li.items-3 a span{width: 230px;}
+.pic-main li.items-4,.pic-main li.items-4 a,.pic-main li.items-4 a span{width: 260px;}
+.pic-main li a{position: relative;display: block;margin-bottom: 6px;}
+.pic-main li a span{position: absolute;display: block;left: 0;bottom: 0;z-index: 99;height: 30px;font: 14px/30px Microsoft YaHei,simsun;text-align: center;color: #fff;}
+.pic-main li a span.bg{z-index: 77;background: #000;opacity: .60;filter:Alpha(opacity=60);}
+.pic-main li.items-1 a{height: 259px;}
+.pic-main li .t-t{margin-bottom: 6px;height: 45px;text-align: center;font: 14px/45px Microsoft YaHei,simsun;color: #fff;background: #55679b;}
+
+.pic-main li a.w-134{width: 134px;height: 130px;}
+.pic-main li a.w-134 span{width: 134px;}
+.pic-main li a.w-121{width: 121px;height: 130px;color: #fff;background: #55679b url(img/icos.gif) no-repeat 89px -280px;}
+.pic-main li a.w-121 span{bottom:35px;padding-left: 24px;width: 97px;height: auto;line-height: 24px;text-align: left;}
+.pic-main li .t-t a{color: #fff;}
+/* 行业专题 */
+.w-729{width: 729px;height: 198px;border-top: 2px #55679b solid;}
+.w-259,.week-news{width: 259px;border-top: 2px #55679b solid;}
+.special-other{margin:13px 0 0 9px;width: 206px;}
+.special-other li{height: 24px;line-height: 24px;background-position: -497px -899px;}
+.special-hot{margin:20px 15px 0 0;width: 456px;overflow: hidden;}
+.special-hot ul{width: 512px;}
+.special-hot li{float: left;display: inline;margin-right: 56px;width: 200px;}
+.special-hot li a{display: block;height: 130px;overflow: hidden;text-align: center;-ms-word-break: break-all;word-break: break-all;}
+.special-hot li a img{display: block;margin-bottom: 13px;}
+/* 汽配周报 */
+.week-news{height: 198px;}
+.week-news ul{margin: 13px 9px 0;width: 241px;}
+.week-news li{height: 24px;line-height: 24px;background-position: -497px -899px;}
+/* 二手车  汽配行情*/
+.used-car,.quotation{width: 360px;}
+.quotation{margin: 0 10px;}
+.used-car .column-t,.quotation .column-t{border-top: 2px #55679b solid;border-bottom: 1px #d3def2 solid;}
+.used-pic,.quotation-pic{float: left;width: 100px;}
+.used-intro,.quotation-intro{width: 242px;}
+.used-intro a.t-t,.quotation-intro a.t-t{display: block;margin-bottom: 8px;height: 16px;line-height: 16px;overflow: hidden;font-size: 14px;-ms-word-break: break-all;word-break: break-all;}
+.used-intro p,.quotation-intro p{position: relative;height: 56px;color: #888;text-indent: 24px;}
+.used-intro p a.more,.quotation-intro a.more{position: absolute;display: block;right: 0;bottom: 0;color: #007dd6;}
+.used-other,.quotation-other{margin-top:15px;}
+.used-other span,.quotation-other span{float: right;display: inline;color: #888;}
+.used-other a,.quotation-other a{display: block;}
+/* 车主体验 */
+.experience{width: 258px;height: 297px;}
+.experience .column-t{border-top: 2px #55679b solid;}
+.experience .ep-hot{margin: 7px 14px 0 15px;}
+.experience .ep-pic{float: left;display: inline;width: 64px;}
+.experience .ep-intro{width: 157px;height: 60px; overflow: hidden;color: #888;-ms-word-break: break-all;word-break: break-all;}
+.experience .ep-intro a{display: block;margin-bottom: 8px;height: 14px;line-height: 14px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.ep-other{margin: 4px 15px 0;}
+/* 行业展会 */
+.ex-industry{width: 998px;height: 180px;overflow: hidden;}
+.ex-industry .column-t{border-top: 2px #55679b solid;}
+.ex-industry ul{margin-left: 6px;}
+.ex-industry li{float: left;display: inline;width: 467px;margin-right: 27px;}
+.ex-industry .pic{float: left;width: 200px;}
+.ex-industry .ex-intro{float: right;width: 255px;}
+.ex-industry .ex-intro a{display: block;margin-bottom: 10px;height: 16px;overflow: hidden;font:700 14px/16px simusn;-ms-word-break: break-all;word-break: break-all;}
+.ex-industry .ex-intro p{height: 22px;line-height: 22px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}

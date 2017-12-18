@@ -1,0 +1,21 @@
+/*
+	mdl-setslide.html,mdl-setslide2.html 这两页面的样式都在此文件
+	mdl-setslide.html 为skin0015及之前的模板设置轮播图的模块
+	mdl-setslide2.html 比 mdl-setslide.html 多了显示和隐藏模块功能、设置轮播时间功能
+*/
+
+@import url('style.css');
+
+.mdl-setslide{padding-top:10px;padding-bottom:54px;}
+.mdl-setslide .hd{margin-left:41px;}
+
+.setsld-size{color:#000;}
+.setsld-size .ipt-txt{width:50px;}
+.setsld-size .itm{color:#444;}
+
+/*显示和隐藏模块*/
+.isshow-box{padding-left:60px;}
+
+/*轮播时间*/
+.sldtm-box{padding:15px 0 20px 41px;}
+.sldtm-box label{margin-right:10px;}

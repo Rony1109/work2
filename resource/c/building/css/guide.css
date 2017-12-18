@@ -1,0 +1,69 @@
+@import url('base.css');
+.column-list li{background-position:-498px -1194px;}
+
+.slide {width: 360px; height: 260px; overflow: hidden; position: relative;}
+.slide ul li { width: 360px; height: 260px;}
+.slide ol {position: absolute; bottom: 8px; right: 5px; }
+.slide ol li {width: 18px; height: 10px; background: #fff; float: left; text-indent: -9999px; margin-right: 5px; box-shadow: 0 0 5px #888; overflow: hidden;}
+.slide ol li.cur {background: #048a96}
+
+/* news */
+.mid-news{padding:0 9px 6px 9px;margin: 0 10px;height: 252px;width: 340px;}
+.set-time span{float: right;display: inline;width: 80px;}
+.head-line-title{margin-bottom: 10px;}
+.head-line-title a{display: block;height: 20px;text-align: center;font:700 16px/20px simsun;color: #fa6824;}
+.head-line-intro{padding-bottom: 14px;margin-bottom: 10px;color: #888;text-indent: 24px;line-height: 18px;border-bottom: 1px #e8e8e8 dashed;}
+
+/* 行业快报 */
+.newsflash-box{width: 258px;height: 258px;}
+.newsflash-box h2{height: 38px;text-indent: 9px;font: 700 16px/38px Microsoft YaHei,simsun;background: #f4f4f4;}
+.newsflash-box .title-m a{margin-right: 9px;}
+.newsflash-box .img-msg{margin: 17px 9px 0;}
+.newsflash{width: 142px;height: 80px;color: #888;line-height: 18px;}
+.newsflash a{display: block;height: 18px;line-height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;font-weight: bold;}
+.newsflash-list{margin: 0 9px;}
+/* 价格行情 */
+.w730{width: 730px;}
+.capital-attraction{height: 305px;padding:0 11px;overflow: hidden;border: 1px #e8e8e8 solid;border-top: 0;}
+.capital-attraction .title-m{margin: 10px 0 5px;}
+/* 装饰材料 */
+.pt-0{padding-top: 0;}
+.w344{width: 343px;}
+.join{width: 235px;line-height: 22px;color: #888;}
+.join h3{display: block;margin-bottom: 10px;height: 18px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+/* 建筑材料 */
+.capital-news{padding-left: 10px;width: 343px;height: 305px;border-left: 1px #e8e8e8 solid;}
+
+/* 千挑万选 */
+.txt-tab a{display: none;}
+.txt-tab span{display: block;height: 26px;line-height: 26px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+.txt-tab li.cur a{display: block;margin-bottom: 10px;}
+.txt-tab li.cur span{display: none;}
+.txt-tab{margin: 0 0 16px;padding-bottom: 10px;border-bottom:1px #e8e8e8 dashed ;}
+/* 图库 */
+.set-bd-grey{border-bottom: 2px solid #e8e8e8;}
+.pic-wall{padding-bottom: 20px;overflow: hidden;border-bottom: 1px #048a96 solid;}
+.pic-wall ul{width: 1013px;}
+.pic-wall li{position: relative;float: left;display: inline;margin:0 13px 10px 0;width: 240px;}
+.pic-wall li.first{margin-right: 14px;}
+.pic-wall li a{position: relative;display: block;height: 125px;color: #fff;text-align: center;}
+.pic-wall li.first a{height: 260px;}
+.pic-wall li a span{position: absolute;display: block;left: 0;bottom:0;padding: 0 10px;width: 220px;height: 26px;line-height: 26px;}
+.pic-wall li a span.bg{background: #000;opacity: .6;filter:alpha(opacity=60);}
+.pic-wall li a:hover span{color: #000;}
+.pic-wall li a:hover span.bg{background: #fff;}
+/* 达人日记 */
+.diary-list{width: 730px;}
+.diary-list .title-m h2{color: #000;font-weight: bold;}
+.diary-list ul.img-msg,.set-list{width: 746px;}
+.diary-list ul.img-msg{height: 197px;overflow: hidden;}
+.diary-list ul.img-msg li{float: left;display: inline;margin: 0 17px 17px 0;width: 356px;}
+.diary{width: 182px;line-height: 20px;color: #888;}
+.diary h3{height: 24px;margin-bottom: 5px;overflow: hidden;font:700 15px/24px Microsoft YaHei,simsun;-ms-word-break: break-all;word-break: break-all;}
+.set-list li{float: left;display: inline;width: 356px;margin-right: 17px;}
+/* 生意红娘 */
+.w220{width: 220px;}
+.set-matchmaker li{overflow: hidden;margin-bottom: 13px;}
+.matchmaker{margin-right: 38px;width: 120px;height: 60px;overflow: hidden;}
+.matchmaker a{display: block;height: 16px;overflow: hidden;-ms-word-break:break-all;word-break:break-all;font-weight: bold;margin-bottom: 5px;}
+.title-m h2{font-weight: bold;color: #000;}

@@ -1,0 +1,861 @@
+
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>批量-确认订单信息</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="https://res.csc86.com/v2/c/order/css/payments.css?ordVer=1" type="text/css" >
+    <link rel="stylesheet" href="https://res.csc86.com/v2/c/order/css/submit-order.css" type="text/css" >
+
+    <script src="https://res.csc86.com/v2/l/seajs/sea.js"></script>
+    <script src="https://res.csc86.com/v2/c/order/js/seajs-config.js"></script>
+</head>
+
+<body>
+<!-- 网站顶部  start -->
+<!-- 网站顶部  start -->
+<div class="top_bar">
+    <div class="top_nav g-cf g-w" style="width:1190px;">
+        <div class="top_lf_nav">
+            <span class="wel">欢迎光临华南城网！</span>
+        <span class="dl J_guest">             
+  		<a href="//login.csc86.com/" class="navhover">登录</a>
+        <a href="//i.csc86.com/reg/index" class="navhover zc">免费注册</a>
+
+        </span>
+            <span class="J_member g-dn"></span>
+        </div>
+
+        <div class="top_rg_nav">
+            <span class="g-dib hoverMnu hoverMnu-u hyzxsp">
+                <a href="https://i.csc86.com" class="navhover" target="_blank">会员中心</a>
+                <i class="g-dib down_up_icon"></i>
+                <div class="dorp_menu dorp_menuwk">
+                    <div class="left after">
+                        <p class="title">买家中心</p>
+                        <ul>
+                            <li><a href="https://i.csc86.com/buyer/buyerOrder" target="_blank">已采购货物</a></li>
+                            <li><a href="http://member.csc86.com/inquiry/list.html" target="_blank">我的询盘</a></li>
+                            <li><a href="https://i.csc86.com/user/favoriteList" target="_blank">我的收藏</a></li>
+                            <li><a href="http://member.csc86.com/membercenter/userinfo" target="_blank" rel="nofollow">账号管理</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right after">
+                        <p class="title">卖家中心</p>
+                        <ul>
+                            <li><a href="https://i.csc86.com/seller/sellerOrders" target="_blank">已卖出货物</a></li>
+                            <li><a href="http://member.csc86.com/product/sell.html" target="_blank">发布产品</a></li>
+                            <li><a href="http://member.csc86.com/product/sell/list.html" target="_blank">管理产品</a></li>
+                            <li><a href="http://member.csc86.com/shop/shopinfo.html" target="_blank">我的旺铺</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </span>
+            <span class="user_chioce">
+                <a  href="http://www.csc86.com/jyh/" target="_blank" >我是采购商</a>
+                <a href="http://www.csc86.com/wsgys/" target="_blank" >我是供应商</a>
+            </span>
+
+            <!--付费服务项目 start-->
+            <span class="g-dib hoverMnu hoverMnu-ff">
+            <a href="" class="navhover" target="_blank">付费服务项目</a>
+            <i class="g-dib down_up_icon"></i>
+            <ul class="dorp_menu">
+                <!--<li><a href="http://www.csc86.com/zt/cst" target="_blank">城商通服务</a></li>-->
+                <li><a href="http://www.csc86.com/zt/bgqy" target="_blank">标杆企业服务</a></li>
+            </ul>
+            </span>
+            <!--付费服务项目 end-->
+            <span class="g-dib hoverMnu hoverMnu-m">
+                <i class="g-dib cellicon"></i>
+                <a href="javascript:;" class="navhover cellphonea">手机端</a> &nbsp;&nbsp;
+                <div class="hovercode">
+                    <div class="g-h1 t-line"></div>
+                    <h4 class="g-fs14">逛市场</h4>
+                    <p>下载客户端，逛市场更轻松</p>
+                    <p class="g-cf">
+                        <img class="g-fl" src="//res.csc86.com/v2/c/home/newindex/image/qr-ios.png" alt="Iphone" width="150" height="150">
+                        <img class="g-fr" src="//res.csc86.com/v2/c/home/newindex/image/qr-apk.png" alt="Android" width="150" height="150">
+                    </p>
+                </div>
+            </span>
+            <!--i class="v-line">|</i-->
+            <a href="http://cncms.csc86.com/help/" class="navhover kfzx" target="_blank">客服中心&nbsp;<span class="s1">400-184-8666</span></a>
+            <!--i class="v-line">|</i-->
+
+        </div>
+    </div>
+</div>
+<!-- 网站顶部  end -->
+<script>seajs.use('//res.csc86.com/v2/c2/newcgsc/js/newtop.js');</script>
+<script src="//res.csc86.com/v2/c2/uc/js/src/hostSetup.js"></script>
+<!--顶部导航 end--><div class="head">
+    <div class="g-o">
+        <a href="http://www.csc86.com/" class="g-fl csc" target="_blank"><img width="280" height="57" alt="实体商圈，可信交易。" src="https://res.csc86.com/v2/m/head-search/css/img/logo.png"></a>
+        <div class="pppz">
+            <a href="https://i.csc86.com/carDetail" target="_blank"><div class="gwc">进货车</div></a>
+            <a href="https://i.csc86.com/carDetail" target="_blank"><div class="num">12</div></a>
+        </div>
+    </div>
+</div>
+<!-- 头部  end -->
+<!-- 确认订单信息 start-->
+<div id="smtOrderMain" class="order-main">
+    <div class="g-o page-qrorder g-1200">
+        <div class="dht-all">
+            <div class="g-h20"></div>
+            <div class="dht-list">
+                <div class="sy1">查看进货车</div>
+                <div class="sy2">提交订单</div>
+                <div class="sy3">支付</div>
+                <div class="sy3">确认收货</div>
+                <div class="sy3">评价</div>
+            </div>
+
+            <div class="dht-img">
+                <img src="./css/img/1-2.jpg" height="31" width="1090">
+            </div>
+            <div class="dht-data">
+                2017-07-04 11:14:20
+            </div>
+            <div class="g-h20 cpn-tab">
+            </div>
+        </div>
+        <!--收货人信息 start-->
+        <div class="wrtaddr">
+            <div class="wrtaddr-hd">
+                <div class="wrtaddr-tit">收货人信息</div>
+            </div>
+            <div class="g-h10"></div>
+            <div class="wrtaddr-bd">
+                <div class="wrtaddr-as">
+                    <ul>
+                        <li class="g-ml0">
+                            <div class="li_list">
+                                <div class="list_tit">
+                                    张无忌
+                                </div>
+                                <div class="list_phone">
+                                    155****7456
+                                </div>
+                                <div class="list_address">
+                                     <span>广东省</span><span class="sp2">深圳市</span><span class="sp3">龙华新区</span>
+                                </div>
+                                <div class="list_adddzxq">
+                                    大海接到氯化胆碱和大海接到氯化胆碱和大海接到氯化胆碱和
+                                </div>
+
+                                <div class="list_all">
+                                    <span class="sp1">默认</span>
+                                    <span class="sp2">修改地址</span>
+                                    <span class="sp3">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li_list">
+                                <div class="list_tit">
+                                    张无忌
+                                </div>
+                                <div class="list_phone">
+                                    155****7456
+                                </div>
+                                <div class="list_address">
+                                    <span>广东省</span><span class="sp2">深圳市</span><span class="sp3">龙华新区</span>
+                                </div>
+                                <div class="list_adddzxq">
+                                    大海接到氯化胆碱和大海接到氯化胆碱和大海接到氯化胆碱和
+                                </div>
+
+                                <div class="list_all">
+                                    <span class="sp1">默认</span>
+                                    <span class="sp2">修改地址</span>
+                                    <span class="sp3">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li_list">
+                                <div class="list_tit">
+                                    张无忌
+                                </div>
+                                <div class="list_phone">
+                                    155****7456
+                                </div>
+                                <div class="list_address">
+                                    <span>广东省</span><span class="sp2">深圳市</span><span class="sp3">龙华新区</span>
+                                </div>
+                                <div class="list_adddzxq">
+                                    大海接到氯化胆碱和大海接到氯化胆碱和大海接到氯化胆碱和
+                                </div>
+
+                                <div class="list_all">
+                                    <span class="sp1">默认</span>
+                                    <span class="sp2">修改地址</span>
+                                    <span class="sp3">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="add_list">
+                                <div class="add-imgmdz"><img src="./css/img/add.jpg" height="30" width="30"></div>
+                                <div class="add-mdz">添加新地址</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--<ul class="addr-lst jsAddrLst">-->
+                    <!--<li class="cur"><label>-->
+                        <!--<input checked="checked" name="addrRadio" type="radio" value="24e0cdf0-c0b4-4cf5-ad44-501fac0757d0">-->
+                        <!--LUOLUO&nbsp;广东省深圳市南山区龙华-->
+                        <!--135****6827-->
+                    <!--</label><a class="jsEdit" href="javascript:;">编辑</a></li>-->
+
+                    <!--<li class="new"><label><input name="addrRadio" type="radio" value=""> 使用新地址</label></li>-->
+                <!--</ul>-->
+                <!--<div class="g-pr newAddr-box">-->
+                    <!--<form class="jsNewAddrFrm" action="https://i.csc86.com/memaddress/saveMemberAddress" methed="post">-->
+                        <!--<input type="hidden" name="isDefault" value="Y"/>-->
+                        <!--<input type="hidden" name="addressId" value=""/>-->
+                        <!--<table class="newAddr-tbl">-->
+                            <!--<colgroup>-->
+                                <!--<col width="70"/>-->
+                                <!--<col/>-->
+                            <!--</colgroup>-->
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<th><em class="g-cred">* </em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</th>-->
+                                <!--<td><input class="ipt-txt" id="consignee" name="consignee" type="text"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<th><em class="g-cred">* </em>所在地区：</th>-->
+                                <!--<td>-->
+                                    <!--<div class="areaSlt-box jsAreaSlt">-->
+                                        <!--<select id="province" class="frm-slt province" name="provinceId">-->
+                                            <!--<option value="">请选择</option>-->
+                                        <!--</select>-->
+                                    <!--</div>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<th><em class="g-cred">* </em>详细地址：</th>-->
+                                <!--<td><span class="jsSsq"></span><input class="ipt-txt" id="address" name="address" type="text" style="width:392px;"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<th><em class="g-cred">* </em>手机号码：</th>-->
+                                <!--<td><input class="ipt-txt" id="phone" name="mobile" type="text" style="width:248px;"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<th>固定电话：</th>-->
+                                <!--<td>-->
+                                    <!--<input class="g-mr10 ipt-txt" id="areaCode" name="areaCode" type="text" placeholder="区号" style="width:51px;"><input class="g-mr10 ipt-txt" id="tel" name="tel" type="text" placeholder="电话号码" style="width:102px;"><input class="ipt-txt" id="extnsn" name="ext" type="text" placeholder="分机号" style="width:51px;">-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<th><em class="g-cred">&nbsp; </em>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>-->
+                                <!--<td><input class="ipt-txt" id="post" name="email" type="text"></td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+
+                        <!--<div class="frm-btns"><a class="newaddr-abtn" href="">保存收货人信息</a></div>-->
+                        <!--<div class="g-h10"></div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <div class="g-h15"></div>
+            </div>
+        </div>
+
+        <div class="wrtaddr">
+            <div class="wrtaddr-hd">
+                <div class="wrtaddr-tit">配送方式</div>
+            </div>
+            <div class="receivingwk">
+                <span data-receiving="2" class="receiving_btn active">物流快递</span>
+                <span data-receiving="4" class="receiving_btn">上门自提</span>
+            </div>
+        </div>
+        <div class="g-h15"></div>
+        <div class="spqd">商品清单</div>
+        <!--收货人信息 end-->
+
+        <form class="jsSmtOrderFrm" action="https://i.csc86.com/pay/orderPay" method="post">
+            <input type="hidden" name="subOrderToken" value="15039870316133301220742410632493"/>
+            <input type="hidden" name="type" value="car"/>
+            <input type="hidden" id="mem_address_id" value="24e0cdf0-c0b4-4cf5-ad44-501fac0757d0" name="mem_address_id"/>
+            <input type="hidden" id="memberid" value="cbc720e3-a71f-4699-9186-c936aad020d7" name="memberid"/>
+            <input type="hidden" id="receiving" value="2" name="receiving"/>
+            <input type="hidden" name="isWjsc" value="Y"/>
+            <input type="hidden" name="needInvoice" value="Y"/>
+            <input type="hidden" name="preReceiveAddress" value="天津市天津市和平区"/>
+            <!--商品清单 start-->
+            <div class="probill-box">
+                <div class="probill-hd">
+
+                    <table class="order-tbl probill-tbl">
+                        <colgroup>
+                            <col width="303">
+                            <col width="143">
+                            <col width="105">
+                            <col width="160">
+                            <col width="104">
+
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="frst">商品信息</th>
+                            <th>单价（元）</th>
+                            <th>数量</th>
+                            <th>小计（元）</th>
+                            <th class="last">订单类型</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="probill-bd">
+                    <table class="order-tbl probill-tbl">
+                        <colgroup>
+                            <col width="303">
+                            <col width="143">
+                            <col width="105">
+                            <col width="160">
+                            <col width="104">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <td colspan="5">
+                                <div class="g-c8 g-tl subtit">供应商：<a href="http://hardware.csc86.com" target="_blank" class="gsaa">华南城网五金垂直商城</a></div>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr class="tbm">
+                            <input type="hidden" name="productId" value="5188572"/>
+                            <input type="hidden" name="catid" value="291010105"/>
+                            <input type="hidden" name="shopId" value="51dd74c1-5f27-4bee-b25b-7b7582aa18f0"/>
+                            <input type="hidden" name="price" value="5.00"/>
+                            <td>
+                                <input type="hidden" name="lineIds" value="12874"/>
+                                <input type="hidden" name="skuIds" value="549707"/>
+                                <div class="g-cf order-proitm sub-lef40">
+                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://hardware.csc86.com/product/5188572.html" target="_blank"><img src="http://img.csc86.com/product/2017/01/13/201701139141973.png" alt=""/></a></div>
+                                    <div class="g-pr proitm-bd">
+                                        <p class="title"><a href="http://hardware.csc86.com/product/5188572.html" target="_blank" title=""  class="gsaa">不锈钢沉头内六角螺丝 316不锈钢平杯螺丝</a></p>
+                                        <p class="inf">
+                                            <span></span>
+                                            <span>尺码：M3*5</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><em>¥</em> <span class="jsOnePrc">0.05</span></td>
+                            <td>
+                                <div class="order-num-opts jsNumOpts">
+                                    100
+                                    <input type="hidden" name="attrNums" value="100"/>
+                                </div>
+                            </td>
+                            <td><em>¥</em> <span class="prc jsOneTprc no">5.00</span></td>
+                            <td rowspan="1">
+                                现货
+                            </td>
+                        </tr>
+                        <tr >
+                            <input type="hidden" name="productId" value="5194204"/>
+                            <input type="hidden" name="catid" value="271533833"/>
+                            <input type="hidden" name="shopId" value="51dd74c1-5f27-4bee-b25b-7b7582aa18f0"/>
+                            <input type="hidden" name="price" value="268.00"/>
+                            <td>
+                                <input type="hidden" name="lineIds" value="12870"/>
+                                <input type="hidden" name="skuIds" value="0"/>
+                                <div class="g-cf order-proitm sub-lef40">
+                                    <div class="g-fl g-ivm proitm-hd"><a class="i" href="http://hardware.csc86.com/product/5194204.html" target="_blank"><img src="http://img.csc86.com/product/2017/01/05/201701051114006.jpeg" alt=""/></a></div>
+                                    <div class="g-pr proitm-bd">
+                                        <p class="title"><a href="http://hardware.csc86.com/product/5194204.html" target="_blank" title="" class="gsaa">东成冲击电钻套装Z1J-FF04-13</a></p>
+                                        <p class="inf">
+                                            <span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class=""><em>¥</em> <span class="jsOnePrc">268.00</span></td>
+                            <td class="">
+                                <div class="order-num-opts jsNumOpts">
+                                    1
+                                    <input type="hidden" name="attrNums" value="1"/>
+                                </div>
+                            </td>
+                            <td><em>¥</em> <span class="prc jsOneTprc no">268.00</span></td>
+                            <td rowspan="1">
+                                现货
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <!--给卖家留言 start-->
+                    <div class="lvmssg-box">
+                        <span class="nums"><em>¥</em> 291.00</span><span class="numsinfo">货物合计金额：</span><span class="g-c8">给卖家留言：</span><input name="message" id="lvmssgIpt" class="ipt-txt lvmssgIpt" type="text" placeholder="可以告诉卖家你的特殊要求，50个字以内" style="width:430px;"><span class="numtip">还可以输入<em>50</em>字</span>
+                    </div>
+                    <!--给卖家留言 end-->
+
+                    <!--发票 start-->
+                    <div class="invoice">
+                        <input name="tfl" type="hidden" value="0">
+                        <input type="hidden" name="shopId" value=""/>
+                        <input type="hidden" name="invoiceId" value=""/>
+                        <div class="title">
+                            <span>发票信息</span><span class="tit2" data-ids='{"provinceId":"fdbafe15-aaf5-48e5-903e-22434a115382","cityId":"7ed2a302-43a4-43d1-86f0-82e18e23bac9","districtId":"1749b7c6-96d9-4ffd-8772-79ff4e50f7b3"}'>修改</span>
+                        </div>
+                        <div class="content">
+                            <div class="fpxx">
+                                <div class="fpx1">发票抬头：<span class="fpxxs1">华南城</span></div>
+                                <div class="fpx1">发票收件人信息：<span class="fpxxs2">罗</span><span class="fpxxs3">天津市</span><span class="fpxxs4">天津市</span><span class="fpxxs5">和平区</span><span class="fpxxs6">hao</span><span class="fpxxs7">135****6827</span></div>
+                            </div>
+                            <div class="fpno dis"><span class="s1">不需要发票</span></div>
+                            <table class="invoicetable" cellspacing="0" cellpadding="0">
+                                <colgroup>
+                                    <col width="120">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td class="tr" ><em>* </em>发票类型：</td>
+                                    <td class="tl">
+                                        <input type="hidden" name="invoiceType"  value="" id="invoiceType">
+                                        <!--<label><input type="radio" name="invoiceType" checked value="1">普通发票</label><label><input type="radio" name="invoiceType"  class="lab1" value="2" >专用发票</label>-->
+                                        <span class="invtab cur">普通发票</span>
+                                        <span class="invtab1 g-ml20">专用发票</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tr"><em>* </em>公司名称：</td><td class="tl"><input class="txt1 jsinp" name="companyName" type="text" value="华南城"></td>
+                                </tr>
+
+
+                                <tr class='disnone'>
+                                    <td class="tr"><em>* </em>纳税人识别号：</td><td class="tl"><input class="txt1" name="taxpayerId" type="text" value=""></td>
+                                </tr>
+                                <tr class='disnone'>
+                                    <td class="tr"><em>* </em>公司地址：</td><td class="tl"><input class="txt1" name="companyAddress" type="text" value=""></td>
+                                </tr>
+                                <tr class='disnone'>
+                                    <td class="tr"><em>* </em>电话号码：</td><td class="tl"><input class="txt1 txt2" name="telephone" type="text" value=""></td>
+                                </tr>
+                                <tr class='disnone'>
+                                    <td class="tr"><em>* </em>开户银行：</td><td class="tl"><input class="txt1" name="deposit" type="text" value=""></td>
+                                </tr>
+                                <tr class='disnone'>
+                                    <td class="tr"><em>* </em>开户银行账号：</td><td class="tl"><input class="txt1" name="bankNo" type="text" value=""></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="tr"><em>* </em>发票收件人：</td><td class="tl"><input class="txt1 jsinp" name="receiver" type="text" value="罗"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tr"><em>* </em>收件人所在地区：</td><td class="tl">
+                                    <select  class="frm-slt province jsinp" name="provinceId">
+                                        <option value="">请选择</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td class="tr"><em>* </em>详细地址：</td><td class="tl"><span class="jsSsq">天津市天津市和平区</span><input class="txt1 jsinp" name="receiveAddress" type="text" value="hao"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tr"><em>* </em>手机号码：</td><td class="tl"><input class="txt1 txt2 jsinp" name="phone" type="text" placeholder="" value="13510166827"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="tdan"><span class="an">确认发票信息</span><span class="an2">暂不需要发票信息</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--发票 end-->
+                    <div class="sprt-box"></div>
+                </div>
+            </div>
+            <!--商品清单 end-->
+
+            <!--汇总信息 start-->
+            <div class="g-cf ttlInf-box">
+                <div class="ttlInf-hd"><span>货品种类：<em class="jsTypeNum">5</em>种</span><span>数量总计：104件</span></div>
+                <!--优惠券 start-->
+                <div class="g-mt25 cpn-box">
+                    <input type="hidden" id="cuproduct" name="cuproduct"/>
+                    <h3 class="box-hd"><i></i><span>使用优惠劵（代金劵/现金劵）</span></h3>
+                    <div class="box-bd">
+                        <ul class="g-cf g-mt10 cpn-tab">
+                            <li class="cur">可用优惠劵（<em class="num1">0</em>）</li>
+                            <li>不可用优惠劵（<em class="num2">0</em>）</li>
+                        </ul>
+                        <div class="cpn-tab-c jsKycpn">
+                            <!--有可用 start-->
+                            <ul class="cpn-lst">
+                                <li data-cpnprc="500" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                                <li data-cpnprc="500" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                                <li data-cpnprc="500" data-max="1000"><input class="g-ml20" name="" type="checkbox" value=""><span class="prc">3000-500</span><span class="desc">仅可购买纺织、皮革类目自营商品</span><span class="type">代金券</span><span class="date">有效期至2015-09-30</span></li>
+                            </ul>
+                            <!--有可用 end-->
+
+                            <!--无可用 start-->
+                            <p class="no-cpn">
+                                此订单暂无可用的优惠券！您可以<a href="" target="_blank">查看所有优惠券</a>了解使用限制！<br/>
+                                如果您有优惠券号或者实体券，需要先<a href="" target="_blank">激活绑定</a>才能使用！
+                            </p>
+                            <!--无可用 end-->
+
+                        </div>
+                        <div class="g-dn cpn-tab-c jsBkycpn"><p class="loading">加载失败，请刷新页面后重试！
+                        </p></div>
+                    </div>
+                    <div class="box-bd text"> 特别说明：合并下单使用优惠券的，订单取消仅退实际支付金额，优惠券不可退，请慎重使用！ </div>
+                </div>
+                <!--优惠券 end-->
+                <div class="ttlInf-bd">
+                    <p><span class="sp1">商品种类：</span><span class="g-fs16 jsAllTPrc sprt">1,372.00</span> </p>
+                    <p><span class="sp2">数量总计：</span><span class="g-fs16 jsAllTPrc sprt">1,372.00</span></p>
+                    <p><span class="sp2">订单总金额：</span><span class="g-fs16 jsAllTPrc sprt"><em>¥ </em>1,372.00</span></p>
+                    <p><span class="sp2">用劵抵扣金额：</span><span class="jsCpnPrc sprt"><em>¥ </em>0.00</span></p>
+                    <p class="yfTtl-prc jsYfTtlPrc"><span class="sp2">应付总额（不含运费）：</span><span class="g-cred g-fs16 jsPayAllTPrc sprt2"><em>¥ </em>1,372.00</span></p>
+                    <p class="g-h15"></p>
+
+                    <!--<p>订单总金额：<strong class="g-fs16 jsAllTPrc">291.00</strong> 元</p>-->
+                    <!--<p>用劵抵扣金额：<strong class="g-fs16">-<em class="jsCpnPrc">0.00</em></strong> 元</p>-->
+                    <!--<p class="yfTtl-prc jsYfTtlPrc">应付总额（不含运费）：<em class="g-cred g-fs16 jsPayAllTPrc">291.00</em> <sapn style="font-weight:normal;">元</span></p>-->
+                    <!--<p class="g-h15"></p>-->
+                    <!--<p>-->
+                        <!--<a class="red-abtnleft" href="https://i.csc86.com/carDetail">返回采购单修改</a>-->
+                        <!--<a class="red-abtn jsOrderSmt">提交订单</a>-->
+                    <!--</p>-->
+                </div>
+                <div class="ttlInf-btn">
+                    <a class="red-abtnleft" href="https://i.csc86.com/carDetail">返回采购单修改</a>
+                    <a class="red-abtn jsOrderSmt bjs-ff">提交订单</a>
+                </div>
+            </div>
+            <!--汇总信息 end-->
+        </form>
+    </div>
+</div>
+<!-- 确认订单信息 end-->
+
+<div  id="delete_dz">
+    <div class="delete_dz">
+        <div class="delete_tit">
+            确认删除此地址吗？
+        </div>
+        <div class="delete_an">
+            <div class="close_btn">取消</div>
+            <div class="ope_btn">确认</div>
+        </div>
+    </div>
+</div>
+
+<div class="update_dz" id="update-dz">
+    <div class="g-pr newAddr-box">
+        <form class="jsNewAddrFrm" action="https://i.csc86.com/memaddress/saveMemberAddress"
+              methed="post">
+            <input type="hidden" name="isDefault" value="Y"/>
+            <input type="hidden" name="addressId" value="N"/>
+            <table class="newAddr-tbl">
+                <colgroup>
+                    <col width="70"/>
+                    <col/>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th><em class="g-cred">* </em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</th>
+                    <td><input class="ipt-txt" id="consignee" name="consignee" type="text" style="width:248px;"></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">* </em>所在地区：</th>
+                    <td>
+                        <div class="areaSlt-box jsAreaSlt">
+                            <select id="province" class="frm-slt province" name="provinceId">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><em class="g-cred">* </em>详细地址：</th>
+                    <td><span class="jsSsq"></span><input class="ipt-txt" id="address"
+                                                          name="address" type="text" style="width:392px;"></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">* </em>手机号码：</th>
+                    <td><input class="ipt-txt" id="phone" name="mobile" type="text"
+                               style="width:248px;"></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1" style="width:230px;">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>固定电话：</th>
+                    <td>
+                        <input class="g-mr10 ipt-txt" id="areaCode" name="areaCode" type="text"
+                               placeholder="区号" style="width:51px;"><input class="g-mr10 ipt-txt" id="tel" name="tel" type="text"
+                                                                           placeholder="电话号码" style="width:102px;"><input class="ipt-txt" id="extnsn" name="ext" type="text"
+                                                                                                                          placeholder="分机号" style="width:51px;">
+                    </td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">&nbsp; </em>邮
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>
+                    <td><input class="ipt-txt" id="post" name="email" type="text"></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="frm-btns"><a class="newaddr-abtn" href="">保存收货人信息</a></div>
+            <div class="g-h10"></div>
+        </form>
+    </div>
+</div>
+
+<div class="add_dz" id="add-dz" >
+    <div class="g-pr newAddr-box">
+        <form class="jsNewAddrFrm" action="https://i.csc86.com/memaddress/saveMemberAddress"
+              methed="post">
+            <input type="hidden" name="isDefault" value="N"/>
+            <input type="hidden" name="addressId" value="Y"/>
+            <table class="newAddr-tbl">
+                <colgroup>
+                    <col width="70"/>
+                    <col/>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th><em class="g-cred">* </em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</th>
+                    <td><input class="ipt-txt" id="add_consignee" name="consignee" type="text" ><em class="em1"><img src="./css/img/succnull.png" height="14" width="14"> </em></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">* </em>所在地区：</th>
+                    <td>
+                        <div class="areaSlt-box jsAreaSlt">
+                            <select id="add_province" class="frm-slt addprovince" name="provinceId">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">* </em>详细地址：</th>
+                    <td><span class="jsSsq"></span><input class="ipt-txt" id="add_address"
+                                                          name="address" type="text" style="width:392px;"><em class="em1"><img src="./css/img/succnull.png" height="14" width="14"> </em></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">* </em>手机号码：</th>
+                    <td><input class="ipt-txt" id="add_phone" name="mobile" type="text"
+                               style="width:248px;"><em class="em1"><img src="./css/img/succnull.png" height="14" width="14"> </em></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1"  style="width:248px;">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>固定电话：</th>
+                    <td>
+                        <input class="g-mr10 ipt-txt" id="add_areaCodes" name="areaCode" type="text"
+                               placeholder="区号" style="width:51px;"><input class="g-mr10 ipt-txt" id="add_tel" name="tel" type="text"
+                                                                           placeholder="电话号码" style="width:102px;"><input class="ipt-txt" id="add_extnsn" name="ext" type="text"
+                                                                                                                          placeholder="分机号" style="width:51px;"><em class="em1"><img src="./css/img/succnull.png" height="14" width="14"> </em>
+                    </td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><em class="g-cred">&nbsp; </em>邮
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>
+                    <td><input class="ipt-txt" id="add_post" name="email" type="text"><em class="em1"><img src="./css/img/succnull.png" height="14" width="14"> </em></td>
+                </tr>
+                <tr class="nothide">
+                    <th></th>
+                    <td>
+                        <div class="ipt-nottxt1">
+                            <img src="./css/img/notnull.png" height="14" width="14">&nbsp;&nbsp;<em></em>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="frm-btns"><a class="newaddr-abtn" href="javascript:;">保存收货人信息</a></div>
+            <div class="g-h10"></div>
+        </form>
+    </div>
+</div>
+
+<!-- 网站底部  start -->
+<dl class="g-w frie-links">
+    <div class="more">
+        <a href="http://www.csc86.com/hwlink/" target="_blank">更多</a>
+        <span></span>
+    </div>
+    <dt>合作伙伴：</dt>
+    <dd class="hide">
+        <a href="http://www.aolaigo.com/" target="_blank" title="奥莱购">奥莱购</a>
+        <i>|</i>
+        <a href="http://ls.csc86.com/" target="_blank" title="绿色有机食品">绿色有机食品</a>
+        <i>|</i>
+        <a href="http://www.askci.com" target="_blank" title="中商情报网">中商情报网</a>
+        <i>|</i>
+        <a href="http://shike.gaotie.cn" target="_blank" title="高铁网">高铁网</a>
+        <i>|</i>
+        <a href="http://www.pvc123.com" target="_blank" title="环球塑化网">环球塑化网</a>
+        <i>|</i>
+        <a href="http://www.caigou.com.cn" target="_blank" title="教育装备采购网">教育装备采购网</a>
+        <i>|</i>
+        <a href="http://www.lvmae.com" target="_blank" title="绿蚂蚁物流">绿蚂蚁物流</a>
+        <i>|</i>
+        <a href="http://guangzhou.8684.cn" target="_blank" title="广州公交查询">广州公交查询</a>
+        <i>|</i>
+        <a href="http://qicai.fengniao.com" target="_blank" title="蜂鸟网">蜂鸟网</a>
+        <i>|</i>
+        <a href="http://guangzhou.anjuke.com" target="_blank" title="广州房产网">广州房产网</a>
+        <i>|</i>
+        <a href="http://ee.ofweek.com" target="_blank" title="电子工程网">电子工程网</a>
+        <i>|</i>
+        <a href="http://www.53info.com" target="_blank" title="网商之窗">网商之窗</a>
+        <i>|</i>
+        <a href="http://www.hangye5.com" target="_blank" title="行业网">行业网</a>
+        <i>|</i>
+        <a href="http://www.eechina.com" target="_blank" title="电子工程网">电子工程网</a>
+        <i>|</i>
+        <a href="http://www.51kids.com" target="_blank" title="中国童装网">中国童装网</a>
+        <i>|</i>
+        <a href="http://www.meilele.com/jiaju/" target="_blank" title="深圳家具">深圳家具</a>
+        <i>|</i>
+        <a href="http://www.jimei.com.cn" target="_blank" title="集美家居">集美家居</a>
+        <i>|</i>
+        <a href="http://product.91.com" target="_blank" title="91手机大全站">91手机大全站</a>
+        <i>|</i>
+        <a href="http://www.he-nan.com" target="_blank" title="河南网">河南网</a>
+        <i>|</i>
+        <a href="www.ca-maimai.com" target="_blank" title="中国电子合同">中国电子合同</a>
+        <i>|</i>
+        <a href="http://www.stuhack.com" target="_blank" title="学生技术联盟">学生技术联盟</a>
+        <i>|</i>
+        <a href="http://www.hot178.com" target="_blank" title="178商机网">178商机网</a>
+        <i>|</i>
+        <a href="familydoctor.com" target="_blank" title="家庭医生在线">家庭医生在线</a>
+        <i>|</i>
+        <a href="www.ttuu.com" target="_blank" title="推优网">推优网</a>
+        <i>|</i>
+        <a href="http://fuzhou.xcar.com.cn" target="_blank" title="福州车市">福州车市</a>
+        <i>|</i>
+        <a href="http://www.gk-z.com" target="_blank" title="易展工控网">易展工控网</a>
+        <i>|</i>
+        <a href="http://www.cntronics.com" target="_blank" title="电子元件技术网">电子元件技术网</a>
+        <i>|</i>
+        <a href="http://rizhao.focus.cn" target="_blank" title="日照房地产">日照房地产</a>
+        <i>|</i>
+        <a href="http://www.icycn.com" target="_blank" title="创业中国">创业中国</a>
+    </dd>
+</dl>
+<div class="g-o link">
+    <div class="g-h10"></div>
+    <div class="love-links">
+        <a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+    </div>
+    <p class="p1">Copyright©2009-2015 China South City Holdings Limited. All Rights Reserved</p>
+    <p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+    <div class="foot-lg">
+        <span><a target="_blank"  rel="nofollow" href="http://61.144.227.239:9002"><img alt="深圳市网络警察" src="https://res.csc86.com/image/c/index/b01.png"></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank" rel="nofollow"><img src="https://res.csc86.com/image/c/index/sznet110wangan.png" alt="公共信息安全网络监察"></a></span><span><a rel="nofollow" target="_blank" href="http://wljg.gdgs.gov.cn/"><img alt="广东省网络工商" src="https://res.csc86.com/image/c/index/b03.png"></a></span><span><a href="https://cert.ebs.org.cn/24773903-dda8-4158-ab39-3b36005dc280.html" rel="nofollow" target="_blank"><img alt="众信验证" height="50" src="http://www.csc86.com/uploadfile/2015/0408/20150408045446770.gif" width="120"></a></span>
+    </div>
+</div>
+<!-- 网站底部 end -->
+
+<script>seajs.use('//res.csc86.com/v2/c/order/js/submit-order.js?1503987031611');</script>
+<!-- 统计代码 start -->
+<div style="display:none"><script src="https://res.csc86.com/f=js/m/statistics.js"></script></div>
+<!-- 统计代码 end -->
+</body>
+</html>

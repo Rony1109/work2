@@ -1,0 +1,77 @@
+@import url('/v2/m/newtopnav/css/style.css');
+@import url('/v2/m/newsearch/css/style.css');
+@import url('/v2/m/newnav/css/style.css');
+@import url('/v2/m/foot/css/style.css');
+@import url('/v2/m/page/style_li.css');
+
+ a{ color:#444;}
+ a:hover,.foot li div a:hover,.foot .love-links a:hover,.frie-links dd a:hover{color:#f67301;}
+
+.c-logo{border-left:solid 1px #d2d2d2;margin: 45px 0 0 -8px;padding-left: 14px;}
+
+/* 面包屑 */
+.crumbs{padding-left: 13px;height: 35px;font: 12px/35px simsun;color: #888;background: #f6f6f6;}
+.crumbs span{padding: 0 10px;color: #ccc;}
+.crumbs strong{font-weight: normal;color: #444;}
+/* 红色逗点列表 */
+.list-red li{background: url(img/gather.png) no-repeat -195px -115px;height: 24px;line-height: 24px;text-indent: 11px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+/* 灰色逗点列表 */
+.list-grey li{background: url(img/gather.png) no-repeat -195px -160px;height: 26px;line-height: 26px;text-indent: 11px;overflow: hidden;-ms-word-break: break-all;word-break: break-all;}
+
+.title-m{overflow: hidden;}
+.title-m a.more{float: right;display: inline;width: 32px;height: 30px;font: 12px/30px simsun;color: #8f8f8f;}
+.title-m a:hover{color: #ff7000;}
+.title-m h2{font:700 16px/30px Microsoft YaHei,simsun;}
+
+.mt-10{margin-top: 10px;}
+.mt-12{margin-top: 12px;}
+.mt-11{margin-top: 11px;}
+.g-h28{height: 28px;}
+
+/* 页脚导航 */
+
+.foot-nav{padding-top: 12px;border-top: 2px #dfdfdf solid;}
+.footer-title{float: left;display: inline;width: 247px;font:700 italic  26px Microsoft YaHei,simsun;text-align: center;}
+.footer-title span{display: block;font: 16px Microsoft YaHei,simsun;color: #888;}
+.nav-list li{float: left;display: inline;padding: 0 11px 0 30px;border-left: 1px dashed #cacaca;}
+.nav-list li p{margin-bottom: 8px;line-height: 18px;overflow: hidden;}
+.nav-list li a{overflow: hidden;position: relative;float: left;display: inline;margin-right: 19px;max-width: 48px;_width:expression(this.scrollWidth>"48"?"48px":'auto');height: 20px;-ms-word-break: break-all;word-break: break-all;color: #a5a5a5;}
+.nav-list li a.first{*top:-2px;font: 14px Microsoft YaHei,simsun;color: #8a8a8a;}
+.nav-list li a:hover{color: #ff7000;}
+.nav-list li.last{padding-right: 0;}
+
+/* 页脚 */
+.link{border-top: 0;}
+.partner-title{position: relative;height: 25px;font:700 16px Microsoft YaHei,simsun;border-bottom: 2px  #e2e2e2 solid;}
+.partner-title span{position: absolute;display: block;left: 0;top: 0;width: 87px;height: 26px;text-align: center;border-bottom: 2px #8e0500 solid;}
+
+.partner{margin-top: 28px;}
+.partner li{float: left;display: inline;margin-right: 18px;width: 125px;height: 64px;border: 1px #cdcdcd solid;}
+.partner li.last{margin-right: 0;}
+
+.foot{border-top-color: #8e0500;}
+.dz_h_box5 {overflow:hidden;}
+.hzhb_list {width:1200px; padding:15px 0 10px 2px;}
+.hzhb_list li {float:left; _display:inline; width:125px; height:64px; margin-right:20px;}
+.hzhb_list li img {width:125px; height:64px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:10px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links span a:hover{ color:#f67301} 
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;overflow: hidden;background:url(img/gather.png) 0 -154px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -186px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+/* 分页居中 */
+.Spage{margin: 0 auto;text-align: center;}
+.Spage ul{display: inline;}
+
+/* 分类列表 */
+
+.observe li{height: 26px;line-height: 26px;overflow: hidden;color: #888;-ms-word-break: break-all;word-break: break-all;}
+.observe li a{padding-left: 4px;}
+.observe li.set-split{height: 6px;line-height: 0;font-size: 0;}

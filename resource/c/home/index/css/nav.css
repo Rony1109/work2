@@ -1,0 +1,73 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url('');  没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+ /**头部广告**/
+.max-banner,.min-banner{ position:relative;}
+.max-banner span,.min-banner span{ width:15px; height:15px; display:inline-block; background:url(img/ind-close.png) no-repeat left top; cursor:pointer; position:absolute; right:12px; top:12px; z-index:10;}
+.min-banner{ display:none;}
+
+body a{outline:none;blr:expression(this.onFocus=this.blur());}
+ 
+ /*主导航*/
+.idx-nav{height:37px; min-width:1000px; line-height:37px; background:#e94545;}
+.idx-nav .g-o{position:relative;}
+.idx-nav li{ float:left; width:100px;_width:95px; height:37px; line-height:37px; text-align:center;}
+.idx-nav li a{ float:left; width:95px;_width:90px; height:34px; line-height:30px;_line-height:32px;margin-top:3px;font-family:Microsoft YaHei,simhei; font-size:15px;font-weight:700; color:#FFF;}
+.idx-nav li a.new{ background-image: url(img/new.gif); background-position: 68px 5px; background-repeat: no-repeat; }
+@media all and (-webkit-min-device-pixel-ratio:0) {
+	.idx-nav li a{ line-height:32px}
+}
+.idx-nav li.rel-iocl{ position:relative;}
+.idx-nav li.rel-iocl i{ position:absolute; top:-6px; right:12px; width:24px; height:13px; background:url(img/nav-iocl.png) no-repeat 0 0;}
+
+.idx-nav .jnb-vip{position:absolute;right:5px;bottom:0;_bottom:1px; height:53px;}
+.idx-nav .jnb-vip:hover{text-decoration:none;}
+.idx-nav li a{margin-top:4px; padding-right:10px;}
+.idx-nav li.cur a,.idx-nav li a:hover{ background:#fff url(img/nav-cur.png) no-repeat 100% -1px;_background:#fff url(img/nav-cur.png) no-repeat 100% top;color:#e94545; text-decoration:none; *zoom:1;}
+.idx-nav .yesmore{ position:relative; float:right;*width:176px; margin-top:-19px;*margin-right:5px}
+.idx-nav .yesmore img{ float:right;display:block}
+.idx-nav .yesmore a{*width:176px; }
+.idx-nav .yesmore a:hover{background:none}
+
+.hot-ity{ width:998px; height:24px; line-height:24px;border:1px solid #ebebeb; border-top:none;}
+.hot-ity span{ float:left; padding-right:15px; margin:0 -20px 0 30px;}
+.hot-ity a{ float:left;  padding:0 18px;}
+.hot-ity a.new{background:url(img/hot.png) no-repeat right 3px; margin-right:3px; color:#f57301; font-weight:700;}
+.hot-ity i{ color:#d8d8d8; float:left; font-style:normal;}
+
+ /*样式重写*/
+ .foot{ border-top:2px solid #e64744;}
+ 
+.foot-lg{ padding:10px 0;}
+.foot-lg span{ border:1px solid #d2d2d2; margin:0 5px; display:inline-block; height:50px;}
+
+ a{ color:#444;}
+ a:hover,.foot li div a:hover,.foot .love-links a:hover,.frie-links dd a:hover{color:#f67301;}
+ 
+.frie-links{position:relative;height:auto; overflow:hidden;zoom:1; border-top:2px solid #e6e6e6;line-height:26px; padding:6px 0;}
+.frie-links dt{ width:75px; height:26px; float:left; display:inline-block; font-weight:700;}
+.frie-links dd{ width:880px; height:auto; float:left; display:inline-block;}
+.frie-links .hide{height:26px;overflow:hidden;}
+.frie-links dd a{white-space:normal; word-warp:nomal; color:#444; display:inline-block;}
+.frie-links dd i{ color:#d8d8d8; margin:0 5px; font-style:normal;}
+.frie-links .more{position:absolute;top:6px;right:6px;_top:12px;}
+.frie-links .more span{display:inline-block;width:9px;height:9px;_position:relative;_top:4px;_left:2px;background:url(img/r_iocl.png) -2px -1239px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.frie-links .more .s1{background-position:0 -1260px;}
+
+
+/**楼层广告
+.banner,.banner img{ width:1000px; height:40px;}**/

@@ -1,0 +1,145 @@
+/**
+ * 前端模板css文件
+ * 
+ */
+
+/* 依赖的模块 */
+/*@import url(''); 没用到模块的话请注释本行 */
+
+
+/**
+ * 建议的书写顺序
+ * 标签样式
+ * 公共样式
+ * 模块样式
+ * 具体内容
+ * 
+ */
+
+::-webkit-scrollbar{width:6px;height:6px;border-radius:3px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:black}
+::-webkit-scrollbar-track-piece{background:#70a5d7}
+::-webkit-scrollbar-thumb:vertical{background-color:#fff;border-radius:3px}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#fff}
+
+.scrollbar{
+overflow-y:auto;
+*position:relative;
+scrollbar-arrow-color:#fff;
+_scrollbar-arrow-color:#6fa4d8;
+scrollbar-face-color:#fff;
+scrollbar-darkshadow-color:#6fa4d8;
+scrollbar-highlight-color:#6fa4d8;
+scrollbar-3dlight-color:#6fa4d8;
+scrollbar-shadow-color:#6fa4d8;
+scrollbar-track-color:#6fa4d8;
+}
+
+.body-map{min-width:1320px;background:url(../image/map.jpg) no-repeat}
+
+/*top-bar*/
+.top-bar{position:relative;min-width:1000px;height:25px;border-bottom:solid 1px #ddd;background:#fff;z-index:900}
+.top-bar .v-line{color:#d8d8d8;margin:0 8px}
+.top-sign-info{_display:inline;line-height:25px;*line-height:24px;margin-left:10px}
+.top-sign-info a{color:#067ed4}
+.top-sign-info .top-msg-num{margin-left:5px;padding:1px 4px;background:#2664a2;color:#fff}
+.top-msg-num:hover{color:#fff}
+
+.top-quick-link{width:230px}
+.top-quick-link,.top-quick-link a{color:#000}
+.top-quick-link .item{position:relative;float:left;line-height:25px;*line-height:24px;padding:0 6px}
+.top-my-account{width:66px}
+.top-into-group{width:78px}
+.top-quick-link .hd{height:25px}
+.top-quick-link .arr{position:absolute;display:block;width:0;height:0;overflow:hidden;border:solid 6px #fff;border-top-color:#999;top:10px;right:6px;*top:8px}
+.top-quick-link .bd{display:none;position:absolute;border:solid 1px #ddd;border-top:0;background:#fff;right:-1px;top:26px}
+.top-quick-link .hover .hd{position:relative;padding:0 12px 0 6px;margin:0 -7px;_margin-bottom:-1px;border:solid 1px #ddd;border-bottom:0;line-height:24px;*line-height:22px;background:#fff}
+.top-quick-link .hover .arr{border-top-color:#fff;border-bottom-color:#999;top:2px;*top:0}
+.top-quick-link .hover .bd{display:block}
+.top-quick-link .bd a{color:#067ed4}
+.top-my-account .bd{width:78px;padding:0 0 8px}
+.top-my-account .bd ul{float:left;width:72px;padding-left:6px}
+.top-my-account .bd .yesmore-bd{border-left:dotted 1px #ddd;margin-left:-1px}
+.top-into-group .bd{width:90px}
+.top-into-group .bd ul{padding:0 0 6px 9px}
+
+/*布局*/
+.layout-search{position:absolute;margin:6px 0 0 708px}
+.layout-search-active{z-index:900}
+.layout-left{*position:relative;z-index:1}
+.layout-left,.layout-left-bg{height:680px;width:245px}
+.layout-left-bg{position:absolute;*position:relative;left:0;margin-top:-680px;background:#fff;opacity:0.5;filter:alpha(opacity=50);z-index:-1}
+.layout-map{position:absolute}
+.layout-right{height:700px;margin:-680px 0 0 245px;_margin-top:-690px}
+.layout-right-bg{height:700px;margin:-700px 0 0 1095px;position:relative;background:#fff;opacity:0.6;filter:alpha(opacity=60);z-index:-1}
+.layout-right,.layout-right-bd-bg{width:850px;overflow:hidden}
+.layout-right-bd-bg{position:relative;top:-700px;height:700px;background:#00468e;opacity:0.8;filter:alpha(opacity=80);z-index:-1}
+.go-back{position:absolute;margin-left:743px;height:26px;padding:0 5px 0 38px;color:#fff;background:#a3d9e9 url(img/help-bg.png) no-repeat 5px -50px}
+.go-back:hover{text-decoration:none}
+
+
+/*logo*/
+.logo{width:182px;height:81px;text-align:center;padding:20px 15px}
+.logo h1{margin-top:8px;font-size:20px;font-weight:400}
+.logo a{color:#333}
+.logo a:hover{text-decoration:none}
+
+/*导航*/
+.nav{position:relative;width:220px;margin:0 0 16px 6px;padding:8px 0 20px;border:dashed #dcdddd;border-width:1px 0}
+
+.nav-items{position:relative;z-index:2}
+.nav-items li{_height:40px}
+.nav-items .cur{margin:-2px 0;border:solid 2px #ff9935;_border-right-width:0}
+.nav-items a{display:block;height:40px;color:#444;padding-left:12px;font-size:13px;font-family:microsoft yahei;line-height:40px;overflow:hidden}
+.nav-items .cur a{padding-left:10px}
+.nav-items .dis a{cursor:text}
+.nav-items a span{margin-left:9px;font-size:10px;color:#b5b5b5;font-family:arial;text-transform:uppercase}
+.nav-items a:hover{text-decoration:none}
+.nav-items .cur a{background:#fff;width:208px}
+.nav-items-bd,.nav-items-bg{position:absolute}
+.nav-items-bd{display:none;top:6px;left:218px}
+.nav-items-bd-cur{display:block}
+.nav-items-bd a{display:block;padding-left:8px;color:#444;_height:40px}
+.nav-items-bd a:hover{text-decoration:none}
+.nav-items-bd .active{background:#ff9935}
+.nav-items-bd .active a{color:#fff}
+.nav-items-bd ul{position:relative;display:none;width: 158px;border:solid 2px #ff9935;line-height:40px;z-index:1}
+.nav-items-bd li{height:40px;overflow:hidden}
+.nav-items-bd .cur{display:block}
+.nav-items-bg{width: 162px;left:0;top:0;bottom:0;background:#fff;opacity:0.8;filter:alpha(opacity=80);z-index:0}
+
+.nav-btn{padding:6px 0 0 6px}
+.nav-btn a{float:left;width:66px;height:30px;padding-left:32px;margin-right:1px;background:#f08a26 url(img/help-traffic-btn-bg.png) no-repeat 0 0;color:#fff;font-size:15px;font-family:microsoft yahei;line-height:29px}
+.nav-btn .traffic{background-position:-98px 0}
+.nav-btn a:hover{text-decoration:none;background-position:0 -30px}
+.nav-btn .traffic:hover{background-position:-98px -30px}
+
+/*快捷*/
+.quick{width:194px;margin-left:12px}
+.quick li{position:relative;float:left;width:94px;height:94px;margin:0 3px 12px 0;background:url(img/quick-bg.png) no-repeat;text-align:center}
+.quick .dining{}
+.quick .bank{background-position:-94px 0}
+.quick .hotel{background-position:0 -94px}
+.quick .enter{background-position:-94px -94px}
+.quick a{display:block;height:20px;padding:74px 0 0 3px;color:#9fa0a0}
+.quick a:hover{text-decoration:none}
+.quick span{position:absolute;top:2px;right:2px;display:none;width:16px;height:16px;overflow:hidden;text-indent:-9999pt}
+.quick .cur a{background-image:url(img/quick-bg.png);color:#fff}
+.quick .cur span{display:block;cursor:pointer}
+.quick .dining a{background-position:-197px 0}
+.quick .bank a{background-position:-294px 0}
+.quick .hotel a{background-position:-197px -97px}
+.quick .enter a{background-position:-294px -97px}
+
+/*版权*/
+.copy{position:relative;margin:36px 0 0 20px}
+.copy,.copy .mii{color:#9fa0a0}
+.copy .icon a{display:inline-block;width:19px;height:19px;background:#9fa0a0 url(img/copy-bg.png) no-repeat;*display:inline;*zoom:1;*margin-right:3px}
+.copy .icon .msg{}
+.copy .icon .map{background-position:-20px 0}
+.copy .icon .email{background-position:-40px 0}
+.copy .icon .tel{background-position:-60px 0}
+.copy .txt{line-height:20px;margin-bottom:2px}
+.copy .txt a{color:#898989;margin-right:12px}
+.copy .right{font-size:10px;font-family:arial;line-height:18px;margin-bottom:2px}
