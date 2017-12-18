@@ -1,0 +1,1 @@
+start D:\wnnp\bin\RunHiddenConsole\RunHiddenConsole.exe d:\wnnp\bin\php\php-cgi.exe -b 127.0.0.1:9123

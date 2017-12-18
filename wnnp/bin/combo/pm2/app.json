@@ -1,0 +1,87 @@
+{
+  apps : [{
+  "name"        : "app1",  // 应用名称
+    "script"      : "./bin/www",  // 实际启动脚本
+    "cwd"         : "/wnnp/bin/combo",  // 当前工作路径
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+  "./bin",
+  "./",
+  "./routers"
+],
+    "ignore_watch" : [  // 从监控目录中排除
+  "./node_modules",
+  "./logs",
+  "./public"
+],
+    "watch_options": {
+  "followSymlinks": false
+},
+  "error_file" : "/wnnp/bin/combo/logs/app1-err.log",  // 错误日志路径
+    "out_file"   : "/wnnp/bin/combo/logs/app1-out.log",  // 普通日志路径
+    "log_date_format": "YYYY - MM - DD HH: mm Z",
+  },
+  {
+  "name"        : "app2",  // 应用名称
+    "script"      : "./text.js",  // 实际启动脚本
+    "cwd"         : "/wnnp/bin/combo",  // 当前工作路径
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+  "./bin",
+  "./",
+  "./routers"
+],
+    "ignore_watch" : [  // 从监控目录中排除
+  "./node_modules",
+  "./logs",
+  "./public"
+],
+    "watch_options": {
+  "followSymlinks": false
+},
+  "error_file" : "/wnnp/bin/combo/logs/app2-err.log",  // 错误日志路径
+    "out_file"   : "/wnnp/bin/combo/logs/app2-out.log",  // 普通日志路径
+    "log_date_format": "YYYY - MM - DD HH: mm Z",
+  },
+    {
+      "name"        : "app3",  // 应用名称
+      "script"      : "./text2.js",  // 实际启动脚本
+      "cwd"         : "/wnnp/bin/combo",  // 当前工作路径
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "./bin",
+        "./",
+        "./routers"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "./node_modules",
+        "./logs",
+        "./public"
+      ],
+      "watch_options": {
+        "followSymlinks": false
+      },
+      "error_file" : "/wnnp/bin/combo/logs/app3-err.log",  // 错误日志路径
+      "out_file"   : "/wnnp/bin/combo/logs/app3-out.log",  // 普通日志路径
+      "log_date_format": "YYYY - MM - DD HH: mm Z",
+    },
+	{
+      "name"        : "app4",  // 应用名称
+      "script"      : "./test/app1/bin/www",  // 实际启动脚本
+      "cwd"         : "/wnnp/bin/combo",  // 当前工作路径
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "./bin",
+        "./",
+        "./routers"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "./node_modules",
+        "./logs",
+        "./public"
+      ],
+      "watch_options": {
+        "followSymlinks": false
+      },
+      "error_file" : "/wnnp/bin/combo/logs/app3-err.log",  // 错误日志路径
+      "out_file"   : "/wnnp/bin/combo/logs/app3-out.log",  // 普通日志路径
+      "log_date_format": "YYYY - MM - DD HH: mm Z",
+    }
+  ]
+}
