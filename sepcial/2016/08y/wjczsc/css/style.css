@@ -1,0 +1,95 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.hard{width:100%}
+.mall{height:479px; width:100%; background:url(image/top1.jpg) center no-repeat 100%; overflow:hidden;}
+.mall .mall-tit{color:#1e2d40; letter-spacing:2px;margin-top:50px; line-height:45px; text-align:center; font-family:'微软雅黑'; font-weight:bold; font-size:37px;}
+.mall .mall-cen{width:100%; margin:auto;}
+.mall .mall-cen .cenls{float:left; font-family:'微软雅黑'; color:#1b2735; margin-top:60px; margin-left:25px;}
+.mall .mall-cen .cen1{float:left; font-family:'微软雅黑'; color:#1b2735; margin-top:60px; margin-left:120px;}
+.mall .mall-cen .cenls p{height:24px; line-height:24px; text-align:center; font-size:24px; margin-top:25px;}
+
+/*节约成本*/
+.costs{height:680px; width:100%; background:url(../image/top2.jpg) no-repeat  center 100%; overflow:hidden;}
+.costs .costs-img{float:left; width:609px; height:567px; margin-left:20px; margin-top:50px;}
+.costs .costs-cont{float:left; margin-left:30px; width:425px; height:auto; margin-top:180px;}
+.costs .costs-cont p{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:45px;}
+.costs .costs-cont .costs-tit{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:24px; margin-top:50px;}
+.costs .costs-cont .costs-txt{font-family:'微软雅黑';color:#1e2d40; font-size:18px; line-height:36px; margin-top:20px;}
+
+/*资金安全*/
+.security{height:680px; width:100%; background:url(../image/top3.jpg) no-repeat  center 100%; overflow:hidden;}
+.security .security-cont{float:left; width:415px; margin-left:100px;}
+.security .security-cont p{font-family:'微软雅黑';color:#fff; font-weight:bold; font-size:45px; margin-top:200px;}
+.security .security-cont .security-tit{font-family:'微软雅黑';color:#fff; font-weight:bold; font-size:24px; margin-top:50px;}
+.security .security-cont .security-txt{font-family:'微软雅黑';color:#fff; font-size:18px; line-height:36px; margin-top:20px;}
+.security .security-img{float:left; width:583px; height:536px; margin-left:30px; margin-top:40px;}
+
+/*品牌共赢*/
+.win{height:680px; width:100%; background:url(../image/top4.jpg) no-repeat  center 100%; overflow:hidden;}
+.win .win-img{float:left; width:560px; height:557px;  margin-top:50px;}
+.win .win-cont{float:left; margin-left:60px; width:425px; height:auto; margin-top:170px;}
+.win .win-cont p{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:45px;}
+.win .win-cont .win-tit{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:24px; margin-top:40px;}
+.win .win-cont .win-txt{font-family:'微软雅黑';color:#1e2d40; font-size:18px; line-height:36px; margin-top:20px;}
+
+/*运营配备*/
+.with{height:680px; width:100%; background:url(../image/top5.jpg) no-repeat  center 100%; overflow:hidden;}
+.with .with-cont{float:left; width:415px; margin-left:50px;}
+.with .with-cont p{font-family:'微软雅黑';color:#fff; font-weight:bold; font-size:45px; margin-top:160px;}
+.with .with-cont .with-tit{font-family:'微软雅黑';color:#fff; font-weight:bold; font-size:24px; margin-top:50px;}
+.with .with-cont .with-txt{font-family:'微软雅黑';color:#fff; font-size:18px; line-height:36px; margin-top:20px;}
+.with .with-img{float:left; width:708px; height:491px; margin-left:10px; margin-top:80px;}
+
+/*互联网+实体服务*/
+.entity{height:680px; width:100%; background:url(../image/top6.jpg) no-repeat  center 100%; overflow:hidden;}
+.entity .entity-img{float:left; width:643px; height:605px; margin-top:50px;}
+.entity .entity-cont{float:left; margin-left:10px; width:425px; height:auto; margin-top:180px;}
+.entity .entity-cont p{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:45px;}
+.entity .entity-cont .entity-tit{font-family:'微软雅黑';color:#1e2d40; font-weight:bold; font-size:24px; margin-top:40px;}
+.entity .entity-cont .entity-txt{font-family:'微软雅黑';color:#1e2d40; font-size:18px; line-height:36px; margin-top:20px;}
+
+/*入驻商家和品牌*/
+.settled{height:630px; width:100%; background:url(../image/top7.jpg) no-repeat  center 100%; overflow:hidden;}
+.settled .settled-tit{text-align:center; color:#fff; font-family:'微软雅黑';font-weight:bold; font-size:30px; margin-top:40px;}
+.settled .settled-img{margin-top:50px; text-align:center}
+
+/*更多优惠*/
+.pref{height:370px; width:100%; background:url(../image/top8.jpg) no-repeat  center 100%; overflow:hidden;}
+.pref .pref-tit{text-align:center; color:#fff; font-family:'微软雅黑';font-weight:bold; font-size:30px; margin-top:40px;}
+.pref .pref-cont{margin:auto; margin-top:20px; margin-left:130px; font-size:18px;}
+.pref .pref-cont ul li{width:215px; float:left; margin-left:15px;}
+.pref .pref-cont ul li p{text-align:center; margin-top:10px; color:#fff;}

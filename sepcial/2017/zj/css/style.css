@@ -1,0 +1,63 @@
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333333}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.web-search{background:#ffffff;}
+.web-search .g-o{ width:1192px}
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+.g_nav{height:40px;width:100%;background:#e94545;min-width:1190px;_overflow:hidden;font-family:Microsoft YaHei;max-width:1920px;}
+.g-w{ position:relative; height:40px; overflow:hidden}
+.main_nav{float:left;}
+.main_nav li{float:left;line-height:40px;}
+.main_nav li a{padding:0 25px;display:block;color:#fff;font-size:16px;font-weight:400;}
+.main_nav li a:hover,.main_nav li a:active{text-decoration:none;background:#d21818;}
+.cur_nav{background:#d21818;}
+.jion_bus{width:180px;height:50px;float:right;margin:-13px 0 20px 0;}
+.jion_bus img{display:block;width:180px;height:53px;}
+.g_c_nav{height:30px;border:1px solid #ebebeb;}
+.g_c_n{overflow:hidden;}
+.g_c_n li{float:left;line-height:29px;}
+.g_c_n li a{color:#444;padding:0 10px;}
+.g_c_n li a:hover,.g_c_n li a:active{color:#f67301;}
+.hot_tit{color:#888;margin-left:0;}
+.hot_icon{width:16px;height:12px;background-position:-353px 0;vertical-align:text-top;*margin-left:2px}
+body{ background: url(../img/bg.jpg) no-repeat center top;}
+.zjdiv{ width:1024px; height: 300px; margin-top: 275px; }
+.zjdiv .content{ width: 530px; height: 240px; margin-left: 290px;}
+.zjdiv .content .left{ float: left;width: 180px; height: 230px;}
+.zjdiv .content .right{ float: right;width: 350px; height: 230px;}
+.zjdiv .content .right .department{ font-size:45px; color: #ff0000; font-family: Microsoft Yahei; margin: 30px 0px 0px 30px; }
+.zjdiv .content .right .name{ font-size:35px; color: #000; font-family: Microsoft Yahei;margin: 10px 0px 0px 30px;}
+.zjdiv .content .img{ width: 180px; height: 230px; background-image: url(../img/csc.png); background-size: contain ; background-repeat: no-repeat; background-position: center; }
+.zjdiv .an{ margin-top: 70px;}
+.zjdiv .an .go{ background:  url(../img/btn.png) no-repeat  0px -10px ; width: 138px; height: 74px; cursor: pointer}
+.zjdiv .an .go:hover{background-position:-150px -10px}
+.zjdiv .an .go.s{background-position:-300px -10px}
+.zjdiv .an .go.s:hover{background-position:-450px -10px}

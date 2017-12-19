@@ -1,0 +1,94 @@
+﻿body {background: #F4F4F4}
+.header {height: 82px;background: url(../images/top_bg.jpg) repeat-x;border-bottom: 4px solid #399BDC}
+.row {width: 1000px;margin: 0 auto;}
+.header .logo {padding-top: 22px; float: left;}
+.header ul {float: right; margin-top: 30px;}
+.header li {float: left; margin: 0 5px; }
+.header li a {font-size: 15px; font-family: 微软雅黑; color: #131313; padding: 3px 10px}
+.header li.cur a,.header li a:hover {background: #0D7BC8; border-radius: 5px; color: #fff; text-decoration: none;}
+
+.top { margin-top: 20px; margin-bottom: 20px;}
+.top a {color: #505050;}
+.top .active-news {width: 960px; height: 30px; padding: 0 20px; background: #ddd; }
+.top .active-news .slider {position: relative; width: 960px; height: 30px; overflow: hidden;}
+.top ul {list-style: disc inside; *list-style: disc;width: 30000px; position: absolute;}
+.top ul li {float: left; margin-right: 20px; padding-left: 20px; display: inline-block; line-height: 30px; width: 120px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; background: url(../images/index-icon.png) no-repeat -15px -126px;}
+
+.ctn1,.ctn2,.ctn3,.ctn4,.footer {background: #fff url(../images/banner4.jpg) no-repeat -3pt 0; padding-top: 53px; border: 1px solid #D2ECFD; border-top: none; position: relative; margin-bottom: 20px; *padding-bottom: 20px;}
+.ctn1 h1,.ctn2 h1,.ctn3 h1,.ctn4 h1,.footer h1 {position: absolute; left: 50px; top: 2px; font-size: 25px; font-family: 微软雅黑; color: #fff; font-weight: normal;}
+.ctn1 .img {float: left; margin: 20px 30px; width: 319px; height: 241px; overflow: hidden;}
+.ctn1 .aside {float: left; width: 600px; height: 250px; overflow: hidden; margin-top: 15px; color: #525252}
+.ctn1 .aside p {text-indent: 2em; line-height: 24px; margin-bottom: 35px;}
+.ctn1 .aside ul {border-top: 2px solid #eee; padding-top: 5px}
+.ctn1 .aside ul li {padding-left: 20px; margin: 8px 0;}
+.ctn1 .aside ul li b {color: #434343}
+.ctn1 input {width: 181px; height: 38px; background: url(../images/btn.jpg) no-repeat; border: none; position: absolute; right: 20px; bottom: -6px; color: #fff; font-family: 微软雅黑; font-size: 16px; cursor: pointer;}
+.ctn1 .aside ul li.home {background: url(../images/home.jpg) no-repeat 0 center;}
+.ctn1 .aside ul li.tel {background: url(../images/tel.jpg) no-repeat 0 center;}
+.ctn1 .aside ul li.addr {background: url(../images/addr.jpg) no-repeat 0 center;}
+.ctn1 .aside ul li.website {background: url(../images/website.jpg) no-repeat 0 center;}
+
+.ctn2 .img {float: left; margin: 20px 30px; width: 514px; height: 264px; overflow: hidden; position: relative;}
+.ctn2 .mouseLeft {position: absolute; width: 257px; height: 264px;}
+.ctn2 .mouseLeft .prev_blank {width: 257px; height: 264px; opacity: 0; filter: alpha(opacity=0); background: #fff; position: relative;}
+.ctn2 .mouseLeft a.prev {width: 30px; height: 65px; line-height: 55px; position: relative; text-align: center; background: #000; color: #fff; font-size: 30px; font-family: 微软雅黑; top: -160px; opacity: 0.6; filter: alpha(opacity=60); text-decoration: none; cursor: pointer; display: none; }
+.ctn2 .mouseRight {position: absolute; width: 257px; height: 264px; right: 0}
+.ctn2 .mouseRight .next_blank {width: 257px; height: 264px; opacity: 0; filter: alpha(opacity=0); background: #fff; position: relative;}
+.ctn2 .mouseRight a.next {width: 30px; height: 65px; line-height: 55px; position: relative; text-align: center; background: #000; color: #fff; font-size: 30px; font-family: 微软雅黑; top: -160px; left: 228px; opacity: 0.6; filter: alpha(opacity=60); text-decoration: none; cursor: pointer; display: none;}
+.ctn2 .slider-img {float: left; width: 514px; height: 264px; overflow: hidden; position: relative;}
+.ctn2 .slider-img ul {width: 30000px;}
+.ctn2 .slider-img ul li {float: left; width: 514px; display: inline-block;}
+.ctn2 .slider-img ul li img {width: 514px; height: 264px; overflow: hidden;}
+
+.ctn2 .aside-right {float: left; width: 404px; overflow: hidden; }
+.ctn2 .aside-right h2 {width: 404px; height: 38px; background: url(../images/btn2.jpg) no-repeat; font-size: 22px; font-family: 微软雅黑; color: #fff; font-weight: normal; text-indent: 2em; margin-top: 20px;}
+.ctn2 .aside-right ul {list-style: decimal inside; margin-top: 15px; color: #525252}
+.ctn2 .aside-right ul li { line-height: 24px;}
+
+.ctn3 .img {width: 751px; height: 346px; float: left; margin: 20px 15px 20px 30px; position: relative;}
+.ctn3 .img .img-info {width: 100%; height: 30px; background: #000; opacity: 0.6; filter: alpha(opacity=60); position: absolute; left: 0; bottom: 0;}
+.ctn3 .img a {color: #fff; line-height: 30px; font-size: 14px; text-decoration: none; position: absolute; left: 0; bottom: 0; width: 100%; text-align: center;}
+.ctn3 .slider {float: left; margin-top: 20px; padding-left:8px;  position: relative; width: 168px; height: 345px; overflow: hidden; z-index:1}
+.ctn3 .slider ul {height: 30000px; position: absolute; padding-top: 3px}
+.ctn3 .slider ul li {margin-bottom: 6px; height: 80px;}
+.ctn3 .slider ul li a {cursor: pointer;}
+.ctn3 .slider ul li a img {width: 163px; height: 80px; overflow: hidden; }
+.ctn3 .border {position: absolute; left: -3px; top: 0; z-index: -200; width: 176px; height: 86px; background: url(../images/border.jpg) no-repeat; display: block; text-align: center;}
+
+.ctn4 ul { padding: 25px 30px; overflow: hidden; margin-right: -20px; *padding-bottom: 5px; margin-bottom: -20px;}
+.ctn4 ul li {width: 172px; height: 100px; overflow: hidden; position: relative; float: left; margin-right: 20px; margin-bottom: 20px;}
+.ctn4 ul li p {width: 172px; height: 24px; background: #000; opacity: 0.6; filter: alpha(opacity=60); position: absolute; left: 0; bottom: 0; display: none;}
+.ctn4 ul li a {width: 172px; line-height: 24px; color: #fff; position: absolute; left: 0; bottom: 0; text-align: center; text-decoration: none; display: none;}
+
+
+.footer .slider {padding: 25px 30px;}
+.footer a.prev {display: block; width: 40px; height: 155px; background: #D9D9D9 url(../images/prev.jpg) no-repeat center center; cursor: pointer; float: left;}
+.footer a.next {display: block; width: 40px; height: 155px; background: #ccc url(../images/next.jpg) no-repeat center center; cursor: pointer; float: right;}
+.footer .slider-img {width: 860px; height: 155px; overflow: hidden; position: relative; float: left; margin-bottom: 20px;}
+.footer .slider ul {width: 30000px; margin-left: 20px}
+.footer ul li {width: 190px; display: inline-block; float: left; margin-right: 20px; overflow: hidden;}
+.footer ul li a.title {display: block; text-align: center; margin-top: 2px; *margin-top: 5px; color: #545454}
+
+
+.bot-info {padding-bottom: 40px;}
+.bot-info p {text-align: center; margin: 10px 0; color: #737373}
+.bot-info p a {color: #737373; margin: 0 10px;}
+
+
+.dialog {z-index: 999; position: fixed; top: 80px; left: 50%; margin-left: -426px; background: #fff; display: none; box-shadow: 1px 1px 58px #333; border-radius: 5px}
+.dialog .headers {width: 853px; padding: 15px 0; background: url(../images/dialog_header.jpg) no-repeat; text-align: right; position: relative;}
+.dialog .headers h3 {text-align: center; color: #fff; font: bold 18px 微软雅黑; margin-top: -5px;}
+.dialog .headers a {position: absolute; right: 20px; top: 15px; font-size: 15px; color: #fff}
+.dialog .form {width: 813px; padding: 10px 20px;}
+.dialog .form table {width: 100%; margin-left: 10px;}
+.dialog .form table tr {height: 40px;}
+.dialog .form table tr td.title{text-align: right; color: #0D7BC8; font: 15px 微软雅黑; width: 80px;}
+.dialog .form label {margin-right: 37px; font-size: 14px; color: #595757}
+.dialog .form input.input {width: 360px; height: 15px; border: 1px solid #dedede; padding: 5px;}
+.dialog .form input.input:focus {border-color: #51A7E8}
+.dialog .form textarea.textarea {width: 690px; height: 190px; border: 1px solid #dedede; padding: 5px;}
+.dialog .form textarea.textarea:focus {border-color: #51A7E8}
+input.submit2, input.submit3{width: 96px; height: 34px; border: none; text-align: center; line-height: 34px; color: #fff; cursor: pointer; margin: 10px 5px 0; font-size: 14px}
+input.submit2 {background: url(../images/submit1.jpg) no-repeat;}
+input.submit3 {background: url(../images/cancel.jpg) no-repeat; color: #000}
+.shadow {z-index: 998; background: #000 url(../images/bg.png) repeat; position: absolute; left: 0; top: 0; display: none;}

@@ -1,0 +1,155 @@
+/*@import url('//res.csc86.com/f=v2/l/mobile/css/reset.css');*/
+html,body{
+  width:100%;
+  height:100%;
+  font-family: "Microsoft Yahei";  
+}
+.wrap{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+.title{
+  position: absolute;
+  font-size: 1.1em;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  color:#1f1f1f;
+  border-bottom: 1px solid #ddd;
+  background-color: #f4f4f4;
+  padding:0 10px;
+}
+.tit-l,.tit-r{
+  position: absolute;
+  display: inline-block;
+}
+.tit-l i{
+  margin-right:10px;
+  /*font-size: 1.5em;*/
+  /*line-height: inherit;*/
+  height:1em;
+  display: block;
+  color: #666666;
+}
+.tit-l i img{
+	vertical-align: middle;
+}
+.tit-l{
+  left:0;
+ }
+ .tit-r{
+  right:0;
+  margin-right:10px;
+ }
+ .title a{
+   display: inline-block;
+   color: #666;
+   font-size: 0.9em;
+   margin-left:15px;
+ }
+  .title a:active{
+    color:#000;
+  }
+.wrapper{
+  padding:45px 15px 0 15px;
+  height:100%;
+  background-color: #eee;
+}
+.btn{
+  display: inline-block;
+  width:80%;
+  font-size: 1em;
+  color: #fff;
+  padding:10px 0;
+  font-weight: bold;
+  background-color: #e94545;
+  border-radius: 10px;
+}
+.btn[type=submit]{
+    border-radius: 10px;
+}
+.btn:active{
+  background-color: #d13e3e;
+  color: #fff;
+}
+.btn:hover{
+  color: #fff;
+}
+.btn.disabled{
+  opacity: .6;
+}
+.btn.blk{
+  background-color: transparent;
+  border: 2px solid #e94545;
+  border-radius: 50px;
+  color: #e94545;
+  font-weight: 300;
+}
+.btn.default{
+	width:40%;
+	font-weight: normal;
+	background-color: #f9fafa;
+	color:#797979;
+	margin:0 .4em;
+	border:1px solid #797979;
+}
+.btn.blue{
+	width:40%;
+	font-weight: normal;
+	background-color: #4a9bff;
+}
+.text-center{
+  text-align: center;
+}
+.input-box input{
+	 background-color: transparent;
+}
+.msg-box{
+  height:50%;
+  padding-top:40%;
+  text-align: center;
+  font-size: 1em;
+  position: relative;
+}
+
+@media(min-width: 720px){
+	.msg-box{
+		padding-top:20%;
+	}
+}
+.msg-box .success,.msg-box .failed{
+	position: absolute;
+	width:100%;
+	top:25%;
+}
+.msg-box i{
+  /*font-size: 3.5em;*/
+  font-size: 3em;
+}
+.msg-box p{
+  padding:20px 0;
+}
+.suc .failed{
+  display: none;
+}
+.suc .success i{
+  color:#63d69c;
+}
+.fail .failed i{
+  color: #ff3535;
+}
+.fail .success{
+  display: none;
+}
+[class^="icon-"], [class*=" icon-"]{
+	display: inline-block;
+	width:1em;
+	height: 1em;
+}
+[class^="icon-"] img, [class*=" icon-"] img{
+	width: 100%;
+	/*height: 100%;*/
+}

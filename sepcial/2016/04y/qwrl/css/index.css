@@ -1,0 +1,88 @@
+body{font:12px/1.5 arial;}
+
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+.after1{ line-height:100px; height:100px; font-size:10px; clear:both; zoom:1; width:100%; display:block;visibility: hidden; }
+
+.banner,.con2{ width:100%; text-align:center; position:relative;margin:0px auto}
+.banner img,.con2 img{width:100%;max-width:750px;}
+.banner .an{ position:absolute; width:100%;  bottom:20px; left:0px;}
+.banner .an img{ width:52%;max-width:388px;}
+
+.banner .an img {-webkit-animation:"dd" 1.5s ease-in-out infinite;}
+@-webkit-keyframes 'dd' {
+	0% {-webkit-transform:rotate(0deg);}
+	5% {-webkit-transform:rotate(5deg);}
+	10% {-webkit-transform:rotate(-5deg);}
+	15% {-webkit-transform:rotate(5deg);}
+	20% {-webkit-transform:rotate(-5deg);}
+	25% {-webkit-transform:rotate(5deg);}
+	30% {-webkit-transform:rotate(-5deg);}
+	35% {-webkit-transform:rotate(5deg);}
+	40% {-webkit-transform:rotate(-5deg);}
+	50% {-webkit-transform:rotate(0deg);}
+}
+
+.con2 .d1{position:absolute; width:100%;  top:7%; left:0px;}
+.con2 .d1.d2{ top:36%}
+.con2 .d1.d3{ top:65%}
+
+.tl1{width:100%; text-align:center; position:relative;margin:0px auto}
+.tl1 img{ width:100%;max-width:750px;}
+
+.con3{ background:#e43543 ;width:100%; position:relative;max-width:750px; margin:0px auto }
+.con3 ul{ padding:0% 2%; position:relative;}
+.con3 li{ width:50%; float:left; padding:2%;}
+.con3 li img{ width:100%;}
+.con3 li p{ background:#eee;  padding:2% 2%; font-size:12px; line-height:22px; font-family:微软雅黑}
+.con3 li p span{ display:inline-block; width:45%; }
+.con3 li p .s1{ font-size:14px;}
+.con3 li p .s1 em{ font-size:12px; font-style:normal}
+.con3 li p .s2{width:55%; background:url(../images/con3bac.png) no-repeat center ;background-size:contain; text-align: center; color:#fff; padding:5px 0px; cursor:pointer}
+.con3 li p .s2 em{  font-style:normal; }
+
+.con4{ background:#e43543 ;width:100%; position:relative;max-width:750px; margin:0px auto; padding-top:2%; padding-bottom:10px; padding-left:2%;padding-right:2%;}
+.con4wk{padding:2%; background:#EEC600;border-radius:5px;}
+.con4bac{padding:2%;padding-top:7%; padding-bottom:20px; background:#fff; border-radius:5px;}
+.con4 .title{ text-align:center; color:#583311; font-size:22px;  font-family:微软雅黑;background:url(../images/con4titlebac.png) no-repeat center right;background-size:contain; width:180px; margin:0px auto 20px}
+.con4 .content{ padding:0 4% 0 10%; color:#583311; line-height:22px; font-size:12px; font-family:微软雅黑; margin-bottom:10px;}
+.con4 .content span{ background:url(../images/con4contentbac.png) no-repeat center;background-size:cover; padding:5px 10px; font-weight:bold; color:#ffff72; font-size:14px; margin-right:10px;}
+
+
+
+.fix{position:fixed; width:100%;  top:0px; left:0px; text-align:center; z-index:99999;display:none;}
+.fix .con1{width:90%; position:relative; max-width:594px; margin:0px auto; background:#eeeeee; margin-top:-30px; z-index:1; padding-top:50px;border-radius:5px; overflow:hidden;padding-bottom:20px; border:1px solid #7c570a; }
+.fix img{width:90%; z-index:2; position:relative;max-width:594px;}
+.fix .con1 p{font-size:13px; color:#633f13; text-align:left; padding: 5px 10px; line-height:20px; text-align:left; }
+.fix .con1 p .s3{ color:#e54d5a}
+.fix .con1 .p1{padding:10px 0px; text-align:center;}
+.fix .con1 .p1.p2 img{max-width:200px;}
+.fix .con1 .p0{text-align:center;}
+
+
+@media (min-width:750px){
+	.con3 li p{  padding:5% 5%;  line-height:30px; }
+	.con3 li p .s1{ font-size:22px;}
+	.con3 li p .s1 em{ font-size:16px; font-style:normal}
+	.con3 li p .s2{ font-size:20px; line-height:35px;}
+	.con4bac{padding-bottom:150px;}
+	.con4 .title{ font-size:38px; font-weight:bold; line-height:40px; width:300px; padding-top:10px;margin-bottom:20px;}
+	.con4 .content{ line-height:55px; font-size:20px; }
+	.con4 .content span{ background:url(../images/con4contentbac.png) no-repeat center;background-size:cover; padding:6px 13px; font-weight:bold; color:#ffff72; font-size:18px; margin-right:10px;}
+	.fix1 .con1 p{ font-size:16px; line-height:30px;}
+}
+@media(min-width:320px) and (max-width:650px){
+	.con4 .content{ line-height:22px;}
+	
+}
+
+@media(max-width:320px) {
+	.con3 li p .s2 em{ display: none}
+	
+}
+
+@media(min-height:300px) and (max-height:600px){
+	.fix .con1{  max-height:430px; overflow:auto}
+	
+}
+

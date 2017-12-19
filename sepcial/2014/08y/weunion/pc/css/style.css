@@ -1,0 +1,101 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+.g-comment-share{width:150px;}
+/* 合并后引入如下
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+*/
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#251288;text-decoration:none;border-radius:3px;}
+
+.content .hd-bg{background:url(img/hd.png) no-repeat;}
+.content .hd{position: relative; background:#32148b;margin-bottom:20px}
+.content .hd .g-fl,.hd .g-fr{width:42px;height:56px; position: absolute;top:-2px; background:url(img/hd-bg.png) no-repeat;}
+.content .hd .g-fl{left:-42px}
+.content .hd .g-fr{right:-42px;background-position:right}
+.content .hd h2{height:53px;background-position: center -91px;}
+.content .bd{background:#33158b;border:solid 2px #3519bb;margin-bottom:20px}
+.content .arr{display: block;position: absolute;background:url(img/arr.png) no-repeat 0 0;overflow: hidden;}
+
+/* 以下为专题样式 */
+.content{background:#251288;min-width:1000px;color:#111}
+.banner1{height:370px; background:url(../image/banner1.jpg) no-repeat center 0;}
+.banner2{height:370px;background:url(../image/banner2.jpg) no-repeat center 0;color:#fff}
+.b1{width: 279px;margin: 144px 0 0 23px;}
+.b1 h2{height:60px;background-position:10px 0;margin-bottom:10px}
+.b1 span{font-weight:700;color:#cf0a95}
+.add-way{width:500px;line-height:28px;margin: 161px 0 0 0;}
+.add-way h2{font-size:25px;margin-bottom:10px}
+
+.c-s{padding: 19px 0 19px 19px;}
+.c-s .arr{width:34px;height:15px;background-position:-50px 0;margin: 185px 0 0 16px;}
+.c-s li{float:left;padding-bottom: 13px;margin-right:12px; background:#fff;width:312px}
+.c-s h3{font-size:24px;margin:5px 0 3px;}
+.c-s .wrap{padding: 0 18px;}
+.c-s .des{background:url(img/des-bg.png) no-repeat;padding: 22px 11px 14px;}
+.c-s ins{color:#cf0a95;text-decoration: none;font-weight:700}
+.c-s ins strong{font-size:32px}
+.c-s div.g-cf{background:#e9e9e9}
+.c-s .g-tc{padding-top:5px}
+
+.c-wine{padding:20px 0 20px 20px}
+.c-wine .t{display: block;}
+.c-wine li{float: left;width:310px;margin-right:12px; background:#dad8d8;float:left;padding:1px}
+.c-wine .wrap{padding: 10px 7px 0 185px;}
+.c-wine ins{ color:#cf0a95;text-decoration: none;font-weight:700}
+.c-wine ins strong{display: block; margin: -3px 0 5px;font-size:32px}
+
+.c-korea{padding: 5px 0 20px 19px;}
+.c-korea .arr{width:18px;height:8px;margin: 146px 0 0 15px;}
+.c-korea .t{display: block;height:18px;overflow: hidden;}
+.c-korea li{width:234px;float:left;margin:15px 8px 0 0; background:#e4e4e4}
+.c-korea div.g-fl{width: 136px;padding: 8px 0 0 4px;}
+.c-korea ins{display: block; margin-top:-3px; color:#cf0a95;text-decoration: none;font-weight:700}
+.c-korea ins strong{font-size:32px}
+
+.c-first .c-korea li{width:312px;}
+.c-first div.g-fl{width: 190px;}
+.c-first .c-korea .t{height:20px}
+.c-first .c-korea .arr{width:30px;height:13px;margin: 187px 0 0 15px;background-position:0 -50px}
+.c-first ins strong{font-size:42px}
+.c-first .c-wine{padding:0 0 20px 19px}
+.c-first .c-wine li{width:468px}
+.c-first .c-wine .arr{background-position:-50px -50px;width:15px;height:33px;margin: 118px 0 0 332px;*margin-left:-1px;}
+.c-first .c-wine img.g-fl{border-right:solid 1px #dad9df}
+.c-first .wrap{padding-left: 342px;}
+
+.c-last{color:#fff;padding:18px 0 18px 20px;}
+.c-last img{margin-bottom: 6px;}
+.c-last li{float:left;margin-right:12px}
+.c-last strong{font-size:22px}
+
+
+.c-foot{height:53px;line-height:53px;background:#331f97}
+.c-foot li{float:left;width:25%}
+.c-foot a{display: block; padding-left:45px; color:#fff;font-weight:700;font-size:18px;background: url(img/f-icon.png) no-repeat 0 9px;}
+.c-foot a:hover{text-decoration: none;}

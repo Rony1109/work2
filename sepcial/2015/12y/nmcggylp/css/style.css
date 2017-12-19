@@ -1,0 +1,164 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('//res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('//res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('//res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('//res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css,v2/m/newnav/css/style.css');
+
+
+/* 部分样式重写 */
+.g-o{
+	width:1192px;
+	margin:0 auto;
+}
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#efefef;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.wrap{
+	background-color:#fbc932;
+	font-family: "Microsoft Yahei";
+	padding-top:20px;
+}
+.banner{
+	height: 743px;
+}
+.ghls {	
+	background: url(../image/banner.jpg) no-repeat top center;
+}
+.gylp{
+	background: url(../image/banner2.jpg) no-repeat top center;
+}
+.bancnt{
+	position: relative;
+}
+.share{
+	position: absolute;
+	right:0;
+}
+.share a{
+	color:#fff;
+}
+.bancnt .tag{
+	position: absolute;
+}
+.cgbox{
+	padding-bottom:20px;
+}
+.cgtit{
+	height:50px;
+	background-color: #bb060d;
+	position: relative;
+	margin-top:20px;
+}
+.cgtit h2{
+	position: absolute;
+	width:344px;
+	height: 88px;
+	background: url(../image/titbg.jpg);
+	color:#fbc932;
+	text-align: center;
+	font-size: 32px;
+	line-height: 88px;
+	left:50%;
+	top:-20px;
+	margin-left:-127px;
+}
+.cgcnt{
+	padding-bottom:20px;
+	padding-top:20px;
+	background-color: #fffce8;
+	margin-bottom:20px;
+}
+.cgcnt ul{
+	margin:0 10px 0 29px;
+}
+.cgcnt ul li{
+	float:left;
+	width:253px;
+	border:2px solid #fbc932;
+	padding:8px;
+	margin-right:13px;
+	margin-top:21px;
+	background-color: #fff;
+}
+.cgcnt ul li p.protit{
+	font-size: 14px;
+}
+.cgcnt ul li h3 {
+	font-size: 36px;
+	color:#f32f05;
+}
+.cgcnt ul li h3 span{
+	font-size: 20px
+}
+.cgcnt ul li.hot a.procgimg{
+	position: relative;
+	display: block;
+}
+.cgcnt ul li a.procgimg i{
+	display: none;
+}
+.cgcnt ul li.hot a.procgimg i{
+	display: block;
+	position: absolute;
+	width:82px;
+	height: 82px;
+	background: url(../image/hotico.png);
+	right:0;
+	top:0;
+}
+.fqj{
+	display: inline-block;
+	width:52px;
+	height: 21px;
+	color:#fff;
+	background: url(../image/fqjbg.jpg);
+	text-align: right;
+	padding-right:5px;
+	margin-top:5px;
+}
+.yj{
+	text-decoration: line-through;
+	display: block;
+	text-align: center;
+}
+.cgcnt ul li .btn{
+	display: inline-block;
+	width:100%;
+	background-color: #ff5f01;
+	font-size: 22px;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+}
+.qq-float{
+	position: absolute;
+	right:0;
+	top:300px;
+	width:140px;
+	z-index: 3;
+}

@@ -1,0 +1,178 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #fff;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{ font-size: 62.5%; font-family: Microsoft Yahei; min-width: 1120px; margin: 0 auto; }
+.share{ width: 300px; overflow: hidden; padding-left: 800px; padding-top: 10px}
+.ma{ margin: 0 auto}
+.comicon{ background: url(img/icon_03.png) no-repeat;}
+.comrec{ background: url(img/rec.png) no-repeat }
+
+/*poster 样式*/
+.bgimg{ height: 623px; background: url(img/poster.jpg) no-repeat center 0; }
+.bgimg .msg{ width: 1080px; font-size: 1.8em; color: #fff; text-align: center; position: relative; top: 500px }
+
+/*横向导航 样式*/
+.nav{height: 60px; background-color: #0039de; width: 100%}
+.navp{ position: fixed; top: 0; z-index: 99 }
+.nav ul{ overflow: hidden;}
+.nav ul li{ float: left; padding:6px 12px 12px; margin: 0 18px; text-align: center; outline: none}
+.nav ul li a{ display: inline-block; text-decoration: none; color: #fff; font-size: 1.8em; padding:8px 5px 3px}
+.nav ul li a:hover{ border-bottom: 1px solid #fff }
+.nav ul li.apply a{ font-weight: 700; color: #ff9f00; }
+.nav ul li.apply{position: relative; }
+.nav ul li.apply::before{
+	content: ""; width: 30px; height: 38px; position: absolute; right: -15px; bottom: -8px;
+	background: url(img/hand.gif) no-repeat -8px 0;
+}
+
+/*活动内容 样式*/
+.content{ background: #010e6f url(img/conimg.jpg) no-repeat center 0; padding-top: 50px;} 
+.content .comh1{ font-size: 3em; font-weight: 700; color: #fea202;}
+.content .comh1 span{vertical-align:middle; width: 50px; height: 46px; display: inline-block; margin-right: 15px;}
+.content .comh1 em{padding-left: 10px; font-weight: 400; }
+  /*活动背景*/
+.activity-bg{ height: 830px; background-position: 0 18px; }
+.activity-bg ul li{ margin-top: 40px; }
+.activity-bg ul{ padding-top: 200px; padding-left: 120px; color: #fff; font-size: 1.6em; }
+.activity-bg ul li span{ width: 46px; height: 46px; display: inline-block; vertical-align: middle; margin-right: 20px; }
+.activity-bg ul li .s1{ background-position: -2px -278px}
+.activity-bg ul li .s2{ background-position: -48px -280px}
+.activity-bg ul li .s3{ background-position: -94px -280px}
+.activity-bg ul li .s4{ background-position: -215px -60px }
+
+  /*活动流程*/
+.active-pro{ width: 1031px; padding-top: 50px}
+.active-pro h1 span{ background-position: -48px -2px }
+.active-pro ul{ overflow: hidden; height: 207px; background:url(img/time.jpg) no-repeat;  margin-top: 30px; padding:15px 170px 35px 230px; }
+.active-pro ul li{ font-size: 1.8em; color: #fff; float: left; margin-top: 20px}
+.active-pro ul .li1{ padding-right: 220px }
+.active-pro ul .li2{ padding-left:15px;}
+.active-pro ul .li3,.active-pro ul .li4{ padding-left: 20px; padding-right: 70px }
+.active-pro ul .li5{ padding-left: 50px }
+.active-pro ul li span{ display: block; }
+.active-pro ul li span.sf{ font-weight: 700; color: #fea202 }
+
+  /*精彩亮点*/
+.wonderful-bs h1 span{ background-position: -98px -2px; }  
+.wonderful-bs ul{ height: 680px; background-color: #0039de; margin-top: 45px; padding-left: 5px; margin-bottom: 55px}
+.wonderful-bs ul li{ width: 218px; height: 314px; float: left; padding: 25px 55px 0; text-align: center; color: #fff  }
+.wonderful-bs ul .li-1,.li-2,.li-4,.li-5{ border-right: 1px dashed #fff }
+.wonderful-bs ul .li-1,.li-2,.li-3{ border-bottom: 1px dashed #fff }
+.wonderful-bs ul li span{width:51px; height: 51px; display: block; margin-left: 80px}
+.wonderful-bs ul .li-1 span{ background-position: -3px -219px }
+.wonderful-bs ul .li-2 span{ background-position: -194px -170px; width: 60px }
+.wonderful-bs ul .li-3 span{ background-position: -61px -168px; width: 68px; }
+.wonderful-bs ul .li-4 span{ background-position: -1px -168px; width: 55px }
+.wonderful-bs ul .li-5 span{ background-position: -130px -170px; width: 62px }
+.wonderful-bs ul .li-6 span{ background-position: -162px -60px; height: 55px }
+.wonderful-bs ul li h3{ font-size: 2em; margin: 20px 0 }
+.wonderful-bs ul li p{ font-size: 1.6em; text-indent: 2em; line-height: 2; text-align: left }
+
+.wonderful-bs .im-apply{ width: 370px; height: 282px; color: #fff; background-position: -263px -3px; text-align: center; padding-top: 60px; padding-bottom: 20px}
+.wonderful-bs .im-apply p{ font-size: 2.2em; }
+.wonderful-bs .im-apply span{ display: block }
+.wonderful-bs .im-apply .im-sf{width: 148px; margin:18px 0 20px 108px; font-size: 3.4em; cursor: pointer; line-height: 47px; font-weight: 700; height: 47px; background-position: -88px -122px}
+.wonderful-bs .im-apply .im-ss{ width: 50px; height: 70px; background-position: -106px -50px; margin-left: 160px}
+
+  /*这里有什么*/
+.what h1{ margin-bottom: 30px }
+.what h1 span{ background-position: -151px -2px; padding-bottom: 13px; padding-left: 3px}
+.what ul{ height: 640px; background-position: 0 -812px; padding-top: 220px; }
+.what ul li{ width: 400px; float: left; margin-left: 60px; color:#fff; }
+.what ul .li_2 h3 span{ background-position: -187px -220px; width: 65px }
+.what ul li h3{ font-size: 2.6em; text-align: center;}
+.what ul li h3 span{ display: block; width: 53px; height: 46px; margin-left:170px; margin-bottom: 5px; background-position: -133px -220px }
+.what ul li p{ font-size: 1.6em; margin-top: 40px; }
+.what ul li p span{display: inline-block; width: 33px; height: 34px; vertical-align: middle; margin-right: 30px}
+.what ul li .p-1 span{ background-position: 10px -120px }
+.what ul li .p-1 .p-s{width: 300px; height: auto}
+.what ul li .p-2 span{ background-position: -25px -120px }
+.what ul li .p-3 span{ background-position: -60px -120px; width: 30px }
+
+/*联系我们*/
+.contact .comh1 span{ background-position: -203px 0; width: 61px; height: 53px;}
+.contact ul{ color: #fff; padding-top: 50px; padding-bottom: 50px; overflow: hidden;}
+.contact ul li{ height: 120px; float: left; font-size: 1.6em;}
+.contact ul li p{ margin-bottom: 15px }
+.contact ul .li_1{width: 280px;}
+.contact ul .li_2{width: 410px;}
+.contact ul .li_3{width: 280px;}
+.contact ul .li_3 span{ display: inline-block; float: left; }
+.contact ul .li_3 .li-sf{width: 102px; }
+.contact ul .li_3 .li-ss{width: 160px; padding-top: 30px; padding-left:10px }
+
+/*现场直击*/
+.direct .comh1 span{ background-position: -47px -58px; width: 55px; height: 55px;  }
+.w1160{ width:1120px; height:540px; margin:40px auto 0; position:relative; }
+.rollbox{ width:980px; height:540px; overflow:hidden; margin-left:70px; position:relative}
+.rollbox .roll-list{ width:9999px; position:absolute}
+.rollbox .roll-list li{ width:980px; height:550px; float:left}
+.rollbox .roll-list li p.det{ height:60px; background-color:#110202; color:#fff; font-size:1.4em;}
+.rollbox .roll-list li p.det span{ display:inline-block; height:60px; float:left}
+.rollbox .roll-list li p.det .s1{ width:60px; text-align:center; line-height:60px; font-size:2.2em}
+.rollbox .roll-list li p.det .s2{ width:910px; height:50px; padding-top:10px; padding-left:10px}
+.w1160 .btn{ width:36px; height:57px; display:inline-block; cursor:pointer; position:absolute; top:220px }
+.w1160 .prevbtn{ background-position: -57px -219px }
+.w1160 .nextbtn{ background-position: -96px -220px; right:0; }
+
+.opt-list{width:982px; overflow:hidden; margin:0 auto; padding-top:10px}
+.opt-list li{ width:190px; height:100px; float:left; position:relative}
+.opt-list li a{ display:block;}
+.opt-list li span{ display:block; width:190px; height:100px; background:rgba(0,0,0,.4); position:absolute; top:0; cursor:pointer}
+.opt-list li .cur{ background:none}
+.opt-list li.oli{ margin-left:8px}
+
+/*精彩花絮*/
+.huaxu{ padding-bottom: 50px }
+.huaxu .comh1{ margin: 40px 0 }
+.huaxu .comh1 span{ background-position: 2px -57px }
+.huaxu ul{ text-align: center;color: #fff; font-size: 1.4em; }
+.huaxu ul li{ float: left; margin-left: 15px; margin-top: 5px } 
+
+/*弹窗样式*/
+.bg-fromid .p-tit{text-align:center; color:#444444; line-height:26px; font-size:16px; padding-bottom:10px;}
+.bg-fromid ul{ width: 360px; margin: 0 auto; }
+.bg-fromid ul li{margin-top: 5px}
+.bg-fromid ul li input{width:240px; height:24px; line-height:22px;}
+.bg-fromid ul li lable{ display:inline-block; font-size: 1.4em; width: 80px; }
+#bg-sh-subbtn{width:120px;height:40px; line-height:30px; margin:20px auto;}
+#bg-sh-subbtn input{display:inline-block;  padding:0px 30px;height:40px; line-height:40px; background:#010e6f; color:#fff;  border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; border:0px; cursor:pointer; text-align:center; font-size:16px; font-weight:700}
+
+/*提交成功样式*/
+#bg-subxinxi-list{ display: none }
+#bg-subxinxi-list p{padding-top:20px;  padding-left:25px; padding-right:25px; color:#555555;  text-align:center; font-size:1.4em; font-weight:bold;}
+
+

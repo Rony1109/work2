@@ -1,0 +1,148 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{ font-size: 62.5%; font-family: Microsoft Yahei; min-width: 1090px; }
+.wrap{ background-color: #282828 }
+.comicon{ background: url(img/icon.png) no-repeat}
+@font-face{
+	font-family: calligraphy;
+	src: url(font/BALONEY.TTF);
+}
+.w1052{ width: 1052px; margin: 0 auto }
+
+/*顶部导航 nav*/
+.nav{ width: 100%; height: 96px; background-color: #fcc41b; display: none}
+.nav ul{ width: 990px; margin: 0 auto; overflow: hidden; }
+.nav ul li{width:165px; float: left; text-align: center; padding-top: 10px; position: relative;}
+.nav ul li::before{ 
+		    content:""; width: 0; height: 36px; position: absolute;	
+		    border-left:1px solid #4a3a08; right: 0; top: 30px
+ 		}
+.nav ul .li6::before{ border:none; } 		
+.nav ul li a{ color: #000; }
+.nav ul li span{ display: block; }
+.nav ul li span.s1{ width: 38px; height: 45px; margin: 0 auto }
+.nav ul .li2 span.s1{ width: 47px; background-position: -39px 0 }
+.nav ul .li3 span.s1{ width: 44px; background-position: -88px 0 }
+.nav ul .li4 span.s1{ width: 46px; background-position: -133px 0 }
+.nav ul .li5 span.s1{ width: 50px; background-position: -180px 0 }
+.nav ul .li6 span.s1{ width: 52px; background-position: -230px 0 }
+.nav ul li span.s2{ font-size: 1.5em; }
+.nav ul li span.s3{ line-height: 1 }
+
+/*海报 poster*/
+.poster{ height: 417px; background: url(img/poster.jpg) no-repeat center 0; }
+
+/*螺钉系列*/
+.bolt{ height: 940px; background: url(img/floor1.jpg) no-repeat center 283px; }
+.bolt .ding{ width: 990px; margin: 0 auto; height: 280px; background: url(img/f1.jpg) no-repeat 0 40px;}
+.bolt .ding .cashticket{ width: 656px; height: 115px; background:#000 url(img/quan.jpg) no-repeat 134px 0; margin: 0 auto; position: relative; top: -60px;}
+.cashticket .tel{ width: 109px; height: 91px; padding: 12px; float: left; }
+.cashticket .tel span{ font-size: 2em; font-weight: 700; color: #b60505 }
+.cashticket .tel div{color: #fdd100; border:1px solid #b09b17; font-size: 1.4em; line-height: 1.2; padding-left: 5px}
+.cashticket .tel div .ps{ letter-spacing: 6px }
+.cashticket .tel div .pt{ font-weight: 700; font-size: 1.6em; font-family: impact; }
+.cashticket .freesample{ display: block; text-decoration: none; float: right; position: relative; left: 110px}
+.cashticket .freesample b{width: 75px; height: 57px; text-align: center; display: block; font-size: 2.6em; line-height: 57px;}
+.cashticket .freesample .b1{ background-color: #282828; color: #f4d720}
+.cashticket .freesample .b2{ background-color: #b60505; color: #fff }
+.cashticket .clear{ clear: both; }
+.comtitle{ text-align: center; }
+.comtitle span{ display: block; }
+.comtitle .t1{ font-size: 5.4em; color: #feb302; font-family: 'calligraphy'; line-height: 1; letter-spacing: 5px}
+.comtitle .t2{ color: #fff; font-size: 3.5em; line-height: 1; letter-spacing: 3px }
+.comtitle .t2 em{ font-weight: 400 }
+.comtitle .t3{ width: 72px; height: 3px; background-position: -320px -2px ; margin: 15px auto}
+.bolt .comlist{ width: 980px; margin: 0 auto; background-color: #fff; padding:15px 5px; }
+.comlist{ overflow: hidden; }
+.comlist li{ margin-left: 15px; margin-bottom: 15px; float: left; background-color: #fff }
+.comlist li a{ text-decoration: none }
+.comlist li a .detail{ width: 222px; height: 248px; border:2px solid #fdd100; }
+.comlist li a .detail .stit{ padding: 6px 12px; line-height: 1.8 }
+.comlist a .detail .stit .p-1{ color: #282828; border-bottom: 1px dashed #b7b7b7;}
+.comlist a .detail .stit .p-2{ color: #656363; font-weight: 700; }
+.comlist a .detail .stit .p-2 span{ display: inline-block; margin: 0 10px 0 3px}
+.comlist a .detail .stit i{ width: 11px; height: 11px; display: inline-block; background-position: -283px 0; vertical-align: middle; }
+.comlist li a .buy{ width: 226px; height: 49px; background:url(img/buy.png) no-repeat; line-height: 49px; margin-top: -12px}
+.comlist li a .buy span{ display: inline-block; }
+.comlist li a .buy .price{ padding-left: 6px; font-size: 1.5em; font-weight: 700; color: #282828; }
+.comlist li a .buy .price strong{ font-family: impact; font-size: 1.4em; }
+.comlist li a .buy .now{ color: #fff; font-size: 2em; font-weight: 700; padding-left: 20px }
+
+/*螺栓 螺母 垫圈 小螺丝钉 12.9级 系列*/
+.bolt-sm{ height: 1708px; background: url(img/floor2.jpg) no-repeat center 600px; }
+.bolt-sm .shuan,.bolt-sm .mu{ padding-top: 30px }
+.bolt-sm .shuan .comtitle .t1,.gasket .comtitle .t1,.xlsd-ji .otpn .comtitle .t1{ color: #b60505; }
+.bolt-sm .shuan .comtitle .t3,.gasket .comtitle .t3,.xlsd-ji .otpn .comtitle .t3{ background-position: -320px -7px }
+.comcon .comlist{ width: 1016px; height: 642px; background: url(img/border.png) no-repeat; padding: 45px 0 0 35px }
+.gasket{ height: 838px; background:url(img/floor3.jpg) no-repeat center 155px; }
+.xlsd-ji{ height: 1668px; background: url(img/floor4.jpg) no-repeat center 568px; }
+.xlsd-ji .otpn{ padding-top: 20px }
+.xlsd-ji .otpn .comtitle .t2{ color: #282828 }
+
+/*供应商权益*/
+.sup-rights{ height: 333px; background-color: #b60505 }
+.sup-rights h1{ color: #fff; font-size: 4.8em; text-align: center; line-height: 2}
+.sup-rights h1 span{ font-weight: 400; } 
+.sup-rights ul{ overflow: hidden; padding-top: 30px }
+.sup-rights ul li{ width: 270px; height:140px; float: left; position: relative; }
+.sup-rights ul li i{ display: inline-block; width: 105px; height: 140px; background-position: 0 -48px}
+.sup-rights ul .li-2 i{ background-position: -107px -48px }
+.sup-rights ul .li-3 i{ background-position: -212px -48px }
+.sup-rights ul .li-4{ width: 175px }
+.sup-rights ul .li-4 i{ background-position: -317px -48px }
+.sup-rights ul li span{width: 190px; display: inline-block; color:#fff; font-size: 2.1em; position: absolute; top: 43px; right: 0px; line-height: 1.2; text-align: left; }
+.sup-rights ul .li-4 span{ text-align: right }
+
+.sup-vip{ height: 785px; background: url(img/zxqy.jpg) no-repeat 5px 0; }
+.sup-vip .contact{ overflow: hidden; height: 99px; padding: 30px 0 25px 220px}
+.sup-vip .qq{ width: 520px; height: 80px; border:2px solid #feb302; text-align: center; color: #fff; font-size: 2em; padding-top: 15px; margin-right: 30px }
+.sup-vip .qq a{ display: block; color: #fdd100; font-weight: 700; letter-spacing: 5px; text-decoration: underline; }
+.sup-vip .protect{ padding-top: 50px; padding-left: 55px; overflow: hidden; }
+.sup-vip .protect .left{ width: 560px; padding-right: 25px; height: 500px; float: left; }
+.sup-vip .protect .left h3{ color: #b60505; font-size: 4.6em; line-height: 1.4}
+.sup-vip .protect .left h3 em{ color: #282828; font-weight: 400;}
+.sup-vip .protect .left dl{ padding-top: 15px }
+.sup-vip .protect .left dt{ color: #b60505; font-size: 3.2em; font-weight: 700 }
+.sup-vip .protect .left dt i{ width: 23px; height: 25px; display: inline-block; background-position: -295px 2px; vertical-align: middle; margin-right: 8px }
+.sup-vip .protect .left dd{ color: #282828; font-size: 2em; }
+.sup-vip .protect .right{width: 190px; float: left; height: 458px; background: url(img/service.png) no-repeat; margin-top: 45px; padding: 0 50px}
+.sup-vip .protect .right p{ padding-left: 10px }
+.sup-vip .protect .right .p-1{ height: 268px}
+.sup-vip .protect .right .p-2{ padding-top: 10px}
+.sup-vip .protect .right .p-2,.protect .right .p-3{ color: #fff; font-size: 2.4em }
+.sup-vip .protect .right .p-3{ letter-spacing: 12px }
+.sup-vip .protect .right .p-4{ font-size: 3.6em; color: #fdd100; font-family: impact; letter-spacing: 3px}

@@ -1,0 +1,90 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+html,body,section,article,p{
+	margin:0;
+	padding:0
+}
+ul{list-style:none}
+/*\5FAE\8F6F\96C5\9ED1 微软雅黑  '\5b8b\4f53'宋体*/
+body{font:12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',sans-serif,arial;}
+html,body{
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#efefef;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+section.container{
+	position:absolute;
+	top:135px;
+	bottom:28px;
+	overflow:hidden;
+	width:100%;
+}
+section.stage{
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.section.stage .page{
+	height:100%;
+	float:left;
+	overflow:hidden;
+	width:100%;
+}
+
+.scroll,.flr{width:1440px; }
+.flr,.scroll-bd{height:100%;overflow:hidden;}
+.scroll{position:absolute;top:135px;bottom:28px;overflow:hidden;}
+.scroll-bd{position:absolute;left:0;top:0;width:7200px; height:100%;}
+.flr{float:left;position:relative;}
+.flr1{background:url(img/wj-1.png) no-repeat center;}
+.flr2{background:url(img/wj2-1.png) no-repeat center;}
+.flr3{background:#FF0}
+.flr4{background:#3C0}
+.flr5{background:#030}
+
+.flr-trg{position:fixed;width:100%;text-align:center;bottom:15px;}
+.flr-trg a{display:inline-block;background:#666;width:12px;height:12px;margin-left:5px;margin-right:5px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;overflow:hidden;}
+.flr-trg .cur{background:#fff;}
+
+/* 底部友情链接 */
+.footer{
+	height:28px;
+	position:fixed;
+	bottom:0;
+	width:100%
+}
+.footer p,.footer .link_li{text-align:center}
+.footer p{color:#888}

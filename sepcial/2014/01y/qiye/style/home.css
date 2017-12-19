@@ -1,0 +1,99 @@
+/* CSS 5 */
+*html { background-attachment:fixed; background-image:URL("about:blank");}
+.huo-top { height:27px; line-height:27px; background:#F1F1F1;}
+
+.huo-top span a{ margin:0 5px; color:#888; cursor:pointer;}
+.huo-top span a:hover{ color:#067ed4; text-decoration:none; }
+.m-search div .btn{ background:url(img/search-btn.png) no-repeat left top; height:32px; width:90px;}
+.m-search .ss-txt {border-bottom: 3px solid #e60000;border-left: 3px solid #e60000;border-top: 3px solid #e60000; width:400px;}
+/*搜索*/
+.m-search{ margin-top:30px;}
+.nav{ height:40px; background:#cf0700;}
+.nav-c a{ display:inline-block; height:40px; line-height:40px; padding:0 35px; color:#fff3b3; font-weight:700; font-size:16px; background:url(img/icon.png) no-repeat 100% -550px;}
+.nav-c a.cur{ background:#ba0300;}
+.nav-c a.right{ background:none;}
+.n-bb{ display:block; text-align:right; height:30px; padding:15px 0 385px;}
+.n-bb .jiathis_style{ float:right;}
+.n-bb .jiathis_style a{ color:#fff;}
+
+.main{ background:#771e95 url(img/bg.jpg) no-repeat center top;font-family:Microsoft YaHei,simhei; }
+.ban-info{ padding:0 50px; line-height:26px; color:#fff; font-size:14px;}
+.ment{ padding:60px 0 35px 30px;}
+.ment a{ width:280px; height:60px; display:inline-block; margin-left:25px; font-size:0; overflow:hidden; text-indent:300px;}
+.bock{ width:1000px; height:602px; background:url(img/cbg.png) no-repeat left top; margin-top:20px; margin: 20px auto 0; padding:10px 21px 30px;}
+.titile{ height:70px; line-height:70px; padding:0 0 0 55px;color:#f8f8b0;}
+.titile h1{ font-size:30px; font-style:italic;  font-family:Microsoft YaHei,simhei; display:inline-block; margin-right:10px; float:left;}
+.titile span{ display:inline; float:left;}
+.bck-cont{ background:#de1848; position:relative;}
+.bck-cont .l,.bck-cont .r{ position:absolute; width:42px; height:42px; top:210px; display:inline-block; z-index:10; font-size:0; overflow:hidden; text-indent:100px;}
+.bck-cont .l{ background:url(img/icon.png) no-repeat left -388px; left:0;}
+.bck-cont .r{ background:url(img/icon.png) no-repeat left -441px; right:0;_right:21px;}
+
+.c-all{ width:998px; height:530px; overflow:hidden; position:relative; border:1px solid #c40427;}
+.c-all ul{ width:10000px; height:530px; display:block; position:absolute; left:0; top:0;}
+.c-all ul li{ width:248px; height:530px; display:inline-block; float:left; border-right:2px solid #c40427; background:#fff; position:relative;}
+.c-all ul li a.top-img{ width:248px; height:228px; display:inline-block; overflow:hidden; position:relative;}
+.c-all ul li a.top-img:hover{ text-decoration:none;}
+.c-all ul li a.top-img span{ width:248px; height:40px; line-height:40px; position:absolute; bottom:0; left:0; z-index:2; background:url(img/icon.png) no-repeat left -213px; color:#fff; font-size:14px; font-weight:700; padding-top:28px; text-indent:4px;}
+.c-all ul li .top-img img{ z-index:0; position:relative;}
+.c-all ul li h2{ margin:0 15px; height:35px; line-height:35px; color:#444; font-size:18px; border-bottom:1px solid #b4b4b4; text-align:center; overflow:hidden; padding-top:10px; font-weight:normal;}
+.c-all ul li p{ padding:5px 15px; line-height:24px; color:#666; font-size:14px; height:195px; overflow:hidden;}
+.c-all ul li p a{ color:#666;}
+.c-all ul li a.fc{ width:100%; height:46px; background:url(img/icon.png) no-repeat left -301px; text-align:center; line-height:46px; color:#fff; font-size:20px; font-weight:normal; display:block; position:absolute; bottom:0; left:0;}
+
+.mg10{height:510px;background:#fff;}
+.mg-line{ width:980px; height:43px;background:url(img/bg-line.png) repeat-x left 17px; margin-left:10px;}
+.mrg-a{ height:190px;}
+.mrg-a li{ width:188px; height:190px; display:inline-block; overflow:hidden; position:relative; float:left; margin-left:10px;}
+.mrg-a li .bg,.mrg-a li .cont{position:absolute; bottom:0; left:0; display:block; height:58px; width:100%;}
+.mrg-a li .bg{background:#000; filter:alpha(opacity=80);opacity:0.8; z-index:3;}
+.mrg-a li .cont{ color:#fff; z-index:5; text-align:center;}
+.mrg-a li .cont h3{ height:32px; line-height:32px; overflow:hidden; font-weight:normal;}
+.mrg-a li .cont h3 strong{ font-size:18px; margin-right:3px; font-weight:normal;}
+.mrg-a li .cont a{ color:#fff;}
+
+.yxtop{ width:1000px; overflow:hidden;}
+.yxtop ul{ width:1020px; height:auto; overflow:hidden;zoom:1;}
+.yxtop li{ width:324px; height:520px; float:left; background:#fff; margin-right:14px;}
+.yxtop li h2{ height:55px; padding-top:10px; line-height:55px; text-align:center; color:#fff; font-weight:700; font-size:30px;}
+.yxtop li h2.fz{ background:url(img/icon.png) no-repeat left top;}
+.yxtop li h2.pg{ background:url(img/icon.png) no-repeat left -67px;}
+.yxtop li h2.dz{ background:url(img/icon.png) no-repeat left -135px;}
+.yxtop li span{ width:304px; margin-left:10px; display:block; height:40px; line-height:40px; font-size:16px; color:#666; overflow:hidden;}
+.yxtop li span i{display:inline-block;background:url(img/icon.png) no-repeat -301px -495px; color:#fff; font-style:normal; text-align:center; float:left; font-size:13px;}
+.yxtop li span a{ color:#666;}
+.yxtop li span.t01,.yxtop li span.t02,.yxtop li span.t03{ height:46px; line-height:46px; border-bottom:1px dashed #ebebeb;}
+.yxtop li span.t01 i,.yxtop li span.t02 i,.yxtop li span.t03 i{ width:23px; height:46px; line-height:46px; margin-right:7px; font-size:14px;}
+.yxtop li span.t01 i{background:url(img/icon.png) no-repeat -301px -357px;}
+.yxtop li span.t02 i{background:url(img/icon.png) no-repeat -301px -402px;}
+.yxtop li span.t03 i{background:url(img/icon.png) no-repeat -301px -448px;}
+.yxtop li span.t04 i{width:20px; line-height:40px; line-height:40px; background:url(img/icon.png) no-repeat -301px -496px; margin-right:10px;}
+.yxtop li .l-leng{ width:200px; overflow:hidden; float:left;}
+.yxtop li .btn{ width:70px; overflow:hidden; float:right; font-size:12px; height:20px; line-height:20px; background:#dddddd url(img/icon.png) no-repeat 100% -240px; text-indent:8px; margin-top:10px;}
+.yxtop li span.t01 .btn{background:#77c4ed url(img/icon.png) no-repeat 100% -211px; color:#fff; margin-top:13px;}
+.yxtop li span.t02 .btn,.yxtop li span.t03 .btn{background:#999999 url(img/icon.png) no-repeat 100% -211px; color:#fff;margin-top:13px;}
+
+.maito{ height:160px;}
+.info-to{ background:#fff; margin-top:20px; padding:10px 0 20px;}
+.info-to h2{ background:url(img/t-line.png) repeat-x left 15px; height:40px; line-height:40px; margin:0 15px 15px 15px;}
+.info-to h2 strong{ display:inline-block; line-height:40px; background:#fff; color:#dc1746; font-size:24px; padding-right:15px;}
+.info-to span{ width:11px; height:36px; display:inline-block; float:left; margin-top:60px; cursor:pointer;}
+.info-to span.scr-l{ background:url(img/icon.png) no-repeat 0 -516px; margin-left:21px;}
+.info-to span.scr-r{ background:url(img/icon.png) no-repeat -21px -516px;}
+.info-to div.scr-all{ float:left; width:915px; height:160px; display:inline-block; overflow:hidden; position:relative; margin:0 10px;_margin:0 5px;}
+.info-to div.scr-all ul{ position:absolute; left:0; top:0; width:10000px; display:block;}
+.info-to div.scr-all ul li{ width:210px; height:160px; margin-right:25px; float:left;}
+
+
+.link,.link p,.link a,.link p,.link a:hover{ border:none; color:#fff;}
+.link img{ border:1px solid #d2d2d2; margin:10px;}
+.name{ background:#a75de4; height:34px; line-height:34px; color:#fff; text-align:center;}
+.name span{ display:inline-block; line-height:34px; margin:0 15px; font-size:14px}
+
+.fiexd_nav{ display:none;}
+.fiexd{ position:fixed; height:auto; width:120px; right:40px; top:40px; background: url(img/icon.png)no-repeat -124px -376px;_position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50)); padding-top:158px;}
+.link-lc{text-align:center;}
+.fiexd .link-lc a,.fiexd .link-lc .hy{ width:120px; line-height:32px;height:32px;display:block;text-align:center; font-size:16px; overflow:hidden; background:#dd1880;color:#fff; margin-bottom:2px;}
+.fiexd .link-lc .hy{ height:32px; background:#dd1880 url(img/tm.jpg) no-repeat 4px 4px; padding-top:112px;}
+.fiexd .link-lc a.btop{ font-weight:700;}
+.fiexd .link-lc a.cur,.fiexd .link-lc a:hover{ background:#fe4006; text-decoration:none;}

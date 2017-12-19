@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="华南城网,华南城,华南城网会员">
+<title>成为华南城网会员，帮您树品牌、建渠道、促销量</title>
+<link href="http://res.csc86.com/bhf/" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script src="http://res.csc86.com/js/"></script>
+<script>
+$(function(){
+	clickHover("#nav","hover");
+	clickHover("#float","hover");
+	submite("#btn","#name","#phone")
+});
+function clickHover(id,cur){
+	$(id).children().each(function(index, element) {
+		$(this).bind("click",function(){
+			$(this).siblings().removeClass(cur);
+			$(this).addClass(cur);
+		});
+	});
+}
+function submite(id,name,phone){
+	var id = id, name = name , phone = phone;
+	$(id).bind("click",function(){
+		$.ajax({
+			type: "POST",
+			url: "http://cncms.csc86.com/formguide/index.php",
+			async: false,
+			data: {
+				"formid":20,
+				"subtype":"ajax",
+				"name":$(name).val(),
+				"tel":$(phone).val(),
+				"dosubmit":"VIP"
+			},
+			success: function(data){
+				if(data.status == true){
+					alert("提交成功！");
+					$(name).val("");$(phone).val("");
+				}else{
+					alert("提交失败，请刷新后重试！");
+				}
+			},
+			dataType: "jsonp"
+		}); 
+	});
+}
+</script>
+</head>
+<body>
+<div class="banner">成为华南城网会员，帮您树品牌、建渠道、促销量</div>
+<div class="gray">
+	<div id="nav" class="nav">
+    	<a class="n1 hover" href="#vip">VIP会员</a><a class="n2" href="#list">服务明细</a><a class="n3" href="#app">申请服务</a><a class="n4" href="#more">了解更多</a>
+    </div>
+</div>
+<div class="bg-fff0b7">
+    <div id="vip" class="q1">
+        <img src="css/img/3_01.png" />
+        <img src="css/img/3_02.png" />
+        <img src="css/img/3_03.png" />
+        <img src="css/img/3_04.png" />
+    </div>
+</div>
+<div class="bg-gray">
+	<div class="q2">
+    	<img src="css/img/4_01.png" />
+        <img src="css/img/4_02.png" />
+        <img src="css/img/4_03.png" />
+        <img src="css/img/4_04.png" />
+        <img src="css/img/5_01.png" />
+        <img id="app" src="css/img/5_02.png" />
+        <img src="css/img/5_03.png" />
+        <img src="css/img/5_04.png" />
+        <img src="css/img/6_01.png" />
+        <img src="css/img/6_02.png" />
+        <img src="css/img/6_03.png" />
+        <img src="css/img/7_01.png" />
+        <img src="css/img/7_02.png" />
+        <img src="css/img/7_03.png" />
+        <div class="fun"><a class="a1" href="#a1">&nbsp;</a><a class="a2" href="#a2">&nbsp;</a><a class="a3" href="#a3">&nbsp;</a></div>
+        <div class="form">
+        	<form id="18" action="" method="post">
+        	<table>
+                <tr>
+                    <td align="right">姓名：</td>
+                    <td><input type="text" name="" id="name" /></td>
+                </tr>
+                <tr>
+                    <td align="right">联系电话：</td>
+                    <td><input type="text" name="" id="phone" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="button" name="button" id="btn" value="" /><input type="hidden" value="VIP" /><input type="hidden" value="VIP" /></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="bg-4d8df9">
+	<div id="list" class="q3">
+    	<img src="css/img/8_01.png" />
+        <img src="css/img/8_02.png" />
+        <img id="a1" src="css/img/8_03.png" />
+        <img src="css/img/8_04.png" />
+        <img src="css/img/8_05.png" />
+        <img id="a2" src="css/img/8_06.png" />
+        <img src="css/img/8_07.png" />
+        <img id="a3" src="css/img/8_08.png" />
+        <img src="css/img/8_09.png" />
+        <img src="css/img/8_10.png" />
+        <img src="css/img/8_11.png" />
+        <img src="css/img/8_12.png" />
+    </div>
+</div>
+<div id="more" class="bg-2bbcd1">
+	<div class="q4">
+    	<img src="css/img/9_01.png" />
+        <img src="css/img/9_02.png" />
+        <img src="css/img/9_03.png" />
+        <a class="mail" href="Mailto:cs@csc-ec.com" title="Q我吧">Q我吧</a>
+        <a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2621998349&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2621998349:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    </div>
+</div>
+<div id="float" class="float">
+	<a class="f1 hover" href="#vip">VIP会员</a><a class="f2" href="#list">服务明细</a><a class="f3" href="#app">申请服务</a><a class="f4" href="#more">了解更多</a>
+</div>
+</body>
+</html>

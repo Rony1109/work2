@@ -1,0 +1,56 @@
+body {background: #2192D4 url(../images/header_bg.jpg) no-repeat center 86px;}
+.header {height: 82px;background: url(../images/top_bg.jpg) repeat-x;border-bottom: 4px solid #399BDC}
+.row {width: 1000px;margin: 0 auto;}
+.header .logo {padding-top: 22px; float: left;}
+.header ul {float: right; margin-top: 30px;}
+.header li {float: left; margin: 0 5px; }
+.header li a {font-size: 15px; font-family: 微软雅黑; color: #131313; padding: 3px 10px}
+.header li.cur a,.header li a:hover {background: #0D7BC8; border-radius: 5px; color: #fff; text-decoration: none;}
+
+.top .header-img { margin-left: -4px}
+.top .ctn1 {background: url(../images/ctn1.jpg) no-repeat; height: 161px; padding: 5px 40px; margin-top: -4px}
+
+.row h1 {font-size: 24px; font-family: 微软雅黑; color: #2A9AD9; font-weight: normal;}
+
+.ctn1 p {text-indent: 2em; color: #70706E; line-height: 24px; font-size: 13px}
+.ctn1 p a {color: #2DA1DE;}
+
+.article {margin-top: 15px;}
+.article h1 {padding: 5px 25px;}
+.aside-left {float: left;}
+.aside-left h1 {width:638px; height:40px; line-height: 36px; background: url(../images/banner1.jpg) no-repeat -5px 0;}
+.aside-left ul {width: 688px; overflow: hidden; margin-top: 15px;}
+.aside-left ul li {float: left; margin: 0 25px 15px 0; position: relative; overflow: hidden;}
+.aside-left ul li a.detail {position: absolute; left: 0; bottom: 4px; width: 210px; height: 30px; line-height: 30px; background: #000; color: #fff; opacity: 0.6; filter: alpha(opacity=60); text-align: center; font-size: 14px; font-weight: bold; display: none;}
+.aside-left ul li a:hover {text-decoration: none;}
+.aside-right {float: right; margin-top: 5px; *margin-bottom: 20px;}
+.aside-right h1 {width:230px; height:31px; line-height: 26px; background: url(../images/banner2.jpg) no-repeat;}
+.aside-right .marquee { position: relative; width: 280px; height: 258px; overflow: hidden;}
+.aside-right ul {list-style: inside; color: #fff; width: 280px; position: absolute; *list-style: disc;}
+.aside-right ul li {border-bottom: 1px dotted #fff; padding: 10px 0; height: 15px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.aside-right ul li a {color: #fff; text-decoration: none;}
+.aside-right ul li a:hover {text-decoration: underline;}
+
+.footer h1 {width:950px; height:30px; line-height: 26px; background: url(../images/banner3.jpg) no-repeat; padding: 5px 25px;}
+.footer .slider {margin-top: 20px;}
+.footer a.prev {display: block; width: 40px; height: 155px; background: #1E7DB5 url(../images/left.jpg) no-repeat center center; cursor: pointer; float: left;}
+.footer a.next {display: block; width: 40px; height: 155px; background: #0E71A8 url(../images/right.jpg) no-repeat center center; cursor: pointer; float: right;}
+.footer .slider-img {width: 920px; height: 155px; float: left; overflow: hidden; margin-bottom: 20px; position: relative;}
+.footer .slider ul {width: 30000px; margin-left: 30px}
+.footer ul li {width: 190px; float: left; margin-right: 33px; display: inline-block;}
+.footer ul li a.title {display: block; text-align: center; margin-top: 2px; *margin-top: 5px; color: #fff}
+
+.bot-info {background: #fff; padding: 20px 0 40px 0; border-top: 4px solid #B2ECFF;}
+.bot-info p {text-align: center; margin: 10px 0; color: #737373}
+.bot-info p a {color: #737373; margin: 0 10px;}
+
+.form-fixed {position: fixed; left: 0; bottom: 0; background: #E6E6E6; height: 60px; width: 100%; border-top: 2px solid #C0C0C0;}
+.form-fixed form {text-align: center; margin-top: 15px; *margin-top: 10px}
+.form-fixed form span {margin: 0 5px;}
+.form-fixed form label {font-size: 14px; font-family: 微软雅黑; color: #797979; margin-right: 3px; *vertical-align: 8px; }
+.form-fixed form input {width: 116px; height: 16px; border: 1px solid #DEDEDE; padding: 5px; }
+.form-fixed form input:focus {border-color: #51A7E8}
+.form-fixed form input.min {width: 60px}
+.form-fixed form input.max {width: 170px}
+.form-fixed form input.submit {width: 132px; height: 35px; background: url(../images/submit.jpg) no-repeat; border: none; cursor: pointer; color: #fff; font-family: 微软雅黑; font-size: 14px}
+

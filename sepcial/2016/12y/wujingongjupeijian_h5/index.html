@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+  <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+  <meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+  <meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+  <meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+  <meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+  <meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+  <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+  <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+  <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+  <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+  <meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+  <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+  <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+  <meta name="browsermode" content="application"><!-- UC应用模式 -->
+  <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+  <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+  <meta name="keywords" content=""/><!-- seo 关键字 -->
+  <meta name="description" content=""/><!-- seo 网页描述 -->
+  <title>五金工具配件</title>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/index.css"/>
+    <script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+    <!-- 此文件可以放在底部，此处仅说明，以免忘记 -->
+    <script>seajs.use('./js/init')</script>
+  <script src="js/flexible.js"></script><!--已经手动修改字体算法-->
+  <!--<script>//为加速js，置为内联-->
+    <!--!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));-->
+  <!--</script>-->
+</head>
+<body>
+  <nav class="bg_c_10 wh_1 mg-au po_f tp_2 left_2 right_1 z_dex_1">
+   <ul class="wh_5 mg-au clearfix">
+     <li class="fl"><a href="#lead_1" class="fo_sz_0"><img src="./con_img/lead_1.jpg" alt="" class="fo_sz_0 wh_30" /></a></li>
+     <li class="fl"><a href="#lead_2" class="fo_sz_0"><img src="./con_img/lead_2.jpg" alt="" class="fo_sz_0 wh_31" /></a></li>
+     <li class="fl"><a href="#lead_3"class="fo_sz_0"><img src="./con_img/lead_3.jpg" alt="" class="fo_sz_0 wh_32" /></a></li>
+     <li class="fl"><a href="#lead_4" class="fo_sz_0"><img src="./con_img/lead_4.jpg" alt="" class="fo_sz_0 wh_31" /></a></li>
+     <li class="fl"><a href="#lead_5"class="fo_sz_0"><img src="./con_img/lead_5.jpg" alt="" class="fo_sz_0 wh_33" /></a></li>
+     <li class="fl"><a href="#lead_6" class="fo_sz_0"><img src="./con_img/lead_6.jpg" alt="" class="fo_sz_0 wh_34" /></a></li>
+     <li class="fl"><a href="#lead_7" class="fo_sz_0"><img src="./con_img/lead_7.jpg" alt="" class="fo_sz_0 wh_35" /></a></li>
+   </ul>
+    <div class="clear"></div>
+  </nav>
+  <!--banner区域start-->
+  <header>
+    <a href="" rel="nofollow" title="华南城五金机电商城">
+      <img src="./con_img/banner.jpg" alt="" class="wh_1 block mg-au" />
+    </a>
+  </header>
+  <!--banner区域end-->
+  <section class="bg_img_1 wh_1 mg-au ">
+    <article class="wh_1  mg-au hg_1"><!--banner图片新闻区域start-->
+          <div class="wh_2 mg-au bg_img_2 po_r tp_1 pd_1 te_al_c fo_sz_1 fon_c_1">
+              <div class="li_hg_0 pd_1 no_wrap">主办方：华南城网·华南城集团旗下电商平台</div>
+              <div class="li_hg_0 pd_1 no_wrap">TEL：0755-61887282  18666295330(于小姐)</div>
+          </div>
+    </article><!--banner图片新闻区域end-->
+    <article class="wh_1  mg-au pd_2 "><!--优惠券start-->
+          <ul class="clearfix te_al_c">
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_1.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_2.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_3.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_4.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_5.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+            <li class="fl wh_3 pd_3">
+              <img src="./con_img/con_img_6.jpg" alt="" class="wh_4 fo_sz_0"/>
+            </li>
+          </ul>
+      <div class="clear"></div>
+    </article><!--优惠券end-->
+
+    <article class="wh_5 mg-au" id="lead_1"><!--限时秒杀start-->
+      <ul class="clearfix te_al_c wh_6 mg-au bor_1 mg_btm bg_c_9">
+        <li class="fl wh_3 ">
+            <a href="https://m.csc86.com/search/product_detail.ftl?productId=4861852" class="fo_sz_0">
+                <img src="./con_img/1-12.jpg" alt="" class="wh_7 fo_sz_0 hg_2"/>
+            </a>
+        </li>
+        <li class="fl wh_3 ">
+           <div class="wh_28 mg-au pd_12">
+             <div class="fon_w_b fo_sz_7 te_al_l li_hg_0 wh_28 mg-au no_wrap">
+                 <a href="https://m.csc86.com/search/product_detail.ftl?productId=4861852" class="fon_c_1">吉隆发十字电动批头/批咀</a>
+             </div>
+             <div class="pd_4 te_al_l fon_c_7 fo_sz_1 wh_28 mg-au no_wrap" >高档材质耐磨 使用寿命长 性价比高</div>
+             <div class="pd_16 clearfix">
+               <ul class="clearfix wh_28 mg-au">
+                 <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l box_sizing no_wrap">德国钢材</li>
+                 <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l box_sizing no_wrap">精密生产</li>
+               </ul>
+               <ul class="clearfix wh_28 mg-au">
+                 <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l  box_sizing no_wrap">德国钢材</li>
+                 <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l  box_sizing no_wrap">精密生产</li>
+               </ul>
+             </div>
+           </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4861852" class="fo_sz_0">
+             <div class="bg_img_4 pd_4 po_r left_1" >
+                <ul class="clearfix ">
+                  <li class=" fl pd_14 box_sizing" style="width:25%">
+                    <div class="fon_c_9 fo_sz_8 li_hg_0 te_al_l uder_thr">市场价:</div>
+                    <div class="hg_8"></div>
+                    <div class="fon_c_1 fo_sz_2 li_hg_0 te_al_l  fon_w_b">团购价:￥</div>
+                  </li>
+                  <li class="fl impact fo_sz_5 fon_c_1 te_al_l  hg_11 li_hg_2" style="width:75%">0.90</li>
+                </ul>
+             </div>
+          </a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+
+
+      <ul class="clearfix te_al_c wh_6 mg-au bor_1 mg_btm">
+        <li class="fl wh_3 ">
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=4960061" class="fo_sz_0">
+                 <img src="./con_img/1-13.jpg" alt="" class="wh_7 fo_sz_0 hg_2"/>
+             </a>
+        </li>
+        <li class="fl wh_3 ">
+          <div class="wh_28 mg-au pd_12">
+            <div class=" fon_w_b fo_sz_7 te_al_l li_hg_0 wh_28 mg-au no_wrap">
+                <a href="https://m.csc86.com/search/product_detail.ftl?productId=4960061" class="fon_c_1" >创恒空心钻头35mm</a>
+            </div>
+            <div class="pd_4 te_al_l fon_c_7 fo_sz_1 wh_28 mg-au no_wrap" >钻孔/环形槽加工 分层切削</div>
+            <div class="pd_16 clearfix">
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l box_sizing no_wrap">硬质合金刀片</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l box_sizing no_wrap">适合多种钻机</li>
+              </ul>
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l  box_sizing no_wrap">排屑性能好</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l  box_sizing no_wrap">崩刃率低</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4960061" class="fo_sz_0">
+              <div class="bg_img_4 pd_4 po_r left_1" >
+                <ul class="clearfix ">
+                  <li class=" fl pd_14 box_sizing" style="width:25%">
+                    <div class="fon_c_9 fo_sz_8 li_hg_0 te_al_l uder_thr">市场价:</div>
+                    <div class="hg_8"></div>
+                    <div class="fon_c_1 fo_sz_2 li_hg_0 te_al_l  fon_w_b">团购价:￥</div>
+                  </li>
+                  <li class="fl impact fo_sz_5 fon_c_1 te_al_l  hg_11 li_hg_2" style="width:75%">85.00</li>
+                </ul>
+              </div>
+          </a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+
+      <ul class="clearfix te_al_c wh_6 mg-au bor_1 mg_btm">
+        <li class="fl wh_3 ">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4839096" class="fo_sz_0">
+             <img src="./con_img/1-14.jpg" alt="" class="wh_7 fo_sz_0 hg_2"/>
+         </a>
+        </li>
+        <li class="fl wh_3 ">
+          <div class="wh_28 mg-au pd_12">
+            <div class=" fon_w_b fo_sz_7 te_al_l li_hg_0 wh_28 mg-au no_wrap">
+                <a href="https://m.csc86.com/search/product_detail.ftl?productId=4839096" class="fon_c_1" >博世TWS6600角向磨光机</a>
+            </div>
+            <div class="pd_4 te_al_l fon_c_7 fo_sz_1 wh_28 mg-au no_wrap" >经典马达 进口材质齿轮 自停碳刷</div>
+            <div class="pd_16 clearfix">
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l box_sizing no_wrap">国际品质</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l box_sizing no_wrap ">11000转/分 高转速</li>
+              </ul>
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l  box_sizing no_wrap">600W 大功率</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l  box_sizing no_wrap">性价比高</li>
+              </ul>
+            </div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4839096" class="fo_sz_0">
+              <div class="bg_img_4 pd_4 po_r left_1" >
+                <ul class="clearfix ">
+                  <li class=" fl pd_14 box_sizing" style="width:25%">
+                    <div class="fon_c_9 fo_sz_8 li_hg_0 te_al_l uder_thr">市场价:</div>
+                    <div class="hg_8"></div>
+                    <div class="fon_c_1 fo_sz_2 li_hg_0 te_al_l  fon_w_b">团购价:￥</div>
+                  </li>
+                  <li class="fl impact fo_sz_5 fon_c_1 te_al_l  hg_11 li_hg_2" style="width:75%">135.00</li>
+                </ul>
+              </div>
+          </a>
+        </li>
+      </ul><div class="clear"></div>
+
+      <ul class="clearfix te_al_c wh_6 mg-au bor_1 mg_btm">
+        <li class="fl wh_3 ">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5033204" class="fo_sz_0">
+             <img src="./con_img/1-15.jpg" alt="" class="wh_7 fo_sz_0 hg_2"/>
+         </a>
+        </li>
+        <li class="fl wh_3 ">
+          <div class="wh_28 mg-au pd_12">
+            <div class=" fon_w_b fo_sz_7 te_al_l li_hg_0 wh_28 mg-au no_wrap">
+                <a href="https://m.csc86.com/search/product_detail.ftl?productId=5033204" class="fon_c_1">WD-40除锈润滑剂200ML</a>
+            </div>
+            <div class="pd_4 te_al_l fon_c_7 fo_sz_1 wh_28 mg-au no_wrap" >防锈除湿解锈润滑清洁电导</div>
+            <div class="pd_16 clearfix">
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l box_sizing no_wrap">排除金属湿气</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l box_sizing no_wrap">消除摩擦噪音</li>
+              </ul>
+              <ul class="clearfix wh_28 mg-au">
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 fo_sz_1 li_hg_0 te_al_l  box_sizing no_wrap">松解生锈机件</li>
+                <li class="fl wh_3 pd_15 bg_img_3 fon_c_8 li_hg_0 fo_sz_1 te_al_l  box_sizing no_wrap">解化粘固杂质</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5033204" class="fo_sz_0">
+              <div class="bg_img_4 pd_4 po_r left_1" >
+                <ul class="clearfix ">
+                  <li class=" fl pd_14 box_sizing" style="width:25%">
+                    <div class="fon_c_9 fo_sz_8 li_hg_0 te_al_l uder_thr">市场价:</div>
+                    <div class="hg_8"></div>
+                    <div class="fon_c_1 fo_sz_2 li_hg_0 te_al_l  fon_w_b">团购价:￥</div>
+                  </li>
+                  <li class="fl impact fo_sz_5 fon_c_1 te_al_l  hg_11 li_hg_2" style="width:75%">23.00</li>
+                </ul>
+              </div>
+          </a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </article><!--限时秒杀end-->
+
+    <article class="wh_1 mg-au "  id="lead_2"><!--五金工具耗材start-->
+      <img src="./con_img/con_img_8.png" alt="" class="wh_8 hg_3 block mg-au pd_3"/>
+      <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+        <li class="fl wh_3 pd_11 ">
+            <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130055" class="fo_sz_0">
+                <img src="./con_img/1-16.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+            </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+             <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">CRM品牌APMT1135铣刀粒</div>
+             <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+             <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">精度高 切削性能优良</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130055" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">8.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5131457" class="fo_sz_0" >
+              <img src="./con_img/1-17.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">CRM品牌切槽/切断刀粒</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">高精度 切削性能良好</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5131457" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">35.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130045" class="fo_sz_0" >
+             <img src="./con_img/1-18.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">CRM品牌RPMT1204铣刀粒</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">加工效率高 切削轻快</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130045" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">10.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5126314" class="fo_sz_0" >
+             <img src="./con_img/1-19.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌S650系列 4F立铣刀</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=5126314" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">35.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+         <li class="fl wh_3 pd_11">
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123612" class="fo_sz_0">
+                 <img src="./con_img/1-32.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+             </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌S600系列 4F立铣刀</div>
+                <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">精度高 切削性能优良</div>
+              </div>
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123612" >
+              <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                <li class="  fon_c_1 te_al_l" >
+                    <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                </li>
+              </ul>
+              </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5126353" class="fo_sz_0">
+             <img src="./con_img/1-33.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌X650系列 4F立铣刀</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">高精度 切削性能良好</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5126353" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">36.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130023" class="fo_sz_0">
+             <img src="./con_img/1-34.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">CRM品牌APMT1605铣刀粒</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">硬度高 切削性能良好</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=5130023" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">15.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                 <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+             </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+              </div>
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+              <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                <li class="  fon_c_1 te_al_l" >
+                    <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                </li>
+              </ul>
+              </a>
+        </li>
+          <li class="more_things" style="display: none">  <!--查看更多的内容隐藏-->
+              <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <div class="clear"></div>
+      <img src="./con_img/con_img_25.png" alt="" class="block mg-au wh_5 more" data-id="0"/><!--查看更多按钮-->
+    </article><!--五金工具耗材end-->
+    <article class="wh_1 mg-au pd_9"  id="lead_3"><!--磨料磨具start-->
+      <img src="./con_img/con_img_26.png" alt="" class="wh_26 hg_3 block mg-au pd_3"/>
+      <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789029" class="fo_sz_0">
+              <img src="./con_img/1-20.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">3M背面精细抛光海绵磨块砂纸</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">柔韧性好 强度高</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789029" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">3.30</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789026" class="fo_sz_0">
+              <img src="./con_img/1-21.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">德国羚羊蓝色海绵砂纸</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">砂粒均匀不易掉砂 干湿两用</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789026" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">2.80</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789023" class="fo_sz_0">
+                  <img src="./con_img/1-22.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">海宏手机外壳五金抛光材料海绵块</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">金刚石砂粒 海绵砂纸</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789029" class="fo_sz_0" >
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">2.00</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789032" class="fo_sz_0">
+                  <img src="./con_img/1-23.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">海宏无印字进口海绵砂纸膏</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">打磨顺手 海绵砂纸</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789026" class="fo_sz_0">
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">3.30</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846055" class="fo_sz_0">
+                  <img src="./con_img/1-36.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">犀利磨霸 木工专用海绵磨块</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">可重复使用 可曲面研磨</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789029" class="fo_sz_0" >
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">1.40</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846072" class="fo_sz_0">
+                  <img src="./con_img/1-37.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">犀利磨霸 木工专用及油漆面海绵磨块</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">可重复使用 干湿两用</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789026" class="fo_sz_0">
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">1.60</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846042" class="fo_sz_0">
+                  <img src="./con_img/1-38.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">德国羚羊手机外壳专用海绵砂</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">磨削效率高 使用寿命长</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789029" class="fo_sz_0" >
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">2.65</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846011" class="fo_sz_0">
+                  <img src="./con_img/1-39.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+              <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                  <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">奥丰 手机平板专用打磨海绵砂纸</div>
+                  <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                  <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">磨削效率高 使用寿命长</div>
+              </div>
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4789026" class="fo_sz_0">
+                  <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_7">
+                      <li class="  fon_c_1 te_al_l" >
+                          <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">1.10</span>
+                      </li>
+                  </ul>
+              </a>
+          </li>
+          <li class="more_things" style="display: none">  <!--查看更多的内容隐藏-->
+              <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <div class="clear"></div>
+        <img src="./con_img/con_img_25.png" alt="" class="block mg-au wh_5 more" data-id="1"/><!--查看更多按钮-->
+    </article><!--磨料磨具end-->
+    <article class="wh_1 mg-au pd_9 " id="lead_4"><!--电动工具start-->
+      <img src="./con_img/con_img_27.png" alt="" class="wh_26 hg_3 block mg-au pd_3"/>
+      <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4855870" class="fo_sz_0" >
+              <img src="./con_img/1-24.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap" >惠日36V单电锂电角磨机</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">3000MA大容量电池 金属打磨切割机</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4855870"class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">420.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848327" class="fo_sz_0">
+             <img src="./con_img/1-25.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">日立角磨机G10SF3角向磨光机</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">齿轮经久耐用 应用范围广</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848327" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">215.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4851811" class="fo_sz_0">
+              <img src="./con_img/1-26.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">战队 角向磨光机切割打磨</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">超细机身 加厚防护罩</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4851811" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">120.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846654" class="fo_sz_0" >
+              <img src="./con_img/1-27.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">博世电动工具 角磨机 磨光机</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">适合狭窄空间操作 防变形防护罩</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846654"  class="fo_sz_0">
+             <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+                <li class="  fon_c_1 te_al_l" >
+                    <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">240.00</span>
+                </li>
+            </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846840" class="fo_sz_0">
+                 <img src="./con_img/1-40.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+             </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">日立角磨机G10SS多功能手磨机</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">大功率输入 易把持</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846840" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">165.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4856065" class="fo_sz_0">
+             <img src="./con_img/1-41.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">惠日36V双电锂电角磨机</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">3000MA大容量电池 金属打磨切割机</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4856065" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">530.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4850388" class="fo_sz_0" >
+             <img src="./con_img/1-42.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">惠日充电钻12V单速锂电</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">工业级36V锂电角磨 切割 打磨 抛光</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4850388" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">135.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4850904" class="fo_sz_0">
+             <img src="./con_img/1-43.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">佐尔顿双灵款20V锂电链钉枪</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">使用寿命长 高品质批头</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4850904" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">468.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="more_things" style="display: none">  <!--查看更多的内容隐藏-->
+              <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+                  <li class="fl wh_3 pd_11">
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                      </a>
+                      <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                          <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                          <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                          <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                      </div>
+                      <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                              <li class="  fon_c_1 te_al_l" >
+                                  <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                              </li>
+                          </ul>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <div class="clear"></div>
+        <img src="./con_img/con_img_25.png" alt="" class="block mg-au wh_5 more" data-id="2"/><!--查看更多按钮-->
+    </article><!--电动工具end-->
+    <article class="wh_1 mg-au pd_9"  id="lead_5"><!--手动工具start-->
+      <img src="./con_img/con_img_28.png" alt="" class="wh_26 hg_3 block mg-au pd_3"/>
+      <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848388" class="fo_sz_0">
+              <img src="./con_img/1-28.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">耐斯JK-6089 螺丝刀组合</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">简洁易用 功能强大</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848388" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">17.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848386" class="fo_sz_0" >
+              <img src="./con_img/1-29.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">耐斯六角扳手 厂家批发</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">球头设计活动范围大 工业级标准</div>
+          </div>
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4848386" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">19.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4849131"  class="fo_sz_0">
+              <img src="./con_img/1-30.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+          </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">塔吉玛LC-303皮革专用刀批发</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">不易生锈 韧性好/超锋利</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4849131" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">4.30</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+        <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4849154" class="fo_sz_0">
+             <img src="./con_img/1-31.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">塔吉玛9mm小号透明汽车帖膜刀</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">高碳钢材料刀片 全新ABS原料刀柄</div>
+          </div>
+          <a href="https://m.csc86.com/search/product_detail.ftl?productId=4849154" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">2.18</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+             <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845571" class="fo_sz_0" >
+                 <img src="./con_img/1-44.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+             </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">司特力电子斜口剪斜嘴塑料水口钳</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">机械用碳素钢 人体工程学手柄</div>
+          </div>
+        <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845571" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">27.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845577" class="fo_sz_0" >
+             <img src="./con_img/1-46.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">司特力STEDI气剪刀头</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">气剪刀头使用寿命长 原装进口</div>
+          </div>
+        <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845577" class="fo_sz_0">
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">75.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+         <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846480" class="fo_sz_0" >
+             <img src="./con_img/1-47.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+         </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">DY726水口钳 电子钳 模型斜口钳</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">刀口平整 剪切锋利</div>
+          </div>
+        <a href="https://m.csc86.com/search/product_detail.ftl?productId=4846480" class="fo_sz_0" >
+          <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+            <li class="  fon_c_1 te_al_l" >
+                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">22.00</span>
+            </li>
+          </ul>
+          </a>
+        </li>
+          <li class="fl wh_3 pd_11">
+              <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845574" class="fo_sz_0" >
+                  <img src="./con_img/1-45.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+              </a>
+          <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+            <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">司特力STEDI高质量压接钳</div>
+            <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+            <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">原装进口 人体工程学手柄</div>
+          </div>
+            <a href="https://m.csc86.com/search/product_detail.ftl?productId=4845574" class="fo_sz_0" >
+              <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_5">
+                <li class="  fon_c_1 te_al_l" >
+                    <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">93.00</span>
+                </li>
+              </ul>
+              </a>
+        </li>
+      </ul>
+        <li class="more_things" style="display: none">  <!--查看更多的内容隐藏-->
+            <ul class="clearfix te_al_c wh_9 mg-au pd_11">
+                <li class="fl wh_3 pd_11">
+                    <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                        <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                    </a>
+                    <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                        <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                        <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                        <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                    </div>
+                    <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                        <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                            <li class="  fon_c_1 te_al_l" >
+                                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="fl wh_3 pd_11">
+                    <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                        <img src="./con_img/1-35.jpg" alt="" class="wh_10 fo_sz_0 hg_4 block mg-au"/>
+                    </a>
+                    <div class="wh_10 bg_c_1 te_al_l pd_10 mg-au ">
+                        <div class="fon_c_4 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">JHK品牌 S600系列 2F球刀</div>
+                        <img src="./con_img/con_img_24.png" alt="" class="block mg-au wh_25"/>
+                        <div class="fon_c_5 fo_sz_1 li_hg_0 wh_24 mg-au no_wrap">切削轻快 抗崩性良好</div>
+                    </div>
+                    <a href="https://m.csc86.com/search/product_detail.ftl?productId=5123586" class="fo_sz_0">
+                        <ul class="wh_10 mg-au clearfix pd_10 bg_c_6 bg_img_6">
+                            <li class="  fon_c_1 te_al_l" >
+                                <span class="li_hg_0 fo_sz_4">团购价:￥</span><span class="impact fo_sz_5 li_hg_0">29.00</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        </ul>
+        <div class="clear"></div>
+        <img src="./con_img/con_img_25.png" alt="" class="block mg-au wh_5 more" data-id="3"/><!--查看更多按钮-->
+    </article><!--手动工具end-->
+    <article class="wh_1 mg-au te_al_c pd_8"  id="lead_6"><!--供应商会员专享权益start-->
+      <img src="./con_img/con_img_12.png" alt="" class=" wh_11 hg_5 block mg-au"/>
+      <div class="hg_6"></div>
+      <ul class="clearfix wh_14 mg-au">
+        <li class="wh_13 fl">
+          <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+            <img src="./con_img/con_img_18.png" alt="" class="wh_16 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">正品特价</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+              平台认证，品牌厂商供货，正品保证&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            </div>
+          </div>
+        </li>
+        <li class="wh_13 fl">
+          <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+            <img src="./con_img/con_img_19.png" alt="" class="wh_16 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">海量供应商共享</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+              超过数十万生产型会员，一站式低价采购&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            </div>
+          </div>
+        </li>
+        <li class="wh_13 fl">
+          <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+            <img src="./con_img/con_img_20.png" alt="" class="wh_16 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">采购技能培训</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+              加入华南城网五金行业采购圈，享受免费行业采购技能培训
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="pd_2 fo_sz_4 fon_c_3">
+        我是采购商&nbsp;&nbsp;我要免费注册成为采购会员&nbsp;&nbsp;&nbsp;&nbsp;<span class="fon_c_10 tx_dec-uli" id="cgsQq1">联系客服QQ</span>
+      </div>
+      <a href="http://member.csc86.com/register/signup"><img src="./con_img/con_img_21.png" alt="" class=" wh_12 block mg-au"/></a>
+      <div class="hg_6"></div>
+      <a href=""><img src="./con_img/con_img_13.png" alt="" class=" wh_11 pd_4 block mg-au"/></a>
+      <ul class="clearfix wh_19 mg-au">
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_14.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">优先曝光</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              优先获得百度、360
+              等搜索引擎海量流量，
+              提高产品曝光
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_15.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">身份标识</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              个性化旺铺，实地认证，活动产品页面及旺铺首页标签展示
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_16.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">海量订单</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              优先获得平台海量团购订单，更有千万级优质采购商资源匹配
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_17.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_2">共赢成长</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              团购供应商将成为华南城网长期合作伙伴，共享品牌成长及推广资源
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class=" pd_4 fo_sz_4 fon_c_3">
+        我是供应商&nbsp;&nbsp;我要加入团购活动供货&nbsp;&nbsp;&nbsp;&nbsp;<span class="fon_c_10 tx_dec-uli" id="cgsQq2">联系客服QQ</span>
+      </div>
+      <a href="http://member.csc86.com/register/signup"><img src="./con_img/con_img_21.png" alt="" class=" wh_12 block mg-au"/></a>
+    </article><!--供应商会员专享权益end-->
+  </section>
+  <section class="wh_1  mg-au bg_c_5" id="lead_7">
+    <article class="wh_5  mg-au  te_al_c "><!--保障start-->
+      <ul class="clearfix  mg-au">
+        <li class="wh_22 fl">
+          <img src="./con_img/con_img_22.png" alt="" class="wh_22 block mg-au"/>
+        </li>
+        <li class="wh_23 fl ">
+          <img src="./con_img/con_img_23.png" alt="" class="wh_23 block mg-au"/>
+        </li>
+      </ul>
+      <div class="hg_6"></div>
+    </article><!--保障end-->
+</section>
+
+  <!--统计代码 start-->
+ <div style="display:none"><script src="http://res.csc86.com/js/m/statistics.js"></script></div>
+  <!--统计代码 end-->
+</body>
+<script src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+<script>
+  BizQQWPA.addCustom({ //增加自定义外观的WPA
+    aty: '0', //接入类型，0-自动分流，1-指定工号，2-指定分组
+    a: '1002',  //指定接入者，当aty=0时无效
+    nameAccount: '4001848666',//采购商客服QQ号
+    selector: 'cgsQq1'//指定成为WPA的元素ID
+  });
+  BizQQWPA.addCustom({ //增加自定义外观的WPA
+    aty: '0', //接入类型，0-自动分流，1-指定工号，2-指定分组
+    a: '1002',  //指定接入者，当aty=0时无效
+    nameAccount: '4001848666',//采购商客服QQ号
+    selector: 'cgsQq2'//指定成为WPA的元素ID
+  });
+</script>
+</html>

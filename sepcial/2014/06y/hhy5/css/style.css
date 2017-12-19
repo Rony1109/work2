@@ -1,0 +1,90 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 以下为专题样式 */
+/*public*/
+.p-9{padding:9px;}
+.p-l20{padding-left: 20px;}
+.p-r20{padding-right: 20px;}
+.m-t10{margin-top: 10px;}
+.m-b5{margin-bottom: 5px;}
+.m-b10{margin-bottom: 10px;}
+.c-444{color: #444;}
+.c-888{color: #888;}
+.c-f32f05{color: #f32f05}
+.g-fs40{font-size:40px}
+.g-fs24{font-size:24px}
+.g-yahei{font-family: microsoft yahei;}
+.bg-1d9638{background-color: #1d9638;}
+.g-1000{width: 1000px;margin:0 auto;}
+
+/*nav*/
+.nav{background:#048d22;height:46px;}
+.nav_bd .topic_logo{position:absolute;left:1px;top:-11px;}
+.nav_lst{margin-left:140px;}
+.nav_lst li{float:left;color:#27bfab;font:15px/46px Microsoft YaHei;}
+.nav_lst a{color:#fff;font-weight:bold;margin:0 30px;}
+
+/*main*/
+.main{background:#237134 url(img/banner.jpg) no-repeat center top;}
+.banner{height:513px;}
+.jiathis_style{position:absolute;right:15px;top:14px;}
+.jiathis_style a{color:#fff;}
+.lingshi{position:absolute;left:80px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+/*ico*/
+.ico-sale
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;background-repeat: no-repeat;}
+.ico-sale{width:64px;padding-top:22px;background-position:0px 0px;background:url(img/0.gif);}
+
+/*title*/
+.title{font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;background-color:#14802c;padding-left: 60px;}
+.title-bg3{ background: url(img/3.gif) no-repeat;margin-left: -15px;height: 99px;line-height: 119px;}
+.title-bg4{ background: url(img/4.gif) no-repeat;margin-left: -15px;height: 98px;line-height: 119px;}
+.title-bg5{ background: url(img/5.gif) no-repeat;margin-left: -5px;height: 106px;line-height: 139px;}
+
+/*hhy-list*/
+.hhy-list{width: 101%;}
+.hhy-list li{width:244px;float: left;background-color: #fff;margin-right: 2px;position: relative;}
+.hhy-list li div.sale{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 66px;
+	height: 69px;
+	background: url(img/2.gif);
+	background-image: url(img/2.gif);
+}
+.hhy-list li div.sale span{padding:0 9px;}
+.hhy-list li div.sale{font-size: 50px;font-weight: 700;color: #fff;font-family: Impact;line-height:60px; }
+.hhy-list li div.sale sub{font-size: 18px;font-weight: 700;vertical-align: baseline;}
+
+/*other-web*/
+.other-web{background-color: #fff;padding: 10px 15px;}
+.other-web li{width: 215px;margin:0 10px;float: left;}
+.other-web li a,.other-web li a:hover{color:#444;font-size:14px;text-decoration: none;}
+
+/*右侧导航*/
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.fixed{background:url(img/fixed-bg.png) no-repeat center top;_background:url(img/fixed-bg-ie6.png) no-repeat center top;width:140px;padding:119px 11px 0;position:fixed;right:20px;top:20px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:20px;overflow:hidden;display:none;}
+.fixed-bd{background:#0f4b1c;padding:10px 5px 5px;}
+.fixed-bd li{margin-bottom:1px;}
+.fixed-bd a{display:block;font-family:Microsoft YaHei;overflow:hidden;}
+.fixed-bd li a{background:#176b2a;height:37px;color:#fff;font-size:14px;line-height:37px;text-align:center;}
+.fixed-bd .back-top{background:#fffc19;height:36px;padding-left:15px;color:#fa5912;font-size:16px;line-height:36px;}
+.fixed-bd .back-top i{float:left;width:0;height:0;line-height:0;border-width:8px 8px 11px 8px;border-style:solid;border-color:#fffc19 #fffc19 #fa6813 #fffc19;margin-right:10px;margin-top:5px;}>>>>>>> .r911

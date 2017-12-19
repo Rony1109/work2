@@ -1,0 +1,174 @@
+body{
+    font-family: "Microsoft Yahei";
+    background-color: #fbc932;
+    font-size: 14px;
+
+}
+.main{
+    max-width: 750px;
+    margin:0 auto;
+}
+.main .nav{
+    top:0;
+    left:0;
+    width:100%;
+    margin:10px 0 0;
+}
+.main.fixed .nav{
+    position: fixed;
+    z-index: 4;
+}
+.nav ul{
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+.nav ul:before{
+    content: "";
+    position: absolute;
+    width:100%;
+    top:25%;
+    height: 50%;
+    background-color: #e82535;
+}
+.nav ul li{
+    flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;       
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.nav ul li .btnbg{
+    display: block;
+    margin:0 3px;
+}
+.nav ul li p{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-align:center;
+    align-content:center;
+    -webkit-justify-content: center;
+    height: 100%;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+.nav ul li p span{
+        display: block;
+        font-weight: bold;
+    width: 100%;
+    font-size: 1.2em
+}
+.nav ul li.act p span{
+    color: #facd04;
+}
+.nav ul li img{
+    width: 100%;
+}
+.first-prodts{
+    margin-top: -1em;
+    padding-top:1.5em;
+}
+.banner img{
+    width:100%;
+}
+.main{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.products{
+    background-color: #fff;
+    border-top:28px solid #e82535;
+        padding-bottom: 40px;
+}
+.first-prodts{
+        border-top: 5px solid #fff;
+}
+.products li{
+    float: left;
+    width:50%;
+
+}
+.products li img{
+    width: 100%;
+}
+.products li a{
+    display: block;
+    padding:5px;
+    border:1px solid #fbc932;
+    margin:5px;
+    color: #444;
+}
+.products li a p.pro-title{
+    margin:8px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+        overflow: hidden;
+}
+.products li a .prise{
+    width:50%;
+    font-size: 1.8em;
+    font-weight: bold;
+    color:#f32f05;
+    padding-top: .5em;
+}
+.products li a .prise i{
+    font-size: .7em
+}
+.delpri{
+    width:50%;
+    font-size: .8em;
+    text-align: right;
+}
+.delpri del{
+    margin-top:10px;
+}
+.delpri img.fqj{
+    max-width:74%;
+    margin-bottom:3px;
+}
+.protit{
+    margin-top: -40px;
+    margin-bottom: 14px;
+}
+.protit h3{
+    position: relative;
+    text-align: center;
+}
+.protit h3 p{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+        align-items: center;
+}
+.protit h3 p span{
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        font-size: 1.5em;
+        color: #fff;
+}
+.buybtn{
+    background: #FF5F01;
+    text-align: center;
+    color: #fff;
+    padding:3px 0;
+}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit">
+	<title>鼠标滚动事件</title>
+	<meta name="keywords" content=""/><!-- seo 关键字 -->
+	<meta name="description" content=""/><!-- seo 网页描述 -->
+	<!-- 详细阅读基础样式文件 base-reset -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" >
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script src="http://res.csc86.com/js/"></script>
+	<script type="text/javascript" src="js/jquery.roundabout.js"></script> 
+	<script type="text/javascript" src="js/jquery.roundabout-shapes.js"> </script>
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+			$('#myroundabout').roundabout({
+				autoplay: false,
+				autoplayDuration: 5000,
+				autoplayPauseOnHover: false,
+				shape: 'square', 
+				minOpacity: 1
+			});
+		});
+		</script>
+	<!-- 此文件可以放在底部，此处仅说明，以免忘记 -->
+	<script>seajs.use('./js/init');</script>
+</head>
+<body>
+
+<div class="scroll">
+	<div class="flr flr1 cur">
+		<!-- 网站顶部  start -->
+		<div class="top-bar">
+			<div class="g-o">
+				<div class="top-csc-group">
+					<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+					<a target="_blank" href="http://sz.csc86.com">深圳</a>
+					<a target="_blank" href="http://nn.csc86.com">南宁</a>
+					<a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a>
+					<a target="_blank" href="http://xa.csc86.com">西安</a>
+					<a target="_blank" href="http://zz.csc86.com">郑州</a>
+					<a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+				</div>
+				<div class="server-r">
+					<a title="" rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">服务中心</a><span class="v-line t-w"></span><a class="sethome" href="#">设置首页</a><span class="v-line t-w"></span><a class="addfav" href="#">收藏</a>
+				</div>
+				<span class="v-line sev-r"></span>
+				<div class="top-my-account">
+					<div class="hd"><a href="http://pay.csc86.com/account/index.html" target="_blank">我的账户</a></div>
+					<div class="g-c-f bd w-193">
+					<ul class="csc-bd">
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="top-sign-info">
+					您好，<span class="bd">欢迎光临华南城网！<a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span><span class="v-line"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 网站顶部  end -->
+		<div class="g-1000">
+			<!-- JiaThis Button BEGIN -->
+					<div class="jiathis_style">
+						<a rel="nofllow" class="jiathis_button_tools_1"></a>
+						<a rel="nofllow" class="jiathis_button_tools_2"></a>
+						<a rel="nofllow" class="jiathis_button_tools_3"></a>
+						<a rel="nofllow" class="jiathis_button_tools_4"></a>
+						<a rel="nofllow" href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+					</div>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+				
+				<div class="g-h15"></div>
+				<p class="last">往期回顾：</p>
+				<select name="abc" id="abc" onchange="self.location.href=options[selectedIndex].value">
+						<option value="1">255期</option> 
+						<option value="http://dl.xunlei.com/xmp.html?id=660113&gs=xmpUnIns&peerid=ECA86BC40EC5ZRJE&pid=3081_RCMD5115&thundertype=2048">254期</option> 
+						<option value="3">253期</option> 
+						<option value="4">252期</option> 
+						<option value="5">251期</option> 
+						<option value="6">250期</option> 
+						<option value="7">255期</option> 
+						<option value="8">254期</option> 
+						<option value="9">253期</option> 
+						<option value="10">252期</option> 
+						<option value="11">251期</option> 
+						<option value="12">250期</option> 
+						<option value="13">255期</option> 
+						<option value="14">254期</option> 
+						<option value="15">253期</option> 
+						<option value="16">252期</option> 
+						<option value="17">251期</option> 
+						<option value="18">250期</option> 
+						<option value="19">255期</option> 
+						<option value="20">254期</option> 
+						<option value="21">253期</option> 
+						<option value="22">252期</option> 
+						<option value="23">251期</option> 
+						<option value="24">250期</option> 
+				</select> 
+		</div>
+	</div><!--flr1 end-->
+	
+	<div class="flr flr2">
+		<div class="g-tc g-o">
+			<div class="g-h30"></div>
+			<img src="css/img/flr1ti.jpg" width="316" height="116" alt="" />
+		</div><!--g-o end-->
+		<div class="g-h30"></div><div class="g-h10"></div>
+		<div class="g-o">
+			<ul class="roundabout" id="myroundabout"> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+				<li>
+					<a href="#" target="_blank"><img src="http://res.csc86.com/image/img.png" width="586" height="435" /></a>
+				</li> 
+			</ul>			
+		</div><!--g-o end-->
+	</div><!--flr2 end-->
+	
+	<div class="flr flr3">
+		<div class="g-tc g-o">
+			<div class="g-h30"></div>
+			<img src="css/img/flr2ti.jpg" width="316" height="116" alt="" />
+		</div><!--g-o end-->
+		<div class="g-h30"></div><div class="g-h30"></div>
+		<div class="g-o">
+			<div class="g-fl each">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="450" alt="" />
+				</a>
+				<div class="gbtm"></div>
+				<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+			</div><!-- end-->
+			
+			<div class="g-fl emid">
+				<ul class="g-cf">
+					<li class="n1">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="285" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<li class="n2">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="205" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<div class="g-h10"></div>
+					<li class="n2">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="205" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<li class="n1">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="285" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+				</ul>
+			</div><!--emid end-->
+			
+			<div class="g-fr each">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="450" alt="" />
+				</a>
+				<div class="gbtm"></div>
+				<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+			</div><!-- end-->
+		</div><!--g-o end-->
+	</div><!--flr3 end-->
+	
+	<div class="flr flr4">
+		<div class="g-tc g-o">
+			<div class="g-h30"></div>
+			<img src="css/img/flr3ti.jpg" width="316" height="116" alt="" />
+		</div><!--g-o end-->
+		<div class="g-h30"></div><div class="g-h30"></div>
+		<div class="g-o">
+			<div class="g-fl fech">
+				<div class="unit">
+					<a href="javascript:;" target="_blank">
+						<img class="g-fl" src="http://res.csc86.com/image/img.png" width="273" height="195" alt="" />
+					</a>
+					<div class="g-fr ftxt">
+						<h1>XXXXX</h1>
+						<img src="css/img/line.jpg" width="475" height="6" alt="" />
+						<p class="p2"><a href="javascript;:" target="_blank">宝马车将采用OLED柔性屏 但拒绝大尺寸</a></p>
+						<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前可以肯定...<a href="javascript;:" target="_blank">[详细]</a></p>
+						<ul>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+						</ul>
+					</div><!--ftxt end-->
+				</div><!--unit end-->
+				<div class="g-h30"></div>
+				<div class="unit">
+					<a href="javascript:;" target="_blank">
+						<img class="g-fl" src="http://res.csc86.com/image/img.png" width="273" height="195" alt="" />
+					</a>
+					<div class="g-fr ftxt">
+						<h1>XXXXX</h1>
+						<img src="css/img/line.jpg" width="475" height="6" alt="" />
+						<p class="p2"><a href="javascript;:" target="_blank">宝马车将采用OLED柔性屏 但拒绝大尺寸</a></p>
+						<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前可以肯定...<a href="javascript;:" target="_blank">[详细]</a></p>
+						<ul>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+						</ul>
+					</div><!--ftxt end-->
+				</div><!--unit end-->
+			</div><!--fech end-->
+			
+			<div class="g-fr frch">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="310" alt="" />
+				</a>
+				<div class="red">
+					<div class="g-h10"></div>
+			    	<p class="p2">宝马车将采用OLED柔性屏 但拒绝大尺寸</p>
+					<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前...<a href="javascript;:" target="_blank">[详细]</a></p>
+					<div class="g-h10"></div>
+				</div><!--red end-->
+			</div><!--frch end-->
+		</div><!--g-o end-->
+	</div><!--flr4 end-->
+	
+	<div class="flr flr5">
+		<div class="g-tc g-o">
+			<div class="g-h30"></div>
+			<img src="css/img/flr4ti.jpg" width="380" height="126" alt="" />
+		</div><!--g-o end-->
+		<div class="g-h30"></div><div class="g-h30"></div>
+		<div class="g-o">
+			<div class="g-fl each">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="450" alt="" />
+				</a>
+				<div class="gbtm"></div>
+				<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+			</div><!-- end-->
+			
+			<div class="g-fl emid">
+				<ul class="g-cf">
+					<li class="n1">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="285" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<li class="n2">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="205" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<div class="g-h10"></div>
+					<li class="n2">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="205" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+					<li class="n1">
+						<a href="javascript:;" target="_blank">
+							<img src="http://res.csc86.com/image/img.png" width="285" height="220" alt="" />
+						</a>
+						<div class="gbtm"></div>
+						<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+					</li>
+				</ul>
+			</div><!--emid end-->
+			
+			<div class="g-fr each">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="450" alt="" />
+				</a>
+				<div class="gbtm"></div>
+				<p class="pr"><a href="javascript:;" target="_blank">北京多家家具企业未达合格标准</a></p>
+			</div><!-- end-->
+		</div><!--g-o end-->
+	</div><!--flr5 end-->
+	
+	<div class="flr flr6">
+		<div class="g-tc g-o">
+			<div class="g-h30"></div>
+			<img src="css/img/flr5ti.jpg" width="380" height="126" alt="" />
+		</div><!--g-o end-->
+		<div class="g-h30"></div>
+		<div class="g-o">
+			<div class="g-fl fech">
+				<div class="unit">
+					<a href="javascript:;" target="_blank">
+						<img class="g-fl" src="http://res.csc86.com/image/img.png" width="273" height="195" alt="" />
+					</a>
+					<div class="g-fr ftxt">
+						<h1>XXXXX</h1>
+						<img src="css/img/line.jpg" width="475" height="6" alt="" />
+						<p class="p2"><a href="javascript;:" target="_blank">宝马车将采用OLED柔性屏 但拒绝大尺寸</a></p>
+						<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前可以肯定...<a href="javascript;:" target="_blank">[详细]</a></p>
+						<ul>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+						</ul>
+					</div><!--ftxt end-->
+				</div><!--unit end-->
+				<div class="g-h30"></div>
+				<div class="unit">
+					<a href="javascript:;" target="_blank">
+						<img class="g-fl" src="http://res.csc86.com/image/img.png" width="273" height="195" alt="" />
+					</a>
+					<div class="g-fr ftxt">
+						<h1>XXXXX</h1>
+						<img src="css/img/line.jpg" width="475" height="6" alt="" />
+						<p class="p2"><a href="javascript;:" target="_blank">宝马车将采用OLED柔性屏 但拒绝大尺寸</a></p>
+						<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前可以肯定...<a href="javascript;:" target="_blank">[详细]</a></p>
+						<ul>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+							<li><span>03/20</span><p><a href="javascript;:" target="_blank">中国油储接近满仓 战略石油储备暂时停顿</a></p></li>
+						</ul>
+					</div><!--ftxt end-->
+				</div><!--unit end-->
+			</div><!--fech end-->
+			
+			<div class="g-fr frch">
+				<a href="javascript:;" target="_blank">
+					<img src="http://res.csc86.com/image/img.png" width="340" height="310" alt="" />
+				</a>
+				<div class="red">
+					<div class="g-h10"></div>
+			    	<p class="p2">宝马车将采用OLED柔性屏 但拒绝大尺寸</p>
+					<p class="p3">宝马将推出一套全新触控娱乐系统，并引入柔性屏幕技术，同时这套系统以及一些新技术的应用将会对宝马后续新车型的内饰设计产生影响，目前...<a href="javascript;:" target="_blank">[详细]</a></p>
+					<div class="g-h10"></div>
+				</div><!--red end-->
+			</div><!--frch end-->
+		</div><!--g-o end-->
+		<!-- 网站底部  start -->
+		<div class="link">
+			<div class="g-h10"></div>
+			<div class="love-links">
+				<a href="http://group.csc86.com/" target="_blank" rel="nofollow">关于华南城</a><a href="http://cncms.csc86.com/about/" target="_blank" rel="nofollow">华南城网</a><a href="http://cncms.csc86.com/about/member.html" target="_blank" rel="nofollow">会员服务</a><a href="http://ad.csc86.com" target="_blank" rel="nofollow">广告服务</a><a href="http://cncms.csc86.com/about/business.html" target="_blank" rel="nofollow">商务合作</a><a href="http://cncms.csc86.com/about/server.html" target="_blank" rel="nofollow">服务条款</a><a href="http://cncms.csc86.com/about/laws.html" target="_blank" rel="nofollow">法律申明</a><a href="http://cncms.csc86.com/about/privacy.html" target="_blank" rel="nofollow">隐私保护</a><a href="http://cncms.csc86.com/about/feedback.html" target="_blank" rel="nofollow">意见反馈</a><a href="http://cncms.csc86.com/help/" target="_blank" rel="nofollow">帮助中心</a><a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a><a href="http://cncms.csc86.com/about/contact.html" target="_blank" rel="nofollow">联系我们</a>
+			</div>
+			<p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+			<p>深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+		</div>
+		<!-- 网站底部 end -->
+	</div><!--flr6 end-->
+	
+</div><!--scroll end-->
+
+<div class="flr-trg">
+	<a class="cur" href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+</div>
+</body>
+</html>

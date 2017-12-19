@@ -1,0 +1,73 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#efefef;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.g-w995{width:995px;margin-left:auto;margin-right:auto;}
+.banner{background:#050415 url(img/banner.jpg) no-repeat center top;height:649px;}
+.banner_bd h1,.banner_bd .go_csc,.banner_bd .go_jr{display:inline-block;position:absolute;line-height:999px;overflow:hidden;}
+.banner_bd h1{width:200px;height:45px;}
+.banner_bd .go_csc{width:225px;height:45px;left:0;top:23px;}
+.banner_bd .go_jr{width:219px;height:52px;left:30px;top:407px;}
+
+.topic_flr{text-align:center;}
+.topic_flr1,.topic_flr3,.topic_flr5{background:#fff;}
+.topic_flr1{height:712px;}
+.topic_flr2{background:#1ca9f1 url(img/topic-bg2.jpg) no-repeat center top;height:750px;}
+.topic_flr3,.topic_flr4,.topic_flr5,.topic_flr6{height:720px;}
+.topic_flr4{background:#f9c824 url(img/topic-bg4.jpg) no-repeat center top;}
+.topic_flr5 .flr5_bd p{position:absolute;left:90px;}
+.topic_flr5 .flr5_bd .frm_itm1{top:264px;*top:263px;_top:264px;}
+.topic_flr5 .flr5_bd .frm_itm2{top:311px;*top:310px;_top:311px;}
+.topic_flr5 .flr5_bd .frm_itm3{top:357px;*top:356px;_top:357px;}
+.topic_flr5 .flr5_bd .frm_itm4{top:402px;*top:401px;_top:402px;}
+.topic_flr5 .flr5_bd .frm_itm5{top:446px;*top:445px;_top:446px;}
+.topic_flr5 .flr5_bd .frm_itm6{top:494px;*top:493px;_top:494px;}
+.topic_flr5 .flr5_bd .frm_itm7{left:91px;top:613px;_top:614px;}
+.topic_flr5 .ipt_txt,.topic_flr5 .txt_area{background:#fff;border:1px solid #cfcfcf;padding:0 3px;}
+.topic_flr5 .ipt_txt{width:358px;height:20px;padding-top:4px;padding-bottom:4px;overflow:hidden;}
+.topic_flr5 .txt_area{width:470px;height:100px;resize:none;}
+.topic_flr5 .frm_smt,.topic_flr5 .go_jr2{display:block;width:153px;height:36px;overflow:hidden;}
+.topic_flr5 .frm_smt{background:url(img/frm-smt.jpg) no-repeat 0 0;border:none;cursor:pointer;}
+.topic_flr5 .go_jr2,.topic_flr6 .cs_mail{background-image:url(about:blank);position:absolute;line-height:999px;}
+.topic_flr5 .go_jr2{left:481px;top:121px;}
+.topic_flr6{background:#9db923 url(img/topic-bg6.jpg) no-repeat center top;}
+.topic_flr6 .cs_mail{left:47px;top:588px;display:inline-block;width:120px;height:20px;overflow:hidden;}
+
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.fixed{width:73px;text-align:right;position:fixed;right:20px;top:15%;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:8%;}
+.fixed ul{visibility:hidden;}
+.fixed li{height:23px;overflow:hidden;}
+.fixed a{display:inline-block;width:20px;height:15px;}
+.fixed .li1 a{background:#008ee8;}
+.fixed .li2 a{background:#21adf1;}
+.fixed .li3 a{background:#ff5bac;}
+.fixed .li4 a{background:#ffe139;}
+.fixed .li5 a{background:#ff690e;}
+.fixed .li6 a{background:#afd021;}
+.fixed .curr a{width:30px;}
+.fixed .dsdjt{width:73px;height:200px;}

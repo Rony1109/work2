@@ -1,0 +1,76 @@
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+html,body{height:100%;overflow:hidden; font-family:Microsoft YaHei;}
+.g-1000{  width:1000px; margin:0 auto; position:relative;}
+.g-o{ width:1200px; margin:0 auto; position:relative;}
+.g-tc{ text-align:center;}
+
+.scroll{height:100%;position:relative;}
+.flr{height:100%;min-width:1190px;position:relative;}
+.flr1{ background:#e22e2e url(img/flr1.jpg) no-repeat center top;}
+.jiathis_style{ float:right; margin-top:10px; height:200px;}
+.jiathis_style a{ color:#333;}
+#abc{ position:absolute; top:50px; right:0px; width:70px;}
+#abc option{ height:200px; overflow: auto;}
+.last{ position:absolute; top:55px; right:75px;} 
+
+.flr2{background:#f2f2f2;}
+/* roundabout */
+.roundabout-holder{width:586px;height:435px;margin:0 auto;}
+.roundabout-moveable-item{width:586px;height:435px;cursor:pointer;}
+.roundabout-moveable-item img{width:100%; height:100%; border:10px solid #fff;}
+.roundabout-in-focus{border:none;}
+.roundabout{}
+/* roundabout */
+
+
+.flr3{background:#e22e2e;}
+.each{ position:relative; width:340px; height:450px;}
+.gbtm{ background:#333; opacity:0.6; filter:alpha(opacity=60); width:100%; height:45px; position:absolute; bottom:0px; left:0px; z-index:3; }
+.pr{ position:absolute; font-size:14px; bottom:13px; left:15px; z-index:5; display:block; width:88%; height:23px; overflow:hidden;}
+.pr a{ color:#fff;}
+.emid{ width:500px; height:450px; overflow:hidden; margin-left:10px;}
+.emid ul{ width:103%;}
+.emid ul li{ position:relative; float:left; margin-right:10px;}
+.n1{ width:285px; height:220px;}
+.n2{ width:205px; height:220px;}
+
+.flr4{background:#f2f2f2;}
+.fech{ width:785px;}
+.ftxt{ width:485px;}
+.ftxt h1{ font-size:20px; color:#e22e2e;}
+.p2{ font-size:14px; padding:3px 0 5px 10px;}
+.p3{ font-size:12px; color:#888; padding:0px 10px 5px 10px;}
+.ftxt .p3 a{ color:#ffa734;}
+.ftxt p a{ color:#333;}
+.ftxt ul{ list-style:square; color:#ffa734; margin-left:26px; margin-top:10px;}
+.ftxt ul li{ width:440px; height:23px;}
+.ftxt ul li span{ float:right; color:#888; font-size:12px;}
+.frch{ width:340px;}
+.red{ background:#e22e2e; color:#fff;}
+.red .p3{ color:#fff;}
+.red .p3 a{ color:#fff;}
+
+
+
+.flr5{background:#e22e2e;}
+.flr6{background:#f2f2f2;}
+
+
+.flr-trg{position:fixed;width:12px;top:50%;margin-top:-125px;right:30px;}
+.flr-trg a{display:block;background:#ffa734;width:12px;height:12px;margin-top:15px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;overflow:hidden;}
+.flr-trg .cur{background:#fff;}
+
+.link{ background:#fff; position:absolute; bottom:0px; width:100%; left:0px;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}

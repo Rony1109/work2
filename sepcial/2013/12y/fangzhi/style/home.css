@@ -1,0 +1,93 @@
+/* CSS 5 */
+*html { background-attachment:fixed; background-image:URL("about:blank"); }
+html,body{overflow-x:hidden; position:relative;}
+.zzlay{ position:absolute; left:0; top:0; width:100%; height:100%; background:#000; filter:alpha(opacity:20);opacity:0.2;display:none; z-index:3;*+z-index:8;}
+.huo-top{ height:27px; line-height:27px; background:#F1F1F1;}
+.huo-top span a{ margin:0 5px; color:#333; cursor:pointer;}
+.huo-top span a:hover{ color:#067ed4; text-decoration:none; }
+.m-search div .btn{ background:url(img/search-btn.png) no-repeat left top;}
+.m-search .ss-txt {border-bottom: 2px solid #df3250;border-left: 2px solid #df3250;border-top: 2px solid #df3250;}
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #df3250;font-weight: 700;outline: medium none;}
+.link,.link a,.link p{ color:#df3250;}
+/*搜索*/
+
+/*导航*/
+.main-nav {}
+.main-nav .g-o-a { position: relative; }
+.main-nav div .ico1 { position:absolute; bottom:-131px; left:-8px;}
+.main-nav div .ico2 { position:absolute; bottom:6px; right:132px;}
+#red-nav { margin-left:150px;}
+#red-nav li{float:left; background:url(img/clip.png) left 2px no-repeat; height:46px; padding:10px 40px 0 40px; }
+#red-nav li a { display:inline-block;color:#f6aeac; font-weight:700; line-height:24px; padding-top:18px;}
+#red-nav li.fir a{ background:url(img/nav-ico1.png) top center no-repeat;}
+#red-nav li.sec a{background:url(img/nav-ico2.png) top center no-repeat ;}
+#red-nav li.las a {background:url(img/nav-ico3.png) top center no-repeat;}
+#red-nav li a:hover { color:#FFF; text-decoration:none }
+
+.main{ background:url(img/bg.jpg) no-repeat center top; padding-top:14px;}
+.about{background:#faf5cf; padding-bottom:25px; }
+.hb-href{ width:165px; height:110px; display:inline-block; background:#fff; filter:alpha(opacity=0.001);opacity:0.001; position:absolute; top:-120px; right:10px; z-index:3;}
+.about .g-o-a{position:relative;}
+.about p{ color:#323232; font-size:16px; font-family:Microsoft YaHei,simhei; font-weight:700; line-height:30px;}
+.info-all{ padding-top:35px; height:218px; position:relative; left:0;}
+.info-all li{ width:180px; height:180px; display:inline-block; margin-right:20px; position:relative; left:0; float:left; text-align:center;font-family:Microsoft YaHei,simhei; font-weight:700;}
+.info-all li .bg{position:absolute; left:0; top:0; z-index:2; width:180px; height:180px; display:block;}
+.info-all li img{ position:absolute; left:0; top:0; z-index:10;}
+.info-all li.in01 .bg{ background:#dae68e;}
+.info-all li.in02 .bg{ background:#8ebee6;}
+.info-all li.in03 .bg{ background:#bee68e;}
+.info-all li.in04 .bg{ background:#e68ee5;}
+.info-all li.in05 .bg{ background:#e6d88d;}
+.info-all li h2{ padding-top:45px; font-size:24px; line-height:38px; margin-bottom:4px;}
+.info-all li span{ font-size:14px; line-height:20px;}
+
+.hb{ background:#ef4f35 url(img/bg-line01.png) repeat-x left top; padding:45px 0 40px;font-family:Microsoft YaHei,simhei;color:#fbf5cf;}
+.gift{ width:1000px; overflow:hidden; height:auto;}
+.po-lay{position:relative;*+z-index:9;}
+.gift h1{ color:#fbf5cf; font-size:30px; background:url(img/l-r.png) no-repeat 0 -100px; padding-left:50px;}
+.gt-l{ width:403px; height:405px; display:inline-block; float:left; background:url(img/two.png) no-repeat left top; margin:35px 0;}
+.gt-l a{ background:url(img/btn.png) no-repeat 0 0px; width:180px; height:50px; display:inline-block; margin:33px 0 0 85px;}
+.gt-l a:hover{ background:url(img/btn.png) no-repeat left -53px;}
+.gt-r{ float:right;width:590px; margin:35px 0; font-size:16px;  line-height:29px;}
+.gt-r strong{ font-size:20px; font-weight:700; margin-bottom:8px; display:inline-block;}
+.gt-r ol{ list-style-position:outside; padding-left:20px;}
+.gt-r ol li{ list-style-type:decimal;}
+.gift h2{ clear:both; font-size:20px; color:#fbf5cf; margin-bottom:20px;}
+.gift ul{ width:1050px; display:block;}
+.gift ul li{ width:316px; margin-right:25px; float:left; display:inline-block;}
+.gift ul li img{ margin-bottom:6px;}
+.gift ul li span{ line-height:30px; display:block; font-size:16px; font-weight:700;}
+.info-to{ background:#fbf5cf url(img/bg-line02.png) repeat-x left top; padding:50px 0 55px;}
+.info-to span{ width:17px; height:36px; display:inline-block; float:left; margin-top:60px; cursor:pointer;}
+.info-to span.scr-l{ background:url(img/l-r.png) no-repeat 0 -212px;}
+.info-to span.scr-r{ background:url(img/l-r.png) no-repeat 0 -248px;}
+.info-to div.scr-all{ float:left; width:915px; height:160px; display:inline-block; overflow:hidden; position:relative; margin:0 25px;_margin:0 15px;}
+.info-to div.scr-all ul{ position:absolute; left:0; top:0; width:10000px; display:block;}
+.info-to div.scr-all ul li{ width:210px; height:160px; margin-right:25px; float:left;}
+.footer{ background:#222;}
+.footer .link,.footer .link a,.footer .link p{ border:none; color:#c4c4c4;}
+
+.layer{ width:0; height:0; display:none; background:#fbf5cf; position:relative; position:absolute; left:165px; top:115px; z-index:15; text-align:center; display:none;box-shadow:5px 2px 6px #000; border:3px solid #d6293c;}
+.lay-close{ width:42px; height:41px; display:inline-block; position:absolute; right:0; top:0; z-index:20; background:url(img/close.png) no-repeat left top; cursor:pointer;}
+.lay{ display:none;padding:35px 30px 30px;}
+.lay i{ width:104px; height:104px; display:inline-block; }
+.lay h3,.lay span{ font-size:24px; color:#444; display:block; line-height:40px;}
+.lay a,.lay a em{ height:38px; text-align:center; line-height:38px; display:inline-block; color:#fff; font-weight:700; font-size:16px;}
+.lay a{margin-top:15px; background:url(img/btn.png) no-repeat 0 -155px; position:relative; padding-left:20px;}
+.lay a em{background:url(img/btn.png) no-repeat 100% -155px; padding-right:20px; cursor:pointer;}
+.lay-ok i{background:url(img/icon.png) no-repeat left -174px;}
+.lay-no i{background:url(img/icon.png) no-repeat left top;}
+.pot01 i,.pot04 i{background:url(img/icon.png) no-repeat left -335px;}
+.pot02 i{background:url(img/icon.png) no-repeat left -567px;}
+.pot03 i{background:url(img/icon.png) no-repeat left -174px;}
+.layer .cur{ display:block;}
+.lay-no h3 span{ display:inline; color:#da273c;}
+
+.lay-ok .jiathis_style,.lay-ok .jiathis_style span,.lay-ok .jiathis_style .jtico{ display:inline-block; height:38px; height:38px !important; line-height:38px; background:none; padding:0; margin:0;}
+
+.n-bb{ display:block; text-align:right; height:30px; padding-bottom:570px;}
+.n-bb .jiathis_style{ float:right;}
+.n-bb .jiathis_style a{ color:#fff;}
+
+
+

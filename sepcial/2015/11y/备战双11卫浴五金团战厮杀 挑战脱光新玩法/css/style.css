@@ -1,0 +1,87 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px; margin-right: -12px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.w956{width: 997px;}
+.w1{width: 506px;}
+.w2{width: 346px;}
+.w3{width: 445px;}
+.w4{width: 298px;}
+.w5{width: 610px;}
+.w6{width: 306px;}
+.w7{width: 275px;}
+.bgpink{background-color: #f3e1ff;}
+.ti2{text-indent: 2em;}
+.bgff{background:#fff;}
+.bg84{background:#841fd9;}
+.bg71{background:#717171;}
+.bg7f{background:#7f7f7f;}
+.cw{color:#fff;}
+.co{color:#831fd7;}
+.pb60{padding-bottom: 60px}
+.pt8{padding-top: 8px;}
+
+
+.banner{height: 570px; background: url(img/1.jpg) center 0;}
+.daoyu{background: url(img/2.png) 0 0; width: 997px; height: 181px; position: relative; top: -20px;}
+.daoyu-1{width: 786px; color:#fff; padding: 57px 0 0 154px; line-height: 180%;font-size: 14px;}
+
+.title{height: 43px; background: url(img/3.png) 0 0;}
+.title-1{color:#fff; font-size: 22px; font-weight: 700; padding: 5px 0 0 10px;}
+.itembox{background: #fff; padding: 15px 30px 30px;}
+.hh1{padding: 5px 0 5px 10px; font-size: 16px; font-weight: 700;}
+.pk{width: 114px;height: 114px; background:url(img/4.png);position: absolute; top:116px; left: 412px;}
+.item5{height: 407px; background:#7f7f7f; color:#fff;}
+.item5-in{padding: 20px;}
+.item6{padding: 10px 8px;}
+
+/*底部轮播*/
+.maitob{ height:205px; padding-top: 90px; background: #fff url(img/5.png) center 0 no-repeat;}
+.maitob span{ width:20px; height:42px; display:inline-block; float:left; margin-top:60px; cursor:pointer;}
+.maitob span.scr-lb{ background:url(img/lr.png) no-repeat 0 0; margin-left:10px;}
+.maitob span.scr-rb{ background:url(img/lr.png) no-repeat 0 -42px;}
+.maitob div.scr-allb{ float:left; width:920px; height:180px; display:inline-block; overflow:hidden; position:relative; margin:0 10px;_margin:0 5px;}
+.maitob div.scr-allb ul{ position:absolute; left:0; top:0; width:10000px; display:block;}
+.maitob div.scr-allb ul li{ width:215px; height:180px; margin-right:20px; float:left; text-align:center;}
+.maitob div.scr-allb ul li .img{ width:215px; height:160px; font-size: 14px;}
+.maitob div.scr-allb ul li a{ color:#333; font-size:16px;}
+
+.fixed{position: fixed; right: 5px; top:100px; width: 214px; padding-top: 147px;background: url(img/6.png) 0 0 no-repeat;}
+.fixed ul{margin-left: 40px; margin-top: -10px}
+.fixed li{background:#831fd7; border-top: 1px solid #fff; padding: 10px 0; width: 120px; text-align: center;}
+.fixed li:first-child{border-top:none;}
+.fixed li a{color:#fff;}
+.fixed li a:hover{text-decoration: none;}
+.fixed .top{background:#831fd7 url(img/7.png) 24px 16px no-repeat;}

@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://res.csc86.com/bhf/" />
+<link href="http://res.csc86.com/f=js/p/artDialog/4.1.5/skins/mem.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="http://res.csc86.com/js/"></script>
+<script src="http://industry.csc86.com/statics/js/industry/m/islogin.js"></script>
+<script src="http://res.csc86.com/dialog/"></script>
+<script src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+<script src="http://res.csc86.com/js/c/sns/tradering.js"></script>
+<script src="js/js.js"></script>
+<title>底价火拼，让订单飞起来</title>
+</head>
+
+<body>
+<div class="top-bar"><!--top-bar start-->
+  <div class="g-o-a">
+    <div class="top-csc-group"> <a target="_blank" href="http://group.csc86.com">走进华南城</a> <a target="_blank" href="http://sz.csc86.com">深圳</a><a target="_blank" href="http://nn.csc86.com">南宁</a><a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a><a target="_blank" href="http://xa.csc86.com">西安</a><a target="_blank" href="http://zz.csc86.com">郑州</a><a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a> </div>
+    <div class="server-r"><a title="" target="_blank" href="http://cncms.csc86.com/help/">客服中心</a></div>
+    <span class="v-line sev-r"></span>
+    <div class="top-my-account">
+      <div class="hd">我的账户</div>
+      <div class="g-c-f bd w-193">
+        <ul class="csc-bd">
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+        </ul>
+        <ul class="yesmore-bd">
+          <li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-sign-info"> 您好，<span class="bd"> 欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a> </span><span class="v-line"></span> </div>
+  </div>
+</div>
+<div class="web-search">
+  <div class="g-o-a">
+    <h1> <a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com"> <img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/image/c/index/logo.png"> </a> </h1>
+    <span class="fu_tit">电子频道</span>
+    <div class="m-search">
+      <form action="http://search.csc86.com/company/company.html" method="get">
+        <ul class="g-c-f">
+          <li class="first"><a href="http://search.csc86.com/selloffer/products.html">产品</a></li>
+          <li class="cur"><a href="http://search.csc86.com/company/company.html">公司</a></li>
+        </ul>
+        <div class="g-c-f">
+          <div class="ss-txt">
+            <div style="display:none;" id="comp-ol" class="ss-select"> <span class="arr"></span>
+              <ol>
+                <li class="cur"><a href="javascript:">公司名称</a></li>
+                <li><a href="javascript:">主营产品</a></li>
+              </ol>
+            </div>
+            <input type="text" class="txt" name="q" placeholder="请输入公司名称或关键词" value="" autocomplete="off" maxlength="50" id="search-txt">
+          </div>
+          <input type="submit" value="搜索" id="searchbtn" class="btn">
+        </div>
+        <ol class="g-o-f hot-keys">
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=IC">IC</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E4%BA%8C%E6%9E%81%E7%AE%A1">二极管</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=%E8%BF%9E%E6%8E%A5%E5%99%A8">连接器</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=PCB">PCB</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E4%BC%A0%E6%84%9F%E5%99%A8">传感器</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E6%BA%90">电源</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%B2%E6%99%B6%E5%B1%8F">液晶屏</a></li>
+        </ol>
+      </form>
+    </div>
+    <script>
+	$("form").one("keydown",function (){
+		seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+			csc.suggest();
+		});
+	});			
+	seajs.use(csc.url("res","/f=js/m/search"),function (){
+		csc.search().searchType("div.m-search");
+	});
+	seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+		csc.placeholder("#search-txt");
+	});
+</script> 
+  </div>
+</div>
+<div class="head">
+  <div class="g-o-a">
+    <ul class="nav">
+      <li class="cur"><a href="http://ec.csc86.com/">首 页</a></li>
+      <li><a href="http://ec.csc86.com/zixun/">商情资讯</a></li>
+      <li><a href="http://ec.csc86.com/daogou/">精品导购</a></li>
+      <li><a href="http://ec.csc86.com/pinpai/">品牌专题</a></li>
+      <li><a href="http://ec.csc86.com/huodong/">活动展会</a></li>
+      <li><a href="http://ec.csc86.com/jishu/">技术前沿</a></li>
+    </ul>
+  </div>
+</div>
+<div class="tit_sec">
+  <div class="g-o-a"><a href="http://cncms.csc86.com/special/dianzi/2013/xz2013/" target="_blank">“芯”战2013 谁主沉浮</a><a href="http://cncms.csc86.com/special/dianzi/2013/stt/" target="_blank">帮新品上头条</a><a href="http://cncms.csc86.com/special/dianzi/2013/mryd3/" target="_blank">万达电商：低调背后的奢华蓝图</a><a href="http://cncms.csc86.com/special/dianzi/2013/mryd2/" target="_blank">4G的春天：谁的盛宴？</a></div>
+</div>
+<div class="g-h-10"></div>
+<!--web-search end-->
+<div class="guan">
+  <div class="bg0"></div>
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+  <div class="bg3"></div>
+  <div class="bg4"></div>
+  <div class="g-o-a">
+    <div class="con_nav">
+      <ul class="g-c-f">
+        <li class="cur"><a href="#1F">电子元器件</a></li>
+        <li><a href="#2F">靓丽LED</a></li>
+        <li><a href="#3F">电工电气</a></li>
+        <li><a href="#4F">消费电子</a></li>
+        <li class="last"><span class="fei">分享到</span><!-- JiaThis Button BEGIN -->
+          <div class="jiathis_style"> <a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a> <a class="jiathis_button_weixin"></a> <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> </div>
+          <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script> 
+          <!-- JiaThis Button END --></li>
+      </ul>
+    </div>
+    <div class="src_bao">
+      <h2><a href="#5F">&nbsp;</a></h2>
+      <div id="out_view">
+        <div id="src_view" class="con_lde src_view">
+          <ul class="g-c-f">
+            <li>
+              <div class="li_iner"><a href="http://yxssmyxgs.csc86.com/product/097dce28-25b6-428a-8e0d-9cd2370db2f7.html" target="_blank"><i></i><img width="225" height="285" alt="TP-LINK TL-WR842N 无线路由器" src="images/0F5.jpg"></a><a href="http://yxssmyxgs.csc86.com/product/097dce28-25b6-428a-8e0d-9cd2370db2f7.html" class="tit" target="_blank"> 全新TP-LINK无线路由器</a>
+                <div class="price"><a href="http://yxssmyxgs.csc86.com/product/097dce28-25b6-428a-8e0d-9cd2370db2f7.html" target="_blank">&nbsp;</a><span><em>￥</em>89.00元/台</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://szwywd.csc86.com/product/9521530f-d1bf-44f4-bcbb-267e60708db1.html" target="_blank"><i></i><img width="225" height="285" alt="空调加湿器 空气净化器 桌面加湿器 办公加湿器 房间加湿器" src="images/0F6.jpg"></a><a href="http://szwywd.csc86.com/product/9521530f-d1bf-44f4-bcbb-267e60708db1.html" class="tit" target="_blank"> 桌面式创意迷你空调加湿器</a>
+                <div class="price"><a href="http://szwywd.csc86.com/product/9521530f-d1bf-44f4-bcbb-267e60708db1.html" target="_blank">&nbsp;</a><span><em>￥</em>62.00元/台</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://01e002.csc86.com/product/1fc10cad-ace0-4caa-8fea-9d290888619f.html" target="_blank"><i></i><img width="225" height="285" alt="华硕X201 酷睿i3 11.6寸 时尚轻薄小本" src="images/0F7.jpg"></a><a href="http://01e002.csc86.com/product/1fc10cad-ace0-4caa-8fea-9d290888619f.html" target="_blank" class="tit">华硕X201酷睿i3 11.6寸轻薄本</a>
+                <div class="price"><a href="http://01e002.csc86.com/product/1fc10cad-ace0-4caa-8fea-9d290888619f.html" target="_blank">&nbsp;</a><span><em>￥</em>2100元/台</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://p13105.csc86.com/product/814540.html" target="_blank"><i></i><img width="225" height="285" alt="LED天花灯 超亮LED灯3W LED节能灯 暗装灯" src="images/0F8.jpg"></a><a href="http://p13105.csc86.com/product/814540.html" target="_blank" class="tit">进口透镜超亮LED节能灯</a>
+                <div class="price"><a href="http://p13105.csc86.com/product/814540.html" target="_blank">&nbsp;</a><span><em>￥</em>18.00元/个</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://shop12286254.csc86.com/product/1c81bbff-fcd8-48c0-8299-7f094d6e59dd.html" target="_blank"><i></i><img width="225" height="285" alt="香水移动电源" src="images/0F1.jpg"></a><a href="http://shop12286254.csc86.com/product/1c81bbff-fcd8-48c0-8299-7f094d6e59dd.html" target="_blank" class="tit">无线插卡式迷你小音箱</a>
+                <div class="price"><a href="http://shop12286254.csc86.com/product/1c81bbff-fcd8-48c0-8299-7f094d6e59dd.html" target="_blank">&nbsp;</a><span><em>￥</em>18.00元/套</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://shop12335519.csc86.com/product/368a0e1b-42c6-4bfc-b981-967c655330a2.html" target="_blank"><i></i><img width="225" height="285" alt="小米2手机钢化玻璃膜" src="images/0F2.jpg"></a><a href="http://shop12335519.csc86.com/product/368a0e1b-42c6-4bfc-b981-967c655330a2.html" target="_blank" class="tit">小米彩色系列 防爆钢化手机膜</a>
+                <div class="price"><a href="http://shop12335519.csc86.com/product/368a0e1b-42c6-4bfc-b981-967c655330a2.html" target="_blank">&nbsp;</a><span><em>￥</em>15.00 元/片</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://szfskj.csc86.com/product/bb2c7acc-5374-4bb5-bf1a-a331f32a0a2a.html" target="_blank"><i></i><img width="225" height="285" alt="手机套 手机保护皮套 手机保护膜" src="images/0F3.jpg"></a><a href="http://szfskj.csc86.com/product/bb2c7acc-5374-4bb5-bf1a-a331f32a0a2a.html" target="_blank" class="tit">商务简约风 厂家直供手机套</a>
+                <div class="price"><a href="http://szfskj.csc86.com/product/bb2c7acc-5374-4bb5-bf1a-a331f32a0a2a.html" target="_blank">&nbsp;</a><span><em>￥</em>4.00元/个</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="li_iner"><a href="http://amutongxun.csc86.com/product/094bffcf-de81-4462-935e-9d16d937b74d.html" target="_blank"><i></i><img width="225" height="285" alt="厂家现货无线插卡音箱 易携带插卡播放器迷你小音响" src="images/0F4.jpg"></a><a href="http://amutongxun.csc86.com/product/094bffcf-de81-4462-935e-9d16d937b74d.html" target="_blank" class="tit">封杀男神 香水移动电源</a>
+                <div class="price"><a href="http://amutongxun.csc86.com/product/094bffcf-de81-4462-935e-9d16d937b74d.html" target="_blank">&nbsp;</a><span><em>￥</em>41.00元/台</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="item_bao">
+      <h2><a name="1F" href="javascript:;">&nbsp;</a><span><a target="_blank" href="http://search.csc86.com/offer/products.html?q=IC%E8%8A%AF%E7%89%87">IC芯片</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=PCB%E6%9D%BF">PCB板</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E4%BA%8C%E6%9E%81%E7%AE%A1">二极管</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E4%B8%89%E6%9E%81%E7%AE%A1">三极管</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E5%AE%B9%E5%99%A8">电容器</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E8%BF%9E%E6%8E%A5%E5%99%A8">连接器</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E5%AD%90">更多>></a></span>1F电子元器件</h2>
+      <div class="con_lde">
+        <ul class="g-c-f">
+          <li>
+            <div class="li_iner"><a href="http://szhaize.csc86.com/product/8529f3a9-d612-47ed-9d1f-68bf9d828696.html" target="_blank"><img width="225" height="285" alt="风华电阻 贴片电阻0805 56K 5%【正品促销】" src="images/1F1.jpg"></a><a href="http://szhaize.csc86.com/product/8529f3a9-d612-47ed-9d1f-68bf9d828696.html" target="_blank" class="tit">小功率风华电阻正品促销</a>
+              <div class="price"><a href="http://szhaize.csc86.com/product/8529f3a9-d612-47ed-9d1f-68bf9d828696.html" target="_blank">&nbsp;</a><span><em>￥</em>6.50元/只</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://zhuochenzdo.csc86.com/product/013a0afa-be57-4671-ac1b-81b4d65d2aed.html" target="_blank"><img width="225" height="285" alt="PCB端子 LP129-5.0" src="images/1F2.jpg"></a><a href="http://zhuochenzdo.csc86.com/product/013a0afa-be57-4671-ac1b-81b4d65d2aed.html" target="_blank" class="tit">上海雷普原产线路板端子</a>
+              <div class="price"><a href="http://zhuochenzdo.csc86.com/product/013a0afa-be57-4671-ac1b-81b4d65d2aed.html" target="_blank">&nbsp;</a><span><em>￥</em>1.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://hhwyic.csc86.com/product/f959a9bc-b2f3-4c4d-aa1c-203144863608.html" target="_blank"><img width="225" height="285" alt="可控硅BTA24 24A/800V" src="images/1F3.jpg"></a><a href="http://hhwyic.csc86.com/product/f959a9bc-b2f3-4c4d-aa1c-203144863608.html" target="_blank" class="tit"> 厂家直供正品双向可控硅系列</a>
+              <div class="price"><a href="http://hhwyic.csc86.com/product/f959a9bc-b2f3-4c4d-aa1c-203144863608.html" target="_blank">&nbsp;</a><span><em>￥</em>1.90元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://taiheth.csc86.com/product/17286b52-9311-473f-8a5a-a8a7933425ad.html" target="_blank"><img width="225" height="285" alt="C-001RX晶振,宝安爱普生晶振现货" src="images/1F4.jpg"></a><a href="http://taiheth.csc86.com/product/17286b52-9311-473f-8a5a-a8a7933425ad.html" target="_blank" class="tit">超轻薄 抗振耐热 爱普生晶振</a>
+              <div class="price"><a href="http://taiheth.csc86.com/product/17286b52-9311-473f-8a5a-a8a7933425ad.html" target="_blank">&nbsp;</a><span><em>￥</em>0.30元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://kinwax.csc86.com/product/409705be-711c-4686-96b0-9afad736763f.html" target="_blank"><img width="225" height="285" alt="继电器RY48W-K" src="images/1F5.jpg"></a><a href="http://kinwax.csc86.com/product/409705be-711c-4686-96b0-9afad736763f.html" target="_blank" class="tit">ROSH认证 富士通信号继电器</a>
+              <div class="price"><a href="http://kinwax.csc86.com/product/409705be-711c-4686-96b0-9afad736763f.html" target="_blank">&nbsp;</a><span><em>￥</em>2.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://shop12180032.csc86.com/product/826af14a-93bf-4385-bc4f-9a2b82eb33c0.html" target="_blank"><img width="225" height="285" alt="5050贴片灯珠 10-12LM" src="images/1F6.jpg"></a><a href="http://shop12180032.csc86.com/product/826af14a-93bf-4385-bc4f-9a2b82eb33c0.html" target="_blank" class="tit">超低光衰工艺 5050正白贴片灯珠</a>
+              <div class="price"><a href="http://shop12180032.csc86.com/product/826af14a-93bf-4385-bc4f-9a2b82eb33c0.html" target="_blank">&nbsp;</a><span><em>￥</em>0.22元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://kangbidz.csc86.com/product/585730.html" target="_blank"><img width="225" height="285" alt="陶瓷晶振,蓝色陶振,电话机晶振,晶体谐振器" src="images/1F7.jpg"></a><a href="http://kangbidz.csc86.com/product/585730.html" target="_blank" class="tit">ZTA,ZTT系列陶瓷谐振器</a>
+              <div class="price"><a href="http://kangbidz.csc86.com/product/585730.html" target="_blank">&nbsp;</a><span><em>￥</em>0.09元/粒</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://yingchuangli.csc86.com/product/b1a64dbf-b869-49bb-b2d5-52ce49a8ba50.html" target="_blank"><img width="225" height="285" alt="PCB线路板，PCB中小批量" src="images/1F8.jpg"></a><a href="http://yingchuangli.csc86.com/product/b1a64dbf-b869-49bb-b2d5-52ce49a8ba50.html" target="_blank" class="tit">专业pcb打样 SMT生产加工</a>
+              <div class="price"><a href="http://yingchuangli.csc86.com/product/b1a64dbf-b869-49bb-b2d5-52ce49a8ba50.html" target="_blank">&nbsp;</a><span><em>￥</em>230元/M3</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="item_bao led">
+      <h2><a name="2F" href="javascript:;">&nbsp;</a><span><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=LED%E6%98%BE%E7%A4%BA%E5%B1%8F">LED显示屏</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=LED%E5%B9%BF%E5%91%8A%E7%89%8C">LED广告牌</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=TFT%E5%9E%8B%E6%B6%B2%E6%99%B6%E5%B1%8F">TFT型液晶屏</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=LCD%E6%B6%B2%E6%99%B6%E5%B1%8F">LCD液晶屏</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B7%B1%E5%9C%B3LED">深圳LED</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=LED">更多>></a></span>2F靓丽LED</h2>
+      <div class="con_lde">
+        <ul class="g-c-f">
+          <li>
+            <div class="li_iner"><a href="http://totiwo.csc86.com/product/90c0c7f9-560a-4985-894e-3d9f45c96da6.html" target="_blank"><img width="225" height="285" alt="LED点光源幕墙装饰灯10CM圆形内外控七彩变色防水" src="images/2F1.jpg"></a><a href="http://totiwo.csc86.com/product/90c0c7f9-560a-4985-894e-3d9f45c96da6.html" target="_blank" class="tit">七彩变色防水LED点光源</a>
+              <div class="price"><a href="http://totiwo.csc86.com/product/90c0c7f9-560a-4985-894e-3d9f45c96da6.html" target="_blank">&nbsp;</a><span><em>￥</em>18.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://shop12178996.csc86.com/product/39dcdb12-ad2a-47b7-bc32-91b7ba2ef96c.html" target="_blank"><img width="225" height="285" alt="LED 球泡灯 5W球泡灯 节能球泡灯" src="images/2F2.jpg"></a><a href="http://shop12178996.csc86.com/product/39dcdb12-ad2a-47b7-bc32-91b7ba2ef96c.html" target="_blank" class="tit">节能省电 超低发热 LED球泡灯</a>
+              <div class="price"><a href="http://shop12178996.csc86.com/product/39dcdb12-ad2a-47b7-bc32-91b7ba2ef96c.html" target="_blank">&nbsp;</a><span><em>￥</em>26.30元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://ledrdt.csc86.com/product/fa0bc36d-989a-4597-b571-7e3bbaba270c.html" target="_blank"><img width="225" height="285" alt="3528 60灯/m 220v 高压LED灯带" src="images/2F3.jpg"></a><a href="http://ledrdt.csc86.com/product/fa0bc36d-989a-4597-b571-7e3bbaba270c.html" target="_blank" class="tit">滴胶防水 幻彩高压LED灯带</a>
+              <div class="price"><a href="http://ledrdt.csc86.com/product/fa0bc36d-989a-4597-b571-7e3bbaba270c.html" target="_blank">&nbsp;</a><span><em>￥</em>7.00元/米</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://szwywd.csc86.com/product/435e0748-05d9-438c-8fb5-062a65d15fb3.html" target="_blank"><img width="225" height="285" alt="露营灯 太阳能灯 充电灯 LED灯 户外灯 充气灯 帐篷灯" src="images/2F4.jpg"></a><a href="http://szwywd.csc86.com/product/435e0748-05d9-438c-8fb5-062a65d15fb3.html" target="_blank" class="tit">便携安全防水太阳能充气灯袋</a>
+              <div class="price"><a href="http://szwywd.csc86.com/product/435e0748-05d9-438c-8fb5-062a65d15fb3.html" target="_blank">&nbsp;</a><span><em>￥</em>25.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://leeled.csc86.com/product/948cc716-ae2c-4d68-80ff-ef8c6c846ac5.html" target="_blank"><img width="225" height="285" alt="特价LED30W投光灯" src="images/2F5.jpg"></a><a href="http://leeled.csc86.com/product/948cc716-ae2c-4d68-80ff-ef8c6c846ac5.html" target="_blank" class="tit">防眩光 无光染LED30W投光灯</a>
+              <div class="price"><a href="http://leeled.csc86.com/product/948cc716-ae2c-4d68-80ff-ef8c6c846ac5.html" target="_blank">&nbsp;</a><span><em>￥</em>169.00元/套</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://p13105.csc86.com/product/819569.html" target="_blank"><img width="225" height="285" alt="LED轨道灯 超亮LED筒射灯 LED带轨灯" src="images/2F6.jpg"></a><a href="http://p13105.csc86.com/product/819569.html" target="_blank" class="tit">航空铝材 三位一体光透LED轨道灯</a>
+              <div class="price"><a href="http://p13105.csc86.com/product/819569.html" target="_blank">&nbsp;</a><span><em>￥</em>28.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://guangheled.csc86.com/product/b3130e23-078d-45b6-8025-46354524dc6f.html" target="_blank"><img width="225" height="285" alt="LED 拉尾蜡烛灯 2W" src="images/2F7.jpg"></a><a href="http://guangheled.csc86.com/product/b3130e23-078d-45b6-8025-46354524dc6f.html" target="_blank" class="tit">欧系华丽LED拉尾蜡烛灯</a>
+              <div class="price"><a href="http://guangheled.csc86.com/product/b3130e23-078d-45b6-8025-46354524dc6f.html" target="_blank">&nbsp;</a><span><em>￥</em>9.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://13691852906.csc86.com/product/366a87b9-04b5-4121-b2fc-67ca567de204.html" target="_blank"><img width="225" height="285" alt="商场照明改造LED日光灯" src="images/2F8.jpg"></a><a href="http://13691852906.csc86.com/product/366a87b9-04b5-4121-b2fc-67ca567de204.html" target="_blank" class="tit">环保护眼LED日光灯</a>
+              <div class="price"><a href="http://13691852906.csc86.com/product/366a87b9-04b5-4121-b2fc-67ca567de204.html" target="_blank">&nbsp;</a><span><em>￥</em>55.00元/支</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="item_bao dainzi">
+      <h2><a name="3F" href="javascript:;">&nbsp;</a><span><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E7%BA%BF%E7%94%B5%E7%BC%86">电线电缆</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%8F%92%E5%BA%A7%E6%8F%92%E5%A4%B4">插座插头</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90">开关电源</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%AB%98%E5%8E%8B%E7%94%B5%E5%99%A8">高压电器</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%99%A8">低压电器</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%8F%91%E7%94%B5%E6%9C%BA">发电机</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E5%B7%A5%E7%94%B5%E6%B0%94">更多>></a></span>3F电工电气</h2>
+      <div class="con_lde">
+        <ul class="g-c-f">
+          <li>
+            <div class="li_iner"><a href="http://pcsensor.csc86.com/product/8f061ea1-471e-45b1-a5e1-451dc5b27f44.html" target="_blank"><img width="225" height="285" alt="PCsensor厂家直销HID USB一位金属脚踏开关" src="images/3F1.jpg"></a><a href="http://pcsensor.csc86.com/product/8f061ea1-471e-45b1-a5e1-451dc5b27f44.html" target="_blank" class="tit">厂家直销HID USB金属脚踏开关</a>
+              <div class="price"><a href="http://pcsensor.csc86.com/product/8f061ea1-471e-45b1-a5e1-451dc5b27f44.html" target="_blank">&nbsp;</a><span><em>￥</em>60.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://t1a452.csc86.com/product/821498.html" target="_blank"><img width="225" height="285" alt="【插座批发】公牛插线板 电源插线板 GN-607 1.8米" src="images/3F2.jpg"></a><a href="http://t1a452.csc86.com/product/821498.html" target="_blank" class="tit">1.8米公牛插线板GN-607</a>
+              <div class="price"><a href="http://t1a452.csc86.com/product/821498.html" target="_blank">&nbsp;</a><span><em>￥</em>19.50元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://jiulongdianqi.csc86.com/product/047fc663-5678-4c74-b9e1-5006cbb2b37d.html" target="_blank"><img width="225" height="285" alt="玖龙五孔插座 优质五孔插座 二三极插座 品牌钢架插座" src="images/3F3.jpg"></a><a href="http://jiulongdianqi.csc86.com/product/047fc663-5678-4c74-b9e1-5006cbb2b37d.html" target="_blank" class="tit">优质五孔插座 品牌钢架插座</a>
+              <div class="price"><a href="http://jiulongdianqi.csc86.com/product/047fc663-5678-4c74-b9e1-5006cbb2b37d.html" target="_blank">&nbsp;</a><span><em>￥</em>3.60元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://wsddxdljyb.csc86.com/product/e26cc9f7-f36c-458d-8b28-e4b023c6bb40.html" target="_blank"><img width="225" height="285" alt="UL1332#24AWG 铁氟龙高温线 UL认证" src="images/3F4.jpg"></a><a href="http://wsddxdljyb.csc86.com/product/e26cc9f7-f36c-458d-8b28-e4b023c6bb40.html" target="_blank" class="tit">铁氟龙高温线 UL认证</a>
+              <div class="price"><a href="http://wsddxdljyb.csc86.com/product/e26cc9f7-f36c-458d-8b28-e4b023c6bb40.html" target="_blank">&nbsp;</a><span><em>￥</em>128.00元/卷</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://p21111.csc86.com/product/757518.html" target="_blank"><img width="225" height="285" alt="【厂家直销】力神锂动力电池 18650锂离子电池 质量保证" src="images/3F5.jpg"></a><a href="http://p21111.csc86.com/product/757518.html" target="_blank" class="tit">力神18650锂离子电池</a>
+              <div class="price"><a href="http://p21111.csc86.com/product/757518.html" target="_blank">&nbsp;</a><span><em>￥</em>4.80元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://totiwo.csc86.com/product/ce0091a3-e738-49bb-8d67-4e46531f7598.html" target="_blank"><img width="225" height="285" alt="12v15a开关电源12V变压器/220V转12V/180w" src="images/3F6.jpg"></a><a href="http://totiwo.csc86.com/product/ce0091a3-e738-49bb-8d67-4e46531f7598.html" target="_blank" class="tit">品质保证DC12V系列变压器</a>
+              <div class="price"><a href="http://totiwo.csc86.com/product/ce0091a3-e738-49bb-8d67-4e46531f7598.html" target="_blank">&nbsp;</a><span><em>￥</em>55.00元/台</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://jichidianqi.csc86.com/product/95f772b3-450c-4ce0-ad09-e74700edabea.html" target="_blank"><img width="225" height="285" alt="供应天津中力浪涌 涌保护器防雷器CPM-R80T" src="images/3F7.jpg"></a><a href="http://jichidianqi.csc86.com/product/95f772b3-450c-4ce0-ad09-e74700edabea.html" target="_blank" class="tit">供应天津中力浪涌 防雷器</a>
+              <div class="price"><a href="http://jichidianqi.csc86.com/product/95f772b3-450c-4ce0-ad09-e74700edabea.html" target="_blank">&nbsp;</a><span><em>￥</em>800.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://rozixd.csc86.com/product/f1f53da7-cfd5-4a2b-b3bc-c491d20e15fa.html" target="_blank"><img width="225" height="285" alt="3米单模FC-SC光纤跳线 单芯光纤尾纤" src="images/3F8.jpg"></a><a href="http://rozixd.csc86.com/product/f1f53da7-cfd5-4a2b-b3bc-c491d20e15fa.html" target="_blank" class="tit">3米单模FC-SC光纤跳线</a>
+              <div class="price"><a href="http://rozixd.csc86.com/product/f1f53da7-cfd5-4a2b-b3bc-c491d20e15fa.html" target="_blank">&nbsp;</a><span><em>￥</em>9.00元/条</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="item_bao xiao">
+      <h2><a name="4F" href="javascript:;">&nbsp;</a><span><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%89%8B%E6%9C%BA%E9%80%9A%E8%AE%AF">手机通讯</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%94%B5%E8%84%91%E7%94%A8%E5%93%81">电脑用品</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%8E%A8%E6%88%BF%E5%AE%B6%E7%94%B5">厨房家电</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87">网络设备</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%95%B0%E7%A0%81%E9%85%8D%E4%BB%B6">数码配件</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%8A%9E%E5%85%AC%E8%AE%BE%E5%A4%87">办公设备</a><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%88%E8%B4%B9%E7%94%B5%E5%AD%90">更多>></a></span>4F消费电子</h2>
+      <div class="con_lde">
+        <ul class="g-c-f">
+          <li>
+            <div class="li_iner"><a href="http://car169y.csc86.com/product/024ed79d-0534-4824-ae2e-4f53f1d793ec.html" target="_blank"><img width="225" height="285" alt="本田老款锋范8寸DVD导航一体机 4S店专供原车导航特价" src="images/4F1.jpg"></a><a href="http://car169y.csc86.com/product/024ed79d-0534-4824-ae2e-4f53f1d793ec.html" target="_blank" class="tit">何炅代言品牌DVD导航一体机</a>
+              <div class="price"><a href="http://car169y.csc86.com/product/024ed79d-0534-4824-ae2e-4f53f1d793ec.html" target="_blank">&nbsp;</a><span><em>￥</em>1500.00元/台</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://baodet.csc86.com/product/856bde32-7431-424d-a746-632617fc48a8.html" target="_blank"><img width="225" height="285" alt="三星GALAXY Tab 3 7.0（T211）" src="images/4F2.jpg"></a><a href="http://baodet.csc86.com/product/856bde32-7431-424d-a746-632617fc48a8.html" target="_blank" class="tit">三星GALAXY Tab 3 7.0</a>
+              <div class="price"><a href="http://baodet.csc86.com/product/856bde32-7431-424d-a746-632617fc48a8.html" target="_blank">&nbsp;</a><span><em>￥</em>1599元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://01e102.csc86.com/product/3c03348d-3260-4594-9366-25e2087447c0.html" target="_blank"><img width="225" height="285" alt="联想 1G独显14寸超薄笔记本" src="images/4F3.jpg"></a><a href="http://01e102.csc86.com/product/3c03348d-3260-4594-9366-25e2087447c0.html" target="_blank" class="tit">联想 1G独显14寸超薄笔记本</a>
+              <div class="price"><a href="http://01e102.csc86.com/product/3c03348d-3260-4594-9366-25e2087447c0.html" target="_blank">&nbsp;</a><span><em>￥</em>2600元/台</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://upanchangjia.csc86.com/product/544541.html" target="_blank"><img width="225" height="285" alt="礼品u盘，个性u盘，u盘工厂" src="images/4F4.jpg"></a><a href="http://upanchangjia.csc86.com/product/544541.html" target="_blank" class="tit">时尚独特礼品U盘定制</a>
+              <div class="price"><a href="http://upanchangjia.csc86.com/product/544541.html" target="_blank">&nbsp;</a><span><em>￥</em>22.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://ajiamei001.csc86.com/product/476142.html" target="_blank"><img width="225" height="285" alt="礼品数码相框" src="images/4F5.jpg"></a><a href="http://ajiamei001.csc86.com/product/476142.html" target="_blank" class="tit">精美礼品数码相框</a>
+              <div class="price"><a href="http://ajiamei001.csc86.com/product/476142.html" target="_blank">&nbsp;</a><span><em>￥</em>24.00元/台</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://9797967.csc86.com/product/804245.html" target="_blank"><img width="225" height="285" alt="全民疯抢正品半球牌1.8L/1.5L升不锈钢电热水壶" src="images/4F6.jpg"></a><a href="http://9797967.csc86.com/product/804245.html" target="_blank" class="tit">正品半球牌不锈钢电热水壶</a>
+              <div class="price"><a href="http://9797967.csc86.com/product/804245.html" target="_blank">&nbsp;</a><span><em>￥</em>28.00元/台</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://szwywd.csc86.com/product/6d3242e6-e750-4ff7-adba-b0c8ceb35102.html" target="_blank"><img width="225" height="285" alt="迷你暖风机 桌面暖风机 空气暖风机 礼品暖风机 办公暖风机" src="images/4F7.jpg"></a><a href="http://szwywd.csc86.com/product/6d3242e6-e750-4ff7-adba-b0c8ceb35102.html" target="_blank" class="tit">迷你轻巧桌面暖风机</a>
+              <div class="price"><a href="http://szwywd.csc86.com/product/6d3242e6-e750-4ff7-adba-b0c8ceb35102.html" target="_blank">&nbsp;</a><span><em>￥</em>38.00元/个</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="li_iner"><a href="http://xqsm.csc86.com/product/73272.html" target="_blank"><img width="225" height="285" alt="深圳新情电脑音箱 迷你笔记本音箱 2.0音箱 礼品音箱 情侣音箱" src="images/4F8.jpg"></a><a href="http://xqsm.csc86.com/product/73272.html" target="_blank" class="tit">迷你笔记本电脑USB小音箱</a>
+              <div class="price"><a href="http://xqsm.csc86.com/product/73272.html" target="_blank">&nbsp;</a><span><em>￥</em>30.00元/对</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-h-15"></div>
+    <div class="bao_min"><a name="5F" href="javascript:;">&nbsp;</a> <a href="javascript:layer()" class="bao_btn">&nbsp;</a> <span class="tit_l"></span> <span class="tit_r"></span>
+      <dl class="g-c-f">
+        <dt><a href="http://quan.csc86.com/6b99a8f0-e227-4b55-8185-4a556bd5ec65.html" target="_blank"><img width="87" height="87" alt="" src="images/csc86.jpg"></a> </dt>
+        <dd class="tit"><a href="http://quan.csc86.com/6b99a8f0-e227-4b55-8185-4a556bd5ec65.html" target="_blank">电子商友圈</a></dd>
+        <dd>圈主：电小二<br />
+          管理员：生意红娘、闪电侠<br />
+          官方圈：电子频道生意圈</dd>
+      </dl>
+      <a href="javascript:;" onclick="csc.addCircleCncms('6b99a8f0-e227-4b55-8185-4a556bd5ec65',this)" class="add_btn">&nbsp;</a> </div>
+    <div class="g-h-15"></div>
+    <div class="ji_cai">
+      <h2>往期精彩活动</h2>
+      <div><a href="http://cncms.csc86.com/special/dianzi/2013/syhn/" target="_blank"><img width="985" height="80" alt="" src="images/sy.jpg"></a> </div>
+      <div><a href="http://cncms.csc86.com/special/2013/13hly/invite.html" target="_blank"><img width="985" height="80" alt="" src="images/yq.jpg"></a> </div>
+    </div>
+  </div>
+</div>
+<div class="g-h-20"></div>
+<!--m end-->
+<div class="footer"> <a href="http://cncms.csc86.com/about/" target="_blank">关于华南城网</a>|<a href="http://cncms.csc86.com/about/member.html" target="_blank">会员服务</a>|<a href="http://ad.csc86.com/" target="_blank">广告服务</a>|<a href="http://cncms.csc86.com/about/business.html" target="_blank">商务合作</a>|<a href="http://cncms.csc86.com/about/server.html" target="_blank">服务条款</a>|<a href="http://cncms.csc86.com/about/laws.html" target="_blank">法律申明</a>|<a href="http://cncms.csc86.com/about/privacy.html" target="_blank">隐私保护</a>|<a href="http://cncms.csc86.com/about/feedback.html" target="_blank">意见反馈</a>|<a href="http://cncms.csc86.com/help/" target="_blank">帮助中心</a>|<a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a>|<a href="http://cncms.csc86.com/about/contact.html" target="_blank">联系我们</a><br />
+  Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved<br />
+  深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5</div>
+<div class="fiexd" id="fiexd"> <span class="bg"></span>
+  <div class="right_cg"> <a rel="nofollow" href="#1F">电子元器件</a> <a href="#2F">靓丽LED</a> <a href="#3F">电工电气</a> <a href="#4F" class="bp">消费电子</a> <a href="#5F">我要参加</a><a class="top" href="#">&nbsp;</a> </div>
+</div>
+<div style="display:none"> 
+  <script src="http://res.csc86.com/f=js/m/statistics.js"></script> 
+</div>
+</body>
+</html>

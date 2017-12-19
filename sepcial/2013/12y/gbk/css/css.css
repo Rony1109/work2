@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* 电子频道全新上线抽奖专题 2013.11.27 by lg */
+i{font-style:normal;}
+.ml-175{margin-left:175px;}
+.mt-10{margin-top:10px;}
+.ml-10{margin-left:10px;}
+.ml-12{margin-left:12px;}
+.ml-28{margin-left:28px;}
+.mr-12{margin-right:12px;}
+.mr-90{margin-right:90px;}
+.c-fff{color:#fff;}
+.c-ff0000{color:#ff0000}
+.c-ff0000{color:#ff0000}
+.c-df3250{color:#df3250}
+.bg-c-fff{background-color:#fff;}
+.bg-c-bd2741{background-color:#bd2741;}
+.bg-c-ffb72c{background-color:#ffb72c;}
+.bg-c-12a4f1{background-color:#12a4f1;}
+.bg-c-424242{background-color:#424242;}
+.bg-c-8dba3b{background-color:#8dba3b;}
+.lh-20{line-height:20px;}
+.lh-22{line-height:22px;}
+.lh-24{line-height:24px;}
+.lh-27{line-height:27px;}
+.lh-30{line-height:30px;}
+.lh-60{line-height:60px;}
+.fs-14{font-size:14px;}
+.fs-16{font-size:16px;}
+.fs-18{font-size:18px;}
+.fs-20{font-size:20px;}
+.fs-24{font-size:24px;}
+.fs-28{font-size:28px;}
+.fw-700{font-weight:700;}
+.fw-400{font-weight:400;}
+.p-8-5{padding:8px 5px;}
+.p-26{padding:26px;}
+.p-10-9{padding:10px 9px;}
+.p-15-26{padding:15px 26px;}
+.p-20-0{padding:20px 0px;}
+.pb-15{padding-bottom:15px;}
+.w-b36{width:36%;overflow:hidden;}
+.w-b64{width:64%;overflow:hidden;}
+.w-b100{width:100%;overflow:hidden;}
+.w-b110{width:110%;overflow:hidden;}
+.w-464{width:464px;}
+.w-245{width:245px;}
+.w-212{width:212px;}
+.w-75{width:75px;}
+.w-470{width:470px;}
+.b-1-cf{border:1px solid #cfcfcf;}
+.br-1d-bbb8bc{border-right:1px dotted #bbb8bc;}
+
+.icon-mygods,.icon-arw,.btn-sinup,.icon-gift,.icon-tel,.icon-vist,.btn-redrdiu,.icon-x1,.icon-x2,.icon-x3
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle; background:url(img/icon.png) no-repeat;}/*icon*/
+.icon-mygods{width:158px;padding-top:46px;background-position:0 0;}
+.icon-arw{width:11px;padding-top:16px;background-position:-147px -48px;}
+.btn-sinup{width:137px;padding-top:40px;background-position:0px -48px;}
+.icon-gift{width:45px;padding-top:45px;background-position:-2px -190px;}
+.icon-tel{width:196px;padding-top:48px;background-position:0px -90px;}
+.icon-vist{width:196px;padding-top:48px;background-position:0px -140px;}
+.icon-x1{width:65px;padding-top:65px;background-position:0px -244px;}
+.icon-x2{width:65px;padding-top:65px;background-position:-63px -244px;}
+.icon-x3{width:65px;padding-top:67px;background-position:-130px -243px;}
+
+body{background-color:#df3250;font-family:microsoft yahei;}
+.web-search{background-color:#fff;}
+
+/*n*/
+.n{height:46px;line-height:46px;}
+.n .g-o-a{height:100%;color:#e4516b;font-size:15px;}
+.n a,.n a:hover{padding:0 30px;color:#fff;font-weight:700;}
+.n a.icon-mygods,.n a:hover.icon-mygods{padding:0;padding-top:46px;}
+.n a b.icon-arw{margin-left:5px;margin-bottom:2px;}
+
+/*b*/
+.b{ background:url(img/b.jpg) no-repeat center top; height:541px;}
+.b #bdshare {left: 580px;position: absolute;top:5px;color:#000;z-index:0;}
+.b #bdshare a,.b #bdshare a:hover{color:#000;}
+.b #bdshare a.shareCount,.b #bdshare a:hover.shareCount{color:#000;}
+
+.gbk-logo{position:absolute;top:-70px;left:0;}
+.bg-w{background:url(img/w.gif) repeat-x;height:4px;}
+.bg-t{background:url(img/t.png) repeat-x;height:16px;}
+a.btn-mc,a:hover.btn-mc{display:block;clear:both;height:32px;line-height:32px;width:100%; background-color:#f06400; text-align:center;font-size:16px;font-weight:700;color:#fff; text-decoration:none;}
+
+.brdiu{border-radius:10px; border:2px dotted #9b9089;width:450px;}
+a.btn-redrdiu,a:hover.btn-redrdiu{width:100px;height:28px;line-height:28px;background-color:#df3250; text-align:center;border-radius:6px; background-position:0 -10000px;color:#fff; text-decoration:none;font-size:14px;}
+
+/*footer*/
+.footer{text-align:center;color:#fff;line-height:24px;margin-bottom:20px;font-size:12px;}
+.footer a,.footer a:hover{margin:0 4px;color:#fff;}
+
+
+.tablewidth{ background:#fff; width:523px; position:relative;}
+.tablewidth table{ margin:50px 0 0 0px;}
+.tablewidth tr{height:30px; line-height:30px;}
+.tablewidth tr td{padding:10px; color:#333;}
+.tablewidth tr td span{ color:#f30; margin-left:5px; display:none;}
+.tablewidth tr th{width:110px; text-align:right; font-weight:normal; font-size:14px;}
+.tablewidth tr th em{color:#f30;}
+.tab-title{ height:40px; background:#ededed; line-height:40px; padding-left:20px; font-size:18px; font-weight:600; color:#202020; position:absolute; top:-70px;*+top:-50px; left:-20px; width:544px;}
+.tab-title a{ width:20px; height:15px; display:inline-block; background:url(img/close.png) no-repeat left top;margin:10px 10px 0 0;}
+.tablewidth input{ height:26px; line-height:26px; width:250px; padding:0 6px; }
+.btn-sub{ height:34px; text-align:center;}
+.btn-sub button{ width:118px; height:34px; line-height:34px; font-weight:700; text-align:center; margin:0 auto; font-size:15px; color:#f9f3d6; background:url(img/sub.png) no-repeat top left; border:none; cursor:pointer; margin-top:20px;}
+.aui_dialog .aui_buttons{ text-align:center; margin-bottom:20px;}
+
+.aui_dialog .aui_titleBar{ display:none;}
+
+.invt{width:400px;}
+.invt .tab-title{width:420px;top:-20px;}
+.invt_code{padding-top: 50px; text-align:center;}
+.invt_code textarea{width:300px;height:100px;padding:5px;resize:none;line-height:20px;font-size:13px}
+
+.pab01,.pab02,.pab03,.pab04{position:absolute;display:block;width:123px;height:0px;overflow:hidden;padding-top:28px;}
+.pab01{top:62px;left:19px;}
+.pab02{top:62px;left:338px;}
+.pab03{top:147px;left:19px;}
+.pab04{top:147px;left:338px;}

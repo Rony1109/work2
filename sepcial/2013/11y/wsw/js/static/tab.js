@@ -1,0 +1,14 @@
+define(function(require, exports, module){
+	module.exports = function(li,div,css,e){
+		var e = e || "mouseover"
+		$(li).children().each(function(i) {
+			var _this = $(this);
+			_this.bind(e,function(){
+				$(div).children().hide();
+				$(div).children().eq(i).show();
+				$(li).children().removeClass(css);
+				_this.addClass(css);
+			});
+		});
+	};
+});

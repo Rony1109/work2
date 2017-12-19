@@ -1,0 +1,135 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{ font-family:Microsoft Yahei;}
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.banner{ background:url(img/banner.jpg) no-repeat top; height:653px;}
+.top{ text-align:center;}
+.main-w{ background-color:#fffcfa;}
+.main-w h1{ font-size:30px;}
+.main-w ul{ width:103%;_width:101%; margin-top:30px;_margin-left:80px;}
+.main-w ul li{ width:255px; height:120px; float:left; margin: 20px 80px 10px 7px;_margin: 20px 30px 20px 4px;}
+.main-w ul li img{ float:left;}
+.main-w ul li a{ text-align:left; color:#333; text-decoration:none;}
+.main-w ul li p{ font-size:20px; padding:15px 0 0 140px; line-height:20px; font-weight:700;}
+.main-w ul li p span{ font-size:14px; font-weight:600;}
+.btm-b{ background:#262626 url(img/white-arrow.png) no-repeat top center; width:100%; height:25px;}
+
+.main-b{ background-color:#262626;text-align:center; color:#fff;}
+.main-b h1{ font-size:30px;}
+.main-b ul{ float:left; margin-right:11px; margin-top:15px;}
+.main-b ul li{ background-color:#fe7c00;}
+.main-b ul li a{ color:white; text-decoration:none;}
+.main-b ul li h1{ font-size:48px;}
+.main-b ul li p{ font-size:18px;}
+.main-b ul li.num{ background-color:#262626; width:280px; height:80px;}
+.main-b ul li.num img{ float:left;}
+.main-b ul li.num p{ font-size:30px; color:#FFF; text-align:left; line-height:15px; padding-left:50px;}
+.main-b ul li.num p span{ font-size:14px;}
+.dleft{ width:328px; padding-top:100px;}
+.dleft li{ margin-bottom:50px;}
+.dmid{ width:310px; padding-top:70px;}
+.dmid li{ margin-bottom:10px;}
+.dright{ width:325px;}
+.dright li{ margin-bottom:10px;}
+.btm-o{ background:#fe7c00 url(img/black-arrow.png) no-repeat top center; width:100%; height:25px;}
+
+.main-o{ background-color:#fe7c00; color:#fff;}
+.top-t img{ float:left;}
+.top-t p{ font-size:30px; color:#FFF; text-align:left; line-height:25px; padding-left:50px;}
+.top-t p span{ font-size:14px;}
+.main-o ul{ text-align:center; margin-top:20px;}
+.main-o ul li{ float:left; margin-right:25px;}
+.main-o ul li a{ color:white; text-decoration:none;}
+.mid-h{ margin-top:-40px;}
+.right-h{ margin-top:-35px;}
+.left-btm{ margin-left:100px; margin-bottom:30px;}
+.right-btm{ margin-left:55px;}
+.main-o ul li img{ border-radius:50%; border:4px solid white;} 
+.main-o ul li p{ font-size:16px; margin-top:5px;}
+.btm-b-o{ background:#262626 url(img/orange-arrow.png) no-repeat top center; width:100%; height:25px;}
+
+.map{ background:url(img/map.jpg) no-repeat bottom center; width:100%; height:410px; margin-top:20px;} 
+/*scroll*/
+.scroll{position: relative; padding: 15px; width:510px; height:150px; margin-left:240px;_margin-left:110px;}
+.scroll-c{overflow: hidden;width: 438px; height:136px; margin: 0 auto; position:relative;}
+.scroll-c ul{width: 9999px; text-align:center; position:absolute;}
+.scroll-c li{float: left;display: inline;margin-right: 13px;}
+.scroll-c li:hover p{ display:block;}
+.scroll-c li img{ border:2px solid #fe7c00;}
+.scroll-c li a{ font-size:13px; text-decoration:none; color:#333;}
+.scroll-c li p{ display:none;}
+.scroll .prev,.scroll .next{display:inline-block;width:30px;height:155px;color:#bbb;font:40px/155px simsun;text-align:center;position:absolute;top:0;}
+.scroll .prev{left:0px; }
+.scroll .next{right:0px;}
+.scroll .prev:hover,.scroll .next:hover{text-decoration:none;}
+#scroll4 .hover p{ display:block;}
+
+.map .slide-trg li{ width:28px; height:28px; cursor:pointer; background-color:transparent;}
+.c1{ margin-left:815px;_margin-left:680px; padding:5px;}
+.c2{ margin-left:540px;_margin-left:110px; margin-top:50px;}
+.c3{ margin-left:647px;_margin-left:320px; margin-top:3px;}
+.c4{ margin-left:467px;_margin-left:-25px; margin-top:-3px;}
+.c5{ margin-left:735px;_margin-left:500px; margin-top:-12px;}
+.c6{ margin-left:750px;_margin-left:520px; margin-top:20px;}
+.c7{ margin-left:518px;_margin-left:65px; margin-top:-16px;}
+.c8{ margin-left:667px;_margin-left:365px; margin-top:-12px;}
+.btm-w-b{background:#fdfdfd url(img/black-arrow.png) no-repeat top center; width:100%; height:25px;}
+
+.main-w-pic{ background-color:#fffcfa;}
+.main-w-pic .top-t p{ color:#514f4f;}
+.main-w-pic ul{ margin:20px 0 0 10px;}
+.main-w-pic ul li{ float:left; margin-right:10px; margin-bottom:10px;}
+.corner{ margin-top:-57px;}
+.btm-o-w{  background:#fe7c00 url(img/white-arrow.png) no-repeat top center; width:100%; height:25px;}
+
+.main-o-slider{ background-color:#fe7c00; color:#fff;}
+/* roundabout */
+.roundabout-holder{width:850px;height:580px;margin:0 auto;}
+.roundabout-moveable-item{width:315px;height:513px;cursor:pointer;border:3px solid #ccc;border:3px solid rgba(0, 0, 0, 0.08);border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.roundabout-moveable-item img{width:100%; height:100%;}
+.roundabout-in-focus{border:3px solid rgba(0, 0, 0, 0.2);}
+
+.pics ul{ float:left; margin-right:2px;_margin-right:0px; text-align:center;}
+.p-left{ width:339px;}
+.p-mid{ width:327px;}
+.pics ul li{ float:left; margin-right: 3px;_margin-right: 2px; margin-bottom:3px; background-color:#ca192b;}
+.pics ul li h2{ font-size:24px; color:white; line-height:160px; width:160px;}
+
+.main-o-t{ background-color:#fe7c00; text-align:center; color:#fff;}
+.main-o-t h1{ font-size:30px;}
+.logos ul{ width:103%; margin-top:20px;}
+.logos ul li{ float:left; margin-right:10px; margin-bottom:10px;}
+.logos ul li a{ font-size:14px; color:white; text-decoration:none;}

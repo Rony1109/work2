@@ -1,0 +1,165 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,宋体;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+code, kbd, pre, samp {
+    font-family: courier new,courier,monospace;
+}
+small {
+    font-size: 12px;
+}
+ul, ol {
+    list-style: none outside none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+legend {
+    color: #000000;
+}
+fieldset, img {
+    border: 0 none;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clear { clear: both;}
+
+/*正文开始*/
+.rows {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+
+body {
+    background: #691905 url(../images/header_bg.jpg) no-repeat center 28px;
+}
+
+.header .left {float: left;}
+.header .right {float: right;}
+
+.header .top {
+    width: 1000px;
+    height: 595px;
+    background: url(../images/header.jpg) no-repeat;
+}
+
+.top .logo { padding-top: 9px; padding-left: 15px;}
+.top .top_ctn {
+    width: 950px;
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 1px 1px 28px #FFD8BE inset;
+    padding: 40px 25px;
+    position: absolute;
+    top: 600px;
+}
+.top_ctn .img {position: relative;width: 323px;height: 242px; overflow: hidden;}
+.img ul li {float: left;}
+.img ul li p {width: 100%; height: 30px; background: #000; opacity: 0.3; filter: alpha(opacity=30); position: absolute; bottom: 0px; line-height: 30px; text-indent: 1em; color: #fff; zoom:1;}
+.top_ctn .img ol {position: absolute; bottom: 5px;right: 5px}
+.img ol li {
+    width: 17px; 
+    height: 17px; 
+    float: left; 
+    color: #fff;
+    text-align: center;
+    margin-left: 5px;
+    background: url("http://sz.csc86.com/statics/csc_sz/images/icons.png") repeat scroll 0 -186px transparent;
+    cursor: pointer;
+}
+.img ol li.cur, .img ol li:hover {color: #C80100; background: url("http://sz.csc86.com/statics/csc_sz/images/icons.png") repeat scroll 0 -208px transparent;}
+.top_ctn .ctn {width: 620px;}
+.ctn p.ctn-top {text-indent: 2em; font-size: 14px; color: #585657; line-height: 24px;}
+.ctn p.ctn-top a {color: #7E0400}
+.ctn .addr {width: 620px; padding-top: 15px; padding-bottom: 5px; position: absolute; bottom: 40px; border-top: 1px dashed #ccc}
+.addr p {margin: 5px 0; color: #383838; margin-left: 5px;}
+.addr p b {font-size: 12px; color: #383838;}
+.addr img {vertical-align: middle; margin-right: 10px; width: 16px}
+.addr .submit {
+    width: 178px; 
+    height: 37px; 
+    border: none; 
+    background: url(../images/zs_btn.jpg) no-repeat; 
+    cursor: pointer;
+    font: 700 16px 微软雅黑;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.top .ctn2 {
+    width: 994px;
+    height: 407px;
+    position: absolute;
+    top: 970px;
+    background: #fff;
+    padding: 3px;
+}
+.ctn2 .img {position: relative;}
+.ctn2 .img img {width: 778px; height: 407px; overflow: hidden;}
+.ctn2 .blank-line2 {width: 778px; background: #000; display: block; height: 80px; opacity: 0.6; filter: alpha(opacity=60); position: absolute; bottom: 3px; left: 0}
+.ctn2 .blank-line1 {width: 210px; height: 100px; background: #000; display: block; opacity: 0.6; filter: alpha(opacity=60); position: absolute; }
+.ctn2 p {height:80px; position: absolute; bottom: 0px; padding: 0 20px; color: #fff; font-size: 14px; text-indent: 2em}
+.ctn2 ul li {margin-bottom: 1.5pt;}
+.ctn2 ul li.cur .blank-line1, .ctn2 ul li .blank-line1:hover {opacity: 0; filter: alpha(opacity=0); cursor: pointer;}
+.ctn2 ul li a img {width: 210px; height: 100px; overflow: hidden;}
+
+.top .ctn3 {
+    width: 994px;
+    height: 500px;
+    position: absolute;
+    top: 1430px;
+    background: #fff;
+    padding: 3px;
+}
+.ctn3 .right p {width: 310px; padding: 10px; text-indent: 2em; font-size: 12px; color: #611A06; line-height: 22px;}
+.ctn3 .autoplay {width: 994px; height: 125px; margin-top: 15px; overflow: hidden;}
+.ctn3 ul {width: auto; height: 125px; margin-right: -3px; zoom:1;}
+.ctn3 ul li {float: left;margin-right: 2pt}
+.ctn3 ul li img {width: 163px; height: 125px;overflow: hidden;}
+
+.fixed-bar {width: 59px; position: absolute;left: 140px; top: 628px;}
+.fixed-bar a.top {position: relative;top: 0}
+.fixed-bar a.mid {position: relative;top: 25px}
+.fixed-bar a.bottom {position: relative;top: 63px}
+
+.dialog {z-index: 999; position: fixed; top: 80px; left: 50%; margin-left: -426px; background: #fff; display: none;}
+.dialog .header {width: 853px; padding: 15px 0; background: url(../images/dialog_header.jpg) no-repeat; text-align: right; position: relative;}
+.dialog .header h3 {text-align: center; color: #fff; font: bold 18px 微软雅黑; margin-top: -5px;}
+.dialog .header a {position: absolute; right: 20px; top: 15px; font-size: 15px; color: #fff}
+.dialog .form {width: 813px; padding: 10px 20px;}
+.dialog .form table {width: 100%; margin-left: 10px;}
+.dialog .form table tr {height: 40px;}
+.dialog .form table tr td.title{text-align: right; color: #7D3D17; font: 15px 微软雅黑; width: 80px;}
+.dialog .form label {margin-right: 37px; font-size: 14px; color: #595757}
+.dialog .form input.input {width: 360px; height: 15px; border: 1px solid #dedede; padding: 5px;}
+.dialog .form input.input:focus {border-color: #51A7E8}
+.dialog .form textarea.textarea {width: 690px; height: 190px; border: 1px solid #dedede; padding: 5px;}
+.dialog .form textarea.textarea:focus {border-color: #51A7E8}
+input.submit2, input.submit3{width: 96px; height: 34px; border: none; text-align: center; line-height: 34px; color: #fff; cursor: pointer; margin: 10px 5px 0; font-size: 14px}
+input.submit2 {background: url(../images/submit.jpg) no-repeat;}
+input.submit3 {background: url(../images/cancel.jpg) no-repeat; color: #000}
+.shadow {z-index: 998; background: #000; position: absolute; left: 0; top: 0; display: none;}

@@ -1,0 +1,88 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+html{ font-size: 62.5%;}
+body{ min-width: 1090px; margin: 0 auto; font-family: Microsoft Yahei}
+.w1066{ width: 1066px; margin:0 auto; }
+.poster{ height: 551px; background: url(img/poster.jpg) no-repeat center 0 }
+.ticon{ height: 116px; background: url(img/titicon.png) no-repeat; font-size: 3.8em; position:relative; top: 60px; line-height: 1; padding-top: 26px }
+.ticon span{ display: block; }
+.ticon .t1,.ticon .t2 em{ font-weight: 400; letter-spacing: 3px}
+.ticon .t1{ padding-left: 110px }
+.ticon .t2 b{ padding-left: 18px; letter-spacing: 20px}
+.ticon .t2 em{ padding-left: 8px }
+
+.hncw{ height: 324px; background: url(img/csc86.jpg) no-repeat center 0; overflow: hidden; }
+.hncw .arrow{ width: 520px; height: 324px; float: left;}
+.hncw .arrow a{ display: block; width: 44px; height: 44px; border-radius: 50%; background: #e6e6e6; color: #131048; text-align: center; font-size: 40px; font-size: 4rem; line-height: 1; text-decoration: none; position: relative; left: 440px; top: 140px }
+.hncw .intro{ width: 542px; height: 324px; float: left;}
+.hncw .intro h1{ font-size: 20px; font-size: 2rem; color: #fcc400; text-indent: 2em; padding-top: 40px; padding-right: 4em }
+.hncw .intro p{ font-size: 16px; font-size: 1.6rem; color: #b5b5b6; text-indent: 2em; padding-right: 3em; line-height: 2 }
+
+.brand{ height: 1250px; background:#060c55 url(img/eightcitys.jpg) no-repeat center 487px; }
+.brand .nav{ height: 89px; background: url(img/nav.jpg) no-repeat; }
+.brand .nav ul{ overflow: hidden; }
+.brand .nav ul li{ height: 89px; width: 355px; float: left; line-height: 1.2 }
+.brand .nav ul li a{ text-decoration: none; font-size: 20px; font-size: 2rem; color: #fff; display:block; padding-top: 20px}
+.brand .nav ul .li-1 a{ padding-left: 175px }
+.brand .nav ul .li-2 a{ padding-left: 130px }
+.brand .nav ul .li-3 a{ padding-left: 155px }
+.brand .title{ height: 268px; background: url(img/brand.jpg) no-repeat 569px 78px; }
+.brand .title h1{ color: #35dbf9; }
+.brand .detail p{ padding-left: 70px; color: #b5b5b6; font-size: 1.3em; text-indent: 2em; line-height: 2 }
+
+.quality{ height: 757px; background: url(img/service.jpg) no-repeat center 0; }
+.quality h1{ background-position: 0 -144px; color:#f08300; }
+
+.activities{ height:719px; background: url(img/more.jpg) no-repeat center 0;  }
+.activities .more{ position: relative; }
+.activities .more a{ display: block; position: absolute;
+ transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);}
+.activities .more .a1{width: 150px; height: 150px; top: 200px; left: 470px }
+.activities .more .a2,.more .a3,.more .a4{ height: 30px }
+.activities .more .a2{ width: 100px; top: 430px; right: 185px }
+.activities .more .a3{width: 170px; top: 580px; right: 0 }
+.activities .more .a4{ width: 70px; top: 515px; right: 170px;}
+
+.service{ height: 846px; background:#131048 url(img/action.jpg) no-repeat center 0; }
+.service h1{ background-position: 0 -287px; color: #fdd000 }
+
+.future{ height: 677px; background: url(img/future.jpg) no-repeat center 0; }
+.future .outlook{ padding-top: 246px; text-align: center;}
+.future .outlook h2{ font-size: 5.8em; color: #35dbf9; font-weight: 400 }
+.future .outlook p{ padding: 10px 20px 100px; font-size: 1.4em; color: #fff; line-height: 2 }
+.future .outlook a{ width: 340px; height: 48px; border:2px solid #35dbf9; color: #35dbf9; font-size: 2em; text-align: center; line-height: 48px; display: block; margin: 0 auto; padding: 0 10px}
+.future .outlook a:hover{ border:2px solid #fdd000; color: #fdd000 }

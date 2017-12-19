@@ -1,0 +1,43 @@
+﻿.hScrollPane_dragbar,
+.hScrollPane_draghandle,
+.hScrollPane_leftarrow,.hScrollPane_rightarrow{background:url(../images/dragbar.gif);}
+
+.hScrollPane_dragbar{
+	position:absolute;
+	left:0px;background:url(img/src_bg.png);
+	bottom:0px;
+	height:16px;
+	margin:0 auto;
+	background-position:left -29px;
+}
+.hScrollPane_draghandle{
+	height:13px;
+	width:30px;
+	overflow:hidden;
+	position:absolute;
+	top:1px;
+	background:url(img/src_hand.png) no-repeat 0 0;
+	left:0px;
+	cursor:default;
+	background-repeat:no-repeat;
+	-moz-border-radius:12px; 
+    -khtml-border-radius:12px; 
+    -webkit-border-radius:12px; 
+    border-radius:12px;
+}
+.hScrollPane_leftarrow,.hScrollPane_rightarrow{
+	display:inline-block;
+	height:16px;
+	width:17px;
+	overflow:hidden;
+	position:absolute;
+	bottom:0;
+}
+.hScrollPane_leftarrow{left:0;}
+.hScrollPane_leftarrow:hover{background-position:left -64px;}
+.hScrollPane_rightarrow{right:0; background-position:left -16px;}
+.hScrollPane_rightarrow:hover{background-position:left -80px;}
+
+.draghandlealter{
+	background:url(img/src_hand.png) no-repeat 0 0;
+}

@@ -1,0 +1,95 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family: microsoft yahei;}
+h1{ font-size:46px; color:#fff;}
+
+/*顶部 +导航*/
+.link{border-top: 0;}
+a{color: #444}
+.web-search h1, .web-search .logo-box{width: 229px}
+.selected_channel .sel_chnel{width: 60px;background-position: 58px 8px;}
+.selected_channel span.hover{background-position: 58px -5px;}
+.selected_channel .chnel_list{width: auto;white-space:nowrap;}
+.selected_channel{margin-top: 50px;}
+
+.navigation{height: 37px;background: #e52142}
+.navigation a{color: #fff}
+.main-nav li{float: left;display: inline;}
+.main-nav li a{display: inline-block;_display: inline;zoom:1;margin-top: 5px;padding: 0 15px;height: 32px;text-align: center;font: 16px/32px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #e52142;text-decoration: none;background: #fff;}
+.sub-nav{float: right;display: inline;margin-top: 14px;width: 297px;height: 15px;border-left: 1px #ea6279 solid;}
+.sub-nav a{font: 14px/15px Microsoft YaHei,simsun;padding-left: 12px;color: #ffd4d4}
+.sub-nav a:hover{color:#ffd4d4}
+/*顶部 +导航*/
+
+/* 以下为专题样式 */
+.main{ background:#fcb7c2 url(img/banner.jpg) no-repeat top center;  font-family: Microsoft Yahei;}
+.banner{ height:500px;}
+.jiathis_style{position:absolute;right:5px;top:5px;}
+.jiathis_style a{color:#fff;}
+
+.unit{ position:relative;}
+.toptitle{ width:100%; height:85px; text-align:center; position:absolute; top:-12px; left:0px; background:url(img/title.png) no-repeat center top;}
+.prod{ background:url(img/flower.png) no-repeat center; width:235px; height:235px; text-align:center;}
+.prod img{ padding-top:20px;}
+.ufolder{ border:15px solid #ffd801; border-radius:20px; background:#fff;}
+.ufolder ul{ margin-top:85px; margin-left:7px; width:103%;}
+.ufolder ul li{ width:235px; height:375px; float:left; margin-right:5px;}
+.ufolder ul li h2{ font-size:15px; color:#60380f; padding:0 10px;}
+.price{ background:url(img/label.png) no-repeat center top; width:100%; height:80px; margin-top:5px; position:relative;}
+.price h3{ font-size:25px; color:#fff; position:absolute; top:5px; left:45px;}
+.price h3 span{ margin-left:15px; color:#ffd801;}
+
+.each{}
+.eleft{ width:455px; height:325px; background:#fff; border-radius:10px; position:relative; margin:30px 0 0 30px;}
+.eleft h4{ font-size:26px; color:#a4a1a1; padding-left:80px; padding-top:35px;}
+.eleft h5{ font-size:26px; color:#fd5575; padding-left:80px;}
+.eleft p{ font-size:21px; padding-left:80px; padding-right:50px;}
+.num{ background:url(img/num.png) no-repeat center top; width:115px; height:140px; position:absolute; color:#fff; text-align:center; top:-55px; left:-35px;}
+.num h6{ font-size:42px; line-height:75px;}
+.eright{ width:495px; height:325px; position:relative;}
+.name{ background:url(img/prname.png) no-repeat center top; width:150px; height:150px; color:#fff; text-align:center; position:absolute; right:80px;}
+.name p{ font-size:30px; padding-top:35px; line-height:35px;}
+.propr{ background:url(img/singal.png) no-repeat center top; width:525px; height:135px; position:absolute; bottom:50px; left:-55px; z-index:2;}
+.pic{ position:absolute; z-index:3; top:85px;}
+.dis{ position:absolute; right:100px; bottom:87px; z-index:5;}
+.dis p{ font-size:24px; line-height:30px;}
+.dis p.p1{ color:#faf329;}
+.dis p.p1 span{ font-weight:bold; font-size:32px;}
+.dis p.p2{ color:#fff; text-decoration:line-through;}
+
+
+
+
+/*侧导航*/
+.fixed-nav{width:190px;height:485px;background:url(img/fixed-nav.png) no-repeat; position: absolute;margin-left:1005px;top: 760px;_background-image: url(img/fix-nav-ie6.png);
+}
+.fixed-nav ul{width:190px;margin:0 auto; padding-top: 200px;}
+.fixed-nav a{display: block;height:53px; font-size:34px; text-decoration:none; font-family:Microsoft YaHei; color:#fff; text-align:center; font-weight:700;}
+.fixed-nav a.bt{ height:60px;}

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* 城商通服务介绍 2013.12.30 by lg */
+/*public*/
+.c-fff{color:#fff;}
+.c-888{color:#888;}
+.c-444{color:#444;}
+.c-f67301{color:#f67301}
+.fs-00{font-size:0px;}
+.fs-20{font-size:20px;}
+.fs-30{font-size:30px;}
+.fs-14{font-size:14px;}
+.fw-400{font-weight:400;}
+.mr-45{margin-right:45px;}
+.mt-10{margin-top:10px;}
+.w-315{width:315px;}
+.w-480{width:480px;}
+.w-b100{width:100%;}
+.ms-txt{cursor:text;}
+.lh-22{line-height:22px;}
+.bt-1-e6e6e6{border-top:1px solid #e6e6e6;}
+.w-b100-hid{width:100%;overflow:hidden;}
+.bg-c-f6{ background-color:#f6f6f6;}
+
+/*icon*/
+.ico-z,.ico-tel,.ico-qq,.ico-mail,.ico-d-arw,.ico-d-arw2,.top-tel,
+.img-hotword,.img-pdt,.img-cpy,.img-sale
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;}
+.ico-z,.ico-tel,.ico-qq,.ico-mail,.ico-d-arw,.ico-d-arw2,.top-tel{background:url(img/icon.png) no-repeat;}
+.ico-z{width:27px;padding-top:23px;background-position:-122px -71px;}
+.ico-tel{width:218px;padding-top:19px;background-position:0 0;}
+.ico-qq{width:206px;padding-top:19px;background-position:0 -22px;}
+.ico-mail{width:240px;padding-top:19px;background-position:0 -47px;}
+.ico-d-arw{width:22px;padding-top:10px;background-position:-153px -74px;}
+.ico-d-arw2{width:22px;padding-top:10px;background-position:-185px -74px;}
+.top-tel{width:127px;padding-top:41px;background-position:-121px -98px;}
+
+.img-hotword,.img-pdt,.img-cpy,.img-sale{background:url(../images/tqc.jpg) no-repeat;}
+.img-hotword{width:541px;padding-top:330px;background-position:0px 0px;}
+.img-pdt{width:541px;padding-top:330px;background-position:0px -329px;}
+.img-cpy{width:541px;padding-top:330px;background-position:0px -664px;}
+.img-sale{width:631px;padding-top:400px;background-position:0px -997px;}
+
+body{font-family:microsoft yahei;}
+.top-bar{ font-family:tahoma,arial,simsun,sans-serif;}
+.top-my-account{z-index:5;}
+.b{background:url(img/b.png) #0039a1 repeat-x;}
+.opn-serv{position:absolute;top:325px;left:555px;display:block;width:267px;height:0;padding-top:66px;overflow:hidden;z-index:3;background-image:url(img/opnbtn.png)}
+.web-search{padding:0;height:84px;}
+.web-search h1{position:relative;margin-top:15px;width:353px;}
+.csclogo{display:block;width:245px;height:0px;overflow:hidden;padding-top:50px;position:absolute;top:0;left:0px;background:url(img/img.gif)}
+.cstlogo{display:block;width:100px;height:0px;overflow:hidden;padding-top:50px;position:absolute;top:0;left:263px;background:url(img/img.gif)}
+
+/*nav*/
+.nav{font-size:15px;float:right;margin-top:28px;}
+.nav a{color:#444;margin-left:40px;position:relative;z-index:4;}
+.nav a:hover,.nav a.hover{color:#f67301;text-decoration:none;}
+.nav a b.ico-d-arw,.nav a b.ico-d-arw2{display:none;}
+.nav a:hover b.ico-d-arw,.nav a.hover b.ico-d-arw,.nav a:hover b.ico-d-arw2,.nav a.hover b.ico-d-arw2
+{display:block;position:absolute;top:54px;left:50%;margin-left:-11px;}
+
+/*tq*/
+.tq{width:110%;padding-bottom:60px}
+.tq li{float:left;width:420px;margin-top:60px;margin-right:80px;}
+.tq01,.tq02,.tq03,.tq04{background:url(img/t.gif) no-repeat;}
+.tq01{background-position:0 0;}
+.tq02{background-position:0 -182px;}
+.tq03{background-position:0 -364px;}
+.tq04{background-position:0 -546px;}
+.tq li h3,.tq li h4,.tq li p{margin-left:215px;}
+.tq li h3{font-size:20px;line-height:28px;}
+.tq li h4{font-size:16px;font-weight:400;line-height:28px;}
+.tq li p{font-size:14px;color:#888;line-height:22px;}
+.tq li p span{color:#f67301;line-height:30px;}
+.tq li p span .ico-z{margin-right:5px;}
+
+/*tgb*/
+.tgb{padding:15px 0;background:url(img/tgb.png) #00187d repeat-x;}
+.nextbtn{width:200px;height:60px;line-height:60px;background-color:#0f57d8;color:#fff;font-size:18px;border-radius:4px;}
+
+/*footer*/
+.ft{background:url(img/f.gif) #444444;padding:30px}
+.footer{text-align:center;color:#fff;line-height:24px;margin-bottom:20px;font-size:12px;}
+.footer a,.footer a:hover{margin:0 5px;color:#fff;}
+
+/*float-div*/
+.float-div{width:112px;height:163px; background:url(img/icon.png) no-repeat 0 -71px;border-radius:5px;position:absolute;top:580px;right:40px;}
+.float-div a{display:block;width:80%;margin:52px auto 0;height:0px;overflow:hidden;padding-top:20px;}

@@ -1,0 +1,49 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 搜索框的样式 */
+.web-search h2{border-left: none;}
+
+/* 以下为专题样式 */
+.main{ background:#f2f2f2 url(img/banner.jpg) no-repeat top center;}
+.banner{ height:481px;}
+.jiathis_style{position:absolute;right:5px;top:10px;}
+.jiathis_style a{color:#fff;}
+.bmore{ position:absolute; top:210px; width:1000px; text-align:center;}
+
+.holder{ position:relative;}
+.holder a{ display:block; width:100%; height:100%;}
+.flr1{ background:url(img/flr1.jpg) no-repeat top center; height:642px;}
+.flr2{ background:url(img/flr2.jpg) no-repeat top center; height:649px;}
+.flr3{ background:url(img/flr3.jpg) no-repeat top center; height:535px;}
+.flr4{ background:url(img/flr4.jpg) no-repeat top center; height:596px;}
+.flr5{ background:url(img/flr5.jpg) no-repeat top center; height:223px;}
+
+.bbtm{ height:238px; text-align:center; }
+.bbtm img{ margin-top:150px;}
+
+
+.fixed-nav{width:117px;height:142px;background:url(img/rightnav.jpg) no-repeat; position: absolute;margin-left:1040px;top: 625px;
+}
+

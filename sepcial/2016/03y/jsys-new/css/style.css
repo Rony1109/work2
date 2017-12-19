@@ -1,0 +1,88 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+ body{ font-size:62.5%; font-family:Microsoft Yahei; min-width:1000px; margin-left:auto; margin-right:auto}
+ .ma{ margin:0 auto}
+.wrap{ background:url(img/bg.jpg)}
+.bgimg{ height:843px; background:url(img/banner.jpg) no-repeat center 0}
+.bgimg .share{width:300px; padding:15px 0 0 688px }
+.bgimg .lead{ width:220px; color:#fffefe; font-size:1.4em; text-align:center; font-weight:700; position:relative; top:365px}
+.bgimg .lead p.pl{ color:#fffc00; font-size:1.4em}
+
+.floor{ background-color:#000208}
+.floor ul{ overflow:hidden; margin-left:10px}
+.floor ul li{ width:242px; height:364px; background-color:#fff; float:left; margin:0 0 30px 2px}
+.floor ul li a{ text-decoration:none}
+.floor ul li img{ width:200px; height:200px; margin:18px 0 18px 21px}
+.floor ul li .text{ width:210px; margin-left:20px}
+.floor ul li .text .detail{ color:#4d4747; font-size:1.4em; margin-bottom:8px}
+.floor ul li .text .price span{ display:inline-block}
+.floor ul li .text .price span.s1{ width:126px; color:#f32f05; font-size:2em; font-weight:700}
+.floor ul li .text .price span.s1 b{ font-size:1.6em}
+.floor ul li .text .price span.s2 em{ display:block}
+.floor ul li .text .price span.s2 .e1{ width:64px; height:22px; background:url(img/fqicon.png) no-repeat; margin-left:10px; color:#fff; text-align:center; line-height:20px}
+.floor ul li .text .price span.s2 .e2{ text-decoration:line-through; color:#878787}
+.floor ul li a.qg{ display:block; width:200px; height:36px; border-radius:5px; background-color:#ff871c; color:#fff; font-size:2.4em; font-weight:700; text-align:center; line-height:1.5; margin-top:.1em}
+/*第一层产品样式*/
+.floor1{ position:relative; top:-132px; box-shadow:-10px 0px 12px #041635,0 -5px 10px #217bf9,0 5px 12px #021027,10px 0px 12px #011129; margin-bottom: 50px;}
+/*第二层产品样式*/
+.floor2{ margin-top:-145px;box-shadow:-10px 0px 12px #041635,0 -10px 15px #000208,0 5px 12px #021027,10px 0px 12px #041937;margin-bottom:50px}
+.floor2 .imgtit{ position:relative; z-index:1; top:-10px}
+/*第三层产品样式*/
+.floor3{box-shadow:-10px 0px 12px #032049,0 -10px 15px #000208,0 5px 15px #032049,10px 0px 12px #032049}
+
+/*往期精彩专题 ago*/
+.ago{ margin-top:30px}
+.ago .agobg{ height:222px; background:url(img/agobg.jpg); position:relative}
+.rollbox{ width:888px; overflow:hidden; position:absolute; top:31px; left:52px}
+.rollbox .rollist{width:9999px; overflow:hidden}
+.rollbox .rollist li{ float:left; text-align:center; margin-right:12px}
+.rollbox .rollist li a{ text-decoration:none}
+.rollbox .rollist li a img{ width:213px; height:160px }
+.ago .agobg span.btn{width:30px; height:98px; font-size:5em; cursor:pointer; background:url(img/agobtn.png) no-repeat 3px 21px; display:inline-block; position:relative; top:62px}
+.ago .agobg span.next{ background-position:-27px 21px; left:920px}
+.ago .agobg span.btn:hover{ background:rgba(3,23,63,.5) url(img/btnhover.png) no-repeat 3px 21px}
+.ago .agobg span.next:hover{background-position:-54px 21px}
+.bgb{ height:95px; background:url(img/bgb.jpg) no-repeat center 0}
+
+/*侧面导航栏 fixed*/
+.fixed{ width:164px; height:445px; background:url(img/fixed.jpg) no-repeat; position:fixed; top:120px; left:50%; margin-left:520px;}
+.fixed ul{ margin-top:150px}
+.fixed ul li{ transform:rotate(-8deg);
+            -webkit-transform:rotate(-8deg);  /*兼容-webkit-引擎浏览器*/
+            -moz-transform:rotate(-8deg); margin-bottom:57px}
+.fixed ul li a{ width:84px; color:#fffc00; font-size:2em; text-decoration:none; display:block; font-weight:900; margin-left:40px}
+.fixed ul li a.top{ margin:-25px 0 0 40px; text-align:center}

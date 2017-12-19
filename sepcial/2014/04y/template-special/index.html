@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>专题模版</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="http://res.csc86.com/js/"></script>
+<script src="http://res.csc86.com/dialog/" type="text/javascript"></script>
+<script src="js/init.js"></script>
+</head>
+
+<body onload="siglay()">
+<div class="head">
+	<div class="hd-cont">
+	<a class="logo" href="javascript:;" title=""><img src="css/img/logo.png" alt="" /></a>
+    <div class="nav">
+        <a class="n01" href="javascript:;" title="">首 页</a>
+        <a class="n02" href="javascript:;" title=""> 资 讯</a>
+        <a class="n03" href="javascript:;" title="">交 易</a>
+        <a class="n04" href="javascript:;" title="">展 会</a>
+        <a class="n05" href="javascript:;" title="">功 能</a>
+        <a class="n06" href="javascript:;" title="">EDM</a>
+    </div>
+    <div class="sech"><form><input class="intext" type="text" name="" placeholder="Keywords" /><input class="sub" type="submit" value="&nbsp;" /></form></div>
+    </div>
+</div>
+
+
+<div id="waterfall">
+	<ul class="list-nav">
+    	<li class="cur"><span>Tags</span></li>
+        <li><span>抽奖</span></li>
+        <li><span>好货源低价批</span></li>
+        <li><span>生意红娘</span></li>
+        <li><span>城商通</span></li>
+    </ul>
+    <div class="cell">
+    	<div class="min"><img src="images/00.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/01.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/02.jpg" /><span></span></div>
+    	<div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+   </div>
+   <div class="cell">
+   		<div class="min"><img src="images/06.jpg" /><span></span></div>
+    	<div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/09.jpg" /><span></span></div>
+    	<div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/11.jpg" /><span></span></div>
+    	<div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+   	</div>
+    <div class="cell">
+    	<div class="min"><img src="images/12.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/14.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/16.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/17.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/18.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+    <div class="cell">
+    	<div class="min"><img src="images/19.jpg" /><span></span></div>
+        <div class="botna"><span class="l"><img src="css/img/pho.png" />听风者</span><span class="r">NO: zt-002</span></div>
+    </div>
+</div>
+<script>
+var opt={
+  getResource:function(index,render){//index为已加载次数,render为渲染接口函数,接受一个dom集合或jquery对象作为参数。通过ajax等异步方法得到的数据可以传入该接口进行渲染，如 render(elem)
+	  if(index>=7) index=index%7+1;
+	  var html='';
+	  for(var i=20*(index-1);i<20*(index-1)+20;i++){
+		 var k='';
+		 for(var ii=0;ii<3-i.toString().length;ii++){
+	        k+='0';
+		 }
+		 k+=i;
+	     //var src="http://cued.xunlei.com/demos/publ/img/P_"+k+".jpg";
+		 //html+='<div class="cell"><a href="#"><img src="'+src+'" /></a><p>'+k+'</p></div>';
+	  }
+	  return $(html);
+  },
+  auto_imgHeight:true,
+  insert_type:1
+}
+$('#waterfall').waterfall(opt);
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+@import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+@import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+@import url('http://res.csc86.com/v2/m/foot/css/style.css');
+.wrap{min-width:1000px;background: #bd0404;}
+.banner-1{min-width:1000px;display: block;height:222px;background: url(img/banner-1.jpg) no-repeat center 0;}
+.banner-2{min-width:1000px;display: block;height:199px;background: url(img/banner-2.jpg) no-repeat center 0;}
+.banner-3{min-width:1000px;display: block;height:420px;background: url(img/banner-3.jpg) no-repeat center 0;}
+
+.video{width: 998px;height: 548px;overflow: hidden;background: url(img/video-bg.jpg) no-repeat center 0;}
+.video-box{margin: 29px auto 0;padding: 3px;width: 672px;background: #ff000a;}
+/* 领导贺岁 */
+.floor-1{width: 998px;overflow: hidden;height: 434px;background: url(img/floor-1.jpg) no-repeat center 0;}
+.floor-1 h2{height: 105px;overflow: hidden;text-indent: -999px;}
+.floor-1 ul{margin: 32px 0 0 58px;}
+.floor-1 ul li{float: left;display: inline;margin-right: 43px;width: 420px;}
+.loor-1 .img-box{float: left;width: 200px;height: 265px;}
+.floor-1 img{float: left;}
+.floor-1 div{float: right;width: 200px;}
+.floor-1 div strong,.floor-1 p span{display: block;}
+.floor-1 div strong{font: 24px Microsoft YaHei,simsun;}
+.floor-1 div span{font: 16px Microsoft YaHei,simsun;}
+.floor-1 div a.hc-btn{display: block;margin-top: 30px;width: 141px;height: 44px;overflow: hidden;text-indent: -999px;background: url(img/hc-btn.gif) no-repeat;}
+.floor-1 div p{margin-top: 15px;font: 12px/18px simsun;}
+/* 分公司贺年 */
+.floor-2{width: 998px;height: 686px;overflow: hidden;background: url(img/floor-2.jpg) no-repeat;}
+.floor-2 h2{height: 123px;overflow: hidden;text-indent: -999px;}
+.floor-2 ul{margin-left: 27px;}
+.floor-2 li{float: left;display: inline;margin: 0 15px 15px 0;width: 295px;border: 5px #e60012 solid;}
+.floor-2 li span{display: block;height: 46px;color: #fff;text-align: center;font: 18px/46px Microsoft YaHei,simsun;background: #e60012 url(img/pic-bg.gif) no-repeat 0 bottom;}
+.floor-2 li a:hover{text-decoration: none;}
+/* 商户贺年 */
+.floor-3{width: 998px;height: 592px;overflow: hidden;background: url(img/floor-3.jpg) no-repeat;}
+.floor-3 h2{height: 144px;overflow: hidden;text-indent: -999px;}
+.floor-3 .video-box{margin: 0 0 0 222px;width: 720px;height: 413px;}
+/* 走羊运发羊财 */
+.floor-4{width: 998px;height: 733px;overflow: hidden;background: url(img/floor-4.jpg) no-repeat;}
+.floor-4 h2{height: 125px;overflow: hidden;text-indent: -999px;}
+.floor-4 ul{margin-left: 29px;}
+.floor-4 li{float: left;display: inline;margin:0 10px 10px 0;width: 219px;border: 4px solid #e60012;border-bottom: 0;}
+.floor-4 li span{display: block;padding-top: 8px;height: 64px;color: #fff;text-align: center;font: 18px Microsoft YaHei,simsun;background: #e60012 url(img/pic-bg-2.gif) no-repeat}
+.floor-4 li a:hover{text-decoration: none;}
+/* 飞young青春*/
+.floor-5{width: 998px;height: 701px;overflow: hidden;background: url(img/floor-5.jpg) no-repeat;}
+.floor-5 h2{height: 108px;overflow: hidden;text-indent: -999px;}
+.floor-5 .video-box{width: 870px;background:none;}
+/* 写下祝福语*/
+.floor-6{width: 998px;height: 520px;overflow: hidden;background: url(img/floor-6.jpg) no-repeat;}
+.floor-6 h2{height: 122px;overflow: hidden;text-indent: -999px;}
+.floor-6 .video-box{width: 870px;background:none;}
+.g-comment{display: inline;margin-left: 60px;width: 625px;}
+
+.comment-box{height:500px; background:#fff; overflow:hidden;}
+.comment-box .hd{ height:50px; overflow:hidden; margin-left:15px;}
+
+.comment{width:625px; margin:0 auto; position:relative;z-index:1}
+.com_form{width:100%; position:relative}
+.input{width:99%; height: 80px; border: 1px solid #eee;margin-bottom:6px;}
+.com_form p{height:28px; line-height:28px; position:relative}
+span.emotion{display: inline-block;*display: inline; zoom:1; width:16px; height:16px; background:url(img/face.png) no-repeat 0 0;margin: 4px 0 -4px;cursor: pointer;}
+.com_form p .tips {margin-left: 5px; color: #999; font-size: 13px;}
+.com_form p .tips i {color: #f18302; font-style: normal;}
+.qqFace{margin-top:4px;background:#fff;padding:2px;border:1px #dfe6f6 solid;}
+.qqFace table td{padding:0px;}
+.qqFace table td img{cursor:pointer;border:1px #fff solid;}
+.qqFace table td img:hover{border:1px #0066cc solid;}
+.sub_btn {width: 92px;height: 28px;line-height: 28px;position:absolute; right:0px; top:0;display: inline-block;zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */*display: inline;vertical-align: baseline;margin: 0 2px;outline: none;cursor: pointer;text-align: center; border: none;background:#ff3838; color:#fff; margin-top: 2px;border-radius: 3px; font-weight:700;}
+.sub_btn_hover { color: #ccc}
+.comment-result {width: 625px;margin:0 auto; padding: 0 5px;overflow: hidden; position: relative;}
+.comment-result a.more {position: absolute; right: 0; bottom: 5px; color: #F28202;}
+.comment-result ul {border-top: 1px solid #eee;}
+.comment-result ul li {border-bottom: 1px solid #eee; padding: 12px 0 8px; width: 670px; overflow: hidden;}
+.comment-result ul li .img-l {float: left;}
+.comment-result ul li .img-l img {width: 52px; height: 52px; overflow: hidden; vertical-align: middle;}
+.comment-result ul li .comment-ctn {float: left; margin-left: 10px; font-size: 12px;width: 500px; overflow: hidden;}
+.comment-result .comment-ctn span {color: #333;}
+.comment-result .comment-ctn span.time {display: block; margin-top: 10px; font-size: 11px; color: #999}
+.comment-result .comment-ctn i { color: #f18302; font-style: normal;}
+
+.weibo{margin-right: 50px;width: 240px;}
+.bottom{min-width:1000px;margin: 0 auto;height: 119px;background: url(img/bottom.jpg) no-repeat center 0;}
+
+.fixed {position: fixed;_position: absolute;right: 0;width: 176px;height: 654px;background: url(img/side-nav.png) no-repeat;_background:url(img/side-nav-ie6.png) no-repeat;}
+.fixed ul{z-index: 99;left: 16px;margin-top:109px;}
+.fixed ul li{width: 145px;height: 38px;}
+.fixed ul li.last{height: 45px;}
+.fixed ul li a{display: block;width: 145px;height: 38px;overflow: hidden; text-indent: -999px ;}
+.fixed ul li.last a{height: 45px;}
+.embed{position: absolute;left: 32px;top:427px;}

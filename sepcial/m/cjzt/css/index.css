@@ -1,0 +1,63 @@
+@import url('http://res.csc86.com/v2/m/init/css/style.css');
+body{background-color:#6101a3;}
+
+
+/***订单抽奖楼层***/
+.prize-flr{background-color:#df1c2c;width:1190px;margin:50px auto 0;border-radius:60px;box-shadow:0 0 20px #fff;}
+
+
+/**抽奖部分**/
+.prize-bd{padding:45px 40px;}
+
+/*根据订单号抽奖*/
+.prize-order{width:730px;}
+
+.prize-lst li{float:left;background-color:#F0F;margin-right:20px;margin-top:20px;padding:1px;color:#fff;text-align:center;border-radius:10px;overflow:hidden;}
+.prize-lst .opacity{opacity:0.4}
+.prize-lst .itm5{margin-right:384px;}
+.prize-lst p{height:30px;line-height:30px;}
+
+.prize-cz{position:absolute;left:182px;top:172px;width:340px;}
+.prize-cz .ipt-txt{background-color:#fff;width:324px;height:46px;padding:0 5px;line-height:46px;border:3px solid #f39800;border-radius:6px;font-size:26px;outline:none;}
+.prize-btn{display:block;background-color:#fdff1a;height:75px;margin-top:5px;box-shadow:0 -5px 5px rgba(0,0,0,0.2) inset;border-radius:10px;color:#ff0000;font:48px/70px Microsoft YaHei;text-align:center;cursor:pointer;}
+.prize-btn:hover{text-decoration:none;}
+
+/*中奖名单*/
+.prize-wnnrs{background-color:#e13a48;min-height:300px;margin-left:730px;margin-top:43px;*margin-top:88px;padding:50px 30px 21px;border-radius:15px;color:#fefeff;font:16px/36px Microsoft YaHei;}
+.prize-wnnrs h3{position:absolute;left:50%;top:-24px;margin-left:-98px;background-color:#fcff1a;height:48px;padding-left:50px;padding-right:50px;line-height:48px;border-radius:30px;color:#df1c2c;font-size:24px;font-weight:normal;}
+.wnnrs-bd{height:342px;overflow:hidden;}
+.wnnrs-lst{position:absolute;left:0;top:0;width:100%;}
+.wnnrs-lst li{height:38px;line-height:38px;overflow:hidden;}
+.wnnrs-lst span{display:inline-block;white-space:nowrap;vertical-align:middle;}
+.wnnrs-lst .n{width:90px;}
+.wnnrs-lst .p{width:130px;margin-right:10px;text-overflow:ellipsis;overflow:hidden;}
+.wnnrs-lst .tips,.wnnrs-lst .error-tips{text-align:center;padding-top:50px;}
+
+/*弹窗样式重写*/
+.prize-pop{font-family:Microsoft YaHei;z-index:30000;}
+.prize-pop,.prize-pop .mask,.prize-pop .bd{position:fixed;left:0;top:0;}
+.prize-pop,.prize-pop .mask,.prize-pop .bd .bg,.prize-pop .bd .c{width:100%;height:100%;}
+.prize-pop .mask,.prize-pop .bd .bg{background-color:#000;opacity:0.6;filter:alpha(opacity=60);}
+.prize-pop .bd{left:50%;top:50%;}
+.prize-pop .close,.prize-pop .bd .bg,.prize-pop .bd .c{position:absolute;}
+.prize-pop .close{right:25px;top:20px;display:inline-block;background:url(img/prize-pop-close.png) no-repeat 0 0;width:54px;height:54px;line-height:999px;cursor:pointer;overflow:hidden;}
+.prize-pop .bd .bg,.prize-pop .bd .c{left:0;top:0;}
+.prize-warn-pop .bd,.prize-tips-pop .bd{width:720px;margin-left:-412px;margin-top:-225px;height:450px;padding-left:50px;padding-right:50px;border:1px solid #c8c8c8;overflow:hidden;}
+.prize-warn-pop .tips,.prize-tips-pop .tips{background:url(img/prize-pop-tips.png) no-repeat;color:#100203;font-size:30px;text-align:center;overflow:hidden;}
+.prize-warn-pop .tips{background-position:center 100px;height:70px;padding-top:313px;line-height:50px;}
+.prize-tips-pop .tips{background-position:center -192px;height:91px;margin-top:175px;line-height:91px;}
+
+.prize-wnnrs-pop .bd{width:1647px;margin-left:-850px;margin-top:-353px;}
+.prize-wnnrs-pop .bd .c{background:url(img/prize-pop-yzj.png) no-repeat center top;height:706px;}
+.wnnrs-pop-bd{position:absolute;width:593px;left:50%;margin-left:-268px;}
+.wnnrs-pop-bd .czpro,.wnnrs-pop-bd .inf-hd{text-align:center;}
+.wnnrs-pop-bd .czpro{padding-top:152px;color:#fff;font-size:35px;}
+.wnnrs-pop-bd .inf-hd{margin-top:30px;line-height:24px;color:#e71f19;font-size:20px;font-weight:bold;}
+.wnnrs-pop-bd .inf-lst{margin-left:80px;margin-right:36px;color:#524f4f;font-size:18px;}
+.wnnrs-pop-bd .inf-lst li{margin-top:10px;border-bottom:1px solid #6b685d;}
+.wnnrs-pop-bd .inf-lst span,.wnnrs-pop-bd .ipt-txt{display:inline-block;height:35px;line-height:35px;vertical-align:middle;}
+.wnnrs-pop-bd .inf-lst span{margin-left:-50px;}
+.wnnrs-pop-bd input{outline:none;}
+.wnnrs-pop-bd .ipt-txt{background:none;border:none;width:470px;}
+.wnnrs-pop-bd .cz{padding-top:60px;text-align:center;}
+.wnnrs-pop-bd .wnnrs-inf-smt{background:none;border:none;width:188px;height:33px;}

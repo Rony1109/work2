@@ -1,0 +1,85 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ @import url('simple.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.g-w1002,.topic-flr{width:1002px;margin-left:auto;margin-right:auto;}
+.main{background:#272727 url(img/bg.jpg) repeat center top;}
+.banner{background:url(img/banner.png) no-repeat center top;height:549px;}
+.jiathis_style{position:absolute;right:0;top:10px;}
+.jiathis_style a{color:#fff;}
+
+.topic-flr .flr-hd{background:url(img/tbg.png) no-repeat;_background:url(img/tbg1.png) no-repeat;height:65px;padding-bottom:10px;padding-left:71px;border-bottom:1px dashed #fff;color:#fff;overflow:hidden;}
+.topic-flr .flr-hd h2{font:bold 36px/56px Microsoft YaHei;_font:bold 36px/62px Microsoft YaHei;}
+
+.topic-flr1 .flr-bd{color:#fff;font:16px/28px Microsoft YaHei;padding:30px 37px 50px 27px;}
+.topic-flr1 .flr-bd .hd{width:658px;}
+.topic-flr1 .flr-bd dt{color:#f5c231;font-size:18px;font-weight:bold;padding-bottom:8px;}
+.topic-flr1 .flr-bd ol{background:url(img/ol-bg.png) no-repeat 0 8px;_background:url(img/ol-bg1.png) no-repeat 0 8px;padding-left:40px;}
+.topic-flr1 .flr-bd ol li{line-height:36px;}
+.topic-flr1 .flr-bd .bd{margin-top:18px;}
+
+.topic-flr2 .flr-bd{padding-top:40px;padding-bottom:40px;}
+.topic-flr2 .gs{padding-left:17px;padding-right:17px;color:#f5c231;font:16px/28px Microsoft YaHei;}
+
+.topic-flr3 .flr-bd{padding-top:10px;padding-bottom:50px;}
+.topic-flr3 dl{padding:25px 25px 0;}
+.topic-flr3 dl dt{background:url(img/l-icon.png) no-repeat;_background:url(img/l-icon1.png) no-repeat;padding-left:25px;color:#f5c231;font:italic bold 24px Microsoft YaHei;}
+.topic-flr3 dl dd{color:#fff;font:14px/24px Microsoft YaHei;margin-top:3px;}
+.topic-flr3 .hdlc dt{background-position:0 0;}
+.topic-flr3 .hdlc dd{background:url(img/hdlc-bg.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/hdlc-bg.png");width:957px;height:203px;margin:15px auto 5px;}
+.topic-flr3 .cytj dt{background-position:0 -33px;}
+.topic-flr3 .zysx dt{background-position:0 -66px;}
+.topic-flr3 .bmfs{position:absolute;right:100px;top:291px;}
+.topic-flr3 .bmfs dt{background-position:0 -99px;padding-left:30px;}
+.topic-flr3 .bmfs dd{font-weight:bold;}
+.topic-flr3 .bmfs dd em{font-size:16px;}
+.topic-flr4 .flr-bd{padding-top:30px;padding-bottom:40px;}
+.topic-flr4 .flr-bd a{display:block;border:1px solid #808080;text-align:center;padding:3px 0;}
+
+.topic-back-top{background:#ffef3b;height:27px;}
+.topic-back-top a{position:absolute;top:-10px;left:50%;margin-left:-54px;}
+
+
+#myform{padding-top:40px;}
+ul.lay-ul{height:195px;width:523px; }
+#myform li{height:30px; line-height:30px; width:523px; padding:6px 0; list-style:none;}
+#myform span{ width:90px; display:inline-block; font-size:14px;}
+#myform li.lay0101 span{ _margin-left:13px;}
+#myform span i{ color:#C00; margin-right:6px; font-style:normal;}
+.tab-title{ height:20px; position:absolute; right:0; top:0;}
+.tab-title a{ width:20px; height:15px; display:inline-block; background:url(img/close.png) no-repeat left top;margin:10px 10px 0 0;}
+.tablewidth input{ height:26px; line-height:26px; width:250px; padding:0 6px; }
+.btn-sub{ height:34px; text-align:center;}
+.btn-sub button{ width:118px; height:34px; line-height:34px; font-weight:700; text-align:center; margin:0 auto; font-size:15px; color:#f9f3d6; background:url(img/sub.png) no-repeat top left; border:none; cursor:pointer; margin-top:20px;}
+.aui_dialog .aui_buttons{ text-align:center; margin-bottom:20px; display:none;}
+#dosubmit{width:118px; height:34px; line-height:34px; font-weight:700; text-align:center; margin:0 auto; font-size:15px; color:#f9f3d6; background:url(img/sub.png) no-repeat top left; border:none; cursor:pointer; margin:20px 0 0 120px;}
+.aui_dialog{ background:#fff;}
+.aui_title{ font-size:14px; text-indent:24px;}
+.aui_titleBar{ height:40px; line-height:40px; border-bottom:2px solid #ddd;}

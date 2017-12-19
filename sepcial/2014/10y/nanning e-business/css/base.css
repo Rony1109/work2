@@ -1,0 +1,91 @@
+/**
+* 前端模板css文件
+* 
+*/
+
+/* 依赖的模块 */
+@import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+@import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+@import url('http://res.csc86.com/v2/m/init/css/style.css');
+@import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+@import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+@import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+/**
+* 建议的书写顺序
+* 标签样式
+* 公共样式
+* 模块样式
+* 具体内容
+* 
+*/
+.link{border-top: 0;}
+a{color: #444}
+.web-search h1, .web-search .logo-box{width: 229px}
+.selected_channel .sel_chnel{width: 60px;background-position: 58px 8px;}
+.selected_channel span.hover{background-position: 58px -5px;}
+.selected_channel .chnel_list{width: auto;white-space:nowrap;}
+.selected_channel{margin-top: 50px;}
+
+.navigation{height: 37px;background: #e52142}
+.navigation a{color: #fff}
+.main-nav li{float: left;display: inline;}
+.main-nav li a{display: inline-block;_display: inline;zoom:1;margin-top: 5px;padding: 0 15px;height: 32px;text-align: center;font: 16px/32px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #e52142;text-decoration: none;background: #fff;}
+.sub-nav{float: right;display: inline;margin-top: 14px;width: 297px;height: 15px;border-left: 1px #ea6279 solid;}
+.sub-nav a{font: 14px/15px Microsoft YaHei,simsun;padding-left: 12px;color: #ffd4d4}
+.sub-nav a:hover{color:#ffd4d4}
+
+/*专题内容*/
+.banner{ height:318px; background:#fff url(img/banner.jpg) bottom no-repeat;}
+.jiathis_style{position:absolute;right:5px;top:7px;}
+.jiathis_style a{color:#fff;}
+.lingshi{position:absolute;left:50px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+
+.main{ background:url(img/bg.jpg) no-repeat top; height: 3930px; font-family:Microsoft YaHei,simsun;}
+.holder {font-style:italic; text-align:justify;}
+.holder h1{ font-size:43px;line-height:100px;}
+.holder h2{ font-size:62px; line-height:85px;}
+.holder p{ font-size:16px; line-height: 32px;}
+
+.left{ width: 550px;_width:600px;}
+.left h1{ color:#0770c1;}
+.left p{ padding-right:130px;_padding-right:165px; text-indent:30px;}
+
+.right{ width:510px; float:right; margin-right:20px;}
+.right h1{ color:#0770c1;}
+
+.left-w{ width: 500px;}
+.left-w h2{ text-indent:30px; color:#fff;}
+.left-w p{ color:#fff; padding-top:30px;}
+
+.right02{ width:490px;_width:550px; float:right; margin-right:20px;_margin-right: 0px;}
+.right02 h1{ color:#0770c1; font-size:59px}
+.right02 p{ color:#0770c1; padding:0 15px 0 30px; _padding-left:80px}
+
+.box h2{ color:#fff; _margin-top:30px;}
+.box h2 span{ font-size:36px; line-height:0px;_line-height:55px;}
+.box ul{ width:360px; float:left; color:#fff; margin:0 50px 0 35px;}
+.holder h3{ font-size:19px; color:#fff; width:70%; line-height:40px; float:left;}
+.holder h3 span{ background-color:#ffea00; padding:5px; padding-right:10px; color:#4200ff;}
+.s{ float:right; font-style:normal; font-size:24px; font-weight:600; background-color:#7ecdf4; padding:5px 10px; color:#fff; border-radius:5px; margin: 25px 145px 0 0; cursor:pointer;}
+
+.box2 h2{ color:#008cd7; padding-left:350px;}
+.btn-t{ float:right; width:49px; height:49px; margin-right:-70px; margin-top:-50px;}
+
+.dz_f_links {padding:10px 50px 10px 75px; position:relative; border:1px solid #d6d6d6; border-width:1px 0; line-height:26px; height:auto; zoom:1;}
+.dz_hide{height:22px;overflow:hidden;zoom:1;position: relative;line-height: 22px}
+.dz_f_links strong {position:absolute; left:0; top:10px; font:bold 14px/22px simsun; color:#222;}
+.dz_f_links span {float:none; color:#D6D6D6;}
+.dz_f_links span a {color:#888; margin: 0 6px; line-height:26px; color: #444;display: inline-block; white-space: nowrap;}
+.dz_f_links .more{position:absolute;top:12px;*top:10px;_top:16px;right:6px;}
+.dz_f_links .more span{display:inline-block;width:9px;height:9px;background:url(img/icos.gif) -2px -133px no-repeat;margin:0 0 0 3px;cursor:pointer;}
+.dz_f_links .more .s1{background-position:0 -154px;}
+.dz_hide {height: 22px;overflow: hidden;}
+
+
+.back-top{width: 48px;height: 48px;position: fixed;bottom: 148px;right: 130px;margin-left: 50%;_position: absolute;_top: expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50));display: none;z-index: 100;}
+.back-top a{display: block;width: 48px;height: 48px;background: url(img/icon_top.gif) no-repeat;}
+.back-top a:hover{background: url(img/icon_top_hover.gif) no-repeat;}

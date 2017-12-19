@@ -1,0 +1,66 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+.footer{height:100px;position:fixed;bottom:0;width:100%}
+
+/* 以下为专题样式 */
+.hei640{height:640px;}
+.hei637{height:637px;}
+.hei550{height:550px;}
+.hei590{height:590px; position:relative;}
+.hct{height:640px; text-align:center;}
+/*第一栏*/
+.xdlist1{background:url(img/gsc-xd1.jpg) no-repeat; background-size:cover; height:640px;}
+.wxlf{float:left; margin:30px; position:relative;}
+.wxlf .a0{position:absolute; left:0px; top:0px; width:200px;height:45px;}
+.wxlf .a1{position:absolute; left:48px; bottom:0px;width:170px;height:45px;}
+.wxlf .a2{position:absolute; left:258px; bottom:0px;width:170px;height:45px;}
+.wxrg{float:right; margin-top:91px;}
+/*第二栏*/
+.xdlist2{background:url(img/gsc-xd2.jpg) no-repeat ; background-size:cover; height:640px;}
+.xdtp2{height:115px; padding-top:30px;}
+.xdtxt2{margin-top:40px; width:100%; height:455px;}
+.imls1{float:left; width:444px; height:361px; margin:80px; margin-left:80px; margin-top:50px;}
+.imls2{float:left; width:298px; height:371px; margin-left:68px; margin-top:40px;}
+/*第三栏*/
+.xdlist3{background:url(img/gsc-xd3.jpg) no-repeat; background-size:cover; height:640px;}
+.xdtxt3{width:1124px; height:574px; padding-top:66px; padding-left:33px;}
+/*第四栏*/
+.xdlist4{background:url(img/gsc-xd4.jpg) no-repeat; background-size:cover;}
+.xdtxt4{width:1114; height:583; padding-top:58px; padding-left:38px; position:relative;}
+.xdtxt4 .iml1{position:absolute; left:0px; bottom:160px;}
+.xdtxt4 .iml2{position:absolute; left:820px; bottom:110px;}
+.xdtxt4 .iml3{position:absolute; right:30px; top:50px;}
+/*第五栏*/
+.xdlist5{background:url(img/gsc-xd5.jpg) no-repeat; background-size:cover;}
+/*第六栏*/
+.xdlist6{background:url(img/gsc-xd6.jpg) no-repeat; background-size:cover;}
+.xdtxt6{width:1026px; height:637px;  padding-left:82px;}
+/*第七栏*/
+.xdlist7{background:url(img/gsc-xd7.jpg) no-repeat; background-size:cover; height:550px;}
+.xdtxt7{height:378px; width:990px; padding-top:86px; padding-left:100px;}
+/*第八栏*/
+.xdlist8{background:url(img/gsc-xd8.jpg) no-repeat; background-size:cover;}
+.a3{position:absolute; left:382px; bottom:150px;width:185px;height:38px;}
+.a4{position:absolute; left:620px; bottom:150px;width:185px;height:38px;}

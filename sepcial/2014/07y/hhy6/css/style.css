@@ -1,0 +1,78 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+/* @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/foot/css/style.css');*/
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{background:#f2a100;}
+.banner{background:#a70709 url(img/banner.jpg) no-repeat center top;height:519px;overflow:hidden;}
+.topic-logo{margin-left:-8px;}
+.jiathis_style{position:absolute;right:0;top:12px;}
+.jiathis_style a{color:#444;}
+
+.pro-lst{width:1000px;margin-left:14px;}
+.pro-lst li{float:left;width:220px;border:1px solid #ddd;padding:4px;_padding-bottom:6px;margin-right:17px;margin-top:15px;}
+.pro-lst li .t{height:42px;overflow:hidden;margin-top:13px;}
+.pro-lst li .t a{color:#444;font:bold 12px/21px Microsoft YaHei;}
+.pro-lst li .ft{color:#666;position:relative;line-height:25px;padding-left:5px;margin-top:3px;}
+.pro-lst li .ft .price em{color:#c6011b;font:bold 16px Microsoft YaHei;}
+.pro-lst li .ft .num em{color:#444;}
+.pro-lst li .ft .buy{display:inline-block;background:url(img/buy.jpg) no-repeat;width:100px;height:43px;line-height:99px;overflow:hidden;position:absolute;right:-9px;top:3px;}
+
+.cmpny-inf{background:#efefef;padding:15px 14px;}
+.cmpny-inf .pic{width:124px;height:124px;overflow:hidden;}
+.cmpny-inf .inf{position:relative;margin-left:144px;_margin-left:140px;}
+.cmpny-inf .inf h3{font:bold 16px/28px Microsoft YaHei;}
+.cmpny-inf .inf p{margin-top:7px;font:14px/24px Microsoft YaHei;}
+
+.flr-hd{background:#212025 url(img/dot.jpg) no-repeat 10px center;height:49px;line-height:49px;padding-left:33px;overflow:hidden;}
+.flr-hd h2{color:#fff;font:bold 30px Microsoft YaHei;}
+.flr-bd{background:#fff;width:1000px;padding-bottom:20px;overflow:hidden;}
+
+.flr1{background:#fff;height:733px;border:10px solid #c28100;margin-top:53px;}
+.flr1-hd{background:url(img/flr1-bg.jpg) no-repeat center top;margin-top:-53px;height:398px;}
+.flr1-hd .pic,.flr1-hd .t,.flr1-hd .inf{position:absolute;}
+.flr1-hd .pic{display:inline-block;width:135px;height:135px;border:1px solid #c4c3c2;overflow:hidden;left:235px;top:75px;}
+.flr1-hd .t{width:560px;color:#212025;font:bold 36px Microsoft YaHei;text-align:center;left:392px;top:120px;}
+.flr1-hd .inf{width:544px;height:120px;padding:21px 16px 0;font:14px/24px Microsoft YaHei;left:372px;top:213px;overflow:hidden;}
+.flr1-hd .inf p{color:#666;}
+.flr1-bd{padding-bottom:0;}
+
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.fixed{background:url(img/aside.jpg) no-repeat;width:132px;height:241px;position:absolute;right:40px;top:690px;_display:none;overflow:hidden;}
+.fixed-scroll{position:fixed;top:10px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:10px;_display:block;}
+.fixed a{display:block;height:37px;line-height:99px;margin-top:177px;overflow:hidden;}
+
+.link{border-top:none;}
+.link p{color:#444;}
+
+
+

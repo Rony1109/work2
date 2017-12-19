@@ -1,0 +1,219 @@
+/* 海报poster */
+.poster img{ 
+	display: block;
+	overflow: hidden; 
+	width: 100% 
+}
+
+/* 特卖标题 */
+.content h1{
+	width: 100%;
+	background-color: #b30705;
+	padding: .25rem 0 
+}
+.content h1 span{
+	display: block;
+	width: 3.96rem;
+	height: .92rem;
+	background: url(img/products-recommended.png) no-repeat center;
+	background-size: 100%;
+	font-size: .5rem;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 400;
+	line-height: 1.8
+}
+.content h1 span em{ 
+	color: #ff0;
+	font-weight: 700
+}
+
+/* 爆款专区 */
+.content .comcon{
+	background-color: #ebebeb;
+	padding: .08rem 0 .2rem .1rem;
+}
+.content ul{
+	width: 100%;
+}
+.hots ul li{
+	width: 47.2972972972973%;
+	padding-top: .08rem;
+	margin-left: .1rem;
+	margin-top: .1rem;
+	background-color: #22202d;
+	float: left;
+	overflow: hidden;
+}
+.hots li .image-text{
+	display: block;
+	width: 95.42857142857143%;
+	position: relative;
+	outline: none;
+	margin: 0 auto;	
+	overflow: hidden;
+}
+.hots .image-text img{
+	max-width: 100%;
+	border: 0;
+	display: block;
+}
+.hots .image-text span{
+	display: block;
+	position: absolute;
+	line-height: 1;
+	left: .2rem
+}
+.hots .image-text span:first-of-type{
+	font-size: .258rem;
+	color: #333;
+	top: .25rem;
+	font-weight: 700
+}
+.hots .image-text span:nth-of-type(2){
+	font-size: .186rem;
+	color: #747474;
+	top: .6rem;
+}
+.hots .image-text span:last-of-type{
+	width: .95rem;
+	height: .95rem;
+	font-size: .2865rem;
+	color: #fff;
+	background: url(img/hot.png) no-repeat;
+	background-size: 100%;
+	left: 2.25rem;
+	top: .06rem;
+	text-align: center;
+	line-height: .95rem;
+	font-weight: 700
+}
+.hots li .buy{
+	width: 100%;
+	padding-left: .1rem;
+	line-height: 1;
+	box-sizing: border-box;
+	/*background: url(img/detail.jpg) no-repeat;*/
+}
+.hots .buy span{
+	font-size: .16rem;
+	color: #fefefe;
+	display: block;
+	width: 54%;
+	padding-top: .1rem;
+	height: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.hots .buy span em:first-child{
+	font-size: .25rem;
+	color: #ff0;
+}
+.hots .buy span em:last-child{
+	font-size: .38rem;
+	color: #ff0;
+	font-family: impact
+}
+.hots .buy a{
+	font-size: .3rem;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	width: 41.42857142857143%;
+	padding: .15rem 0 .15rem .1rem; 
+	background: url(img/buynow.png) no-repeat;
+	background-size: 100% 100%; 
+	text-align: center;
+	font-weight: 700;
+}
+
+/* 精选专区 */
+.choices ul{
+	overflow: hidden;
+}
+.choices ul li{
+	width: 47.02702702702703%;
+	border: .01rem solid #d5d5d5;
+	overflow: hidden;
+	margin-left: .1rem;
+	margin-top: .1rem;
+	float: left
+}
+.choices li a{
+	text-decoration: none;
+}
+.choices li .image img{
+	display: block;
+	outline: none;
+	max-width: 100%;
+}
+.choices li .detail{
+	background-color: #fff;
+	padding: .1rem;
+}
+.choices li .detail h3{
+	font-size: .17rem;
+	line-height: 1.2;
+	padding-bottom: .05rem;
+	border-bottom: .01rem dashed #8c8c8c;
+	font-weight: 400;
+}
+.choices li .detail h3 a{
+	color: #333;
+}
+.choices li .detail p{
+	font-size: .1589rem;
+	color: #8c8c8c;
+	padding-top: .08rem;
+	line-height: 1;
+}
+.choices li .detail span{
+	font-family: '宋体';
+	display: inline-block;
+	width: 50%;
+}
+.choices li .detail span:nth-child(2){
+	text-align: right;
+}
+.choices li .buy{
+	width: 100%;
+	background: url(img/detail.jpg) no-repeat;
+	background-size: 100%;
+	font-size: 0;
+}
+.choices li .buy span{
+	padding-top: .05rem;
+	display: block;
+	padding-left: .1rem;
+	width: 50%;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1
+}
+.choices li .buy em{
+	line-height: 1;
+}
+.choices li .buy em:first-child{
+	font-size: .20rem;
+	color: #ff0
+}
+.choices li .buy em:nth-child(2){
+	font-size: .32rem;
+	font-family: impact;
+	color: #ff0
+}
+.choices li .buy em:last-child{
+	font-size: .14rem;
+	color: #999;
+	display: block;
+}
+.choices li .buy a{
+	font-size: .3rem;
+	color: #fff;
+	display: block;
+	line-height: 1;
+	padding: .15rem .1rem;
+	font-weight: 700 
+}

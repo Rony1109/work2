@@ -1,0 +1,94 @@
+/*
+ * ÃƒÂ¦Ã‚Â¨Ã‚Â¡ÃƒÂ¦Ã‚ÂÃ‚Â¿ÃƒÂ¦Ã‚Â Ã‚Â·ÃƒÂ¥Ã‚Â¼Ã‚ÂÃƒÂ¦Ã¢â‚¬â€œÃ¢â‚¬Â¡ÃƒÂ¤Ã‚Â»Ã‚Â¶ÃƒÂ¥Ã‚Â¼Ã¢â‚¬Â¢ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â¥
+ *
+ * ÃƒÂ¥Ã…Â¸Ã‚ÂºÃƒÂ§Ã‚Â¡Ã¢â€šÂ¬init-ÃƒÂ¥Ã‚Â¤Ã‚Â´ÃƒÂ©Ã†â€™Ã‚Â¨topBar-ÃƒÂ¦Ã‚ÂÃ…â€œÃƒÂ§Ã‚Â´Ã‚Â¢headSearch-ÃƒÂ¥Ã‚ÂºÃ¢â‚¬Â¢ÃƒÂ©Ã†â€™Ã‚Â¨foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+/* ÃƒÂ¥Ã‚ÂÃ‹â€ ÃƒÂ¥Ã‚Â¹Ã‚Â¶ÃƒÂ¥Ã‚ÂÃ…Â½ÃƒÂ¥Ã‚Â¼Ã¢â‚¬Â¢ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â¥ÃƒÂ¥Ã‚Â¦Ã¢â‚¬Å¡ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+*/
+
+/* ÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ¥Ã‹â€ Ã¢â‚¬Â ÃƒÂ¦Ã‚Â Ã‚Â·ÃƒÂ¥Ã‚Â¼Ã‚ÂÃƒÂ©Ã¢â‚¬Â¡Ã‚ÂÃƒÂ¥Ã¢â‚¬Â Ã¢â€žÂ¢ */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei;}
+.g-1030{ width:1030px; margin:0 auto;}
+.g-1059{ width:1059px; margin:0 auto;}
+.maintop{ height:46px;}
+.main{background: #ff4653 url(img/banner.jpg) no-repeat center 0; min-width:1000px;}
+
+/* ÃƒÂ¤Ã‚Â»Ã‚Â¥ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¤Ã‚Â¸Ã‚ÂºÃƒÂ¤Ã‚Â¸Ã¢â‚¬Å“ÃƒÂ©Ã‚Â¢Ã‹Å“ÃƒÂ¦Ã‚Â Ã‚Â·ÃƒÂ¥Ã‚Â¼Ã‚Â */
+
+.nav{height:46px;background:#ff4653;line-height:46px;}
+.nav .g-o{position: relative;}
+.nav ul{padding-left:170px}
+.nav a{color:#fff;padding:0 25px;}
+.nav li{float: left;}
+.issue{ position: absolute; top: -15px;left:0}
+
+.banner{height: 695px;}
+.jiathis_style{ float:right; margin-top:10px;}
+.jiathis_style a{color:#333;}
+
+.flrbg{ height:935px;}
+.box{ overflow:hidden;}
+.titletop{ height:45px; text-align:center;}
+.box ul{ width:103%; margin-left:0px; margin-top:5px;}
+.box ul li{ width:240px; height:450px; background-color:#fff; text-align:center; float:left; margin-right: 13px; margin-top:7px;}
+.box ul li .pic{ margin-top:10px;}
+.box ul li .txt{ text-align:left; padding:15px; padding-top:0;}
+.box ul li .txt h2{ font-size:34px; font-weight:500; color:#f32f05;}
+.box ul li .txt h2 span{ font-size:22px;}
+.box ul li .txt p{ line-height:21px;}
+.box ul li .txt .p1{ font-size:12px; color:#999999;}
+.box ul li .txt .p1 span{ text-decoration: line-through;}
+.box ul li .txt .p2{ font-size:14px;}
+.box ul li .txt .p2 a{ color:#333;}
+.box ul li .txt .p3{ font-size:14px; color:#e24040;}
+.box ul li .btn{ position:relative;}
+.box ul li .btn .t{ cursor:pointer; z-index:0;}
+.box ul li .btn .b{ position:absolute; z-index:1; margin-left:18px; display:none; cursor:pointer;}
+.box ul li .btn .b .qq{padding:10px; position:absolute; top:9px; left:47px;}
+.box ul li .btn:hover .b{ display: block; }
+.pdts-t{ position:relative;}
+
+.title{ background: #ffff00; height: 45px; text-align:center; position:relative; font: italic 700 24px/45px Microsoft YaHei,simsun; color: #f52534;}
+.title p{ font-size:16px; color:#fff; line-height:20px;}
+.title p em{ font-size:18px;}
+.txtpic{ float:left; margin-right:10px;}
+.toptxt{ /* float:left; */ /* margin-top:5px; */ font-size: 24px;}
+.topt{ width:300px; margin:0 auto; padding-top:15px;}
+.txtpic2{ float:right; margin-left:10px;}
+.toptxt2{ float:right; margin-top:5px;}
+.show{ height:255px;}
+.outer{ height:237px; background:#fff;}
+/*scroll*/
+.img-scroll{position: relative; padding: 25px;}
+.scroll-box{overflow: hidden;width: 920px;margin: 0 auto;}
+.scroll-box ul{width: 9999px; text-align:center;}
+.box .scroll-box li{float: left;display: inline;margin-right: 20px; width:215px; height:190px;}
+.scroll-box li p{ font-size:17px; line-height:26px;}
+.scroll-box li a{text-decoration:none; color:#333;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #9f9e9e;font: 36px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:28px; font-size:36px;}
+.ctr-r{right:0;padding-top:28px; font-size:36px;}
+.ctr-l:hover{ color:#cf0104;}
+.ctr-r:hover{ color:#cf0104;}
+
+
+.fixed-nav{width:153px;height:435px;background:url(img/fixed-nav.png) no-repeat; position: absolute;margin-left:1040px;top: 760px;_background-image: url(img/fix-nav-ie6.png);
+}
+.fixed-nav ul{width:153px;margin: 10px 0 0 0px; padding-top: 75px; text-align:center;}
+.fixed-nav ul li.last{margin-top: ;}
+.fixed-nav a{display: block;height:38px; font-size:15px; color:#fff7bd; line-height:35px;}
+.fixed-nav ul li.last a{height: 60px;}

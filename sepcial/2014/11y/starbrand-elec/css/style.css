@@ -1,0 +1,101 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+/*public*/
+.p-9{padding:9px;}
+.p-l20{padding-left: 20px;}
+.p-r20{padding-right: 20px;}
+.m-t10{margin-top: 10px;}
+.m-b5{margin-bottom: 5px;}
+.m-b10{margin-bottom: 10px;}
+.c-444{color: #444;}
+.c-888{color: #888;}
+.c-f32f05{color: #f32f05}
+.g-fs40{font-size:40px}
+.g-fs24{font-size:24px}
+.g-yahei{font-family: microsoft yahei;}
+.bg-1d9638{background-color: #0a7ae3;}
+.g-1000{width: 1000px;margin:0 auto;}
+
+/*main*/
+.main{background:#0e56d8 url(img/banner.jpg) no-repeat center top;}
+.banner{height:513px;}
+.jiathis_style{position:absolute;right:15px;top:14px;}
+.jiathis_style a{color:#fff;}
+.lingshi{position:absolute;left:80px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+/*ico*/
+.ico-sale
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;background-repeat: no-repeat;}
+.ico-sale{width:64px;padding-top:22px;background-position:0px 0px;background:url(img/0.gif);}
+
+/*title*/
+.title{font-size: 32px;font-family: microsoft yahei;color: #fff;background-color:#14802c;}
+.title-bg{ background: url(img/flrbg.png) no-repeat;height: 55px;line-height: 55px; text-align:center;}
+
+/*hhy-list*/
+.hhy-list{width: 101%;}
+.hhy-list li{width:244px;float: left;background-color: #fff;margin-right: 2px;position: relative;}
+.hhy-list li div.sale{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 66px;
+	height: 69px;
+	background: url(img/2.gif);
+	background-image: url(img/2.gif);
+}
+.hhy-list li div.sale span{padding:0 9px;}
+.hhy-list li div.sale{font-size: 50px;font-weight: 700;color: #fff;font-family: Impact;line-height:60px; }
+.hhy-list li div.sale sub{font-size: 18px;font-weight: 700;vertical-align: baseline;}
+
+/*other-web*/
+.other-web{background-color: #fff;padding: 10px 15px;}
+.other-web li{width: 215px;margin:0 10px;float: left;}
+.other-web li a,.other-web li a:hover{color:#444;font-size:14px;text-decoration: none;}
+
+/*scroll*/
+.img-scroll{position: relative; padding: 15px;}
+.scroll-box{overflow: hidden;width: 920px;margin: 0 auto;}
+.scroll-box ul{width: 9999px; text-align:center;}
+.scroll-box li{float: left;display: inline;margin-right: 20px;}
+.scroll-box li a{ font-size:14px; text-decoration:none; color:#fff;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #fff;font: 18px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:15px; font-size:24px;}
+.ctr-r{right:0;padding-top:15px; font-size:24px;}
+
+/*侧导航*/
+.fiexd_nav{ display:none;}
+.fiexd{ position:fixed; height: auto; width:165px; right:12px; top:40px; background: url(img/fixed-bg.png) no-repeat top;_background:url(img/right-nav-top.png) no-repeat -1px top;_position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50)); padding-top:54px;}
+.link-lc{text-align:left; background:url(img/right-nav-mid.png) no-repeat; width:85px; margin:0 auto; margin-top:28px; height:145px;}
+.fiexd .link-lc a{line-height:42px;height:36px;display:block;font-size:14px;color:#fff; text-align:left;text-decoration:none; font-weight:500;}
+.fiexd .link-lc a h5{ font-size:18px;font-weight:bold;}
+#right-nav-btm{ margin: 0 auto;display: block;}
+.btop{height: 65px; width: 165px; overflow:hidden; border:none; background:url(img/right-nav-btm.png) no-repeat center; display:block;margin: 0 auto; }

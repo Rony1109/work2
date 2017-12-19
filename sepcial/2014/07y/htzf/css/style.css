@@ -1,0 +1,122 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{font-family: simsun; background:url(img/m-bg.jpg) repeat-y center top;}
+a{color:#444;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+.link p,.link a{color:#fff }
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:25px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#4f4b4a;font-size:29px;line-height:45px;}
+.navigation{margin-top:38px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+
+.container{background:url(img/banner.jpg) no-repeat center 0;}
+.shop{ padding:15px 0 500px; text-align:right; height:24px;}
+.bdsharebuttonbox{ float:right;}
+.bdsharebuttonbox a,.bdsharebuttonbox span{color: #fff;}
+
+.main-box{padding: 20px;background: #fff;overflow: hidden;}
+.brand-wall li span{display:block;height: 22px;text-align: center;font:700 14px Microsoft YaHei,simsun;}
+
+.img-scroll{position: relative;margin: 0 auto;width:1000px;}
+.img-scroll .scroll-box{width: 915px;margin: 0 auto;overflow: hidden;}
+.img-scroll .title{ font-size:36px; color:#fff; border-bottom:3px solid #fff;}
+.img-scroll a.ctr-l,.img-scroll a.ctr-r{position: absolute;display: block;width:33px;height:160px;top:76px;z-index: 999;}
+.img-scroll .ctr-l{background:#970001 url(img/left02.png) no-repeat  10px 70px; left: 0px}
+.img-scroll .ctr-r{background:#003c7a url(img/right02.png) no-repeat 10px 70px;right: 10px}
+.scroll-box ul{width: 9999px}
+.scroll-box li{float: left;display: inline-block;margin-right: 23px;width: 210px;}
+.scroll-box li span{display: block;overflow: hidden;height: 24px;text-align: center;font: 16px Microsoft YaHei,simsun;word-break:break-all;}
+
+
+.img-scroll02{position: relative;padding:0;margin: 0 auto;width:465px;}
+.img-scroll02 .scroll-box{width:392px;margin: 0 auto;overflow: hidden;}
+.img-scroll02 .scroll-box li{ width:189px;}
+.img-scroll02 .scroll-box li a{ color:#fff;}
+.img-scroll02 a.ctr-l,.img-scroll02 a.ctr-r{top:50px;position: absolute;display: block;width:33px;height:160px;z-index: 999; width:23px; height:36px;}
+.img-scroll02 .ctr-l{background:url(img/left01.png) no-repeat right 0;_background: url(img/left.png) no-repeat right 0; left: 10px}
+.img-scroll02 .ctr-r{background:url(img/right01.png) no-repeat 0 0;_background:url(img/left.png) no-repeat right 0; right: 10px}
+
+.tab{width: 1000px;height: 64px;margin: 0 auto; background: url(img/nav-bg.png) no-repeat;}
+.tab li{float: left;display: inline;width: 142px;height: 64px;overflow: hidden;text-indent: -999px;}
+.j-tab{display: none}
+.cur{display: block;}
+
+::-webkit-scrollbar{width:6px;height:6px;border-radius:3px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:black}
+::-webkit-scrollbar-track-piece{background:#ea5504}
+::-webkit-scrollbar-thumb:vertical{background-color:#ffae00;border-radius:3px}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#ffae00}
+
+.scrollbar{
+overflow-y:auto;
+*position:relative;
+scrollbar-arrow-color:#ccc;
+_scrollbar-arrow-color:#ccc;
+scrollbar-face-color:#ea5504;
+scrollbar-darkshadow-color:#6fa4d8;
+scrollbar-highlight-color:#6fa4d8;
+scrollbar-3dlight-color:#6fa4d8;
+scrollbar-shadow-color:#6fa4d8;
+scrollbar-track-color:#6fa4d8;
+}
+
+
+.mail{ background:url(img/c-bg.jpg) repeat-y center top; padding:0 19px;}
+.cp-inf{ line-height:28px; color:#a90001;font-family:Microsoft YaHei,simhei; padding:25px 110px 34px 168px; font-size:15px; text-indent:16px;}
+.two-tiop{ height:auto; overflow:hidden;zoom:1; padding:25px; background:url(img/vs.jpg) no-repeat 33px -2px;}
+.two-tiop li.left,.two-tiop li.right{ width:465px;}
+.two-tiop li h1{ font-weight:700; color:#fff; font-size:48px; padding:15px;}
+.two-tiop li .info{ width:325px; color:#fff; line-height:24px; font-size:14px; padding:0 15px; text-indent:16px;}
+.two-tiop li .btn{ width:86px; height:83px; display:inline-block; background:none;margin:20px 9px 0 9px; cursor:pointer; border:0;}
+.two-tiop li .un{ font-size:15px; font-weight:700; color:#fff; margin:0 9px;}
+.box{ background:#fff; padding:0 20px 35px 25px;}
+.box h2{ font-size:18px; padding:30px 0 10px; line-height:30px;}
+.box p{ line-height:24px; color:#696969;}
+.box p a,.two-tiop li.left .box h2 a{ color:#f24c8a;}
+.two-tiop li.right .box h2 a{ color:#003157;}
+.two-tiop li h3{ text-align:center; font-size:36px; color:#fcf100; font-weight:700; padding:25px 0;}
+.two-tiop li.left{ float:left;}
+.two-tiop li.right{ float:right;}
+.two-tiop li.right h1{ text-align:right;}
+.two-tiop li.right .info,.two-tiop li.right .btn,.two-tiop li.right .un{ float:right;} 
+.bottm{ padding:0 19px; background:url(img/btom.jpg) no-repeat left top; height:22px;}
+
+
+
+
+
+
+
+
+
+
+
+

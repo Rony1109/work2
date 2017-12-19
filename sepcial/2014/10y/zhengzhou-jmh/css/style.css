@@ -1,0 +1,126 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.main{ background:url(img/banner.jpg) no-repeat top;}
+.banner{ height:454px;}
+.jiathis_style{ float:right; margin-top:10px;}
+.jiathis_style a{ color:#fff;}
+
+.top{ background:url(img/lead.png) no-repeat top; height:117px; text-align:justify;}
+.top p{ padding:15px 30px 0 150px; font-size:14px; line-height:25px;}
+
+.mid{ height:275px;} 
+/*幻灯片*/
+#left-left{ float:left; width:375px; height:274px; margin-left:5px;}
+.src-img{ position:relative; height:274px; width:100%; overflow:hidden;}
+.src-img ul{ position:absolute; height:274px; width:20000px; margin:0; padding:0;}
+.src-img li{ float:left; width:1935px; height:330px;}
+.src-img li img{ width:375px; height:274px;}
+.src-img ol{ position:absolute; bottom:15px; right: -75px; margin-right:20px; width:220px;}
+.src-img ol li{ margin-left:10px; width:20px; overflow:hidden; text-indent:-99999px; height:5px; background:#FFF;}
+.src-img ol li.cur{ background:#ed1559;}
+.src-img .btm-b{ position:relative; width:375px;; height:35px; background-color:#333;top:-35px; opacity:0.7;}
+.src-img .btm-t{ position:relative; width:375px; height:35px; color:#fff; top:-70px;}
+.src-img .btm-t p{ font-size:12px; padding-left:10px; line-height:35px;}
+.src-img .btm-t p a{ color:#fff;}
+
+.mmid{ float:left; width:375px; height: 270px; margin-left:12px;}
+.mmid h1{ text-align:center; font-size:14px;}
+.mmid p{ font-size:12px; line-height:20px; text-align:justify; padding:7px;}
+.mmid p a{ color:#fe7a02;}
+.mmid ul{ width:360px; margin:0 auto;}
+.mmid ul li{ list-style: square; color:#fe7a02; margin:10px; }
+.mmid ul li p{ font-size:14px; color:#666666; padding:0; line-height:15px;} 
+.mmid ul li p a{ color:#333;}
+.mmid ul li p em{ float:right;}
+.dash{border-bottom:1px dashed #999999; height:0px;}
+
+.rmid{ width:195px; height:270px; border:1px dashed #999999; float:left; padding:10px; margin-left:10px;}
+.rmid h1{ font-size:12px; line-height:30px;}
+.rmid h2{ font-size:24px; color:#ed1559;}
+.rmid p{ font-size:12px; line-height:30px;}
+.rmid img{ margin-right: 10px;}
+
+.lmid{ width:375px; margin-left:5px; float:left;}
+.mtop{ background:#ed1559 url(img/shbg.jpg) no-repeat left; width:375px; height:28px; color:#fff;} 
+.mtop p{ float:left; font-size:14px; line-height:25px; padding-left:25px; font-weight:700;}
+.mtop a{ float:right; color:#fff; font-size:12px; line-height:28px; padding-right:15px;}
+.lmid ul{}
+.lmid ul li{ width:120px; text-align:center; float:left; margin:10px 0 0 4px;_margin:10px 0 0 2px;}
+.lmid ul li a{ color:#333;}
+
+.lmmid{  width:375px; margin-left:10px; float:left;}
+.lmmid ul{ width:360px; margin:0 auto;}
+.lmmid ul li{ height:26px; border-bottom:1px dashed #999;}
+.lmmid ul li a{ font-size:12px; line-height:30px;}
+.lmmid ul li a span{ color:#333;}
+
+.trmid{ width:217px; float: left; margin-left:13px;}
+.mrtop{ background:#ed1559 url(img/shbg.jpg) no-repeat left; width:217px; height:28px; color:#fff; font-weight:700;} 
+.mrtop p{ float:left; font-size:14px; line-height:25px; padding-left:25px;}
+.trmid ul{ width:200px; margin:0 auto; margin-top:10px;}
+.trmid ul li{ list-style:square; color:#666; margin-left:15px; margin-top:5px;}
+.trmid ul li a{ color:#333;} 
+
+.bmid{}
+.btop{ background:url(img/lhbg.png) no-repeat bottom; height:55px;}
+.btop p{ color:#ed1559; font-size:28px; line-height:55px; text-indent:35px;}
+.bmid ul{ text-align:center; margin-left:7px; margin-top:20px;}
+.bmid ul li{ float:left; margin: 10px 0 0 10px;}
+.bmid ul li a{ font-size:12px; text-decoration:none;}
+.bmid ul li a p{ line-height:35px; color:#333;}
+
+.lbtm{ float:left; width:480px; overflow:hidden;}
+.topt{ background:url(img/mhbg.png) no-repeat bottom; height:55px;}
+.topt p{ color:#ed1559; font-size:28px; line-height:55px; text-indent:25px; float:left;}
+.topt a{ float:right; font-size:18px; line-height:65px; color:#fff; padding-right:15px;}
+.lbtm ul{ text-align:center; width:102%; margin-top:20px;}
+.lbtm ul li{ float:left; margin: 10px 8px 0 0;}
+.lbtm ul li a{ font-size:12px; text-decoration:none;}
+.lbtm ul li a p{ line-height:35px; color:#333;}
+
+.lines{ width:6px; height:485px; float:left; background:url(img/lines.png) no-repeat bottom; margin:0 18px 0 15px;}
+
+.maito{ height:200px;}
+.maito span{ width:20px; height:40px; display:inline-block; float:left; margin-top:90px; cursor:pointer;}
+.maito span.scr-l{ background:url(img/lr.png) no-repeat 0 0; margin-left:21px;}
+.maito span.scr-r{ background:url(img/lr.png) no-repeat 0 -42px;}
+.maito div.scr-all{ float:left; width:915px; height:235px; display:inline-block; overflow:hidden; position:relative; margin:0 5px 0 0;_margin:0 2px 0 0;}
+.maito div.scr-all ul{ position:absolute; left:0; top:0; width:10000px; display:block; text-align:center;}
+.maito div.scr-all ul li{ width:215px; height:200px; margin-right:0px; float:left;}
+.maito div.scr-all ul li a{ text-decoration:none; color:#333; font-size:14px;}
+.maito div.scr-all ul li a p{ line-height:30px;}

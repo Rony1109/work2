@@ -1,0 +1,70 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei;}
+.g-o{ width:1015px; margin:0 auto;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/*公用样式*/
+h1{ font-size:24px;}
+.p1{ font-size:18px;}
+.p2{ font-size:14px;}
+.p3{ font-size:12px;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+/* 以下为专题样式 */
+.main{ background:url(img/bg.jpg) no-repeat center top;}
+.banner{ height:580px;}
+.banner p{ font-size:14px; color:#fff; padding:465px 50px 0 320px;}
+.banner p span{ font-weight:700;}
+.jiathis_style{ float:right; margin-top:15px;}
+.jiathis_style a{ color:#fff;}
+
+.pleft{ color:#fff; height:345px;}
+.pleft a{ color:#fff;}
+.medal{ position:relative; width:282px; height:232px; text-align:center; margin-top:35px;}
+.mcover{ position:absolute; top:0; left:0;}
+.mcover p{ font-size:18px; color:#a37f9a; position:absolute; bottom:23px; width:100%; text-align:center; font-weight:600;}
+.txt{ width:700px;}
+.txt h1{ color:#ffe84e;}
+.pic{ position:relative; width:227px; height:139px;}
+.pcover{ position:absolute; top:0; left:0;}
+.stxt{ width:465px;}
+.sytitle{ background:url(img/yellowbg.jpg) no-repeat left top; height:37px; }
+.sytitle p{ text-indent:20px; color:#61009c; line-height:35px;}
+
+.pright{ color:#444444; height:345px;}
+.pright a{ color:#444444;}
+.mycover{ position:absolute; top:0; left:0;}
+.mycover p{ font-size:18px; color:#9f9e94; position:absolute; bottom:23px; width:100%; text-align:center; font-weight:600;}
+.ytxt{ width:700px;}
+.ytxt h1{ color:#61009c;}
+.sptitle{ background:url(img/purplebg.jpg) no-repeat left top; height:37px; }
+.sptitle p{ text-indent:20px; color:#fff; line-height:35px;}
+
+.link p.p1{ font-size:12px;} 

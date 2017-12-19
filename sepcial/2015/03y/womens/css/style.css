@@ -1,0 +1,92 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+.g-920{ width:920px; margin:0 auto;}
+body{ font-family: microsoft yahei;}
+.g-h300{ height:300px;}
+.g-h200{ height:200px;}
+.g-h100{ height:100px;}
+
+/*顶部 +导航*/
+.link{border-top: 0;}
+a{color: #444}
+.web-search h1, .web-search .logo-box{width: 229px}
+.selected_channel .sel_chnel{width: 60px;background-position: 58px 8px;}
+.selected_channel span.hover{background-position: 58px -5px;}
+.selected_channel .chnel_list{width: auto;white-space:nowrap;}
+.selected_channel{margin-top: 50px;}
+
+.navigation{height: 37px;background: #e52142}
+.navigation a{color: #fff}
+.main-nav li{float: left;display: inline;}
+.main-nav li a{display: inline-block;_display: inline;zoom:1;margin-top: 5px;padding: 0 15px;height: 32px;text-align: center;font: 16px/32px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #e52142;text-decoration: none;background: #fff;}
+.sub-nav{float: right;display: inline;margin-top: 14px;width: 297px;height: 15px;border-left: 1px #ea6279 solid;}
+.sub-nav a{font: 14px/15px Microsoft YaHei,simsun;padding-left: 12px;color: #ffd4d4}
+.sub-nav a:hover{color:#ffd4d4}
+/*顶部 +导航*/
+
+/* 以下为专题样式 */
+.maint{ background:#3392ee url(img/banner.jpg) no-repeat top center;  font-family: Microsoft Yahei;}
+.mainb{ background:#3392ee url(img/bg.jpg) no-repeat top center;  font-family: Microsoft Yahei;}
+.banner{ height:1440px;}
+.jiathis_style{position:absolute;right:5px;top:5px;}
+.jiathis_style a{color:#333;}
+
+.unit{ height:485px; position:relative;}
+.prod1{ width:445px; position:absolute; top:0px; left:10px;}
+.prod2{ width:445px; position:absolute; top:0px; right:0px;}
+.prod3{ width:445px; position:absolute; bottom:15px; left:230px;}
+.pic{ float:left;}
+.text{ width:210px; float:right; color:#ef4081; margin-top:44px;}
+.text a{ color:#ef4081;}
+.text h1{ font-size:16px;}
+.text h1 span{ font-size:38px;}
+.text p{ font-size:14px;}
+.text p.p1{ color:#333; text-decoration:line-through;}
+.line{ border-bottom:1px dashed #a7a7a8;}
+
+.unitb{ height:365px; position:relative;}
+.hight{ height:86px;}
+
+/*scroll*/
+.img-scroll{position: relative; padding: 25px; margin-top:0px; width:795px;}
+.scroll-box{overflow: hidden;width: 715px;margin: 0 auto;}
+.scroll-box ul{width: 9999px; text-align:center;}
+.scroll-box li{float: left;display: inline;margin-right: 35px; width:215px;}
+.scroll-box li a{ font-size:18px; text-decoration:none; color:#333;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #75000c;font: 18px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:35px; font-size:40px;}
+.ctr-r{right:0;padding-top:35px; font-size:40px;}
+
+/*侧导航*/
+.fixed-nav{width:200px;height:435px;background:url(img/fixed-nav.png) no-repeat; position: absolute;margin-left:1015px;top: 760px;_background-image: url(img/fix-nav-ie6.png);
+}
+.fixed-nav ul{width:200px;margin:0 auto; padding-top: 120px;}
+.fixed-nav a{display: block;height:45px; font-size:20px; text-decoration:none; font-family:Microsoft YaHei; color:#fff;}
+.fixed-nav a.bt{ height:60px;}

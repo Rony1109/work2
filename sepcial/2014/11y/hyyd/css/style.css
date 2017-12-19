@@ -1,0 +1,69 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.main{ background:#f4f4f4 url(img/banner.png) no-repeat top center;}
+.banner{ height:405px;}
+.jiathis_style{ float:right; margin-top:10px;}
+.jiathis_style a{ color:#333;}
+.banner .btn{ float:left; padding:30px 90px; margin-top:295px; margin-left:190px;}
+
+.flr1{ height:540px; background-color:#FFF; position:relative;}
+.l{ float:left; position:relative; width:210px;margin:10px;_margin-left:-90px; text-align:center; color:#FFF;}
+.no1{ background:url(img/1.png) no-repeat top; position:absolute; z-index:2; width:210px; height:190px;}
+.no2{ background:url(img/2.png) no-repeat top; position:absolute; z-index:1; width:210px; height:190px; margin-top:175px;}
+.no3{ background:url(img/3.jpg) no-repeat top; position:absolute; z-index:0; width:210px; height:170px; margin-top:350px;}
+.l p{ font-size:48px; padding-top:85px; font-weight:300;} 
+.flr1 ul{ float:right; width:730px; border-bottom:1px dashed #CCC; padding:14px;_padding-right:5px; margin-right:5px;}
+.flr1 ul.b{ border: none;}
+.flr1 ul li{ width:300px; height:60px; background-color:#f6f6f6; float: left; margin: 10px 45px 5px 15px;}
+.flr1 ul li .icon{ text-align:center; float:left; width:58px; border:1px dashed #CCC; background-color:#fff; padding-top:8px;}
+.flr1 ul li .icon p{ float:none;}
+.flr1 ul li p{ float:right; font-size:12px; color:#333; line-height:22px;}
+.flr1 ul li p.t{ width:200px; padding:8px 15px;}
+
+.flr2{ background:#fff url(img/circle.png) no-repeat center; height:510px; position:relative;} 
+.flr2 div{ position:absolute; width:210px; padding:8px; border:1px dashed #CCC;}
+.flr2 div p{ font-size:12px; color:#333;}
+.txt1{ top:65px; left:115px;}
+.txt2{ top:65px; left:660px;}
+.txt3{ top:230px; left:25px;}
+.txt4{ top:230px; left:750px;}
+.txt5{ top:390px; left:115px;}
+.txt6{ top:390px; left:660px;}
+
+.btm{ background:url(img/btm.jpg) no-repeat center; height:95px;}
+.btm a{ float:right; padding:15px 60px; margin-top:50px; margin-right:175px;}

@@ -1,0 +1,51 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#ececec; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333!important}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.mt30{ margin-top:30px}
+.mt25{ margin-top:25px}
+.pa25{ padding:5px 0px 25px}
+
+
+/* 以下为专题样式 */
+
+.play{width:100%; margin:0px auto; overflow:hidden;position:relative; }
+.play  ul{ width:800%; float:left; } 
+.play li{ float:left; width:210px; height:160px; overflow:hidden; padding-right:10px}
+.play li img{ width:100%}
+
+

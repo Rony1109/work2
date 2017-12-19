@@ -1,0 +1,87 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#fff8ec; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333333!important}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.bannerwk{ width: 100%; overflow:hidden;position: relative}
+.banner{ width:1000px; margin:0px auto; position: relative}
+.banner p{ margin-left:-340px;}
+.banner .fx{ position:absolute; right:0px; top:0px; width:336px;}
+.banner .dy{ position:absolute; bottom:170px; left:150px; line-height:25px; color:#ffffff;  width:725px; }
+
+
+/* 以下为专题样式 */
+.content1{ width:1000px; margin:-145px auto 0px; z-index:10; position:relative; background:#ffffff;}
+.content1.mt30{ margin-top:30px}
+.con{ padding:30px;border-bottom:1px dashed #8e8e8e; overflow:auto; height:auto}
+.con .left{ position:relative;}
+.con .left .context{ position:absolute; bottom:0px; left:0px;  color:#ffffff;  background:url(../image/tm.png); padding:8px 15px; display: none;} 
+.con .left .context p.p1{ line-height:30px; font-size:16px; font-weight:bold} 
+.con .left .context p.p2{ text-indent:24px;} 
+.con .left .context p.p2 a{ color:#ffffff!important; text-decoration:none}
+.con .right{ padding-left:30px; width:300px;}
+.con .right li{ line-height:36px; font-size:14px; background:url(../image/con1icon.png) no-repeat 0px -2px; text-indent:12px; width:100%;}
+.content1 .bottom{padding:30px 30px 30px 30px; overflow:auto;  }
+.content1 .bottom li{ float:left; margin-right:13px; width:225px; height:226px; overflow:hidden;}
+.content1 .bottom li img{ width:100%}
+.content1 .bottom li.mr0{ margin-right:0px;}
+.content1 .play{padding:30px 0px; overflow:auto;}
+.content1 .play .center{ width:900px; overflow:hidden}
+.content1 .play .center ul{ width:800%; float:left;} 
+.content1 .play li{ float:left; margin-right:20px; width:211px; height:160px; overflow:hidden}
+.content1 .play li img{ width:100%}
+
+.fix{ position:fixed; right:10px; top:200px;  width:127px; height:294px; display:none;  background:url(../image/fix.png) no-repeat;}
+.fix li{ width:127px; height:36px; display:block; margin-bottom:19px; cursor:pointer; float:left}
+.fix li.mb20{margin-bottom:20px;}
+.fix li.mb0{margin-bottom:0px;}
+.fix li.active{ background:#ffffff;filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;} 
+.fix li a{ display:block; width:127px; height:36px;}
+
+

@@ -1,0 +1,395 @@
+/* 头部海报 */
+.poster{
+	width: 100%;
+}
+.poster img{
+	display: block;
+	max-width: 100%;
+}
+
+/* 主体内容 */
+
+  /* 优惠券 */
+.wrap{
+	background-color: #18192d;
+}
+.tickets{
+	padding: 0 0.2rem;
+	position: relative;
+	top: -.33rem;
+	margin-top: -.2rem;
+}
+.tickets ul{
+	width: 100%;
+	background: url(img/tickets.jpg) no-repeat center 0;
+	background-size: 100%;
+}
+.tickets li{
+	text-align: center;
+	float: left;
+}
+.tickets li:first-child{
+	width: 15.49295774647887%;
+	min-height: 1.06rem;
+
+}
+.tickets li:nth-child(2){
+	width: 67.042%;
+}
+.tickets li:nth-child(2) a{
+	min-height: 1.06rem;
+	display: block;
+}
+.tickets li:last-child{
+	width: 17.4648%;	
+}
+
+  /* 共同样式 */
+.com-title{
+	line-height: 1;
+	padding-bottom: .1rem;
+}
+
+.com-title span{
+	display: block;
+}
+.com-title span:first-child{
+	font-size: 0.36rem;
+	color: #121d31;
+	padding: .1rem 0
+}
+.com-title span:nth-child(2){
+	font-size: 0.18rem; color: #fff
+}
+.com-title span:nth-child(3){
+	width: .48rem; height: .06rem; background-color: #fff;
+	margin: .1rem 0; 
+}
+.com-title span:last-child{
+	width: 1.52rem; cursor: pointer;
+	padding: .05rem; 
+	border-top: .01rem solid #fff; border-left: .01rem solid rgba(255,255,255,.6); 
+	border-bottom: .01rem solid #fff ; border-right: .01rem solid rgba(255,255,255,.6); 
+    text-align: center; color: #fff; font-size: 0.16rem; font-weight: 400; 
+}
+.comicon i img{
+	max-width: 100%;
+}
+.com-list{
+	background-color: #ebebeb;
+	padding: .1rem 0 .2rem;
+}
+.com-list ul{
+	width: 94.66666666666667%;
+	margin: 0 auto;
+}
+.com-list li{
+	width: 48.73239436619718%;
+	background-color: #fff;
+	border:1px solid rgba(170,170,170,.5);
+	float: left;
+	box-sizing: border-box;
+	margin-right: .1rem;
+	margin-top: .1rem;
+}
+.com-list li:nth-child(even){
+	margin-right: 0;
+}
+.com-list li .detail img{
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+.com-list .stit{
+	padding: 0 .2rem;
+	line-height: 1;
+}
+.com-list .stit i{
+	display: inline-block;	
+	width: .24rem;
+	height: .24rem;
+	vertical-align: middle;
+}
+.com-list .stit p{
+	font-size: .1852rem;	
+}
+.com-list .stit p:first-child{
+	color: #282828;
+	padding-top: .25rem;
+	padding-bottom: .1rem;
+	border-bottom: 1px dashed #939393;
+}
+.com-list .stit p:last-child{
+	color: #656363;
+	font-weight: 700;
+	padding: .1rem 0;
+}
+.com-list .stit p:last-child span{
+	padding: 0 .03rem
+}
+.com-list .buy{
+	height: .75rem;
+	background: url(img/buynow.jpg) no-repeat;
+	background-size: 100%;
+}
+.com-list .buy span{
+	display: inline-block;
+	float: left; 
+	text-align: center;
+	line-height: .72rem;
+}
+.com-list .buy span:first-child{
+	font-size: .216rem;
+	color: #282828; 
+	width: 50%;
+}
+.com-list .buy span:first-child strong{
+	font-family: impact;
+	font-size: .30rem;
+	vertical-align: middle;
+}
+.com-list .buy span:last-child{
+	font-size: .31rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+	width: 50%;
+}
+
+  /* 机丝螺栓 */
+.bolt .title-bg{
+	background: url(img/bolt.jpg) no-repeat center 0;
+	background-size: cover;
+}  
+.title-bg .odd{
+	padding-left: 1.30rem;
+}
+.title-bg .even{
+	padding-left: 4.20rem
+}
+
+/* 螺母/螺帽 */
+.nut .title-bg{
+	background: url(img/nut.jpg) no-repeat center 0;
+	background-size: cover;
+} 
+
+/* 组合螺丝 */
+.com-screw .title-bg{
+	background: url(img/com-screw.jpg) no-repeat center 0;
+	background-size: cover;
+} 
+
+/* 垫片/挡圈/弹簧 */
+.gasket .title-bg{
+	background: url(img/gasket.jpg) no-repeat center 0;
+	background-size: cover;
+}
+
+/* 自攻螺丝钉 */
+.self-tapping .title-bg{
+	background: url(img/self-tapping.jpg) no-repeat center 0;
+	background-size: cover;
+}
+/* 碳钢系列 */
+.carbon .title-bg{
+	background: url(img/carbon.jpg) no-repeat center 0;
+	background-size: cover;
+}
+/* 铜系列 */
+.copper .title-bg{
+	background: url(img/coppers.jpg) no-repeat center 0;
+	background-size: cover;
+}
+
+/* 实力商家show */
+.power{
+	background-color: #18192d;
+}
+.power-box{
+	padding: .2rem;
+}
+.power-box .custom{
+	width: 100%
+}
+.power-box .custom img{
+	display: block;
+	max-width: 100%;
+}
+.power-box .power-title{
+	width: 68.30985915492958%;
+	margin: 0 auto
+}
+
+.power-box .power-title h1{
+	background: url(img/powershow.png) no-repeat center 0;
+	background-size: cover;
+	font-size: .3367rem;
+	text-align: center;
+	text-indent: -999em;
+	color: transparent;
+	line-height: 1;
+	margin: .3rem 0;
+}
+.power-box .rollbox{ 
+	position: relative; 
+}
+.rollbox .rollist{ 
+	width: 6.55rem; 
+	overflow: hidden; 
+	position: relative; 
+	left: 0.2625rem;
+}
+.rollist ul{ width: 10000% } 
+.rollist li{ 
+	width: 1.6rem; 
+	background-color: #fff; 
+	float: left; 
+	margin-right: .05rem
+} 
+.rollist .powericon{ 
+	width: .68rem; 
+	display: block; 
+	background-color: #ffe0c7; 
+	color: #ef5408; 
+	font-size: .12rem; 
+	text-align: center; 
+	padding: .03rem 0;
+	margin: .04rem 
+}
+.rollist .powerdet{ 
+	text-align: center; 
+	padding: .05rem
+}
+.rollist .powerdet a img{
+	display: block;
+	max-width: 100%;
+}
+.rollist .powerdet h3{ 
+	line-height: 1; 
+	padding: .1rem 0
+}
+.rollist .powerdet h3 a{ 
+	font-size: .1316rem; 
+	font-weight: 400; 
+	display: block; color: #333
+}
+.rollist .powerdet p{ 
+	font-size: .1096rem; 
+	vertical-align: middle; 
+	color: #333
+}
+.rollist .powerdet .enter{ 
+	width: 1.18rem; background-color: #ef5408; padding: .02rem 0;
+	display: block; margin: .05rem auto; color: #fff; 
+	border-radius: .05rem; font-size: .1316rem 
+}
+.arrow{ 
+	width: .2rem;
+	display: block; 
+	position: absolute; 
+	top: 45%; 
+	cursor: pointer;
+}
+.arrow img{ display: block; max-width: 100% }
+.prev{ left: 0 }
+.next{ right: 0 }
+
+/* 供应商权益 */
+.rights{
+	padding: .2rem;
+	background-color: #b60505;
+}
+.rights .vip{
+	width: 100%;
+
+}
+.rights .vip h1{
+	font-size: .36rem;
+	color: #fff;
+	text-align: center;
+	padding-bottom: .15rem;
+}
+.rights .vip img{
+	display: block;
+	max-width: 100%;
+}
+.rights .vip h1 em{
+	font-weight: 400
+}
+.vip .vip-right h1{
+	width: 64.64788732394366%;
+	margin: auto;
+	background:url(img/title1.png) no-repeat center;
+	background-size: 100%
+}
+.vip .vip-step h1{
+	width: 64.64788732394366%;
+	margin: auto;
+	background:url(img/title2.png) no-repeat center;
+	padding-top: .15rem;
+	background-size: 100%	
+}
+
+/* 成为供货商 */
+.bcm-vip{
+	background-color: #18192d;
+	padding: .2rem;
+}
+.bcm-vip .qq{
+	width: 80%;
+	/*min-height: 1.08rem;*/
+	padding: .12rem 0;
+	font-size: .3rem;
+	border: .02rem solid #feb302;
+	text-align: center;
+	color: #fff;
+	float: left;
+}
+.bcm-vip .qq a{
+	color: #fdd100;
+	text-decoration: underline;
+	font-weight: 700;
+	letter-spacing: .02rem;
+}
+.bcm-vip .wechart{
+	width: 15.2112676056338%;
+	float: right;
+}
+.bcm-vip .wechart img{
+	display: block;
+	max-width: 100%
+}
+.bcm-vip .bz{
+	padding-top: .15rem
+}
+.bcm-vip .bz img{
+	display: block;
+	max-width: 100%;
+}
+
+
+/* 弹窗 */
+.dialog{ 
+	width: 4rem;
+	padding: .1rem 0;
+	border: .02rem solid #feb302; background-color: #fff; 
+	color: #18192d; font-size: .2rem; 
+	font-weight: 700; text-align: center; 
+	display: none;
+}
+.dialog .tel{ 
+	position: relative;
+}
+.dialog .close{ 
+	width: .16rem; 
+	display: block; 
+	position: absolute; 
+	cursor: pointer;
+	top: -.1rem; right: 0; 
+}
+.dialog .close img{
+	display: block;
+	max-width: 100%;
+}
+.show{ display: block; }

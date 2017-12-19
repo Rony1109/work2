@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+	<meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+	<meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+	<meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+	<meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+	<meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+	<meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+	<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+	<meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+	<meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+	<meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+	<meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+	<meta name="browsermode" content="application"><!-- UC应用模式 -->
+	<meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+	<meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+	<meta name="keywords" content="团购家,采购批发,厂家联盟,底价供货,厂家货源,店铺推广,品牌打造,网络接单,网上交易,网上贸易"/><!-- seo 关键字 -->
+	<meta name="description" content="华南城网团购家，聚焦优质供应商，所有商家经平台认证，抱团供货，保证采购商以优惠的价格采购到优质正品，第三方担保，真正让商家采购无忧；加入团购家供应商，享受多种搜索引擎曝光和人工匹配订单，助你品牌、订单齐增长。"/><!-- seo 网页描述 -->
+	<title>华南城网团购家，聚焦优质供应商，轻松省心赢市场 _华南城网</title>
+	<link rel="stylesheet" href="./css/reset.css"/>
+
+	<link rel="stylesheet" href="./css/layer.css"/>
+	<link rel="stylesheet" href="./css/index.css"/>
+	<script src="js/flexible.js"></script><!--已经手动修改字体算法-->
+	<script src="http://res.csc86.com/v2/l/seajs/sea.js"></script>
+	<script>seajs.use('./js/init')</script>
+	<!--<script>//为加速js，置为内联-->
+	<!--!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));-->
+	<!--</script>-->
+</head>
+<body>
+
+<header class="po_r">
+	<div class="po_r wh_1 mg-au" style="position: relative; width: 10rem; margin: auto;">
+	<a href="" rel="nofollow" title="供应商招聘">
+		<img src="image/1-1.jpg" alt="" class="wh_1 block mg-au" />
+	</a>
+		<div class="wh_1 hg_1 mg-au bg_img_1 po_a bt3"><!--banner图片新闻区域start-->
+			<div class="wh_2  mg-au  pd_6 banner_all">
+				<ul class=" wh_2 mg-au  fo_sz_0 block hg_1">
+					<li class="te_al_c wh_18 fl hg_1">
+						<div class="top_mom"><em class="em1">75000</em><em class="em2">万元</em></div>
+						<div class="top_txt">已成交金额</div>
+					</li>
+					<li class="te_al_c wh_18 fl hg_1">
+						<div class="top_mom"><em class="em1">75000</em><em class="em2">种</em></div>
+						<div class="top_txt">待报价产品</div>
+					</li>
+					<li class="te_al_c wh_18 fl hg_1">
+						<div class="top_jxs">
+							进行
+						</div>
+						<div class="top_byn" >
+							<a href="" target="_blank" style="color:#ffa05d ;">一站式采购</a>
+						</div>
+					</li>
+
+					<li class="te_al_c wh_18 fl hg_1">
+						<div id="add_gys" class="top_jxs">
+							加入
+						</div>
+						<div class="top_byn">
+							优质供应商
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</header>
+<section>
+	<article class="wh_1  mg-au bg_img_1 cen_all">
+		<div id="toplf" class="cen_lflt">&lt</div>
+		<div class="cen2_all " >
+			<ul >
+				<li>
+					<div class="cen_tit">
+						五金工具
+					</div>
+					<div class="no_wrap cen_esh" >
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-1.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+
+				<li>
+					<div class="cen_tit">
+						紧固件/密封件
+					</div>
+					<div class="no_wrap cen_esh">
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-2.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+				<li>
+					<div class="cen_tit">
+						电子五金耗材
+					</div>
+					<div class="no_wrap cen_esh">
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-3.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+				<li>
+					<div class="cen_tit">
+						劳保用品
+					</div>
+					<div class="no_wrap cen_esh">
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-4.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+				<li>
+					<div class="cen_tit">
+						气动水暖
+					</div>
+					<div class="no_wrap cen_esh">
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-5.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+				<li>
+					<div class="cen_tit">
+						气动水暖
+					</div>
+					<div class="no_wrap cen_esh">
+						HARDWARE TOOLS
+					</div>
+					<div class="cen_tp">
+						<img src="image/2-6.png" alt="" class="wh_13 block mg-au"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="toprt" class="cen_rtgt">
+			&gt
+		</div>
+	</article>
+	<article>
+	<div class="cen1_tits">
+		<table cellpadding="0" cellspacing="0" border="0" class="cen1_tab" >
+			<thead>
+			<tr>
+				<td width="20%">
+					名称
+				</td>
+				<td width="20%">
+					日期
+				</td>
+				<td width="40%">
+					规格型号
+				</td>
+				<td width="20%">
+					数量
+				</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>机械密封</td>
+				<td>2017年5月4日</td>
+				<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+				<td>2000</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+		<div  class="cen1_all">
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封111</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封111</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封111</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封111</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="1"  class="tables_gys">
+				<tbody>
+				<tr >
+					<td width="20%">机械密封111</td>
+					<td width="20%">2017年5月4日</td>
+					<td width="40%">DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td width="20%">2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				<tr >
+					<td>机械密封</td>
+					<td>2017年5月4日</td>
+					<td>DN400 PN2.0MPA ASME带内环石墨+SUS304 3.2T</td>
+					<td >2000</td>
+				</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</article>
+
+	<article class="cen2_all">
+		<div class="cen2_tit">
+		</div>
+	</article>
+
+	<article class="cen3_all">
+		<div class="cen3_tit">
+			加入优质供应商
+		</div>
+		<div class="cen3_lasd">
+			<div class="cen3_tsdf">
+				<em class="em1" >我是供应商</em><em class="em2">我要报价</em>
+			</div>
+		</div>
+		<div class="cen3_tb">
+			<div class="cen3_tblc">
+				<em class="em1">报价流程/</em><em class="em2"> QUOTATION PROCESS</em>
+			</div>
+			<div class="cen3_tp"></div>
+			<div class="te_al_c cen3_c">
+				<em class="em1">注册<br>供应商会员</em><em class="em2">下载<br>采购清单</em><em class="em3" >在线提交<br>报价申请</em><em class="em4">资质审核</em><em class="em5">清单式<br>报价</em>
+			</div>
+		</div>
+
+		<div class="cen3_txt">
+			<div class="txt_tit">
+				<em class="em1">供应商要求/</em><em class="em2">SUPPLIER REQUIREMENTS</em>
+			</div>
+			<div class="txt_wb">(只需具备以下条件，即可成为华南城网五金机电商城自营平台供货商)</div>
+			<div class="txt_ls">
+				<div class="txt_lsi">
+					拥有中国大陆公司实体<br>
+					仅限企业商户，不接受个体工商户<br>
+					公司注册资本50万及50万以上人民币<br>
+					公司依法成立一年及以上<br>
+					公司需具备一般纳税人资格<br>
+				</div>
+				<div class="txt_lst">
+					拥有正规的的企业法人身份<br>
+					拥有商标所有权或使用授权书<br>
+					特殊商品需要相关的行政许可文件<br>
+					产品质量合格证明<br>
+					以上资质需真实有效，并加盖相应公章<br>
+				</div>
+			</div>
+			<div class="cen3_btn" id="add_gysl">
+				加入优质供应商报价供货
+			</div>
+
+		</div>
+		<div style="height: 10px;">
+
+		</div>
+	</article>
+
+	<div class="cen4_all">
+		<div class="cen4_tit">
+			合作品牌
+		</div>
+		<div class="cen4_txt">
+			<div class="txt_all">
+				<div class="txt_als hzpp_ul">
+					<ul>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+
+						<li class="lii">
+
+							<div class="txt_sdgh">
+
+							</div>
+							<div  class="sle_more">
+								查看更多
+							</div>
+							<div class="txt_ic">
+								<img src="image/1-7.png" height="100%" width="100%">
+							</div>
+						</li>
+
+					</ul>
+					<ul>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+
+						<li class="lii">
+
+							<div class="txt_sdgh">
+
+							</div>
+							<div  class="sle_more">
+								查看更多
+							</div>
+							<div class="txt_ic">
+								<img src="image/1-7.png" height="100%" width="100%">
+							</div>
+						</li>
+
+					</ul>
+					<ul>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+						<li class="lis">
+							<div class="txt_icon">
+								<em class="em1">特约</em><br/><em class="em2">经销商</em>
+							</div>
+
+							<div class="txt_img">
+								<img src="image/1-2.jpg" height="100%" width="100%">
+							</div>
+							<div class="txt_sdf">
+								中国 &nbsp;| &nbsp;天工工具
+							</div>
+							<div class="txt_dgh" style="">
+								五金工具/紧固件/线材
+							</div>
+						</li>
+
+						<li class="lii">
+
+							<div class="txt_sdgh">
+
+							</div>
+							<div  class="sle_more">
+								查看更多
+							</div>
+							<div class="txt_ic">
+								<img src="image/1-7.png" height="100%" width="100%">
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div style="height: .3rem;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wxcen" >
+		<ul>
+			<li>
+				<div class="wxlf">
+					<img src="image/1-9.png" >
+				</div>
+				<a href="javascript:;"><div class="wxrt">
+					<em>五金工具</em><br><em>专属客服</em>
+				</div></a>
+
+				<div  class="wxtc">
+					<div class="wxzx">
+						<img src="image/3-1.png"> 在线咨询/Online
+					</div>
+					<div class="wxalse">
+						<div class="wxsg"><img src="image/3-2.png"><br><br><em>长按识别二维码，微信沟通</em></div>
+					</div>
+					<div class="wx_dh">
+						(客服热线）400-184-8666
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="wxlf">
+					<img src="image/1-9.png" >
+				</div>
+				<div class="wxrt">
+					<em>五金工具</em><br><em>专属客服</em>
+				</div>
+
+				<div  class="wxtc">
+					<div class="wxzx">
+						<img src="image/3-1.png"> 在线咨询/Online
+					</div>
+					<div class="wxalse">
+						<div class="wxsg"><img src="image/3-2.png"><br><br><em>长按识别二维码，微信沟通</em></div>
+					</div>
+					<div class="wx_dh">
+						(客服热线）400-184-8666
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="wxlf">
+					<img src="image/1-9.png" >
+				</div>
+				<div class="wxrt">
+					<em>紧固件/密封件</em><br><em>专属客服</em>
+				</div>
+
+				<div  class="wxtc">
+					<div class="wxzx">
+						<img src="image/3-1.png"> 在线咨询/Online
+					</div>
+					<div class="wxalse">
+						<div class="wxsg"><img src="image/3-2.png"><br><br><em>长按识别二维码，微信沟通</em></div>
+					</div>
+					<div class="wx_dh">
+						(客服热线）400-184-8666
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="wxlf">
+					<img src="image/1-9.png" >
+				</div>
+				<div class="wxrt">
+					<em>五金工具</em><br><em>专属客服</em>
+				</div>
+
+				<div  class="wxtc">
+					<div class="wxzx">
+						<img src="image/3-1.png"> 在线咨询/Online
+					</div>
+					<div class="wxalse">
+						<div class="wxsg"><img src="image/3-2.png"><br><br><em>长按识别二维码，微信沟通</em></div>
+					</div>
+					<div class="wx_dh">
+						(客服热线）400-184-8666
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="wxlf">
+					<img src="image/1-9.png" >
+				</div>
+				<div class="wxrt">
+					<em>五金工具</em><br><em>专属客服</em>
+				</div>
+
+				<div  class="wxtc " style="right:0;">
+					<div class="wxzx">
+						<img src="image/3-1.png"> 在线咨询/Online
+					</div>
+					<div class="wxalse">
+						<div class="wxsg"><img src="image/3-2.png"><br><br><em>长按识别二维码，微信沟通</em></div>
+					</div>
+					<div class="wx_dh">
+						(客服热线）400-184-8666
+					</div>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+
+</section>
+
+<div class="success" style="display: none; background-color: #f1f1f1;">
+	<form action="" id="zbtable">
+		<div style="padding: .3rem; color:#3e3f42; font-family:'微软雅黑'; text-align: left; outline:1px solid #ccc;font-size: .2rem; line-height: .3rem;">
+			<img src=image/dialog-2.png alt="" class="close" style="width: 0.4rem;height: 0.4rem; position:absolute;right:0.2rem; top:0.2rem;"/>
+		请提交您的资料，方便我们的工作人员联系您<br/>
+		取得报价信息，您也可以直接联系我们的专属客服<br/>进行报价<br/>
+		<div style="margin-top:.3rem;">公司名称：<input type="text" style="border: 1px solid #ccc;" id="cjzb_company_name" name="info[company_name]" ></div>
+		<div  style="margin-top:.3rem;">联&nbsp;系&nbsp;人&nbsp;：<input type="text" style="border: 1px solid #ccc;" id="cjzb_name" name="info[name]"></div>
+		<div  style="margin-top:.3rem;">手&nbsp;&nbsp;&nbsp;&nbsp;机&nbsp;&nbsp;：<input type="text" style="border: 1px solid #ccc;" id="cjzb_phone_number" name="info[phone_number]"></div>
+		<div style="margin: auto; "><input type="button" value="确定" style=" width: 1rem; margin-top:.3rem; margin-left:1rem;" id="cjzb_btn" ></div>
+		</div>
+		<input type="hidden" name="formid" value="101" />
+		<input type="hidden" name="subtype" value="ajax" />
+		<input type="hidden" name="dosubmit" value="我要报名"/>
+	</form>
+</div>
+
+
+<!--统计代码 start-->
+<div style="display:none"><script src="http://res.csc86.com/js/m/statistics.js"></script></div>
+<!--统计代码 end-->
+
+</body>
+</html>

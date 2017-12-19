@@ -1,0 +1,110 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/c2/newcgsc/css/newtop.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/*搜索框重置样式*/
+.m-search{margin-right: 12px;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.banner{background:#001d40 url(img/banner.png) no-repeat center top;height:617px;position: relative;overflow: hidden;}
+.banner img{position: absolute;bottom:0px;}
+/* banner样式end */
+.spc-flr{font-family: Microsoft YaHei;text-align: center;padding: 60px 0 0 0;}
+.flr-main{width:1000px;margin-left:auto;margin-right: auto;overflow: hidden;}
+.flr-hd h2{font-size: 48px;line-height: 100%;}
+.flr-hd span{margin-left:13px;margin-right: 13px;}
+.flr-hd i{display: inline-block;background-image:url(img/icon.png);background-repeat: no-repeat;width:28px;height: 29px;overflow: hidden;}
+.blue-i1{background-position: 0 0;}
+.blue-i2{background-position: -28px 0;}
+.white-i1{background-position: -56px 0;}
+.white-i2{background-position: -84px 0;}
+.spc-flr1{background-color: #0060d1;}
+.flr1-hd h2{color:#fff;}
+.gd_box{width: 1140px;margin: auto;}
+.gd_inner{width: 50%;float: left;padding: 50px 0 0 0;margin-bottom: 50px}
+.clear{clear: both}
+.gd_innerImg,.gd_innerWord{float: left;color: #fff;text-align: left}
+.gd_innerImg{width: 100px}
+.gd_innerWord{width: 400px;padding:0 20px}
+.gd_innerWord h2{font-size: 18px;font-weight: bold;line-height: 100%;padding: 20px 0;}
+.gd_innerWord p{font-size: 16px;line-height: 32px}
+/* 平台优势样式end */
+.spc-flr2{background: #edf7ff;}
+.flr2-hd h2{color:#0060d1;}
+.recu_order{width: 1020px;margin: auto;padding:60px 0;}
+.recu_orderBox{width: 340px;float: left;}
+.recu_orderBoxInner{width: 320px;margin: auto;text-align: left;background: #fff;  }
+.recu_orderBoxInner h2{font-size: 30px;color: #fff;line-height:100%;padding: 20px 0;text-align: center }
+.recu_orderBoxInnerT1{background: #76b62a}
+.recu_orderBoxInnerT2{background: #1fb2ff}
+.recu_orderBoxInnerT3{background: #ea5d65}
+.recu_orderBoxInner span{color: #000000;font-size: 16px;line-height: 100%;display: block;background: url("img/trangle.jpg") no-repeat left center;padding: 0 0 0 15px;}
+.recu_orderBoxInner li.list{padding: 10px 0px 10px 25px;}
+.recu_orderBoxInneC{padding: 30px 0;}
+/* 招募规则样式end */
+.spc-flr3{background-color: #0060d1;padding-bottom:40px;}
+.flr3-hd{padding-top:25px;padding-bottom:0px;}
+.flr3-hd h2{color:#fff;}
+.bank-list{width:1020px;}
+.bank-list li{position: relative;float: left;background-color:#fff;width:220px;height: 174px;padding:3px 5px;margin-right:25px;margin-top:25px;text-align: center;font-size: 13px;font-family:simsun}
+.bank-list .msk,.bank-list .msk .bg,.bank-list .msk .inf,.bank-list .tip{position: absolute;}
+.bank-list .msk,.bank-list .msk .bg,.bank-list .msk .inf{top:0;left:0;width:100%;height: 100%;}
+.bank-list .msk,.bank-list .tip{font-family: Microsoft YaHei;}
+.bank-list .msk{display: none;}
+.bank-list .msk .bg{background-color: #0060d1;opacity: 0.9;filter:alpha(opacity=90);}
+.bank-list .msk .inf,.bank-list .msk .ljcg{color:#fff;font-size: 16px;}
+.bank-list .msk .inf .gs{height:72px;padding:50px 10px 10px;}
+.bank-list .msk .ljcg{display: inline-block;border:1px solid #fff;width:128px;height: 28px;line-height: 28px;}
+.bank-list .msk .ljcg:hover{text-decoration: none;}
+.bank-list .li-hover .msk{display: block;}
+.bank-list .tip{top:0;right:0;background: url(img/icon.png) no-repeat -112px 0;width:43px;height: 46px;color:#fff;overflow: hidden;}
+/* 合作品牌end */
+.spc-flr4{background-color: #001c41;padding-bottom:50px;}
+.flr4-hd h2{color: #fff;}
+.recru_range{width: 1000px;margin: auto;background: #fff;margin-top: 60px;border-radius:10px;}
+.recru_range tr{border-bottom: 1px solid #dbdbdb}
+.recru_range tr.last{border-bottom:none}
+.recru_range td{text-align: center;padding: 20px 0;}
+.recru_range h3{font-size: 18px;color: #333;line-height: 100%;padding: 15px 0;}
+.recru_range td.recru_rangeList{color: #333333;font-size: 16px;text-align: left;width: 800px;padding: 20px;border-left: 1px solid #dbdbdb}
+/* 招募范围end */
+#myform{padding: 20px 0;}
+#myform table{margin: auto;width: 1000px;background: #FFF}
+#myform table thead tr{font-size: 24px;color: #333;font-weight: bold}
+.myform_t{width: 200px;font-size: 20px;color: #333;font-weight: bold}
+.myform_c{font-size:16px;color: #333}
+.myform_c label{font-weight: bold; }
+.myform_c{text-align: left;padding: 20px;}
+.myform_c i{padding:0px 46px 10px 2px;font-style: normal;display: inline-block}
+.spc-flr6{background-color: #001d40;}
+.spc-flr6 img{display: block;margin: auto}
+.myform_sep{padding: 10px 0;}
+.myform_tC input{padding: 2px 20px;width: 300px;font-size: 16px;color: #333;font-family: Microsoft YaHei;}
+#myform tbody tr{border-bottom: 1px solid #d5e8f8;border-top: 1px solid #d5e8f8}
+#myform .myform_c{border-left: 1px solid #d5e8f8}
+#myform thead th{padding: 15px 0;}
+.submit{font-size: 24px;font-weight: bold;color: #fff;padding: 10px 40px;background:url("img/submit-bg.jpg") no-repeat center;border: none;margin:30px 0;outline: none;cursor: pointer}

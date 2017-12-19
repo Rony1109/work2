@@ -1,0 +1,104 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+.link{border-top:0;}
+
+/* 以下为专题样式 */
+.banner{padding-top:270px;min-width:1000px; background:url(../image/banner1.jpg) no-repeat center 0;}
+.banner .bd{height:270px;background:url(../image/banner2.jpg) no-repeat center 0;}
+
+.c-666{color:#666}
+.lh-28{line-height:28px}
+
+.bg{background:#fff9fc url(img/bg1.png);}
+.bg-wrap{background:#ffbddd url(img/bg2.png);}
+
+
+.b-arr{margin: -10px auto; background:url(img/bg.png) no-repeat 0 -400px;_background-image: url(img/bg_ie6.png);
+ }
+
+.bg .hd{position: relative; height: 60px; background:url(img/bg.png) no-repeat center 0;_background-image: url(img/bg_ie6.png);line-height:28px;font-size:24px;color:#fff;padding: 20px 0;margin: -10px auto -59px;}
+
+.bd{padding:60px 0 10px}
+
+.index p{text-indent:28px}
+.index h2{width: 200px;height:188px; background: url(img/bg.png) no-repeat 16px -150px;_background-image: url(img/bg_ie6.png);}
+.index div{padding: 22px 0 0 225px;}
+
+.focus{position: relative; width:643px;height:330px;overflow: hidden;border:solid 5px #f86ea3}
+.focus ul{width:999999px}
+.focus ul li{float: left;}
+.focus ol{position: absolute;right: 0;bottom: 5px;}
+.focus ol li{ text-indent:15px; width:10px;height:10px;margin-right:5px; float: left;background:#fff;border-radius:50%;overflow: hidden;border:solid 1px #fff}
+.focus ol .cur{background:#fd417a;border-color:#fd417a}
+
+
+.focus-r{padding-left: 680px;}
+.focus-r p{text-indent:28px}
+
+.camera .prev,.camera .next,.app .prev,.app .next{position: absolute; display: block;width:42px;height:42px;overflow: hidden; background: #ff6994 url(img/bg.png) no-repeat -188px -142px;_background-image: url(img/bg_ie6.png);border-radius:3px;top: 138px;}
+.camera .prev,.app .prev{left:-64px}
+.camera .next,.app .next{right:-64px; background-position: -224px -142px;}
+.camera .prev:hover,.camera .next:hover,.app .prev:hover,.app .next:hover{background-color:#f75282}
+.camera .dis,.camera .dis:hover,.app .dis,.app .dis:hover{cursor:default;background-color:#ff84a7}
+.app .prev,.app .next{margin-top: -178px;}
+
+.camera .g-o{padding:10px 0 40px;position: relative; }
+.camera .s-wrap{margin:0 auto;overflow: hidden;width: 996px;position: relative;}
+.camera ul{width:999999px;}
+.camera li{float: left;width:320px;margin: 0 18px 0 0;position: relative;}
+.camera li img{border:solid 5px #fff;}
+.camera li div{display: none; position: absolute;width:310px;height:230px;left:5px;top:5px;}
+.camera li:hover div,.camera li.hover div{display: block;}
+.camera .bg{background:#763acd; opacity:.5;filter: alpha(opacity=50);}
+.camera .txt{width:290px;height:190px; padding:20px 10px}
+.camera p{text-align: left;padding-top:5px}
+.camera{color:#fff}
+.camera a{color:#fff}
+.camera a:hover{text-decoration: none;}
+
+.phone{overflow: hidden; }
+.phone ul{width: 1008px;padding-bottom:20px}
+.phone li{float: left;width:238px;height:468px;margin:0 12px 12px 0; border:solid 1px #b4b4b4;background:#fff;position: relative;}
+.phone li div{width:190px;margin: 0 auto;height: 114px;padding: 27px 0;}
+.phone .t{color:#666;line-height:1.2;}
+.phone .t:hover{color:#f75282}
+.phone p{border-top:solid 1px #9a9a9a;margin-top:5px;padding-top:5px;height: 64px;overflow: hidden;}
+.phone .arr{display: block;position: absolute; width:59px;height:106px;overflow: hidden;color:#fff;font-size:18px;font-weight:700;background:url(img/bg.png) no-repeat -350px -150px;_background-image: url(img/bg_ie6.png);line-height:106px;padding-left: 6px;left:-1px;top: 247px;}
+.phone .s2 .arr{top: 115px;}
+
+.app .g-o{padding: 10px 0 41px;position: relative;}
+.app .prev,.app .next{top: 275px;}
+.app a{font-size:24px;color:#ff6994}
+.app .s-wrap{margin:0 auto;overflow: hidden;width: 998px;}
+.app ul{width:99999px;}
+.app li{float:left;width: 224px;margin: 0 34px 0 0;}
+.app li img{border:solid 5px #fff;border-radius:30px;margin-bottom:8px}
+
+.image-wall ul{width: 1020px;margin-left: -10px;padding: 10px 0;}
+.image-wall li{_display: inline;float:left;margin: 10px;}
+
+.other-special ul{padding:5px 0 30px;width: 1020px;}
+.other-special li{_display: inline; float: left;margin: 0 10px;}
+.other-special img{border:solid 2px #fff;}

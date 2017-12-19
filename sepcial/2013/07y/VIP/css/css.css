@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*public*/
+.n1,.n2,.n3,.n4,.f1,.f2,.f3,.f4
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;text-indent:-1000px;}
+.n1,.n2,.n3,.n4{background:url(img/02.png) no-repeat;}
+.f1,.f2,.f3,.f4{background:url(img/float.png) no-repeat;}
+.n1{width:152px;padding-top:50px;background-position:0 -60px;}
+.n2{width:152px;padding-top:50px;background-position:-162px -60px;}
+.n3{width:152px;padding-top:50px;background-position:-323px -60px;}
+.n4{width:152px;padding-top:50px;background-position:-485px -60px;}
+.f1{width:152px;padding-top:49px;background-position:-155px -1px;}
+.f2{width:152px;padding-top:49px;background-position:-155px -62px;}
+.f3{width:152px;padding-top:49px;background-position:-155px -124px;}
+.f4{width:152px;padding-top:49px;background-position:-155px -185px;}
+
+/*bg-color*/
+.bg-fff0b7{ background-color:#fff0b7;width:100%;}
+.bg-gray{ background-image:url(img/bg-gray.png);width:100%;}
+.bg-4d8df9{ background-color:#4d8df9;width:100%;}
+.bg-2bbcd1{ background-color:#2bbcd1;width:100%;}
+
+/*content*/
+.q1,.q2,.q3,.q4{width:1000px;margin:0 auto;}
+.q1:after,.q2:after,.q3:after,.q4:after,.fun:after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.q1,.q2,.q3,.q4,.fun{zoom:1;}
+.q1 img,.q2 img,.q3 img,q4 img{float:left;}
+
+/* VIP会员专题 */
+.banner{width:100%; height:540px; background:url(img/01.png) no-repeat top center;text-indent:-1000px;}
+.gray{background-color:#828282;height:87px;}
+.nav{width:1000px;margin:0 auto;height:100%;}
+.nav a{float:left;margin-top:18px;margin-right:23px;}
+.nav a:hover.n1,.nav a.hover.n1{width:152px;padding-top:50px;background-position:0 0;}
+.nav a:hover.n2,.nav a.hover.n2{width:152px;padding-top:50px;background-position:-162px 0;}
+.nav a:hover.n3,.nav a.hover.n3{width:152px;padding-top:50px;background-position:-323px 0;}
+.nav a:hover.n4,.nav a.hover.n4{width:152px;padding-top:50px;background-position:-485px 0;}
+
+/*q2*/
+.q2{position:relative;z-index:1;}
+.q2 a{position:relative;z-index:1;}
+.fun{width:100%;position:absolute;z-index:1;top:167px;left:10px;}
+.fun a{display:block;float:left;width:155px;height:0;padding-top:155px;overflow:hidden;}
+.fun .a1{margin-left:147px;}
+.fun .a2{margin-left:147px;}
+.fun .a3{margin-left:154px;}
+.form{position:absolute;z-index:1;top:745px;right:13px;width:240px;}
+.form table{border:0;width:100%;font-size:14px;font-family:Microsoft YaHei,SimHei;}
+.form table td{padding:6px 0px;}
+.form table input{width:134px;height:28px;line-height:28px;border:1px solid #cccecd;padding:0 3px;}
+#btn{width:90px;height:34px;border:0; background:url(img/btn.png) no-repeat; cursor:pointer; outline:none;}
+
+/*mail*/
+.q4{position:relative;z-index:1;}
+.q4 a.mail{display:block;width:136px;height:0;padding-top:23px;overflow:hidden;position:absolute;top:136px;left:170px;}
+.q4 a.qq{display:block;width:90px;height:0;padding-top:25px;overflow:hidden;position:absolute;top:169px;left:165px;}
+
+/*float*/
+.float{width:152px; position:fixed; right:30px; top:150px; background:url(img/float.png) no-repeat 18px 0;padding-top:29px; z-index:99;}
+.float a{margin-top:10px;display:block;}
+.float a:hover.f1,.float a.hover.f1{background-position:-317px -1px;}
+.float a:hover.f2,.float a.hover.f2{background-position:-317px -62px;}
+.float a:hover.f3,.float a.hover.f3{background-position:-317px -124px;}
+.float a:hover.f4,.float a.hover.f4{background-position:-317px -185px;}

@@ -1,0 +1,109 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+ body{ font-size:62.5%; font-family:Microsoft Yahei; min-width:1000px; margin-left:auto; margin-right:auto}
+.ms a{ text-decoration:none;} 
+.icon{ background:url(img/icon.png) no-repeat;}
+
+/*banner 样式*/
+.wrap{ background-color:#980000; padding-bottom:30px}
+.bgimg{ height:818px; background:url(img/bg0.jpg) no-repeat center 0 }
+.bgimg .share{ width:300px; margin:0 auto; padding:10px 0 0 708px;}
+
+/*秒杀 样式*/
+.ms{ height:362px; background-color:#fff}
+.ms-first{ position:relative; top:-30px}
+.ms-img{ display:block; float:left}
+.ms-img img{ width:471px; height:342px; margin:10px}
+.ms-con{ width:471px; float:left; padding-left:15px}
+.ms-cons{ padding:0 10px 0 20px}
+.ms-con h2{ padding:6px 0}
+.ms-con h2 a{ color:#444; font-size:4.6em}
+.ms-con .det{ font-size:2em}
+.ms-con .kq{ font-size:3.4em; color:#d90001; font-weight:700; margin:50px 0}
+.ms-con .price{ height:85px; background-color:#d90001; color:#fff}
+.ms-con .price span{ display:block; float:left}
+.ms-con .price .sz{ font-weight:700; margin-left:10px; font-size:2.8em; padding-top:30px}
+.ms-con .price .sf{ width:185px; font-size:2.8em}
+.ms-con .price .sf b{ font-size:2em}
+.ms-con .price .ss{ width:0; height:0; line-height:0; border-width:43px; border-style:solid; border-color:transparent #ffd200 transparent transparent; margin-left:-57px}
+.ms-con .price a{ width:135px; display:inline-block; height:85px; font-size:2.8em; line-height:85px; font-weight:700; background-color:#ffd200; color:#d90001; float:left}
+
+/*楼层公共 样式 */
+.floor a{ text-decoration:none; color:#fff}
+.floor div.tit{ height:120px; margin:30px 0 15px 0; text-align:center; color:#fff }
+.floor div.tit  h1{ font-size:5.8em;}
+.floor div.tit .yw{ font-size:2.4em; line-height:1}
+.floor ul.item li{ width:326px; height:410px; background-color:#d90001; float:left}
+.floor ul.item li.on{ margin: 0 0 12px 11px}
+.floor ul.item li a.gd-img{ display:inline-block; border:5px solid #ededed; border-bottom:none; transition:border-color .3s linear;}
+.floor ul.item li:hover a.gd-img{ border-color:#d90001;}
+.floor ul.item li .intro{ width:310px; margin:6px 10px 0; font-size:1.6em; color:#fff}
+.floor ul.item li .intro .detail{ height:65px}
+.floor ul.item li .intro .detail span{ display:inline-block}
+.floor ul.item li .intro span.s2{ font-size:1.4em}
+.floor ul.item li .intro span.s2 b{ font-size:1.9em;}
+.floor ul.item li .intro .detail a{ width:100px; height:38px; display:inline-block; background-position:-138px -128px; text-align:center; color:#ca0600; font-weight:700; line-height:38px; position:relative; top:-8px; left:10px}
+
+/*活动介绍样式 */
+.act-intro{ height:275px; background-color:#fff; border-radius:16px; margin-top:20px; padding-top:20px}
+.act-intro .act-l{ width:565px; height:260px; border-right:1px solid #d8d8d8; padding:0 25px; float:left}
+.act-intro .act-l h1{ font-size:3.4em; color:#d90001}
+.act-intro .act-l p.yw{ font-size:1.6em; color:#d90001; margin-bottom:5px}
+.act-intro .act-l p.xq{ font-size:1.5em; text-indent:2em;}
+.act-intro .act-r{ width:340px; height:260px; float:left; margin-left:25px}
+.act-intro .act-r ul{ padding:15px 0 10px 0; overflow:hidden}
+.act-intro .act-r ul li{ margin-bottom:6px }
+.act-intro .act-r ul li lable{ width:75px; line-height:26px; height:26px; text-align:left; display:inline-block; font-size:1.4em;}
+.act-intro .act-r ul li input{ width:205px; height:24px;line-height:22px;}
+.act-intro .act-r ul li span{ display:inline-block; font-size:1.4em; float:left}
+.act-intro .act-r ul li .sq-rea{ margin-right:8px}
+.act-intro .act-r p.ct-btn{ width:198px; height:58px; background-position:-243px -127px; cursor:pointer; font-size:3em; line-height:1.5; text-align:center; color:#fff; font-weight:700; margin-left:70px}
+.act-intro .sq-con .reason_id{width:205px; max-width:205px; max-height:60px}
+
+/*侧面导航fixed*/
+.fixed{ width:143px; position:fixed; top:150px; left:50%; margin-left:520px}
+.fixed .fixed-tit{ height:85px; background-position:8px -120px; background-color:#d90001; border-radius:11px 11px 0 0;}
+.fixed ul li{ width:143px; height:45px; line-height:45px; background-color:#d90001; text-align:center; border-top:1px solid #980000}
+.fixed ul li a{ height:38px; display:inline-block; color:#fff; text-decoration:none; font-size:1.8em; font-weight:700}
+.fixed ul li.cant{ border:none; background-color:#ffd200; border-radius:0 0 11px 11px}
+.fixed ul li.cant a{ color:#d90001}
+
+/*提交成功 样式*/
+.bg-subxinxi-list{display:none;}
+.bg-subxinxi-list p{ font-size:1.4em}
+.bg-subxinxi-list .p1{padding:20px 25px 0; color:#555; text-align:center; font-weight:bold;}
+.bg-subxinxi-list .p2{padding:20px 25px 0; color:#444; text-align:left; }

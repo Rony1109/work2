@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+@import url('http://res.csc86.com/v2/m/init/css/style.css');
+@import url('http://res.csc86.com/v2/c2/newcgsc/css/newtop.css');
+@import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+@import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+body *{  font-family: '微软雅黑','microsoft yahei',sans-serif;/*先找微软雅黑，找不到默认字体*/}
+body{ min-width:1200px; margin:0 auto}
+/*文字居中、右区域*/
+.te_al_c{ text-align: center;}
+.te_al_l{ text-align: left;  }
+.te_al_r{ text-align: right;  }
+.outline{outline: 1px solid red}
+.bor-1{border-bottom: 1px solid #ccc}
+.te-inde{text-indent: 2em}
+/*行高区域*/
+.li_hg_0{ line-height: 100%;  }
+.li_hg_1{ line-height:34px;  }
+.li_hg_2{ line-height:26px;  }
+.li_hg_3{ line-height:24px;  }
+.li_hg_4{ line-height:60px;  }
+.li_hg_5{ line-height:54px;  }
+.li_hg_6{ line-height:30px;  }
+.li_hg_7{ line-height:40px;  }
+/*字体大小*/
+.fo_sz_2{ font-size: 14px; }
+.fo_sz_4{ font-size: 18px; }
+.fo_sz_5{ font-size: 12px; }
+.fo_sz_6{ font-size: 16px; }
+.fo_sz_8{ font-size: 28px; }
+
+.fo_sz_7{ font-size: 24px; }
+/*字体加粗区域*/
+.fon_w_b{ font-weight: bold;  }
+.fon_w_n{ font-weight: normal;  }
+/*字体颜色区域*/
+.fon_c_1{ color: #fff; }
+.fon_c_2{ color: #333333; }
+.fon_c_3{ color: #666666; }
+.fon_c_4{ color: #000000; }
+.fon_c_5{ color: #0033ff; }
+.fon_c_6{ color: #3fd7d8; }
+.fon_c_7{ color: #f66061; }
+/*下划线*/
+.tx_dec-uli{  text-decoration: underline;  }
+/*margin区域*/
+.mg-au{  margin: auto;  }
+.mg-bt-1{margin-bottom:30px}
+.mg-bt-2{margin-bottom:5px}
+/*padding区域*/
+.pd-1{padding: 45px 0 30px 0;}
+.pd-2{padding: 36px 0 31px 0;}
+.pd-3{padding: 0px 0 40px 0;}
+.pd-4{padding: 18px  0;}
+.pd-5{padding: 5px  0 5px 0;}
+.pd-10{padding: 15px 0 0px 0;}
+.pd-11{padding: 25px 0 15px 0;}
+.pd-12{padding: 2px 0 25px 0;}
+
+.rt-1{right:0;}
+.lt-1{left:0;}
+.bt-1{bottom:0}
+.bt-2{bottom:50px}
+.tp-1{top:0}
+/*宽度区域*/
+.wh-max{max-width: 100%}
+.wh-1{  width:100%;  }
+.wh-2{  width:1312px;  }
+.wh-3{  width:806px;  }
+.wh-4{  width:90% }
+.wh-5{  width:388px;  }
+.wh-6{  width:924px;  }
+.wh-7{  width:1000px;  }
+.wh-8{  width:100px;  }
+.wh-9{  width:960px;  }
+.wh-10{  width:426px;  }
+.wh-11{  width:142px }
+.wh-12{  width:188px;  }
+.wh-13{  width:700px;  }
+.wh-14{  width:794px;  }
+.wh-15{  width:462px;  }
+.wh-16{  width:332px;  }
+.wh-17{  width:720px;  }
+
+.wh-24{  width:540px;  }
+/*高度区域*/
+.ht-1{  height:100% }
+.ht-2{  height:720px;  }
+.ht-3{  height:100px;  }
+.ht-4{  height:60px;  }
+.ht-5{  height:54px;  }
+.ht-6{  height:34px;  }
+.ht-7{  height:790px;  }
+.ht-8{  height:40px;  }
+.ht-9{  height:260px;  }
+.ht-10{  height:156px;  }
+
+
+.ht-16{  height:220px;  }
+/*定位区域*/
+.po_r{  position: relative;  }
+.po_a{  position: absolute;  }
+/*文字不换行区域*/
+.no_wrap{  white-space: nowrap;  overflow: hidden;  text-overflow:ellipsis ;  }
+.o-flow{   overflow: scroll;}
+/*img区域*/
+.img_auto{display: block;margin: auto;max-width: 100%;}
+/*bg-color区域*/
+.bg-co-2{background-color:#d90000 }
+.bg-co-3{background-color:#990000 }
+.bg-co-4{background-color:#e3e7ea }
+.bg-co-5{background-color:#079caa }
+.bg-co-6{background-color:#152448 }
+/*bg-img区域*/
+.bg-img-1{background: url("../bg-img/bg-img-1.png") no-repeat center top;}
+.bg-img-2{background: url("../bg-img/bg-img-2.png") no-repeat center top; }
+.bg-img-3{background: url("../bg-img/bg-img-3.png") no-repeat center top; }
+.bg-img-4{background: url("../bg-img/bg-img-4.png") no-repeat center top}
+.bg-img-5{background: url("../bg-img/bg-img-5.png") no-repeat center bottom;background-size: 100% 100%}
+
+.tx-inst{text-indent: 30px}
+.tab{display: none}
+.aside-nav .sh_active{background: #079caa;cursor: pointer}
+.content,.aside-nav{cursor: pointer}
+.inner-nav a{text-decoration: none}
+.section{height: 800px}

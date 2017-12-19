@@ -1,0 +1,137 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{ font-size: 62.5%; min-width: 1200px; font-family: Microsoft Yahei; }
+.w1200{ width: 1200px; margin: 0 auto }
+#wrap{ background: url(img/starry.jpg) repeat; }
+#wrap a{ text-decoration: none }
+.comicon{ background: url(img/icon.png) no-repeat; }
+/*海报 poster*/
+.poster{ height: 645px; background: url(img/poster.jpg) no-repeat center 0; }
+.poster .act-explain{ padding-top: 30px; padding-left: 820px}
+.poster .act-explain a{width: 181px; height: 47px; margin: 0 auto; background-color: #151D50; border-radius: 5px; border:1px solid #2796CA; display: block; text-align: center; font-size: 2em; color: #30DDFB; line-height: 2.2}
+.poster .act-explain a:hover{background-color: #193666}
+
+/* PK时间 */
+.deadline{ width: 668px; height: 248px; margin: 0 auto; padding-top: 30px; overflow: hidden;}
+.deadline .pk-time p{ width: 466px; height: 96px; text-align: center; color: #fff; font-size: 3.5em; font-weight: 700; line-height: 96px; }
+.deadline .pk-time p em{ color: #ff0 }
+.deadline .pk-time ul{ overflow: hidden; padding-left: 70px; padding-top: 15px}
+.deadline .pk-time ul li{ width: 76px; height: 89px; margin-right: 10px; background-color:rgba(25,54,102,.5); float: left; border-radius: 6px; text-align: center;}
+.deadline .pk-time ul li span{ display: block;}
+.deadline .pk-time ul li .s-1{ width: 50px; height: 50px; font-size: 4em; color: #FFFF00; padding-left: 13px; line-height: 1.6 }
+.deadline .pk-time ul li .s-2{ font-size: 1.6em; color: #fff; line-height: 2 }
+.deadline .pk-apply a{ width: 197px; height: 194px; background-color: #0B152C; border-radius: 5px; border:1px solid #2796CA; display: block; color: #30DDFA; }
+.deadline .pk-apply a:hover{ background-color: #193666 }
+.deadline .pk-apply a span{ display: block; padding-left: 50px; }
+.deadline .pk-apply a .s-f{ width: 108px; height: 109px; font-size: 4.5em; line-height: 1.2; padding-top: 25px; letter-spacing: 8px }
+.deadline .pk-apply a .s-s{ font-size: 2.5em; font-family: "LilyUPC"; letter-spacing: 5px }
+
+/*公共样式*/
+.comtitle{ width: 421px; height: 83px; margin: 0 auto; color: #fff; font-size: 3.5em; font-weight: 700; background-position: 0 -96px; padding-top: 70px; padding-left: 5px; text-align: center; }
+.comtitle em{ color: #ff0 }
+.comcon{ overflow: hidden; }
+.comcon .company{ width: 487px; height: 596px; border: 1px solid #2796CA }
+.comcon .company ul{ background-color: #00101A; padding: 0px 20px }
+.comcon .company ul li{ height: 66px; padding: 25px 0; border-bottom: 2px solid #0A3348; border-top: 1px solid #00060A; overflow: hidden; }
+.comcon .company ul li.first{ border-top:1px solid #00101A; }
+.comcon .company ul li.last{ border-bottom: 2px solid #00101A }
+.comcon .company ul li>span{ display: block; float: left; }
+.comcon .company ul li>span.s1{ width: 72px; height: 56px; background-position: -478px 0;}
+.comcon .company ul li.second .s1{ background-position: -478px -60px}
+.comcon .company ul li.third .s1{ background-position: -478px -119px}
+.comcon .company ul li.fourth .s1{ background-position: -478px -177px}
+.comcon .company ul li.last .s1{ background-position: -478px -234px}
+.comcon .company ul li>span.s2{ padding-left: 15px }
+.comcon .company ul li>span.s2 .e1{ width: 87px; height: 28px; background-color: #2796CA; display: inline-block; color: #00101A; font-size: 1.6em; text-align: center; line-height: 1.6; border-radius: 3px }
+.comcon .company ul li>span.s2 .e2{padding-left: 140px; font-size: 1.4em; color: #30B1F2; }
+.comcon .company ul li>span.s2 a{ display: block; font-size: 2em; color: #32C3EC; line-height: 2.2 }
+.comcon .detail{ width: 696px; height: 596px; border:1px solid #2796CA; background-color: #00101A; position: relative;}
+.comcon .detail ul{ width: 696px; height: 396px; padding-top: 200px; position: absolute; overflow: hidden}
+.comcon .detail ul li{ width: 300px; float: left; margin-left: 30px}
+.comcon .detail ul li a{ display: block; border:1px solid #2796CA;}
+.comcon .detail ul li>h3{ width: 300px; height: 60px; text-align: center;}
+.comcon .detail ul li>h3>a{height: 60px; line-height: 60px; background-color: #16597B; font-size: 1.6em; color: #A6F1FF; margin-top: 8px}
+
+/*焊锡行业PK*/
+.tin-ranking .comcon .detail .ul-1{ background: url(img/tinbg.png) no-repeat; background-size: 100% 100%}
+.tin-ranking .comcon .detail .ul-2{ background: url(img/tinbg1.png) no-repeat; background-size: 100% 100%}
+.tin-ranking .comcon .detail .ul-3{ background: url(img/tinbg2.png) no-repeat; background-size: 100% 100%}
+.tin-ranking .comcon .detail .ul-4{ background: url(img/tinbg3.png) no-repeat; background-size: 100% 100%}
+.tin-ranking .comcon .detail .ul-5{ background: url(img/tinbg4.png) no-repeat; background-size: 100% 100%}
+
+/*无纺布行业PK*/
+.non-woven .comcon .detail .ul-1{ background: url(img/tinbg5.png) no-repeat; background-size: 100% 100%}
+.non-woven .comcon .detail .ul-2{ background: url(img/tinbg6.png) no-repeat; background-size: 100% 100%}
+.non-woven .comcon .detail .ul-3{ background: url(img/tinbg7.png) no-repeat; background-size: 100% 100%}
+.non-woven .comcon .detail .ul-4{ background: url(img/tinbg8.png) no-repeat; background-size: 100% 100%}
+.non-woven .comcon .detail .ul-5{ background: url(img/tinbg9.png) no-repeat; background-size: 100% 100%}
+
+/*纺织皮革业PK*/
+.tex-lea .comcon .detail .ul-1{ background: url(img/tinbg10.png) no-repeat; background-size: 100% 100%}
+.tex-lea .comcon .detail .ul-2{ background: url(img/tinbg11.png) no-repeat; background-size: 100% 100%}
+.tex-lea .comcon .detail .ul-3{ background: url(img/tinbg12.png) no-repeat; background-size: 100% 100%}
+.tex-lea .comcon .detail .ul-4{ background: url(img/tinbg13.png) no-repeat; background-size: 100% 100%}
+.tex-lea .comcon .detail .ul-5{ background: url(img/tinbg14.png) no-repeat; background-size: 100% 100%}
+
+/* 活动说明 */
+.ad h1{ letter-spacing: 13px }
+.ad .w1200{ background-color: #00101A; margin-top: 30px }
+.ad ul{ padding: 20px}
+.ad ul li{ overflow: hidden; margin-bottom: 20px}
+.ad ul li span{ width: 98px; height: 34px; background-position: 0 -250px;}
+.ad ul li.obj span{ background-position: -100px -251px; }
+.ad ul li.way span{ background-position: -200px -252px; }
+.ad ul li.rule span{ background-position: -300px -253px; }
+.ad ul li .ad-con{ width: 1030px; padding-left: 18px; font-size: 1.6em; color: #32C3EB; line-height: 1.8 }
+.ad ul li .ad-con em{ color: #CCCF05 }
+.ad .notice{ overflow: hidden; padding-left: 68px }
+.ad .notice span{ width: 90px; height: 153px; display: block; background: url(img/zhu.png) no-repeat; float: left }
+.ad .notice .n-con{ width: 990px; height: 75px; padding: 10px; border:1px solid #196881; float: left; color: #32C3EB; font-size: 1.4em; line-height: 1.9; border-radius: 12px; margin: 30px -17px; background-color: #00101A }
+
+/* 更多商家PK */
+.more{ margin-bottom: 30px; }
+.more h1{ height: 50px; border:1px solid #2796CA; background-color: #00101A; margin-top: 30px; color: #53D2ED; font-size: 2.4em; text-align: center; line-height: 50px; font-weight: 400; cursor: pointer; }
+.more ul{ overflow: hidden; padding-left: 20px; padding-bottom: 20px }
+.more ul li{float: left; margin-top: 20px; width:510px;}
+.more ul li:nth-child(odd){ margin-right: 120px }
+.more ul li span{ display: inline-block; }
+.more ul li span.number{ width: 88px; height: 28px; background-color: #2796CA; border-radius: 3px; font-size: 2em; color: #001019; text-align: center; line-height: 28px }
+.more ul li span.factory{ font-size:1.6em; color: #32C3EB; padding-left: 20px; width: 300px;}
+.more ul li span.comment{ font-size: 1.4em; color: #30B1F2; }
+
+/*底部服务说明*/
+.bot-explain{ margin-top: 30px; height: 140px; background: url(img/bottom.png) no-repeat center 0; }

@@ -1,0 +1,120 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{font-family: simsun}
+a{color:#444;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+.link p,.link a{color:#fff }
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+
+.container{background:#e93115 url(img/banner.jpg) no-repeat center 0;}
+.container h1{text-indent: -999px;overflow: hidden;clear: both;zoom:1;height: 758px;}
+.bdsharebuttonbox a,.bdsharebuttonbox span{color: #fff}
+
+.main-box{padding: 20px;background: #fff;overflow: hidden;}
+.intro{float: right;display: inline;width: 540px;font: 24px Microsoft YaHei,simsun;}
+.intro h2 a{font: 24px Microsoft YaHei,simsun;color: #ff4000}
+.intro h3 a{font: 16px Microsoft YaHei,simsun;color: #4f4f4f}
+.intro p{font-size:14px;line-height: 28px;text-indent: 32px}
+.intro p.text{font: 12px/24px simsun;margin-bottom: 10px;}
+.split{margin:0 auto;height: 17px;width: 1000px;background: url(img/split.gif) no-repeat;}
+
+.list{}
+.list li{float: left;display: inline;margin:16px 8px;width: 464px;}
+.items-intro{float: right;display: inline;width: 296px;}
+.items-intro h3 a{color: #4f4f4f}
+.items-intro p{line-height: 24px}
+a.fc-ff40{color: #ff4000;font-size: 12px;font-family: simsun;}
+.title{margin-bottom: 15px;font:700 22px Microsoft YaHei,simsun;color: #ff4000}
+
+.brand{width: 970px;margin-left: -10px;}
+.brand li{float: left;display: inline;margin:0 0 10px 10px;width: 184px;}
+.brand li span{display: block;overflow: hidden;margin-top: 10px;height:22px;font:700 14px Microsoft YaHei;word-break:break-all;text-align: center;}
+
+.time-line{position: relative; ;width: 959px;background: url(img/line-gray.gif) no-repeat}
+.time-line-red{position: absolute;height: 5px;line-height: 0;font-size:0;background: url(img/line-red.gif) no-repeat;}
+.time-line span{position: relative;float: left;display: inline;margin:-8px 0 0 55px;padding-top: 20px;_padding-top: 25px;font: 700 14px Microsoft YaHei,simsun;background: url(img/round-gray.png) no-repeat center 0;_background: url(img/round-gray-ie6.png) no-repeat center 0;}
+.time-line span.first{margin-left: 22px;}
+.time-line span.start{cursor:pointer;background: url(img/round-red.png) no-repeat center 0;_background: url(img/round-red-ie6.png) no-repeat center 0;}
+.time-line span.cur{background: url(img/water.png) no-repeat center 0;_background: url(img/water-ie6.png) no-repeat center 0;}
+
+
+.fix-title{width: 1000px;height: 56px;text-align: center;font:700 26px/56px Microsoft YaHei,simsun;color: #fff;background: url(img/fix-title.gif) repeat-x;}
+.fix-intro{width: 714px;}
+.fix-intro p{font-size: 14px}
+
+.dot-line{padding: 20px 0;margin: 20px 0;border-top:1px #c4c4c4 dashed;border-bottom:1px #c4c4c4 dashed;}
+.pic a{float: left;display: inline-block;margin-right:25px;_margin-right:24px;}
+.pic a.last{margin-right: 0}
+
+.brand-story p{font-size: 14px}
+.brand-wall-title{position: relative;margin-left: -32px;padding-top: 25px;width: 1062px;height: 47px;font: 700 28px Microsoft YaHei,simsun;color: #fff;text-align: center;background: url(img/t-bg.gif) no-repeat;}
+.brand-wall{padding-top: 20px;background: #fff;overflow-x: auto;overflow-y:auto;height: 423px}
+.brand-wall li{float: left;display: inline;margin:0 0 15px 20px;width: 224px;overflow: hidden;}
+.brand-wall li img{display: block;margin-bottom: 10px;border:2px #efefef solid;}
+.brand-wall li span{display:block;height: 22px;text-align: center;font:700 14px Microsoft YaHei,simsun;}
+
+.img-scroll{position: relative;padding: 20px 15px;margin: 0 auto;width: 970px;background: #fff;}
+.scroll-box{width: 927px;margin: 0 auto;overflow: hidden;}
+a.ctr-l,a.ctr-r{position: absolute;display: block;width: 11px;height: 22px;top:130px;z-index: 999}
+.ctr-l{background:url(img/ctr-l.gif) no-repeat right 0; left: 10px}
+.ctr-r{background:url(img/ctr-r.gif) no-repeat 0 0; right: 10px}
+a.ctr-l:hover{background-position: 0 0;}
+a.ctr-r:hover{background-position: right 0;}
+.scroll-box ul{width: 9999px}
+.scroll-box li{float: left;display: inline-block;margin-right: 23px;width: 215px;}
+.scroll-box li span{display: block;overflow: hidden;height: 24px;text-align: center;font: 16px Microsoft YaHei,simsun;word-break:break-all;}
+
+.tab{width: 1000px;height: 64px;margin: 0 auto; background: url(img/nav-bg.png) no-repeat;}
+.tab li{float: left;display: inline;width: 142px;height: 64px;overflow: hidden;text-indent: -999px;}
+.j-tab{display: none}
+.cur{display: block;}
+
+::-webkit-scrollbar{width:6px;height:6px;border-radius:3px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:black}
+::-webkit-scrollbar-track-piece{background:#ea5504}
+::-webkit-scrollbar-thumb:vertical{background-color:#ffae00;border-radius:3px}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#ffae00}
+
+.scrollbar{
+overflow-y:auto;
+*position:relative;
+scrollbar-arrow-color:#ccc;
+_scrollbar-arrow-color:#ccc;
+scrollbar-face-color:#ea5504;
+scrollbar-darkshadow-color:#6fa4d8;
+scrollbar-highlight-color:#6fa4d8;
+scrollbar-3dlight-color:#6fa4d8;
+scrollbar-shadow-color:#6fa4d8;
+scrollbar-track-color:#6fa4d8;
+}

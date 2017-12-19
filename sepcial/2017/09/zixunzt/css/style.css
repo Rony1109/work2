@@ -1,0 +1,107 @@
+﻿/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+@import url('http://res.csc86.com/v2/m/init/css/style.css');
+@import url('http://res.csc86.com/v2/c2/newcgsc/css/newtop.css');
+@import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+@import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+body{min-width: 1190px;margin-left: auto;margin-right: auto;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+*{ padding:0px; margin:0px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+.after1{ line-height:100px; height:100px; font-size:10px; clear:both; zoom:1; width:100%; display:block;visibility: hidden; }
+
+.banner{background: #f5f5f5; padding: 70px 0px}
+.container{width:1200px;margin:0px auto;position:relative; }
+.btnLeft{width:270px;height:420px;position:absolute;left:-30px;top:0px;z-index:3; font-size:65px;font-family: "Microsoft YaHei"; color: #5a5a5a;
+ cursor:pointer;z-index:6;line-height: 420px; text-align: left;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.btnRight{width:270px;height:420px;position:absolute;right:-30px;top:0px;z-index:3;font-size:65px;font-family: "Microsoft YaHei";color: #5a5a5a;
+ cursor:pointer;z-index:6; text-align: right; line-height: 420px;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.btnLeft:hover,.btnRight:hover{color: #ff7800}
+.container ul{width:100%;height:420px;position:relative;}
+.container ul li{position:absolute;width:0px;height:0px;left:595px;top:135px;overflow:hidden; border: 10px solid #ff7800}
+.container ul li img{width:100%;height:100%;}
+.container ol{padding-left:552px;margin-top:10px; display: none  }
+.container ol li{width:10px;height:10px;display:block;background:#ccc;border-radius:6px;margin:0px 3px;text-indent:-9999px;float:left;cursor:pointer;}
+.container ol .active{background:#ff7800;}
+
+.gporps{ width: 1200px; margin: 0px auto}
+.adver{ margin-top: 20px}
+
+.loading{  background: #fff url(//res.csc86.com/v2/c/shop/skin0019/css/img/wj-loading.gif) no-repeat center center;  background-size:65%;  }
+.content{ margin-top: 10px}
+.content .left{ float: left ; width: 820px;}
+.content  .title{ font-size: 24px; font-weight: bold; color: #ff7800; font-family: "Microsoft Yahei";background: url(../images/bac.png) 0px -241px no-repeat;  padding-left: 35px; margin-top: 10px;}
+.content .left ul li{ padding: 25px 0px; border-bottom: 1px solid #eee; float: left;}
+.content .left ul li .lleft{ width: 340px; height: 185px; background: url(../images/bac.png) 0px -350px no-repeat; padding: 10px; overflow: hidden ; float: left}
+.content .left ul li .lright{ width: 440px;  height: 200px; float: right; margin-left: 20px; }
+.content .left ul li .lright .p1{ color: #333; font-size: 16px; font-family: "Microsoft Yahei"; font-weight: bold;}
+.content .left ul li .lright .p1 a{color: #333;}
+.content .left ul li .lright .p1 a:hover{color: #ff7800;}
+.content .left ul li .lright .p2{ color: #333; font-size: 14px; text-indent: 24px; margin-top: 20px; line-height: 25px; color: #666}
+.content .left ul li .lright .p2 a{ color: #ff7800; font-weight: bold;}
+.content .right{ float: right ; width: 300px;}
+.content .right ul li{ width: 300px; height: 220px; overflow: hidden; margin: 25px 0px;}
+
+.content2{ margin-top: 20px; overflow: hidden}
+.content2 .title ul{ width: 200%; padding-left: 10px;}
+.content2 .title ul li{ float: left; width: 270px; height: 65px; border-radius: 20px;  text-align: center;  line-height: 65px; font-size: 24px; font-family: "Microsoft Yahei"; margin-right: 35px;color: #666; cursor: pointer; background: #dcdcdc url(../images/bac.png) no-repeat; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.content2 .title ul li.l1{ background-position: 30px -32px }
+.content2 .title ul li.active.l1,.content2 .title ul li.l1:hover{ background-position: 30px -130px ; }
+.content2 .title ul li.l2{ background-position: -275px -30px }
+.content2 .title ul li.active.l2,.content2 .title ul li.l2:hover{ background-position: -275px -130px ; }
+.content2 .title ul li.l3{ background-position: -580px -32px }
+.content2 .title ul li.active.l3,.content2 .title ul li.l3:hover{ background-position: -580px -132px ; }
+.content2 .title ul li.l4{ background-position: -880px -30px }
+.content2 .title ul li.active.l4,.content2 .title ul li.l4:hover{ background-position: -880px -130px ; }
+.content2 .title ul li.active,.content2 .title ul li:hover{color: #ffffff;background-color: #ff7800}
+.content2 .con{ width: 1200px; overflow: hidden; padding-bottom: 30px; display: none}
+.content2 .con.active{ display: block}
+.content2 .con ul{ width: 120%; display: none}
+.content2 .con ul.active{  display: block}
+.content2 .con ul li{ float: left; width: 355px; height: 425px; overflow: hidden; background: #dcdcdc url(../images/bac.png) 0px -650px no-repeat; padding: 8px;  margin-right: 40px; margin-top: 30px; }
+.content2 .con ul li .p2{ font-size: 18px;font-family: "Microsoft Yahei"; color: #333; padding: 10px 10px 0px 10px; font-weight: bold}
+.content2 .con ul li .p2 a{color: #333;}
+.content2 .con ul li .p2 a:hover{color: #ff7800;}
+.content2 .con ul li .p3{ font-size: 14px; color: #999; padding: 10px; line-height: 24px;  text-indent: 24px;}
+.content2 .con ul li .p3 a{color: #ff7800; font-weight: bold;}
+.content2 .con .tab{ text-align: right; padding-top: 20px; padding-right: 10px;}
+.content2 .con .tab span{ border: 1px solid #b3b6bb; color: #b3b6bb; padding: 0px 4px; font-size: 14px; margin-left:5px; cursor: pointer;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.content2 .con .tab span.active{ border: 1px solid #ff7800; color: #ff7800}
+.content2 .con .tab span.prev,.content2 .con .tab span.next,.content2 .con .tab span.total{ border: none; }
+.content2 .con .tab span.total{cursor: default}
+.content2 .con .tab span:hover{ color:#ff7800; border: 1px solid #ff7800;}
+.content2 .con .tab span.total:hover{color:#b3b6bb; border: none;}
+.content2 .con .tab span.prev:hover,.content2 .con .tab span.next:hover{ border: none; }

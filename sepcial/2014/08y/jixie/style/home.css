@@ -1,0 +1,104 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{font-family: simsun; background:url(img/m-bg.jpg) repeat-y center top;}
+a{color:#444;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:25px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#4f4b4a;font-size:29px;line-height:45px;}
+.navigation{margin-top:38px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.fiexd_nav{ display:none;}
+.fiexd{ position:fixed; height:auto; width:138px; right:40px; top:110px; background: url(img/rt.png)no-repeat 0 100%;_position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50));padding:0 0 0 5px; overflow:hidden;}
+.link-lc{ background:url(img/r-top.png) no-repeat -4px 0; text-align:center; padding-top:50px;}
+.fiexd .link-lc a{ width:131px; line-height:28px;height:28px;display:block;text-align:center; font-size:16px; overflow:hidden; background:url(img/bg.png) no-repeat left top;color:#bd790e; border-bottom:1px dashed #F79700;}
+.fiexd .link-lc a.hy,.fiexd .link-lc a.btop{background:none;font-size:0; text-indent:200px; overflow:hidden; border-bottom:none;}
+.fiexd .link-lc a.hy{ height:78px;}
+.fiexd .link-lc a.btop{ height:35px;}
+
+.main{ background:#ffc74e url(img/bg.jpg) no-repeat center top; padding-top:10px;}
+.main .n-bt{font-size:16px; font-weight:700; color:#fff; padding:18px 0 15px 0; height:30px;}
+.main .n-bt a,.main .n-bt a:hover{color:#fff; margin-top:7px;}
+.bt01{ margin-left:170px;}
+.bt02{ margin-left:50px;}
+.main .bt03{ margin-right:20px;}
+.nball{padding:0 0 584px 0;}
+.n-bt span{ width:261px; height:40px; display:block; background:url(img/f.png) no-repeat left top;}
+.n-bb{ height:20px;float:right; }
+.n-bb .jiathis_style{color:#fff; margin-top:10px;}
+.n-bb .jiathis_style a{ color:#fff;}
+
+.pro-c{ height:360px; overflow:hidden; zoom:1; background:#fff; width:740px; float:right;}
+.pro-c li{ width:230px; height:340px; margin:0 7px 0 9px;_margin:0 2px 0 9px; float:left; background:#fff;position:relative; overflow:hidden; padding:10px 0 0 0;}
+.thid2{ height:30px; line-height:30px; background:#ccc; display:block; padding:0 10px; visibility:hidden; overflow:hidden; zoom:1;position:absolute; top:205px; left:0; width:210px; filter:alpha(opacity:80);opacity:0.8;}
+.thid2 strong{ float:left; font-weight:normal;}
+.thid2 i{ color:#f03800;font-style:normal;}
+.thid2 em{float:right; font-weight:normal;}
+.title2{ font-size:14px; padding-left:10px; color:#444; display:block; line-height:18px; height:34px; padding-top:10px; overflow:hidden;}
+.bgf2{background:#fff;}
+.pri2{padding:0 0 6px 10px; display:block; color:#888;}
+.pri2 em{color:#e93012; font-size:20px;}
+.pri2 i{color:#e93012; font-style:normal;}
+.sho2{background:url(img/b02.png) no-repeat left top; font-size:16px; display:block; height:31px; line-height:30px; color:#fff; font-weight:700; padding:0 20px 0 10px; overflow:hidden;}
+.sho2 a{float:right; color:#fff;}
+
+.content{ clear:both; height:auto; padding-bottom:10px;background:#e8f1d8; border-bottom:20px solid #ffc74e;}
+.bg01 .ctbg,.bg01 .ctl,.bg01 .topr,.bg02 .ctbg,.width06 .ctbg{ background:url(img/icon.png) no-repeat;}
+.ctbg{ height:16px; display:block; }
+.ctall{ height:360px; padding:10px 10px 0;}
+.ctl{ width:51px; height:157px; display:inline-block;position:absolute; left:-51px; top:16px;}
+.topr{ width:10px; height:19px; display:inline-block; position:absolute; left:240px; top:20px;}
+.ct-cy{width:220px; height:340px; padding:10px; float:left; position:relative;}
+.ct-cy span img{ margin:0 6px 6px 0;}
+.ct-cy h2{font-size:16px; display:block; height:30px; font-weight:700; overflow:hidden;}
+.ct-cy p{line-height:26px; border-top:1px solid #ebd2b9; padding:6px 0;} 
+.bg01{ background:#ff8400;}
+.bg01 .ctbg{background-position:0 0;}
+.bg01 .ctl{ background-position:0 -127px;}
+.bg01 .topr{ background-position:-312px -127px;}
+.bg01 .ct-cy{background:#e8f1d8; }
+
+
+.arpall{}
+.arpall{ height:auto; overflow:hidden; zoom:1; padding:0 0 10px 10px;_padding:0 0 10px 4px; width:1010px;}
+.arpall li{width:240px; height:auto; float:left; position:relative; margin:10px 6px 0 0;}
+.arpall li span{ display:block; height:26px; line-height:26px; color:#000;filter:alpha(opacity=80);opacity: 0.8; background:#ccc; width:240px; position:absolute; top:70px; left:0; text-align:center; display:none;}
+
+.arpimg{ width:240; height:95px; display:inline-block; border:1px solid #e5e5e5; background:#fff;}
+.arptitle{ height:26px; display:block; text-align:center; color:#fff; font-size:13px; line-height:26px; width:240px; overflow:hidden;}
+.width06{ width:1000px; overflow:hidden; height:auto;}
+.width06 .ctbg{background-position:0 -100px;}
+.width06 h2{height:50px; background:url(img/title01.png) no-repeat center center;}
+
+
+.fiexd_nav{ display:none;}
+.fiexd{ position:fixed; height:40; width:133px; right:40px; top:140px; background: url(img/wm.png) 0 0 no-repeat;_position:absolute; _top:expression(eval((document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-50));padding:175px 0 0 0; overflow:hidden;}
+.fiexd .link-lc{ padding:0;}
+.fiexd .link-lc a.btop{ height:35px; display:block;}

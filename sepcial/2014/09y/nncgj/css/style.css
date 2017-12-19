@@ -1,0 +1,50 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');/*
+ 合并后引入如下
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+*/
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+
+/* 以下为专题样式 */
+.content{background:#fb333d;min-width:1000px}
+
+.banner{height:650px;background:url(../image/banner02.jpg) no-repeat center bottom;}
+.banner01{height:325px;background:url(../image/banner01.jpg) no-repeat center 0;}
+
+.box .hd{position: relative;margin-bottom:-5px; height:145px;background:url(../image/hd.jpg) no-repeat 0 0;}
+.box .bd{padding-bottom:18px}
+
+.list{width:960px; margin:0 auto;}
+.list .tag{position: absolute;margin-left:246px; width:66px; padding-top:4px; height:63px;overflow: hidden; background:url(img/tag.png) no-repeat 0 0;color:#fff;text-align: center;font-size:20px;line-height:1}
+.list .tag strong{font-size:30px}
+.list li{float: left;_display: inline; width:312px;margin:5px 4px;padding-bottom:18px; background:#fff}
+.list a:hover{text-decoration: none;}
+.list .price{margin:0 15px; display: block;font-size:24px;color:#f75d57}
+.list .price strong{font-size:40px}
+.list .t{display: block; margin:0 18px; color:#3b3b3b;font-size:18px}
+.list .t:hover{color:#f75d57}
+.list .btn{display: block;margin:12px 18px 0;height:50px;line-height:50px; background:#f75d57;color:#fff;font-size:24px;text-align: center;border-radius:5px}
+.mini-list{width:956px}
+.mini-list li{width:235px;margin:4px 2px;}
+.mini-list .price{margin:0 12px; font-size:16px}
+.mini-list .price strong{font-size:30px}
+.mini-list .t{margin:0 15px; font-size:14px}
+.mini-list .btn{margin:10px 15px 0;font-size:18px;height:38px;line-height:38px}

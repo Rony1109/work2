@@ -1,0 +1,70 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,宋体,'Hiragino Sans GB';
+}
+h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-size: 100%;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+code, kbd, pre, samp {
+    font-family: courier new,courier,monospace;
+}
+small {
+    font-size: 12px;
+}
+ul, ol {
+    list-style: none outside none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+legend {
+    color: #000000;
+}
+fieldset, img {
+    border: 0 none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{font-family:microsoft yahei;}
+.clearfix {}
+.clearfix:before, .clearfix:after {content: "";display: table;line-height: 0;}
+.clearfix:after {clear: both;}
+.h-348{ height:348px;min-height:348px;}
+.h-708{ min-height:708px;}
+.h-501{ height:501px; min-height:501px;}
+.h-516{ height:516px; min-height:516px;}
+.bg-c-fff{ background-color:#fff;}
+.bg-c-cee3ea{ background-color:#cee3ea;}
+.m-t-b160{margin-top: -160px;}
+.w-300{width:300px;}
+.w-700{width:700px;}
+.b-b-cf{border-bottom:1px dotted #cfcfcf;}
+.ellipsis,.f-n-list ul li,.b-txt li,.bbs-main h4,.bbs-main ul li,.m-l-ul li span,.bs-list ul li span
+{overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}/*省略号...*/
+
+.icon,.icon-disc,.icon-droparrow,.icon-txt,.icon-logo,.icon-drop-l,.icon-arrow,.icon-b,.icon-v1,.icon-v2
+{display:inline-block;*display:inline-block;*zoom:1;height:0px;overflow:hidden;vertical-align:middle;}
+.icon-droparrow{width:14px;padding-top:7px;background:url(../images/font-img.png) no-repeat 0 -164px;position:absolute;top:0;left:18px;}
+.icon-arrow{width:9px;padding-top:9px;background:url(../images/font-img.png) no-repeat 0 -271px;}
+.icon-b{width:10px;padding-top:37px;background:url(../images/font-img.png) no-repeat -11px -260px;}
+.icon-v1{width:15px;padding-top:17px;background:url(../images/font-img.png) no-repeat -28px -260px;}
+.icon-v2{width:15px;padding-top:17px;background:url(../images/font-img.png) no-repeat -28px -280px;}
+
+.coverbg{ background-color:#fff; margin-top:2px; height:2px; width:100%;}

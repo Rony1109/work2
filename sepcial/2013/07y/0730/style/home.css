@@ -1,0 +1,100 @@
+/* CSS 5 */
+*html { background-attachment:fixed; background-image:URL("about:blank"); }
+.main{ background:#f8f8f8;}
+
+.head{background:url(img/headbg.png) repeat-x left top; height:90px;}
+.head .logo{ width:244px; height:50px;margin-top:20px; display:inline-block; background:url(img/logo.png) no-repeat left top; float:left;}
+.menu{height:26px; line-height:26px; padding-top:35px;}
+.menu a{color:#000; padding:0 12px; font-size:14px; font-weight:700; display:inline-block; margin-left:10px;border-radius:3px;}
+.menu a.cur,.menu a:hover{text-decoration:none; background:#214d98; color:#fff;}
+
+.banner{ width:1000px; height:306px; overflow:hidden;}
+.t-h2{ font-size:20px; font-weight:700; color:#214d98; margin-top:15px;}
+
+.illustration{position:relative;  margin-top:15px;}
+.title{height:46px; line-height:46px; }
+.title h2{color:#214d98; position:absolute;  font-size:20px; font-weight:700; font-family:"微软雅黑";}
+.title span{ float:right; color:#c0c0c0;}
+.title span a{ margin:0 8px; color:#595757;}
+.it-sig{ padding-top:25px; position:relative; clear:both; display:none;padding:28px;background:#fff;}
+.bn{ width:320px; height:240px; display:inline-block; overflow:hidden; float:left;}
+.bn li{width:320px; height:240px;display:none; position:relative;}
+.bn li.cur,.illustration .show{ display:inline-block;}
+.info{ position:absolute; bottom:0; left:0; background:#000; filter:alpha(opacity=70);opacity: 0.7; color:#fff; height:24px; line-height:24px; padding-left:8px; width:312px;}
+.bn-list{ position:absolute; top:248px; left:260px;}
+.bn-list a{ width:14px; height:14px; display:inline-block; margin-right:8px; background:url(img/ic01.png) no-repeat left top; line-height:14px; text-align:center; color:#fff;}
+.bn-list a:hover,.bn-list a.cur{ color:#c80000; background:url(img/ic02.png) no-repeat left top; text-decoration:none;}
+
+.it-p{ margin-left:340px; height:240px;}
+.it-p p{ text-indent:26px; line-height:22px;}
+.show{}
+.connection{ position:absolute; right:30px; top:220px; _top:220px; padding:10px;height:80px; display:block; width:586px; border-top:4px solid #efefef;}
+.connection ul{ float:left;}
+.connection ul li{ height:20px; line-height:20px;padding-left:20px;}
+.connection ul em{font-weight:700; line-height:20px; }
+.connection ul li.t01{ background:url(img/ic04.png) no-repeat left 5px;}
+.connection ul li.t02{ background:url(img/ic05.png) no-repeat left 5px;}
+.connection ul li.t03{ background:url(img/ic03.png) no-repeat left 5px;}
+.connection ul li.t04{ background:url(img/ic06.png) no-repeat left 5px;}
+.btntow{ width:186px; height:45px;display:inline-block;background:url(img/btn.jpg) no-repeat left top; font-size:0px; text-indent:100px; overflow:hidden; position:absolute; right:32px;top:305px;}
+
+.content,.bn02,.pr01{ height:auto; overflow:hidden; zoom:1;}
+.content .l{ width:697px;}
+.content .r{ width:290px;}
+.bn02{ border-bottom:2px solid #fff; background:#fff; margin-top:10px; width:697px; height:294px; overflow:hidden;}
+.bn02 li{ float:left; height:294px; width:55px; overflow:hidden;}
+.bn02 li span{width:55px;display:inline-block; float:left; cursor:pointer;}
+.bn02 li a.i{width:472px;height:294px;overflow:hidden; float:left; margin-left:2px;}
+.img-width{ width:530px; display:block;}
+
+.pr01{ background:#fff; padding:10px 20px; margin-top:10px;}
+.pr01 a.cnt{ height:36px; line-height:36px; border-bottom:1px dashed #e3e3e3;wihte-space:nowarp;text-overflow:ellipsis;-webkit-test-overflow:ellipsis; overflow:hidden; display:block; color:#595757;}
+.pr01 .cnt-sing{ display:none; height:79px; overflow:hidden; padding-top:10px;}
+.pr01 .cnt-sing a.img{ width:92px; height:79px; overflow:hidden; display:inline-block; float:left;}
+.cs-r{ margin-left:102px;}
+.cs-r a{ color:#c80000; height:20px; line-height:20px; display:block; wihte-space:nowarp;text-overflow:ellipsis;-webkit-text-overflow:ellipsis; overflow:hidden;}
+.cs-r p{ height:60px; overflow:hidden; line-height:20px;}
+.pr01 li.cur .cnt-sing{ display:block;}
+.pr01 li.cur .cnt{ display:none;}
+
+.voi{ width:288px; height:233px; overflow:hidden; margin-top:10px; display:block;}
+.po03 .cto-all{  height:233px; margin:0 25px;background:#fff; overflow:hidden; position:relative;}
+.po03{margin-top:10px; background:#fff;}
+.po03 .cto{position:absolute; left:0; top:0;padding:40px 0 0 0; overflow:hidden; display:block;width:10000px;}
+.po03 li{float:left; margin-right:14px;}
+.po03 li a{ display:block;}
+.po03 li a.bfot{ height:30px; line-height:30px; color:#595757; wihte-space:nowarp;text-overflow:ellipsis;-webkit-text-overflow:ellipsis; overflow:hidden; width:180px; text-align:center;}
+.po03 span{ width:30px; height:138px; display:inline-block; float:left; background:#e5e5e5; padding:95px 0 0 10px; cursor:pointer;}
+.po-width{height:233px;}
+.po-width li{width:180px;}
+.po-width .cto{height:183px;}
+.po-width .cto-all{width:567px;}
+.po-width02{height:253px;}
+.po-width02 li{width:206px;}
+.po-width02 .cto{height:193px;}
+.po-width02 .cto-all{width:870px;}
+
+.bgfoot{ background:#ededed; border:none;color:#5b5b5b;}
+.bgfoot a{ color:#5b5b5b;}
+
+
+.tablewidth{ background:#fff; width:635px; position:relative;}
+.tablewidth table{ margin:20px 0 0 0px;}
+.tablewidth tr{height:24px; line-height:24px;}
+.tablewidth tr td{padding:4px; color:#333;}
+.tablewidth tr th{width:100px; padding:4px;text-align:right; font-weight:normal; font-size:16px; color:#17357d; vertical-align:text-top;}
+
+.tab-title{ height:30px; line-height:30px; padding-left:20px; font-size:22px; font-weight:700; color:#202020; border-left:4px solid #0041ad;font-family:"微软雅黑"; margin-top:15px;}
+.tablewidth input{ height:24px; line-height:24px; width:250px; padding:0 6px; border:1px solid #dedede;}
+.btn-sub button{ width:96px; height:34px;font-weight:700; text-align:center; margin:0 auto; font-size:15px; color:#f9f3d6; background:url(img/sub.png) no-repeat top left; border:none; cursor:pointer; margin-top:20px;}
+.tablewidth textarea{ width:500px; height:165px;border:1px solid #dedede;}
+.aui_state_focus .aui_content{ padding:0;}
+.aui_state_focus .aui_buttons{ text-align:center;}
+.pofont{ display:none; color:#f30; font-weight:700; font-size:14px;}
+.aui_state_focus .aui_buttons button{ width:96px; height:34px; color:#595757; font-weight:normal; border:1px solid #cfcfcf;}
+.aui_state_focus .aui_buttons{ padding-bottom:15px;}
+.aui_outer .aui_icon,.aui_outer .aui_close{ display:none;}
+.popto{ height:10px; position:relative;}
+.popto button{ width:96px; height:34px; background:url(img/sub02.png) no-repeat left top; display:inline-block; border:none; position:absolute; bottom:-42px; left:333px; cursor:pointer;}
+.tablewidth input.radio-in{ width:20px; border:none;}
+

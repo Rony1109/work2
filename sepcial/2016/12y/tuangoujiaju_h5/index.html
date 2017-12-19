@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+  <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+  <meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+  <meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+  <meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+  <meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+  <meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+  <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+  <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+  <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+  <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+  <meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+  <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+  <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+  <meta name="browsermode" content="application"><!-- UC应用模式 -->
+  <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+  <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+  <meta name="keywords" content="团购家,采购批发,厂家联盟,底价供货,厂家货源,店铺推广,品牌打造,网络接单,网上交易,网上贸易"/><!-- seo 关键字 -->
+  <meta name="description" content="华南城网团购家，聚焦优质供应商，所有商家经平台认证，抱团供货，保证采购商以优惠的价格采购到优质正品，第三方担保，真正让商家采购无忧；加入团购家供应商，享受多种搜索引擎曝光和人工匹配订单，助你品牌、订单齐增长。"/><!-- seo 网页描述 -->
+  <title>华南城网团购家，聚焦优质供应商，轻松省心赢市场 _华南城网</title>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/index.css"/>
+  <script src="js/flexible.js"></script><!--已经手动修改字体算法-->
+  <!--<script>//为加速js，置为内联-->
+    <!--!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));-->
+  <!--</script>-->
+</head>
+<body>
+  <!--banner区域start-->
+  <header>
+    <a href="" rel="nofollow" title="华南城五金机电商城">
+      <img src="./con_img/banner.jpg" alt="" class="wh_1 block mg-au" />
+    </a>
+  </header>
+  <!--banner区域end-->
+  <section>
+    <article class="wh_1 hg_1 mg-au bg_img_1"><!--banner图片新闻区域start-->
+          <div class="wh_2  mg-au bg_c_2 po_r tp_1 pd_6">
+            <ul class=" wh_4 mg-au clearfix fo_sz_2">
+              <li class="te_al_c wh_12 fl " >
+                <a href="http://www.csc86.com/zt/tuangou/wjgj/">
+                <img src="./con_img/con_img_1.jpg" alt="" class="wh_3 fo_sz_0 block mg-au hg_2"/> </a>
+                <div class=" fon_c_2 bg_c_1 wh_3 mg-au li_hg_0 pd_1 no_wrap">五金工具配件专场</div>
+               
+              </li>
+              <li class="te_al_c wh_12 fl " >
+                <a href="https://www.csc86.com/zt/tuangou/wfb161031h5/">
+                <img src="./con_img/con_img_2.jpg" alt="" class="wh_3 fo_sz_0 block mg-au hg_2"/> </a>
+                <div class="  bg_c_1 wh_3 mg-au li_hg_0 pd_1 no_wrap">纺织面辅料专场</div>
+               
+              </li>
+              <li class="te_al_c wh_12 fl " >
+                <a href="http://www.csc86.com/zt/tuangou/wj/">
+                <img src="./con_img/con_img_3.jpg" alt="" class="wh_3 fo_sz_0 block mg-au hg_2"/> </a>
+                <div class=" fon_c_2 bg_c_1 wh_3 mg-au li_hg_0 pd_1 no_wrap">紧固件专场</div>
+               
+              </li>
+              <li class="te_al_c wh_12 fl " >
+                <a href="https://www.csc86.com/zt/tuangou/yph5/">
+                <img src="./con_img/con_img_4.jpg" alt="" class="wh_3 fo_sz_0 block mg-au hg_2"/></a>
+                <div class=" fon_c_2 bg_c_1 wh_3 mg-au li_hg_0 pd_1 no_wrap">焊锡专场</div>
+              </li>
+              <li class="te_al_c wh_12 fl " >
+                <img src="./con_img/con_img_10.png" alt="" class="wh_3 fo_sz_0 block mg-au hg_3"/>
+                <div class="wh_3 bg_c_1 mg-au">
+                  <ul class="fo_sz_1 te_al_l mg-au wh_5  ov_hid">
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/jincaishiliao/" target="_blank" class="">金材实料 实用好五金</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://haerbin.csc86.com/zt/ddgj.html" class="">电动工具专场团购</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://haerbin.csc86.com/zt/wujinjidian.html" class="">五金机电品质团购会</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/tuangou/wjgj/" class="">五金工具团购秒杀 价格低至0.01元</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/wujinhaohuo/" class="">五金好货，火热开购</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/wujintuangou2/" class="">西安华南城网五金建材团购盛惠</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/tuangou/yp/" class="">焊锡团购批发 爆款秒杀</a>
+                    </li>
+                    <li class="bg_img_5 no_wrap pd_2">
+                      <a href="http://www.csc86.com/zt/2016/qctg2/qtc2.html" class="">特价一分钱进货</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+    </article><!--banner图片新闻区域end-->
+    <article class="wh_1  mg-au bg_img_2 te_al_c pd_3" ><!--团购家发展里程碑start-->
+      <img src="./con_img/con_img_5.png" class=" wh_6 hg_5 pd_4 block mg-au"/>
+      <ul class="wh_7  clearfix fo_sz_1">
+        <li class=" fon_c_1 fl wh_13">          
+          <div class="pd_5">
+            <div class="li_hg_0 pd_7">2016年4月21日</div>
+            <div class="li_hg_0">团购家战略发布会</div>
+          </div> 
+          <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+          <a href="http://www.csc86.com/zt/fbh/"><img src="./con_img/con_img_7.jpg" alt="团购家战略发布会" class="wh_8 hg_8"/></a>
+          </div>
+        </li>
+        <li class=" fon_c_1 fl wh_13">          
+          <div class="pd_5">
+            <div class="li_hg_0 pd_7">2016年6月22日</div>
+            <div class="li_hg_0">团购家供采巡展会</div>
+         </div> 
+         <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+         <a href="http://www.csc86.com/zt/gcxz/"> <img src="./con_img/con_img_9.jpg" alt="团购家供采巡展会" class="wh_8 hg_8"/></a>
+          </div> 
+        </li>
+        <li class=" fon_c_1 fl wh_13">
+          <div class="pd_5">            
+            <div class="li_hg_0 pd_7">2016年11月16日</div>
+            <div class="li_hg_0">GMV突破一亿元</div>  
+          </div>       
+          <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+          <a href="http://info.csc86.com/microchawidefield/2016/1117/8451.html"> <img src="./con_img/con_img_10.jpg" alt="" class="wh_8 hg_8"/></a>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <img src="./con_img/con_img_11.png" alt="" class=" wh_2 hg_7 block mg-au" />
+      <ul class="wh_7  clearfix fr fo_sz_1">
+        <li class=" fon_c_1 fl wh_13">
+          <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+          <a href="http://www.csc86.com/zt/qyys/"><img src="./con_img/con_img_11.jpg" alt="平安银行签约仪式" class="wh_8 hg_8"/></a>
+          </div>
+          <div class="pd_5">
+            <div class="li_hg_0 pd_7">2016年5月18日</div>
+            <div class="li_hg_0">平安银行签约仪式</div>
+          </div>
+        </li>
+        <li class=" fon_c_1 fl wh_13">
+          <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+           <a href="http://info.csc86.com/microchawidefield/2016/0805/8339.html"><img src="./con_img/con_img_12.jpg" alt="团购家客户分享会" class="wh_8 hg_8"/> </a>
+          </div>
+          <div class="pd_5">
+            <div class="li_hg_0 pd_7">2016年8月5日</div>
+            <div class="li_hg_0">团购家客户分享会</div>
+          </div>
+        </li>
+        <li class="fon_c_1 fl wh_13">
+          <div class="wh_8 hg_8 mg-au bg_c_1 bor_1 bor_r">
+           <a href="http://info.csc86.com/microchawidefield/2016/1126/8476.html"><img src="./con_img/con_img_13.jpg" alt="西安五金团购家" class="wh_8 hg_8"/> </a>
+          </div>
+          <div class="pd_5">
+            <div class="li_hg_0 pd_7">2016年11月25-26日</div>
+            <div class="li_hg_0">西安五金团购家</div>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </article><!--团购家发展里程碑end-->
+
+    <article class="wh_1  mg-au bg_img_4 te_al_c pd_3"><!--入驻团购家优质供应商start-->
+      <img src="./con_img/con_img_6.png" alt="" class=" wh_6 hg_5 pd_4 block mg-au"/>
+      <div class="hg_9"></div>
+      <div class="wh_2 mg-au ">
+        <ul class="clearfix">
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_c.jpg" alt="SBS" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_r.jpg" alt="BOSCH" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_s.jpg" alt="中实焊锡" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_d.jpg" alt="中泰皮业" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_e.jpg" alt="兴兴文华" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_f.jpg" alt="恒益兴针纺" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_g.jpg" alt="腾达行纺织品" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_h.jpg" alt="长弘布业" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_a.jpg" alt="佳联华" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_b.jpg" alt="三盛纺织皮革" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_i.jpg" alt="嘉鹏兴纺织" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_j.jpg" alt="连坚纺织" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_k.jpg" alt="恒顺纺纺织" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_l.jpg" alt="和顺纺织" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_m.jpg" alt="华昊无纺布" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_n.jpg" alt="东侨无纺布" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_o.jpg" alt="" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_p.jpg" alt="奥斯卡绳带" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_q.jpg" alt="信和成" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_t.jpg" alt="PB" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_u.jpg" alt="世达工具" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_v.jpg" alt="东成" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_w.jpg" alt="MIPOX" class="wh_10 "/></li>
+          <li class="wh_9 fl ma-bom_1"><img src="./con_img/con_img_x.jpg" alt="日立" class="wh_10 "/></li>          
+        </ul>
+      </div>
+      <div class="hg_9 clear"></div>
+      <a href="http://member.csc86.com/register/signup"><img src="./con_img/con_img_8.png" alt="" class=" wh_11 block mg-au"/></a>
+    </article><!--入驻团购家优质供应商end-->
+
+    <article class="wh_1  mg-au bg_img_3 te_al_c pd_8"><!--供应商会员专享权益start-->
+      <img src="./con_img/con_img_12.png" alt="" class=" wh_6 hg_5 block mg-au"/>
+      <div class="hg_6"></div>
+        <ul class="clearfix wh_14 mg-au">
+          <li class="wh_13 fl">
+            <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+              <img src="./con_img/con_img_18.png" alt="" class="wh_16 block mg-au"/>
+              <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">正品特价</div>
+              <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+                平台认证，正品保证
+                团购产品特价供货
+              </div>
+            </div>
+          </li>
+          <li class="wh_13 fl">
+            <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+              <img src="./con_img/con_img_19.png" alt="" class="wh_16 block mg-au"/>
+              <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">优质货源</div>
+              <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+                业内知名企业
+                实力工厂，品质保证
+              </div>
+            </div>
+          </li>
+          <li class="wh_13 fl">
+            <div class="wh_15 mg-au bor_2 pd_9 bor_r">
+              <img src="./con_img/con_img_20.png" alt="" class="wh_16 block mg-au"/>
+              <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">交易保障</div>
+              <div class="fo_sz_4 wh_17 mg-au fon_c_3 li_hg_1">
+                第三方担保 资金安全
+                售后服务支持
+              </div>
+            </div>
+          </li>
+        </ul>
+      <div class="clear"></div>
+      <div class="pd_4 fo_sz_4 fon_c_3">
+        我是采购商&nbsp;&nbsp;我要免费注册成为采购会员&nbsp;&nbsp;&nbsp;&nbsp;<span class="fon_c_4 tx_dec-uli" id="cgsQq1">联系客服QQ</span>
+      </div>
+      <a href=""><img src="./con_img/con_img_21.png" alt="" class=" wh_11 block mg-au"/></a>
+      <div class="hg_6"></div>
+      <a href="http://member.csc86.com/register/signup"><img src="./con_img/con_img_13.png" alt="" class=" wh_6 pd_4 block mg-au"/></a>
+      <ul class="clearfix wh_19 mg-au">
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_14.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">优先曝光</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              优先获得百度、
+              360等搜索引擎
+              海量流量，提高
+              产品曝光
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_15.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">身份标识</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              个性化旺铺、实
+              地认证，活动产
+              品页面及旺铺首
+              页标签展示
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_16.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">海量订单</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              优先获得平台海
+              量团购订单，更
+              有优质采购商资
+              源匹配
+            </div>
+          </div>
+        </li>
+        <li class="wh_18 fl">
+          <div class="wh_20 mg-au bor_3 pd_9 bor_r">
+            <img src="./con_img/con_img_17.png" alt="" class=" hg_10 block mg-au"/>
+            <div class="fo_sz_3 fon_c_1 fon_w_b pd_4">共赢成长</div>
+            <div class="fo_sz_4 wh_17 mg-au fon_c_1 li_hg_1 te_al_l">
+              团购供应商作为
+              华南城网合作伙
+              伴，共享品牌成
+              长及推广资源
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class=" pd_4 fo_sz_4 fon_c_3">
+        我是供应商&nbsp;&nbsp;我要加入团购活动供货&nbsp;&nbsp;&nbsp;&nbsp;<span class="fon_c_4 tx_dec-uli" id="cgsQq2">联系客服QQ</span>
+      </div>
+      <a href="http://member.csc86.com/register/signup"><img src="./con_img/con_img_21.png" alt="" class=" wh_11 block mg-au"/></a>
+    </article><!--供应商会员专享权益end-->
+
+    <article class="wh_1  mg-au bg_img_6 te_al_c "><!--保障start-->
+      <ul class="clearfix  mg-au">
+        <li class="wh_21 fl">
+            <img src="./con_img/con_img_22.png" alt="" class="wh_22 block mg-au"/>
+        </li>
+        <li class="fl">
+          <img src="./con_img/con_img_23.png" alt="" class="wh_23 block mg-au"/>
+        </li>
+      </ul>
+      <div class="hg_6"></div>
+    </article><!--保障end-->
+  </section>
+
+  <!--统计代码 start-->
+ <div style="display:none"><script src="http://res.csc86.com/js/m/statistics.js"></script></div>
+  <!--统计代码 end-->
+</body>
+<script src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+<script>
+  BizQQWPA.addCustom({ //增加自定义外观的WPA
+    aty: '0', //接入类型，0-自动分流，1-指定工号，2-指定分组
+    a: '1002',  //指定接入者，当aty=0时无效
+    nameAccount: '4001848666',//采购商客服QQ号
+    selector: 'cgsQq1'//指定成为WPA的元素ID
+  });
+  BizQQWPA.addCustom({ //增加自定义外观的WPA
+    aty: '0', //接入类型，0-自动分流，1-指定工号，2-指定分组
+    a: '1002',  //指定接入者，当aty=0时无效
+    nameAccount: '4001848666',//采购商客服QQ号
+    selector: 'cgsQq2'//指定成为WPA的元素ID
+  });
+</script>
+</html>

@@ -1,0 +1,343 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+body{
+	background-color: #f9f9f9;
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+}
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px; font-weight:bold;line-height:56px; text-decoration: none;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+/*.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}*/
+.pribg{
+	background-color: #23b5ab;
+	color:#fff;
+}
+p{
+	text-indent: 2em;
+}
+/* 以下为专题样式 */
+.banner{
+	background-image: url(../image/banner_bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #28b7ad;
+	height: 500px;
+}
+.bantxt{
+	height: 100%;
+	position: relative;
+
+}
+.bantxt p{
+	position: absolute;
+	width:100%;
+	bottom:12px;
+	text-align: right;
+	color: #fff;
+	right:200px;
+}
+.daoyu{
+	position: relative;
+	padding:15px 12px;
+	margin:30px 0 20px;
+}
+.daoyu p{
+	margin-left:80px;
+	line-height: 25px;
+	
+}
+.daoyu span{
+	position: absolute;
+	top:-15px;
+}
+.item2{
+	border:1px solid #ddd;
+	background-color: #fff;
+	padding:20px 10px;
+	position: relative;
+}
+.it2-cnl{
+	width:290px;
+}
+.it2-cnc{
+	width: 377px;
+	height: 417px;
+	background: url(../image/hlwfz.png) no-repeat ;
+	position: relative;
+}
+.it2-cnc .it2-cnp{
+	position: absolute;
+	width:100%;
+	bottom:99px;
+
+}
+.it2-cnc .it2-cnp p{
+	margin:0 10px;
+	font-weight: bold;
+}
+.itm-blo-box.top{
+	height: 260px;
+}
+.itm-block{
+	background-color: #23b5ab;
+	color:#fff;
+	position: relative;
+	padding:35px 15px 20px 15px;
+	margin-top:23px;
+}
+.itm-block h2{
+	position: absolute;
+	top:-23px;
+	font-size: 1.8em;
+	font-weight: 500;
+}
+.itm-block h2 span{
+	display: inline-block;
+	background-color: #fff;
+	color:#23b5ab;
+	padding:5px 10px;
+	border-radius: 5px;
+}
+.itm-block h2 span a{
+	color:#23b5ab;
+}
+.itm-block p{
+	text-indent: 2em;
+	line-height: 25px;
+}
+.itm-block p a{
+	/*color:#f10053;*/
+}
+.itm-blo-box .g-tc{
+	margin-top:23px
+}
+.item-tit{
+	background: url(../image/tit-bg.jpg) repeat-x;
+	height: 70px;
+	margin:20px 0 0;
+}
+.item-tit h3{
+	position: relative;
+	float: left;
+	background-color: #23b5ab;
+}
+.item-tit h3 strong{
+	color:#fff;
+	font-size: 2em;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+	display: inline-block;
+	padding:0 10px;
+}
+.tit-end-bg{
+	position: absolute;
+	right:-26px;
+}
+.item-ct{
+	padding:25px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-top:none;
+}
+.item3-top{
+	background: url(../image/fz-guid-line.png) no-repeat center center;
+	height: 250px;
+}
+.item3-top ul li{
+	float: left;
+	width:263px;
+	height: 194px;
+	margin-right:10px;
+	padding:20px 20px   0 23px;
+	background: url(../image/fz-event.png) no-repeat;
+	color:#fff;
+	position: relative;
+}
+.item3-top ul li h4{
+	font-size: 1.5em;
+	border-bottom:1px dashed #fff;
+	margin:10px 0;
+	padding:10px 0;
+	text-align: center;
+}
+.item3-top ul li h4 a{
+	color:#fff;
+}
+.item3-top ul li p{
+	text-indent: 2em;
+}
+.item3-top ul li p a{
+	color:;
+}
+.item3-top ul li span{
+	position: absolute;
+	left:1px;
+	top:5px;
+}
+.item3-top ul li.center{
+	margin-top:35px;
+}
+.ed-say{
+	background-color:#f2f2f2;
+	margin-top:20px;
+}
+.ed-say .ed-cn{
+	width:558px;
+	margin-left:10px;
+	background: url(../image/fz-editor-say.jpg);
+	height: 171px;
+}
+.ed-say .ed-cn p{
+	text-indent: 2em;
+	margin:50px 0  30px;
+}
+.item4-cn{
+	width:453px;
+}
+.item4-top .g-cf{
+	border-bottom:1px dashed #8e8e8e ;
+	padding:20px 0;
+}
+.item4-cn h4{
+	color: #23b5ab;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+.item4-cn h4 a{
+	color: #23b5ab;
+}
+.item4-cn p{
+	font-size: 1.1em;
+}
+.item4-cn p a{
+	color: #f10053;
+}
+.i5-left{
+	width:374px;
+	background: url(../image/fz-offline-bg1.png) no-repeat;
+}
+.i5-center{
+	width:132px;
+	background: url(../image/fz-offline-bg2.png) no-repeat center center;
+	height: 577px;
+}
+.i5-right{
+	width:370px;
+	background: url(../image/fz-offline-bg3.png) no-repeat bottom left;
+}
+.i5-block h4{
+	background-color: #23b5ab;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	padding:5px 25px;
+}
+.i5-block h4 a{
+	color:#fff;
+}
+.i5-block h4,.i5-block .i5-bot{
+	
+}
+.i5-block .i5-bot{
+	background-color: #f5f5f5;
+	background-image: url(../image/fz-art-end.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding: 20px 25px;
+}
+.i5-block .i5-bot p{
+	text-indent: 2em;
+	background: url(../image/fz-ind-img.jpg) no-repeat left 4px;
+}
+.i5-left   .i5-block{
+	margin-top:380px;
+}
+.i5-right   .i5-block{
+	margin-bottom:380px;
+}
+.end-tit{
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.item6{
+	background-color: #fff;
+	border:1px solid #ddd;
+}
+.img-scroll {
+	position: relative;
+	padding: 25px;
+	margin-top: 0px;
+	width: 920px;
+	float: right;
+	margin-right: 17px;
+}
+.scroll-box {
+	overflow: hidden;
+	width: 900px;
+	margin: 0 auto;
+}
+.scroll-box ul {
+	width: 9999px;
+	text-align: center;
+}
+.scroll-box li {
+	float: left;
+	display: inline;
+	margin-right: 15px;
+	width: 215px;
+}
+.scroll-box li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+.scroll-box li a img {
+	width: 209px;
+	height: 160px;
+	vertical-align: middle;
+}
+.ctr-l, .ctr-r {
+	text-align: center;
+	top: 0;
+	display: block;
+	position: absolute;
+	width: 32px;
+	height:100%;
+	cursor: pointer;
+}
+.ctr-l {	
+	background: url(../image/left_arr.png) no-repeat center center;
+	left:0;
+}
+.ctr-r {
+	background: url(../image/right_arr.png) no-repeat center center;
+	right:0;
+}

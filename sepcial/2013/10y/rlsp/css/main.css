@@ -1,0 +1,327 @@
+/*css格式化*/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, address, big, cite, code, del, em, font, 
+img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, 
+ul, li, fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+:focus {
+    outline: 0 none;
+}
+a img {
+    border: 0 none;
+}
+img {
+    vertical-align: middle;
+}
+table {
+    empty-cells: show;
+}
+a {
+	font-size: 13px;
+	font-family: 宋体;
+	text-decoration: none;
+}
+a:hover {text-decoration: none;}
+.clear {
+	clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+body {
+    background: #C1682C;
+}
+
+
+.claim_wrapper {
+    height: 600px;
+    background: #F0BA22 url(../images/header.jpg) no-repeat center 30px;
+}
+.claim_wrapper div.top-bar {
+	height: 30px;
+	line-height: 30px;
+}
+
+.claim_wrapper .rows {
+    width: 1000px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.claim_wrapper .rows .logo {
+    width: 192px;
+    height: 36px;
+    position: absolute;
+    left: 7px;
+    top: 17px;
+}
+
+.claim_wrapper .rows .info {
+    width: 580px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 190px;
+    padding: 10px;
+    font-size: 12px;
+    color: #BE2606;
+}
+
+.claim_wrapper .rows .info .left p {
+    font-size: 16px;
+    font-family: 微软雅黑
+}
+
+.claim_wrapper .rows .info .right {
+    margin-right: -40px; 
+    margin-top: -5px;
+}
+
+.claim_wrapper .rows .info .right h3 {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 微软雅黑;
+    color: #C5380A;
+    margin-bottom: 5px;
+}
+
+.claim_wrapper .rows .info .right h3 b {
+    color: #731806;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.claim_wrapper .rows .info .right p {
+    text-align: center;
+}
+
+.claim_wrapper .rows .info .right p span {
+    margin-right: 8px;
+}
+
+.claim_wrapper .rows .button1 {
+    width: 160px;
+    height: 45px;
+    position: absolute;
+    top: 355px;
+    left: 410px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.claim_wrapper .rows .button1 a {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+	color: #fff;
+    text-shadow: 5px 5px 18px #8B1A08;
+}
+
+.claim_wrapper .rows .banner {
+    position: absolute;
+    top: 476px;
+    left: 15px;
+}
+
+.claim_wrapper .rows .ctn1 {
+    position: absolute;
+    top: 630px;
+	overflow:hidden
+}
+
+.claim_wrapper .rows .ctn1 .blank2 {
+    height: 65px;
+    background: #BF2606;
+	line-height:65px;
+}
+
+.claim_wrapper .rows .ctn1 .blank2 img {
+    vertical-align: top
+}
+
+.claim_wrapper .rows .ctn1 .blank2 h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+	*line-height: 40px;
+    font-family: 微软雅黑;
+	font-size: 30px;
+	margin-top:-45px;
+	*margin-top: 0px;
+}
+
+.claim_wrapper .rows .ctn1 .article1 {
+    padding: 49px;
+    background: #FFE8A4
+}
+
+.claim_wrapper .rows .ctn1 a {
+    width: 160px;
+    height: 45px;
+    position: absolute;
+    top: 128px;
+    left: 150px;
+    text-align: center;
+    line-height: 38px;
+    z-index: 99;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    text-shadow: 3px 3px 5px #8B1A08;
+}
+
+.claim_wrapper .rows .ctn2 {
+    position: absolute;
+    top: 1415px;
+	overflow:hidden
+}
+
+.claim_wrapper .rows .ctn2 .blank2 {
+    height: 65px;
+    background: #BF2606;
+	overflow:hidden
+}
+
+.claim_wrapper .rows .ctn2 .blank2 img {
+    vertical-align: top
+}
+
+.claim_wrapper .rows .ctn2 .blank2 h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+	*line-height: 40px;
+    font-family: 微软雅黑;
+	font-size: 30px;
+}
+
+.claim_wrapper .rows .ctn2 .article1 {
+    padding: 85px;
+    background: #FFE8A4
+}
+
+.claim_wrapper .rows .ctn2 a {
+    width: 160px;
+    height: 45px;
+    position: absolute;
+    top: 1075px;
+    left: 430px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 99;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    text-shadow: 5px 5px 18px #8B1A08;
+}
+
+.claim_wrapper .rows .sub_msg {
+    position: absolute;
+    top: 2690px;
+    margin-bottom: 50px;
+}
+
+.claim_wrapper .rows .sub_msg .blank2 {
+    height: 65px;
+    background: #BF2606;
+}
+
+.claim_wrapper .rows .sub_msg .blank2 img {
+    vertical-align: top
+}
+
+.claim_wrapper .rows .sub_msg .blank2 h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+	*line-height: 40px;
+    font-family: 微软雅黑;
+    font-size: 26px;
+}
+
+.claim_wrapper .rows .sub_msg .msg_form {
+    background: #FFE8A4;
+    margin-bottom: 150px;
+}
+
+.claim_wrapper .rows .sub_msg .msg_form .msg_area {
+    border: 0 none;
+    background: #FFE8A4 url(../images/area_bg.jpg) repeat-y center top;
+    width: 927px;
+	*width: 910px;
+    height: 300px;
+    padding: 0 40px;
+    line-height: 40px;
+    overflow: auto;
+    color: #464646;
+    font-family: 微软雅黑
+}
+
+.claim_wrapper .rows .sub_msg .msg_form .btns {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.claim_wrapper .rows .sub_msg .msg_form input.submit {
+    width: 205px;
+    height: 58px;
+    background: #BF2606;
+    border: 0 none;
+    line-height: 58px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    letter-spacing: 20px;
+    text-indent: 25px;
+	*text-indent: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.claim_wrapper .rows .sub_msg .msg_form .btns span {
+    color: #C7672D;
+    font-size: 18px;
+    font-family: 微软雅黑;
+} 
+
+
+.claim_wrapper .blank1 {
+    height: 9px;
+    background: url(../images/blank1.jpg) no-repeat center center;
+    position: relative;
+    top: 567px;
+}
+
+ul.marquee {
+    display: block;
+    height: 22px;
+    line-height: 1;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+}
+ul.marquee li {
+    display: block;
+    left: 0;
+    padding: 3px 5px;
+    position: absolute;
+    top: -999em;
+    white-space: nowrap;
+}
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+
+<!--上面的那些meta为移动端通用meta，以下两个为对缓存的处理，可根据情况可有可无-->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+
+<title>app专题模板</title>
+<meta name="keywords" content=""/><!-- seo 关键字 -->
+<meta name="description" content=""/><!-- seo 网页描述 -->
+
+<!--通用移动端base.css-->
+<link rel="stylesheet" href="http://res.csc86.com/v2/app/common/css/base.css">
+
+<!--当前页面的css-->
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+<!--基于seajs 和 zepto的基本js(暂定的通用js)-->
+<script src="http://res.csc86.com/f=v2/app/common/seajs/sea.js,v2/app/common/seajs/config.js,v2/app/common/js/l/zepto/zepto.min.js"></script>
+
+<!--当前页面的js-->
+<script>
+	seajs.use('./js/index');
+</script>
+</body>
+</html>

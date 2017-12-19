@@ -1,0 +1,37 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 以下为专题样式 */
+.zp-head-img{width:100%; height:599px; background:url(../image/zp-top-2.jpg) no-repeat top;}
+
+.zp-bod-list{width:100%; background:#e9e9e9; padding-top:20px;}
+.zp-bod-list .g-o ul{}
+.zp-bod-list .g-o ul li{float:left;}
+.zp-bod-list .g-o ul li a{float:left; display:block;}
+.zp-list-info{width:396px; height:382px; margin-top:9px; background:#fff; float:left;}
+.zp-list-info p{padding-left:28px;line-height:40px; font-size:14px;}
+.zp-list-info p a{display:inline-block; margin-top:10px; padding:5px 10px;height:26px; line-height:26px; background:#f84545; color:#fff;  border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; text-align:center; font-size:14px;}
+.zp-list-info span{padding:10px 10px 0px 10px;;line-height:30px; display:block; font-size:16px;}
+
+.zp-foot-btn{display:inline-block; margin-top:10px; padding:8px 15px;height:26px; line-height:26px; background:#f84545; color:#fff;  border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; text-align:center; font-size:14px;}

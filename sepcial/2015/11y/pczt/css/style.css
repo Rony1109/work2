@@ -1,0 +1,123 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#ececec; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333!important}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.mt30{ margin-top:30px}
+.mt25{ margin-top:25px}
+.pa25{ padding:5px 0px 25px}
+
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.bannerwk{ width: 100%; overflow:hidden;position: relative}
+.banner{ width:1000px; margin:0px auto; position: relative}
+.banner p{ margin-left:-460px;}
+.banner .fx{ position:absolute; right:0px; top:0px; width:336px;}
+.banner .dy{ position:absolute; bottom:170px; left:150px; line-height:25px; color:#ffffff;  width:725px; }
+
+
+/* 以下为专题样式 */
+.content1{ width:1000px; margin:0px auto;  position:relative; background:#ffffff; padding:30px 50px 0px;}
+.g-o.link{width:1000px; margin:0px auto;  position:relative; background:#ffffff; padding:20px 50px 20px; border-top:none}
+.con{ overflow:auto; height:auto; position:relative}
+.con.bd{ border-bottom:1px dashed #8e8e8e; padding-bottom:25px;}
+.con .p{ color:#fff ; line-height:25px;background:#333 url(../image/dy.png) left no-repeat; padding:8px 10px 8px 140px;}
+.con .d1{ position:relative;}
+.con .content{ position:absolute; top:30px; left:30px;  color:#ffffff; width:252px;} 
+.con .content .title{ font-family:微软雅黑; font-size:24px; border-bottom:1px solid #fff; padding-bottom:15px;}
+.con .content .text{ width:235px; text-align:left; margin:0px; margin-top:20px; line-height:21px;}
+.con .content .text .s{ color:#ffa92e;}
+.con .content .title a,.con .content .text a{ color:#ffffff!important;}
+.con  .title a:hover,.con .text a:hover{ text-decoration:none;}
+.con .p1{ color:#333; padding:20px 0px; line-height:25px;}
+.con li{ float:left; margin-right:25px; position: relative}
+.con li .text{ line-height:45px; background:url(../image/1-1px.png); position:absolute; left:0px; bottom:0px; width:100%; text-align:center; color:#fff; font-size:14px; display:none}
+.con li.last{ margin-right:0px;}
+.con .left{ width:480px;}
+.con .left.left1{ width:690px; padding:20px 30px; background:#ddd;}
+.con .left.left2{ width:520px; position:relative;}
+.con .left2 .text2,.con .u2 .text2{ line-height:55px; background:url(../image/1-1px.png); position:absolute; left:0px; bottom:0px; width:100%; text-align:center; color:#fff; font-size:14px; text-align:left;}
+.con .u2 .text2{ display:none;}
+.con .u2 .text2.pt{ bottom:50px; text-align:center;line-height:40px;}
+.con .left2 .text2 .s1{ padding-left:10px;}
+.con .left2 .text2 .s2{ padding-left:80px; font-size:12px;}
+.con .left2 .text2 .s3{ color:#ff9b25; font-size:25px; font-family:微软雅黑; font-weight:bold; padding-right:10px;}
+.con .left2 .text2 .s4{ font-size:15px; font-family:微软雅黑; font-weight:bold; background:url(../image/jg.png) left no-repeat ; padding:15px 10px 15px 20px; text-align:center;}
+.con .left2 .text2 .s4 a,.con .u2 .text3 .s4 a{ color:#fff!important; text-decoration:none;}
+.con .left .title{ font-size:14px; font-weight: bold; line-height:40px;}
+.con .left .title.mt7{ margin-top:7px;}
+.con .left .text{ line-height:23px;}
+.con .left .text.bd{ border-bottom:1px dashed #a7a7a7; padding-bottom:18px;}
+.con .left .text .s{ color:#ff781e; font-weight:bold}
+.con .right{ width:220px; background:#ddd; padding:10px;}
+.con .right.right2{ width:430px; background:none; padding:0px; padding-right:10px;} 
+.con .right .context{ padding:10px; border:2px solid #fff;}
+.con .right .title{ font-size:16px; font-weight: bold; line-height:35px;}
+.con .right .title.title2{ font-size:14px; line-height:40px;}
+.con .right .text{ line-height:25px; padding-bottom:5px;}
+.con .right .text .s{ color:#ff781e; font-weight:bold}
+.con .right .text.text2{ margin-top:10px; }
+.con .u2 .text3{ line-height:50px;}
+.con .u2 li{ float:left; width:230px; position: relative;}
+.con .u2 .text3 span{ float:left} 
+.con .u2 .text3 .s2{padding-left:5px; font-size:12px;}
+.con .u2 .text3 .s3{ color:#ff9b25; font-size:25px; font-family:微软雅黑; font-weight:bold;}
+.con .u2 .text3 .s4{ font-size:15px; font-family:微软雅黑; font-weight:bold; background:url(../image/jg.png) left no-repeat ;  text-align:center; color:#fff; padding:0px 10px;  float:right}
+
+.content1 .play{padding:30px 0px; overflow:auto; background:#f2f2f2;}
+.content1 .play .center{ width:900px; overflow:hidden}
+.content1 .play .center ul{ width:800%; float:left;} 
+.content1 .play li{ float:left; margin-right:20px; width:211px; height:160px; overflow:hidden}
+.content1 .play li img{ width:100%}
+
+.fix{ position:fixed; right:10px; top:200px;  width:127px; height:294px; display:none;  background:url(../image/fix.png) no-repeat;}
+.fix li{ width:127px; height:36px; display:block; margin-bottom:19px; cursor:pointer; float:left}
+.fix li.mb20{margin-bottom:20px;}
+.fix li.mb0{margin-bottom:0px;}
+.fix li.active{ background:#ffffff;filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;} 
+.fix li a{ display:block; width:127px; height:36px;}
+
+

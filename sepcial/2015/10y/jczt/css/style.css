@@ -1,0 +1,96 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#f73a53; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333333}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.web-search{background:#ffffff;}
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.bannerwk{ width: 100%; overflow:hidden;position: relative}
+.banner{ width:1000px; margin:0px auto; position: relative}
+.banner p{ margin-left:-340px;}
+.banner p img{ vertical-align: bottom;}
+.banner .fx{ position:absolute; right:0px; top:0px; width:336px;}
+.banner .dy{ position:absolute; bottom:75px; left:276px; line-height:18px; color:#ffffff;  width:700px; text-indent:24px;}
+
+
+/* 以下为专题样式 */
+.content1{ width:1000px;  margin:0px auto; position:relative;}
+.content1.mt5{ margin-top:5px}
+.con{ overflow:auto; height:auto;}
+.con a:hover{ text-decoration:none;} 
+.con .left{ position:relative; background:#ffffff; width:434px; padding:2px 2px 27px 2px;}
+.con  .p1{ line-height:40px; font-size:20px; font-weight:bold; color:#b0b0b0; padding:10px 20px 0px;} 
+.con  .p1.lh35{ line-height:35px;}
+.con  .p1.pa0{ padding:0px 20px 0px}
+.con  .p2{  padding:0px 20px;}
+.con  .p2.pa0{  padding:0px 20px 0px;}
+.con  .s1{ float:left; font-size:30px; color:#c61f45; font-family:微软雅黑; font-weight:bold;} 
+.con  .s2{ float:right; width:100px; height:45px; background:url(../image/an.png) no-repeat; color:#ffffff; font-size:16px; font-family: 微软雅黑; text-align:center; padding-left:12px; line-height:20px; padding-top:5px;}
+.con  .s2.pa0{}
+.con .right{ width:560px; }
+.con .right li{ float:left; padding:2px; background:#ffffff; margin-left:7px; margin-bottom:7px; width:269px;}
+.con .right li.mr0{ margin-bottom:0px;}
+
+
+.content1 .play{padding:30px 0px 20px; overflow:auto; background:#ffffff;}
+.content1 .play .center{ width:900px; overflow:hidden}
+.content1 .play .center ul{ width:800%; float:left;} 
+.content1 .play li{ float:left; margin-right:20px; width:211px; overflow:hidden}
+.content1 .play li img{ width:100%}
+.content1 .play li p{ line-height:40px; color:#676767; font-size:16px; font-weight:bold;font-family:微软雅黑; text-align:center} 
+.content1 .play li a{ text-decoration:none}
+
+.fix{ position:fixed; right:10px; top:100px;  width:192px; height:396px; display:none;  background:url(../image/fix.png) no-repeat;}
+.fix li{ width:130px; height:36px; display:block; margin-bottom:8px; cursor:pointer; float:left; margin-left:32px; }
+.fix li.mt142{ margin-top:142px;}
+.fix li.mb0{margin-bottom:0px;}
+.fix li.active{ background:#ffffff;filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;} 
+.fix li a{ display:block; width:127px; height:36px;}
+
+.link{ background:#ffffff; width:100%;}
+
+

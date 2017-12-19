@@ -1,0 +1,141 @@
+/* CSS wjh */
+
+/*base*/
+body { background:url(img/body-bg.png) top center no-repeat;}
+.f14 { font-size:14px;}
+.fw-b { font-weight:bold;}
+a:hover { color:#b71a15;}
+
+/*top-nav*/
+.top-nav { margin-top:16px; line-height:12px;}
+.top-nav li { float:left; border-right:1px solid #000; padding:0 7px; }
+.top-nav li a { color:#000;}
+.top-nav .last-li { border: none; padding-right:0;}
+
+/*head*/
+#banner {clear: both; position: relative; width: 980px; height:409px; margin: 0 auto; overflow: hidden;}
+
+.src-ico { padding:48px 50px;}
+.src-ico .viev-tit{ width:325px; height:200px; float:right; position:relative; overflow:hidden;}
+.src-ico .viev-tit ul{ position:absolute; width:20000px; height:150px;}
+.src-ico .viev-tit li{width:164px; height:150px; float:left;}
+.src-ico .viev-tit img{ padding:0 10px 10px 0; }
+
+#banner .left { width:550px; position:absolute; bottom:0; left:0; }
+#nav{ font-family: Microsoft YaHei,simhei; color:#fffbdd; font-size:16px; line-height:46px; height:46px;}
+#nav ul li { float:left; padding-left:35px; }
+#nav ul li a{ color:#fffbdd; font-weight:700; }
+#nav ul li a:hover{ color:#fffbdd; text-decoration:none; color:#000;}
+
+#slide-news { width:450px; height:80px; margin:17px 0 0 15px; }
+#slide-news .wrap-list {position:relative; float:left ;width:450px; height:80px; overflow:hidden;}
+#slide-news .csc-wrap { float:left; width:450px; height:63px; overflow:hidden;}
+.csc-wrap .fw-b a{ color:#333;}
+.csc-wrap .fw-b a:hover{color:#b71a15; text-decoration:none; }
+#slide-news .csc-wrap .pic { display: inline-block; float:left; background:#fff; border:1px solid #b5b5b5; padding:3px; margin-right:12px;overflow:hidden;}
+#slide-news .prev { float:right; background: url(img/disc-hover.png) 0 0 no-repeat; width:6px; height:9px; overflow:hidden; margin:63px 15px 0 0;}
+#slide-news .next { float:right; background:url(img/disc-hover.png) -11px -11px no-repeat; width:9px; height:11px; margin:63px 25px 0 0;}
+#slide-news .prev:hover {background:url(img/disc-hover.png) 0 -11px no-repeat;}
+#slide-news .next:hover {background:url(img/disc-hover.png) -11px 0 no-repeat;}
+
+#banner .right {width: 410px;height: 108px; position: absolute; bottom: 0; right: 0;}
+.contact { width:297px;}
+.contact .pic { display: inline-block; float:left; background:#fff; border:1px solid #b5b5b5; padding:3px; margin-right:12px;overflow:hidden;}
+.contact ul { float:right;width:200px; background:url(img/tel-bg.png) no-repeat; text-indent:23px; padding:5px 0;}
+.contact ul li { line-height:18px;}
+.contact .time { display:block; background:url(img/time-bg.png) no-repeat; width:296px; height:30px; color:#fff; margin-top:8px; line-height:18px; text-indent:10px;}
+
+
+.con-list{ border:1px solid #ccc; padding:15px 25px}
+.con-list h2{ height:40px;font-family:Microsoft YaHei,simhei; font-size:20px; border-bottom:1px solid #ff622b; color:#ff622b; line-height:45px;}
+.con-list h2 span{ float:left; height:40px; width:208px; text-align:center; margin-right:8px; background:#ff622b; line-height:40px; font-size:32px; color:#FFF; }
+/*电商模范·品牌先锋*/
+.x-brand{ width:215px; float:left;}
+.x-brand h4,.x-brand h3{ font-size:14px; padding:5px 0; }
+.x-brand h3{ color:#ff3b2b; line-height:20px;}
+.x-brand div{ color:#666; text-indent:2em; line-height:19px; position:relative; margin-bottom:1px; }
+.x-brand div span{ width:50px; height:20px; }
+.x-brand div a{ font-weight:700; font-size:13px; margin-left:80px; position:absolute; bottom:0; right:0;  }
+.x-brand div a:hover{ text-decoration:none; }
+.x-brand .fon-con a{ color:#e80024;}
+.x-brand h4{ color:#4d0505;}
+.x-brand .di-mio a{ color:#666;}
+
+.outer-scroll{ width:410px; float:left; display:inline; margin-left:10px;}
+
+.inner-scroll{ float:left; overflow:hidden; position:relative; width:303px; height:250px;}
+.inner-scroll li img,.inner-scroll li{ width:303px; height:250px; }
+.inner-scroll li,.outer-scroll ol li{ position:relative; }
+.inner-scroll li .font,.outer-scroll ol .font{ display:none; position:absolute; bottom:0; right:0; width:303px; height:30px; line-height:30px; text-align:center; }
+.inner-scroll li:hover .font,.outer-scroll ol li:hover .font{ display:block; }
+.inner-scroll .font span,.outer-scroll ol .font span{ position:absolute; left:0; right:0; width:303px; height:30px; background:#333; opacity:0.3; display:block; }
+.inner-scroll .font em,.outer-scroll ol .font em{ position:relative; z-index:3; font-size:14px; font-weight:700; color:#d0d0d0;}
+.outer-scroll ul{ position:absolute; }
+
+.outer-scroll ol{ overflow:hidden; width:100px; }
+.outer-scroll ol li,.outer-scroll ol li img{ width:100px; height:82px; }
+.outer-scroll ol li{ position:relative; margin:0 0 2px 5px;  }
+.outer-scroll ol .font{ width:100px; height:20px;line-height:20px;}
+.outer-scroll ol .font span{ width:100px; height:20px; }
+.outer-scroll ol .font em{ font-size:12px; font-weight:normal; }
+
+.ti-ask{ width:268px;float:left;}
+.ti-ask dl{ padding-left:30px;  }
+.ti-ask dt{ color:#4d0505; font-size:14px; line-height:30px; }
+.ti-ask dd{ color:#666; }
+.ti-ask .link-ask{ padding:28px 0 28px 30px;}
+.fen-xi{ padding-left:30px;}
+.fen-xi em{ float:left; font-size:14px; margin-top:5px; }
+.share{ float:left;}
+.share li{ float:left; width:45px; }
+
+.m-dsi .con{ border:1px solid #dadada; box-shadow:1px 1px 2px #dadada,2px 2px 4px #e6e6e6;}
+.ribbon h1{ font-size:16px; margin:25px 0 0 20px;}
+.ribbon h1 span{ display:block;font-size:12px; font-weight:normal; color:#888;}
+.ribbon{ float:left; width:215px;_width:213px;}
+.ribbon .bg{ position:relative; background: url(img/rinbbon.png) no-repeat; height:57px; width:223px; top:28px; left:-12px;}
+.bg a{ position:absolute; width:93px; font-weight:700; height: 30px; line-height:27px; font-family:Microsoft YaHei,simhei; color:#000; font-size:15px; text-align:center; position: absolute; background: url(img/tit-bg.png) no-repeat 0 0; left: 55px; top: 10px; }
+.bg a:hover{ text-decoration:none; opacity:.9; }
+.min-ad { position:relative; float:right; width:727px; height:199px; }
+.min-ad i{ position:absolute; height:72px; width:87px; top:0; right:0; background: url(img/link-lab.png) 0 -8px no-repeat;}
+
+.jc_outer{ position:relative; }
+.jc_outer span{ position:absolute; width:35px; cursor:pointer; height:83px;top:42px; background:url(img/l-r.png) no-repeat 2px -209px;}
+.jc_outer span.l{ left:0; }
+.jc_outer span.l:hover{ background-position:0 0; }
+.jc_outer span.r{ right:0; background-position:0 -311px; }
+.jc_outer span.r:hover{ background-position:2px -102px; }
+.jc_outer .inner{ position:relative; width:840px; height:200px; overflow:hidden; margin:0 auto; }
+.jc_outer .inner ul{ width:20000px; position:absolute;}
+.jc_outer .inner li{ float:left;width:840px; text-align:center; }
+.jc_outer .inner li div.left{ float:left; width:210px;}
+.jc_outer .inner li div{ text-align:center; line-height:30px; height:30px; }
+.jc_outer .inner li a{ color:#333; }
+.jc_outer .inner li a:hover{ color:#b71a15; text-decoration:none; }
+
+.list-avtive{ padding:20px 20px 10px; background:url(img/active-bg.png) repeat-x 0 0;}
+.list-avtive li{ float:left;}
+.list-avtive dt{ height:30px; line-height:28px; font-size:14px; padding-left:15px; color:#FFF; font-weight:700; background:url(img/tit-bgg.png) no-repeat 0 0;}
+.list-avtive dd{ color:#666;}
+.list-avtive dd.first{ color:#666; padding-top:10px; margin-bottom:4px; }
+.list-avtive .list0{ width:275px; }
+.list-avtive .list1{ margin-left:30px; width:415px; }
+.list-avtive .list1 dd{ padding-left:50px; position:relative;}
+.list-avtive .list1 dd.first span{ top:15px;}
+.list-avtive .list1 dd span{ position:absolute; top:2px; left:0; width:35px; background:#ff5511; color:#FFF; text-align:center;}
+
+.avt-submit{ padding:50px 0 0 30px;}
+.avt-submit a{ display:block; height:36px; width:158px; background:url(img/avt-submit.png) no-repeat 0 0;}
+
+
+.list_jinxi{ background:url(img/jin-xi.png) no-repeat 0 0; height:170px; }
+.list_jinxi dl{ float:left; width:165px; padding-left:25px; color:#FFF; }
+.list_jinxi dt{ font-size:32px; line-height:60px; font-family:Microsoft YaHei,simhei;}
+.list_jinxi dd{ padding-right:25px; font-size:14px;}
+.list_jinxi dl.sec,.list_jinxi dl.thir{width:167px; }
+.list_jinxi dl.tdd{ width:166px;}
+.list_jinxi dl.last{ width:158px;}
+/*footer*/
+.footer { color:#fff; background:#ff3b2b;line-height:27px; text-align:center; padding-top:20px; height:180px;}
+.footer a{ color:#FFF;}
+.footer a:hover{ color:#333;}

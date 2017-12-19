@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="zh-cn">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--顶部状态栏背景色-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="format-detection" content="telephone=no"><!--禁止识别电话号码-->
+    <meta name="format-detection" content="email=no"><!--禁止识别邮箱-->
+    <meta http-equiv="Cache-Control" content="no-cache"><!--禁止浏览器从本地计算机的缓存中访问页面内容-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top"><!--用来防止别人在框架里调用自己的页面-->
+    <meta http-equiv="Content-Script-Type" content="text/javascript"><!--指明页面中脚本的类型-->
+    <meta name="HandheldFriendly" content="true"><!--针对不识别viewport的浏览器-->
+    <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="screen-orientation" content="portrait"><!-- UC强制全屏 -->	<!-- uc强制竖屏 -->
+    <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+    <meta name="browsermode" content="application"><!-- UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><!-- 如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染-->
+    <!-- 适应移动端end -->
+    <meta name="keywords" content=""/><!-- seo 关键字 -->
+    <meta name="description" content=""/><!-- seo 网页描述 -->
+    <title>焊锡页面</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" >
+    <link rel="stylesheet" href="css/index.css" type="text/css" >
+    <script src="//res.csc86.com/f=v3/shopping_center/common/seajs/sea.js,v3/shopping_center/common/seajs/config.js,v3/shopping_center/common/js/l/zepto/zepto.min.js"></script>
+    <script>//为加速js，置为内联
+    !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+    <style>
+        body,html{
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+<!--专题内容区域start-->
+<header class="mg-au wh_1">
+    <img src="con_img/hanxi-banner.jpg" alt="焊锡专场" class="block mg-au wh_2 ht-13"/>
+</header>
+<nav class="ht-18 bg_c_6 po_f bt_1 rg_2 lf_1 wh_2">
+    <div class="mg-au wh_3 ht-1">
+        <ul class="clearfix wh_2 ht-19 pd-17">
+            <li class="fl wh-27 ht-1">
+                <a href="http://www.csc86.com/zt/2017/hotsellh5/" class="block wh_2 ht-1"><img src="con_img/nav-6.png" alt="" class="block mg-au wh_2 ht-1"/></a><!--主会场-->
+            </li>
+            <li class="fl wh-27 ht-1">
+                <a href="//www.csc86.com/zt/2017/hotsellh5/jiazhuangwujin.html" class="block wh_2 ht-1"><img src="con_img/nav-2.png" alt="" class="block mg-au wh_2 ht-1"/></a><!--家装五金-->
+            </li>
+            <li class="fl wh-27 ht-1">
+                <a href="//www.csc86.com/zt/2017/hotsellh5/car-op.html" class="block wh_2 ht-1"><img src="con_img/nav-3.png" alt="" class="block mg-au wh_2 ht-1"/></a><!--汽修五金-->
+            </li>
+            <li class="fl wh-27 ht-1">
+                <a href="//www.csc86.com/zt/2017/hotsellh5/anquanfanghu.html" class="block wh_2 ht-1"><img src="con_img/nav-4.png" alt="" class="block mg-au wh_2 ht-1"/></a><!--安全老包-->
+            </li>
+            <li class="fl wh-27 ht-1">
+                <a href="//www.csc86.com/zt/2017/hotsellh5/hanxi.html" class="block wh_2 ht-1"><img src="con_img/nav-10.png" alt="" class="block mg-au wh_2 ht-1"/></a><!--电子焊锡-->
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="mg-au wh_1 bg_c_3">
+    <!--产品start-->
+    <div class="bg_img_6 ht-5 fo_sz_5 li_hg_3 fon_c_6 ">
+        <div class="wh_3 mg-au">锡线专场</div>
+    </div>
+    <ul class="clearfix wh_4 mg-au pd_2">
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5194771" class="block wh_2 ht-1"><img src="image/hx01.jpg" alt="中实环保无铅锡线0.8 800g" class="block mg-au wh_2"/></a>
+                <div class="wh_7 mg-au">
+            <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实环保无铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">118.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实环保无铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+              </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5194369" class="block wh_2 ht-1">
+                    <img src="image/hx02.jpg" alt="中实60/40有铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实60/40有铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">73.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实60/40有铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5194429" class="block wh_2 ht-1">
+                    <img src="image/hx03.jpg" alt="中实40/60有铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实40/60有铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">57.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实40/60有铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189109" class="block wh_2 ht-1">
+                    <img src="image/hx04.jpg" alt="中实环保镀镍锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实环保镀镍锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">119.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实环保镀镍锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5197617" class="block wh_2 ht-1">
+                <a href="http://hardware.csc86.com/detail/5197617" class="block wh_2 ht-1"><img src="image/hx05.jpg" alt="兴鸿泰环保无铅锡线1.0 1000g" class="block mg-au wh_2"/></a>
+                <div class="wh_7 mg-au">
+            <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">兴鸿泰环保无铅锡线1.0 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">146.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="兴鸿泰环保无铅锡线1.0 1000g" class="block ht-7 mg-au"/>
+                        </div>
+              </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5197618" class="block wh_2 ht-1">
+                    <img src="image/hx06.jpg" alt="兴鸿泰环保无铅锡线0.8 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">兴鸿泰环保无铅锡线0.8 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">147.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="兴鸿泰环保无铅锡线0.8 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5202496" class="block wh_2 ht-1">
+                    <img src="image/hx07.jpg" alt="易金Sn-0.7Cu环保锡线0.6 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">易金Sn-0.7Cu环保锡线0.6 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">151.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="易金Sn-0.7Cu环保锡线0.6 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188992" class="block wh_2 ht-1">
+                    <img src="image/hx08.jpg" alt="易金Sn-0.7Cu环保锡线0.8 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">易金Sn-0.7Cu环保锡线0.8 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">145.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="易金Sn-0.7Cu环保锡线0.8 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5201988" class="block wh_2 ht-1">
+                    <img src="image/hx13.jpg" alt="腾飞盛40/60有铅锡线0.6 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">腾飞盛40/60有铅锡线0.6 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">58.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="腾飞盛40/60有铅锡线0.6 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189022" class="block wh_2 ht-1">
+                    <img src="image/hx10.jpg" alt="腾飞盛Sn-0.7Cu环保锡线0.8 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">腾飞盛Sn-0.7Cu环保锡线0.8 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">149.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="腾飞盛Sn-0.7Cu环保锡线0.8 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5202743" class="block wh_2 ht-1">
+                    <img src="image/hx11.jpg" alt="腾飞盛Sn-0.7Cu环保锡线0.6 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">腾飞盛Sn-0.7Cu环保锡线0.6 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">150.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="腾飞盛Sn-0.7Cu环保锡线0.6 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189032" class="block wh_2 ht-1">
+                    <img src="image/hx12.jpg" alt="腾飞盛63/37有铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">腾飞盛63/37有铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">77.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="腾飞盛63/37有铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188938" class="block wh_2 ht-1">
+                    <img src="image/hx09.jpg" alt="易金35/65有铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">易金35/65有铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">54.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="易金35/65有铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188921" class="block wh_2 ht-1">
+                    <img src="image/hx14.jpg" alt="嘉鹏泰环保锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">嘉鹏泰环保锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">118.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="嘉鹏泰环保锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5203109" class="block wh_2 ht-1">
+                    <img src="image/hx15.jpg" alt="嘉鹏泰35/65有铅锡线0.8 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">嘉鹏泰35/65有铅锡线0.8 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">63.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="嘉鹏泰35/65有铅锡线0.8 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189128" class="block wh_2 ht-1">
+                    <img src="image/hx16.jpg" alt="可为30/70有铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">可为30/70有铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">48.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="可为30/70有铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189135" class="block wh_2 ht-1">
+                    <img src="image/hx17.jpg" alt="可为63/37有铅免洗锡线0.6 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">可为63/37有铅免洗锡线0.6 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">78.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="可为63/37有铅免洗锡线0.6 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188887" class="block wh_2 ht-1">
+                    <img src="image/hx18.jpg" alt="华锡40/60有铅锡线1.0 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡40/60有铅锡线1.0 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">53.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡40/60有铅锡线1.0 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188891" class="block wh_2 ht-1">
+                    <img src="image/hx119.jpg" alt="华锡环保无铅锡线0.8 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡环保无铅锡线0.8 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">114.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡环保无铅锡线0.8 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li><li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188880" class="block wh_2 ht-1">
+                    <img src="image/hx20.jpg" alt="华锡60/40有铅锡线0.6 800g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡60/40有铅锡线0.6 800g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">74.00</em><em class="fo_sz_3">/卷</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡60/40有铅锡线0.6 800g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="bg_img_6 ht-5 fo_sz_5 li_hg_3 fon_c_6 ">
+        <div class="wh_3 mg-au">锡膏专场</div>
+    </div>
+    <ul class="clearfix wh_4 mg-au pd_2">
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189085" class="block wh_2 ht-1">
+                    <img src="image/xg01.jpg" alt="中实55/45锡膏(3号粉) 500g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实55/45锡膏(3号粉) 500g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">58.00</em><em class="fo_sz_3">/瓶</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实55/45锡膏(3号粉) 500g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188862" class="block wh_2 ht-1">
+                    <img src="image/xg05.jpg" alt="华锡60/40锡膏LED专用 500g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡60/40锡膏LED专用 500g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">60.00</em><em class="fo_sz_3">/瓶</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡60/40锡膏LED专用 500g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5200224" class="block wh_2 ht-1">
+                    <img src="image/xg03.jpg" alt="嘉鹏泰990307高温环保锡膏" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">嘉鹏泰990307高温环保锡膏</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">115.00</em><em class="fo_sz_3">/瓶</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="嘉鹏泰990307高温环保锡膏" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188859" class="block wh_2 ht-1">
+                    <img src="image/xg04.jpg" alt="华锡63/37中温锡膏(3号粉) 500g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡63/37中温锡膏(3号粉) 500g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">77.00</em><em class="fo_sz_3">/瓶</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡63/37中温锡膏(3号粉) 500g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="bg_img_6 ht-5 fo_sz_5 li_hg_3 fon_c_6 ">
+        <div class="wh_3 mg-au">锡条专场</div>
+    </div>
+    <ul class="clearfix wh_4 mg-au pd_2">
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189118" class="block wh_2 ht-1">
+                    <img src="image/xt01.jpg" alt="中实环保无铅高温锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实环保无铅高温锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">151.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实环保无铅高温锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189125" class="block wh_2 ht-1">
+                    <img src="image/xt02.jpg" alt="中实40/60抗氧化有铅锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实40/60抗氧化有铅锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">68.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实40/60抗氧化有铅锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189114" class="block wh_2 ht-1">
+                    <img src="image/xt03.jpg" alt="中实63/37抗氧化有铅锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实63/37抗氧化有铅锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">97.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实63/37抗氧化有铅锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188985" class="block wh_2 ht-1">
+                    <img src="image/xt04.jpg" alt="易金50/50抗氧化有铅锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">易金50/50抗氧化有铅锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">77.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="易金50/50抗氧化有铅锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189130" class="block wh_2 ht-1">
+                    <img src="image/xt05.jpg" alt="可为环保锡条 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">可为环保锡条 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">144.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="可为环保锡条 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189136" class="block wh_2 ht-1">
+                    <img src="image/xt06.jpg" alt="可为40/60有铅锡条 1000g" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">可为40/60有铅锡条 1000g</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">72.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="可为40/60有铅锡条 1000g" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5188885" class="block wh_2 ht-1">
+                    <img src="image/xt07.jpg" alt="华锡55/45抗氧化有铅锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">华锡55/45抗氧化有铅锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">87.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="华锡55/45抗氧化有铅锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="fl wh_5 pd_3 ">
+            <div class="wh_6 mg-au bg_c_2">
+                <a href="http://m.csc86.com/search/product_detail.ftl?productId=5189081" class="block wh_2 ht-1">
+                    <img src="image/xt08.jpg" alt="中实50/50抗氧化有铅锡条" class="block mg-au wh_2"/>
+                    <div class="wh_7 mg-au">
+                        <div class="fon_c_2 fo_sz_1 no_wrap li_hg_1">中实50/50抗氧化有铅锡条</div>
+                        <div class=" fo_sz_1 no_wrap li_hg_1 fon_c_3"><em class="fo_sz_1">￥</em><em class="fo_sz_2">80.00</em><em class="fo_sz_3">/公斤</em></div>
+                        <div class="pd_4 li_hg_0">
+                            <img src="con_img/index-2.png" alt="中实50/50抗氧化有铅锡条" class="block ht-7 mg-au"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="pd_8">
+        <div class="bg_img_6 ht-5 fo_sz_1 li_hg_3 fon_c_6 ">
+            <div class="wh_3 mg-au">活动说明：</div>
+        </div>
+        <p class="fon_c_6 fo_sz_1 wh_3 mg-au li_hg_4 ">活动说明：
+            1.2017年1月1日后注册的新会员，均可领取价值50元无门槛优惠券（仅限五金机电商城采购使，不可用于华南城网其他店铺），优惠券仅限领取1次，不能重复领取；<br/>
+            2.本活动所有产品均可使用新人优惠券；<br/>
+            3.活动期内会员单月采购订单超过2单即可获得1次抽奖机会，每位会员每月仅有1次抽奖机会；<br/>
+            4.本活动在法律允许范围内最终解释权归华南城网所有，如有任何疑问，请拨打免费服务热线400-184-8666。
+        </p>
+    </div>
+</section>
+
+
+
+
+
+<!-- 统计代码 start -->
+<div style="display:none"><script src="http://res.csc86.com/js/m/statistics.js"></script></div>
+<!-- 统计代码 end -->
+</body>
+<!-- 此文件可以放在底部，此处仅说明，以免忘记 -->
+<script>seajs.use('./js/init');</script>
+
+</html>

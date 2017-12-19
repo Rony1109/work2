@@ -1,0 +1,130 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 没用到模块的话请注释本行 */
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei; color:#5f2901;}
+.g-940{ width:940px; margin:0 auto;}
+h1{ font-size:40px;}
+
+
+/*顶部 +导航*/
+.link{border-top: 0;}
+a{color: #444}
+.web-search h1, .web-search .logo-box{width: 229px}
+.selected_channel .sel_chnel{width: 60px;background-position: 58px 8px;}
+.selected_channel span.hover{background-position: 58px -5px;}
+.selected_channel .chnel_list{width: auto;white-space:nowrap;}
+.selected_channel{margin-top: 50px;}
+
+.navigation{height: 37px;background: #e52142}
+.navigation a{color: #fff}
+.main-nav li{float: left;display: inline;}
+.main-nav li a{display: inline-block;_display: inline;zoom:1;margin-top: 5px;padding: 0 15px;height: 32px;text-align: center;font: 16px/32px Microsoft YaHei,simsun;color: #fff;}
+.main-nav li a:hover,.main-nav li a.active{color: #e52142;text-decoration: none;background: #fff;}
+.sub-nav{float: right;display: inline;margin-top: 14px;width: 297px;height: 15px;border-left: 1px #ea6279 solid;}
+.sub-nav a{font: 14px/15px Microsoft YaHei,simsun;padding-left: 12px;color: #ffd4d4}
+.sub-nav a:hover{color:#ffd4d4}
+/*顶部 +导航*/
+
+/* 以下为专题样式 */
+.maint{ background:#3392ee url(img/banner.jpg) no-repeat top center;  font-family: Microsoft Yahei;}
+.mainb{ background:#3392ee url(img/bg.jpg) no-repeat top center;  font-family: Microsoft Yahei;}
+.banner{ height:615px;}
+.jiathis_style{position:absolute;right:5px;top:5px;}
+.jiathis_style a{color:#333;}
+.lingshi{position:absolute;left:50px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+.fone{ background:url(img/1.png) no-repeat right top; height:800px; position:relative;}
+.n1{ position: absolute; right:44px; top:124px;}
+.country1{ position:absolute; top:3px; right:345px;}
+.flag1{ position:absolute; top:175px; left:55px;}
+.city1{ position:absolute; bottom:290px; left:310px; width:150px;}
+.info1{ position:absolute; bottom:295px; right:45px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.ftwo{ background: url(img/2.png) no-repeat left top; height:797px; position:relative;}
+.n2{ position: absolute; left:50px; top:145px;}
+.country2{ position:absolute; top:27px; right:475px;}
+.flag2{ position:absolute; top:172px; right:50px;}
+.city2{ position:absolute; bottom:265px; left:55px; width:150px;}
+.info2{ position:absolute; bottom:270px; left:195px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.fthree{ background: url(img/3.png) no-repeat right top; height:800px; position:relative;}
+.n3{ position: absolute; right:44px; top:142px;}
+.country3{ position:absolute; top:24px; right:250px;}
+.flag3{ position:absolute; top:200px; left:55px;}
+.city3{ position:absolute; bottom:275px; left:310px; width:215px;}
+.info3{ position:absolute; bottom:275px; right:45px; width:370px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.ffour{ background: url(img/4.png) no-repeat left top; height:800px; position:relative;}
+.n4{ position: absolute; left:56px; top:127px;}
+.country4{ position:absolute; top:10px; right:450px;}
+.flag4{ position:absolute; top:148px; right:40px;}
+.city4{ position:absolute; bottom:285px; left:60px; width:150px;}
+.info4{ position:absolute; bottom:290px; left:200px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.ffive{ background: url(img/5.png) no-repeat right top; height:800px; position:relative;}
+.n5{ position: absolute; right:45px; top:142px;}
+.country5{ position:absolute; top:23px; right:255px;}
+.flag5{ position:absolute; top:215px; left:55px;}
+.city5{ position:absolute; bottom:270px; left:310px; width:150px;}
+.info5{ position:absolute; bottom:275px; right:45px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.fsix{ background: url(img/6.png) no-repeat left top; height:800px; position:relative;}
+.n6{ position: absolute; left:44px; top:159px;}
+.country6{ position:absolute; top:40px; right:475px;}
+.flag6{ position:absolute; top:326px; right:50px;}
+.city6{ position:absolute; bottom:255px; left:50px; width:150px;}
+.info6{ position:absolute; bottom:257px; left:200px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.fseven{ background: url(img/7.png) no-repeat right top; height:825px; position:relative;}
+.n7{ position: absolute; right:47px; top:159px;}
+.country7{ position:absolute; top:40px; right:255px;}
+.flag7{ position:absolute; top:348px; left:55px;}
+.city7{ position:absolute; bottom:280px; left:310px; width:245px;}
+.info7{ position:absolute; bottom:285px; right:45px; width:290px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.feight{ background: url(img/8.png) no-repeat left top; height:820px; position:relative;}
+.n8{ position: absolute; left:49px; top:122px;}
+.country8{ position:absolute; top:5px; right:475px;}
+.flag8{ position:absolute; top:183px; right:40px;}
+.city8{ position:absolute; bottom:310px; left:50px; width:150px;}
+.info8{ position:absolute; bottom:315px; left:200px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+.flower{ position:absolute; top:0px; left:-65px;} 
+
+.fnine{ background: url(img/9.png) no-repeat right top; height:865px; position:relative;}
+.n9{ position: absolute; right:67px; top:123px;}
+.country9{ position:absolute; top:5px; right:213px;}
+.flag9{ position:absolute; top:144px; left:20px;}
+.city9{ position:absolute; bottom:355px; left:290px; width:150px;}
+.info9{ position:absolute; bottom:360px; right:65px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}
+
+.ften{ background: url(img/10.png) no-repeat left top; height:985px; position:relative;}
+.n10{ position: absolute; left:79px; top:131px;}
+.country10{ position:absolute; top:12px; right:450px;}
+.flag10{ position:absolute; top:177px; right:10px;}
+.city10{ position:absolute; bottom:470px; left:75px; width:150px;}
+.info10{ position:absolute; bottom:475px; left:230px; width:435px; font-size:14px; text-indent:25px; line-height:25px;}

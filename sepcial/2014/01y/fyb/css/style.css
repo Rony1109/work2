@@ -1,0 +1,252 @@
+﻿*html { background-attachment:fixed; background-image:URL("about:blank"); }
+body {-moz-user-select: none; -webkit-user-select: none; user-select: none;overflow:hidden;}
+.g-o-a {zoom:1;	}
+
+.screen-main {width: 100%; background: #B4060F url(img/bg0.jpg) no-repeat center 0; height: 756px; min-width:1000px; min-height: 756px;}
+.screen-main .sc-main-bg,
+.multi-outer .survey-inner,
+.multi-outer .spining-inner,
+.multi-outer .ec-inner,
+.multi-outer .pige-inner,
+.multi-outer .pic-inner {position: relative; left: 0; height: 756px}
+
+.screen-main span, .screen-main a {display: inline-block; position: absolute;}
+.screen-main .hnc {width: 95px; height: 81px; left: 21px; top: 0; text-indent: -9999px;}
+.screen-main .ndsd {width: 95px; height: 81px; left: 154px; top: 0; text-indent: -9999px;}
+
+.multi-outer .stitem {text-decoration: none; position: absolute; display: inline-block; white-space: nowrap; padding-bottom: 5px;}
+.multi-outer .stitem b {width: 36px; height: 18px; background: url(img/icon-collect.png) no-repeat; _background: url(img/icon-collect-png8.png) no-repeat; color: #fff; display: inline-block; text-align: center; vertical-align: middle; font: bold 17px 'Arial'}
+.multi-outer .stitem em { font-size: 19px; font-family: microsoft yahei; vertical-align: middle; margin-left: 10px; text-decoration: none}
+.multi-outer .str em {margin-left: 0; margin-right: 10px}
+.multi-outer .desc {display: inline-block; *display:inline; *zoom:1; vertical-align:top; margin-top:16px;} 
+.multi-outer .desc span {width: 10px; height: 35px; background: url(img/icon-collect.png) no-repeat; _background: url(img/icon-collect-png8.png) no-repeat; float: left;}
+.multi-outer .desc b {height: 35px; float: left; font: italic bold 30px 'microsoft yahei'; color: #fff; padding-right: 15px; padding-left: 10px; line-height: 35px;}
+.multi-outer .c-link {padding-right: 45px; background: url(img/icon-collect.png) no-repeat; _background: url(img/icon-collect-png8.png) no-repeat; font: italic bold 22px 'microsoft yahei'; text-decoration: none; margin-top: 20px; display: inline-block;}
+
+
+.multi-outer {position: relative; left: 0; width: 100%; height: 756px; min-width: 1000px; min-height: 756px; font-family: 'microsoft yahei'; overflow: hidden;}
+/*二层*/
+.survey-outer {background: #E5D9DB url(img/bg1.jpg) no-repeat center 0}
+.survey-outer .c-link { color: #e94545; background-position: 100px -48px}
+.survey-outer .stitem em {color: #E94545;}
+.survey-outer .desc .icon-r {background-position: -339px 0}
+.survey-outer .desc span {background-position: 0 0}
+.survey-outer a {color: #E94543;}
+.survey-inner .head {width: 100%; top: 50px; position: absolute; overflow: hidden; vertical-align: middle;}
+.survey-inner .head i {font: italic bold 55px 'Arial'; color: #e94545}
+.survey-inner .head .desc b {background-color: #E94544;}
+.survey-inner .stitem b {background-position: -313px -58px;}
+.survey-inner .st1 em, 
+.survey-inner .st5 em, 
+.survey-inner .st7 em,
+.survey-inner .st11 em {font-size: 35px}
+/*三层*/
+.spining-outer {background: #F8F2E4 url(img/bg2.jpg) no-repeat center 0}
+.spining-outer .c-link { color: #FF840A; background-position: 100px -348px}
+.spining-outer .stitem em {color: #FC880D;}
+.spining-outer .desc .icon-r {background-position: -318px -301px}
+.spining-outer .desc span {background-position: 0 -301px}
+.spining-outer a {color: #FC880D;}
+.spining-inner .head {width: 100%; top: 50px; position: absolute; overflow: hidden; vertical-align: middle;}
+.spining-inner .head i {font: italic bold 55px 'Arial'; color: #FF8500}
+.spining-inner .head .desc b {background-color: #FF8500;}
+.spining-inner .stitem b {background-position: -313px -360px;}
+.spining-inner .st1 em, 
+.spining-inner .st5 em, 
+.spining-inner .st6 em,
+.spining-inner .st8 em,
+.spining-inner .st9 em {font-size: 35px}
+/*四层*/
+.ec-outer {background: #CFEBF6 url(img/bg3.jpg) no-repeat center 0}
+.ec-outer .c-link { color: #2F7DCF; background-position: 100px -648px}
+.ec-outer .stitem em {color: #2D82D5;}
+.ec-outer .desc .icon-r {background-position: -320px -598px}
+.ec-outer .desc span {background-position: 0 -598px}
+.ec-outer a {color: #2D82D5;}
+.ec-inner .head {width: 100%; top: 50px; position: absolute; overflow: hidden; vertical-align: middle; height: 65px; zoom: 1;}
+.ec-inner .head .title {_display: inline;}
+.ec-inner .head i {font: italic bold 55px 'Arial'; color: #2D82D5; display: inline-block;}
+.ec-inner .head .desc b {background-color: #2D82D5;}
+.ec-inner .stitem b {background-position: -314px -657px}
+.ec-inner .st1 em, 
+.ec-inner .st5 em, 
+.ec-inner .st7 em,
+.ec-inner .st11 em {font-size: 35px}
+/*五层*/
+.pige-outer {background: #F4EAE1 url(img/bg4.jpg) no-repeat center 0}
+.pige-outer .c-link { color: #C17A42; background-position: 100px -948px}
+.pige-outer .stitem em {color: #C17A42;}
+.pige-outer .desc .icon-r {background-position: -312px -900px}
+.pige-outer .desc span {background-position: 0 -900px}
+.pige-outer a {color: #C17A42;}
+.pige-inner .head {width: 100%; top: 50px; position: absolute; overflow: hidden; vertical-align: middle;}
+.pige-inner .head i {font: italic bold 55px 'Arial'; color: #C17A42}
+.pige-inner .head .desc b {background-color: #C17A42;}
+.pige-inner .stitem b {background-position: -314px -959px}
+.pige-inner .st2 em, 
+.pige-inner .st4 em, 
+.pige-inner .st6 em,
+.pige-inner .st8 em,
+.pige-inner .st11 em {font-size: 35px}
+/*六层*/
+.pic-outer {background: #F4EAE1 url(img/bg5.jpg) no-repeat center 0}
+.pic-inner .desc span {background: url(img/icon-pic.png) no-repeat;}
+.pic-outer .desc .icon-r {background-position: -268px 0}
+.pic-outer a {color: #C17A42;}
+.pic-inner .head {width: 100%; top: 50px; position: absolute; overflow: hidden; vertical-align: middle;}
+.pic-inner .head i {font: italic bold 55px 'Arial'; color: #E22F33}
+.pic-inner .head .desc b {background-color: #E22F33;}
+.pic-inner .stitem {white-space: normal;}
+.pic-inner .stitem .inner-pos {position: relative; left: 0; top: 0; overflow: hidden; width: 400px; height: 156px;}
+.pic-inner .stitem span {display: inline-block;}
+.pic-inner .stitem b {background-position: -314px -959px}
+.pic-inner .stitem .mask {position: absolute; left: 0; top: 0; background-color: #000; opacity: 0.6; filter: alpha(opacity=60); display: none;}
+.pic-inner .stitem .info {position: absolute; left: 0; top: 0; padding: 25px 20px; display: none;}
+.pic-inner .stitem .info strong {font: 18px 'microsoft yahei'; color: #fff; display: block;}
+.pic-inner .stitem .info em {color: #fff; text-indent: 2em; line-height: 22px; margin-top: 10px; font-size: 12px; display: block;}
+
+
+
+.screen-main .feng,
+.screen-main .yun,
+.screen-main .bang,
+.screen-main .year,
+.screen-main .slogen,
+.screen-main .arrow1 {transform: rotate(360deg); transition: transform 1s ease-out; z-index: 2}
+
+.screen-main .feng {width: 191px; height: 191px; background: url(img/feng.png) no-repeat; _background: url(img/feng-png8.png) no-repeat; }
+.screen-main .yun {width: 162px; height: 185px; background: url(img/yun.png) no-repeat; _background: url(img/yun-png8.png) no-repeat; }
+.screen-main .bang {width: 190px; height: 173px; background: url(img/bang.png) no-repeat; _background: url(img/bang-png8.png) no-repeat; }
+.screen-main .year {width: 56px; height: 115px; background: url(img/year.png) no-repeat; _background: url(img/year-png8.png) no-repeat; }
+.screen-main .slogen {width: 700px; height: 44px; background: url(img/slogen.png) no-repeat; _background: url(img/slogen-png8.png) no-repeat;}
+.screen-main .arrow1 {width: 64px; height: 26px; background: url(img/bot.png) no-repeat;_background: url(img/bot-png8.png) no-repeat;}
+
+
+
+
+.screen-main .slogen {left: 150px; top: 620px; display: none;}
+.screen-main .arrow1 {left: 468px; top: 720px;}
+
+/*.screen-main .feng {left: 385px; top: 105px;}*/
+.screen-main .feng {right: 418px; top: 105px;}
+.screen-main .yun {left: 505px; top: 230px;}
+.screen-main .bang {right: 415px; top: 370px;}
+.screen-main .year { left: 590px; top: 75px;}
+.screen-main .slogen {left: 150px; top: 620px; display: none;}
+.screen-main .arrow1 {left: 468px; top: 720px;}
+
+.survey-inner .stimg1 {left: 0; top: 145px;}
+.survey-inner .st1 {left: 300px; top: 140px}
+.survey-inner .st2 {left: 300px; top: 200px}
+.survey-inner .st3 {left: 300px; top: 235px}
+.survey-inner .st4 {left: 300px; top: 270px}
+.survey-inner .st5 {right: 310px; top: 340px}
+.survey-inner .st6 {right: 310px; top: 400px}
+.survey-inner .st7 {right: 310px; top: 435px}
+.survey-inner .st8 {right: 310px; top: 495px}
+.survey-inner .stimg2 {right: 0; top: 340px;}
+.survey-inner .stimg3 {left: 0; top: 555px;}
+.survey-inner .st9 {left: 350px; top: 560px}
+.survey-inner .st10 {left: 350px; top: 600px}
+.survey-inner .st11 {left: 350px; top: 630px}
+.survey-inner .st12 {left: 350px; top: 685px}
+
+.spining-inner .stimg1 {left: 0; top: 216px;}
+.spining-inner .st1 {left: 587px; top: 160px}
+.spining-inner .st2 {left: 587px; top: 225px}
+.spining-inner .st3 {left: 587px; top: 265px}
+.spining-inner .st4 {left: 587px; top: 305px}
+.spining-inner .st5 {left: 587px; top: 335px}
+.spining-inner .st6 {right: 595px; top: 428px}
+.spining-inner .st7 {right: 595px; top: 484px}
+.spining-inner .st8 {right: 595px; top: 540px}
+.spining-inner .st9 {right: 595px; top: 602px}
+.spining-inner .st10 {right: 595px; top: 658px}
+.spining-inner .stimg2 {left: 250px; top: 133px;}
+.spining-inner .stimg3 {right: 274px; top: 423px;}
+.spining-inner .stimg4 {left: 765px; top: 423px;}
+.spining-inner .st11 {left: 765px; top: 603px}
+.spining-inner .st12 {left: 765px; top: 640px}
+
+.ec-inner .stimg1 {left: 0; top: 145px;}
+.ec-inner .st1 {left: 370px; top: 140px}
+.ec-inner .st2 {left: 370px; top: 200px}
+.ec-inner .st3 {left: 370px; top: 235px}
+.ec-inner .st4 {left: 370px; top: 270px}
+.ec-inner .st5 {right: 310px; top: 333px}
+.ec-inner .st6 {right: 310px; top: 390px}
+.ec-inner .st7 {right: 310px; top: 422px}
+.ec-inner .st8 {right: 310px; top: 480px}
+.ec-inner .stimg2 {right: 0; top: 340px;}
+.ec-inner .stimg3 {left: 0; top: 555px;}
+.ec-inner .st9 {left: 262px; top: 560px}
+.ec-inner .st10 {left: 262px; top: 600px}
+.ec-inner .st11 {left: 262px; top: 630px}
+.ec-inner .st12 {left: 262px; top: 685px}
+.ec-inner .stimg4 {right: 0; top: 555px;}
+
+.pige-inner .stimg1 {right: 518px; top: 145px;}
+.pige-inner .st1 {right: 804px; top: 150px}
+.pige-inner .st2 {right: 804px; top: 184px}
+.pige-inner .st3 {right: 804px; top: 237px}
+.pige-inner .st4 {left: 506px; top: 140px}
+.pige-inner .st5 {left: 506px; top: 200px}
+.pige-inner .st6 {left: 506px; top: 235px}
+.pige-inner .st7 {right: 298px; top: 375px}
+.pige-inner .st8 {right: 298px; top: 410px}
+.pige-inner .st9 {right: 298px; top: 463px}
+.pige-inner .stimg2 {right: 0; top: 365px;}
+.pige-inner .stimg3 {left: 0; top: 528px;}
+.pige-inner .st10 {left: 263px; top: 540px}
+.pige-inner .st11 {left: 263px; top: 575px}
+.pige-inner .st12 {left: 263px; top: 633px}
+
+.pic-inner .stimg1 {left: 0; top: 145px}
+.pic-inner .stimg2 {left: 0; top: 304px}
+.pic-inner .stimg3 {left: 403px; top: 145px}
+.pic-inner .stimg4 {right: 0; top: 145px}
+.pic-inner .stimg5 {right: 0; top: 358px}
+.pic-inner .stimg6 {left: 0; top: 497px}
+.pic-inner .stimg7 {right: 0; top: 497px}
+
+.pic-inner .stimg1 .mask,.pic-inner .stimg1 .inner-pos {width: 400px; height: 156px;}
+.pic-inner .stimg1 .info {width: 360px; height: 116px;}
+.pic-inner .stimg2 .mask,.pic-inner .stimg2 .inner-pos {width: 400px; height: 190px;}
+.pic-inner .stimg2 .info {width: 360px; height: 150px;}
+.pic-inner .stimg3 .mask,.pic-inner .stimg3 .inner-pos {width: 218px; height: 349px;}
+.pic-inner .stimg3 .info {width: 178px; height: 309px;}
+.pic-inner .stimg4 .mask,.pic-inner .stimg4 .inner-pos {width: 376px; height: 210px;}
+.pic-inner .stimg4 .info {width: 336px; height: 170px;}
+.pic-inner .stimg5 .mask,.pic-inner .stimg5 .inner-pos {width: 376px; height: 136px;}
+.pic-inner .stimg5 .info {width: 336px; height: 96px;}
+.pic-inner .stimg6 .mask,.pic-inner .stimg6 .inner-pos {width: 509px; height: 186px;}
+.pic-inner .stimg6 .info {width: 469px; height: 146px;}
+.pic-inner .stimg7 .mask,.pic-inner .stimg7 .inner-pos {width: 488px; height: 186px;}
+.pic-inner .stimg7 .info {width: 448px; height: 146px;}
+
+
+.link {background-color: #151515}
+.link p {color: #292929}
+.love-links a {color: #606060}
+.love-links a:hover {color: #fff}
+.fixed-banner {position: fixed; top: 100px; right: 0; width: 100px; height: 455px; font: bold 16px 'Microsoft Yahei'; color: #33322D; _position:absolute; 
+_top:expression(eval(document.documentElement.scrollTop+100)); 
+_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth));}
+.fixed-banner ul li {width: 45px; height: 40px; margin-bottom: 3px; background-color: #FFE139;  text-align: center; font: bold 16px 'Microsoft Yahei'; color: #323232; padding: 5px 10px; cursor: pointer;}
+.fixed-banner ul li.cur {width: 44px; position: relative; left: -9px; padding: 5px 18px; color: #fff; background: url(img/icon-collect.png) no-repeat;_background: url(img/icon-collect-png8.png) no-repeat;}
+
+.fixed-banner ul li.f0 {background: url(img/connect0.png) no-repeat -18px -139px; _background-image: url(img/connect0-png8.png);}
+.fixed-banner ul li.f1 {background-position: -127px -247px;}
+.fixed-banner ul li.f2 {background-position: -128px -546px;}
+.fixed-banner ul li.f3 {background-position: -129px -847px;}
+.fixed-banner ul li.f4 {background-position: -128px -1149px;}
+.fixed-banner ul li.f5 {background: url(img/icon-pic.png) no-repeat 0px -250px; _background-image: url(img/icon-pic-png8.png);}
+.fixed-banner ul li.dbcode {width: 59px; height: 44px; padding: 3px}
+.fixed-banner .navimg {width: 65px; height: 105px; background: url(img/icon-collect.png) no-repeat; _background: url(img/icon-collect-png8.png) no-repeat; display: block;}
+.fixed-banner ._f0 {background: url(img/connect0.png) no-repeat -28px 0; _background-image: url(img/connect0-png8.png);}
+.fixed-banner ._f1 {background-position: -138px -110px}
+.fixed-banner ._f2 {background-position: -138px -415px}
+.fixed-banner ._f3 {background-position: -138px -713px}
+.fixed-banner ._f4 {background-position: -138px -1014px}
+.fixed-banner ._f5 {background: url(img/icon-pic.png) no-repeat 0px -63px; _background-image: url(img/icon-pic-png8);}
+.fixed-banner .share {width: 65px; height: 26px; background: url(img/connect0.png) no-repeat -19px -355px; display: block; _background-image: url(img/connect0-png8.png);}

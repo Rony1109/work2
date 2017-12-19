@@ -1,0 +1,74 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{background:#023a79 url(img/body-bg.png)}
+a{color:#2664A2;}
+.bg-fff{background-color: #fff;}
+.p-10{padding: 10px;}
+.c-f20000{color: #f20000;}
+.c-b0b0b0{color: #b0b0b0}
+.ico-sj{display: inline-block;width:0;height: 0;font-size: 0;line-height: 0;overflow: hidden;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.m-search ul li.cur a, .m-search ul li.cur a:hover{color: #0645ae;}
+.m-search .ss-txt{border-color:#0645ae;}
+.m-search div .btn{background:#0645ae url(img/s-btn.png);}
+.web-search,.link{background: #fff;}
+
+/* 以下为专题样式 */
+.nav,.banner,.content{min-width:1000px}
+.nav{height:35px;background:#001060 url(img/nav_bg.gif) no-repeat center 0;}
+.nav ul {height:33px; font-size:16px; padding-top:2px;}
+.nav ul li {float:left; margin-right:10px;}
+.nav ul li a {color:#FFF;display:block; width:100px;  height:33px; line-height:31px; position:relative;}
+.nav ul li.active a,.nav ul li a:hover {background:#FFF; text-decoration:none; color:#0546AD;}
+
+
+.banner{height:547px;background:#002155 url(../image/banner.jpg) no-repeat center 0;}
+
+.content{background:url(img/content-bg.png) no-repeat center 0;}
+
+/*floor*/
+.floor{}
+.floor h1{height: 57px;line-height: 57px;background-color: #f5f5f5;padding: 0 20px;color: #666363;position: relative;}
+.floor h1 span.floor-num{font-size: 38px;color: #fff;position: absolute;left:-47px;width: 47px;height: 75px;line-height: 75px;background-color: #086ce0;text-align: center;font-family: simsun;}
+.floor h1 span.g-fl{font-size: 24px;font-family: microsoft yahei;font-weight: 400;}
+.floor h1 span.g-fr{font-size: 14px;}
+
+.floor div.info{width: 170px;}
+.floor div.info a.img{display: block;margin:60px 0; text-align: center;}
+.floor div.info span{margin-top: 5px;display: block;}
+
+.floor div.pro{width: 797px;line-height: 24px;overflow: hidden;}
+.floor div.pro ul{width:105%;border-top: 1px solid #efefef;border-left: 1px solid #efefef;border-bottom: 1px solid #efefef;}
+.floor div.pro ul li{padding: 10px;float: left;width: 178px;padding: 10px;border-right: 1px solid #efefef;}
+.floor div.pro ul li b.ico-sj{float:right;border-left: 4px #ff4400 solid;border-right: 4px transparent solid;border-top: 4px transparent solid;border-bottom: 4px transparent solid;}
+.floor div.pro ul li a{display:block;color: #3f3f3f;font-size: 13px;font-weight: 700;margin-top: 5px;}
+.floor div.pro ul li a.g-e{position:relative;}
+.floor div.pro ul li a.g-e b.ico-sj{position: absolute;right: 0;top: 8px;}
+.floor div.pro ul li p.g-cf{background: url(img/0.gif) no-repeat right center;}
+.floor div.pro ul li a.btn{display: block;background: url(img/1.gif) no-repeat;width: 180px;height: 30px;text-indent: -999px;}
+.fixed-nav{position:fixed;_position:absolute; margin-left: 992px;_margin-left:960px; width:208px;top: 200px;}
+.fixed-nav .hd{height:87px;background:url(img/fixed-bg.png) 0 0;}
+.fixed-nav li{margin-bottom:3px;}
+.fixed-nav li a{display:block; line-height: 41px; color: #fff; height:41px;padding-left: 46px;background:url(img/fixed-bg.png) 0 -110px;}
+.fixed-nav .ft{display:block; height:59px;background:url(img/fixed-bg.png) 0 -160px;}

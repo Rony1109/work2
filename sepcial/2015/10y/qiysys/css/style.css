@@ -1,0 +1,262 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.footer{background-color: #fff}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+body{
+	background-color:#ddcebb;
+}
+/* 以下为专题样式 */
+.banner{
+	height: 550px;
+	background: url(../image/body_bg.jpg) no-repeat top center;
+}
+.wrap{
+	background-color: #fff;
+	width:1000px;
+	margin:-60px  auto  60px;
+	padding:0 20px;
+}
+.item{
+	height:490px;
+	background-repeat: no-repeat;
+}
+.item ul{
+	padding-top:169px;
+}
+.item ul li{
+	float:left;margin-left:28.8px;
+}
+.proimg{
+	width:208px;
+	height: 208px;
+	border:3px solid #fff;
+}
+.protit{
+	text-align: center;
+	font-size:12px;
+	line-height: 2.5em;
+	height: 2.5em;
+}
+.proinfo{
+	color: #ff8d06;
+	font-family: "Microsoft Yahei";
+	line-height: 34px;
+}
+.proinfo i{
+	font-size: 14px;
+	font-style: normal;
+	margin-right:5px;
+	font-weight: bold;
+}
+.proinfo strong{
+	font-size: 18px;
+}
+.proinfo img{
+	float: right;
+}
+.item1{
+	background-image: url(../image/sect1bg.jpg);
+}
+.item2{
+	background-image: url(../image/sect2bg.jpg);
+}
+.item3{
+	background-image: url(../image/sect3bg.jpg);
+}
+.item4{
+	background-image: url(../image/sect4bg.jpg);
+}
+.item5{
+	background-image: url(../image/sect5bg.jpg);
+}
+.braid,.gyhg{
+	width:1040px;
+	
+	margin:0 auto;
+}
+.braid h2,.gyhg h2{
+	padding:0 15px;
+	font-family: "Microsoft Yahei";
+	height:70px;
+	font-size: 38px;
+	line-height: 70px;
+	text-align: center;
+	background-color: #f98700;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+}
+.braid ul li{
+	float:left;
+	width:20%;
+	text-align: center;
+	margin:10px 0;
+}
+.braid .braindbg{
+	background-color: #fff;
+}
+.braid ul{
+	width:1000px;
+	margin:0 auto;
+	padding:25px 0;
+}
+.braid ul li img{
+	border:1px solid #ddd;
+}
+.gyhg{
+	margin:25px auto  15px;
+}
+.gyhg .qtzt{
+ 	background-color: #fff;
+}
+.gyhg h2{
+	
+}
+.img-scroll {
+	position: relative;
+	padding: 25px;
+	margin-top: 0px;
+	width: 954px;
+	float: right;
+	margin-right: 17px;
+}
+.scroll-box {
+	overflow: hidden;
+	width: 900px;
+	margin: 0 auto;
+}
+.scroll-box ul {
+	width: 9999px;
+	text-align: center;
+}
+.scroll-box li {
+	float: left;
+	display: inline;
+	margin-right: 15px;
+	width: 215px;
+}
+.scroll-box li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #333;
+}
+.scroll-box li a:hover{
+	color: #000;
+	text-decoration:underline;
+}
+.scroll-box li a img {
+	width: 209px;
+	height: 160px;
+	vertical-align: middle;
+}
+.ctr-l, .ctr-r {
+	text-align: center;
+	top: 0;
+	display: block;
+	position: absolute;
+	width: 32px;
+	height:100%;
+	cursor: pointer;
+}
+.ctr-l {	
+	background: url(../image/left_arr.png) no-repeat center center;
+	left:0;
+}
+.ctr-r {
+	background: url(../image/right_arr.png) no-repeat center center;
+	right:0;
+}
+
+.qq-float{
+	position: absolute;
+	left:50%;
+	top:687px;
+	margin-left:550px;
+	width:100px;
+	padding:0 10px;
+	margin-top:30px;
+}
+.qq-tit{
+	position: absolute;
+	top:-30px;
+	left:0;
+	width:100%;
+	height: 109px;
+	background-image: url(../image/float_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.qq-cn{
+	margin-top: 45px
+}
+.qq-cn .qq-btn{
+	background-color: #ffff00;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	display: inline-block;
+	width: 100%;
+	margin:0 auto 10px;
+	height: 30px;
+	line-height: 30px;
+	color: #fc4c43;
+	text-decoration: none;
+}
+.qq-cn ul li{
+	text-align: center;
+	background-color: #ff8d06;
+	border-bottom: 1px solid  #582e36;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.qq-cn ul  li.dsq{
+	background-color: #582e36;
+	color: #ff8d06;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Microsoft Yahei";
+}
+.qq-cn ul  li.dsq i{
+	font-size: 1.2em;
+	margin:0 4px;
+}
+.qq-cn ul li a{
+	color: #582e36;
+	text-decoration: none;
+}
+.totop img{
+	margin:0 5px;
+}

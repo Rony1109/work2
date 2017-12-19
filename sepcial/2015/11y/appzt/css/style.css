@@ -1,0 +1,136 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('//res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('//res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('//res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('//res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+body{
+	background-color: #ffd30e;
+	min-width: 320px;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+
+}
+.top{
+	width:100%;
+}
+.top img{
+	width:100%;
+}
+.nav{
+	width:100%;
+	display: table;
+	margin:8px 0;
+	padding:0 8px;
+}
+.nav li{
+	display: table-cell;
+	text-align: center;
+}
+.nav li:not(:first-child){
+	/*border-left:1px solid #fff;*/
+	position: relative;
+}
+.nav li:not(:first-child):before{
+	border:1px solid #fff;
+	content: "";
+	height:1em;
+	position: absolute;
+	top:50%;
+	left:-1px;
+	margin-top:-.5em;
+}
+.nav li span{
+	display: inline-block;
+	background-color: #fffac0;
+	border-radius:1em;
+	color:#fe6c00;
+	font-size: 1em;
+	line-height: 1.8em;
+	padding:0 .5em;
+	vertical-align: middle;
+}
+.nav li.current span{
+	background-color: #fe6c00;
+	color:#fff;
+}
+.products{
+	padding:0 10px;
+	display: table;
+	max-width: 720px;
+	margin:0 auto;
+}
+.products li{
+	display: inline-block;
+	width:50%;
+}
+.products li a{
+	display: block;
+	padding:5px;
+}
+.products li a img{
+	width:100%;
+}
+.infos{
+	padding:5px;
+	background-color: #fe6c00;
+	color:#fff;
+}
+.infos .protit{
+	font-size: 1.1em;
+}
+.prise{
+	float:left;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.prise:before{
+	content:"￥";
+}
+.origpri{
+	float:right;
+	font-size: .9em;
+}
+.infos .clearfix{
+	line-height: 2.3em;
+}
+.buybtn{
+	width:90%;
+	background-color: #fffac0;
+	border-radius: 5px;
+	display: inline-block;
+	color:#ff6c00;
+	margin:0 auto;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.text-center{
+	text-align: center;
+}
+@media(min-width:520px){
+	body{
+		font-size: 18px;
+	}
+	.nav{
+		margin:12px 0;
+	}
+	.nav li a{
+		font-size: 1em;
+		padding:.1em 1.5em;
+	}
+	.buybtn{
+		font-size: 1em;
+	}
+	.products li a{
+		padding:10px;
+	}
+}

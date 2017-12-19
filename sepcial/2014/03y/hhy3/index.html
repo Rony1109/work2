@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link href="http://res.csc86.com/bhf/" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://res.csc86.com/js/"></script>
+<script src="http://res.csc86.com/dialog/" type="text/javascript"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/m/config.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/tradering.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</head>
+<body>
+<div class="top-bar"><!--top-bar start-->
+  <div class="g-o-a">
+    <div class="top-csc-group"> <a target="_blank" href="http://group.csc86.com">走进华南城</a> <a target="_blank" href="http://sz.csc86.com">深圳</a><a target="_blank" href="http://nn.csc86.com">南宁</a><a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a><a target="_blank" href="http://xa.csc86.com">西安</a><a target="_blank" href="http://zz.csc86.com">郑州</a><a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a> </div>
+    <div class="server-r"><a title="" target="_blank" href="http://cncms.csc86.com/help/">客服中心</a></div>
+    <span class="v-line sev-r"></span>
+    <div class="top-my-account">
+      <div class="hd">我的账户</div>
+      <div class="g-c-f bd w-193">
+        <ul class="csc-bd">
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+        </ul>
+        <ul class="yesmore-bd">
+          <li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+          <li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-sign-info"> 您好，<span class="bd"> 欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a> </span><span class="v-line"></span> </div>
+  </div>
+</div>
+<div class="web-search">
+  <div class="g-o-a">
+    <h1> <a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com"> <img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/image/c/index/logo.png"> </a> </h1>
+    <div class="m-search">
+      <form action="http://search.csc86.com/company/company.html" method="get">
+        <ul class="g-c-f">
+          <li class="first"><a href="http://search.csc86.com/selloffer/products.html">产品</a></li>
+          <li class="cur"><a href="http://search.csc86.com/company/company.html">公司</a></li>
+        </ul>
+        <div class="g-c-f">
+          <div class="ss-txt">
+            <div style="display:none;" id="comp-ol" class="ss-select"> <span class="arr"></span>
+              <ol>
+                <li class="cur"><a href="javascript:">公司名称</a></li>
+                <li><a href="javascript:">主营产品</a></li>
+              </ol>
+            </div>
+            <input type="text" class="txt" name="q" placeholder="请输入公司名称或关键词" value="" autocomplete="off" maxlength="50" id="search-txt">
+          </div>
+          <input type="submit" value="搜索" id="searchbtn" class="btn">
+        </div>
+        <ol class="g-o-f hot-keys">
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%82%E6%96%99">涂料</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%97%A0%E7%BA%BA%E5%B8%83">无纺布</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a></li>
+        </ol>
+      </form>
+    </div>
+    <script>
+	$("form").one("keydown",function (){
+		seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+			csc.suggest();
+		});
+	});			
+	seajs.use(csc.url("res","/f=js/m/search"),function (){
+		csc.search().searchType("div.m-search");
+	});
+	seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+		csc.placeholder("#search-txt");
+	});
+</script> 
+  </div>
+</div>
+<div class="nav">
+  <div class="nav_main"> <span class="nav_log"></span> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1373292466&amp;site=qq&amp;menu=yes" class="g-f-r gh_btn" title="我要供货" target="_blank">我要供货</a>
+    <div class="nav_btn"><a href="#" title="关于好货源底价批" target="_blank" class="first">关于好货源底价批</a>| <a href="" target="_blank" title="_blank">活动规则 </a>| <a href="" target="_blank" title="往期回顾">往期回顾</a>| <a href="" title="收藏本页"  onclick="addFavourite(window.location,document.title)">收藏本页</a></div>
+  </div>
+</div>
+<div class="banner">
+  <div class="fx"> 
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style g-f-r"> <a class="jiathis_button_tools_1"></a> <a class="jiathis_button_tools_2"></a> <a class="jiathis_button_tools_3"></a> <a class="jiathis_button_tools_4"></a> <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a> </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1394077324564478" charset="utf-8"></script> 
+    <!-- JiaThis Button END --> 
+  </div>
+</div>
+<div class="content">
+<div class="main bac_5db3fc">
+  <h2 class="title t_t1" id="sb">办公设备类</h2>
+  <ul class="list c">
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57">￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+  </ul>
+</div>
+<div class="main bac_3fe77e"> <span class="bac_img"></span>
+  <h2 class="title t_t2" id="sx">办公定书写类</h2>
+  <ul class="list c">
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57">￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+  </ul>
+</div>
+<div class="main bac_99cf16"> <span class="bac_img"></span>
+  <h2 class="title t_t3" id="dz">办公定制类</h2>
+  <ul class="list c">
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57">￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+  </ul>
+</div>
+<div class="main bac_fe894a"> <span class="bac_img"></span>
+  <h2 class="title t_t4" id="wj">办公文件管理类</h2>
+  <ul class="list c">
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57">￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+  </ul>
+</div>
+<div class="main bac_ff8080"> <span class="bac_img"></span>
+  <h2 class="title t_t5" id="rz">办公日杂用品类</h2>
+  <ul class="list c">
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blank"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57">￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+    <li>
+      <a href="" target="_blnk"><h3 class="bac_bfecff">深圳xxx科技有限公司</h3>
+      <img src="http://res.csc86.com/image/img.png" alt="" width="240" height="190" />
+      <p class="fc_f75d57"><span>（底批价）</span>￥<b>666.000</b></p>
+      <p>纸张：xxxxxxxxx <br />
+        推荐指数:xxxxxx</p>
+      </a>
+      <p><a href="" target="_blank" title="意向订单" class="btn g-f-l">意向订单</a><a href="" target="_blank" title="立即询盘" class="btn g-f-r">立即询盘</a></p>
+    </li>
+  </ul>
+</div>
+<div class="main bac_ad5ddb c mt_15" id="qt">
+  <h2 class="title t_t6">洽谈室</h2>
+<div class="g-f-l bg_fff purchaser">
+      <h3>我是采购商</h3>
+      <p class="g-t-c fnt_20">我来发布信息</p>
+      <p class="mt_30 pt_10 fnt_14 bt_1_ebe8e7"><b>采购商享受的服务：</b></p>
+      <ol class="fnt_14">
+        <li>1、优质认证供应商</li>
+        <li>2、发布信息，坐等报价</li>
+        <li>3、平台保障，安全放心</li>
+      </ol>
+      <a href="http://member.csc86.com/inquiry/openpublish.html" class="btn_updata" target="_blank">发布求购信息</a>
+    </div>
+    <div class="g-f-l bg_fff purchaser fix_m">
+      <h3>我是供应商</h3>
+      <p class="g-t-c fnt_20">我想展示特色商品</p>
+      <p class="step pt_10 fnt_14 bt_1_ebe8e7"><b>参与流程：</b></p>
+      <ol class="fnt_14">
+        <li><a href="http://member.csc86.com/register/signup" class="btn_small g-o-ab" target="_blank" title="立即注册">立即注册</a>立即注册即可参与推广活动</li>
+        <li><a href="http://member.csc86.com/login/phone?done=http%3A%2F%2Fmember.csc86.com%2Fshop%2Fguide.html%3Fid%3D1144bb9d-8e61-449c-aea1-ac3d101af3b8" class="btn_small g-o-ab" target="_blank" title="开通旺铺">开通旺铺</a>开通旺铺，发布产品</li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1373292466&amp;site=qq&amp;menu=yes" target="_blank" class="btn_small g-o-ab" title="推广产品">推广产品</a>将参与推广的商铺网址发到活动QQ或邮箱</li>
+        <li><a href="javascript:;" class="btn_small g-o-ab" title="坐拥订单">坐拥订单</a>保持电话畅通准备就收询单电话</li>
+      </ol>
+    </div>
+    <div class="g-f-l bg_fff range">
+      <div class="hot_range c">
+        <div class="mss_log">
+          <img src="images/range.jpg" alt="">
+          <div class="range_data">
+            <p><span>28</span><span>成员</span></p>
+            <p><span>57</span><span>话题</span></p>
+          </div>
+        </div>
+        <h3>好货源底价批</h3>
+        <p class="lh_22">圈主：好货源底价批<br>官方管理员：华网小管家 创业大赛运营专员<br>2013华南城网“好货源底价大型主题活动活动官方圈</p>
+        <a href="javascript:csc.addCircleCncms('fd23ebf2-c1f3-4d63-9f0d-9d4778e36ccb',this)" class="btn_small fix_btn_small" title="加入圈子">加入圈子</a>
+      </div>
+      <h4 class="f_e93012">3c盛宴 春季开学必购数码产品攻略！</h4>
+      <div class="c"><p class="lh_22">又是一年开学时，作为年后最强的一批消费大军——学生们都捏着一叠厚厚的利是都瞄准自己所需的数码电子产品了。3c数码类一直校园必备大数码杀器为了，更好给各大供应商和采购商在这节点上更好的挖掘节日商机，华南城网生意红娘精心策划一套攻陷学生们钱包的宝典。</p>
+      <span class="g-f-l">2014-02-28 16:38</span><span class="g-f-r">赞（4） 回复（10</span>
+    </div>
+      <div class="btn_box c"><a href="" class="btn_small g-f-l" target="_blank" title="评论">评论</a><a href="" class="btn_small g-f-l ml_10" target="_blank" title="更多话题">更多话题</a></div>
+    </div>
+ </div>
+<div class="main bac_ad5ddb c mt_15" id="te">
+  <h2 class="title t_t7" id="ts">华南城网特色服务  只为您采购更放心</h2>
+  <div class="server c">
+    <div class="g-f-l w295">
+      <h3 class="s_title1"><a href="http://cncms.csc86.com/special/1310/rz/" target="_blank">什么是实名认证?</a></h3>
+      <p>实名认证是一项提升企业信用度的服务。由华南城网联合第三方通过工商、税务确认企业的 真实性、合法性，提升信誉度，获得更高的曝光率和成交率。</p>
+    </div>
+    <div class="g-f-l w295">
+      <h3 class="s_title"><a href="http://cncms.csc86.com/special/1310/rz/" target="_blank">什么是实体认证?</a></h3>
+      <p>实体店认证是一项专业的认证服务，由华南城网专人上门取证并对其核实认证。如实展现企业实力，赢取采购商的信任，获得更多订单。</p>
+    </div>
+    <div class="g-f-l w295">
+      <h3 class="s_title2"><a href="http://cncms.csc86.com/special/1310/rz/" target="_blank">什么是诚信深商？</a></h3>
+      <p>注册地为深圳的企业可直接申请“诚信深商认证”，该认证依托深圳市政府市场监管信息资源，联合第三方“众信网”，为深圳可信电子商务企业提供权威公信力认....</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer"> <a href="http://cncms.csc86.com/about/" target="_blank">关于华南城网</a>|<a href="http://cncms.csc86.com/about/member.html" target="_blank">会员服务</a>|<a href="http://ad.csc86.com/" target="_blank">广告服务</a>|<a href="http://cncms.csc86.com/about/business.html" target="_blank">商务合作</a>|<a href="http://cncms.csc86.com/about/server.html" target="_blank">服务条款</a>|<a href="http://cncms.csc86.com/about/laws.html" target="_blank">法律申明</a>|<a href="http://cncms.csc86.com/about/privacy.html" target="_blank">隐私保护</a>|<a href="http://cncms.csc86.com/about/feedback.html" target="_blank">意见反馈</a>|<a href="http://cncms.csc86.com/help/" target="_blank">帮助中心</a>|<a href="http://cncms.csc86.com/sitemap.html" target="_blank">网站地图</a>|<a href="http://cncms.csc86.com/about/contact.html" target="_blank">联系我们</a><br />
+  Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved<br />
+  深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</div>
+<div class="side_nav" id="fiexd">
+  <ul>
+    <li><a href="#sb">设备类</a></li>
+    <li><a href="#sx">书写类</a></li>
+    <li><a href="#dz">定制类</a></li>
+    <li><a href="#wj">文件管理类</a></li>
+    <li><a href="#rz">日杂用品类</a></li>
+    <li><a href="#qt">洽谈室</a></li>
+    <li><a href="#ts">特色服务</a></li>
+    <li class="last"></li>
+  </ul>
+</div>
+<div style="display:none"> 
+  <script src="http://res.csc86.com/f=js/m/statistics.js"></script> 
+</div>
+</body>
+</html>

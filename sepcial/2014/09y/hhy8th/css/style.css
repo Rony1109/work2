@@ -1,0 +1,87 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+/* 合并后引入如下
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+*/
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+.content{background:#e5f6ff;min-width:1000px}
+
+/* 以下为专题样式 */
+
+.nav{height:46px;background:#0d69be;line-height:46px}
+.nav .g-o{position: relative;}
+.nav ul{padding-left:170px}
+.nav a{color:#fff;padding:0 25px;}
+.nav li{float: left;}
+.issue{ position: absolute; top: -28px;left:0}
+
+.banner{height:912px;background:url(../image/banner2.jpg) no-repeat bottom center;margin-bottom:-342px}
+  .banner1{height:412px;background:url(../image/banner1.jpg) no-repeat center 0;}
+
+.box{margin-bottom:20px;background:#417fee}
+.box .hd{height:65px;background:#125ed0 url(img/hd.jpg) no-repeat 0 0;}
+.box .bd{padding:10px}
+
+.other ul{background:#fff;padding:20px;}
+.other li{_display: inline;width:215px;float:left;margin:0 10px;}
+
+.company{position: relative; width:335px;height: 476px; padding: 10px 13px;border-radius:6px;background:#fff}
+.company h3 a{color:#417fee;font-size:18px}
+.company .pro{position: absolute; left: 34px;bottom: 90px; color:#000;width:260px;height:70px;padding:15px}
+.company .pro .bg{position: absolute;left:0;top:0;width:100%;height:100%;background:#fff;opacity:.5;filter: alpha(opacity=50);}
+.company .pro .txt{position: relative;}
+.company .bt{margin-top:13px}
+.company .q,.company .i{display: inline-block;*display: inline;*zoom: 1; vertical-align: middle;}
+.company .q{width:27px;height:32px;margin-right: 20px; background:url(img/qq.gif) no-repeat;}
+.company .i{width:165px;height:36px; background:#417fee;color:#fff;font-size:24px;font-weight:700;text-decoration: none;line-height:34px;border-radius:3px}
+
+.mini-list{width: 612px;margin-right:-2px}
+.mini-list li{_display: inline;background:#fff;float:left;width:200px;height:245px;margin:2px;}
+.mini-list img{margin:10px 10px 0;}
+.mini-list .t{color:#444;margin-left:10px;line-height:20px}
+.mini-list .t:hover{color:#f60}
+.mini-list .bt{height:35px;background:#e5e5e5 url(img/btn1.png) no-repeat right 0}
+.mini-list ins{margin-left:10px; text-decoration: none;font-size:18px;color:#ea474a;font-weight:700;}
+.mini-list ins span{font-size:24px}
+.mini-list .b{float: right; width:88px;height:35px;vertical-align: middle;}
+.mini-list li:hover{border:solid 2px #ea474a;width:196px;height:241px;}
+.mini-list li:hover img{margin:8px 8px 0;}
+.mini-list li:hover .t,.mini-list li:hover ins{margin-left:8px}
+.mini-list li:hover .bt{height:33px; background-position: 110px 0;}
+
+.box .list{padding: 10px 0 0 8px;*padding-bottom:10px}
+.list li{_display: inline;float: left; background:#fff;width:200px;height:366px; padding:18px 22px;margin:0 1px 10px;}
+.list li:hover{border:solid 2px #f32f05;padding:16px 20px}
+.list img{margin:10px 0}
+.list .t{font-size:15px;color:#444;line-height:24px}
+.list .t:hover{color:#f60}
+.list ins{display: block;text-decoration: none;font-size:24px;color:#f32f05;font-weight:700;background: url(img/tag.png) no-repeat right 11px;}
+.list ins span{font-size:40px}
+.list del{display: block;text-align: right; color:#666;margin: -26px 0 20px;}
+.list .q,.list .b{display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;}
+.list .q{width:27px;height:32px;margin-right: 4px; background:url(img/qq.gif) no-repeat;}
+.list .b{width:165px;height:36px; background:url(img/btn.png) no-repeat;}
+
+
+.fixed-nav{width:186px;height:287px;background:url(img/fix-nav.png); position: absolute;margin-left:980px;top: 760px;_background-image: url(img/fix-nav-ie6.png);
+}
+.fixed-nav ul{width:140px;margin:0 auto; padding-top: 47px;}
+.fixed-nav a{display: block;height:47px;}

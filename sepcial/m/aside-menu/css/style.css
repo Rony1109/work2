@@ -1,0 +1,55 @@
+ @import url('http://res.csc86.com/f=v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+body{font: 12px/1.5 arial,simsun;}
+h1,h2{font-size: 100%;}
+a{color:#2664A2; text-decoration: none;}
+a:hover{text-decoration: underline;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#efefef;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 专题样式 */
+/*body{min-width:1000px;margin-left:auto;margin-right:auto;}*/
+.top-bar,.web-search,.head,.main{min-width:1000px;margin-left:auto;margin-right:auto;}/*对.top-bar,.web-search,.head,.main设置最小宽度防止图片或者背景因缩小浏览器或者不同分辨率下显示时出现错误的情况，也可以直接设置body样式的最新宽度为主内容宽，然后居中显示来防止前面说的问题，如body{min-width:1000px;margin-left:auto;margin-right:auto}*/
+.banner{background-color:#000;height:300px;}
+.flr{height:600px;}
+.flr1{background-color:#6F0;}
+.flr2{background-color:#636}
+.flr3{background-color:#C63}
+.flr4{background-color:#00F}
+.flr5{background-color:#FF6;}
+
+/* 
+*1、右侧浮动导航 设置aside右侧浮动的位置可根据主内容的宽来设置，此处假设主内容宽为1000px，则设置aside如下left:50%;margin-left:520px;来防止aside浮动在主内容上面
+*2、ie9+可利用媒体查询实现在一定屏幕宽度下要么全显示，要买全都不显示，至于ie8及以下版本允许出现全显示、全不显示、或显示一半的情况
+*/
+.aside{position:fixed;left:50%;margin-left:520px;top:15%;width:88px;}
+.aside h2,.aside .back-up{background:url(img/sf.png) no-repeat;line-height:999px;overflow:hidden;}
+.aside h2{position:relative;bottom:-10px;background-position:0 -56px;height:84px;}
+.aside a{display:block;cursor:pointer;}
+.aside a:hover{text-decoration:none;color:#323232;}
+.aside-menu,.aside .back-up{width:58px;margin-left:auto;margin-right:auto;text-align:center;}
+.aside-menu{font-size:14px;line-height:16px;}
+.aside-menu li{height:60px;overflow:hidden;}
+.aside-menu a{background-color:#0a5478;height:45px;padding-top:15px;color:#fff;}
+.aside-menu .even a{background-color:#136a93;}
+.aside-menu a:hover{background-color:#fcff00;}
+.aside .back-up{background-color:#f1d72a;background-position:-89px -56px;height:28px;padding-top:0;}
+.aside .back-up:hover{background-color:#f6be28;}
+
+/*@media(max-width:1190px){
+	.aside{visibility:hidden;}
+}*/
+

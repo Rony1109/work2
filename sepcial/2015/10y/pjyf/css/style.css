@@ -1,0 +1,248 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#ff9001;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{
+	background: url(../image/main_bg.jpg);
+}
+h2{
+	font-family: "Microsoft Yahei";
+}
+p{
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 1.5em;
+	text-align: justify;
+}
+.banner{
+	height:520px;
+	background:url(../image/banner.jpg) no-repeat top center;
+}
+.banner .bantxt{
+	position: relative;
+	height:520px;
+}
+.bantxt p{
+	position: absolute;
+	width: 100%;
+	bottom: 12px;
+	text-align: right;
+	color: #fff;
+	right: 0;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}
+.main{
+	
+}
+.item{
+	background-color: #fff;
+}
+.footer{
+	background-color: #fff;
+}
+.daoyu{
+	background: url(../image/dy_bg.png) 5px 5px no-repeat;
+	padding:5px 5px 5px 109px;
+	height: 106px;
+}
+.daoyu p{
+	background: url(../image/dyright.png) top right no-repeat;
+	padding-top:2.5em;
+	line-height: 1.5em;
+	text-indent: 2em;
+}
+
+.zjzb-tit{
+	border-top:2px solid #a30001;
+	background: url(../image/firtitbg.jpg) no-repeat top center;
+	text-align: center;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 28px;
+}
+.qsfx{
+	padding:15px 30px;
+}
+.fxcn{
+	background: url(../image/fxheadbg.jpg) no-repeat top right;
+	width:606px;
+	height: 257px;
+	padding-top:90px;
+}
+.fxcn h2{
+	font-size: 18px;
+	margin:10px 0;
+}
+.fxcn p{
+	text-indent: 2em;
+}
+.item-tit{
+	background: url(../image/title_bg.png) no-repeat;
+	height: 44px;
+	margin-top:15px;
+}
+.item-tit h2{
+	line-height: 44px;
+	color: #fff;
+	font-size: 22px;
+	padding-left: 1em;
+}
+.pjzj ul{
+	padding:25px 0;
+}
+.pjzj ul li{
+	width: 270px;
+	height: 324px;
+	float: left;
+	padding:0 30px 0 30px;
+	border-right:1px dashed #d2d2d2;
+}
+.pjzi-top{
+	vertical-align: middle;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+	font-weight: bold;
+}
+.pjzi-top img{
+	vertical-align: middle;
+	float: left;
+}
+.pjzjimg{
+	margin:10px auto;
+	display: block;
+}
+.pdhy{
+	
+}
+.pdhy ul {
+	width:920px;
+	margin:0 auto;
+}
+.pdhy ul li{
+	float:left;
+	width:440px;
+	padding:10px;
+}
+.hy-cn{
+	padding:0 5px;
+	float:left;
+	width:220px;
+}
+.hy-cn h3{
+	font-size: 14px;
+	margin:15px 0;
+}
+.pdhytop{
+	border-bottom: 1px dashed #d2d2d2;
+}
+.endyu{
+	background-color: #fff;
+	height: 90px;
+	margin-top:15px;
+}
+.endyu h2{
+	float: left;
+	width:200px;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	height: 90px;
+	line-height: 90px;
+	background: url(../image/endtit.jpg) no-repeat;
+}
+.endtxt{
+	line-height: 1.5em;
+	height: 60px;
+	padding:15px;
+}
+.qtzt{
+	margin-bottom:15px;
+}
+.img-scroll {
+	position: relative;
+	padding: 25px;
+	margin-top: 0px;
+	width: 920px;
+	float: right;
+	margin-right: 17px;
+}
+.scroll-box {
+	overflow: hidden;
+	width: 900px;
+	margin: 0 auto;
+}
+.scroll-box ul {
+	width: 9999px;
+	text-align: center;
+}
+.scroll-box li {
+	float: left;
+	display: inline;
+	margin-right: 15px;
+	width: 215px;
+}
+.scroll-box li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #333;
+}
+.scroll-box li a:hover{
+	color: #000;
+	text-decoration:underline;
+}
+.scroll-box li a img {
+	width: 209px;
+	height: 160px;
+	vertical-align: middle;
+}
+.ctr-l, .ctr-r {
+	text-align: center;
+	top: 0;
+	display: block;
+	position: absolute;
+	width: 32px;
+	height:100%;
+	cursor: pointer;
+}
+.ctr-l {	
+	background: url(../image/left_arr.png) no-repeat center center;
+	left:0;
+}
+.ctr-r {
+	background: url(../image/right_arr.png) no-repeat center center;
+	right:0;
+}

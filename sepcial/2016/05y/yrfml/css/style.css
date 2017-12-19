@@ -1,0 +1,137 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{ font-size: 62.5%; font-family: Microsoft Yahei; min-width: 1250px; margin: 0 auto }
+.w1200{ width: 1200px; margin: 0 auto }
+.w1244{ width: 1244px; margin: 0 auto; }
+.mauto{ margin: 0 auto }
+
+/*顶部导航 样式*/
+.nav{ height: 59px; width: 100%; position: fixed; top: 0; display: none; background:url(img/nav1.jpg) no-repeat center 0;}
+.nav ul{ height: 59px; background-image:url(img/nav.jpg); }
+.nav ul li{ width: 128px; height: 35px; line-height: 35px; float: left; text-align: center; margin-right: 8px; margin-top: 12px}
+.nav ul li a{ display: inline-block; font-size: 2.2em; text-decoration: none}
+.nav ul li a:hover{ font-weight: 700 }
+.nav ul .nav-com a:hover{ color: #2d2929 }
+.nav ul .nav-com-1 a:hover{ color: #fff }
+.nav ul .nav-com a{ color: #0389fb; }
+.nav ul .nav-com-1 a{ color: #eefd00 }
+.nav ul .nav-1{ margin-left: 10px; background-color: #03befb; border-radius: 30px }
+.nav ul .nav-1 a{ font-weight: 700; color: #fff }
+.nav ul .nav-l{ background-color: #fdee00; border-radius: 30px; }
+.nav ul .nav-l a{ color: #0389fb; font-weight: 700 }
+/*海报 poster 样式*/
+.bgimg{height: 740px; background: url(img/bgimg.jpg) no-repeat center 0; }
+
+/*vedio and logo 样式*/
+.vediologo{ height: 486px; background: url(img/vediologo.jpg) no-repeat center 0 }
+.vbox{ padding-top: 68px; overflow: hidden;}
+.vbox .vl{ display: block; float: left; margin-left: 30px }
+.vbox .vr{ float: left; padding-left: 55px}
+.vbox .vr p{ width: 368px; height: 118px; padding-left: 100px; }
+.vbox .vr ul{width: 418px; height: 188px; background:url(img/logok.png) no-repeat ; padding-left: 50px; padding-top: 20px }
+.vbox .vr ul li{ font-size: 2em; color: #0c2e85; height: 42px; line-height: 42px }
+
+/*楼层产品 样式*/
+.com-box{ padding-top: 60px; color: #0c2e85; overflow: hidden; padding-bottom: 110px }
+.com-l{ width: 480px; padding-top: 76px; float: left; text-align: center;}
+.com-l p{ font-size: 2.4em; }
+.com-l h2{ font-size: 6.2em; font-weight: 400 }
+.com-l a{ display: block; margin-top: 80px; }
+.com-r{ float: left; }
+.com-r a{ display: block; }
+.com-list{ overflow: hidden; }
+.com-list li{ width: 386px; text-align: center; margin-right: 21px; float: left }
+.com-list li a{ text-decoration: none; }
+.com-list li.last{ margin-right: 0 }
+.com-list li .com-img{ display: block }
+.com-list li .com-title{ padding: 10px 0; }
+.com-list li .com-title a{ display: inline-block; color: #464646; font-size: 1.6em }
+.com-list li .com-price{ font-size: 2em; color: #464646; padding-top: 5px}
+.com-list li .com-price em{ font-size: .8em; margin-right: 20px}
+.com-list li .com-order{ display: block; width: 158px; height: 38px; margin-left: 114px; color: #fff; font-size: 1.8em; line-height: 38px; background-color: #61beec }
+.com-list li .com-order:hover{ font-weight: 700; text-decoration: underline; }
+
+/*第一层产品 样式*/
+.floor-1{ height: 1280px; background:url(img/bg2.jpg) no-repeat center 0; }
+.floor-1 .com-r{ margin-left: 156px }
+
+/*第二层产品 样式*/
+.floor-2{ height: 1293px; background:url(img/bg3.jpg) no-repeat center 0; }
+.floor-2 .com-r{ margin-left: 78px; margin-right: 138px }
+.floor-2 .com-l{ color: #c71f8f }
+.floor-2 .com-list li .com-order{ background-color: #e74b32 }
+
+/*第三层产品 样式*/
+.floor-3{ height: 1254px; background:url(img/bg4.jpg) no-repeat center 0; }
+.floor-3 .com-box{ padding-top: 68px }
+.floor-3 .com-l{ color: #2ca6e3 }
+.floor-3 .com-r{ margin-left: 128px }
+.floor-3 .com-list li .com-order{ background-color: #3272b9 }
+
+/*第四层产品 样式*/
+.floor-4{ height: 522px; background:url(img/bg5.jpg) no-repeat center 0; }
+.floor-4 .vbox .vr .vdiv{ width: 468px; height: 118px; text-align: center;}
+.floor-4 .vbox .vr .vdiv h3{ font-size: 3.8em; color: #03297b }
+.floor-4 .vbox .vr .vdiv span{ display: block; color: #ef6300; font-size: 2.6em  }
+.floor-4 .vbox .vr ul li{ color: #d28338 }
+
+/*五六七层共同样式*/
+.com-con{ overflow: hidden; padding-top: 47px; padding-bottom: 129px}
+.com-left{ width: 460px; padding-top: 262px; padding-left: 152px; float: left;}
+.com-left h2{ font-size: 6em; color: #3677b9; height: 100px; padding-left: 100px; }
+.com-left p{ width: 190px; height: 30px; line-height: 30px; background-color: #61a6ec; color: #fff; font-size: 1.8em; margin-left: 123px; text-align: center; }
+.com-right{ width: 501px; float: left }
+
+/*第五层产品 样式*/
+.floor-5{ height:1321px; background:url(img/bg6.jpg) no-repeat center 0; }
+.floor-5 .com-list li .com-order{ background-color: #49a000 }
+/*第六层产品 样式*/
+.floor-6{ height:1340px; background:url(img/bg7.jpg) no-repeat center 0; }
+.floor-6 .com-left h2{ padding-left: 90px }
+.floor-6 .com-left p{ margin-left: 120px  }
+.floor-6 .com-list li .com-order{ background-color: #ed5270}
+/*第七层产品 样式*/
+.floor-7{ height:1302px; background:url(img/bg8.jpg) no-repeat center 0; }
+.floor-7 .com-left h2{ padding-left: 90px; height: 95px }
+.floor-7 .com-left p{ margin-left: 117px  }
+.floor-7 .com-list li .com-order{ background-color: #d2a60c; color: #2d2929}
+
+
+
+
+
+

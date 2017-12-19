@@ -1,0 +1,265 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+ body{ font-size:62.5%; font-family:Microsoft Yahei; min-width:1000px; margin:0 auto}
+.ma{ margin: 0 auto}
+.tit-detail{ font-size:1.4em; color:#fff; text-align:center; position:relative; top:120px}
+a.adown{ width:30px; display:block; color:#fff; font-size:3em; text-decoration:none; transform:rotate(90deg); position:relative; top:-20px; left:-10px}
+.fir-con a.adown{ color:#1a68d0; top:10px}
+.sec-con a.adown{ color:#1a68d0; top:10px; font-size:4.2em}
+.thi-con a.adown{ color:#90a1b2; top:-10px; font-size:4.2em}
+.fou-con a.adown{ color:#fff; top:16px; font-size:4.2em}
+
+/*banner 及导语d样式*/
+.bgimg{ height:740px; background:url(img/bgimg.jpg) no-repeat center 0}
+.leadimg{ height:220px; background:url(img/bglead.jpg) no-repeat center 0; color:#fff; text-align:center;}
+.lead{ max-width:980px; height:220px; background-color:#6dcbf7; }
+.lead .lead-tit{ width:200px; height:50px; line-height:50px; font-size:3.6em; background-color:#7c49b9; position:relative; z-index:1}
+.lead .lead-con{ width:920px; height:193px; font-size:1.6em; margin-top:-30px; border:1px solid #fff}
+.lead .lead-con p{ margin-top:50px}
+
+/*分享 电商干货 样式*/
+.fir-share{ height:181px; background:url(img/Firtit.jpg) no-repeat center 0; }
+.fir-share .fir-tit{ width:528px;}
+.fir-con{ height:445px; background:url(img/bgxpp.jpg) no-repeat center 0; color:#fff}
+.fir-con .csc-net{ height:410px; background:url(img/bgx.jpg) no-repeat center 0; background-size:96% 100%}
+.fir-con .csc-net ul{ position:relative}
+.fir-con .csc-net ul li{ font-weight:700; font-size:1.4em; position:absolute}
+
+.fir-con .csc-net ul .lifir{ top:-40px; left:222px}
+.fir-con .csc-net ul .lisec{ top:52px;  left:85px}
+.fir-con .csc-net ul .lithi{ top:280px; left:0}
+.fir-con .csc-net ul .lifou{ top:345px; left:210px;}
+.fir-con .csc-net ul .lifif{ top:-13px; right:176px}
+.fir-con .csc-net ul .lisix{ top:158px; right:226px}
+.fir-con .csc-net ul .lisev{ top:395px; right:335px}
+.fir-con .csc-net ul .lieig{ top:142px; right:0}
+.fir-con .csc-net ul .linin{ top:330px; right:115px;}
+
+.fir-con .csc-net ul li a{ display:block; border-radius:100%; -ms-border-radius:100%; -webkit-border-radius:100%; text-align:center;}
+.fir-con .csc-net ul .lifir a,.csc-net ul .lithi a{ border:2px solid #fff}
+.fir-con .csc-net ul .lifir a{ width:36px; height:36px; margin-top:10px}
+.fir-con .csc-net ul .lisec a{ width:32px; height:32px; border:1px solid #ddce1f; margin-top:10px}
+.fir-con .csc-net ul .lithi a{ width:48px; height:48px;}
+.fir-con .csc-net ul .lifou a{ width:50px; height:50px; border:2px solid #7c49b9; display:inline-block; margin-left:8px}
+.fir-con .csc-net ul .lifif a{ width:40px; height:40px; border:2px solid #6dcbf7; margin-top:8px}
+.fir-con .csc-net ul .lisix a{ width:64px; height:64px; border:3px solid #d9cc1e; margin-left:15px}
+.fir-con .csc-net ul .lisev a{ width:22px; height:22px; border:1px solid #446ec4; display:inline-block; margin-left:8px}
+.fir-con .csc-net ul .lieig a{ width:21px; height:21px; border:1px solid #4b9add}
+.fir-con .csc-net ul .linin a{ width:28px; height:28px; display:inline-block; border:1px solid #6dcbf7; margin-right:8px}
+
+.fir-con .csc-net ul li a em{ display:inline-block; border-radius:100%; -ms-border-radius:100%;}
+.fir-con .csc-net ul .lifir a em,.csc-net ul .lithi a em{ background-color:#fff}
+.fir-con .csc-net ul .lisix a em{ background-color:#d9cc1e}
+.fir-con .csc-net ul .lifir a em{ width:28px; height:28px; margin-top:4px}
+.fir-con .csc-net ul .lisec a em{ width:24px; height:24px; background-color:#ddce1f; margin-top:4px;}
+.fir-con .csc-net ul .lithi a em{ width:38px; height:38px; margin-top:5px}
+.fir-con .csc-net ul .lifou a em{ width:38px; height:38px; background-color:#7c49b9; margin-top:6px;}
+.fir-con .csc-net ul .lifif a em{ width:30px; height:30px; background-color:#6dcbf7; margin-top:5px}
+.fir-con .csc-net ul .lisix a em{ width:48px; height:48px; background-color:#d9cc1e; margin-top:8px}
+.fir-con .csc-net ul .lisev a em{ width:16px; height:16px; background-color:#446ec4; margin-top:3px}
+.fir-con .csc-net ul .lieig a em{ width:16px; height:16px; background-color:#4b9add; margin-top:2.5px; position:relative; z-index:9}
+.fir-con .csc-net ul .linin a em{ width:20px; height:20px; background-color:#6dcbf7; margin-top:4px }
+.fir-con .csc-net ul .liten { width:160px; height:100px; transform:rotate(-30deg); left:453px; top:120px}
+.fir-con .csc-net ul .liten a{ width:140px; height:90px; transform:skew(23deg)}
+
+.fir-con .csc-net ul  li a em:hover{ margin-top:3px}
+.fir-con .csc-net ul .lifir a em:hover{ width:30px; height:30px}
+.fir-con .csc-net ul .lisec a em:hover{ width:26px; height:26px}
+.fir-con .csc-net ul .lithi a em:hover{ width:42px; height:42px}
+.fir-con .csc-net ul .lifou a em:hover{ width:42px; height:42px; margin-top:4px}
+.fir-con .csc-net ul .lifif a em:hover{ width:34px; height:34px}
+.fir-con .csc-net ul .lisix a em:hover{ width:52px; height:52px; margin-top:6px;}
+.fir-con .csc-net ul .lisev a em:hover{ width:18px; height:18px; margin-top:2px;}
+.fir-con .csc-net ul .lieig a em:hover{ width:18px; height:18px; margin-top:1.5px;}
+.fir-con .csc-net ul .linin a em:hover{ width:22px; height:22px}
+
+.fir-intro{ height:148px; background:url(img/bgxpb.jpg) no-repeat center 0; color:#fff; font-size:1.4em }
+.fir-intro ul{ overflow:hidden}
+.fir-intro ul li{ width:450px; float:left; margin-top:30px}
+.fir-intro ul li a{ text-decoration:none; color:#fff}
+.fir-intro ul li.li1{ margin:30px 80px 0 20px}
+
+/*学习门店管理 样式*/
+.sec-man{ height:202px; background:url(img/Sectit.jpg) no-repeat center 0}
+.sec-man .sec-tit{ width:373px; color:#1e2769}
+.sec-con{ height:595px; background:url(img/Seccon.jpg) no-repeat center 0}
+.sec-con ul.sec-list{ height:554px; background-color:#eeefef}
+.sec-con ul.sec-list li.lif{ width:490px; float:left}
+.sec-con ul.sec-list div.li-up{ width:428px; height:194px; background-color:#fff; overflow:hidden; margin:12px 30px}
+.sec-con ul.sec-list div.li-up .show{ overflow:hidden; float:left}
+.sec-con ul.sec-list div.li-up .show span{ display:block; float:left}
+.sec-con ul.sec-list div.li-up .show span.s1{ width:120px; color:#aec5d4; transform:rotate(90deg);margin:60px 0 0 -40px}
+.sec-con ul.sec-list div.li-up .show span.s2{ width:20px; font-size:1.8em; color:#2e2e31; line-height:1.1; margin:8px 0 0 -50px}
+.sec-con ul.sec-list div.li-up .aimg{ display:inline-table; margin:20px 0 0 -15px}
+.sec-con ul.sec-list div.li-up .show-det{ float:right}
+.sec-con ul.sec-list div.li-up .show-det h2{ width:130px; font-size:1.4em; margin:15px 18px 10px 0} 
+.sec-con ul.sec-list div.li-up .show-det h2 a, .sec-con ul.sec-list ul.li-bot li .lid h2 a{ color:#111; text-decoration:none}
+.sec-con ul.sec-list div.li-up .show-det p{ width:136px; color:#858585; text-indent:2em }
+
+.sec-con ul.sec-list ul.li-bot{ overflow:hidden}
+.sec-con ul.sec-list ul.lir{ margin-left:12px}
+.sec-con ul.sec-list ul.li-bot li{ width:216px; height:300px; float:left;  border:1px solid #d0d1d2; margin:10px 0 0 18px}
+.sec-con ul.sec-list ul.li-bot li .lid{width:208px; height:296px; background-color:#fff; margin-top:-10px}
+.sec-con ul.sec-list ul.li-bot li .lid h2{ font-size:1.6em; margin:12px 10px}
+.sec-con ul.sec-list ul.li-bot li .lid p{ margin:0 10px} 
+
+/*进步销售密码 样式*/
+.thi-pro{ height:220px; background:url(img/Thitit.jpg) no-repeat center 0}
+.thi-pro .thi-tit{ width:280px; color:#1e2769; top:135px}
+.thi-con{ height:390px; background:#92c0ef url(img/Thicon.jpg) no-repeat center 0}
+.thi-con .thi-box{ height:351px; background-color:#fff;}
+.thi-con ul.thi-list{ width:980px; position:relative; top:12px; left:10px; overflow:hidden }
+.thi-con ul.thi-list .thi-all{ float:left; width:310px;}
+.thi-con ul.thi-list .thi-lif{ width:208px; margin-right:10px }
+.thi-con ul.thi-list .thi-lis{ width:220px; margin-right:50px}
+.thi-con ul.thi-list .thi-lit{ width:480px}
+.thi-con ul.thi-list .thi-lif ul.li-item li{ border-radius:8px; margin-bottom:15px}
+.thi-con ul.thi-list .thi-lif ul.li-item li a{ display:inline-block; width:208px; height:66px; background:url(img/simg.jpg) no-repeat}
+.thi-con ul.thi-list .thi-lif ul.li-item li a.a1{ background-position:0 -72px}
+.thi-con ul.thi-list .thi-lif ul.li-item li a.a2{ background-position:0 -138px}
+.thi-con ul.thi-list .thi-lif ul.li-item li a.a3{ background-position:0 -206px}
+.thi-con ul.thi-list .thi-lis a{ display:block}
+.thi-con ul.thi-list .thi-lis p{ width:210px; height:30px; font-size:1.4em; color:#fff; background-color:rgba(17,17,17,.5); margin-top:-45px; position:relative; z-index:1; line-height:30px; padding-left:10px}
+.thi-con ul.thi-list .thi-lit a{ text-decoration: none; color:#21221f}
+.thi-con ul.thi-list .thi-lit h3{ font-size:1.6em; height:40px;}
+.thi-con ul.thi-list .thi-lit h3 a::before{
+	content:"";
+	display:inline-block;
+	width:33px;
+	height:33px;
+    background:url(img/fdj.png) no-repeat;
+	position:relative;
+	top:10px;
+	margin-right:10px;
+	}
+.thi-con ul.thi-list .thi-lit p.det{ width:440px; height:90px; font-size:1.6em; text-indent:3em; margin:15px 0}
+.thi-con ul.thi-list .thi-lit a.xq{ color:#f30707; font-size:.8em}
+.thi-con ul.thi-list .thi-lit .thi-item{ margin-top:20px}
+.thi-con ul.thi-list .thi-lit .thi-item li{ width:440px; list-style:inside; line-height:20px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+
+/*荐读深度好文 样式*/
+.fou-rea{ height:180px; background:url(img/Foutit.jpg) no-repeat center 0}
+.fou-rea .fou-tit{ width:280px; color:#1e2769}
+.fou-con{ height:736px; background:url(img/Foucon.jpg) no-repeat center 0}
+.fou-con ul.fou-list{ height:670px; background-color:#efefef; padding-top:20px; overflow:hidden}
+.fou-con ul.fou-list .fou-all{ margin-left:50px; float:left}
+.fou-con ul.fou-list .fou-all a{ text-decoration:none; color:#595959; font-size:1.5em; font-weight:700;}
+.fou-con ul.fou-list .fou-lif{ width:240px}
+.fou-con ul.fou-list .fou-lif .up{ height:246px;}
+.fou-con ul.fou-list .comd h3{ height:20px; margin-top: 5px}
+.fou-con ul.fou-list .comd .yw{ height:16px; font-size:.8em; color:#969696; line-height:.8; word-spacing:0.5px; }
+.fou-con ul.fou-list .comd .intro{ color:#8d8c8c}
+
+.fou-con ul.fou-list .fou-lis{ width:238px}
+.fou-con ul.fou-list .fou-lis .up h3{ font-size:1.2em; height:30px}
+.fou-con ul.fou-list .fou-lis .up{ text-align:right; height:345px; margin-bottom:30px}
+.fou-con ul.fou-list .fou-lis .up .yw{ height:25px; font-size:2.4em; color:#d1d1d1;}
+
+.fou-con ul.fou-list .fou-lit{ width:330px;}
+.fou-con ul.fou-list .fou-lit .up{ height:270px; width:292px}
+.fou-con ul.fou-list .fou-lit .up p{ margin-top:5px}
+.fou-con ul.fou-list .fou-lit .up p.intro{ margin-top:-15px}
+.fou-con ul.fou-list .fou-lit .down{ height:390px; overflow:hidden; margin-left:-23px} 
+.fou-con ul.fou-list .fou-lit .down p.p1{ overflow:hidden; padding-top:15px; float:left}
+.fou-con ul.fou-list .fou-lit .down p.p1 span{display:block; float:left}
+.fou-con ul.fou-list .fou-lit .down p.p1 span.s1{ width:30px; color:#9a9999; font-size:2.4em; line-height:1}
+.fou-con ul.fou-list .fou-lit .down p.p1 span.s2{ height:180px; font-size:2.5em; color:#bebebe; transform:rotate(90deg); line-height:1; display:inline-block; position:relative; left:-120px; top:-40px  }
+.fou-con ul.fou-list .fou-lit .downs{ width:238px; float:right; margin-right:45px; margin-top:-200px}
+
+/*留言讨论区 样式*/
+.fif-mes{ height:178px; background:url(img/Fiftit.jpg) no-repeat center 0}
+.fif-tit{ top:15px}
+.fif-tit h1{ font-size:3em}
+.fif-tit p.pm{ font-size:2.4em; color:#f7e32f}
+.fif-tit p.cy{ color:#1e2769;}
+.fif-con{ height:1416px; background-color:#f7e32f}
+
+/*留言评论区*/
+.fif-con .wrap .com{ height:430px; background-color:#fff}
+.g-cf,.g-o{*zoom:1}
+.g-cf:after,.g-o:after,.g-w:after{display:block;visibility:hidden;clear:both;height:0;content:'\20'}
+.tlq-bd{padding-bottom:35px;}
+.qts_itm3{width:445px; margin:40px 0 0 20px}
+.qts_itm3 .itm3_hd .hd_lf{height:130px; width:95px; background:#f1f1f1; margin-left:30px; margin-right:20px;}
+.qts_itm3 .itm3_hd .hd_lf .inf span{float:left; text-align:center; width:49%; line-height:15px; font-size:1.15em}
+.qts_itm3 .itm3_hd .hd_c{margin-left:110px;line-height:22px;; color:#232121; font-size:1.15em}
+.qts_itm3 .itm3_hd .hd_c h3{margin-bottom:5px; font-size:1.4em}
+.qts_itm3 .itm3_hd .hd_c .corg_abtn{width:80px; height:30px; font-weight:700}
+.qts_itm3 .itm3_bd .itm3_bd_span{color:#0a0a0a; padding-top:10px; display:block; font-weight:900; font-size:1.3em; padding-bottom:5px}
+.qts_itm3 .itm3_bd{line-height:22px; padding-left:38px; padding-bottom:10px; margin-top:15px;}
+.qts_itm3 .itm3_bd p{color:#232121; font-size:1.15em; text-indent:2em}
+.qts_itm3 .itm3_ft .corg_abtn{width:97px;}
+.tpc-cmmnt{width:445px; margin:15px 30px 0 0; height:410px; overflow:hidden}
+.tpc-cmmnt .g-comment-page{padding-bottom:0; padding-top:0}
+.comment,.comment .g-comment-time{color:#888; font-size:1.12em}
+.comment .g-comment-member a{ color:#3e3e3e; font-weight:700; font-size:1em}
+.comment .g-comment-time{color:#0099e1}
+.corg_abtn{display:inline-block; background:#c30000; height:30px; line-height:30px; border-radius:5px; color:#fff; font:normal 14px/25px Microsoft YaHei; text-align:center;}
+
+/*标杆商户推荐 样式*/
+.fif-con .wrap .rec{height:111px; background:url(img/biaogtit.jpg) no-repeat; text-align:center}
+.fif-con .wrap .rec h1{ color:#ff4e00; font-size:3.6em; line-height:1; padding-top:20px}
+.fif-con .wrap .rec p.pp{ color:#c6673d; font-size:3em} 
+.fif-con .wrap  ul.fif-list{ height:830px; background-color:#efefef; padding-top:20px}
+.fif-con .wrap  ul.fif-list li{ width:228px; height:358px; border:1px solid #ddd; float:left; margin-left:16px; margin-top:30px}
+.fif-con .wrap  ul.fif-list li a{ text-decoration:none; color:#444; display:block}
+.fif-con .wrap  ul.fif-list li h3{ height:30px; font-size:1.4em; margin:10px 0 20px 5px}
+.fif-con .wrap  ul.fif-list li a.apro{ margin:4px}
+.fif-con .wrap  ul.fif-list li span.sf{ width:115px; display:inline-block; margin-left:10px; float:left}
+.fif-con .wrap  ul.fif-list li span.sf strong{ font-size:1.4em; color:#ce424f}
+.fif-con .wrap  ul.fif-list li span.sf em{ color:#919191; text-decoration:line-through}
+.fif-con .wrap  ul.fif-list li a.qg{ float:right; margin-right:-5px}
+.fif-con .wrap  ul.fif-list li:after{
+	display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '';
+	}
+
+/*侧面导航栏 fixed*/
+.fixed{ width:199px; height:567px; background:url(img/fixed.png) no-repeat; position:fixed; left:49%; margin-left:520px; top:100px; }
+.fixed .aside{ width:170px; position:relative; top:168px; text-align:center}
+.fixed .aside li{ margin-bottom:26px; transform:rotate(-15deg)}
+.fixed .aside li a{ display:inline-block; text-decoration:none; color:#fff; font-size:2.2em; font-weight:700}
+.fixed .aside li.top{ transform:rotate(0deg); margin-top:-15px; font-size:1.5em; margin-left:48px}
+
+
+
+
+
+

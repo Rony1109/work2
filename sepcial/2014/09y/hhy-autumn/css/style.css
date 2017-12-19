@@ -1,0 +1,85 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+/* @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/foot/css/style.css');*/
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.main{background:#7e0001; font-family: Microsoft YaHei,simhei;}
+.banner{background:#a70709 url(img/banner.jpg) no-repeat center top;height:607px;overflow:hidden;}
+.jiathis_style{position:absolute;right:0;top:22px;}
+.jiathis_style a{color:#444;}
+
+.huo{ width:100%; background:#cccccc; height:30px; line-height:30px;}
+.huo span{ float:left; width:135px; white-space:nowrap; padding-left:12px; display:inline-block; overflow:hidden; height:30px; line-height:30px;}
+.item_con{ background:#ffd800;overflow:hidden;}
+.t-top{ background:url(img/flr-top.jpg) no-repeat top; height:75px; text-align:center;}
+.t-top h1{ font-size:28px; color:white; font-weight:bold; line-height:45px;}
+.item_con li{ float:left; height:413px; display:block; width:319px; margin:0 0 20px 11px;_margin:0 0 20px 8px; overflow:hidden;}
+.item_con li .li_ner{ background:#fff; position:relative;}
+.top-num{ position:absolute; float:right; z-index:1; margin-left:253px;}
+.item_con li h3{ height:35px; line-height:38px; width:220px; overflow:hidden; font-size:15px; padding:0 10px;}
+.item_con li p{ height:39px; background:url(img/go_shop.jpg) no-repeat 0 0; }
+.item_con li .price{ padding:0 10px; position:relative;top:-3px;}
+.item_con li .price strong{ color:#e93012; font-size:20px;}
+.item_con li p a{ display:block; height:0; padding-top:31px; width:150px; margin-left:168px; overflow:hidden;}
+
+/*hhy-list*/
+.item_con2{ background:#ffd800;overflow:hidden;}
+.hhy-list{width: 101%; margin-left:7px; margin-bottom:13px;}
+.hhy-list li{width:245px; height:327px; float: left;background-color: #fff; overflow:hidden; margin-right:2px; margin-bottom:9px;}
+.info{ margin: 5px 0 0 10px;}
+.info a{ font-size:14px; color:#333; text-decoration:none; margin: 5px 0 10 15px;}
+.p-price{ color:#f32f05; font-size:36px; font-weight:bold; float:left; margin-left:10px;}
+.sign{ font-size:20px;}
+.buy-btn{ float:right; margin:8px 10px 0 0;}
+
+.hhy-list2{width: 101%; margin-left:10px; margin-bottom:13px;}
+.hhy-list2 li{width:242px; height:120px; float: left; overflow:hidden; margin-right:4px; margin-bottom:9px;}
+.name{ text-align:center; margin-top:5px;}
+.name a{ font-size:14px; color:#333; text-decoration:none; margin: 5px 0 10 15px;}
+
+
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+/*侧导航*/
+.fiexd_nav{ display:none;  font-family: Microsoft YaHei,simhei;}
+.fiexd{ position:fixed; height: auto; width:165px; right:12px; top:40px;}
+.link-lc{text-align:center; background:url(img/right-nav-bg.png) no-repeat; width:130px; margin:0 auto; margin-top:28px; height:350px;}
+.fiexd .link-lc a{line-height:42px;height:55px;display:block;font-size:18px;color:#fff; text-align:center;text-decoration:none; font-weight: bold; color:#dd2c3c;}
+.fiexd .link-lc a h5{ font-size:18px;font-weight:bold;}
+#right-nav-btm{ margin: 0 auto;display: block;}
+.btop{height: 65px; width: 165px; overflow:hidden; border:none;display:block;margin: 0 auto; }
+
+
+.link{border-top:none;}
+.link p{color:#444;}
+
+
+

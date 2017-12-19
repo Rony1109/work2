@@ -1,0 +1,51 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+
+/*@import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/foot/css/style.css');*/
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 以下为专题样式 */
+
+.flr{background-repeat:no-repeat;background-position:center top;}
+.flr-bd{color:#fff;font-family:Microsoft YaHei;overflow:hidden;}
+.flr-bd h2{font-size:70px;font-weight:bold;}
+.flr-bd p{font-size:34px;line-height:42px;}
+
+.flr1{background-color:#1a8fe0;background-image:url(img/flr1.jpg);}
+.flr1 .flr-bd{height:650px;}
+.csc-logo,.iphone,.android,.ewm-pic{display:block;overflow:hidden;}
+.csc-logo,.iphone,.android{line-height:999px;}
+.csc-logo{width:200px;height:39px;margin-left:9px;margin-top:13px;}
+.download{margin-left:524px;margin-top:348px;}
+.iphone,.android{width:203px;height:62px;}
+.android{margin-top:11px;}
+.ewm-pic{width:116px;height:127px;padding-top:6px;margin-left:217px;margin-top:-135px;text-align:center;}
+
+.flr2{background-color:#eccf3f;background-image:url(img/flr2.jpg);}
+.flr2 .flr-bd{width:949px;height:465px;padding-left:51px;padding-top:175px;}
+
+.flr3{background-color:#f46869;background-image:url(img/flr3.jpg);}
+.flr3 .flr-bd{width:330px;height:430px;padding-left:670px;padding-top:210px;}
+
+.flr4{background-color:#5bc798;background-image:url(img/flr4.jpg);}
+.flr4 .flr-bd{width:948px;height:438px;padding-left:52px;padding-top:202px;}
+
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.fixed{position:fixed;right:40px;top:100px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:100px;}
+.fixed a{display:block;width:14px;height:14px;border:2px solid #fff;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;margin-bottom:6px;overflow:hidden;}
+.fixed a:hover,.fixed .cur{background:#fff;}

@@ -1,0 +1,889 @@
+@import url('http://res.csc86.com/v2/m/newtopnav/css/style.css');
+body
+{
+    background: #efefef;
+}
+.g-x
+{
+    width: 1012px;
+    margin: 0 auto;
+}
+/* ÃƒÆ’Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ÂÃƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¦Ãƒâ€šÃ‚ÂÃƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã‚Â§Ãƒâ€šÃ‚Â´Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¦Ãƒâ€šÃ‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â§Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‚Â¦Ãƒâ€šÃ‚Â Ãƒâ€šÃ‚Â·ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â¼Ãƒâ€šÃ‚Â */
+.head
+{
+    height: 90px;
+
+    background: #fff;
+}
+.head .logos
+{
+    margin-top: 15px;
+}
+.head .csc
+{
+    margin-right: 12px;
+    padding-right: 12px;
+}
+.head .channel
+{
+    font: 700 29px/56px Microsoft YaHei,simsun;
+
+    color: #666;
+}
+.navigation
+{
+    margin-top: 30px;
+}
+.navigation li
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    float: left;
+
+    padding: 0 7px;
+
+    border-left: dashed 1px #d5d5d5;
+}
+.navigation .g-bn
+{
+    border: none;
+}
+.navigation a
+{
+    display: block;
+    float: left;
+
+    padding: 2px 5px;
+
+    color: #000;
+}
+.navigation a:hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 3px;
+    background: #2c61ae;
+}
+/* ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â¯Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã‚Â¨Ãƒâ€¹Ã¢â‚¬Â Ãƒâ€šÃ‚Âª */
+.nav
+{
+    height: 46px;
+
+    background: #2c61ae;
+}
+.nav ul
+{
+    margin-left: 153px;
+}
+.nav ul li
+{
+    float: left;
+
+    height: 18px;
+    margin-top: 15px;
+    padding: 0 17px;
+
+    border-right: 1px #4c79ba solid;
+}
+.nav ul li.last
+{
+    border: 0;
+}
+.nav ul li a
+{
+    font: 700 15px/18px Microsoft YaHei,simsun;
+
+    color: #fff;
+}
+
+.mark
+{
+    position: absolute;
+
+    display: block;
+    overflow: hidden;
+
+    width: 118px;
+    height: 121px;
+
+    text-indent: -999px;
+
+    background: url(img/mark.jpg) no-repeat;
+}
+/* banner */
+.banner
+{
+    height: 551px;
+
+    background: #386dbb url(img/banner.jpg) no-repeat center 0;
+}
+.jiathis_style a
+{
+    color: #fff;
+}
+/* ÃƒÆ’Ã‚Â§Ãƒâ€šÃ‚Â®ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚Â»ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ */
+.bg-f9
+{
+    height: 210px;
+
+    background: #f9f9f9;
+}
+
+.intro .msg
+{
+    font: 16px/30px Microsoft YaHei,simsun;
+
+    width: 789px;
+}
+.intro .msg p
+{
+    text-indent: 32px;
+}
+.intro a
+{
+    width: 121px;
+    height: 55px;
+    margin-top: 27px;
+
+    border-radius: 5px;
+    background: #224ea2;
+}
+
+.intro a span
+{
+    font: 22px/51px Microsoft YaHei,simsun;
+
+    display: block;
+
+    width: 121px;
+    height: 51px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background: #386dbb;
+}
+.intro a:hover
+{
+    text-decoration: none;
+
+    opacity: .9;
+
+    filter: alpha(opacity=90);
+}
+
+/* ÃƒÆ’Ã‚Â¦Ãƒâ€¦Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¦Ãƒâ€¦Ã¢â‚¬Å“Ãƒâ€¦Ã‚Â¸ÃƒÆ’Ã‚Â¨Ãƒâ€šÃ‚Â¯Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â¸Ãƒâ€¹Ã¢â‚¬Â  */
+.bg-img-1
+{
+    height: 406px;
+
+    background: #f0efee url(img/bg-1.jpg) no-repeat center 0;
+}
+
+.t-t
+{
+    width: 337px;
+    margin: 0 auto;
+}
+.t-t h2
+{
+    font: 700 24px Microsoft YaHei,simsun;
+
+    position: absolute;
+    top: -26px;
+
+    width: 337px;
+    height: 45px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(img/gather.png) no-repeat;
+
+    _background: url(img/gather-ie6.png) no-repeat;
+}
+.photo
+{
+    display: inline;
+
+    margin: 54px 0 0 48px;
+
+    _margin: 54px 0 0 75px;
+}
+.specialist
+{
+    display: inline;
+
+    width: 640px;
+    margin: 68px 0 0 40px;
+}
+
+.specialist span
+{
+    font: 700 30px Microsoft YaHei,simsun;
+
+    color: #f39f48;
+}
+.specialist p
+{
+    font: 16px/36px Microsoft YaHei,simsun;
+
+    color: #656565;
+}
+.specialist dt
+{
+    margin-bottom: 15px;
+    padding-bottom: 22px;
+
+    border-bottom: 2px #c1c0bf dashed;
+}
+.bg-2c61ae
+{
+    overflow: hidden;
+
+    height: 168px;
+
+    background: #2c61ae;
+}
+
+.t-t-a
+{
+    overflow: hidden;
+
+    width: 563px;
+    height: 53px;
+    margin: 0 auto;
+    margin-top: 37px;
+
+    text-indent: -999px;
+
+    background: url(img/gather.png) no-repeat 0 -127px;
+
+    _background: url(img/gather-ie6.png) no-repeat 0 -127px;
+}
+.set-ft
+{
+    font: 24px Microsoft YaHei,simsun;
+
+    margin-top: 5px;
+
+    color: #fff;
+}
+.bg-386dbb
+{
+    overflow: hidden;
+
+    height: 294px;
+
+    background: #386dbb;
+}
+.do-what
+{
+    display: block;
+
+    width: 887px;
+    height: 116px;
+    margin: 36px auto 0;
+
+    background: url(img/step.png) no-repeat;
+}
+.do-what-txt
+{
+    width: 893px;
+    margin: 10px auto;
+}
+.do-what-txt a{color: #fff;}
+.do-what-txt li
+{
+    font: 18px Microsoft YaHei,simsun;
+
+    display: inline;
+    float: left;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.do-what-txt li.so
+{
+    width: 129px;
+}
+.do-what-txt li.liu
+{
+    width: 109px;
+    margin-left: 145px;
+}
+.do-what-txt li.cha
+{
+    width: 75px;
+    margin-left: 158px;
+}
+.do-what-txt li.xun
+{
+    width: 75px;
+    margin-left: 183px;
+}
+.box
+{
+    padding: 57px 36px;
+
+    border-radius: 10px;
+    background: #fff;
+}
+.box .t-t
+{
+    top: -53px;
+}
+.mt-62
+{
+    margin-top: 62px;
+}
+.icon
+{
+    font: 30px/45px Impact;
+
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 45px;
+    background: #f39f48;
+}
+.do-what-intro p,
+.do-what-intro dl
+{
+    font: 18px/30px Microsoft YaHei,simsun;
+
+    float: left;
+
+    width: 630px;
+    margin-left: 19px;
+    padding-bottom: 20px;
+
+    color: #656565;
+    background: url(img/bg-2.gif) repeat-x 0 bottom;
+}
+
+.do-what-intro dl b
+{
+    line-height: 21px;
+
+    display: inline-block;
+
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 21px;
+    background: #f39f48;
+}
+.do-what-intro dl dt
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #f39f48;
+}
+.do-what-intro .list
+{
+    margin-left: 19px;
+}
+.list
+{
+    width: 531px;
+}
+.list li
+{
+    font: 18px/40px Microsoft YaHei,simsun;
+
+    padding-left: 17px;
+
+    background: url(img/gather.png) no-repeat -592px -320px;
+
+    _background: url(img/gather-ie6.png) no-repeat -592px -320px;
+}
+.list li span
+{
+    font-size: 26px;
+    font-weight: bold;
+
+    color: #f39f48;
+}
+.list li a
+{
+    display: block;
+
+    height: 45px;
+
+    border-radius: 5px;
+    background: #224ea2;
+}
+.list li a span
+{
+    font-size: 20px;
+    line-height: 40px;
+
+    display: block;
+
+    height: 40px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background: #386dbb;
+}
+
+
+.list li a:hover
+{
+    text-decoration: none;
+
+    opacity: .9;
+
+    filter: alpha(opacity=90);
+}
+.w-142
+{
+    width: 142px;
+}
+.w-170
+{
+    width: 170px;
+}
+.set-bg-1
+{
+    margin-top: 62px;
+
+    background: #fff url(img/list-1.gif) no-repeat 715px 214px;
+}
+.set-bg-2
+{
+    margin-top: 52px;
+
+    background: #fff url(img/list-2.gif) no-repeat 629px bottom;
+}
+.w-122
+{
+    width: 122px;
+}
+.set-bg-3
+{
+    margin-top: 52px;
+
+    background: #fff url(img/list-3.gif) no-repeat 724px 248px;
+}
+.set-bg-4
+{
+    height: 333px;
+    margin-top: 52px;
+
+    background: #fff url(img/list-4.gif) no-repeat 724px 208px;
+}
+/* 商友互动 */
+.t-interaction
+{
+    font: 700 30px/50px Microsoft YaHei,simsun;
+
+    height: 50px;
+    margin-top: 66px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #386dbb;
+}
+.tlq-bd
+{
+    padding: 30px;
+}
+.qts_itm3
+{
+    width: 440px;
+}
+.qts_itm3 .itm3_hd
+{
+    padding: 0 8px 18px;
+
+    border-bottom: 1px dashed #e0e0e0;
+}
+.qts_itm3 .itm3_hd .hd_lf
+{
+    width: 85px;
+}
+.qts_itm3 .itm3_hd .hd_lf .inf span
+{
+    line-height: 15px;
+
+    float: left;
+
+    width: 49%;
+
+    text-align: center;
+}
+.qts_itm3 .itm3_hd .hd_c
+{
+    line-height: 22px;
+
+    margin-left: 110px;
+}
+.qts_itm3 .itm3_hd .hd_c h3
+{
+    margin-bottom: 5px;
+}
+.qts_itm3 .itm3_hd .hd_c .corg_abtn
+{
+    line-height: 20px;
+
+    height: 20px;
+    padding: 0 5px;
+}
+.qts_itm3 .itm3_bd
+{
+    line-height: 22px;
+}
+.qts_itm3 .itm3_bd h3
+{
+    font: bold 16px Microsoft YaHei;
+
+    padding: 15px 0 5px;
+
+    color: #386dbb;
+}
+.qts_itm3 .itm3_ft .corg_abtn
+{
+    width: 97px;
+    margin-right: 15px;
+}
+.tpc-cmmnt
+{
+    width: 450px;
+}
+.tpc-cmmnt .g-comment-page
+{
+    padding-bottom: 0;
+}
+.g-comment-like span
+{
+    white-space: nowrap;
+}
+.g-c9
+{
+    color: #999;
+}
+.corg_abtn
+{
+    font: bold 13px/25px Microsoft YaHei;
+
+    display: inline-block;
+
+    height: 25px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #386dbb;
+}
+.corg_abtn:hover
+{
+    text-decoration: none;
+
+    background: #386dbb;
+}
+.qts_itm3 a:hover
+{
+    background: #2965bc;
+}
+
+.aui_dialog
+{
+    background-color: #fff;
+}
+.aui_header
+{
+    display: none;
+}
+.tablewidth
+{
+    font-family: Microsoft YaHei;
+
+    position: relative;
+
+    width: 570px;
+
+    background: #fff;
+}
+.tablewidth table
+{
+    width: 570px; 
+    height: 195px;
+    margin: 30px 0 0 0;
+}
+.tablewidth tr
+{
+    line-height: 30px;
+
+    width: 570px;
+    height: 30px;
+}
+.tablewidth tr td
+{
+    padding: 10px;
+
+    color: #333;
+}
+.tablewidth tr td span
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 80px;
+
+    color: #333;
+}
+.tablewidth tr td em
+{
+    margin-right: 3px;
+
+    color: #f30;
+}
+.tab-title
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    position: relative;
+
+    text-align: center;
+}
+.tab-title a
+{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 15px;
+    margin: 10px 10px 0 0;
+
+    background: url(img/close.png) no-repeat left top;
+}
+.tablewidth input
+{
+    line-height: 26px;
+
+    width: 150px;
+    height: 26px;
+    padding: 0 6px;
+}
+.btn-sub
+{
+    height: 34px;
+
+    text-align: center;
+}
+.btn-sub button
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 34px;
+
+    width: 118px;
+    height: 34px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #f9f3d6;
+    border: none;
+    background: url(img/sub.png) no-repeat top left;
+}
+.aui_dialog .aui_buttons
+{
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+#dosubmit
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 34px;
+
+    width: 118px;
+    height: 34px;
+    margin: 0 auto;
+    margin: 20px 0 0 120px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #f9f3d6;
+    border: none;
+    background: url(img/sub.png) no-repeat top left;
+}
+.til-lay
+{
+    font-size: 26px;
+    font-weight: 700;
+
+    color: #ff3a50;
+}
+.tmin-lay
+{
+    font-size: 16px;
+    font-weight: 700;
+
+    display: block;
+
+    color: #1f1f;
+}
+.aui_dialog .aui_icon
+{
+    display: none;
+}
+button.aui_state_highlight
+{
+    width: 100px;
+    height: 30px;
+
+    color: #fff;
+    background: url(img/sub.png) no-repeat top left;
+}
+.aui_dialog .aui_buttons
+{
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.aui_buttons
+{
+    padding: 8px;
+
+    white-space: nowrap;
+}
+
+table.aui_border,
+table.aui_dialog
+{
+    width: auto;
+    margin: 0;
+
+    border-collapse: collapse;
+
+    border: 0;
+}
+
+.aui_border .aui_titleBar
+{
+    position: none;
+
+    height: 30px;
+}
+.t-add-cl
+{
+    margin-bottom: 10px;
+}
+a.aui_close,
+a.aui_close:hover
+{
+    line-height: 28px;
+
+    top: 3px;
+    right: 0;
+
+    width: 20px;
+    height: 15px;
+    padding: 0;
+
+    text-align: center;
+
+    background: none;
+    box-shadow: none;
+}
+
+.tabletop
+{
+    height: 20px;
+}
+.tip-lay
+{
+    font-size: 14px;
+
+    padding-top: 10px;
+
+    text-indent: 12px;
+
+    color: #d8283c;
+}
+.fixed
+{
+    position: fixed;
+    top: 0;
+
+    display: none;
+
+    width: 146px;
+
+    _position: absolute;
+}
+
+
+.fixed .t-t
+{
+    display: block;
+    overflow: hidden;
+
+    width: 141px;
+    height: 44px;
+    margin-left: 11px;
+
+    text-indent: -999px;
+
+    background: url(img/fixed-t.png) no-repeat;
+}
+
+
+.fixed li
+{
+    font: 16px/37px Microsoft YaHei,simsun;
+
+    width: 146px;
+    height: 37px;
+
+    text-align: center;
+
+    background: url(img/link.png) no-repeat;
+}
+.fixed li a
+{
+    color: #fff;
+}
+.fixed span.g-back-btn
+{
+    display: block;
+
+    width: 126px;
+    height: 55px;
+    margin-left: 20px;
+
+    background: url(img/back.png) no-repeat;
+}
+
+

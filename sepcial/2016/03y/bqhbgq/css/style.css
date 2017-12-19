@@ -1,0 +1,63 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#efefef;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.bqh-banner{background:#feb431 url(img/dqh-ls1.jpg) no-repeat top center;}
+.bqh-top{height:705px;}
+.bqh-tit{margin-top:20px; background:url(img/dqh-ls3.jpg) no-repeat; height:100px; line-height:100px; width:1190px;text-align:center; font-family:'微软雅黑'; color:#fff; font-size:42px; font-weight:bold;}
+.bqh-txt{background:#ffe58c; width:1190px; overflow:hidden;}
+.bqh-pub{width:275px; height:335px; background:#fff; margin:18px; float:left;}
+.g-ml0{ margin-left:0px;}
+.g-mt0{ margin-top:0px;}
+.g-mlt{ margin-left:0px; margin-top:0px;}
+.bqh-pub .bqh-img{width:255px; margin:10px; height:230px;}
+.bqh-pub .bqh-nr{width:255px; height:46px; margin-left:10px; font-size:14px; line-height:23px; font-family:'宋体'; overflow:hidden;}
+.bqh-pub .bqh-qg{width:255px; height:35px; margin-left:10px; overflow:hidden;}
+
+.list-btn{background: url(img/f.png);width: 90px; height: 31px;color:#fff; font-size: 16px; text-align: center;line-height: 31px; font-weight: 700;}
+.list-price{color:#fd4667; font-weight: 700; line-height: 32px; height: 32px;}
+.list-price .a{font-size: 24px;}
+.list-price .b{font-size: 38px;}
+.list-price .c{font-size: 28px;}
+
+
+/*aside-nav*/
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.aside-menu{background:url(img/r.png) no-repeat; height:398px; width:161px; padding:17px 5px 5px; position:fixed;right:0px;top:150px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:8%;text-align:center;font-family:Microsoft YaHei;display:none;}
+.menu-lst{ padding-top:80px;}
+.menu-lst li{ height:55px; width:120px; padding-left:13px; line-height:55px; color:#fff;}
+.menu-lst li a{ color:#fff; font-family:'微软雅黑'; font-size:16px;}
+.back-top{ width:120px; padding-left:13px; line-height:55px;}
+.back-top a{ color:#fff; font-family:'微软雅黑'; font-size:16px;}

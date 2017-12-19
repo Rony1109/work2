@@ -1,0 +1,54 @@
+
+.mi1scroll-pagination {display:none; position:fixed; top:40%; right:8%; z-index:99; 
+    -webkit-transform:translate3d(0, -50%, 0);
+	transform:translate3d(0, -50%, 0)}
+	
+.mi1scroll-pagination li {position:relative; width:16px; height:16px; margin:20px auto; border-radius:9px; border:1px solid #fff
+	}
+.mi1scroll-pagination li:first-child {
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	position:relative;
+	top:350px;
+	}
+.mi1scroll-pagination li:first-child a .dot {
+	width:20px;
+	height:20px;
+	background:transparent url(img/top.png) no-repeat 5px 4px}
+.mi1scroll-pagination a {
+	display:block;
+	width:100%;
+	height:100%}
+.mi1scroll-pagination a .dot {
+	display:block;
+	width:16px;
+	height:16px;
+	border-radius:8px;
+	text-indent:-9999em;
+	overflow:hidden;
+	_zoom:1;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#33000000", endColorstr="#33000000")\9}
+
+.mi1scroll-pagination .active a .dot {
+	background:#ff9326;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#19ffffff", endColorstr="#19ffffff")\9}
+
+.hongmi2-overall {
+	overflow:hidden;
+	_zoom:1}
+.hongmi2-overall .section {
+	min-width:1240px;
+	min-height:630px;
+	position:relative;
+	-webkit-font-smoothing:antialiased/*使页面字体变得清晰*/}
+
+.hongmi2-overall .section-intro {
+	overflow:hidden;
+	_zoom:1;
+	background:url(../image/bg0.jpg) no-repeat center 0; background-size:150% 100%}
+
+
+
+
+

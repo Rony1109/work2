@@ -1,0 +1,66 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+/* 合并后引入如下
+
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+*/
+.g-o{width:980px;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color: #333;font-size: 26px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.g-comment-share{width:150px;}
+.content{min-width:1000px;background:#2d2e3b url(img/content-bg.png);}
+.banner{margin:0 auto;}
+.banner-1{height:230px;background:url(../image/banner-1.jpg) no-repeat center 0;}
+.banner-2{height:335px;background:url(../image/banner-2.jpg) no-repeat center 0;}
+
+.box{margin-bottom:16px;background:#fff}
+.box .hd{position: relative; height:60px;padding-right:20px; background:#f5f5f5;color:#666;font-weight:700;font-size:14px;line-height:60px}
+.box .hd h2{padding-left:26px; font-size:26px;font-weight:400}
+.box .hd .floor-num{position: absolute;width:47px;height:75px;left:-47px; background:#b00 url(img/num-bg.png);font-size:35px;color:#fff;text-align: center;line-height:75px}
+.box .info{width:160px;margin-left:10px; font-size:14px;color:#444;line-height:30px}
+.box .info span{margin:0 7px;}
+.box .logo img{margin:60px 0; border-radius:50%}
+.box .list{width:788px;margin:10px 10px 0 0;}
+.box .list li{float:left;width:180px; padding:8px; border:solid 1px #efefef;margin-left:-1px}
+.box .list .t{display: block;height:18px;margin:10px 0; padding-left:6px; font-weight:700;background:url(img/arr.png) no-repeat 170px center;color:#333;overflow: hidden;}
+.box .list .t:hover{color:#f00}
+.box .price{color:#f00; background: url(img/p-bg.png) no-repeat right 9px;}
+.box .price ins{font-size:22px;text-decoration:none}
+.box .price del{color:#bbb}
+.box .i{display: block;height:29px;margin-top:5px; line-height:29px; text-align: center; background:#f00 url(img/barr.png) no-repeat 153px center;border-top:solid 1px #cb3605;font-size:16px;color:#fff;text-decoration:none}
+.box .des{color:#222;padding: 15px 20px 25px 188px;}
+
+.fixed-nav{width:184px;position: absolute;top:640px; margin-left: 980px;}
+.fixed-nav .top{height:80px; background:url(img/nav-bg.png) no-repeat center 0;}
+.fixed-nav .gotop{display: block; height:60px;background:url(img/nav-bg.png) no-repeat 0 bottom;}
+.fixed-nav ul{padding:3px 0;}
+.fixed-nav li{margin:2px 0}
+.fixed-nav a{display: block;height:41px;padding-left:40px; background:url(img/nav-bg.png) no-repeat 0 -84px; line-height:41px; font-size:18px;color:#fff;text-decoration:none;font-style: italic;}

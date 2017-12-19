@@ -1,0 +1,99 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+body{ font-family: microsoft yahei; background-color:#fff;}
+a{color:#e82c67;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+h1{ font-size:40px; color: #e82c67; line-height:100px;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.main{background:#fff url(img/banner.jpg) no-repeat center top;}
+.banner{height:515px; width:1000px; margin:0 auto;}
+.main-flr{ height:540px;}
+#left-left{ float:left; width:387px; height:261px;}
+
+/*广告图滚动*/
+.src-img{ position:relative; height:261px; width:100%; overflow:hidden;}
+.src-img ul{ position:absolute; height:261px; width:20000px; margin:0; padding:0;}
+.src-img li{ float:left; width:1935px; height:261px;}
+.src-img li img{ width:387px; height:261px;}
+.src-img ol{ position:absolute; bottom:15px; right: -120px; margin-right:20px; width:220px;}
+.src-img ol li{ margin-left:5px; width:15px; overflow:hidden; text-indent:-99999px; height:15px; background:#FFF; border-radius:50%;}
+.src-img ol li.cur{ background:#e82c67;}
+
+.dright{ float:right; margin:40px 30px 0 0;}
+.dright p{ font-size:20px; color:#333; line-height:45px;}
+.dleft{ float:left; width:500px; height:200px; margin:30px 0 0 50px;}
+.dleft p{ font-size:18px; color:#333; line-height:30px;}
+.dright-o{ float:left; margin:30px 0 0 150px;}
+.dright-o h1{ padding-left:10px;}
+.dright-o a{ color:#333;}
+.dright-o p{ font-size:18px; line-height:30px;}
+
+.main-flr2{ height:1028px; background-color:#e82c64;}
+.detail{ width:100%; height:270px; background-color:#fff;}
+.gleft{ float:left; width:268px; text-align:center; position:relative;}
+.text{ position:relative; height:145px; color:#fff; margin-top:-165px;}
+.text h2{ font-size:28px;}
+.text p{ font-size:16px; text-align:left; padding:20px;}
+.text2{ position:relative; height:145px; color:#fff; margin-top:-142px;}
+.text2 h2{ font-size:28px;}
+.text2 p{ font-size:16px; text-align:left; padding:20px;}
+.detail ul{ float: right; height:100%; width:731px;}
+.detail ul li{ float:left; margin: 10px 0 0 10px;_margin: 10px 0 0 5px;}
+
+.main-flr3{ height:590px;}
+.th-left{ width:435px; float:left;}
+.th-left-top{ height:53px; width:100%; background-color:#e82c67; color:white;}
+.th-left-top h2{ font-size:28px; font-weight:500; text-indent:10px; line-height:45px; text-align:left;}
+.th-left ul{ padding:5px 15px 0 15px; text-indent: 10px;}
+.th-left ul li{ padding: 5px; border-bottom: 1px solid #CCC; margin-top:5px;}
+.th-left ul li a{ font-size:14px; color:#366da3;}
+.th-left ul li a span{ color:#333;}
+.th-right{ width:540px; float:right;}
+.th-right ul{ text-align:center; margin-top:15px;}
+.th-right ul li{ float:left; margin: 10px 0 0 9px;}
+.th-right a{ color:#666; font-size:16px; line-height:45px;}
+
+.main-flr4{ height:570px; background-color:#e82c67; text-align:center;}
+.main-flr4 h1{ color:white; line-height:155px;}
+
+
+
+/*滚动*/
+.img-scroll{position: relative; padding: 15px; margin-top:15px; color:#FFF;}
+.scroll-box{overflow: hidden;width: 860px;margin: 0 auto;}
+.scroll-box ul{width: 9999px;}
+.scroll-box li{float: left;display: inline;margin-right:30px;}
+.img-scroll .ctr-l,.img-scroll .ctr-r{text-align: center;top:0;display: block;position: absolute;width: 60px;height: 160px;color: #fff;font: 18px/160px Arial;cursor: pointer;}
+.img-scroll .ctr-l{left:0; padding-top:30px; font-size:65px;}
+.img-scroll .ctr-r{right:0;padding-top:30px; font-size:65px;}

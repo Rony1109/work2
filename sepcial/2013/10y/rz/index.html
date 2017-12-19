@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>认证服务</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="认证服务">
+<meta name="description" content="认证服务" />
+<meta name="chinaz-site-verification" content="5fd17648-761e-4600-9553-d17dcdcd18f0" />
+<link href="http://res.csc86.com/bhf/" rel="stylesheet">
+<link rel="stylesheet" href="style/simple.css">
+<link href="style/home.css" rel="stylesheet" type="text/css" />
+<script src="http://res.csc86.com/js/"></script>
+<script src="http://res.csc86.com/dialog/" type="text/javascript"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/m/config.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/tradering.js"></script>
+<script src="js/home.js"></script>
+</head>
+<body>
+<div class="huo-top">
+  <div class="g-o-a">
+    <div class="g-f-l top-log">您好，欢迎光临华南城网！<span><a title="" onclick="loginname();">登录</a>|<a target="_blank" title="" href="http://member.csc86.com/register/signup">免费注册</a></span></div>
+    <span class="g-f-r"><a target="_blank" class="T1" href="http://www.csc86.com/">首页</a>|<a target="_blank" class="T1" href="http://market.csc86.com/">批发市场</a>|<a target="_blank" class="T1" href="http://mall.csc86.com/">在线商城</a>|<a target="_blank" class="T1" href="http://quan.csc86.com/?spm=01_010004">生意人脉</a>|<a target="_blank" class="T1" href="http://info.csc86.com/">行业资讯</a>|<a target="_blank" class="T1" href="http://cncms.csc86.com/special/">精彩专题</a>|<a target="_blank" class="T1" href="http://www.csc86.com/about/contact.html">联系我们</a></span> </div>
+</div>
+<div class="web-search">
+  <div class="g-o-a">
+    <h1><a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com/"><img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/image/c/index/logo.png"></a></h1>
+    <div class="m-search">
+      <form action="http://search.csc86.com/offer/products.html" target="_blank" method="get">
+        <ul class="g-c-f">
+          <li class="first cur"><a href="http://search.csc86.com/offer/products.html">产品</a></li>
+          <li><a href="http://search.csc86.com/offer/company.html">公司</a></li>
+        </ul>
+        <div class="g-c-f">
+          <div class="ss-txt">
+            <input id="search-txt" class="txt" type="text" name="q" placeholder="请输入产品名称" value="" maxlength="35" autocomplete="off">
+          </div>
+          <input id="searchbtn" class="btn" type="submit" value="搜索">
+        </div>
+        <ol id="didst-list" class="g-o-f hot-keys">
+          <li><a class="red" target="_blank" href="http://search.csc86.com/offer/products.html?q=PVC">PVC</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/offer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a></li>
+          <li><a class="red" target="_blank" href="http://search.csc86.com/offer/products.html?q=LED">LED</a></li>
+          <li><a class="red" target="_blank" href="http://search.csc86.com/offer/products.html?q=ABS">ABS</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/offer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/offer/products.html?q=%E6%B6%82%E6%96%99">涂料</a></li>
+        </ol>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+		$("form").one("keydown",function (){
+			seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+				csc.suggest();
+			});
+		});
+		seajs.use(csc.url("res","/f=js/m/search"),function (){
+			csc.search().searchType("div.m-search");
+		});
+		seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+			csc.placeholder("#search-txt");
+		});
+</script>
+<div class="main">
+  <div class="g-o-a">
+    <ul class="nav">
+      <li class="n01 cur"><a class="nav01" href="javascript:;" title="实名认证">实名认证</a></li>
+      <li class="n02"><a class="nav02" href="javascript:;" title="实体认证">实体认证</a></li>
+      <li class="n03"><a class="nav03" href="javascript:;" title="深商认证">深商认证</a></li>
+    </ul>
+    <div class="g-h-10"></div>
+    <ul class="nv-sig">
+      <li class="nv-sig03 cur">
+        <h2>什么是“实名认证”？</h2>
+        <a class="rz-btn" href="http://member.csc86.com/accreditation/Enterpriserealnamefirstauthentication/" title="我要认证" target="_blank">我要认证</a>
+        <div class="cent ct-h3">
+          <p>企业实名认证是华南城网为企业会员免费提供的认证服务，帮助企业有效证明企业真实性和合法性。认证由企业提交营业执照、税务登记证等资料自主申请，由华南城网联合第三方通过工商、税务确认企业的真实性和合法性后，给予通过。</p>
+          <ul class="ct-all">
+            <li class="line01">
+              <h4>企业实名认证线上展示示意：</h4>
+              <img src="style/img/img04.png" alt="真实身份验证价值" /> </li>
+            <li class="line02">
+              <h4>申请实名认证条件</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img08.png" alt="真实身份验证价值" /> </li>
+            <li class="line03">
+              <div class="g-h-10"></div>
+              <h4>如何申请实名认证？</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img06.png" alt="真实身份验证价值" /> </li>
+            <li class="line04">
+              <div class="g-h-10"></div>
+              <h4>“实名认证”有哪些优势？</h4>
+              <div class="g-h-20"></div>
+              <img src="style/img/img09.png" alt="真实身份验证价值" /> </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nv-sig02">
+        <h2>什么是“实体认证”？</h2>
+        <a class="rz-btn" href="http://member.csc86.com/accreditation/Physicalstorefirstcertification/" title="我要认证" target="_blank">我要认证</a>
+        <div class="cent ct-h3">
+          <p>企业实体认证是华南城网为有实体经营场所（店面、仓储等）的商家免费提供的认证服务，帮助企业有效证明企业真实性和合法性。认证企业提供相关店面资料，由华南城网或联合当地市场进行上门拍照，证实商家的经营地址、现货储备才给予通过。</p>
+          <ul class="ct-all">
+            <li class="line01">
+              <h4>企业实体认证线上展示示意：</h4>
+              <img src="style/img/img04.png" alt="真实身份验证价值" /></li>
+            <li class="line02">
+              <h4>申请实体认证条件</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img05.png" alt="真实身份验证价值" /> </li>
+            <li class="line03">
+              <div class="g-h-10"></div>
+              <h4>如何申请实名认证？</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img06.png" alt="真实身份验证价值" /> </li>
+            <li class="line04">
+              <div class="g-h-10"></div>
+              <h4>“实体认证”有哪些优势？</h4>
+              <div class="g-h-20"></div>
+              <img src="style/img/img07.png" alt="真实身份验证价值" /> </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nv-sig01">
+        <h2>为什么选择真实身份验证？</h2>
+        <a class="rz-btn" href="http://member.csc86.com/business/from.html" title="我要认证" target="_blank">我要认证</a>
+        <div class="cent ct-h3">
+          <h3>选择电子商务真实身份验证 传递信任力量</h3>
+          <ul class="ct-all">
+            <li class="line01 link-btn">
+              <h4>真实身份验证价值</h4>
+              <img src="style/img/img01.png" alt="真实身份验证价值" />  <a href="http://member.csc86.com/business/from.html" title="我要验证" target="_blank">我要验证</a></li>
+            <li class="line02">
+              <h4>网上办理流程</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img02.png" alt="真实身份验证价值" /> </li>
+            <li class="line03">
+              <div class="g-h-10"></div>
+              <h4>申请条件</h4>
+              <div class="g-h-10"></div>
+              <p>1、通过深圳市工商管理局办理工商营业执照的企业；<Br />
+                2、华南城网注册会员并开通旺铺； <Br />
+                3、从事电子商务业务的企业法人；<Br />
+                4、符合并承诺遵守《电子商务可信交易生态圈企业基础规范》要求。<Br />
+                <Br />
+                满足以上条件者即可申请享受此项服务</p>
+            </li>
+            <li class="line04">
+              <div class="g-h-10"></div>
+              <h4>我们追求打造商业金三角</h4>
+              <div class="g-h-10"></div>
+              <img src="style/img/img03.png" alt="真实身份验证价值" /> </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="g-h-10"></div>
+    <ul class="sj">
+      <li class="sj-l">
+        <h2>认证好商家</h2>
+        <div class="ct-heigt01"> <span class="sig-rz"> <a href="http://shop12247553.csc86.com/" title="潍坊天元防水材料有限公司" target="_blank"><img src="images/logo01.jpg" alt="潍坊天元防水材料有限公司" /></a> <a class="ti-span" href="http://shop12247553.csc86.com/" title="潍坊天元防水材料有限公司" target="_blank">潍坊天元防水材料有限公司</a> </span> <span class="sig-rz"> <a href="http://car169y.csc86.com/" title="深圳市龙岗区龙岗众达精品店" target="_blank"><img src="images/logo02.jpg" alt="深圳市龙岗区龙岗众达精品店" /></a> <a class="ti-span" href="http://car169y.csc86.com/" title="深圳市龙岗区龙岗众达精品店" target="_blank">深圳市龙岗区龙岗众达精品店</a> </span> <span class="sig-rz"> <a href="http://xaxtzs.csc86.com/" title="西安兴唐装饰工程有限公司" target="_blank"><img src="images/logo03.jpg" alt="西安兴唐装饰工程有限公司" /></a> <a class="ti-span" href="http://xaxtzs.csc86.com/" title="西安兴唐装饰工程有限公司" target="_blank">西安兴唐装饰工程有限公司</a> </span> <span class="sig-rz"> <a href="http://shop12069692.csc86.com/" title="飞剑有机玻璃（亚克力）有限公司" target="_blank"><img src="images/logo04.jpg" alt="飞剑有机玻璃（亚克力）有限公司" /></a> <a class="ti-span" href="http://shop12069692.csc86.com/" title="飞剑有机玻璃（亚克力）有限公司" target="_blank">飞剑有机玻璃（亚克力）有限公司</a> </span> <span class="sig-rz"> <a href="http://muflower.csc86.com/" title="深圳市霏杨家居花艺有限公司" target="_blank"><img src="images/logo05.jpg" alt="深圳市霏杨家居花艺有限公司" /></a> <a class="ti-span" href="http://muflower.csc86.com/" title="深圳市霏杨家居花艺有限公司" target="_blank">深圳市霏杨家居花艺有限公司</a> </span> <span class="sig-rz"> <a href="http://m13121.csc86.com/" title="深圳市华兰特颜料有限公司" target="_blank"><img src="images/logo06.jpg" alt="深圳市华兰特颜料有限公司" /></a> <a class="ti-span" href="http://m13121.csc86.com/" title="深圳市华兰特颜料有限公司" target="_blank">深圳市华兰特颜料有限公司</a> </span> </div>
+      </li>
+      <li class="sj-r">
+        <h2>新认证商家榜单</h2>
+        <div class="ct-heigt02">
+          <ul>
+            <li><a href="http://shop860328.csc86.com/" title="广州市白云区石井欧林机械设备经营部" target="_blank">广州市白云区石井欧林机械设备经营部</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://fusuhang.csc86.com/" title="深圳市富塑行商贸有限公司" target="_blank">深圳市富塑行商贸有限公司</a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ic02.png" alt="实体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://xinyang.csc86.com/" title="深圳市华南鑫阳科技有限公司" target="_blank">深圳市华南鑫阳科技有限公司</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ic02.png" alt="实体" /></li>
+            <li><a href="http://shop12241637.csc86.com/" title="深圳市聚华商科技有限公司" target="_blank">深圳市聚华商科技有限公司</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ic01.png" alt="商体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://cxstar.csc86.com/" title="深圳市畅想之星科技有限公司" target="_blank">深圳市畅想之星科技有限公司</a>&nbsp;&nbsp;<img src="images/ic01.png" alt="商体" />&nbsp;<img src="images/ic02.png" alt="实体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://m15108.csc86.com/" title="深圳市朗时达化工有限公司" target="_blank">深圳市朗时达化工有限公司</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ic01.png" alt="商体" />&nbsp;<img src="images/ic02.png" alt="实体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://yxr2011.csc86.com/" title="深圳市源兴荣纺织品有限公司" target="_blank">深圳市源兴荣纺织品有限公司</a>&nbsp;&nbsp;<img src="images/ic01.png" alt="商体" />&nbsp;<img src="images/ic02.png" alt="实体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+            <li><a href="http://yhlskj.csc86.com/" title="深圳市云海绿色科技有限公司" target="_blank">深圳市云海绿色科技有限公司</a>&nbsp;&nbsp;<img src="images/ic01.png" alt="商体" />&nbsp;<img src="images/ic02.png" alt="实体" />&nbsp;<img src="images/ic03.png" alt="实名" /></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="g-h-10"></div>
+    <div class="content condown">
+      <h2>认证商家产品</h2>
+      <ul class="pro-c">
+        <li> <a target="_blank" title="" href="http://p10119.csc86.com/product/596391.html" class="imga2"><img align="深圳鹏展厂家直销BOPP封箱胶带.打包胶带" src="images/cp01.jpg"></a> <span class="pc-span">产品名称：打包胶带</span> <span class="pc-span">企业名称：深圳市华南鹏展包装材料商行</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;<img src="style/img/icon02.png" alt="" /></span> <span class="pri2"><a target="_blank" title="" href="http://p10119.csc86.com/product/596391.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://muflower.csc86.com/product/68071.html" class="imga2"><img align="百合干花厂家直销" src="images/cp02.jpg"></a> <span class="pc-span">产品名称：百合干花</span> <span class="pc-span">企业名称：深圳市霏杨家居花艺有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;</span> <span class="pri2"><a target="_blank" title="" href="http://muflower.csc86.com/product/68071.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://wintak.csc86.com/product/0bef7af5-e55a-4009-a753-2bc701d248c0.html" class="imga2"><img align="域泰WT-C27无线鼠标" src="images/cp03.jpg"></a> <span class="pc-span">产品名称：无线鼠标</span> <span class="pc-span">企业名称：深圳市智芯达电子科技有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;</span> <span class="pri2"><a target="_blank" title="" href="http://wintak.csc86.com/product/0bef7af5-e55a-4009-a753-2bc701d248c0.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://shop12069692.csc86.com/product/a7bc4a43-21a9-44b1-8aaf-9d0a3e046a5a.html" class="imga2"><img align="供应有机玻璃U型鞋子展示架 高档透明亚克力鞋托 鞋店展示道具" src="images/cp04.jpg"></a> <span class="pc-span">产品名称：展示道具</span> <span class="pc-span">企业名称：飞剑有机玻璃（亚克力）有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;<img src="style/img/icon02.png" alt="" /></span> <span class="pri2"><a target="_blank" title="" href="http://shop12069692.csc86.com/product/a7bc4a43-21a9-44b1-8aaf-9d0a3e046a5a.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://p13105.csc86.com/product/819575.html" class="imga2"><img align=" LED轨道灯." src="images/cp05.jpg"></a> <span class="pc-span">产品名称：LED轨道灯</span> <span class="pc-span">企业名称：深圳市庭上照明有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;<img src="style/img/icon02.png" alt="" /></span> <span class="pri2"><a target="_blank" title="" href="http://p13105.csc86.com/product/819575.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://szyuxuan.csc86.com/product/596adae9-9ee0-4335-943b-32e19f6aa755.html" class="imga2"><img align="深圳塑料外壳彩印加工厂|批发特价彩印加工服务" src="images/cp06.jpg"></a> <span class="pc-span">产品名称：彩印加工</span> <span class="pc-span">企业名称：深圳宇轩彩印有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;</span> <span class="pri2"><a target="_blank" title="" href="http://szyuxuan.csc86.com/product/596adae9-9ee0-4335-943b-32e19f6aa755.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://midear1020.csc86.com/product/285385e2-6e89-439b-b3f0-505bf6f611b0.html" class="imga2"><img align="纯色三拼四件套 活性133-72 喷漆面料 四件套定制" src="images/cp07.jpg"></a> <span class="pc-span">产品名称：美奈尔产品</span> <span class="pc-span">企业名称：深圳市美奈尔家居用品有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;<img src="style/img/icon02.png" alt="" /></span> <span class="pri2"><a target="_blank" title="" href="http://midear1020.csc86.com/product/285385e2-6e89-439b-b3f0-505bf6f611b0.html">立即抢批</a></span> </li>
+        <li> <a target="_blank" title="" href="http://hongkai168.csc86.com/product/3f80885f-eeb5-4c4c-b46e-b73e244fda84.html" class="imga2"><img align="绒沙金工艺品吉祥如意马十二生肖本命年生日" src="images/cp08.jpg"></a> <span class="pc-span">产品名称：吉祥如意马</span> <span class="pc-span">企业名称：深圳市宏开珠宝有限公司</span> <span class="pc-span">认证类型：<img src="style/img/icon01.png" alt="" />&nbsp;</span> <span class="pri2"><a target="_blank" title="" href="http://hongkai168.csc86.com/product/3f80885f-eeb5-4c4c-b46e-b73e244fda84.html">立即抢批</a></span> </li>
+      </ul>
+    </div>
+    <div  class="g-h-20"></div>
+    <div class="foot-ad1"><a target="_blank" href="http://cncms.csc86.com/special/2013/13hly/invite.html"><img width="990" height="80" border="0" src="images/ban_n_1.jpg"></a></div>
+    <div class="foot-ad2"><a target="_blank" href="http://cncms.csc86.com/special/2013/13hy/13hy.html"><img width="990" height="80" border="0" src="images/ban_n_2.jpg"></a></div>
+  </div>
+</div>
+<div  class="g-h-20"></div>
+<div class="g-o-a link">
+  <div class="g-h-10"></div>
+  <div class="love-links"> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/">关于华南城网</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/member.html">会员服务</a> <a rel="nofollow" target="_blank" href="http://ad.csc86.com">广告服务</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/business.html">商务合作</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/server.html">服务条款</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/laws.html">法律申明</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/privacy.html">隐私保护</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/feedback.html">意见反馈</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">帮助中心</a> <a target="_blank" href="http://cncms.csc86.com/sitemap.html">网站地图</a> <a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/contact.html">联系我们</a> </div>
+  <p>Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved</p>
+  <p>深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5</p>
+</div>
+<div style="display:none">
+  <script src="http://res.csc86.com/f=js/m/statistics.js"></script>
+</div>
+</body>
+</html>

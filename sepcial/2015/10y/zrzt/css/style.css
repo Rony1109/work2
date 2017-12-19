@@ -1,0 +1,143 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#eeeeee; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333333!important}
+.l{ float:left}
+.r{ float:right}
+.ml12{ margin-left:12px;}
+.mt15{ margin-top:15px;}
+.ml9{ margin-left:7px;}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.bannerwk{ width: 100%; overflow:hidden;position: relative}
+.banner{ width:1166px; margin:0px auto; position: relative}
+.banner p{ margin-left:-377px;}
+.banner p img{ vertical-align:bottom} 
+.banner .fx{ position:absolute; right:0px; top:0px; width:336px;}
+.banner .dy{ position:absolute; bottom:110px; left:250px; line-height:25px; font-size:16px; color:#ffffff;  width:725px; font-family:微软雅黑; text-indent:30px;}
+
+
+/* 以下为专题样式 */
+.content1{ width:1165px; margin:0px auto;  position:relative; }
+.content1.mt30{ margin-top:30px}
+.con{  height:auto}
+.con .left{ position:relative;}
+.con .left .context{ position:absolute; bottom:0px; left:0px;  color:#ffffff;  background:url(../image/tm.png); padding:8px 15px; display: none;} 
+.con .left .context.p0{ padding:0px; width:100%; text-indent:12px; padding:5px 0px; font-size:12px; font-weight:bold;} 
+.con .left .context p.p1{ line-height:30px; font-size:16px; font-weight:bold} 
+.con .left .context p.p2{ text-indent:24px;} 
+.con .left .context p.p2 a,.con .right .cont1 li p .s3 a{ color:#ffffff!important; text-decoration:none}
+.con .left .context p.p2 a span{ color:#d04d40}
+.con .right .cont1{}
+.con .right .cont1 .img{ position:relative}
+.con .right .cont1 .context{position:absolute; bottom:0px; left:0px;  color:#ffffff;  background:url(../image/tm.png);padding:0px; width:100%; text-indent:12px; padding:5px 0px; font-size:12px; font-weight:bold; display: none;}
+.con .right .cont1 li{ padding:8px; background:#ffffff; width:257px;}
+.con .right .cont1 li p{color:#b6b6b6; height:31px;}
+.con .right .cont1 li p span{font-weight:bold;}
+.con .right .cont1 li p .s1{ color:#b6b6b6; float:left; padding-top:10px;}
+.con .right .cont1 li p .s2{ color:#e75040;font-size:16px;float:left;padding-top:8px;}
+.con .right .cont1 li p .s3{ color:#ffffff;background:url(../image/con2bac.png) no-repeat; float:right; width:123px; height:31px; text-align:center; line-height:31px; font-size:18px; font-family:微软雅黑;}
+.con .right .cont1 li p .s3 a{ display:block;}
+.con .right .cont1 li.pd0{ padding:0px; background:none; margin:17px 0px 0px 7px; width:auto}
+.con .right .cont1 li.pd01{ padding:0px; background:none;  margin-top:17px;width:auto}
+
+
+
+.con .center{position:relative; margin-left:5px; width:508px;}
+.con .center .top li{ float:left;margin-left:10px; position:relative} 
+.con .center .top li .context{position:absolute; bottom:0px; left:0px;  color:#ffffff;  background:url(../image/tm.png); padding:3px  ;display: none; line-height:30px; font-size:16px; font-weight:bold; }
+.con .center .top li .context a{color:#ffffff!important;}
+.con .bottom{position:relative; padding:10px 40px; width:428px; }
+.con .bottom .p1{ font-size:29px; line-height:60px;text-align:center; font-family:微软雅黑; color:#767676; font-weight:bold;}
+.con .bottom .p2{ font-family:微软雅黑; text-indent:24px;}
+.con .bottom .p2 a span,.con1 .left .p3 a span{ color:#d04d40}
+.con .bottom .p3{ margin-top:10px;}
+.con .bottom li{ float:left; line-height:20px; width:50%}
+.con .bottom li a,.con .bottom .p2 a,.con1 .left .p3 a{ color:#767676!important; text-decoration:none;}
+.con .bottom li a:hover,.con .bottom .p2 a:hover{ color:#d04d40!important;} 
+.con .bottom li a span{ color:#d04d40; padding:5px; font-size:18px}
+
+.content{ width:100%; position:relative;}
+.content.h816{ height:816px; background:url(../image/con2img.png) top center no-repeat; margin-top:50px;}
+.con1{ width:1165px; margin:100px auto 0px;  position:relative; }
+.con1 .left{ background:#ffffff; padding:30px 46px; margin-top:234px; width:288px;}
+.con1 .left .p1{font-size:25px; line-height:40px;text-align:center; font-family:微软雅黑; color:#ea5546; font-weight:bold;width:288px;}
+.con1 .left .p2{ margin-top:5px; position:relative;}
+.con1 .left .p2 .context{ height:50px; line-height:50px; position:absolute ; text-align:center; font-family:微软雅黑; font-size:38px; color:#ffffff!important; top:50%; left:0px; width:100%; margin-top:-25px; text-decoration:none;}
+.con1 .left .p3{ font-family:微软雅黑; text-indent:24px; width:288px; line-height:24px; margin-top:10px;}
+.content.h1346{ height:1346px; background:url(../image/con3.png) top center no-repeat; margin-top:50px;}
+.content .con2{ margin:0px auto; width:1165px; padding-top:200px; position:relative;}
+.content .con2 .mt100{ margin-top:100px;}
+.content .con2 p{ position:relative; margin:0px;}
+.content .con2 p img{vertical-align:bottom}
+.content .con2 .link{ position:absolute; background: none; border:none}
+.content .con2 .link a{display:block; width:100%; height:100%;}
+.content .con2 .a{ left:219px; top:196px; width:237px; height:266px; }
+.content .con2 .b{ left:464px; top:196px; width:237px; height:266px;}
+.content .con2 .c{ left:708px; top:196px; width:237px; height:266px;}
+.content .con2 .d{ left:103px; top:472px; width:228px; height:212px;}
+.content .con2 .e{ left:831px; top:472px; width:228px; height:212px;}
+.content .con2 .f{ left:219px; top:695px; width:238px; height:200px;}
+.content .con2 .g{ left:463px; top:695px; width:238px; height:200px;}
+.content .con2 .h{ left:710px; top:695px; width:238px; height:200px;}
+.content .con2 .text{ font-size:16px; font-family:微软雅黑; line-height:25px; position:absolute; width:730px; bottom:-300px; left:120px; color:#ffffff; text-indent:30px;}
+
+.content2{ width:1165px; height:198px; background:url(../image/con4.png) no-repeat;  margin-top:20px; padding-top:170px;}
+.content2 .play{ width:980px; padding:10px 0px; overflow:auto; margin-left:112px; background:#ffffff;}
+.content2 .play .center{ width:900px; overflow:hidden}
+.content2 .play .center ul{ width:800%; float:left;} 
+.content2 .play li{ float:left; margin-right:20px; width:211px; height:160px; overflow:hidden}
+.content2 .play li img{ width:100%}
+
+
+.fix{ position:fixed; right:10px; top:200px;  width:127px; height:294px; display:none;  background:url(../image/fix.png) no-repeat;}
+.fix li{ width:127px; height:36px; display:block; margin-bottom:19px; cursor:pointer; float:left}
+.fix li.mb20{margin-bottom:20px;}
+.fix li.mb0{margin-bottom:0px;}
+.fix li.active{ background:#ffffff;filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;} 
+.fix li a{ display:block; width:127px; height:36px;}
+
+

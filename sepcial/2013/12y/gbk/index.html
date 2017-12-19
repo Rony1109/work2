@@ -1,0 +1,921 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="http://res.csc86.com/bhf/" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link href="http://res.csc86.com/f=js/p/artDialog/4.1.5/skins/mem.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://res.csc86.com/js/"></script>
+<script src="http://industry.csc86.com/statics/js/industry/m/islogin.js"></script>
+<script src="http://res.csc86.com/dialog/"></script>
+<script src="js/js.js"></script>
+<title></title>
+</head>
+
+<body>
+<div class="top-bar"><!--top-bar start-->
+	<div class="g-o-a">
+		<div class="top-csc-group">
+			<a target="_blank" href="http://group.csc86.com">走进华南城</a>
+            <a target="_blank" href="http://sz.csc86.com">深圳</a><a target="_blank" href="http://nn.csc86.com">南宁</a><a target="_blank" href="http://group.csc86.com/project/nc/introduce.html">南昌</a><a target="_blank" href="http://xa.csc86.com">西安</a><a target="_blank" href="http://zz.csc86.com">郑州</a><a target="_blank" href="http://group.csc86.com/project/heb/introduce.html">哈尔滨</a>
+        </div>
+		<div class="server-r"><a title="" target="_blank" href="http://cncms.csc86.com/help/">客服中心</a></div><span class="v-line sev-r"></span>
+		<div class="top-my-account">
+			<div class="hd">我的账户</div>
+			<div class="g-c-f bd w-193">
+				<ul class="csc-bd">
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/shop/guide.html">我的旺铺</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/product/sell/category.html">产品发布</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/quote/list.html">报价管理</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://member.csc86.com/inquiry/list.html">询盘管理</a></li>
+				</ul>
+                <ul class="yesmore-bd">
+					<li><a rel="nofollow" target="_blank" href="http://my.csc86.com/userorders">我的订单</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://cart.csc86.com/cart">购物车</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://sale.csc86.com/seckill">抢购秒杀</a></li>
+					<li><a rel="nofollow" target="_blank" href="http://tuan.csc86.com/">我的团购</a></li>
+				</ul>
+            </div>
+		</div>
+		<div class="top-sign-info">
+			您好，<span class="bd">
+			欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a>						</span><span class="v-line"></span>
+		</div>
+	</div>
+</div>
+<div class="web-search">
+    <div class="g-o-a">
+        <h1> <a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com"> <img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/image/c/index/logo.png"> </a> </h1>
+        <div class="m-search">
+            <form action="http://search.csc86.com/company/company.html" method="get">
+                <ul class="g-c-f">
+                    <li class="first"><a href="http://search.csc86.com/selloffer/products.html">产品</a></li>
+                    <li class="cur"><a href="http://search.csc86.com/company/company.html">公司</a></li>
+                </ul>
+                <div class="g-c-f">
+                    <div class="ss-txt">
+                        <div style="display:none;" id="comp-ol" class="ss-select"> <span class="arr"></span>
+                            <ol>
+                                <li class="cur"><a href="javascript:">公司名称</a></li>
+                                <li><a href="javascript:">主营产品</a></li>
+                            </ol>
+                        </div>
+                        <input type="text" class="txt" name="q" placeholder="请输入公司名称或关键词" value="" autocomplete="off" maxlength="50" id="search-txt">
+                    </div>
+                    <input type="submit" value="搜索" id="searchbtn" class="btn">
+                </div>
+                <ol class="g-o-f hot-keys">
+                    <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a></li>
+                    <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a></li>
+                    <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a></li>
+                    <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a></li>
+                    <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a></li>
+                    <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%82%E6%96%99">涂料</a></li>
+                    <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%97%A0%E7%BA%BA%E5%B8%83">无纺布</a></li>
+                    <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a></li>
+                </ol>
+            </form>
+        </div>
+        <script>
+	$("form").one("keydown",function (){
+		seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+			csc.suggest();
+		});
+	});			
+	seajs.use(csc.url("res","/f=js/m/search"),function (){
+		csc.search().searchType("div.m-search");
+	});
+	seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+		csc.placeholder("#search-txt");
+	});
+</script> 
+    </div>
+</div>
+
+<div class="n"><!--nav start-->
+	<div class="g-o-a">
+    	<a class="g-f-l ml-175" href="#" target="_blank">关于供爆款</a><span class="g-f-l">|</span><a class="g-f-l" href="javascript://" onClick="addFavourite('这里放本页面的线上链接','供爆款销量王狠赚钱01期:2013华南城爆款特惠')">收藏本活动</a>
+        <a class="g-f-r" href="#" target="_blank">我要供货<b class="icon-arw"></b></a>
+        <a class="g-f-r icon-mygods" href="#" target="_blank">我的货源更优质</a>
+    </div>
+</div><!--nav end-->
+
+<div class="b"><!--banner start-->
+	<div class="g-o-a g-p-r">
+    	<!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <a class="bds_qzone">QQ空间</a>
+        <a class="bds_tsina">新浪微博</a>
+        <a class="bds_tqq">腾讯微博</a>
+        <a class="bds_renren">人人网</a>
+        <a class="bds_t163">网易微博</a>
+        <span class="bds_more">更多</span>
+        <a class="shareCount"></a>&nbsp;&nbsp;
+        </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+        </script>
+        <!-- Baidu Button END -->
+    	<a class="gbk-logo" href="#" target="_blank"><img src="css/img/logo.png" width="175" height="180"></a>
+    </div>
+</div><!--banner end-->
+
+<div class="g-h-20"></div>
+
+<div class="g-o-a"><!--供爆款说明 start-->
+	<div class="mr-12 ml-12">
+    	<div class="bg-w"></div>
+        <div class="bg-c-fff lh-27 p-26">
+        	<p class="fs-16"><strong>供爆款</strong>是华南城网纺织频道贯穿全年的大型供求速配活动，活动汇集当季最热销爆款，通过面料速配服务，精准推送供应商优质货源，并为采购商缩短采购时间，降低采购成本，打通行业产业链，实现供应商和采购商双赢。</p>
+            <p class="g-h-10"></p>
+            <h2 class="fs-20 lh-30">“金牌采购商”至尊特权：</h2>
+            <p class="fs-14 g-f-l">1、采购专场服务，量身定制您的求购专场。<br>2、推广资源抢先得，让您采购一步到位。</p>
+            <p class="fs-14 g-f-l ml-12">3、优质供应商优先选，降低采购成本。<br>4、样品免费拿，采购更放心。</p>
+            <p class="fs-14 g-f-l ml-12">5、参与线下活动与卖家面对面。<br>6、免单机会</p>
+            <a class="btn-sinup g-f-r" href="javascript:signNow()" rel="nofollow">马上报名</a>
+            <p class="g-h-01"></p>
+        </div>
+    </div>
+</div><!--供爆款说明 end-->
+
+<div class="g-o-a bg-t"></div>
+<div class="g-o-a bg-c-bd2741"><!--毛呢大衣 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">毛呢大衣爆款—求面料</h2>
+	<div class="w-b100">
+    	<div class="w-b110 g-c-f">
+        	<div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/1f01.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">琳丽人<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">24881件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">尚都比拉服饰旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">53524件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">迪元儿<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">5284件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬新款韩版修身中长款毛呢外套双排扣冬装毛呢大衣</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">大衣呢+纽扣</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>羊毛</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>31%-50%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>卡其 虾红</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/1f02.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">QCT服装<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">19278件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">芸妃<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">12850件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">RODIN洛<br>迪娜旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">8530件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬装新款学院风韩版毛呢外套中长款大码毛呢大衣外套修身女</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">大衣呢+纽扣</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>仿羊绒</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>96%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>黄色 浅色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/1f03.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">菲莲娅<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">12258件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">露衣司<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">12039件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">思娜妮<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">2278件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">毛呢外套大衣女2013秋冬新款女装妮呢子韩版修身双排扣羊毛翻领</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">大衣呢+纽扣</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>羊毛</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>31%-50%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>灰色 米粉</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/1f04.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">davidgreff<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">1991件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">伦爱弗<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">2172件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">品牌时尚<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">2027件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">男士风衣英伦休闲加绒毛呢外套 韩版修身潮男中长款立领呢大衣男</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">大衣呢+纽扣</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>羊毛</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>50%-69%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>纯色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+        </div>
+        <div class="g-h-15"></div>
+    </div>
+</div><!--毛呢大衣 end-->
+
+<div class="g-o-a bg-c-ffb72c"><!--羽绒服 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">羽绒服爆款—求面料</h2>
+	<div class="w-b100">
+    	<div class="w-b110 g-c-f">
+        	<div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/2f01.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">happy衣衣专卖店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">49463件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">viviyihua<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">30482件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">零式起凡旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">4938件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013大毛领中长款韩版羽绒服女装羽绒衣外套</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">羽绒布+鸭羽绒+貂毛</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>聚酯纤维</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>纤维</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>96%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>黑色 蓝色 粉色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/2f02.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">欧薇莲<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">18242件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">千仞岗<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">12262件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">欧巴图<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">5397件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013冬季加厚羽绒服 女中长款外套 修身显瘦羽绒服</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">羽绒布+鸭羽绒+貂毛</em></p>
+                    <p class="g-f-l w-b64"><strong>面料：</strong>记忆/仿记忆面料</p>
+                    <p class="g-f-l w-b36"><strong>流行:</strong>带毛领</p>
+                    <p class="g-f-l w-b64"><strong>主材质含量：</strong> 91%-95%</p>
+                    <p class="g-f-l w-b36"><strong>填充料:</strong> 白鸭绒</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>黑色 橙色 红色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/2f03.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">倩倩宝贝时尚女装</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">17091件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">聚时尚潮品羽绒服</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">14645件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">七色彩依专卖店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700"> 6711件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013新款秋冬装韩范亮面加厚两面穿羽绒服女短款</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">羽绒布+羽丝棉</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>锦纶</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>91%-95%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>彩色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>纯色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/2f04.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">Aeerohma<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">27663件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">LeoHan<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">27448件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">异惑服饰<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">22377件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">毛呢外套大衣女2013秋冬新款女装妮呢子韩版修身羊毛翻领反季清仓</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">羽绒布+鸭羽绒</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong> 涤纶</p>
+                    <p class="g-f-l w-b36"><strong>图案: </strong>格子</p>
+                    <p class="g-f-l w-b64"><strong>填充料:</strong>白鸭绒</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>蓝色 灰色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+        </div>
+        <div class="g-h-15"></div>
+    </div>
+</div><!--羽绒服 end-->
+
+<div class="g-o-a bg-c-12a4f1"><!--打底裙 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">打底裙爆款—求面料</h2>
+	<div class="w-b100">
+    	<div class="w-b110 g-c-f">
+        	<div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/3f01.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">布噜阁<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">43021件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">流行解码旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">35344件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">彦墨服饰<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">36112件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬女半身裙高腰打底短裙子蓬蓬裙伞裙包臀百褶裙大码A字裙</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">毛呢布</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>合成纤维</p>
+                    <p class="g-f-l w-b36"><strong>面料厚:</strong> 300克</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>51%-70%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>浅灰色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/3f02.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">高莎<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">13473件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">QCT服饰<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">19207件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">淘衣时装旗舰店 </span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">15898件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬装新款女装连衣裙大码修身长袖蕾丝打底裙子气质百搭</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">蕾丝+布料</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>聚酯纤维</p>
+                    <p class="g-f-l w-b36"><strong>流行元素:</strong> 蕾丝</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>95%以上</p>
+                    <p class="g-f-l w-b36"><strong>面料颜色：</strong>黑色</p>
+                    <p class="g-f-l w-b64"><strong>袖型:</strong> 泡泡</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/3f03.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">NA晓旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">19418件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">爱尚唯美旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">10389件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">r.beauty女装旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">692件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬连衣裙韩版女装小香风打底裙圆领修身花苞裙</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">棉布</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>棉</p>
+                    <p class="g-f-l w-b36"><strong>工艺: </strong>刺绣/绣花</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>81%-90%</p>
+                    <p class="g-f-l w-b36"><strong>袖长: </strong>九分袖</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong> 玫红 黑色 白色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/3f04.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">爱莱蒙<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">345135件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">芸妃<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">178853件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">ollbtg<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">78419件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">女韩版潮长裤外穿秋冬显瘦韩国冬季加厚加绒棉连裤袜</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">针织布+绒毛</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>聚脂</p>
+                    <p class="g-f-l w-b36"><strong>厚薄: </strong>加厚</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>31%-50%</p>
+                    <p class="g-f-l w-b36"><strong>尺寸: </strong>均码</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>七彩</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+        </div>
+        <div class="g-h-15"></div>
+    </div>
+</div><!--打底裙 end-->
+
+<div class="g-o-a bg-c-424242"><!--牛仔装 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">牛仔装爆款—求面料</h2>
+	<div class="w-b100">
+    	<div class="w-b110 g-c-f">
+        	<div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/4f01.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">木易太<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">5322件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">彦怡裳<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">4624件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">牛仔裤牛仔外套棉衣 </span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700"> 4292件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013秋冬欧美修身翻领口袋牛仔衬衣 韩版长袖牛仔衬衫女</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">牛仔布+铆钉</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>棉</p>
+                    <p class="g-f-l w-b36"><strong>板型: </strong>直筒型</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong> 51%-70%</p>
+                    <p class="g-f-l w-b36"><strong>面料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>浅蓝色 深蓝色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/4f02.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">TIANKUDC<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">13178件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">EXSCV<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">16725件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">男胜衣色<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">3411件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">新品男士牛仔夹克牛仔衣加绒男式夹克男男外套潮韩版</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">牛仔布+铆钉</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>牛仔布</p>
+                    <p class="g-f-l w-b36"><strong>服装工艺:</strong> 水洗</p>
+                    <p class="g-f-l w-b64"><strong>款式细节：</strong>纽扣装饰</p>
+                    <p class="g-f-l w-b36"><strong>版型:</strong> 修身型</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>怀旧蓝 牛仔蓝</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/4f03.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">WAY TO CREATE</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">86819件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">385度<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">90161件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">雅羊人<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">46340件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">2013新款女装 秋冬韩版潮显瘦加厚牛仔裤 加绒铅笔裤小脚长裤子女</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">牛仔布+绒毛</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>加厚牛仔布</p>
+                    <p class="g-f-l w-b36"><strong>款式: </strong>铅笔裤</p>
+                    <p class="g-f-l w-b64"><strong>工艺:</strong> 做旧水洗</p>
+                    <p class="g-f-l w-b36"><strong>牛仔颜色:</strong>深色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>咖啡 墨绿 枣红</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/4f04.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">酷游人<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">70727件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">czwei<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">64671件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">戈蓝笛<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">38791件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">秋冬新款男装男士牛仔裤男直筒修身加厚加绒牛仔长裤子男裤</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">牛仔布</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>常规牛仔布</p>
+                    <p class="g-f-l w-b36"><strong>裤脚口:</strong> 直脚</p>
+                    <p class="g-f-l w-b64"><strong>洗水: </strong>普通洗水</p>
+                    <p class="g-f-l w-b36"><strong>弹力指数:</strong> 无弹</p>
+                    <p class="g-f-l w-b64"><strong>厚薄: </strong>常规</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+        </div>
+        <div class="g-h-15"></div>
+    </div>
+</div><!--牛仔装 end-->
+
+<div class="g-o-a bg-c-8dba3b"><!--家纺 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">家纺爆款—求面料</h2>
+	<div class="w-b100">
+    	<div class="w-b110 g-c-f">
+        	<div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/5f01.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">艾DO家纺<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">58235件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">欧斯卡<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700"> 25585件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">莱诗家纺旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700"> 6362件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">全棉斜纹印花四件套纯棉公主床品婚庆床上用品被套 </h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">混纺布料</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>混纺</p>
+                    <p class="g-f-l w-b36"><strong>工艺:</strong> 涂料印花</p>
+                    <p class="g-f-l w-b64"><strong>图案类型:</strong> 花朵草</p>
+                    <p class="g-f-l w-b36"><strong>印花</strong> 彩色</p>
+                    <p class="g-f-l w-b64"><strong>织造工艺:</strong> 斜纹</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/5f02.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">金欧尚家纺<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">23151件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">伊丹娜百川<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">10769件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">维尼家纺旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">12946件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">韩式家纺床品磨毛四件套田园公主被套床单床上用品</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">布料</em></p>
+                    <p class="g-f-l w-b64"><strong>面料材质：</strong>羊毛</p>
+                    <p class="g-f-l w-b36"><strong>里料材质：</strong>涤纶</p>
+                    <p class="g-f-l w-b64"><strong>面料主材质含量：</strong>31%-50%</p>
+                    <p class="g-f-l w-b36"><strong>里料图案：</strong>纯色</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>浅灰色</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/5f03.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">名莎家纺<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">29936件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">馨丝蓝家纺<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">30530件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">欧港<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">2971件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">决明子枕头 荞麦薰衣草 保健枕 护颈枕 颈椎枕芯 </h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">布料+枕芯</em></p>
+                    <p class="g-f-l w-b64"><strong>枕头主材:</strong> 生态花草枕</p>
+                    <p class="g-f-l w-b36"><strong>种类:</strong> 决明子</p>
+                    <p class="g-f-l w-b64"><strong>枕头面料:</strong> 棉布</p>
+                    <p class="g-f-l w-b36"><strong>棉布种类:</strong> 斜纹</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>决明子 薰衣草</p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+            <div class="w-464 p-10-9 g-f-l bg-c-fff ml-12 mt-10"><!--爆款 start-->
+            	<div class="g-f-l"><a href="#" target="_blank"><img src="image/5f04.jpg" width="209" height="270"></a></div>
+                <div class="g-f-r w-245">
+                	<div class="b-1-cf p-8-5 g-c-f">
+                    	<p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">北极绒零帕<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">44193件</i></span>
+                        </p>
+                        <p class="br-1d-bbb8bc g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">尚炫月<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">39092件</i></span>
+                        </p>
+                        <p class="g-f-l g-t-c w-75">
+                        	<span class="fs-14 fw-700">雅鹿靓妮<br>旗舰店</span><br>
+                            <span>月销量<br><i class="c-ff0000 fw-700">21805件</i></span>
+                        </p>
+                    </div>
+                    <div class="g-h-05"></div>
+                    <div class="lh-20">
+                    <h3 class="fs-14 lh-24">加厚冬被被子 单双人秋冬天被芯棉被床上用品</h3>
+                    <p class="g-h-05"></p>
+                    <p class="g-f-l w-b100"><strong>所需面料：</strong><em class="c-ff0000">纤维棉</em></p>
+                    <p class="g-f-l w-b64"><strong>主要填充物: </strong>纤维</p>
+                    <p class="g-f-l w-b36"><strong>材质:</strong> 超细纤维</p>
+                    <p class="g-f-l w-b64"><strong>制造工艺:</strong> 绗缝</p>
+                    <p class="g-f-l w-b36"><strong>被子面料:</strong> 其它</p>
+                    <p class="g-f-l w-b64"><strong>面料颜色：</strong>白 粉 兰 </p>
+                    <p class="g-h-04"></p>
+                    <a class="btn-mc" href="#" onClick="javascript:mlNow()" target="_blank" rel="nofollow">我来配料</a>
+                    </div>
+                </div>
+            </div><!--爆款 end-->
+        </div>
+        <div class="g-h-15"></div>
+    </div>
+</div><!--家纺 end-->
+
+<div class="g-h-10"></div>
+<div class="g-o-a bg-c-bd2741"><!--洽谈室 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">洽谈室</h2>
+    <div class="g-f-l ml-12 g-p-r">
+        <img src="image/2.jpg" width="485" height="230">
+        <a class="pab01" href="#" target="_blank">注册会员</a>
+        <a class="pab02" href="#" target="_blank">开通旺铺</a>
+        <a class="pab03" href="#" target="_blank">发布爆款</a>
+        <a class="pab04" href="#" target="_blank">供爆款</a>
+    </div>
+    <div class="g-f-r mr-12 g-p-r">
+    	<img src="image/3.jpg" width="485" height="230">
+        <a class="pab01" href="#" target="_blank">注册会员</a>
+        <a class="pab02" href="#" target="_blank">开通旺铺</a>
+        <a class="pab03" href="#" target="_blank">发布爆款</a>
+        <a class="pab04" href="#" target="_blank">供爆款</a>
+    </div>
+    <div class="g-h-10"></div>
+    <div class="bg-c-fff ml-12 mr-12 p-15-26">
+    	<h3 class="fs-24 g-c-f"><span class="g-f-l" >纺织天下 注册有礼</span><span class="g-f-r fs-18 c-df3250">邀请好友更能赢1万元推广礼包<b class="icon-gift ml-10"></b></span></h3>
+        <p class="g-h-15"></p>
+        <p class="fs-14">
+        	华南城网纺织频道改版华丽上线，为了回馈广大会员特开展“纺织天下 注册有礼”系列活动。只要您在活动时间内成功注册即可获得入驻礼包，邀请好友更能赢取1万元推广礼包。<br><br>
+            活动时间：2013.12.1--2013.12.31
+        </p>
+        <p class="g-h-20 w-b100"></p>
+        <p class="brdiu g-f-l g-t-c">
+        	<span class="g-d-b g-h-20"></span>
+        	<span class="fw-700 fs-18">活动一：新人入驻礼包</span><br>
+            <span class="g-d-b g-h-20"></span>
+            <span class="fs-14">活动期间，所有新注册用户均可以获得产品搜索排名的大奖。</span><br><br><br><br><br>
+            <a class="btn-redrdiu" href="#">立即注册</a>
+            <span class="g-d-b g-h-20"></span>
+        </p>
+        <p class="brdiu g-f-r">
+        	<span class="g-d-b g-h-20"></span>
+        	<span class="fw-700 fs-18 g-d-b g-t-c">活动一：新人入驻礼包</span>
+            <span class="g-d-b g-h-20"></span>
+            <span class="fs-14 ml-12 mr-12 g-d-b">活动期间所有已注册新老用户成功邀请1位好友即可赢取价值1万元广<br>告推广礼包（纺织频道首页广告）。<br>请点击以下按钮，获取专属您的邀请链接。</span>
+            <span class="g-d-b g-h-30"></span>
+            <span class="g-d-b g-t-c"><a class="btn-redrdiu" href="javascript:getInviteLink(this)">获取邀请链接</a></span>
+            <span class="g-d-b g-h-20"></span>
+        </p>
+        <p class="g-h-20 w-b100"></p>
+        <p class="g-f-l fs-14">
+        	<strong class="fs-16">活动流程：</strong><br>
+        	1、参与活动获取奖励资格<br>2、华南城网运营人员审核获奖会员资格<br>3、华南城网对通过审核的会员进行广告排期
+        </p>
+        <p class="g-f-r"><strong class="fs-18">在线咨询：</strong><span class="g-h-15 g-d-b"></span><a href="http://wpa.qq.com/msgrd?v=3&uin=1373292466&site=qq&menu=yes" class="icon-vist" target="_blank">在线咨询</a></p>
+        <p class="g-f-r mr-90"><strong class="fs-18">免费热线：</strong><span class="g-h-15 g-d-b"></span><a href="javascript://" class="icon-tel">免费热线</a></p>
+		<p class="g-h-15"></p>
+    </div>
+    <div class="g-h-15"></div>
+</div><!--洽谈室 end-->
+
+<div class="g-h-10"></div>
+<div class="g-o-a bg-c-bd2741"><!--洽谈室 start-->
+	<h2 class="c-fff fs-28 g-t-c lh-60">华南城网特色服务  只为您采购更放心</h2>
+    <div class="ml-12 mr-12 bg-c-fff g-c-f p-20-0">
+    	<b class="icon-x1 g-f-l ml-28"></b>
+        <div class="w-212 g-f-l ml-10">
+            <h4 class="fs-20 lh-30">什么是实名认证？</h4>
+            <p class="g-h-05"></p>
+            <p class="fs-14 lh-22">实名认证是一项提升企业信用度的服务。由华南城网联合第三方通过工商、税务确认企业的 真实性、合法性，提升信誉度，获得更高的曝光率和成交率。</p>
+        </div>
+        <b class="icon-x2 g-f-l ml-28"></b>
+        <div class="w-212 g-f-l ml-10">
+            <h4 class="fs-20 lh-30">什么是实名认证？</h4>
+            <p class="g-h-05"></p>
+            <p class="fs-14 lh-22">实名认证是一项提升企业信用度的服务。由华南城网联合第三方通过工商、税务确认企业的 真实性、合法性，提升信誉度，获得更高的曝光率和成交率。</p>
+        </div>
+        <b class="icon-x3 g-f-l ml-28"></b>
+        <div class="w-212 g-f-l ml-10">
+            <h4 class="fs-20 lh-30">什么是实名认证？</h4>
+            <p class="g-h-05"></p>
+            <p class="fs-14 lh-22">实名认证是一项提升企业信用度的服务。由华南城网联合第三方通过工商、税务确认企业的 真实性、合法性，提升信誉度，获得更高的曝光率和成交率。</p>
+        </div>
+    </div>
+    <div class="g-h-15"></div>
+</div><!--洽谈室 end-->
+
+<div class="g-h-10"></div>
+<div class="g-o-a g-t-c"><a href="#" target="_blank"><img src="image/1.jpg" width="1000" height="81"></a></div>
+<div class="g-h-10"></div>
+<div class="g-o-a g-t-c"><a href="#" target="_blank"><img src="image/1.jpg" width="1000" height="81"></a></div>
+
+
+<div class="g-h-10"></div>
+<div class="footer g-o-a">
+	<a href="#" target="_blank">关于华南城网</a><a href="#" target="_blank">会员服务</a><a href="#" target="_blank">广告服务</a><a href="#" target="_blank">商务合作</a><a href="#" target="_blank">服务条款</a><a href="#" target="_blank">法律申明</a><a href="#" target="_blank">隐私保护</a><a href="#" target="_blank">意见反馈</a><a href="#" target="_blank">帮助中心</a><a href="#" target="_blank">网站地图</a><a href="#" target="_blank">联系我们</a><br />Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved<br />深圳华南城网电子商务有限公司 版权所有 粤ICP备12062577号-5<div class="g-h-10"></div></div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

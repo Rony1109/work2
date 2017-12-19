@@ -1,0 +1,172 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+*{ padding:0px; margin:0px;}
+ul{ list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ margin:0px; padding:0px; margin:0px auto;}
+ul,li,dl,dt,dd{ list-style:none;}
+body{ background:#e8e8e8; color:#333333}
+::selection{background: #fd7939;color:#ffffff;}
+::-moz-selection{background: #fd7939;color:#ffffff;}
+::-webkit-selection{background: #fd7939;color:#fff;}
+img{border: none}
+a{ color:#333!important}
+.l{ float:left}
+.r{ float:right}
+.after:after{ content:""; line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden;}
+
+.after1{ line-height:100px; height:100px; font-size:10px; clear:both; zoom:1; width:100%; display:block;visibility: hidden; }
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.mt30{ margin-top:30px}
+.mt25{ margin-top:25px}
+.pa25{ padding:5px 0px 25px}
+
+
+.head{height:90px; background:#ffffff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+
+.bannerwk{ width: 100%; overflow:hidden;position: relative}
+.banner{ width:1000px; margin:0px auto; position: relative}
+.banner p{ margin-left:-460px;}
+.banner .fx{ position:absolute; right:0px; top:0px; width:366px;}
+.banner .dy{ position:absolute; bottom:170px; left:150px; line-height:25px; color:#ffffff;  width:725px; }
+
+
+/* 以下为专题样式 */
+
+.globalcont{ width:100%;max-width:1920px;min-width:1000px;}
+.globalcont.gcont1{ background: url(../image/img2.png) no-repeat center ; height:677px ;  margin-top:-135px;}
+.globalcont.gcont2{ background: url(../image/img4.png) no-repeat center ; height:672px ;  margin-top:-210px;}
+.globalcont.gcont3{ background: url(../image/img5.png) no-repeat center ; height:671px ;  margin-top:-200px;}
+.globalcont.gcont4{ background: url(../image/img9-1.png) no-repeat center ; height:745px ;  margin-top:-175px;}
+.globalcont.gcont5{ background: url(../image/img10-1.png) no-repeat center ; height:260px ; }
+
+.globalcont .context{ width:1000px;margin:0px auto; position:relative}
+.globalcont .context .text{ width: 245px; float:right; margin:253px 10px 0px 0px}
+.globalcont .context .text.t3{margin:245px 10px 0px 0px}
+.globalcont .context .text p{ color:#fff}
+.globalcont .context .text .p1{ font-size:26px; text-align:center; line-height:35px;} 
+.globalcont .context .text .p2{ margin-top:25px;font-size:15px; text-align:left; text-indent:24px; line-height:28px;font-family:微软雅黑;}
+.globalcont .context.t a{ position: absolute; width:130px; height:160px; display:block; } 
+.globalcont .context.t .a1{ left:90px; top:210px}
+.globalcont .context.t .a2{ left:250px; top:190px}
+.globalcont .context.t .a3{ left:430px; top:170px}
+.globalcont .context.t .a4{ left:600px; top:150px}
+.globalcont .context.t .a5{ left:760px; top:130px}
+
+.content1{ width:1000px; margin:0px auto;  position:relative;}
+.content1.h375{ height:375px; background:url(../image/img1bac.png) no-repeat;}
+.content1.h375 p{ position:absolute; font-size:14px; font-family:微软雅黑;}
+.content1.h375 p a{ color:#fff!important;} 
+.content1.h375 .p1{ left:130px; top:120px;} 
+.content1.h375 .p2{ left:340px; top:70px;} 
+.content1.h375 .p3{ left:540px; top:60px;} 
+.content1.h375 .p4{ left:790px; top:50px;}
+.content1.h375 .p1.text{ width:110px; line-height:35px; text-align:center}
+.content1.h375 .p1.text.t1{   left:145px; top:332px;}
+.content1.h375 .p1.text.t2{   left:370px; top:286px;}
+.content1.h375 .p1.text.t3{   left:565px; top:272px;}
+.content1.h375 .p1.text.t4{   left:817px; top:260px;}
+
+.content1{ width:1000px; margin:0px auto;  position:relative;}
+.content1.con1{ margin-top:-195px;}
+.content1.con2{ top:-20px;}
+.content1.con3{ margin-top:-190px;}
+.content1.con3 .left .img2{ display:block;}
+
+.content1 .left{ float:left; padding-top:70px; position:relative }
+.content1 .left .text{ position:absolute; left:0px; top:245px; width:329px;} 
+.content1 .left .text.t1{ top:148px;}
+.content1 .left .text.t2{ top:198px;}
+.content1 .left .text.t3{ top:138px;}
+.content1 .left .text .p1{ font-size:26px; text-align:center; line-height:35px; color:#3f3b52;font-family:微软雅黑} 
+.content1 .left .text .p2{ margin-top:75px;font-size:15px; text-align:left; text-indent:24px; line-height:28px;font-family:微软雅黑;color:#fff; padding:0px 45px;}
+
+.content1 .left.mt70{ margin-top:70px}
+.content1 .left.mt90{ margin-top:90px}
+.content1 .left.t0{ padding-top:0px}
+.content1 .right.t0{ padding-top:0px}
+.content1 .left .img{height:756px; background:url(../image/img8-1.png) no-repeat; position:relative; width:329px; margin-top:-10px; float:left}
+.content1 .left .img a{ width: 329px; height:275px; display:block; float:left; }
+.content1 .left .img .a1{ margin-top:50px;} 
+.content1 .left .img .a2{ margin-top:80px;}
+
+.content1 .right{ float:left; width:671px;}
+.content1 .right li{ width:216px; float:left;} 
+.content1 .right li.a{ margin-top:63px;} 
+.content1 .right li.b{ margin: 32px 0px 0px 10px;} 
+.content1 .right li.c{ margin: 0px 0px 0px 10px;} 
+.content1 .right li.d{ margin-top:-25px;} 
+.content1 .right li.e{margin: 10px 0px 0px 10px;} 
+.content1 .right li.f{margin: -40px 0px 0px 10px;} 
+.content1 .right li.g{ margin-top:-25px;} 
+.content1 .right li.h{margin: 10px 0px 0px 10px;} 
+.content1 .right li.i{margin: -40px 0px 0px 10px;} 
+.content1 .right li.o{line-height:0px; height:0px; font-size:0px; clear:both; zoom:1; width:100%; display:block;visibility: hidden; float:none;} 
+.content1 .right .topbac{ background:url(../image/img3-2.png) no-repeat center ; height:32px; } 
+.content1 .right .bottombac{ background:url(../image/img3-4.png) no-repeat center ; height:31px; } 
+.content1 .right .text{ background:#fff; padding:5px 0px 10px 0px;}
+.content1 .right .text a{ text-decoration:none;}
+.content1 .right .text.bottom{ padding-bottom:0px;} 
+.content1 .right .title{  font-size:15px; font-family:微软雅黑; color:#333; text-align:center; line-height:30px; }
+.content1 .right .price{  font-size:14px; font-family:微软雅黑; color:#fff; background:#f29c9f; text-align:center; width:148px;}
+
+
+.g-o.link{width:1000px; margin:0px auto;  position:relative; padding:20px 50px 20px; border-top:none}
+
+
+
+.content1.bottom{ padding-top:500px;}
+.content1 .play{padding:0px 30px; overflow:auto;width:940px; }
+.content1 .play .center{ width:820px; overflow:hidden}
+.content1 .play .center ul{ width:800%; float:left;} 
+.content1 .play li{ float:left; margin-right:20px; width:190px;  overflow:hidden; }
+.content1 .play li img{ padding:5px; background:#fff;}
+.content1 .play li p{ color:#fff; line-height:30px; text-align:center; font-size:14px; font-weight:bold}
+.content1 .play li a:hover{text-decoration: none}
+.content1 .play .left,.content1 .play .right{ height:100%; width:59px; padding:0px; margin:0px; position:relative; height:190px;}
+.content1 .play .left{ background:url(../image/left.png) center no-repeat;}
+.content1 .play .right{ background:url(../image/right.png) center no-repeat; }
+
+
+.fix{ position:fixed; right:10px; top:200px;  width:181px; height:340px; display:none;  background:url(../image/fix.png) no-repeat;}
+.fix li{ width:122px; height:36px; display:block; margin-bottom:3px; cursor:pointer; float:left;  margin-left:35px;}
+.fix li.mt100{margin-top:90px;}
+.fix li.mb20{margin-bottom:10px;}
+.fix li.mb0{margin-bottom:0px;}
+.fix li.fixtop{ height:85px;}
+.fix li.active{ background:#ffffff;filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;} 
+.fix li a{ display:block; width:127px; height:36px;}
+
+.g-o.link{ padding:20px 0px}
+
+

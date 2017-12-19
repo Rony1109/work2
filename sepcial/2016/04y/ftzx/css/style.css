@@ -1,0 +1,144 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+body{ font-size: 62.5%; font-family: Microsoft Yahei,"微软雅黑"; min-width: 1178px; margin: 0 auto }
+.mauto{ margin: 0 auto }
+.w1090{ width: 1090px; margin: 0 auto }
+.w1178{ width: 1178px; margin: 0 auto }
+.comicon{ background:url(img/icon.png) no-repeat; }
+.com-tit{ font-size: 4em; color: #1d9ee2; position: relative;}
+.com-tit span{ display: inline-block; text-align: center; line-height: .8; margin-left: 6px}
+.com-tit span em{ font-size: 0.5em }
+.com-tit::before{ 
+	content: ""; position: absolute; left: -55px; top: 70px; width: 33px; height: 36px;
+	background-image: url(img/icon.png); background-repeat: no-repeat;
+ }
+ .com-tit::after{ 
+	content: ""; position: absolute; right: -28px; top: 70px; width: 33px; height: 36px;
+	background-image: url(img/icon.png); background-repeat: no-repeat;
+ }
+.com-tit i{ width: 70px; height: 70px; display: inline-block;}
+
+
+/* 顶部导航样式*/
+.nav{ width: 100%; height: 87px; background: url(img/nav.jpg) no-repeat center 0; display: none}
+.nav ul{ overflow: hidden; }
+.nav ul li{ width: 143px; height: 87px; float: left; text-align: center; line-height: 87px; margin-left: 40px}
+.nav ul li a{ text-decoration: none; color: #666; font-size: 1.8em; display: block; }
+.nav ul li a:hover{ background:url(img/navli.jpg) no-repeat; }
+
+/*海报样式*/
+.poster{ height: 517px; background:url(img/bgimg.jpg) no-repeat center 0; }
+.poster .share{width: 380px; padding-left: 780px; padding-top: 15px; margin: 0 auto}
+
+.wrap{ height: 1560px; background:#eaf6fd url(img/bg1.jpg) no-repeat center 468px;}
+/*夏日之星样式*/
+.sum-star h1{ width: 280px; padding: 50px 0 10px 0} 
+.sum-star h1 i{ background-position: 0 -51px; }
+.sum-star h1 span{ width: 178px}
+.sum-star h1::before,.hot-sell h1::before,.sum-story h1::before{ background-position: -150px -51px }
+.sum-star h1::after,.hot-sell h1::after,.sum-story h1::after{ background-position: -187px -51px }
+.con{ background-color: #e0f7fd; padding-top: 40px;}
+.con .con-up{ height: 291px; background:url(img/stit.jpg) no-repeat center 0; overflow: hidden; }
+.con .con-up .l,.con .con-up .r{float: left}
+.con .con-up .l{ margin-left: 70px }
+.con .con-up .r{ margin-left: 130px; margin-top: 30px; color: #fff; font-size: 1.6em }
+.con .con-up .r i{width: 108px; height: 20px; display: inline-block; vertical-align: middle; background-position: -360px -100px; }
+.con .con-up img{border-radius:100%; float: left}
+.con .con-down{overflow: hidden; margin-top: -120px;}
+.con .con-down .left{ width: 608px; height: 440px; float: left; color: #666; padding:146px 35px 0 60px; }
+.con .con-down .left h2{ font-size: 2.4em; margin-bottom: 10px; }
+.con .con-down .left h3{ font-size: 1.6em; padding: 10px 0 }
+.con .con-down .left h2 em{ color: #1d9ee2 }
+.con .con-down .left p{ font-size: 1.4em; margin-bottom: 20px; }
+.con .con-down .right{ width: 343px; float: left; }
+.con .con-down .right a{ display: block; margin-top: 15px; }
+.con .con-down .right a img{ border-radius: 25px }
+
+/*热销产品 样式*/
+.hot-sell{ position: relative}
+.hot-sell h1{ width: 445px; padding: 50px 0 10px 0} 
+.hot-sell h1 span{ width: 350px;}
+.hot-sell h1 i{ background-position: -71px -51px; }
+.rollwrap{ background-color: #e0f7fd; padding-top: 20px; padding-bottom: 108px;}
+.rollbox{ margin-left: 37px; width: 1016px; overflow: hidden;}
+.rollbox ul{width: 9999px; position:relative;}
+.rollbox ul li{ width: 242px; height:360px; float: left; margin-right: 16px; background-color: #fff}
+.rollbox ul li a{ text-decoration: none }
+.rollbox ul .li-up{ display: block; border:1px solid #cce3eb; }
+.rollbox ul .li-down{ padding: 0 10px; }
+.rollbox ul .li-down h4{ border-bottom: 2px dashed #999; padding:5px 0 8px 0; font-weight: 400 }
+.rollbox ul .li-down h4 a{ display: inline-block; color: #666; font-size: 1.4em}
+.rollbox ul .li-down p{ color: #9bd82f; overflow: hidden;}
+.rollbox ul .li-down p span{width: 120px; font-size: 2em; font-weight: 700; display: inline-block; float: left;}
+.rollbox ul .li-down p span em{ font-size: 1.6em; font-weight: 400; }
+.rollbox ul .li-down p a{ display: inline-block; width: 100px; height: 30px; margin-top: 10px; font-size: 1.8em; font-weight: 700; color: #fff; background-color: #9bd82f; float: left; text-align: center; line-height: 1.5; border-radius: 15px; }
+.btn{ width: 30px; height: 50px; display: block; position: absolute; top: 280px; cursor: pointer;}
+.prev{ background-position: -221px -51px; }
+.next{ background-position: -255px -51px; right: 0 }
+
+/*与夏天同行 样式*/
+.sum-peer{height: 1183px; background:url(img/bg2.jpg) no-repeat center 0;}
+.sum-story{ background-color: #e0f7fd; padding-bottom: 29px }
+.sum-story h1,.strive h1{ width: 600px; padding: 30px 0 50px 0; font-weight: 400}
+.sum-story h1::before,.sum-story h1::after{top:45px;}
+.sum-story ul li{ overflow: hidden; }
+.sum-story ul .li-2 .li-r .rule{ background-position: 36px -121px; padding-left: 40px; }
+.sum-story ul .li-l{ float: left; display: block; }
+.sum-story ul .li-r{ width: 500px; height: 338px; float: left }
+.sum-story ul .li-r h2{ padding-left: 40px; color: #666; font-size: 2.4em; padding-top: 30px }
+.sum-story ul .li-r h2 em{ color: #1d9ee1 }
+.sum-story ul .li-r .rule{ width: 466px; height: 50px; background-position: -1px 0 }
+.sum-story ul .li-r .intro{ padding-left: 40px; font-size: 1.4em; height: 150px }
+.sum-story ul .li-r .intro em{ display: inline-block; width: 80px; height: 22px; border-radius: 5px; color: #fff; background-color: #1d9ee1; text-align: center; margin-right: 1em }
+.sum-story ul .li-r .st{ padding-left:40px; color: #9bd82f; font-size: 1.8em; font-weight: 700 }
+
+/*奋斗在路上 样式*/
+.strive{ height: 371px; background:url(img/bg3.jpg) no-repeat center 0 }
+.strive .won{ position: relative }
+.strive .rollwrap{ padding-bottom: 0; background-color: #fff }
+.strive .rollbox ul{ position: relative; }
+.strive .rollbox ul li{ height: 220px; }
+.strive .rollbox .li-up{ border: 1px solid #fff}
+.strive .rollbox .li-down{ padding: 0 }
+.strive .rollbox .li-down h4{ font-weight: 400; border-bottom:none;} 
+.strive .rollbox .li-down h4 a{ color: #000 }
+.strive h1{ color: #fff; padding: 20px 0}
+.strive h1::before{ background-position: -288px -54px; top: 35px }
+.strive h1::after{width: 32px; background-position: -319px -54px; top:35px; }
+.strive .btn{ top: 200px }
+.strive .prev{ background-position: -350px -51px }
+.strive .next{ background-position: -382px -51px }

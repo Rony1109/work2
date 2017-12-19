@@ -1,0 +1,88 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#5a92d7;text-decoration:none;border-radius:3px;}
+.jiathis_style{position:absolute;right:0px;top:14px;}
+.jiathis_style a{color:#FFF;;}
+.lingshi{position:absolute;left:50px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+/* 以下为专题样式 */
+
+
+.banner{background:#fafafa url(../images/bg1.jpg) no-repeat center 0;height:513px;}
+.banner h1{text-indent: -999px;height: 485px;}
+#bdshare a,span.bds_more,#bdshare a:hover{color: #fff!important}
+
+.stage{position:absolute;top:10px;width:22px;height:46px;background:url(img/q.png) no-repeat;padding:3px 0 0 65px;color:#fff;line-height:14px;}
+
+.lecturer{background:#eeeeee url(../images/bg2.jpg) no-repeat top;height:1000px; color:#fff; }
+.l_tab{width:197px;_width:195px;float:right;}
+.l_tab li{width:197px;_width:195px;height:142px;text-align:left; cursor:pointer;background:#5a92d7;border-right:solid 0px #5a92d7;}
+.l_tab li h3{ font-size:24px; padding: 38px 0 0 20px;;}
+.l_tab li.cur{ color: #5a92d7; background-color:#fff;}
+.l_tab .n2{background:#5a92d7;border-right:solid 0px #5a92d7; border-width:6px;}
+.l_tab .n3{background:#5a92d7;border-right:solid 0px #5a92d7; border-width:6px;}
+.l_tab .n4{background:#5a92d7;border-right:solid 0px #5a92d7; border-width:6px;}
+.l_tab .n4 img{margin:20px 0 0 20px;}
+.l_tab .n1{border-width:6px;}
+.l_tab li strong{font-weight:400; line-height:35px; padding-left:20px;_padding-left:10px;}
+.l_con .l_info{width:803px;_width:799px;float:left;height:568px;background:#fff;position:relative; overflow:hidden;}
+
+.l_con .c2{background:#fff;display:none;}
+.l_con .c3{background:#fff;display:none;}
+
+
+.vedio{margin:12px;}
+
+.btm{ height:360px; width:1006px; background-color:#fff;}
+.btm-pic{ margin-top:30px;}
+.btm ul { margin:0 auto; margin-top:20px;}
+.btm ul li{ float:left;} 
+.name1{ text-align:center; margin:0px 20px 0px 175px;_margin:0px 20px 0px 90px;}
+.name2{ text-align:center; margin:0px 20px 0px 205px;_margin:0px 20px 0px 200px;}
+.name3{ text-align:center; margin:0px 20px 0px 175px;_margin:0px 20px 0px 175px;}
+.btm ul li a{ font-size:16px; text-decoration:none; color:#333;}
+
+.g-comment{width:485px;padding-top:20px;}
+.link{background:#3C3C3C;color:#fff;}
+.link a{color:#fff;}
+
+.g-comment-form img.g-fl{display:none;}
+.g-comment-form .g-comment-form-bd{padding-left:0;}
+
+/*弹窗相关*/
+.pup{ display:none;background:#fff;width:553px;font-size:14px;font-family:Microsoft YaHei;}
+.g-cred{color:#F00;}
+.pup .box-hd h2{color:#1f1f1f;font-size:20px;}
+.cyds-tbl{width:100%;}
+.cyds-tbl th{text-align:right;font-weight:normal;height:30px;white-space:nowrap;}
+.cyds-tbl .g-h5{height:5px;}
+.ipt-txt{ border:1px solid #ccc;color:#444; height: 21px; border: 1px solid #ccc; padding: 0 3px}
+.txt-area{border:1px solid #ccc;color:#444; width: 432px; height: 53px; overflow: auto;}
+.ipt-txt{height:21px;border:1px solid #ccc;padding:0 3px;}
+.txt-area{padding:3px;resize:none;}
+.ipt-smt{background:url(img/ok-btn.png) no-repeat;width:118px;height:36px;border:none;color:#fff;font:bold 18px/30px Microsoft YaHei;cursor:pointer#startTimePop,#yjcgjPop,#wzjPop,#yzjPop,#sharePop{display:none;}

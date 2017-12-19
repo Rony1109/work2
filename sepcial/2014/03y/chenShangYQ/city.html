@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<title>Document</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<link rel="stylesheet" href="http://res.csc86.com/bhf/"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script src="http://res.csc86.com/js/"></script>
+<script src="js/js.js"></script>
+</head>
+<body class="ask">
+<div class="g-o-a quest">
+  <div class="inner">
+    <h2></h2>
+    <div id="con_ask" class="con_ask">
+      <div class="qes s01">
+        <h3>1.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员与城商通会员相比较，其最大优势在哪？（可多选）</div>
+        <ul>
+          <li><span data-aq="a"></span>收费差别</li>
+          <li><span data-aq="b"></span>实地认证</li>
+          <li><span data-aq="c"></span>名列榜首关键词数量</li>
+          <li><span data-aq="d"></span>实名</li>
+        </ul>
+      </div>
+      <div class="qes s02">
+        <h3>2.回答以下问题：</h3>
+        <div class="quest">城商通会员在旺铺特权中，可获得的旺铺特权有哪些？（ A、B、C、D  ）（可多选）</div>
+        <ul>
+          <li><span data-aq="a"></span>一键建站</li>
+          <li><span data-aq="b"></span>精美旺铺模板</li>
+          <li><span data-aq="c"></span>1万张图片存储/10G空间</li>
+          <li><span data-aq="d"></span>专属个性域名</li>
+        </ul>
+      </div>
+      <div class="qes s03">
+        <h3>3.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员在旺铺特权中获得的旺铺域名是</div>
+        <ul>
+          <li><span data-aq="a"></span>二级域名</li>
+          <li><span data-aq="b"></span>独立域名</li>
+          <li><span data-aq="c"></span>三级域名加独立域名</li>
+          <li><span data-aq="d"></span>二级域名加独立域名</li>
+        </ul>
+      </div>
+      <div class="qes s04">
+        <h3>4.回答以下问题：</h3>
+        <div class="quest">城商通会员的名列榜首关键词数量是</div>
+        <ul>
+          <li><span data-aq="a"></span>2条</li>
+          <li><span data-aq="b"></span>3条</li>
+          <li><span data-aq="c"></span>4条</li>
+          <li><span data-aq="d"></span>5条</li>
+        </ul>
+      </div>
+      <div class="qes s05">
+        <h3>5.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员可发布的优势商机数量是</div>
+        <ul>
+          <li><span data-aq="a"></span>100条</li>
+          <li><span data-aq="b"></span>500条</li>
+          <li><span data-aq="c"></span>2000条</li>
+          <li><span data-aq="d"></span>5000条</li>
+        </ul>
+      </div>
+      <div class="qes s06">
+        <h3>6.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员的名列榜首关键词数量是</div>
+        <ul>
+          <li><span data-aq="a"></span>6条</li>
+          <li><span data-aq="b"></span>8条</li>
+          <li><span data-aq="c"></span>9条</li>
+          <li><span data-aq="d"></span>10条</li>
+        </ul>
+      </div>
+      <div class="qes s07">
+        <h3>7.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员使用企业旺铺模板的数量是</div>
+        <ul>
+          <li><span data-aq="a"></span>专享5个精品模板</li>
+          <li><span data-aq="b"></span>专享10个精品模板</li>
+          <li><span data-aq="c"></span>专享15个精品模板</li>
+          <li><span data-aq="d"></span>无限制</li>
+        </ul>
+      </div>
+      <div class="qes s08">
+        <h3>8.回答以下问题：</h3>
+        <div class="quest">城商通VIP会员享有图片服务的数量是</div>
+        <ul>
+          <li><span data-aq="a"></span>1000张（1G）</li>
+          <li><span data-aq="b"></span>5000张（5G）</li>
+          <li><span data-aq="c"></span>10000张（10G）</li>
+          <li><span data-aq="d"></span>无限制</li>
+        </ul>
+      </div>
+      <div id="warring" class="warring"><a href="javascript:" title=""><span>找答案</span></a></div>
+      <div id="right" class="right"><a href="index.html#f5" id="dis"><span>抽奖特权</span></a></div>
+    </div>
+  </div>
+</div>
+<script>
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	}
+var arr = {"s01":"bc","s02":"abcd","s03":"d","s04":"a","s05":"d","s06":"b","s07":"d","s08":"c"}, str = getQueryString('ask'),rask = arr[str];
+	 $("#con_ask").find('div.'+str+'').addClass('cur');
+	 console.log(str+':'+rask);
+	 $("div.qes").one("click","span",function(){
+		 var nuQ = $(this).addClass("hover").data("aq");
+		 if(rask){
+			if(rask.indexOf(nuQ)!=-1){
+				$("#right").show();
+			} else{
+				$("#warring").show();
+			}
+		 }else{
+			  
+		 console.log("sds");
+		 }
+		 
+		 console.log(nuQ);
+	 });
+</script>
+</body>
+</html>

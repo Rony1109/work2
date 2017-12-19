@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>订单抽奖</title>
+	<meta name="keywords" content=""/><!-- seo 关键字 -->
+	<meta name="description" content=""/><!-- seo 网页描述 -->
+	<!-- 详细阅读基础样式文件 base-reset -->
+	<link rel="stylesheet" href="css/index.css" type="text/css" >
+</head>
+
+<body>
+	<div class="g-cf prize-flr">
+		<!--活动规则 start-->
+		<div class="prize-hd">
+		
+		</div>
+		<!--活动规则 end-->
+		
+		<!--抽奖部分 start-->
+		<div class="g-cf prize-bd">
+			<!--根据订单号抽奖 start-->
+			<div class="g-fl g-pr prize-order">
+				<ul id="prizeLst" class="g-cf prize-lst">
+					<li>
+						<img src="images/cj1.png" width="160" height="100" alt=""/>
+						<p>谢谢参与</p>
+					</li>
+					<li>
+						<img src="images/cj2.png" width="160" height="100" alt=""/>
+						<p>精美抱枕</p>
+					</li>
+					<li>
+						<img src="images/cj3.png" width="160" height="100" alt=""/>
+						<p>Apple watch</p>
+					</li>
+					<li>
+						<img src="images/cj1.png" width="160" height="100" alt=""/>
+						<p>谢谢参与</p>
+					</li>
+					<li class="itm5">
+						<img src="images/cj5.png" width="160" height="100" alt=""/>
+						<p>精美台历</p>
+					</li>
+					<li>
+						<img src="images/cj6.png" width="160" height="100" alt=""/>
+						<p>杯子加湿器</p>
+					</li>
+					<li>
+						<img src="images/cj1.png" width="160" height="100" alt=""/>
+						<p>谢谢参与</p>
+					</li>
+					<li>
+						<img src="images/cj8.png" width="160" height="100" alt=""/>
+						<p>Iphone 6s</p>
+					</li>
+					<li>
+						<img src="images/cj9.png" width="160" height="100" alt=""/>
+						<p>奥莱购优惠券</p>
+					</li>
+					<li>
+						<img src="images/cj1.png" width="160" height="100" alt=""/>
+						<p>谢谢参与</p>
+					</li>
+				</ul>
+				
+				<div class="prize-cz">
+					<input type="text" class="ipt-txt" id="orderId" name="" value="" placeholder="请输入您的订单号"/>
+					<a id="prizeBtn" class="prize-btn">开始抽奖</a>
+				</div>
+			</div>
+			<!--根据订单号抽奖 end-->
+			
+			<!--中奖名单 start-->
+			<div class="g-pr prize-wnnrs">
+				<h3>中奖名单</h3>
+				<div id="wnnrsBd" class="g-pr wnnrs-bd">
+					<ul id="wnnrsLst" class="wnnrs-lst">
+						<!--此处放中奖列表-->
+					</ul>
+				</div>
+			</div>
+			<!--中奖名单 end-->
+		</div>
+		<!--抽奖部分 end-->
+	</div>
+	
+	<script src="http://res.csc86.com/f=v2/l/seajs/sea.js,v2/c2/seaconfig.js"></script>
+	<script>seajs.use('./js/index');</script>
+</body>
+</html>

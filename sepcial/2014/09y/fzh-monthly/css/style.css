@@ -1,0 +1,93 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+
+g-1000{width:1000px; margin:0 auto;}
+
+/*main*/
+.main{background:#fff url(img/banner.jpg) no-repeat center top;}
+.banner{height:525px; width:1000px; margin:0 auto;}
+.jiathis_style{position:absolute;right:5px;top:14px;}
+.jiathis_style a{color:#333;}
+.lingshi{position:absolute;left:50px;bottom:-506px;font-size: 32px;font-family: microsoft yahei;font-style: italic;color: #fff;font-weight: 700;}
+
+#pageholder{ width:1000px; height: auto; margin:0 auto; font-family: Microsoft Yahei; font-size:12px; background-color:#FFF;}
+#pageholder h1{ font-size:16px; color:black;}
+#pageholder p{ font-size:14px; text-align:justify; color:#333;}
+
+.top{ width:100%; height:109px; border:1px solid #CCC; margin-bottom:12px;}
+.top img{ margin:-1px 0 0 -1px; float:left;}
+.top-text{ width:775px; height:60px; float:right; margin: 18px 20px 0 0;_margin:18px 10px 0 10px;}
+.top-text p{ font-size:16px; text-align:justify;}
+.floor{ width:100%; margin-bottom:15px;}
+.detail01{ width:100%; border:1px solid #CCC;}
+.d-left{ width:645px; height:295px; border-right: 1px solid #CCC; margin: 10px 0 10px 10px; float:left;}
+.left-img{ width:315px; height:222px; float:left; overflow:hidden;}
+.left-btm{ width:645px; float:left; _margin-bottom:8px;}
+.left-btm ul li{ list-style: disc; margin:5px 0 0 15px;}
+.left-btm ul li a{ font-size:14px; color:#333;}
+.left-right{ width:295px; height:auto; margin:15px 15px 0 15px;_margin:12px;_float:right; display:inline-block;}
+.left-right p{ line-height: 26px;}
+.left-right a{ color:#e10505; font-size:14px; float:right;}
+.d-right{ float:right; width:325px; height:290px; margin:13px 7px 0 0;}
+.slidershow{ width:323px; height:198px;}
+.list{ width:323px; height:77px;}
+.list li{ list-style:none; display:inline-block; margin:15px 0 0 1px;_margin:15px 0 0 2px;_float:left;}
+
+.detail02{ width:100%; border:1px solid #CCC; background-color:#f5f5f5;}
+.d-box{ width:478px; height:179px; background-color:white; border:1px solid #CCC; margin:10px 9px 5px 9px;display:inline-block; float:none; _float:left;_margin:8px;}
+.box-img{ width:227px; height:157px; margin:10px;_margin:10px 0 0 5px; float:left;}
+.box-text{ width:215px; height:145px; float:right; margin:20px 15px 0 0;_margin:20px 5px 0 0; overflow:hidden;}
+.box-text p{ height:84px;overflow:hidden}
+.box-text a{ color:#e10505; font-size:14px;}
+
+.detail03{ width:100%; background-color:#f5f5f5; padding-bottom:5px;}
+.monthly{ width:296px; height:415px; padding:15px 0px 15px 28px; float:left;}
+.monthly ul li{ list-style: disc; margin:5px 0 0 20px;}
+.monthly ul li a{ font-size:14px; color:#333;}
+
+.brand{ width:190px; height:108px; float:left; margin:10px 5px 5px 5px;_margin:10px 4px 5px 4px; overflow:hidden;}
+#pageholder .brand p{ text-align:center;}
+#pageholder .brand p a{ color:#333;}
+
+.img-scroll{position: relative; padding: 15px;}
+.scroll-box{overflow: hidden;width: 900px;margin: 0 auto;}
+.scroll-box ul{width: 9999px;}
+.scroll-box li{float: left;display: inline;margin-right: 20px;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #9f9e9e;font: 18px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:15px; font-size:24px;}
+.ctr-r{right:0;padding-top:15px; font-size:24px;}
+

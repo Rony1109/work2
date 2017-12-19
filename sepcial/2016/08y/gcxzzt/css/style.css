@@ -1,0 +1,116 @@
+﻿/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+@import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+.clear{clear: both;}
+.top-bar,.link,.head{min-width: 1100px;}
+.top-bar .server-r{margin-right: 10px;}/*头部导航样式*/
+.love-links a{color: #888;}/*尾部导航颜色调整*/
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px gainsboro;}
+.head .together_buy{font-size:29px;vertical-align: middle;line-height: 57px;color: #464646
+}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 5px;line-height:20px;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color: #373737;font-size:19px;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+/* 以下为专题样式 */
+/*公用类名*/
+.Hardware_MaterialsContainer img{  display: inline-block;  max-width: 100%;margin: auto;}
+.Hardware_MaterialsContainer a{ text-decoration: none}
+.Hardware_MaterialsContainer .displayBlock{ display: block; }
+.Hardware_MaterialsContainer *{box-sizing: content-box;}
+.Hardware_MaterialsContainer .in_width{ width: 1000px;}
+.Hardware_MaterialsContainer .vertical_align{vertical-align: middle}
+.Hardware_MaterialsContainer .margin_auto{margin: auto;}
+.Hardware_MaterialsContainer .micosoft{ font-family: "微软雅黑";}
+.Hardware_MaterialsContainer .impact{ font-family: impact;}
+.Hardware_MaterialsContainer .fontColorWhite{color: #fff;}
+.Hardware_MaterialsContainer .fontColorbrown{color: #6d4100;}
+.Hardware_MaterialsContainer .fontColorLightbrown{color: #c9b370;}
+.Hardware_MaterialsContainer .floatLeft{float: left;}
+.Hardware_MaterialsContainer .relative{ position: relative;}
+.Hardware_MaterialsContainer .absolute{ position: absolute;}
+.Hardware_MaterialsContainer .textCenter{text-align: center}
+.Hardware_MaterialsContainer .MarginZero{margin-left:0px; }
+.Hardware_MaterialsContainer .marginLeftFive{margin-left:5px; }
+.Hardware_MaterialsContainer .marginLeftSix{margin-left:6px; }
+.Hardware_MaterialsContainer .marginLeftTen{margin-left:9px; }
+.Hardware_MaterialsContainer .fonsize16{font-size: 16px }
+.Hardware_MaterialsContainer .fonsize14{font-size: 14px }
+.Hardware_MaterialsContainer .fonsize24{font-size: 24px }
+.Hardware_MaterialsContainer .fonsize30{font-size: 30px }
+.Hardware_MaterialsContainer .fonsize20{font-size: 20px }
+.Hardware_MaterialsContainer .fonsize45{font-size: 45px }
+.Hardware_MaterialsContainer .fonsize50{font-size: 50px }
+.Hardware_MaterialsContainer .fonsize48{font-size:48px }
+.Hardware_MaterialsContainer .height12{height: 12px;clear: both}
+.Hardware_MaterialsContainer .height10{height: 10px;clear: both}
+.Hardware_MaterialsContainer .clear{clear: both}
+.Hardware_MaterialsContainer .fontWeight{font-weight: bold}
+.Hardware_MaterialsContainer .fontWeight400{font-weight: 400}
+.Hardware_MaterialsContainer .fontWeightBolder{font-weight: bolder}
+.Hardware_MaterialsContainer .fontWeightBold{font-weight: bold}
+.Hardware_MaterialsContainer .lineheight285{line-height: 285px}
+.Hardware_MaterialsContainer .lineheight265{line-height: 265px}
+.Hardware_MaterialsContainer .lineheight280{line-height: 280px}
+.Hardware_MaterialsContainer .min_width{min-width: 1100px ;}
+/*banner*/
+.Hardware_MaterialsContainer .Hardware_MaterialsBanner{display: block;width: 100%;}
+/*优惠券*/
+.Hardware_MaterialsContainer .coupon_out{height: 170px;background-color:#22202c;}
+.Hardware_MaterialsContainer .coupon_in{padding-top:25px}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li{ height: 120px;width:210px;cursor: pointer;}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite{background-image:url("img/coupon_bg.png");}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite a div strong{font-size:70px;}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite a div em{margin-left:5px;font-weight:bold;display:inline-block;width:18px;font-size:16px;}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite a div {top:-10px}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite a div b{font-size:22px;}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inWrite a span{display: block; font-size:12px;color: #f8c702;top:-30px;overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;}
+.Hardware_MaterialsContainer .coupon_out .coupon_in li.coupon_inFirstImage{width: 265px;background: url("img/coupon_lead.jpg") center no-repeat }
+/*产品分类*/
+.Hardware_MaterialsContainer .product_categoryOut{height: 266px;background-color:#fff;}
+.Hardware_MaterialsContainer .product_categoryOut *{font-size: 0}
+.Hardware_MaterialsContainer .product_categoryOut .product_categoryIn li{height: 266px;line-height: 266px;margin-left:67px;}
+.Hardware_MaterialsContainer .product_categoryOut .product_categoryIn li.product_categoryFirst{margin-left:15px;  }
+/*产品展示*/
+.Hardware_MaterialsContainer .product_exhibitOut{height:5525px; background-image: url("img/product_exhibitBg.png");background-position: center top;background-repeat: no-repeat;background-size: 100% 5525px}
+/*.Hardware_MaterialsContainer .product_exhibitOut.washing{height:3308px; background-image: url("img/product_exhibitBgSecond.jpg");background-position: center top;background-size: 100% 3308px;background-repeat: no-repeat}*/
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInNameLittle,.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInName
+{height: 60px;display: block;background: #ffffff;color: #444;line-height: 60px;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInPriceBig{background: url("img/product_exhibitInPriceBig.png") center no-repeat;height: 77px}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInPriceLittle{background: url("img/product_exhibitInPriceLittle.png") center no-repeat;height:60px}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInPriceBig span{text-indent: 15px;display: inline-block}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li .product_exhibitInPriceLittle span{text-indent:5px;display: inline-block}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li.tubinglittle{width: 245px;height: 360px;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn li.tubingBig{width: 495px;height: 508px;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn.tubingFourth{height:214px;background: url("img/tubingFourth.png") center no-repeat;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn.tubingFirst{height:214px;background: url("img/tubingFirst.png") center no-repeat;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn.tubingSecond{height:204px;background: url("img/tubingSecond.png") center no-repeat;}
+.Hardware_MaterialsContainer .product_exhibitOut .product_exhibitIn.tubingThird{height:200px;background: url("img/tubingFourth.png") center no-repeat;}
+/*轮播*/
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox{height: 225px;background-color: #ffffff;padding-top:40px}
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox div.scr-allb{  width:930px; height:190px;overflow:hidden; position:relative;margin: auto;}
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox div.scr-allb ul{ position:absolute; left:0; top:0; width:10000px; display:block;}
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox div.scr-allb ul li{ width:215px; height:190px; margin-right:25px; float:left; text-align:center;}
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox div.scr-allb ul li .img{ width:215px; height:160px; font-size: 16px;}
+.Hardware_MaterialsContainer .product_exhibitOut.washing  .showIntervalBox div.scr-allb ul li a{ text-decoration:none;color:#333; font-size:16px;display: inline-block;margin-bottom: 10px}

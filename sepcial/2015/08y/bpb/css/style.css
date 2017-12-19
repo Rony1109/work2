@@ -1,0 +1,112 @@
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+ 
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/*banner*/
+.banner{background:#0662d2 url(img/banner.jpg) no-repeat center top;height:790px;min-width:1000px;}
+
+/*导语*/
+.lead{background-color:#e7e7e8;}
+.lead-bd{background:url(img/lead-mobile.jpg) no-repeat 803px 0;height:150px;padding-top:38px;color:#646566;font:20px/30px Microsoft YaHei;}
+.lead-bd h2,.lead-bd .tip{background:url(img/sf.png) no-repeat;height:30px;color:#fff;font-weight:bold;}
+.lead-bd h2{background-position:0 2px;width:96px;padding-left:44px;font-size:24px;}
+.lead-bd .tip{display:inline-block;background-position:0 -29px;width:252px;padding-right:35px;text-align:right;}
+
+/*flr楼层公用样式*/
+.flr{font-family:Microsoft YaHei;min-width:1000px;}
+.flr .t{font-size:30px;}
+.flr .dtl{color:#2e2e2e;font-size:18px;line-height:24px;}
+
+/*flr1*/
+.flr1{background:#fff url(img/flr1-bg.jpg) no-repeat center top;height:748px;padding-top:50px;}
+.flr1 .t{color:#2ca4ea;}
+
+/*flr2*/
+.flr2{background:#65bffb url(img/flr2-bg.jpg) no-repeat center top;height:710px;padding-top:85px;}
+.flr2 .t{color:#fff;}
+
+/*flr3*/
+.flr3{background:#fff url(img/flr3-bg.jpg) no-repeat center top;height:748px;padding-top:50px;}
+.flr3 .t{color:#d33139;font-size:35px;}
+.flr3 .dtl{font-size:16px;}
+
+/*flr4*/
+.flr4{background:#ffbb5b url(img/flr4-bg.jpg) no-repeat center top;height:740px;padding-top:55px;}
+.flr4 .t{color:#943e18;font-size:35px;}
+
+/*flr5*/
+.flr5{background:#fff url(img/flr5-bg.jpg) no-repeat center top;height:794px;}
+.znsj-lst{word-break:break-all;}
+.znsj-lst li{position:absolute;}
+.znsj-lst h2{font-size:18px;color:#1b0d0d;font-weight:normal;}
+.znsj-lst h2 i{font-size:42px;font-weight:bold;margin-right:10px;}
+.znsj-lst p{font-size:14px;margin-top:-6px;line-height:16px;color:#535353;}
+.znsj-lst .itm1{width:226px;left:695px;top:170px;}
+.znsj-lst .itm2{width:250px;left:735px;top:279px;}
+.znsj-lst .itm3{width:260px;left:735px;top:400px;}
+.znsj-lst .itm4{width:280px;left:650px;top:527px;}
+.znsj-lst .itm5{width:440px;left:385px;top:620px;}
+.znsj-lst .itm6{width:330px;right:642px;top:523px;}
+.znsj-lst .itm6 h2{margin-right:10px;}
+.znsj-lst .itm7{width:280px;right:720px;top:360px;}
+.znsj-lst .itm8{width:310px;right:705px;top:225px;}
+.znsj-lst .itm9{width:385px;right:600px;top:80px;}
+.znsj-lst .itm10{width:420px;left:435px;top:35px;}
+
+/*flr6*/
+.flr6{background:#fd8662 url(img/flr6-bg.jpg) no-repeat center top;height:797px;}
+
+/*flr7*/
+.flr7{background:#fff url(img/flr7-bg.jpg) no-repeat center top;height:751px;padding-top:50px;}
+.flr7 .t{color:#943e18;font-size:35px;}
+.flr7 .dtl{font-size:16px;line-height:24px;}
+.flr7 .itm{position:absolute;color:#3f3f3f;font-size:14px;line-height:20px;text-align:left;}
+.flr7 .itm span{font-weight:bold;}
+.flr7 .itm a{color:#3f3f3f;}
+.flr7 .itm em{font-family:simsun;}
+.flr7 .itm1{width:328px;left:160px;top:166px;}
+.flr7 .itm2{width:340px;left:598px;top:190px;}
+.flr7 .itm3{width:310px;left:125px;top:520px;}
+
+/*blog*/
+.cmmnt-blog h2{background:#fff url(img/flr8-bg.jpg) no-repeat center top;height:91px;padding-top:15px;color:#fff;font-size:36px;font-weight:bold;font-family:Microsoft YaHei;}
+.cmmnt-box{width:615px;}
+/*评论样式重新*/
+.cmmnt-box .g-comment-form img{display:none;}
+.cmmnt-box .g-comment-top{display:none;}
+.cmmnt-box .g-comment-form-bd{padding-left:0;}
+.cmmnt-box .g-comment-btn{background:#c30000;color:#fff;border-radius:5px;margin-right:8px;}
+.cmmnt-box .g-comment-btn-dis{background:#eee;color:#ccc;}
+.cmmnt-box .g-comment-page .cur{background:#c30000;}
+.cmmnt-box .g-comment-login{height:80px;}
+
+/*微博*/
+.blog-box{width:320px;height:384px;border:1px solid #ccc;padding:20px;}
+
+/*topic*/
+.topic{margin-top:40px;}
+.topic h2{background-color:#4abbff;height:40px;color:#fff;font:bold 26px/40px Microsoft YaHei;}
+.topic-bd{margin-top:15px;padding-bottom:35px;}
+.topic .prev,.topic .next{position:absolute;background:url(img/sf.png) no-repeat;width:18px;height:36px;top:45px;}
+.topic .prev{background-position:0 -60px;left:25px;}
+.topic .next{background-position:-18px -60px;right:35px;}
+.topic-scrll{width:890px;height:153px;margin-left:auto;margin-right:auto;overflow:hidden;}
+.srcll-lst{position:absolute;width:17800px;}
+.srcll-lst li{float:left;margin-right:10px;}
+.srcll-lst li .pic{border:1px solid #ccc;padding:3px;}
+.srcll-lst li .t{height:25px;line-height:25px;text-align:center;overflow:hidden;}
+.srcll-lst li .t a{color:#444;}
+
+/*aside-nav*/
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决ie6下闪动问题*/
+.aside-menu{background-color:#cacaca;width:108px;padding:17px 6px 5px;border-radius:20px;position:fixed;right:20px;top:15%;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));_margin-top:8%;text-align:center;font-family:Microsoft YaHei;display:none;}
+.aside-menu .menu-lst{background-color:#fff;font-size:16px;font-weight:bold;}
+.aside-menu .menu-lst a{display:block;color:#2ca4ea;border-bottom:1px dashed #55b4eb;height:42px;line-height:42px;margin-top:-1px;overflow:hidden;}
+.aside-menu .menu-lst a:hover,.aside-menu .menu-lst .cur a{background-color:#2ca4ea;border-bottom:1px solid #2ca4ea;color:#fff;text-decoration:none;}
+.aside-menu .menu-lst .last a{border-bottom:none;}
+.aside-menu .back-top{height:66px;line-height:66px;}
+.aside-menu .back-top a{display:inline-block;background:url(img/sf.png) no-repeat -36px -60px;width:31px;height:31px; vertical-align:middle;}

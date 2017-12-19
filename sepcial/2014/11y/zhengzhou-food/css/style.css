@@ -1,0 +1,88 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family:Microsoft YaHei;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.main{ background:url(img/bannerbg.jpg) no-repeat top center;}
+.banner{ height:625px;}
+.jiathis_style{ float:right; margin-top:10px; height:50px;}
+.jiathis_style a{ color:#fff;}
+
+.title{ width:40px; height:100%;float:left; margin:20px;_margin-left:10px;}
+.dmid{}
+.dmid .txt{ width:165px; height:400px; float:left; margin:20px 0 0 22px;}
+.dmid .pics{ float:right; margin:22px; margin-left:0; margin-right:25px;_margin-right:10px; width:696px; height:413px;}
+
+/*幻灯*/
+.src-img{ position:relative; height:413px; width:100%; overflow:hidden;}
+.src-img ul{ position:absolute; height:330px; width:20000px; margin:0; padding:0;}
+.src-img li{ float:left; width:1935px; height:330px;}
+.src-img li img{ width:696px; height:413px;}
+.src-img ol{ position:absolute; bottom:15px; right: -95px; margin-right:20px; width:220px;}
+.src-img ol li{ margin-left:10px; width:15px; overflow:hidden; text-indent:-99999px; height:15px; background:#09070a; border-radius:50%;}
+.src-img ol li.cur{ background:#c7c6c2;}
+
+.ftxt{ width:70px; height: 338px; float:left; margin:20px 0 0 0px;}
+.dflr ul{ float:right; height:345px; margin-top:27px; margin-bottom:27px;}
+.dflr ul li{ width:258px; height:345px; background-color:#fff; float:left; margin-right:20px;_margin-right:10px;}
+.dflr ul li p{ font-size:14px; padding:10px; }
+
+.dflr ul.rec{ margin-top:20px; height:213px; float:right;}
+.dflr ul.rec li{ width:440px; height:213px; background-color:#fff; margin-right:15px;_margin-right:7px;}
+.dflr ul.rec li img{ float:left;}
+.dflr ul.rec li .box{ float:right; background:url(img/lineright.png) no-repeat center; width:232px; height:213px;}
+.dflr ul.rec li h1{ font-size:15px; font-weight:700; padding-top:25px; text-indent:25px;}
+.dflr ul.rec li p{ font-size:11px; text-align:justify; padding:10px 10px 0 25px;}
+
+.dflr ul.recm{ margin-top:0; height:213px; float:right;}
+.dflr ul.recm li{ width:440px; height:213px; background-color:#fff; margin-right:15px;_margin-right:7px;}
+.dflr ul.recm li img{ float:right;}
+.dflr ul.recm li .box{ float:left; background:url(img/lineleft.png) no-repeat center; width:232px; height:213px;}
+.dflr ul.recm li h1{ font-size:15px; font-weight:700; padding-top:25px; text-indent:15px;}
+.dflr ul.recm li p{ font-size:11px; text-align:justify; padding:10px 20px 0 15px;}
+
+/*scroll*/
+.img-scroll{position: relative; padding: 25px; margin-top:0px; width:850px; float:right; margin-right:17px;}
+.scroll-box{overflow: hidden;width: 840px;margin: 0 auto;}
+.scroll-box ul{width: 9999px; text-align:center;}
+.scroll-box li{float: left;display: inline;margin-right: 10px;}
+.scroll-box li a{ font-size:13px; text-decoration:none; color:#333;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #fff;font: 18px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:55px; font-size:40px;}
+.ctr-r{right:0;padding-top:55px; font-size:40px;}
+
+
+.link {padding-bottom: 10px;border-top: none;color: #444;line-height: 26px;text-align: center;}
+.love-links a {color: #fff;padding: 0 10px;}

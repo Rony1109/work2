@@ -1,0 +1,56 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 搜索框的样式 */
+.m-search .ss-txt {_display: inline; float: left; margin-left: 11px; width: 410px; border: 2px solid #352a46; border-right: none; line-height: 16px;}
+.m-search div .btn { float: left; width: 70px; height: 30px; border: none; background: url(img/searchbtn.jpg) no-repeat 0 0; text-indent: -999pt; cursor: pointer;}
+.m-search ul li.cur a, .m-search ul li.cur a:hover { color: #e3048f; font-weight: 700; outline: 0;}
+
+/* 以下为专题样式 */
+.main{ background:url(img/bannerbg.jpg) no-repeat center top; font-family:Microsoft YaHei;}
+.banner{ height: 652px;}
+
+.holder{ position:relative; width:1034px;}
+.bg{ background-color:#382556; opacity:0.7; height:2472px; color:#fff; text-align:center; width:1034px;}
+.bg h1{ font-size:115px; opacity:0.1; line-height:115px;}
+.page{ position: absolute; top:0; left:0; width:100%;}
+.top{ width:400px; height:115px; margin:0 auto; text-align:center; color:#FFF;}
+.top h2{ font-size: 42px; padding-top:10px;}
+.top p{ font-size:24px;}
+.page ul{ float:left; margin-left:14px;_margin-left:10px;}
+.page ul.up{ margin-top:-114px;_margin-top:-110px;}
+.page ul li{ width:241px; height:376px; background-color:#fff; margin-top:14px;_margin-top:10px;}
+.page ul li img{ padding: 10px 10px 5px 10px;}
+.page ul li a{ text-decoration:none;}
+.page ul li a p{ font-size:12px; padding: 0 5px 5px 5px; color:#333;}
+.page ul li span.c{ background:url(img/collect.png) no-repeat; padding:12px 35px;_padding:5px 35px; margin-right:10px; float:right; cursor:pointer;}
+.page ul li a.c{ display: none;background:url(img/collect.png) no-repeat; padding:12px 35px;_padding:5px 35px; margin-right:10px; float:right; cursor:pointer;}
+.page ul li .l{ width:69px; height:24px; margin-right:12px; background-color:#db0303; text-align:center;  float:right; border-radius:4px; cursor:pointer; color:white;}
+.page ul li .l img{ padding:0;}
+.page ul li .l span{  width:69px; height:24px; font-size:16px; color:white;}
+
+.btm{ width:1034px; background-color:#fff; margin-top:5px;}
+.btm img{ padding:10px; float:left;}
+.btm h3{ font-size:20px; float:right; line-height:35px; padding:10px 435px 10px 0;}
+.btm h3 a{ text-decoration:none; color:#333;}

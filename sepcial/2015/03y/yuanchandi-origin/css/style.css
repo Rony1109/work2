@@ -1,0 +1,95 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{ font-family: Microsoft YaHei;}
+h1{ font-size:40px; text-align:center; line-height:130px;}
+h2{ font-size:16px;}
+
+/* 以下为专题样式 */
+.main{ background:#fff url(img/banner.jpg) no-repeat top center;}
+.banner{ height:588px; position:relative;}
+.jiathis_style{ float:right; margin-top:10px;}
+.jiathis_style a{color:#fff;}
+.banner p{ position:absolute; display:block; width:720px; height:100px; bottom:0px; right: 75px; font-size:16px; text-align:justify; line-height:26px;}
+.banner p span{ font-size: 20px; color:#ff6759; font-weight:700;}
+
+.wfloor{ height:630px; color:#555;}
+.bfloor{ background:url(img/bluebg.jpg) no-repeat top; height:582px; color:#fff;}
+
+.t-right{ text-align:right;}
+.t-left{ text-align:left;}
+
+.flrone{ background:url(img/flr2.png) no-repeat center; height:470px; position:relative;}
+.flrone p{ font-size:16px; display:block; width:180px; height:70px;}
+.n1,.n2,.n3,.n4,.n5,.n6{ position:absolute;}
+.n6{ top:45px; left:150px;}
+.n5{ top: 215px; left:65px;}
+.n4{ bottom:25px; left:150px;}
+.n3{ bottom:25px; right:150px;}
+.n2{ top: 215px; right:65px;}
+.n1{ top:45px; right:150px;}
+
+.five{ text-align:center; width:104%; margin-left:25px;}
+.five li{ width:150px; height:280px; float:left; margin-right:50px;}
+.five li a{ font-size:16px; color:#fff; font-weight:700;}
+
+.flrthree{ background:url(img/flower.png) no-repeat center; height:455px; position:relative;}
+.flrthree p{ font-size:16px; display:block; width:240px; height:70px;}
+.c1,.c2,.c3,.c4,.c5{ position:absolute;}
+.c5{ top: 65px; left:30px;}
+.c4{ bottom:145px; left:0px;}
+.c3{ bottom:35px; right:135px;}
+.c2{ top: 240px; right:0px;}
+.c1{ top:65px; right:55px;}
+
+.four{ width:103%; margin-left:10px;}
+.four li{ width:230px; height:327px; position:relative; float:left; margin-right:20px;}
+.text{ background:url(img/wbg.png) no-repeat bottom center; width:230px; height:181px; position:absolute; bottom:0; left:0; color:#666;}
+.text h2{ padding-top:40px; padding-left:20px;}
+.text p{ font-size:12px; padding-left:20px;}
+.text p span{ margin-right:5px; line-height:23px;}
+
+.dyna{ font-size:14px; width:103%;}
+.dyna p{ line-height:30px;}
+.dyna a{ color:#333;}
+.dyna ul{ float:left; margin-right:10px;}
+.dyna ul li{ margin-bottom:6px;}
+.m1{ width:295px;}
+.m1 li{ width:295px;}
+.m2{ width:240px;}
+.m2 li{ width:240px;}
+
+.list{ width:430px; margin-left:20px; list-style:square; float:left; margin-right:50px;}
+.list li{ color:#ffa734; height:25px;}
+.list li a{ font-size:14px; color:#666; display:block; height:25px;}
+.list li span{ float: right; color:#666;}
+
+.add{ background:#3e3e3e;}
+.love-links a {color: #fff; padding: 0 10px;}
+.link {border-top: none;}
+
+
+
+
+
+

@@ -1,0 +1,302 @@
+@charset "utf-8";
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+body{
+    /*上下拉动滚动条时卡顿、慢*/
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    -webkit-touch-callout: none;
+    /*长时间按住页面出现闪退*/
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    /*ios和android下触摸元素时出现半透明灰色遮罩*/
+    -webkit-text-size-adjust:100%;/*旋转屏幕时，字体大小调整的问题*/
+}
+*{
+    font-family: '微软雅黑','microsoft yahei',sans-serif;/*先找微软雅黑，找不到默认字体*/
+}
+/*文字居中、右区域*/
+.te_al_c{
+    text-align: center;
+}
+.te_al_l{
+    text-align: left;
+}
+.te_al_r{
+    text-align: right;
+}
+/*行高区域*/
+.li_hg_0{
+    line-height: 100%;
+}
+.li_hg_1{
+    line-height:13px;
+}
+/*字体大小适配区域浏览器最小为12px*/
+.fo_sz_0{
+    font-size: 0;
+}
+.fo_sz_1{
+    font-size: 6px;
+}
+.fo_sz_2{
+    font-size: 7px;
+}
+.fo_sz_3{
+    font-size:0.4rem;
+}
+.fo_sz_4{
+    font-size: 8px;
+}
+/*iphone6*/
+[data-dpr='2']  .fo_sz_1{
+     font-size: 12px;
+ }
+[data-dpr='2']  .fo_sz_2{
+    font-size: 14px;
+}
+[data-dpr='2']  .fo_sz_4{
+    font-size: 16px;
+}
+[data-dpr='2']  .li_hg_1{
+    line-height: 26px;
+}
+/*iphone6plus*/
+[data-dpr='3'] .fo_sz_1{
+    font-size: 24px;
+}
+[data-dpr='3'] .fo_sz_2{
+    font-size: 26px;
+}
+[data-dpr='3'] .fo_sz_4{
+    font-size: 28px;
+}
+[data-dpr='3'] .li_hg_1{
+    line-height: 38px;
+}
+/*字体加粗区域*/
+.fon_w_b{
+    font-weight: bold;
+}
+/*字体颜色区域*/
+.fon_c_1{
+    color: #fff;
+}
+.fon_c_2{
+    color: #333;
+}
+.fon_c_3{
+    color: #777;
+}
+.fon_c_4{
+    color: #ffff99;
+}
+/*背景颜色区域*/
+.bg_c_1{
+    background-color: #fff;
+}
+.bg_c_2{
+    background-color: #100a8d;
+}
+.bg_c_3{
+    background-color: #e64240;
+}
+.bg_c_4{
+    background-color: #fff;
+}
+/*背景图片区域*/
+.bg_img_1{
+    background: url("../bg_img/bg_img_1.jpg") no-repeat center top;
+    background-size:100% 100%;
+}
+.bg_img_2{
+    background: url("../bg_img/bg_img_2.jpg") no-repeat center top;
+    background-size:100% 100%;
+}
+.bg_img_3{
+    background: url("../bg_img/bg_img_3.jpg") repeat center top;
+}
+.bg_img_4{
+    background: url("../bg_img/bg_img_4.jpg") repeat center top;
+}
+.bg_img_5{
+    background: url("../bg_img/bg_img_5.png") no-repeat left center;
+    background-size:0.133rem ;
+}
+.bg_img_6{
+    background: url("../bg_img/bg_img_6.jpg") repeat center top;
+}
+/*下划线*/
+.tx_dec-uli{
+    text-decoration: underline;
+}
+/*border圆角区域*/
+.bor_r{
+    border-radius: 0.067rem;
+}
+.bor_1{
+    border: 0px solid #68686d;
+}
+.bor_2{
+    border: 0.053rem solid #68686d;
+}
+.bor_3{
+    border: 0.027rem solid #68686d;
+}
+/*margin区域*/
+.mg-au{
+    margin: auto;
+}
+.ma-bom_1{
+    margin-bottom:0.133rem;
+}
+/*padding区域*/
+.pd_1{
+    padding: 0.107rem 0;
+}
+.pd_2{
+    padding: 0.05rem 0 0.05rem 0.133rem;
+}
+.pd_3{
+    padding: 0.333rem 0;
+}
+.pd_4{
+    padding: 0.267rem 0;
+}
+.pd_5{
+    padding: 0.133rem 0;
+}
+.pd_6{
+    padding: 0.107rem 0;
+}
+.pd_7{
+    padding: 0 0 0.133rem 0;
+}
+.pd_8{
+    padding:0.467rem 0;
+}
+.pd_9{
+    padding:0.333rem 0;
+}
+/*top、bottom、right、left区域*/
+.tp_1{
+    top:-1.1rem;
+}
+/*宽度区域*/
+.wh_1{
+    width:10rem;
+}
+.wh_2{
+    width:9.467rem;
+}
+.wh_3{
+    width:1.76rem;
+}
+.wh_4{
+    width:9.36rem;
+}
+.wh_5{
+    width:1.672rem;
+}
+.wh_6{
+    width:5.4rem;
+}
+.wh_7{
+    width:8.6rem;
+}
+.wh_8{
+    width:1.36rem;
+}
+.wh_9{
+    width:12.5%;
+}
+.wh_10{
+    width:1.133rem;
+}
+.wh_11{
+    width:2.293rem;
+}
+.wh_12{
+    width:20%;
+}
+.wh_13{
+    width:33.33%;
+}
+.wh_14{
+    width:9.8rem;
+}
+.wh_15{
+    width:2.88rem;
+}
+.wh_16{
+    width:1.12rem;
+}
+.wh_17{
+    width:65%;
+}
+.wh_18{
+    width:25%;
+}
+.wh_19{
+    width:9.68rem;
+}
+.wh_20{
+    width:2.2rem;
+}
+.wh_21{
+    width:3.467rem;
+}
+.wh_22{
+    width:2.933rem;
+}
+.wh_23{
+    width:6.36rem;
+}
+/*高度区域*/
+.hg_1{
+    height:1.067rem;
+}
+.hg_2{
+    height:1.16rem;
+}
+.hg_3{
+    height:0.427rem;
+}
+.hg_5{
+    height:0.8rem;
+}
+.hg_6{
+    height:0.4rem;
+}
+.hg_7{
+    height:0.533rem;
+}
+.hg_8{
+    height:0.933rem;
+}
+.hg_9{
+    height:0.267rem;
+}
+.hg_10{
+    height:1.5rem;
+}
+/*定位区域*/
+.po_r{
+    position: relative;
+}
+.po_a{
+    position: absolute;
+}
+/*文字不换行区域*/
+.no_wrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+}
+.ov_hid{
+    overflow-y: scroll;
+    max-height: 1.14rem;
+    min-height: 1.14rem;
+}

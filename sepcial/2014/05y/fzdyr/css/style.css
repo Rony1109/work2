@@ -1,0 +1,177 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+ @import url('http://res.csc86.com/v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+
+.container{background: #b31a7d url(../images/banner.jpg) no-repeat center 0;}
+.banner h1{text-indent: -999px;height: 485px;}
+#bdshare a,span.bds_more,#bdshare a:hover{color: #fff!important}
+
+.intro{width: 588px;margin-left:54px}
+.intro a{font: bold 30px/40px Microsoft YaHei,simsun;display: inline-block;*display:inline;zoom:1;width: 72px;color: #fff;margin-top: 15px}
+.intro a:hover{text-decoration: none;}
+.intro p{float: right;display: inline;width: 454px;font: 14px Microsoft YaHei,simsun;color: #fff}
+.tin24{text-indent: 24px}
+.tin48{text-indent: 48px}
+.tin84{text-indent: 84px}
+.content{margin-top:50px;overflow: hidden;}
+
+.tab-nav{background: #a1127a;margin-left: -1px;}
+.tab-nav li{cursor: default;position: relative;float: left;display: inline;height: 55px;width:250px;color: #fff;font: bold 24px/55px Microsoft YaHei,sumsun;border-left: 1px solid #d491c1;margin-left: -1px;text-align: center;text-indent: 35px}
+.tab-nav li.first{border-left:0 }
+.tab-nav li span{display: block;background: url(img/gather.png) no-repeat -237px 0;width: 13px;height: 10px;display: none;position: absolute;left: 122px;bottom: -10px;_bottom:-30px;}
+.tab-nav li.cur{background: #ff8c04}
+.tab-nav li.cur span{display: block;}
+.tab-nav li b.icon-1{background: url(img/icon.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon.png");display: block;width: 48px;height: 65px;position: absolute;top:-10px;z-index: 999;left: 40px;}
+.tab-nav li b.icon-2{background: url(img/icon-1.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon-1.png");display: block;width: 48px;height: 65px;position: absolute;top:0;z-index: 999;left: 40px;}
+.tab-nav li b.icon-3{background: url(img/icon-2.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon-2.png");display: block;width: 48px;height: 65px;position: absolute;top:0;z-index: 999;left: 40px;}
+.tab-nav li b.icon-4{background: url(img/icon-3.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/icon-3.png");display: block;width: 62px;height: 65px;position: absolute;top:0;z-index: 999;left: 40px;}
+.tab-box{padding: 35px 67px;font: bold 16px/42px Microsoft YaHei,simsun;background: #fff}
+.tab-box p{color: #b31a7d;margin-top: 25px;width: 530px}
+.list{margin-top: 30px}
+.list li{background: url(img/gather.png) no-repeat -240px -168px;text-indent: 23px}
+.last{margin-top: 0}
+.join{background: url(img/bm.png) no-repeat;height: 96px;padding-right: 20px}
+.join a{float: right;display: inline;height: 44px;margin:27px 32px 0 0;overflow: hidden;text-indent: -999px}
+.w146{width: 146px;}
+.w135{width: 135px}
+
+.title{font: 2.6em/80px Microsoft YaHei,simsun;color: #fbfafa;height: 80px;}
+
+.main-box{background: #fff;overflow: hidden;}
+.time{width: 955px;margin: 20px auto 0;}
+.time li{float: left;display: inline;font: 12px Microsoft YaHei,simsun;text-align: center;}
+.step{width: 955px;margin: 15px auto;}
+.step li{float:left;display: inline;font: 12px Microsoft YaHei,simsun;text-align: center;}
+.w130{width: 130px}
+.w150{width: 150px}
+.w100{width: 100px}
+.w170{width: 170px}
+li.g-tr{text-align: right;}
+.fc-e43cab{color: #e43cab}
+.timeline{background: url(img/process.png) no-repeat;width: 955px;height: 10px;margin: 0 auto;font-size: 0;line-height: 0;}
+.ontime{background: url(img/process-on.png) no-repeat;width: 208px;font-size: 0;line-height: 0;height: 10px}
+.comein{margin-left: 25px}
+.comein li{float: left;display: inline;width: 153px;height: 212px;background: url(img/bg-j.png) no-repeat;margin-left: 25px;}
+.comein li p{text-align: center;color: #b31a7d;font: 14px Microsoft YaHei,simsun;margin-top: 16px}
+.comein li span{display: block;}
+.comein li span.icon-1{background: url(img/gather.png) no-repeat;width: 39px;height: 49px;margin: 30px auto 0;}
+.comein li span.icon-2{background: url(img/gather.png) no-repeat 0 -70px;width: 39px;height: 49px;margin: 30px auto 0;}
+.comein li span.icon-3{background: url(img/gather.png) no-repeat 0 -152px;width: 45px;height: 49px;margin: 30px auto 0;}
+.comein li span.icon-4{background: url(img/gather.png) no-repeat -63px 0;width: 67px;height: 67px;margin: 13px auto 0;}
+.btn-main{width: 140px;height: 50px;background: #e43cab;margin:30px 0 0 8px;color: #fff;overflow: hidden;}
+.btn-main span{font: 10px Microsoft YaHei,simsum;text-align: center;margin-top: 5px}
+.btn-main a{display: block;width: 78px;height: 22px;font:12px/18px Microsoft YaHei,simsun;color: #fff;text-align: center;margin: 15px auto 0;background: url(img/btn-bg.png) no-repeat;text-indent: -5px}
+.btn-main a.first{margin-top: 5px}
+.wait,.over{line-height: 50px;color: #ea7bc1;font: 18px Microsof YaHei,simsun}
+
+.your-name{font: 13px/26px Microsoft YaHei,simsun;background: #eee;margin-top: 5px}
+.your-name span{float: left;display:inline;width: 42%;overflow: hidden;word-break:break-all;padding:0 4% }
+.your-name span b{font-weight: normal;color: #d20000}
+
+.scroll-box{width: 663px;overflow: hidden;margin-left: 40px;padding-bottom:20px;}
+.scroll-box ul{width: 9999px;}
+.scroll-box ul li{float: left;display: inline;width: 117px;margin-right: 17px;}
+.z-btn{display: block;background: url(img/gather.png) no-repeat -67px -87px;width: 117px;height: 44px;overflow: hidden;text-indent: -999px;cursor: pointer}
+.img-scroll{position: relative;padding-top: 33px}
+.img-scroll .ctr-l,.img-scroll .ctr-r{display: block;width: 28px;height: 46px;background: url(img/gather.png) no-repeat;position: absolute;top:90px;cursor: pointer;}
+.img-scroll .ctr-l{background-position: right -113px;left: 0}
+.img-scroll .ctr-r{background-position: right -56px;right: 0}
+
+.Pop-10{position: absolute;right: 40px;top:20px;}
+.Pop-10 h3{overflow: hidden;background: url(img/gather.png) no-repeat 0 bottom;width: 224px;height: 52px;color: #fff;font: bold 20px/40px Microsoft YaHei,simsun;text-indent: 10px;}
+.text-scroll{margin:15px;overflow: hidden;height: 173px;width: 194px}
+.Pop-10 ul li{overflow: hidden;font: 14px/22px; Microsoft YaHei,simsun;line-height: 25px}
+.Pop-10 ul li span{float:left;display: inline;zoom:1;width: 40%}
+.Pop-10 ul li span.items{width: 15%}
+.Pop-10 ul li b{font-weight: normal;}
+.fc_ff00{color: #ff0000;}
+
+
+.cj{position: relative;width: 504px;height: 573px;margin: 40px 0 0 30px;overflow: hidden;}
+.cj img{position: absolute;z-index: 19;margin:6px 0 0 5px;}
+.cj-btn{cursor: pointer;position: absolute;z-index: 20;background: url(img/btn.png) no-repeat;width: 504px;height: 573px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/btn.png");top:0;left: 0}
+
+.cj-intro{width: 428px;margin: 36px 10px 0 0 } 
+.cj-intro h3 {background: #b31a7d;height: 30px;font: bold 16px/30px Microsoft YaHei,simsun;color: #fff;text-indent: 15px;margin: 10px 0}
+.cj-intro h3 span{background:url(img/gather.png) no-repeat 0 -214px;width: 23px;height: 30px;float: right;display: inline;}
+.cj-intro p{font: 14px/25px Microsoft YaHei,simsun;display: block;}
+.w117{width: 117px;}
+.w346{width: 346px}
+.name-list{overflow: hidden;height: 68px}
+.mytabel{table-layout: fixed;width: 333px;font: 14px/22px Microsoft YaHei,simsun;text-align: center;}
+.mytabel th{font-weight:normal;color: #fb8c1f}
+
+.high-light{margin: 12px;margin-left: 2px}
+.high-light li{position: relative;float: left;display: inline;zoom:1;border:1px #bcbcbb solid;margin-left: 10px;width: 184px;height: 448px;word-break:break-all;font-family: Microsoft YaHei,simsun}
+.high-light li h3{color: #f67b17;font-size: 16px;padding-bottom: 5px;text-indent: 46px}
+.high-light li h4{font-size: 14px;font-weight: normal;border-bottom: 2px #e1e1e1 solid;}
+.high-light li h4,.high-light li h3,.high-light li p{margin: 5px 10px}
+.high-light li p{height: 115px;overflow: hidden;font-family: '宋体'}
+.high-light li span{display: block;width: 60px;height: 110px;position: absolute;left: -1px;background: url(img/high.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/img/high.png");}
+.one{top:208px;}
+.two{top:129px;}
+
+
+.img-scroll-b{margin: 20px auto;position: relative;width: 962px;}
+.img-box-b{width: 900px;margin: 0 auto; overflow: hidden;}
+.img-box-b ul{width:9999px; }
+.img-box-b ul li{float: left;display: inline;margin-right: 20px;}
+.img-scroll-b .ctr-l,.img-scroll-b .ctr-r{display: block;width: 10px;height: 19px;display: block;background: url(img/gather.png) no-repeat;top:60px;position: absolute;cursor: pointer;}
+.img-scroll-b .ctr-l{background-position:right -257px; left: 0;}
+.img-scroll-b .ctr-r{background-position:right -224px;right: 0}
+
+.comment{width: 680px;float: left;display: inline;padding:24px;}
+.w262{width: 262px;margin-right: 10px}
+ .g-comment-top{display: none;} 
+
+.linK,.link a,.link p{color: #f1f0f0}
+
+.mt-10{margin-top: 10px}
+
+.dialog{position: absolute;top:200px;left: 200px;background: #fff;width: 613px;padding: 20px;z-index: 999}
+.submit-btn{background:url(img/btn-submit.png) no-repeat;width: 118px;height: 35px;line-height: 35px;display: block;margin: 10px auto;cursor: pointer;overflow:hidden;
+text-indent:-9999px;text-transform:capitalize;overflow: hidden;border: 0;}
+.dialog-tx{overflow: hidden;}
+.tip{font: bold 18px Microsoft YaHei,simsun;text-align: center;}
+.sub-tip{font: 14px Microsoft YaHei,simsun;text-align: center;}
+.g-h376{height: 376px}
+.g-h316{height: 316px}
+.g-lh224{line-height: 224px}
+.g-lh40{line-height: 40px}
+.mt-80{margin-top: 80px}
+.mt-30{margin-top: 30px}
+.shade{background-color: rgba(0,0,0,0.5);*background-color: #000;filter:alpha(opcity=50);z-index: 888;left: 0;top:0;position: absolute;}
+.icon-no{background: url(img/cry.png) no-repeat;width: 75px;height: 86px;display: block;margin: 20px auto 10px;}
+
+.mytable th{font: normal 14px/30px Microsoft YaHei,simsun;text-align: right;padding:0 5px 0 26px;width: 70px }
+.mytable td input{width: 173px;border: 1px #cecece solid;height: 21px}
+.mytable td input.adress{width: 453px}
+
+.pointer{margin:0 26px 15px;font: 14px/24px Microsoft YaHei,simsun;}

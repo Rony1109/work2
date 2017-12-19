@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+
+    <!--<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>-->
+
+    <!--添加到主频后的标题（ios）-->
+    <!--<meta name="apple-mobile-web-app-title" content="标题">-->
+
+    <!--启用全屏模式 隐藏默认工具栏和菜单栏（ios）-->
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+
+    <!--当网站添加到主屏幕后再点击进行启动时，可隐藏地址栏（从浏览器跳转或输入链接进入并没有此效果）（ios）-->
+    <!--<meta name="apple-touch-fullscreen" content="yes" />-->
+
+    <!--设置状态栏的背景设（ios）-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+
+    <!--关闭电话号码的自动识别（ios）-->
+    <meta content="telephone=no" name="format-detection"/>
+
+    <!--关闭邮箱的自动识别（andriod）-->
+    <meta content="email=no" name="format-detection"/>
+
+    <!--清楚浏览器缓存-->
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <script>
+        !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+
+    <title>专题</title>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="banner">
+    <ul class="nav">
+        <li class="itm1"><img src="images/2.jpg" alt=""></li>
+        <li class="itm2"><img src="images/3.jpg" alt=""></li>
+        <li class="itm3"><img src="images/4.jpg" alt=""></li>
+    </ul>
+</div>
+
+<div class="kbms">
+    <ul class="kbms-tab">
+        <li class="itm1 cur">
+            <h2>今日限量<span>秒杀</span></h2>
+            <div class="line">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </div>
+            <p>每日早10点限量放新</p>
+        </li>
+        <li class="itm2">
+            <h2>下期秒杀<span>预告</span></h2>
+            <div class="line">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </div>
+            <p>2月25日即将开启</p>
+        </li>
+    </ul>
+    <ul class="pro-list kbms-list kbms-list-cur">
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：3</span><span class="buy">立即抢批</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：33</span><span class="buy">立即抢批</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：1234</span><span class="buy">立即抢批</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：1234</span><span class="buy">立即抢批</span>
+                </p>
+            </a>
+        </li>
+    </ul>
+    <ul class="pro-list kbms-list">
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：3</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：33</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：1234</span>
+                </p>
+            </a>
+        </li>
+        <li>
+            <a data-href="">
+                <p class="pic">
+                    <img src="demo/1.jpg" alt="">
+                </p>
+                <p class="t">
+                    产品标题16字符产品标题16字符产品
+                </p>
+                <p class="line"></p>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="cz">
+                    <span class="num">剩余数量：1234</span>
+                </p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="xrzxj">
+    <p>
+        <img src="images/5.jpg" alt="">
+    </p>
+    <p class="reg-opt">
+        <a data-href="http://res.csc86.com/v3/shopping_center/market/html/login_reg_acc.html">新人注册</a>
+    </p>
+    <ul class="pro-list xrzxj-list">
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="325.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="321.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="90.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="80.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="100.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="200.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="35.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="bd">
+                <a data-href="">
+                    <p class="pic">
+                        <img src="demo/2.jpg" alt="">
+                    </p>
+                    <p class="t">
+                        产品标题16字符产品标题16字符产品
+                    </p>
+                </a>
+                <p class="prc">秒杀价：<span>12.00</span></p>
+                <p class="opts">
+                    <a class="jsGetPrc" data-price="25.00" data-url="">点击获取新人专享价</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="hdsm">
+    <ol class="hdsm-list">
+        <li>1、2017年1月1日后注册的新会员，均可领取价值50元无门槛优惠券（仅限五金机电商城采购使，不可用于华南城网其他店铺），<span class="g-org">优惠券仅限领取1次，不能重复领取；</span></li>
+        <li class="g-org">2、优惠券除可用于购买秒杀产品外，不与其他优惠同时使用；</li>
+        <li>3、若使用优惠券购买的订单产生退款，则退款金额为实际支付金额数，退货运费由买家承担</li>
+        <li>4、秒杀产品每日实行限量供货，次日10点放新；</li>
+        <li>5、新人专享价针对之前从未在华南城网采购过产品的买家会员。活动期间内，凡首次在华南城进行采购，均可在“新人专享价”专区采购低价产品，<span class="g-org">该订单不限制采购数量，均可按照新人专享价进行结算；</span></li>
+        <li>6、新手专享价商品不可使用优惠券进行抵扣；</li>
+        <li>7、本活动在法律允许范围内最终解释权归华南城网所有，如有任何疑问，请拨打免费服务热 线<span class="g-org tel">400-184-8666。</span></li>
+    </ol>
+    <img src="images/7.jpg" alt="">
+</div>
+<div class="zt-dialog">
+    <div class="zt-dialog-bd">
+        <p class="loading"><img src="images/loading-v2.0.0.png" alt=""></p>
+        <div class="yhq-dialog yhq-dialog1">
+            <a class="close"></a>
+            <p class="p1">您还未登录，领取的优惠券将无处存放哦~</p>
+            <p class="p2">请<span class="g-yllw">先登录</span>再领券</p>
+            <p class="opts">
+                <a data-href="http://res.csc86.com/v3/shopping_center/market/html/login.html">立即登录</a><a data-href="http://res.csc86.com/v3/shopping_center/market/html/login_reg_acc.html">免费注册</a>
+            </p>
+        </div>
+        <div class="yhq-dialog yhq-dialog2">
+            <a class="close"></a>
+            <p class="p1"><i></i>恭喜您！</p>
+            <p class="p2">成功领取优惠券</p>
+            <p class="p3">存放至您的会员后台<span class="g-yllw">【我的钱包】-【我的优惠券】</span>中</p>
+            <p>您的现金券有效期至<span class="g-yllw">2017年12月31日23：59</span></p>
+            <p class="opts">
+                <a data-href="">立即登录</a>
+            </p>
+        </div>
+        <div class="yhq-dialog yhq-dialog3">
+            <a class="close"></a>
+            <p class="p1">对不起，该优惠券只向新人发放！</p>
+            <p class="opts">
+                <a class="jsDialogOk">确认</a>
+            </p>
+        </div>
+        <div class="xrzxj-dialog xrzxj-dialog1">
+            <a class="close"></a>
+            <div class="bz1"></div>
+            <div class="bd">
+                <div class="inf">
+                    <p class="prc"></p>
+                    <p class="xr">新人专享价</p>
+                </div>
+                <div class="tips">
+                    <h2>温馨提示：</h2>
+                    <p>
+                        您需要在下单后，联系客服按照新人专享价修改订单总价后进行支付!
+                    </p>
+                </div>
+            </div>
+            <div class="bz2"></div>
+            <div class="opts">
+                <a>立即采购</a>
+            </div>
+        </div>
+        <div class="xrzxj-dialog xrzxj-dialog2">
+            <a class="close"></a>
+            <div class="bz1"></div>
+            <div class="bd">
+                <p class="srry">对不起</p>
+                <p class="g-tl">新人专享价仅适用于首次在平台购进货的买家</p>
+            </div>
+            <div class="bz2"></div>
+        </div>
+        <div class="xrzxj-dialog xrzxj-dialog3">
+            <a class="close"></a>
+            <div class="bz1"></div>
+            <div class="bd">
+                <p class="srry">对不起</p>
+                <p class="g-tl">您还未登陆，请登录后查看新人新人专享价</p>
+            </div>
+            <div class="bz2"></div>
+            <div class="opts">
+                <a data-href="http://res.csc86.com/v3/shopping_center/market/html/login.html">立即登录</a><a data-href="http://res.csc86.com/v3/shopping_center/market/html/login_reg_acc.html">免费注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

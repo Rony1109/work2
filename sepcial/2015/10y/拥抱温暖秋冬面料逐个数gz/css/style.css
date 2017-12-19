@@ -1,0 +1,94 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px; margin-right: -12px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+.w956{width: 956px;}
+.w156{width: 156px;}
+.w467{width: 467px;}
+.bgf4{background-color: #f4f4f4;}
+.ti2{text-indent: 2em;}
+.pt30{padding-top: 30px;}
+.pb20{padding-bottom: 20px;}
+.pt8{padding-top: 8px}
+.pb8{padding-bottom: 8px}
+.pb60{padding-bottom: 60px;}
+.bgff{background:#fff;}
+.bgfb{background-color: #ffb40c;}
+.bgf9{background:#ff9c08 !important;}
+.bgeb{background:#eb8a00;}
+.cw{color:#fff;}
+.co{color:#ffb50c;}
+.mt28{margin-top: 28px;}
+
+
+.banner{height: 805px; background: url(img/1.jpg) center 0;}
+.daoyu{background: url(img/2.png) 0 0; width: 1006px; height: 197px;}
+.daoyu-1{width: 666px; font-weight: 700; color:#fff; padding: 92px 0 0 154px; line-height: 180%;}
+.price{border: 1px dotted #ffb40c; font-size: 22px; text-align: center; padding: 8px 0; font-weight: 700;color:#ffb30c;}
+.price2{font-size: 14px;padding: 5px 0;width: 110px;}
+.price sub{ vertical-align: top;}
+.buy{background: #ffb40c url(img/4.png) center 6px no-repeat; padding-top: 20px;}
+.buy a{color:#fff; font-size: 30px; font-weight: 700;}
+.buy a:hover{color:#fff; text-decoration: none;}
+.buy-wrap{padding: 0 30px; height: 250px;}
+.list li{float: left; margin-left: 18px;width: 225px;}
+.list li:first-child{margin-left: 0;}
+.look{background-color: #ffb40c; color:#fff;width: 113px; height: 33px;line-height: 33px; text-align: center;}
+.line1{height: 91px; background:#f4f4f4 url(img/5.png) center bottom no-repeat; padding-top: 10px;}
+.line2{height: 100px; background:#ffb50c url(img/7.jpg) center bottom no-repeat; padding-top: 10px;}
+.line3{height: 95px; background:#ffb50c url(img/9.png) center bottom no-repeat;}
+.t1{background: url(img/3.png);width: 955px;height: 101px;}
+.t2{background: url(img/6.png);width: 958px;height: 101px;}
+.t3{background: url(img/8.png);width: 959px;height: 101px;}
+.other{width: 1019px;height: 321px;background: url(img/10.png);}
+
+.fixed{width: 134px;height: 449px; background: url(img/11.png); position: fixed;right: 20px; top: 150px;}
+.fixed a{color:#fff; font-size: 14px; font-weight: 700; text-align: center;}
+.fixed a:hover{text-decoration: none;}
+.f1{margin-top: 135px;}
+.f2, .f3{margin-top: 53px;}
+.top{margin: 0 auto; margin-top: 40px; width: 60px;height: 30px;}
+.dlink{cursor: pointer;}
+
+/*底部轮播*/
+.maitob{ height:180px; padding-top: 116px;}
+.maitob span{ width:20px; height:42px; display:inline-block; float:left; margin-top:60px; cursor:pointer;}
+.maitob span.scr-lb{ background:url(img/lr.png) no-repeat 0 0; margin-left:10px;}
+.maitob span.scr-rb{ background:url(img/lr.png) no-repeat 0 -42px;}
+.maitob div.scr-allb{ float:left; width:920px; height:180px; display:inline-block; overflow:hidden; position:relative; margin:0 10px;_margin:0 5px;}
+.maitob div.scr-allb ul{ position:absolute; left:0; top:0; width:10000px; display:block;}
+.maitob div.scr-allb ul li{ width:215px; height:180px; margin-right:20px; float:left; text-align:center;}
+.maitob div.scr-allb ul li .img{ width:215px; height:160px; font-size: 14px;}
+.maitob div.scr-allb ul li a{ color:#333; font-size:16px;}

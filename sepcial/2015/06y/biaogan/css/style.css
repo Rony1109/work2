@@ -1,0 +1,103 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; background:#fff;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+/* 以下为专题样式 */
+
+body{font-family: "microsoft yahei";}
+
+.g-bgcfedf47{background-color: #fedf47;}
+.g-bgcfff{background-color: #fff;}
+.g-cb50006{color: #b50006;}
+
+.bdt{border-top: 1px dashed #d8d8d8;}
+
+.banner{height: 530px;background: url(img/img.jpg) no-repeat center;}
+
+.tith2{background: url(img/tit-bg.png) no-repeat;padding-top: 24px;height: 47px;line-height: 47px;font-size: 30px;color: #fff;margin-left: -26px;padding-left: 35px;}
+
+.info-txt{width: 350px;background-color: #f3f3f3;}
+.info-txt div.g-pr{padding: 20px;}
+
+.info-img{width: 642px;}
+.info-img div.g-hid{overflow: hidden;margin: 20px 20px 10px 20px;}
+.info-img div.g-hid ul{width: 1000%;}
+.info-img div.g-hid ul li{width: 602px;height:306px;float: left;overflow:hidden;}
+.info-img div.g-pr{width:603px;margin-left:auto;margin-right:auto;}
+.info-img div.g-pr div.g-db{overflow: hidden;}
+.info-img div.g-pr ol{width: 1000%;}
+.info-img div.g-pr ol li{width: 145px;height:132px;float: left;margin-right: 5px;cursor: pointer;overflow:hidden;}
+.info-img div.g-pr a.prev{position: absolute;left: -16px;top: 0;}
+.info-img div.g-pr a.next{position: absolute;right: -16px;top: 0;}
+
+.list{margin: 20px;overflow: hidden;}
+.list ul{width: 110%;}
+.list li{float: left;margin-bottom: 20px;margin-right: 20px;}
+
+.dh div.g-fl{padding: 20px;background-color: #f3f3f3;}
+.dh div.g-fr{width: 620px;margin-right: 8px;}
+.dh div.g-fr h3{font-size: 30px;}
+.dh div.g-fr p.g-fs24{font-size: 24px;}
+.dh div.g-fr p.g-cf span.g-fr{float: none;margin-left: 50px;display: block;}
+.dh div.g-fr a{color: #000 ;}
+.dh div.g-fr a:hover{color:#2799fe;}
+
+.dfy{margin-top: 15px;}
+.dfy .s{width: 916px;overflow: hidden;margin: 0 auto;}
+.dfy ul{width:999999px;}
+.dfy li{width:209px; float: left;margin:0 10px;height: 195px;overflow: hidden;}
+.dfy li img{margin-bottom: 8px;}
+.dfy li a{color:#444;font-size: 15px;}
+.dfy li a:hover{color:#2799fe}
+.dfy .prev,.dfy .next{width:23px;height:39px; background:url(img/arr.png) no-repeat 0 0;overflow: hidden;margin: -130px 12px;}
+.dfy .next{background-position:-24px 0}
+
+.bpic-box,.spic-box{position:relative;overflow:hidden;}
+.bpic-box{width:602px;height:306px;}
+.spic-box{width:603px;height:134px;}
+.bpic-lst,.spic-lst{position:absolute;left:0;top:0;}
+.spic-lst li{border:1px solid #fff;}
+.spic-lst .cur{border:1px solid #fedf47;}
+
+
+
+
+
+
+
+
+
+
+
+

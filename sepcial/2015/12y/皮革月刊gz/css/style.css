@@ -1,0 +1,91 @@
+@import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+/* 部分样式重写 */
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+
+/* 无搜索框的样式 */
+.head{height:90px; }
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#c31611;text-decoration:none;border-radius:3px;}
+
+html,body{color: #666;font-family:'Microsoft Yahei';}
+a{text-decoration: none; color: #666}
+a:hover{color:#444; text-decoration: underline; }
+a.cw:hover{color:#fff;}
+
+.wrap{width: 1000px;}
+.w378{width: 378px;}
+.w600{width: 622px;}
+.w250{widows: 250px;}
+.h251{height: 251px;}
+.h148{height: 148px;}
+
+.bg1{background: url(img/bg1.jpg) 0 0 repeat;}
+.bg2{background: url(img/bg2.jpg) 0 0 repeat;}
+.bgf3{background: #f3f3f3;}
+.bgdd{background: #ddd;}
+.bg999{background:#999;}
+.bg888{background:#888;}
+.bg666{background:#666;}
+.bg630{background: #630;}
+.bgff{background: #fff;}
+
+.lh28{line-height: 28px;}
+.mr0{margin-right: 0!important;}
+
+.icon-1{width: 26px;height: 22px;background: url(img/icon1.png); vertical-align: middle;}
+.icon-2{width: 24px; height: 24px; position: absolute; background: url(img/index.png); bottom: -2px; right:-3px;}
+.icon-cirle{width: 6px; height: 6px; border-radius: 6px; line-height: 0px; background:#999;}
+
+.cover{height: 732px; background: url(img/cover.jpg) center 0 no-repeat;}
+.lead{position: relative; top: 605px;}
+.box-1{height:482px; overflow: auto;}
+.box-2{width: 500px;}
+.box3{border: 1px solid #ccc; width:173px; padding:8px 0; text-align: center; margin-right: 31px;}
+.box3 img{vertical-align: middle;}
+
+.list1 li{padding: 5px 0;}
+.list1 a{margin: 0 20px; padding: 10px 0 10px 15px; border-radius: 10px;}
+.list1 a:hover, .list1 a.hover{background: #292929;}
+.list1 a:hover .icon-2, .list1 a.hover .icon-2{background: url(img/index-hover.png);}
+
+.list2 li{padding: 4px 0;}
+.list2 a:hover .icon-cirle{background:#630;}
+
+.scroll-wrap{width: 940px;}
+.list3 li{float: left;margin: 0 6px;}
+.sw-btn{color:#630; font-family: Simsun; font-weight: 700; font-size: 40px; position: absolute; top: 50%; margin-top: -20px;}
+.prev{left: 0;}.next{right:0;}
+.sw-btn:hover{color:#999; text-decoration: none;}
+
+.tab-btn a{color:#fff; background:#4f4f4f;padding: 3px 10px; border-radius: 3px;margin: 0 5px;}
+.tab-btn a:hover, .tab-btn a.hover{text-decoration: none; background:#292929;}
+
+.bg-mask{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.4; filter: alpha(opacity=40);}
+.hover-more{display:none;color: #fff; border: 1px solid #fff; position: absolute; padding: 5px 20px; left:50%;top: 50%; font-size: 14px; margin-top: -15px; margin-left: -42px;}
+.hover-more:hover{color:#fff;}
+.shop-name{display:none;position: absolute; left:0; top:0; width: 100%; height: 100%; text-align: center; line-height: 93px; color: #fff; z-index: 2; font-weight: 700;}
+.shop-name:hover{color:#fff;}
+
+.buy-btn{border: 1px solid #000; color: #000; font-size: 14px; padding:3px 6px;}
+.buy-btn:hover{color: #fff; text-decoration: none; background:#630;border: 1px solid #630;}
+.ml-list4{margin-left: 37px;}
+
+.gotop-wrap{position:fixed;bottom: 100px; right:30px; display: none;}
+.gotop{display:block; width:43px; height: 43px; background: url(img/top.png);}
+.up{background-position: -5px -6px;}
+.down{background-position: -5px -56px;}
+.top{background-position: -5px -106px;}
+.up:hover{background-position: -52px -6px;}
+.down:hover{background-position: -52px -56px;}
+.top:hover{background-position: -52px -106px;}
+
+.jiathis_txt{color:#fff!important;}

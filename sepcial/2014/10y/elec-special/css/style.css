@@ -1,0 +1,92 @@
+/*
+ * 模板样式文件引入
+ *
+ * 基础init-头部topBar-搜索headSearch-底部foot
+ *
+ */
+
+/*
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css');
+ @import url('http://res.csc86.com/v2/m/top-bar/css/style.css');
+ @import url('http://res.csc86.com/v2/m/head-search/css/style.css');
+ @import url('http://res.csc86.com/v2/m/foot/css/style.css');
+ 合并后引入如下
+*/
+
+ @import url('http://res.csc86.com/f=v2/m/init/css/style.css,v2/m/top-bar/css/style.css,v2/m/head-search/css/style.css,v2/m/foot/css/style.css');
+
+
+/* 部分样式重写 */
+a{color:#2664A2;}
+.foot{border-top:2px solid #e64744;}
+.foot-lg{padding:10px 0;}
+.foot-lg span{display:inline-block;height:50px;margin:0 5px;border:1px solid #d2d2d2;}
+body{font-family: Micrsoft YaHei;}
+
+/* 无搜索框的样式 */
+.head{height:90px;}
+.head .logos{margin-top:15px;}
+.head .csc{padding-right:12px;margin-right:12px; border-right:solid 1px #bbb;}
+.head .channel{color:#666;font-size:18px;line-height:56px;}
+.navigation{margin-top:30px;}
+.navigation li{float:left;font-size:16px;padding:0 7px;line-height:20px;border-left:dashed 1px #d5d5d5;}
+.navigation .g-bn{border:none;}
+.navigation a{float:left;display:block;padding:2px 5px;color:#000;}
+.navigation a:hover{color:#fff;background:#027fd1;text-decoration:none;border-radius:3px;}
+
+
+/* 以下为专题样式 */
+.main{background:#027ed1; min-width:1000px; overflow:hidden;}
+
+.banner{height:492px;background: url(img/banner.jpg) no-repeat top center;}
+.jiathis_style{ float:right; margin-top:15px;}
+.jiathis_style a{ color:#fff;}
+
+.top{height:60px; width:100%; background-color:#1396ee; text-align:center; color:#fff;}
+.top h1{ font-size:32px; line-height:60px;}
+.box{margin-bottom:20px; overflow:hidden;}
+.box .bd{padding:27px; background-color:#fff;}
+.box .bd li:hover { border: 1px solid #1396ee;}
+.box .t{ width:104%; overflow:hidden;}
+.box .t li{ width:462px; height:250px; background-color:#f4f4f4; float:left; margin-right:16px; border:1px solid #ccc;}
+.box .t li img{ float:left;}
+.box .t li .txt{ float:right; width:200px;}
+.box .t li .txt h2{ font-size:15px; }
+.box .t li .txt h2 a{color:#333; text-decoration:none;}
+.box .t li .txt h2 span{ color:#f74b3b;}
+.box .t li .txt h3{ font-size:38px; color:#f74b3b;}
+.box .t li .txt h3 span{ font-size:24px;}
+.box .t li .txt p{ text-decoration:line-through; font-size:14px; line-height:2px;}
+.box .t li .txt .b{ background:url(img/shopping1.png) no-repeat; height:40px;}
+.box .t li .txt .b img{ margin:3px 0 0 18px;}
+.box .t li .txt .b .btn{ padding:0 50px 10px 65px;}
+.box .l{ width:103%; overflow:hidden;}
+.box .l li{ width:220px; height:304px; background-color:#FFF; margin: 20px 18.5px 0 0.5px; float:left; border:1px solid #CCC;}
+.box .l li .pic img{ margin:10px 10px 0;}
+.box .l li p{ font-size:14px; text-indent:10px; line-height:28px;}
+.box .l li p a{ color:#333; text-decoration:none;}
+.box .l li .l-btm{ background-color:#f4f4f4; height:80px; margin-top:14px;}
+.box .l li .l-l{ width:95px; float:left;}
+.box .l li .l-r{ width:125px; float: right;}
+.box .l li .l-btm h3{ font-size:15px; color:#f74b3b; line-height:10px; text-indent:8px;}
+.box .l li .l-btm h3 span{ font-size:14px; color:#f74b3b;}
+.box .l li .l-btm p{ font-size:14px; color:#444444;}
+.box .l li .l-btm .s{ text-decoration:line-through; color:#f74b3b; font-size:12px; color:#666666;}
+
+
+/*scroll*/
+.bd2{position:relative; background-color:#FFF;}
+.img-scroll{position: relative; padding: 25px;}
+.scroll-box{overflow: hidden;width: 920px;margin: 0 auto;}
+.scroll-box ul{width: 9999px; text-align:center;}
+.scroll-box li{float: left;display: inline;margin-right: 20px;}
+.scroll-box li a{ font-size:13px; text-decoration:none; color:#333;}
+.ctr-l,.ctr-r{text-align: center;top:0;display: block;position: absolute;width: 32px;height: 160px;color: #9f9e9e;font: 18px/160px Arial;cursor: pointer;}
+.ctr-l{left:0; padding-top:28px; font-size:24px;}
+.ctr-r{right:0;padding-top:28px; font-size:24px;}
+
+
+.fixed-nav{width:145px;height:259px;background:url(img/fix-nav.png); position: absolute;margin-left:1015px;top: 760px;_background-image: url(img/fix-nav-ie6.png);
+}
+.fixed-nav ul{width:140px;margin:0 auto; padding-top: 47px; text-align:center;}
+.fixed-nav a{display: block;height:36px; text-decoration:none; font-size:18px; color:#fff; font-family:microsoft yahei; line-height:50px;}

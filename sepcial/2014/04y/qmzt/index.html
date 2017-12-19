@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="keywords" content="">
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="http://res.csc86.com/bhf/" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="http://res.csc86.com/js/"></script>
+<script src="http://res.csc86.com/dialog/" type="text/javascript"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/m/config.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/public/pmodel.js"></script>
+<script type="text/javascript" src="http://res.csc86.com/js/c/sns/tradering.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/home.js"></script>
+</head>
+<body>
+<div class="top-bar">
+  <div class="g-o-a">
+    <div class="top-csc-group"> <a href="http://group.csc86.com" target="_blank">走进华南城</a> <a href="http://sz.csc86.com" target="_blank">深圳</a> <a href="http://nn.csc86.com" target="_blank">南宁</a> <a href="http://group.csc86.com/project/nc/introduce.html" target="_blank">南昌</a> <a href="http://xa.csc86.com" target="_blank">西安</a> <a href="http://zz.csc86.com" target="_blank">郑州</a> <a href="http://group.csc86.com/project/heb/introduce.html" target="_blank">哈尔滨</a> </div>
+    <div class="server-r"> <a href="http://cncms.csc86.com/help/" target="_blank" title="">服务中心</a> <span class="v-line t-w"></span> <a class="sethome" href="javscript:;" onClick="SetHomepage()">设置首页</a> <span class="v-line t-w"></span> <a class="addfav" href="" onClick="addFavourite(window.location,document.title)">收藏</a> </div>
+    <span class="v-line sev-r"></span>
+    <div class="top-my-account">
+      <div class="hd">我的账户</div>
+      <div class="g-c-f bd w-193" style="width:95px;">
+        <ul class="csc-bd" style="background:none;">
+          <li><a href="http://member.csc86.com/shop/guide.html" target="_blank" rel="nofollow">我的旺铺</a></li>
+          <li><a href="http://member.csc86.com/product/sell/category.html" target="_blank" rel="nofollow">产品发布</a></li>
+          <li><a href="http://member.csc86.com/quote/list.html" target="_blank" rel="nofollow">报价管理</a></li>
+          <li><a href="http://member.csc86.com/inquiry/list.html" target="_blank" rel="nofollow">询盘管理</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-sign-info"> 您好， <span class="bd">欢迎光临华南城网！ <a rel="nofollow" href="http://member.csc86.com/login/phone/" class="tit">登录</a><span class="v-line"></span><a rel="nofollow" target="_blank" href="http://member.csc86.com/register/phonereg">免费注册</a></span> <span class="v-line"></span> </div>
+  </div>
+</div>
+<div class="web-search">
+  <div class="g-o-a">
+    <h1> <a class="logo" title="实体商圈，可信交易。" href="http://www.csc86.com"> <img width="280" height="57" alt="实体商圈，可信交易。" src="http://res.csc86.com/image/c/index/logo.png"> </a> </h1>
+    <div class="m-search">
+      <form action="http://search.csc86.com/company/company.html" method="get">
+        <ul class="g-c-f">
+          <li class="first"><a href="http://search.csc86.com/selloffer/products.html">产品</a></li>
+          <li class="cur"><a href="http://search.csc86.com/company/company.html">公司</a></li>
+        </ul>
+        <div class="g-c-f">
+          <div class="ss-txt">
+            <div style="display:none;" id="comp-ol" class="ss-select"> <span class="arr"></span>
+              <ol>
+                <li class="cur"><a href="javascript:">公司名称</a></li>
+                <li><a href="javascript:">主营产品</a></li>
+              </ol>
+            </div>
+            <input type="text" class="txt" name="q" placeholder="请输入公司名称或关键词" value="" autocomplete="off" maxlength="50" id="search-txt">
+          </div>
+          <input type="submit" value="搜索" id="searchbtn" class="btn">
+        </div>
+        <ol class="g-o-f hot-keys">
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=PVC">PVC</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E7%83%AB%E9%87%91%E7%BA%B8">烫金纸</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=LED">LED</a></li>
+          <li><a target="_blank" class="red" href="http://search.csc86.com/selloffer/products.html?q=ABS">ABS</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E5%90%88%E6%88%90%E9%9D%A9">合成革</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%B6%82%E6%96%99">涂料</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E6%97%A0%E7%BA%BA%E5%B8%83">无纺布</a></li>
+          <li><a target="_blank" href="http://search.csc86.com/selloffer/products.html?q=%E9%92%9B%E7%99%BD%E7%B2%89">钛白粉</a></li>
+        </ol>
+      </form>
+    </div>
+    <script>
+	$("form").one("keydown",function (){
+		seajs.use(csc.url("res","/f=js/m/suggest"),function (){
+			csc.suggest();
+		});
+	});			
+	seajs.use(csc.url("res","/f=js/m/search"),function (){
+		csc.search().searchType("div.m-search");
+	});
+	seajs.use(csc.url("res","/f=js/m/placeholder"),function (){
+		csc.placeholder("#search-txt");
+	});
+</script> 
+  </div>
+</div>
+<div class="main">
+  <div class="banner">
+  	<div class="fx c">
+  		<!-- JiaThis Button BEGIN -->
+		<div class="jiathis_style_24x24 g-f-r" style="clear:both; margin:10px 0;">
+			<a class="jiathis_button_qzone"></a>
+			<a class="jiathis_button_tsina"></a>
+			<a class="jiathis_button_tqq"></a>
+			<a class="jiathis_button_weixin"></a>
+			<a class="jiathis_button_renren"></a>
+			<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+			<!-- <a class="jiathis_counter_style"></a> -->
+		</div>
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+		<!-- JiaThis Button END -->
+  	</div>
+    <p class="intro">清明自古就是中国传统习俗中最重要的节气之一，时值万物生长复苏的春耕时分，代表着一种希望;同时，清明节也是踏青和亲友聚会的日子，是人和自然沟通、人与人沟通、今人与前人沟通的日子。又是一年清明节，这个暮春四月，乡间山头依然山花烂漫。在这一天，我们将一起追思已故亲友，扫墓祭祖，慎终追远。你家的清明怎么过?“吃青团、扫墓园、踏青……”传统民俗文化仍然在延续及创新。这也带动了一些新兴的和清明节有关的特色消费，进一步促使“清明经济”效应凸显。</p>
+  </div>
+  <div class="content c">
+    <h2 class="title t_t1" id="hs">“后世”经济</h2>
+    <div class="box">
+			<span class="btn btn_left"><b></b></span><span class="btn btn_right btn_cur"><b></b></span>
+			<div class="g-f-r w375">
+				<ul class="list">
+					<li class="cur">
+						<a href="http://info.csc86.com/html/2014/observers_0401/9955.html" target="_blank"><h3>土豪祭奠为哪般？</h3>
+						<p>清明时节雨纷纷，路上行人欲断魂。又到了一年一度的清明时节，阴雨连绵就像想念亲人时候的落泪，因此每到这个时节，就是思念已经过世亲人朋友的时候，也是思念最强烈的的时候，现存人用各种祭祀的产品来寄托对故人的哀思。不得不佩服国人的经济头脑，每年的清明节，也会由此催生火热的清明经济。</p>
+					  <p>近年来随着人们的生活水平的提高，祭奠方式也由以往的烧纸钱等逐渐转到了各种“土豪”祭奠。除了“金元宝”、“锡箔纸”、钞票等传统祭品，现实生活中的一些潮流奢侈品也被制成祭祀品。[<span>详细</span>]</p></a>
+					</li>
+					<li><a href="http://info.csc86.com/html/2014/choice_0331/9928.html" target="_blank"><h3>清明祭祖应“走心”</h3>
+						<p>清明，是我们追思和缅怀的先人故亲的日子，是“清明时节雨纷纷，路上行人欲断魂”，也是“纸灰飞作白蝴蝶，泪血染成红杜鹃”，更是“古墓花影白杨树，尽是生死离别处”。你家的清明怎么过?是用传统方式祭奠祖先?还是创新求变，紧跟时代步伐?</p>
+						<p>清明祭祖，追忆已故的亲人，是一次生者与死者对话、思考生命的意义、寻求内心平静的过程。清明时节，万物复苏之时，在祭扫的过程中，获得情感的净化与升华。因此，我们需要抛开土豪或屌丝之类的成见，来一次“走心”的祭祖。[<span>详细</span>]</p></a></li>
+					<li><a href="http://info.csc86.com/html/2014/observers_0327/9836.html" target="_blank"><h3>清明网络祭奠受追捧</h3>
+						<p>清明自古就是中国传统习俗中最重要的节气之一，时值万物生长复苏的春耕时分，代表着一种希望;同时，清明节也是踏青和亲友聚会的日子，是人和自然沟通、人与人沟通、今人与前人沟通的日子。“吃青团、扫墓园、踏青……”传统民俗文化仍然在延续及创新。</p>
+						<p>在近几年各路祭扫大军中，“网络祭奠”为这个传统节日注入了新元素。祭奠的形式多种多样，而网络祭奠则是一种新形式，为他乡游子带来帮助。社会学家认为，“网络祭奠”活动既有创意，又绿色环保，既贴近时代，又极大地丰富了清明节传统文化的内涵。[<span>详细</span>]</p></a></li>
+					<li><a href="http://info.csc86.com/html/2014/choice_0401/9943.html" target="_blank"><h3>墓地经济何时回归</h3>
+						<p>在人们抱怨“死”贵“死”贵的同时，那些经营“坟地产”的人却赚得盆满钵满。“坟地产”利润一般可在50%以上，一些卖到百万元的“天价墓”甚至可以获取10倍以上的利润，这些利润被“坟地产”的投资方、开发方、经营方和销售方按不同比例瓜分。</p>
+						<p>省城墓地也已普遍过万，已经远远超出了其应有的价值，而且形成了墓地浪费，墓地经济市场迫切需要进行“调控”。民政部日前表示，将出台政策，管理规范中低价墓地。要抑制墓地价格疯涨，治理市场势在必行，切实清除“坟地产”炒作的经营者。[<span>详细</span>]</p></a></li>
+					<li><a href="http://info.csc86.com/html/2014/observers_0331/9937.html" target="_blank"><h3>清明节将现旅游小高峰</h3>
+						<p>清明节临近，国内游产品已经进入预订高峰，而出境游已经基本结束报名。记者了解到，今年清明旅游市民需求旺盛市场行情向好，将形成短途出境和国内赏花踏青旅游的小高峰。</p>
+						<p>清明小长假出游价格正处于一年中的低谷，旅行社也纷纷推出优惠活动抢客，刺激了市民的旅游热情。携程相关负责人介绍，由于3、4月是旅游淡季，相比五一之后开始持续走高的旅游价格，现在出游非常划算。部分线路由于是春季出游大热门，报名人数火爆，价格相比平时也有小幅上涨，比如江西婺源、扬州、苏州等地赏花线路遭热订。[<span>详细</span>]</p></a></li>
+				</ul>
+				<ul class="nav">
+					<li class="cur"><span></span>土豪祭奠</li>
+					<li><span></span>屌丝祭奠</li>
+					<li><span></span>网络祭奠</li>
+					<li><span></span>墓地经济</li>
+					<li><span></span>热点新闻</li>
+				</ul>
+			</div>
+			<div class="img_show"> <a href="http://info.csc86.com/html/2014/observers_0401/9955.html" class="cur" target="_blank"><img src="专题图/1-1.jpg" alt="土豪祭奠为哪般 生前关爱最重要" width="480" height="340" class="cur" /></a>
+				<a href="http://info.csc86.com/html/2014/choice_0331/9928.html" target="_blank"><img src="专题图/1-2.jpg" alt="平淡是真，清明祭祖应“走心”" width="480" height="340" /></a>
+				<a href="http://info.csc86.com/html/2014/observers_0327/9836.html" target="_blank"><img src="专题图/1-3.jpg" alt="清明网络祭奠受追捧 把缅怀搬到虚拟空间" width="480" height="340" /></a>
+				<a href="http://info.csc86.com/html/2014/choice_0401/9943.html" target="_blank"><img src="专题图/1-4.jpg" alt="“墓地经济”何时回归“厚养薄葬”" width="480" height="340" /></a>
+				<a href="http://info.csc86.com/html/2014/observers_0331/9937.html" target="_blank"><img src="专题图/1-5.jpg" alt="清明节将现旅游小高峰 热门线路赏花游最火" width="480" height="340" /></a>
+  </div>
+		</div>
+    <h3 class="small_title w923"><b><span>Pictures</span>图说清明</b></h3>
+    <ul class="pic_wall c">
+      <li><span>清明节晒亲人头骨</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/observers_0327/9833.html" target="_blank">
+          <h4>清明节晒亲人头骨</h4>
+          <p>玻利维亚是一个历史悠久的国家，并且有多种民族。玻利维亚的(亚艾马拉人)，至今仍保持着一种神秘的传统——将死去亲人的头骨放在家中，当作护身符。每年的11月8日是亚艾马拉人的“头骨祈福日”(theDayofSkulls)，这是玻利维亚西部城市拉巴斯传统的骷髅节。[更多]</p>
+          </a></div>
+        <img src="专题图/2-1.jpg" alt="" width="304" height="304" /></li>
+      <li><span>死者墓前开Party</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/observers_0328/9864.html" target="_blank">
+          <h4>死者墓前开Party</h4>
+          <p>俄罗斯有一个类似于中国清明节的节日，一些介绍俄罗斯传统节日的文献资料甚至把它直接叫做俄罗斯清明节。每年的这一天，俄罗斯人都要举家前往已故亲人的墓地扫墓，这个节日就是俄罗斯的纪念死者节。[更多]</p>
+          </a></div>
+        <img src="专题图/2-2.jpg" alt="" width="147" height="147" /></li>
+      <li><span>揭秘各地神秘祭奠</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/recommend_0328/9874.html" target="_blank">
+          <h4>揭秘各地神秘祭奠</h4>
+          <p>说起天葬，大家都有所耳闻。其实，在西藏这个神秘的地方，人们对死亡的理解可远不止天葬一种。“树葬”可是林芝地区最为纯净的一种葬法。[更多]</p>
+          </a></div>
+        <img src="专题图/2-3.jpg" alt="http://info.csc86.com/html/2014/recommend_0328/9874.html" width="147" height="147" /></li>
+      <li><span>清明祭品赶时髦</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/recommend_0328/9882.html" target="_blank">
+          <h4>清明祭品赶时髦</h4>
+          <p>随着社会的不断发展，当今各类高大上祭品层出不穷。如冥府笔记本电脑、Iphone、Ipad、豪宅别墅、麻将、名贵香烟、冬虫夏草、茅台龙井、燕窝含片、四季服装等吃穿住用行的东西样样俱全，可谓是五花八门。[更多]</p>
+          </a></div>
+        <img src="专题图/2-4.jpg" alt="" width="147" height="147" /></li>
+      <li><span>柬埔寨的清明节</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/choice_0327/9834.html" target="_blank">
+          <h4>柬埔寨的清明节</h4>
+          <p>亡人节是柬埔寨最隆重的节日，亡人节跟我们中国的清明节非常类似。四个人偶，根据化妆扮相，分别是一男一女，一个老人一个小孩，或许是按照一家人设计的吧。[更多]</p>
+          </a></div>
+        <a href="http://info.csc86.com/html/2014/choice_0327/9834.html" target="_blank"><img src="专题图/2-5.jpg" width="147" height="147" /></a></li>
+      <li><span>7种奇特下葬方法</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/choice_0328/9873.html" target="_blank">
+          <h4>7种奇特下葬方法</h4>
+          <p>一个地域，宗教信仰和风俗习惯的不同，丧葬方式差异很大，有的丧葬方式成为一种宗教理想;有的成为了一种奇风异俗。[更多]</p>
+          </a></div>
+        <img src="专题图/2-6.jpg" alt="" width="147" height="147" /></li>
+      <li><span>各国特色祭祖风俗</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/choice_0328/9855.html" target="_blank">
+          <h4>各国特色祭祖风俗</h4>
+          <p>春天本来是万物复苏、充满生机的季节，即便在追忆亲人的时候有点淅沥的小雨，也是诗情画意，哀而不伤。[更多]</p>
+          </a></div>
+        <img src="专题图/2-7.jpg" alt="" width="147" height="147" /></li>
+      <li><span>细数各地清明习俗</span>
+        <div class="dsn"><a href="http://info.csc86.com/html/2014/information_0328/9863.html" target="_blank">
+          <h4>细数各地清明习俗</h4>
+          <p>清明节的习俗是丰富有趣的，除了讲究禁火、扫墓，还有踏青、荡秋千、踢蹴鞠、打马球、插柳等一系列风俗体育活动。[更多]</p>
+          </a></div>
+        <img src="专题图/2-8.jpg" alt="" width="304" height="147" /></li>
+    </ul>
+  </div>
+  <div class="content c">
+    <h2 class="title t_t2" id="hj">换季经济</h2>
+    <div class="hj_intro">
+      <p><a href="" target="_blank">逝者已去,生者如斯!时至四月，百花竟艳，岁月已不再凄寒。和煦的春风吹绿的草地，带来了漂亮的花儿。清明到了，又是一个踏青换装的季节，追思已故亲友之余，我们更应该好好活在当下。清明三天小长假，繁花似锦,春意盎然,大家换上漂亮的春装踏青去吧!</a></p>
+    </div>
+    <div class="g-f-l w632">
+      <h3 class="small_title mt_80"><b><span>New</span>新品速递</b></h3>
+      <ul class="hj_nav c">
+        <li class="fz cur">纺织</li>
+        <li class="pg">皮革</li>
+        <li class="dz">电子</li>
+      </ul>
+      <div class="hj_list c">
+        <ul class="c cur pg_bac">
+          <li><a href="http://fangzhi.csc86.com/2014/shishangjiemi_0328/3152.html" target="_blank"><img src="专题图/f1.jpg" width="178" height="178" /></a>
+            <p>2014春日独享美“帽”潮流</p>
+          </li>
+          <li><a href="http://fangzhi.csc86.com/2014/shishangjiemi_0331/3177.html" target="_blank"><img src="专题图/f2.jpg" width="178" height="178" /></a>
+            <p>星星的你春夏流行衣装速递</p>
+          </li>
+          <li><a href="http://fangzhi.csc86.com/daogou/jingpindaogou/2014/0331/3180.html" target="_blank"><img src="专题图/f3.jpg" width="178" height="178" /></a>
+            <p>十大单品亮明媚暖春出游季</p>
+          </li>
+        </ul>
+        <ul class="c fz_bac">
+          <li><a href="http://pige.csc86.com/zixun/trade/2014/0325/2801.html" target="_blank"><img src="专题图/p1.jpg" alt="" width="178" height="178" /></a>
+            <p>清明踏青首选皮革帆布鞋</p>
+          </li>
+          <li><a href="http://pige.csc86.com/zixun/trade/2014/0326/2859.html" target="_blank"><img src="专题图/p2.jpg" alt="http://pige.csc86.com/zixun/trade/2014/0326/2859.html" width="178" height="178" /></a>
+            <p>2014年春夏包包流行趋势</p>
+          </li>
+          <li><a href="http://pige.csc86.com/zixun/trade/2014/0313/2466.html"><img src="专题图/p3.jpg" alt="" width="178" height="178" /></a>
+            <p>邂逅春天 让“花朵”绽放手中</p>
+          </li>
+        </ul>
+        <ul class="c dz_bac">
+          <li><a href="http://ec.csc86.com/yejie/2014/0327/3043.html" target="_blank"><img src="专题图/d1.jpg" alt="" width="178" height="178" /></a>
+            <p>红米Note首轮发售</p>
+          </li>
+          <li><a href="http://ec.csc86.com/yejie/2014/0331/3120.html" target="_blank"><img src="专题图/d2.jpg" width="178" height="178" /></a>
+            <p>微型PC今夏推出</p>
+          </li>
+          <li><a href="http://ec.csc86.com/zixun/xiaofei/2014/0321/2793.html" target="_blank"><img src="专题图/d3.jpg" width="178" height="178" /></a>
+            <p>GoPano360度摄影镜头</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-f-r w290">
+      <h3 class="small_title mt_80"><b><span>Fashion</span>春夏潮搭</b></h3>
+      <ul class="cd_list">
+        <li><a href="http://pige.csc86.com/zixun/trade/2014/0318/2607.html" target="_blank">
+          <p><b>季皮衣搭配秀出来</b>虽然冬季已过，但是皮衣的帅气和修身却让人心生怀念……[<span>详细</span>]</p>
+          <img src="专题图/a1.jpg" width="70" height="70" /></a></li>
+        <li><a href="http://pige.csc86.com/zixun/trade/2014/0303/2023.html" target="_blank">
+          <p><b>马丁靴穿搭有技巧</b>在万物复苏适合外出游玩的春季，一双马丁靴是潮男潮女必备……[<span>详细</span>]</p>
+          <img src="专题图/a2.jpg" width="70" height="70" /></a></li>
+        <li><a href="http://fangzhi.csc86.com/2014/shishangjiemi_0328/3151.html" target="_blank">
+          <p><b>踏青妹纸潮翻天搭配</b>马上就到清明出游踏青的好时节，穿什么衣服舒适最合适呢……[<span>详细</span>]</p>
+          <img src="专题图/a3.jpg" width="70" height="70" /></a></li>
+        <li><a href="http://fangzhi.csc86.com/2014/shishangjiemi_0331/3174.html" target="_blank">
+          <p><b>春游男装攻略</b>春日游玩，男士着装打扮与春天气息一样，简约不失温暖。……[<span>详细</span>]</p>
+          <img src="专题图/a4.jpg" width="70" height="70" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <h2 class="title t_t3" id="tq">踏青经济</h2>
+    <div class="tq_box">
+      <h3 class="small_title"><b><span>Trips</span>清明踏青去</b></h3>
+      <ul class="tq_list c">
+        <li><a href="" target="_blank"><img src="images/chi.gif" alt="" width="220" height="160" /></a></li>
+        <li><a href="http://info.csc86.com/html/2014/choice_0331/9942.html" target="_blank"><img src="专题图/c1.jpg" alt="" width="220" height="160" /><span>排排坐分粿粿</span></a></li>
+        <li><a href="http://info.csc86.com/html/2014/choice_0401/9964.html" target="_blank"><img src="专题图/c2.jpg" alt="" width="220" height="160" /><span>清明美食绵菜饼制作过程</span></a></li>
+        <li><a href="http://info.csc86.com/html/2014/recommend_0401/9970.html" target="_blank"><img src="专题图/c3.jpg" alt="" width="220" height="160" /><span>“蛋”疼清明节</span></a></li>
+        <li><a href="http://info.csc86.com/html/2014/choice_0331/9941.html" target="_blank"><img src="专题图/y1.jpg" alt="" width="220" height="160" /><span>南宁清明踏青胜地TOP7</span></a></li>
+        <li><a href="" target="_blank"><img src="images/you.gif" alt="" width="220" height="160" /></a></li>
+        <li><a href="http://info.csc86.com/html/2014/choice_0401/9957.html" target="_blank"><img src="专题图/y2.jpg" alt="" width="220" height="160" /><span>清明广东省内三日游</span></a></li>
+        <li><a href="http://info.csc86.com/html/2014/choice_0401/9991.html" target="_blank"><img src="专题图/y3.jpg" alt="" width="220" height="160" /><span>深圳清明好去处</span></a></li>
+      </ul>
+      <h3 class="small_title"><b><span>Raiders</span>踏青攻略</b></h3>
+      <div class="info-to">
+      	<span class="scr-l"></span>
+        <div class="scr-all">
+      	<ul class="jj_list">
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank"><b>南国禾雀4月开：清远禾雀花赏花之旅</b>北看牡丹之雍容，南赏禾雀之轻灵。禾雀花是国家二级保护植物，生得如此矜贵，因它均为原始野生植物，无法移植培…[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank">禾雀花</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank"><img src="专题图/g1.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank"><b>赏江苏兴化水上油菜花</b>江苏兴化的油菜花在每年的4月份开始进入盛开期。与众不用的是这里的油菜花如千岛在湖，游人泛舟其中，沉浸花海。…[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank">江苏</a><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank">油菜花</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank"><img src="专题图/g2.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank"><b>2014清明节哈尔滨文化旅游5大景点</b>随着清明节小长假的临近，天气转暖，气候宜人，正是外出旅游观光好时。小编推荐五处哈尔滨文化旅游景点，供大家选选择。[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank">哈尔滨</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank"><img src="专题图/g3.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank"><b>西安清明节旅游去哪好</b>又迎来一个3天小长假，清明节最大的活动就是祭拜了，如果清明节假期，有打算去西安的游客，可以去游览一下下面的景点。[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank">西安</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank"><img src="专题图/g4.jpg" alt="" width="175" height="127" /></a></li>
+      </ul>
+      	<ul class="jj_list">
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank"><b>22南国禾雀4月开：清远禾雀花赏花之旅</b>北看牡丹之雍容，南赏禾雀之轻灵。禾雀花是国家二级保护植物，生得如此矜贵，因它均为原始野生植物，无法移植培…[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank">禾雀花</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0401/9980.html" target="_blank"><img src="专题图/g1.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank"><b>赏江苏兴化水上油菜花</b>江苏兴化的油菜花在每年的4月份开始进入盛开期。与众不用的是这里的油菜花如千岛在湖，游人泛舟其中，沉浸花海。…[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank">江苏</a><a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank">油菜花</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0401/9979.html" target="_blank"><img src="专题图/g2.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank"><b>2014清明节哈尔滨文化旅游5大景点</b>随着清明节小长假的临近，天气转暖，气候宜人，正是外出旅游观光好时。小编推荐五处哈尔滨文化旅游景点，供大家选选择。[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank">哈尔滨</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0402/10049.html" target="_blank"><img src="专题图/g3.jpg" alt="" width="175" height="127" /></a></li>
+        <li>
+          <div><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank"><b>西安清明节旅游去哪好</b>又迎来一个3天小长假，清明节最大的活动就是祭拜了，如果清明节假期，有打算去西安的游客，可以去游览一下下面的景点。[<span>详细</span>]</a>
+            <p><span>标签：</span><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank">清明</a><a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank">西安</a></p>
+          </div>
+          <a href="http://info.csc86.com/html/2014/choice_0402/10051.html" target="_blank"><img src="专题图/g4.jpg" alt="" width="175" height="127" /></a></li>
+      </ul>
+      	</div>
+        <span class="scr-r"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content c" id="ts" name="ts">
+    <div class="g-f-l w632">
+      <h3 class="small_title"><b><span>Discussion</span>参与讨论</b></h3>
+      <div class="comment">
+        <div class="com_form">
+          <textarea class="input" id="saytext" name="saytext"></textarea>
+          <p>
+            <input type="button" class="sub_btn g-ff-y g-fw-b g-fs-14" value="发表评论">
+            <span class="emotion"></span> <span class="tips">还能输入 <i>140</i>个字</span> </p>
+        </div>
+      </div>
+      <div class="comment-result">
+        <ul>
+        </ul>
+      </div>
+      <script>seajs.use('./js/init');</script> 
+    </div>
+    <div class="g-f-r w290">
+      <h3 class="small_title"><b><span>Life&Death</span>生死大讨论</b></h3>
+      <ul class="ss_list">
+        <li>
+          <p><a href="http://quan.csc86.com/thread/detail/49bebed5-5a0c-4820-8044-b0ffcf615e1b.html" target="_blank">文明祭祖or土豪祭奠?快来和我们一起聊聊您的看法吧…[详细]</a></p>
+          <div><a href="http://quan.csc86.com/thread/detail/49bebed5-5a0c-4820-8044-b0ffcf615e1b.html" target="_blank"><img src="专题图/s1.jpg" alt="" width="110" height="80" /><span>清明扫墓你怎么看？</span></a></div>
+        </li>
+        <li>
+          <p><a href="http://quan.csc86.com/thread/detail/7cb192f5-2f90-4b30-ab9d-30e834b00e14.html" target="_blank">你见过哪些奇葩的祭品？请大家踊跃分享，共同提高姿势水平…[详细]</a></p>
+          <div><a href="http://quan.csc86.com/thread/detail/7cb192f5-2f90-4b30-ab9d-30e834b00e14.html" target="_blank"><img src="专题图/s2.jpg" alt="" width="110" height="80" /><span>奇葩祭品有哪些？</span></a></div>
+        </li>
+        <li>
+          <p><a href="http://quan.csc86.com/thread/detail/fabd7408-753a-4109-9bba-191a484b1e2b.html" target="_blank">我们的墓志铭怎么写?是写几首歌词、还是写几首诗?欢迎小伙伴们来吐槽…[详细]</a></p>
+          <div><a href="http://quan.csc86.com/thread/detail/fabd7408-753a-4109-9bba-191a484b1e2b.html" target="_blank"><img src="专题图/s3.jpg" alt="" width="110" height="80" /><span>你的墓志铭怎么写?</span></a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="g-o-a link footer">
+  <div class="g-h-10"></div>
+  <div class="love-links"><a rel="nofollow" target="_blank" href="http://group.csc86.com/">关于华南城</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/">华南城网</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/member.html">会员服务</a><a rel="nofollow" target="_blank" href="http://ad.csc86.com">广告服务</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/business.html">商务合作</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/server.html">服务条款</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/laws.html">法律申明</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/privacy.html">隐私保护</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/feedback.html">意见反馈</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/help/">帮助中心</a><a target="_blank" href="http://cncms.csc86.com/sitemap.html">网站地图</a><a rel="nofollow" target="_blank" href="http://cncms.csc86.com/about/contact.html">联系我们</a></div>
+  <p class="p1">Copyright©2009-2013 China South City Holdings Limited. All Rights Reserved<br />
+    深圳华南城信息技术有限公司 版权所有 粤ICP备14011296号-1</p>
+</div>
+</div>
+<div class="side_nav" id="fiexd">
+  <div class="mh">
+    <p>为马航罹难同胞祭奠</p>
+    <a href="http://quan.csc86.com/thread/detail/7e28de37-8c00-4e62-8750-8fe75811bfa4.html" target="_blank" data-topic="7e28de37-8c00-4e62-8750-8fe75811bfa4" class="linksx">上香</a><a href="http://quan.csc86.com/thread/detail/7e28de37-8c00-4e62-8750-8fe75811bfa4.html" target="_blank">献花</a> </div>
+  <ul>
+    <li><a href="#hs" title="后世经济">后世经济</a></li>
+    <li><a href="#hj" title="换季经济">换季经济</a></li>
+    <li><a href="#tq" title="踏青经济">踏青经济</a></li>
+    <li><a href="#ts" title="谈生论逝">谈生论逝</a></li>
+    <li>返回顶部</li>
+  </ul>
+</div>
+<div style="display:none"><script src="http://res.csc86.com/f=js/m/statistics.js"></script></div>
+</body>
+</html>

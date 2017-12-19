@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS 5 */
+*html { background-attachment:fixed; background-image:URL("about:blank");}
+
+.main{ background:url(img/bg.png) repeat left top;}
+.banner{ background:url(img/banner.jpg) no-repeat center top;}
+.nav{ padding-bottom:400px;}
+.nav,.nav a{ height:41px; line-height:41px; font-weight:700;font-style:italic;font-family:Microsoft YaHei,simhei;color:#fff;}
+.nav a:hover{color:#deb700; text-decoration:none;}
+
+.namver{ height:10px; width:100%; display:block; background:url(img/bg.jpg) repeat-x left top;}
+.path-span{ height:40px; line-height:40px;}
+.main{ background:url(img/bg.png) repeat left top;}
+.content{ background:#fff; width:940px; height:auto; padding:40px 30px; margin:0 auto;}
+
+.pr{ height:auto; overflow:hidden;zoom:1;}
+.pr img{ width:280px; height:280px; float:left;}
+.info{ margin-left:35px; float:left; width:620px;}
+.info h1{ font-size:30px; color:#f9761d; font-family:Microsoft YaHei,simhei; font-weight:normal;}
+.info h3{ font-size:18px; color:#666; padding-top:40px; border-bottom:1px dashed #ddd;font-weight:normal; line-height:40px; height:40px;}
+.content h2{ color:#f9761d; font-size:24px;font-family:Microsoft YaHei,simhei; font-weight:normal; border-bottom:1px solid #ddd; line-height:50px;}
+.info dl{ height:auto; overflow:hidden;zoom:1; font-size:14px; line-height:26px; padding-top:20px;}
+.info dl dt{ width:66px; height:26px;  float:left;color:#fff; text-align:center; font-weight:normal;}
+.info dl dt.t01{ background:#f9761d;}
+.info dl dt.t02{ background:#bbbbbb;}
+.info dl dd{ float:left; width:500px; padding-left:20px; color:#666;}
+.info dl.line{border-bottom:1px dashed #ddd; padding-bottom:10px;}
+.conpr{ text-align:left;}
+.conpr span{ display:inline-block; line-height:44px; font-size:14px; padding-top:30px; margin-left:30px;}
+.conpr span i{ width:44px; height:44px; display:inline-block; color:#f9761d; line-height:44px; text-align:center; font-size:30px; font-weight:normal;font-family:Microsoft YaHei,simhei; background:url(img/icon01.jpg) no-repeat left top; margin-right:10px;}
+.conpr img{ display:block; margin:10px auto 0;}
+.conpr span.bottom-to{ font-size:24px;color:#f9761d; font-family:Microsoft YaHei,simhei; font-weight:normal; border:1px solid #ddd; height:92px; line-height:92px; padding:0 40px 0 100px; background:#f5f4f4 url(img/icon02.jpg) no-repeat 40px 18px; margin-left:20%;_margin-left:10%;}
+.path-span,.path-span a{ font-size:14px; color:#666;}
+.path-span a:hover{ color:#666;}

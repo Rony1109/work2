@@ -1,0 +1,98 @@
+/* CSS Document */
+*html {_background-attachment:fixed; _background-image:URL("about:blank");}
+body {background:url(img/body-bg.gif) repeat; font-family:宋体;}
+
+.web-search{ height:80px; background:#FFF; padding-top:0;}
+.m-search{ margin:20px 10px 0 0;}
+.m-search .ss-txt{border-top:2px solid #d8283c;border-bottom:2px solid #d8283c;border-left:2px solid #d8283c;}
+.web-search .m-search div .btn{ background:url(img/search-btn.png) no-repeat left top;}
+
+.body_bottom {background:url(img/bottom_bg.gif) center bottom no-repeat;}
+.g-o-a {width:992px;}
+.top {background:url(img/top_bg.gif) 0 0 repeat-x; height:470px; min-width:992px;}
+.top_main {background:url(img/bg_top.jpg) center 0 no-repeat; height:470px;}
+
+.box1,.box2,.box3,.box4 {margin-bottom: 30px;background:url(img/bg.png) no-repeat;_background:url(img/bg-1.png) no-repeat; position:relative;}
+.box1{padding-top: 197px;}
+.box2 {padding-top: 157px;height: 556px;background-position:0 -761px;}
+.box3 {padding-top: 197px;height: 545px;background-position:0 -1504px;}
+.box4 {padding-top: 197px;height: 545px;background-position:0 -2261px;}
+.boxs_main { padding-left:45px;}
+.box1_top {height:197px;}
+.box1_bottom {background:url(img/box1_bottom.jpg) 0 0 no-repeat; height:30px;}
+.box2_top {background:url(img/box2_top.jpg) 0 0 no-repeat; height:254px;}
+.box2_bottom {background:url(img/box2_bottom.jpg) 0 0 no-repeat; height:30px;}
+.box3_top {background:url(img/box3_top.jpg) 0 0 no-repeat; height:254px;}
+.box3_bottom {background:url(img/box3_bottom.jpg) 0 0 no-repeat; height:30px;}
+.box4_top {background:url(img/box4_top.jpg) 0 0 no-repeat; height:254px;}
+.box4_bottom {background:url(img/box4_bottom.jpg) 0 0 no-repeat; height:30px;}
+
+.boxs_main ul {float:left; width:226px; margin-right:1px; _display:inline;}
+.boxs_main ul li {position:relative; margin-bottom:1px; zoom:1; _display:inline;}
+.boxs_main ul li a {color:#FFF; display:block; width:226px;}
+.boxs_main ul li a img {display:block; width:226px;}
+.boxs_main ul li a span {display:block; height:24px; line-height:24px; text-align:center; background:#F00; color:#FFF;cursor:pointer;} 
+.boxs_main ul li i {font-style:normal; position:absolute; right:0; height:25px; line-height:25px; bottom:24px; display:block; background:#FFF; color:#666; opacity:0.6; filter:Alpha(style=0,opacity=60); width:80px; text-align:center;}
+.boxs_main ul li a:hover {text-decoration:underline;}
+.boxs_main ul li i a {display:inline; color:#666;}
+.boxs_main ul li i a:hover {color:#00F; font-weight:bold; text-decoration:none;}
+
+.box1 .boxs_main ul li a span { background:#8BDAB8;}
+.box1 .boxs_main ul li i a:hover  {color:#056239;}
+.box2 .boxs_main ul li a span { background:#8090E4;}
+.box2 .boxs_main ul li i a:hover  {color:#051776;}
+.box3 .boxs_main ul li a span { background:#E6A67D;}
+.box3 .boxs_main ul li i a:hover {color:#7C3912;}
+.box4 .boxs_main ul li a span { background:#E67DBE;}
+.box4 .boxs_main ul li i a:hover {color:#6F124B;}
+
+.box_remo {position: absolute; display: block; width: 60px; height: 22px; background-image:URL("about:blank");}
+.box1 .box_remo {left: 709px; top: 152px;}
+.box2 .box_remo { left: 711px; top: 209px;}
+.box3 .box_remo { left: 711px; top: 209px;}
+.box4 .box_remo { left: 711px; top: 210px;}
+
+.fixed-screen {position:fixed; top:130px; _position: absolute; _top:expression(eval(document.documentElement.scrollTop+130)); left:50%; margin-left:500px; width: 165px; height:491px; z-index:10; background:url(img/right_bar.gif) no-repeat;}
+.nav2_1,.nav2_2,.nav2_3,.nav2_4,.nav2_top  { position:absolute; display:block; width:95px; height:33px;}
+.nav2_1 {left:35px; top:120px;}
+.nav2_2 {left:35px; top:154px;}
+.nav2_3 {left:35px; top:188px;}
+.nav2_4 {left:35px; top:223px;}
+.nav2_top {width:80px; height:32px; left:45px; top:410px;}
+
+/*专题,圈子留言专用*/
+.xiabox {background-color:#F3F3F3; border:1px solid #E8E8E8;}
+.gn_topick {border-right:1px solid #DEE3E3; width:590px; float:left;height:228px; overflow:hidden;}
+.gn_t {height:40px; padding-right:15px;}
+.bg1 {background-image:url(images/ico_1.jpg); background-position: 10px 15px; background-repeat:no-repeat; padding-left:27px;}
+.fx_box { padding-top:12px; line-height:16px; height:16px; overflow:hidden;}
+.fx_box span {float:left;}
+.fx_box .remo1 {float:right; color:#333;}
+.form_ly {border:1px solid #DEE3E3; background:#F7F7F7; margin:0 10px;}
+.ly_box {padding:20px 15px 30px;}
+.ly_box p {line-height:20px; color:#868686;}
+.text_ly {border:1px solid #CDCDCD; background:#FFF; color:#666px;  line-height:20px; height:60px; width:538px; resize:none;}
+.text_submit {border:none; border:0; height:20px; line-height:20px; background:#4EC9EB; color:#FFF; padding:0 10px; border:1px solid #6EDDFB; overflow:visible; cursor:pointer;}
+#ly_comm {text-align:right; vertical-align:text-bottom;}
+#ly_comm i {font-style:normal; font-size:15px; line-height:1.7; font-weight:bold;}
+
+.gn_t h3 {padding:15px 0 0 20px; height:20px; float:left; line-height:20px; overflow:hidden; font-weight:normal; color:#333;}
+.gn_imglh {float:left; width:220px; height:228px; border-right:1px solid #E8E8E8; overflow:hidden; position:relative;}
+.lh_box1 {position:relative;}
+.img_list1 {text-align:center; width:220px; float:left;}
+.img_list1 li {margin-bottom:8px;}
+.img_list1 li img {border:1px solid #CACBCD;}
+.lh1_tol,.lh1_tor {float:left; border:1px solid #AFAFAF; width:14px; height:14px; background:url(img/but_jt.gif) no-repeat; font-size:0; line-height:0; text-indent:-9999px; margin-top:15px;}
+.lh1_tol {background-position:left 0;}
+.lh1_tor {background-position:right 0; margin-left:-1px;}
+
+.gn_txtlh {float:right; width:175px; height:228px; overflow:hidden; position:relative;}
+.txt_list1 {width:175px; float:left;}
+.txt_list1 li {padding:0 5px 0 25px; height:24px; line-height:24px; overflow:hidden; background:url(img/4px.gif) 13px center no-repeat;}
+.x_links {background-color:#F3F3F3; border:1px solid #E8E8E8; border-top:none; height:30px; line-height:30px; text-align:center;}
+.xiabox,.xiabox a,.x_links,.x_links a {color:#6B6B6B;}
+/*专题,圈子留言专用*/
+.link {border:none;}
+.link p {color:inherit;}
+
+
